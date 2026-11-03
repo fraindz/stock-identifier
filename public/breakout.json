@@ -1,0 +1,474 @@
+{
+  "generatedAt": "2026-11-03T11:37:02.989Z",
+  "minMarketCapCr": 1000,
+  "lookbackWeeks": 20,
+  "volumeMultiple": 1.5,
+  "universeSize": 1473,
+  "failed": [],
+  "weeks": {
+    "currentWeek": {
+      "start": "2026-11-02",
+      "end": "2026-11-03"
+    },
+    "lastWeek": {
+      "start": "2026-10-26",
+      "end": "2026-10-30"
+    },
+    "lookback": {
+      "start": "2026-06-08",
+      "end": "2026-10-23"
+    }
+  },
+  "stocks": [
+    {
+      "symbol": "KOTAKBANK",
+      "name": "Kotak Mahindra Bank Limited",
+      "marketCapCr": 462228,
+      "rangeHigh": 453.1,
+      "abovePct": 1.88,
+      "avgVolume": 78922952,
+      "volumeRatio": 1.8,
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 462.9,
+        "low": 437.6,
+        "close": 461.6,
+        "volume": 142381940
+      },
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-03",
+        "high": 465.95,
+        "low": 455.4,
+        "close": 464.65,
+        "volume": 39647762
+      }
+    },
+    {
+      "symbol": "DIVISLAB",
+      "name": "Divi's Laboratories Limited",
+      "marketCapCr": 267168,
+      "rangeHigh": 9740,
+      "abovePct": 0.41,
+      "avgVolume": 2338828,
+      "volumeRatio": 1.52,
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 9865,
+        "low": 8860,
+        "close": 9780,
+        "volume": 3546532
+      },
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-03",
+        "high": 10064,
+        "low": 9863,
+        "close": 10064,
+        "volume": 1525797
+      }
+    },
+    {
+      "symbol": "LAURUSLABS",
+      "name": "Laurus Labs Limited",
+      "marketCapCr": 125515,
+      "rangeHigh": 2089,
+      "abovePct": 15.15,
+      "avgVolume": 11287488,
+      "volumeRatio": 1.59,
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 2405.5,
+        "low": 1951.6,
+        "close": 2405.5,
+        "volume": 17990202
+      },
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-03",
+        "high": 2441.9,
+        "low": 2252.4,
+        "close": 2323,
+        "volume": 7073126
+      }
+    },
+    {
+      "symbol": "INDHOTEL",
+      "name": "The Indian Hotels Company Limited",
+      "marketCapCr": 119006,
+      "rangeHigh": 794.65,
+      "abovePct": 2.14,
+      "avgVolume": 13716126,
+      "volumeRatio": 2.16,
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 824.4,
+        "low": 764.45,
+        "close": 811.65,
+        "volume": 29669641
+      },
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-03",
+        "high": 836.05,
+        "low": 817,
+        "close": 836.05,
+        "volume": 10198401
+      }
+    },
+    {
+      "symbol": "ATHERENERG",
+      "name": "Ather Energy Limited",
+      "marketCapCr": 71211,
+      "rangeHigh": 1744,
+      "abovePct": 0.69,
+      "avgVolume": 20958603,
+      "volumeRatio": 1.64,
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 1784.5,
+        "low": 1345.7,
+        "close": 1756,
+        "volume": 34402687
+      },
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-03",
+        "high": 1809.5,
+        "low": 1736,
+        "close": 1795,
+        "volume": 5593240
+      }
+    },
+    {
+      "symbol": "SONACOMS",
+      "name": "Sona BLW Precision Forgings Limited",
+      "marketCapCr": 56266,
+      "rangeHigh": 844,
+      "abovePct": 5.51,
+      "avgVolume": 11055647,
+      "volumeRatio": 3.09,
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 899,
+        "low": 747.4,
+        "close": 890.5,
+        "volume": 34205639
+      },
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-03",
+        "high": 911.25,
+        "low": 890.05,
+        "close": 900,
+        "volume": 5198097
+      }
+    },
+    {
+      "symbol": "ACUTAAS",
+      "name": "Acutaas Chemicals Limited",
+      "marketCapCr": 31962,
+      "rangeHigh": 3740,
+      "abovePct": 7.05,
+      "avgVolume": 1751131,
+      "volumeRatio": 7.05,
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 4032.2,
+        "low": 3136.2,
+        "close": 4003.6,
+        "volume": 12347949
+      },
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-03",
+        "high": 4045.3,
+        "low": 3776.5,
+        "close": 3904,
+        "volume": 897855
+      }
+    },
+    {
+      "symbol": "PPLPHARMA",
+      "name": "Piramal Pharma Limited",
+      "marketCapCr": 30989,
+      "rangeHigh": 231.93,
+      "abovePct": 3.01,
+      "avgVolume": 29505910,
+      "volumeRatio": 5.95,
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 240,
+        "low": 188.52,
+        "close": 238.91,
+        "volume": 175649191
+      },
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-03",
+        "high": 243.2,
+        "low": 232.25,
+        "close": 233.69,
+        "volume": 16494377
+      }
+    },
+    {
+      "symbol": "IGIL",
+      "name": "International Gemological Institute Limited",
+      "marketCapCr": 17626,
+      "rangeHigh": 388.5,
+      "abovePct": 2.38,
+      "avgVolume": 4182461,
+      "volumeRatio": 3.87,
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 420.6,
+        "low": 368.4,
+        "close": 397.75,
+        "volume": 16193072
+      },
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-03",
+        "high": 411,
+        "low": 390.4,
+        "close": 407.85,
+        "volume": 1518121
+      }
+    },
+    {
+      "symbol": "PVRINOX",
+      "name": "PVR INOX Limited",
+      "marketCapCr": 14650,
+      "rangeHigh": 1458,
+      "abovePct": 2.54,
+      "avgVolume": 2573623,
+      "volumeRatio": 2.48,
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 1521.1,
+        "low": 1392.1,
+        "close": 1495.1,
+        "volume": 6394595
+      },
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-03",
+        "high": 1546.3,
+        "low": 1480,
+        "close": 1524,
+        "volume": 1806387
+      }
+    },
+    {
+      "symbol": "SSWL",
+      "name": "Steel Strips Wheels Limited",
+      "marketCapCr": 8061,
+      "rangeHigh": 468.75,
+      "abovePct": 5.31,
+      "avgVolume": 8290357,
+      "volumeRatio": 5.78,
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 558.7,
+        "low": 455.05,
+        "close": 493.65,
+        "volume": 47899671
+      },
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-03",
+        "high": 526.9,
+        "low": 469.5,
+        "close": 512.55,
+        "volume": 3108017
+      }
+    },
+    {
+      "symbol": "SMSPHARMA",
+      "name": "SMS Pharmaceuticals Limited",
+      "marketCapCr": 4815,
+      "rangeHigh": 494.45,
+      "abovePct": 3.42,
+      "avgVolume": 2891452,
+      "volumeRatio": 2.13,
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 525,
+        "low": 405,
+        "close": 511.35,
+        "volume": 6172153
+      },
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-03",
+        "high": 518.75,
+        "low": 471.25,
+        "close": 514.15,
+        "volume": 1492974
+      }
+    },
+    {
+      "symbol": "MARSONS",
+      "name": "Marsons Limited",
+      "marketCapCr": 2651,
+      "rangeHigh": 144.28,
+      "abovePct": 3.01,
+      "avgVolume": 13438224,
+      "volumeRatio": 2.59,
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 148.86,
+        "low": 116.71,
+        "close": 148.62,
+        "volume": 34777297
+      },
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-03",
+        "high": 166.23,
+        "low": 149.2,
+        "close": 154.05,
+        "volume": 29882518
+      }
+    },
+    {
+      "symbol": "PASHUPATI",
+      "name": "Pashupati Cotspin Limited",
+      "marketCapCr": 2347,
+      "rangeHigh": 111.26,
+      "abovePct": 20.98,
+      "avgVolume": 2551595,
+      "volumeRatio": 12.76,
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 136.49,
+        "low": 105.7,
+        "close": 134.6,
+        "volume": 32565320
+      },
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-03",
+        "high": 148.78,
+        "low": 137,
+        "close": 148.72,
+        "volume": 17385547
+      }
+    },
+    {
+      "symbol": "SHREEPUSHK",
+      "name": "Shree Pushkar Chemicals & Fertilisers Limited",
+      "marketCapCr": 2015,
+      "rangeHigh": 545.2,
+      "abovePct": 10.53,
+      "avgVolume": 349580,
+      "volumeRatio": 2.17,
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 612.2,
+        "low": 458,
+        "close": 602.6,
+        "volume": 759775
+      },
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-03",
+        "high": 653,
+        "low": 565,
+        "close": 623.1,
+        "volume": 1351430
+      }
+    },
+    {
+      "symbol": "NINSYS",
+      "name": "NINtec Systems Limited",
+      "marketCapCr": 1817,
+      "rangeHigh": 935,
+      "abovePct": 0.49,
+      "avgVolume": 28273,
+      "volumeRatio": 1.63,
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 948.15,
+        "low": 832.5,
+        "close": 939.6,
+        "volume": 45973
+      },
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-03",
+        "high": 985,
+        "low": 936.6,
+        "close": 978.25,
+        "volume": 37305
+      }
+    },
+    {
+      "symbol": "MANAKCOAT",
+      "name": "Manaksia Coated Metals & Industries Limited",
+      "marketCapCr": 1534,
+      "rangeHigh": 138.89,
+      "abovePct": 0.95,
+      "avgVolume": 2225759,
+      "volumeRatio": 2.57,
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 152.62,
+        "low": 118.29,
+        "close": 140.21,
+        "volume": 5719277
+      },
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-03",
+        "high": 150.86,
+        "low": 140,
+        "close": 143.83,
+        "volume": 1077834
+      }
+    },
+    {
+      "symbol": "LGHL",
+      "name": "Laxmi Goldorna House Limited",
+      "marketCapCr": 1238,
+      "rangeHigh": 240,
+      "abovePct": 0.77,
+      "avgVolume": 126324,
+      "volumeRatio": 1.86,
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 246.4,
+        "low": 211.99,
+        "close": 241.84,
+        "volume": 234474
+      },
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-03",
+        "high": 263,
+        "low": 245,
+        "close": 247.11,
+        "volume": 49127
+      }
+    }
+  ]
+}

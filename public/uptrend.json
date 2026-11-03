@@ -1,0 +1,471 @@
+{
+  "generatedAt": "2026-11-03T11:37:02.980Z",
+  "trend": "up",
+  "minMarketCapCr": 500,
+  "universeSize": 1766,
+  "failed": [],
+  "weeks": {
+    "currentWeek": {
+      "start": "2026-11-02",
+      "end": "2026-11-03"
+    },
+    "lastWeek": {
+      "start": "2026-10-26",
+      "end": "2026-10-30"
+    },
+    "oneWeekAgo": {
+      "start": "2026-10-19",
+      "end": "2026-10-23"
+    },
+    "twoWeeksAgo": {
+      "start": "2026-10-12",
+      "end": "2026-10-16"
+    }
+  },
+  "stocks": [
+    {
+      "symbol": "WIPRO",
+      "name": "Wipro Limited",
+      "marketCapCr": 195896,
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-03",
+        "high": 200.11,
+        "low": 195.01,
+        "close": 198,
+        "volume": 23428701
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 198.31,
+        "low": 182.25,
+        "close": 198.31,
+        "volume": 97810491
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 197.25,
+        "low": 181.48,
+        "close": 189.84,
+        "volume": 127220677
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 185.69,
+        "low": 161.06,
+        "close": 184.4,
+        "volume": 124674304
+      }
+    },
+    {
+      "symbol": "UNIONBANK",
+      "name": "Union Bank of India",
+      "marketCapCr": 139848,
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-03",
+        "high": 188.77,
+        "low": 182.81,
+        "close": 183.2,
+        "volume": 24628479
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 187.74,
+        "low": 177.3,
+        "close": 186,
+        "volume": 81572170
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 186,
+        "low": 172.42,
+        "close": 178.9,
+        "volume": 104644895
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 175.25,
+        "low": 167.5,
+        "close": 171.68,
+        "volume": 76187467
+      }
+    },
+    {
+      "symbol": "INDHOTEL",
+      "name": "The Indian Hotels Company Limited",
+      "marketCapCr": 119006,
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-03",
+        "high": 836.05,
+        "low": 817,
+        "close": 836.05,
+        "volume": 10198401
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 824.4,
+        "low": 764.45,
+        "close": 811.65,
+        "volume": 29669641
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 794.65,
+        "low": 743.45,
+        "close": 781.75,
+        "volume": 41440793
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 776.15,
+        "low": 708.1,
+        "close": 772.1,
+        "volume": 19938313
+      }
+    },
+    {
+      "symbol": "SHREECEM",
+      "name": "Shree Cement Limited",
+      "marketCapCr": 86269,
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-03",
+        "high": 24250,
+        "low": 22925,
+        "close": 23910,
+        "volume": 70120
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 23690,
+        "low": 22540,
+        "close": 22995,
+        "volume": 107289
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 22930,
+        "low": 21770,
+        "close": 22735,
+        "volume": 162001
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 22715,
+        "low": 21675,
+        "close": 22460,
+        "volume": 154082
+      }
+    },
+    {
+      "symbol": "LTTS",
+      "name": "L&T Technology Services Limited",
+      "marketCapCr": 44811,
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-03",
+        "high": 4347.4,
+        "low": 4190.1,
+        "close": 4224,
+        "volume": 321513
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 4297.4,
+        "low": 3885.4,
+        "close": 4280.2,
+        "volume": 1591985
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 4143,
+        "low": 3580,
+        "close": 3910.3,
+        "volume": 10345426
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 3785,
+        "low": 3270.1,
+        "close": 3714.6,
+        "volume": 584601
+      }
+    },
+    {
+      "symbol": "ANANDRATHI",
+      "name": "Anand Rathi Wealth Limited",
+      "marketCapCr": 37990,
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-03",
+        "high": 2298.8,
+        "low": 2252.4,
+        "close": 2288,
+        "volume": 353032
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 2290,
+        "low": 2215,
+        "close": 2252,
+        "volume": 1662985
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 2242,
+        "low": 2143.5,
+        "close": 2235,
+        "volume": 2527529
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 2162.8,
+        "low": 2015.9,
+        "close": 2159.7,
+        "volume": 1970394
+      }
+    },
+    {
+      "symbol": "IGIL",
+      "name": "International Gemological Institute Limited",
+      "marketCapCr": 17626,
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-03",
+        "high": 411,
+        "low": 390.4,
+        "close": 407.85,
+        "volume": 1518121
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 420.6,
+        "low": 368.4,
+        "close": 397.75,
+        "volume": 16193072
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 388.5,
+        "low": 316.65,
+        "close": 381.15,
+        "volume": 29731686
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 328.4,
+        "low": 307.85,
+        "close": 326.7,
+        "volume": 2445994
+      }
+    },
+    {
+      "symbol": "ASTRAZEN",
+      "name": "AstraZeneca Pharma India Limited",
+      "marketCapCr": 15863,
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-03",
+        "high": 6450,
+        "low": 6250.5,
+        "close": 6345,
+        "volume": 10187
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 6400,
+        "low": 5888,
+        "close": 6364.5,
+        "volume": 39579
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 6143.5,
+        "low": 5850,
+        "close": 5988.5,
+        "volume": 33009
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 6009,
+        "low": 5790.5,
+        "close": 5970.5,
+        "volume": 81963
+      }
+    },
+    {
+      "symbol": "SOUTHBANK",
+      "name": "The South Indian Bank Limited",
+      "marketCapCr": 14139,
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-03",
+        "high": 56.27,
+        "low": 53.6,
+        "close": 53.96,
+        "volume": 20216031
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 57.28,
+        "low": 51.74,
+        "close": 55.49,
+        "volume": 84705705
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 56.25,
+        "low": 51.26,
+        "close": 52.57,
+        "volume": 148494492
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 52.5,
+        "low": 47.69,
+        "close": 51.45,
+        "volume": 149766417
+      }
+    },
+    {
+      "symbol": "PASHUPATI",
+      "name": "Pashupati Cotspin Limited",
+      "marketCapCr": 2347,
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-03",
+        "high": 148.78,
+        "low": 137,
+        "close": 148.72,
+        "volume": 17385547
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 136.49,
+        "low": 105.7,
+        "close": 134.6,
+        "volume": 32565320
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 104.5,
+        "low": 87.25,
+        "close": 104.31,
+        "volume": 17704145
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 85.46,
+        "low": 67.5,
+        "close": 85.09,
+        "volume": 14767503
+      }
+    },
+    {
+      "symbol": "JINDALPHOT",
+      "name": "Jindal Photo Limited",
+      "marketCapCr": 1170,
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-03",
+        "high": 1160,
+        "low": 1107.1,
+        "close": 1136.1,
+        "volume": 19165
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 1149,
+        "low": 1050,
+        "close": 1137.9,
+        "volume": 64100
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 1099,
+        "low": 1006.5,
+        "close": 1055.7,
+        "volume": 18251
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 1079.9,
+        "low": 936,
+        "close": 1036.5,
+        "volume": 7500
+      }
+    },
+    {
+      "symbol": "ARMEE",
+      "name": "ArMee Infotech Limited",
+      "marketCapCr": 908,
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-03",
+        "high": 287.4,
+        "low": 275.55,
+        "close": 286.2,
+        "volume": 790412
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 285.55,
+        "low": 264.8,
+        "close": 283.4,
+        "volume": 2117091
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 274,
+        "low": 245.3,
+        "close": 271.85,
+        "volume": 1992713
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 265.9,
+        "low": 235.55,
+        "close": 260.55,
+        "volume": 3270153
+      }
+    }
+  ]
+}
