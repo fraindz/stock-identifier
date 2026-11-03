@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-03T11:37:02.989Z",
+  "generatedAt": "2026-11-03T12:35:01.359Z",
   "minMarketCapCr": 1000,
   "lookbackWeeks": 20,
   "volumeMultiple": 1.5,
-  "universeSize": 1473,
+  "universeSize": 1474,
   "failed": [],
   "weeks": {
     "currentWeek": {

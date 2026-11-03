@@ -1,8 +1,8 @@
 // Screens NSE stocks for three consecutive completed weeks of trend:
 //   downtrend: lower highs, lows and closes, market cap >= ₹10,000 Cr
 //   uptrend:   higher highs, lows and closes, market cap >= ₹500 Cr
-// and for range breakouts on volume (see BREAKOUT below).
-// Writes public/downtrend.json, public/uptrend.json and public/breakout.json for the web pages.
+// and for range breakouts on volume and pullbacks within a rally (see BREAKOUT and PULLBACK below).
+// Writes public/{downtrend,uptrend,breakout,pullback}.json for the web pages.
 //
 // Usage: npm run screen
 import { writeFile } from 'node:fs/promises'
@@ -30,9 +30,28 @@ const BREAKOUT = {
   output: new URL('../public/breakout.json', import.meta.url),
 }
 
-const MIN_MARKET_CAP_CR = Math.min(...SCREENS.map((s) => s.minMarketCapCr), BREAKOUT.minMarketCapCr)
-// Enough daily history for the breakout lookback plus last week and the current week.
-const HISTORY_DAYS = (BREAKOUT.lookbackWeeks + 3) * 7
+// A rally of at least `minRallyPct` up to a peak within the last `peakWithinWeeks` weeks,
+// measured from the lowest low of the `rallyWeeks` weeks up to the peak; then a pullback
+// of `minRetracePct`–`maxRetracePct` of the rally on lighter volume than the rally; and
+// last week closing above the previous week's high while still below the peak.
+const PULLBACK = {
+  minMarketCapCr: 1_000,
+  peakWithinWeeks: 12,
+  rallyWeeks: 12,
+  minRallyPct: 20,
+  minRetracePct: 25,
+  maxRetracePct: 62,
+  output: new URL('../public/pullback.json', import.meta.url),
+}
+
+const MIN_MARKET_CAP_CR = Math.min(
+  ...SCREENS.map((s) => s.minMarketCapCr),
+  BREAKOUT.minMarketCapCr,
+  PULLBACK.minMarketCapCr,
+)
+// Enough daily history for the longest lookback plus last week and the current week.
+const HISTORY_DAYS =
+  (Math.max(BREAKOUT.lookbackWeeks, PULLBACK.peakWithinWeeks + PULLBACK.rallyWeeks) + 3) * 7
 
 const yf = new YahooFinance({ suppressNotices: ['yahooSurvey'] })
 
@@ -155,6 +174,48 @@ function breakout(weeks: Week[]) {
   }
 }
 
+const avg = (xs: number[]) => xs.reduce((sum, x) => sum + x, 0) / xs.length
+
+// Rally/pullback figures for the latest completed week, or null if it doesn't fit the setup.
+function pullback(weeks: Week[]) {
+  const L = weeks.length - 1
+  // The peak needs at least one pullback week between it and last week (the turn week).
+  const peakFrom = Math.max(0, L - PULLBACK.peakWithinWeeks)
+  if (L - 2 < peakFrom) return null
+  let p = peakFrom
+  for (let i = peakFrom; i <= L - 2; i++) if (weeks[i].high > weeks[p].high) p = i
+  const peak = weeks[p]
+  const after = weeks.slice(p + 1) // pullback weeks plus last week
+  if (after.some((w) => w.high >= peak.high)) return null
+
+  const rally = weeks.slice(Math.max(0, p - PULLBACK.rallyWeeks), p + 1)
+  let s = 0
+  for (let i = 1; i < rally.length; i++) if (rally[i].low < rally[s].low) s = i
+  const start = rally[s]
+  if (s === rally.length - 1) return null // the peak week itself was the low
+  const rallyPct = ((peak.high - start.low) / start.low) * 100
+  if (rallyPct < PULLBACK.minRallyPct) return null
+
+  const pullbackLow = Math.min(...after.map((w) => w.low))
+  const retracePct = ((peak.high - pullbackLow) / (peak.high - start.low)) * 100
+  if (retracePct < PULLBACK.minRetracePct || retracePct > PULLBACK.maxRetracePct) return null
+
+  const rallyVolume = avg(rally.slice(s + 1).map((w) => w.volume))
+  const pullbackVolume = avg(after.slice(0, -1).map((w) => w.volume))
+  if (!(rallyVolume > 0 && pullbackVolume < rallyVolume)) return null
+
+  const last = weeks[L]
+  const prev = weeks[L - 1]
+  if (!(last.close > prev.high && last.close < peak.high)) return null
+
+  return {
+    rally: { start: start.start, low: round(start.low), peakWeek: peak.start, high: round(peak.high), pct: round(rallyPct) },
+    pullback: { weeks: after.length - 1, low: round(pullbackLow), retracePct: round(retracePct), volumeVsRally: round(pullbackVolume / rallyVolume) },
+    prevWeekHigh: round(prev.high),
+    belowPeakPct: round(((peak.high - last.close) / peak.high) * 100),
+  }
+}
+
 async function main() {
   const currentWeek = istWeekStart(new Date())
   const symbols = await nseSymbols()
@@ -244,6 +305,35 @@ async function main() {
     ),
   )
   console.log(`breakout matches: ${breakouts.length} of ${breakoutUniverse.length}`)
+
+  const pullbackUniverse = candidates.filter((c) => c.marketCapCr >= PULLBACK.minMarketCapCr)
+  const pullbacks = pullbackUniverse
+    .flatMap(({ weeks, current, ...stock }) => {
+      const pb = pullback(weeks)
+      return pb ? [{ ...stock, ...pb, lastWeek: roundWeek(weeks[weeks.length - 1]), currentWeek: current ? roundWeek(current) : null }] : []
+    })
+    .sort((a, b) => b.marketCapCr - a.marketCapCr)
+  await writeFile(
+    PULLBACK.output,
+    JSON.stringify(
+      {
+        generatedAt: new Date().toISOString(),
+        minMarketCapCr: PULLBACK.minMarketCapCr,
+        peakWithinWeeks: PULLBACK.peakWithinWeeks,
+        rallyWeeks: PULLBACK.rallyWeeks,
+        minRallyPct: PULLBACK.minRallyPct,
+        minRetracePct: PULLBACK.minRetracePct,
+        maxRetracePct: PULLBACK.maxRetracePct,
+        universeSize: pullbackUniverse.length,
+        failed: failed.filter((symbol) => pullbackUniverse.some((c) => c.symbol === symbol)),
+        weeks: { currentWeek: weeks.currentWeek, lastWeek: weeks.lastWeek },
+        stocks: pullbacks,
+      },
+      null,
+      2,
+    ),
+  )
+  console.log(`pullback matches: ${pullbacks.length} of ${pullbackUniverse.length}`)
 
   if (failed.length) console.log(`Failed to fetch: ${failed.join(', ')}`)
 }

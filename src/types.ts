@@ -45,3 +45,29 @@ export type BreakoutData = {
   weeks: { currentWeek: Range | null; lastWeek: Range; lookback: Range }
   stocks: BreakoutStock[]
 }
+
+export type PullbackStock = {
+  symbol: string
+  name: string
+  marketCapCr: number
+  rally: { start: string; low: number; peakWeek: string; high: number; pct: number }
+  pullback: { weeks: number; low: number; retracePct: number; volumeVsRally: number }
+  prevWeekHigh: number
+  belowPeakPct: number // last week's close below the rally peak, in %
+  lastWeek: Week
+  currentWeek: Week | null
+}
+
+export type PullbackData = {
+  generatedAt: string
+  minMarketCapCr: number
+  peakWithinWeeks: number
+  rallyWeeks: number
+  minRallyPct: number
+  minRetracePct: number
+  maxRetracePct: number
+  universeSize: number
+  failed: string[]
+  weeks: { currentWeek: Range | null; lastWeek: Range }
+  stocks: PullbackStock[]
+}

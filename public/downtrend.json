@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T11:37:02.974Z",
+  "generatedAt": "2026-11-03T12:35:01.345Z",
   "trend": "down",
   "minMarketCapCr": 10000,
   "universeSize": 564,
@@ -2838,7 +2838,7 @@
     {
       "symbol": "ATUL",
       "name": "Atul Ltd",
-      "marketCapCr": 14936,
+      "marketCapCr": 14934,
       "currentWeek": {
         "start": "2026-11-02",
         "end": "2026-11-03",

@@ -1,13 +1,15 @@
 import { useEffect, useState } from 'react'
 import BreakoutPage from './BreakoutPage'
+import PullbackPage from './PullbackPage'
 import ScreenerPage from './ScreenerPage'
 import { loadHistory, previousList, saveList, type History } from './history'
-import type { BreakoutData, ScreenerData, Trend } from './types'
+import type { BreakoutData, PullbackData, ScreenerData, Trend } from './types'
 import './App.css'
 
 type Page =
   | { path: string; label: string; kind: 'trend'; trend: Trend; repeat: boolean }
   | { path: string; label: string; kind: 'breakout' }
+  | { path: string; label: string; kind: 'pullback' }
 
 const PAGES: Page[] = [
   { path: '#/downtrend', label: 'Downtrend', kind: 'trend', trend: 'down', repeat: false },
@@ -15,6 +17,7 @@ const PAGES: Page[] = [
   { path: '#/still-downtrend', label: 'Still in downtrend', kind: 'trend', trend: 'down', repeat: true },
   { path: '#/still-uptrend', label: 'Still in uptrend', kind: 'trend', trend: 'up', repeat: true },
   { path: '#/breakout', label: 'Breakout', kind: 'breakout' },
+  { path: '#/pullback', label: 'Pullback', kind: 'pullback' },
 ]
 
 const pageFromHash = (): Page => PAGES.find((p) => p.path === window.location.hash) ?? PAGES[0]
@@ -29,6 +32,7 @@ function App() {
   const [page, setPage] = useState<Page>(pageFromHash)
   const [lists, setLists] = useState<Record<Trend, ScreenerData> | null>(null)
   const [breakouts, setBreakouts] = useState<BreakoutData | null>(null)
+  const [pullbacks, setPullbacks] = useState<PullbackData | null>(null)
   const [history, setHistory] = useState<History>(loadHistory)
   const [error, setError] = useState<string | null>(null)
 
@@ -45,17 +49,20 @@ function App() {
       fetchJson<ScreenerData>('/downtrend.json'),
       fetchJson<ScreenerData>('/uptrend.json'),
       fetchJson<BreakoutData>('/breakout.json'),
+      fetchJson<PullbackData>('/pullback.json'),
     ])
-      .then(([down, up, breakout]) => {
+      .then(([down, up, breakout, pullback]) => {
         setHistory((h) => saveList(saveList(h, 'down', down), 'up', up))
         setLists({ down, up })
         setBreakouts(breakout)
+        setPullbacks(pullback)
       })
       .catch(() => setError('No screener data found. Run `npm run screen` to generate it.'))
   }, [])
 
   const content = (() => {
     if (page.kind === 'breakout') return breakouts && <BreakoutPage data={breakouts} />
+    if (page.kind === 'pullback') return pullbacks && <PullbackPage data={pullbacks} />
     const data = lists?.[page.trend]
     return (
       data && (
