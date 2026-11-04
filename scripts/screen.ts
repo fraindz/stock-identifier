@@ -2,7 +2,7 @@
 //   downtrend: lower highs, lows and closes, market cap >= ₹10,000 Cr
 //   uptrend:   higher highs, lows and closes, market cap >= ₹500 Cr
 // and for range breakouts on volume and pullbacks within a rally (see BREAKOUT and PULLBACK below).
-// Writes public/{downtrend,uptrend,breakout,pullback}.json for the web pages.
+// Writes public/{downtrend,uptrend,breakout,pullback,sectors}.json for the web pages.
 //
 // Usage: npm run screen
 import { writeFile } from 'node:fs/promises'
@@ -20,6 +20,7 @@ const SCREENS: { trend: Trend; minMarketCapCr: number; output: URL }[] = [
   { trend: 'down', minMarketCapCr: 10_000, output: new URL('../public/downtrend.json', import.meta.url) },
   { trend: 'up', minMarketCapCr: 500, output: new URL('../public/uptrend.json', import.meta.url) },
 ]
+const SECTORS_OUTPUT = new URL('../public/sectors.json', import.meta.url)
 
 // Last week closed above the highest high of the previous `lookbackWeeks` weeks, on
 // at least `volumeMultiple` times their average weekly volume.
@@ -56,6 +57,7 @@ const HISTORY_DAYS =
 const yf = new YahooFinance({ suppressNotices: ['yahooSurvey'] })
 
 type Week = { start: string; end: string; high: number; low: number; close: number; volume: number }
+type Company = { symbol: string; name: string; marketCapCr: number; sector: string }
 
 async function nseSymbols(): Promise<string[]> {
   const res = await fetch('https://archives.nseindia.com/content/equities/EQUITY_L.csv')
@@ -79,7 +81,7 @@ function istDate(d: Date): string {
 }
 
 async function largeCaps(symbols: string[]) {
-  const out: { symbol: string; name: string; marketCapCr: number }[] = []
+  const out: Omit<Company, 'sector'>[] = []
   for (let i = 0; i < symbols.length; i += QUOTE_BATCH) {
     const batch = symbols.slice(i, i + QUOTE_BATCH).map((s) => `${s}.NS`)
     const quotes = await yf.quote(batch, { fields: ['symbol', 'marketCap', 'longName', 'shortName'] })
@@ -141,6 +143,17 @@ async function mapLimit<T, R>(items: T[], limit: number, fn: (item: T) => Promis
   )
   process.stdout.write('\n')
   return results
+}
+
+async function loadSectors(companies: Omit<Company, 'sector'>[]): Promise<Company[]> {
+  return mapLimit(companies, CHART_CONCURRENCY, async (company) => {
+    try {
+      const summary = await yf.quoteSummary(`${company.symbol}.NS`, { modules: ['assetProfile'] })
+      return { ...company, sector: summary.assetProfile?.sector?.trim() || 'Unclassified' }
+    } catch {
+      return { ...company, sector: 'Unclassified' }
+    }
+  })
 }
 
 const round = (n: number) => Math.round(n * 100) / 100
@@ -221,7 +234,7 @@ async function main() {
   const symbols = await nseSymbols()
   console.log(`NSE symbols: ${symbols.length}`)
 
-  const universe = await largeCaps(symbols)
+  const universe = await loadSectors(await largeCaps(symbols))
   console.log(`Market cap >= ₹${MIN_MARKET_CAP_CR.toLocaleString('en-IN')} Cr: ${universe.length}`)
 
   const failed: string[] = []
@@ -247,6 +260,7 @@ async function main() {
     twoWeeksAgo: { start: w2.start, end: w2.end },
   }
 
+  let uptrendStocks: Company[] = []
   for (const screen of SCREENS) {
     const inUniverse = candidates.filter((c) => c.marketCapCr >= screen.minMarketCapCr)
     const matches = inUniverse
@@ -256,6 +270,7 @@ async function main() {
         return { ...stock, currentWeek: current ? roundWeek(current) : null, lastWeek, oneWeekAgo, twoWeeksAgo }
       })
       .sort((a, b) => b.marketCapCr - a.marketCapCr)
+    if (screen.trend === 'up') uptrendStocks = matches.map((stock) => ({ ...stock, sector: candidates.find((c) => c.symbol === stock.symbol)?.sector ?? 'Unclassified' }))
 
     await writeFile(
       screen.output,
@@ -275,6 +290,42 @@ async function main() {
     )
     console.log(`${screen.trend}trend matches: ${matches.length} of ${inUniverse.length}`)
   }
+  const sectorGroups = new Map<string, { universeCount: number; stocks: Company[] }>()
+  for (const company of candidates.filter((c) => c.marketCapCr >= SCREENS.find((s) => s.trend === 'up')!.minMarketCapCr)) {
+    const group = sectorGroups.get(company.sector) ?? { universeCount: 0, stocks: [] }
+    group.universeCount++
+    sectorGroups.set(company.sector, group)
+  }
+  for (const stock of uptrendStocks) {
+    const group = sectorGroups.get(stock.sector)
+    if (group) group.stocks.push(stock)
+  }
+  const sectorRows = [...sectorGroups.entries()]
+    .filter(([, group]) => group.stocks.length > 0)
+    .map(([name, group]) => ({
+      name,
+      stockCount: group.stocks.length,
+      universeCount: group.universeCount,
+      breadthPct: round((group.stocks.length / group.universeCount) * 100),
+      stocks: group.stocks
+        .sort((a, b) => b.marketCapCr - a.marketCapCr)
+        .map(({ symbol, name: stockName, marketCapCr }) => ({ symbol, name: stockName, marketCapCr })),
+    }))
+    .sort((a, b) => b.stockCount - a.stockCount || b.breadthPct - a.breadthPct || a.name.localeCompare(b.name))
+  await writeFile(
+    SECTORS_OUTPUT,
+    JSON.stringify(
+      {
+        generatedAt: new Date().toISOString(),
+        weeks: { currentWeek: weeks.currentWeek, lastWeek: weeks.lastWeek },
+        universeSize: candidates.filter((c) => c.marketCapCr >= 500).length,
+        uptrendSize: uptrendStocks.length,
+        sectors: sectorRows,
+      },
+      null,
+      2,
+    ),
+  )
   const breakoutUniverse = candidates.filter((c) => c.marketCapCr >= BREAKOUT.minMarketCapCr)
   const breakouts = breakoutUniverse
     .flatMap(({ weeks, current, ...stock }) => {

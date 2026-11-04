@@ -1,0 +1,102 @@
+{
+  "generatedAt": "2026-11-04T06:36:31.896Z",
+  "weeks": {
+    "currentWeek": {
+      "start": "2026-11-02",
+      "end": "2026-11-04"
+    },
+    "lastWeek": {
+      "start": "2026-10-26",
+      "end": "2026-10-30"
+    }
+  },
+  "universeSize": 1771,
+  "uptrendSize": 9,
+  "sectors": [
+    {
+      "name": "Technology",
+      "stockCount": 2,
+      "universeCount": 139,
+      "breadthPct": 1.44,
+      "stocks": [
+        {
+          "symbol": "LTTS",
+          "name": "L&T Technology Services Limited",
+          "marketCapCr": 44676
+        },
+        {
+          "symbol": "ARMEE",
+          "name": "ArMee Infotech Limited",
+          "marketCapCr": 905
+        }
+      ]
+    },
+    {
+      "name": "Financial Services",
+      "stockCount": 2,
+      "universeCount": 196,
+      "breadthPct": 1.02,
+      "stocks": [
+        {
+          "symbol": "ANANDRATHI",
+          "name": "Anand Rathi Wealth Limited",
+          "marketCapCr": 38058
+        },
+        {
+          "symbol": "JINDALPHOT",
+          "name": "Jindal Photo Limited",
+          "marketCapCr": 1175
+        }
+      ]
+    },
+    {
+      "name": "Basic Materials",
+      "stockCount": 2,
+      "universeCount": 294,
+      "breadthPct": 0.68,
+      "stocks": [
+        {
+          "symbol": "SHREECEM",
+          "name": "Shree Cement Limited",
+          "marketCapCr": 86919
+        },
+        {
+          "symbol": "IGIL",
+          "name": "International Gemological Institute Limited",
+          "marketCapCr": 17388
+        }
+      ]
+    },
+    {
+      "name": "Consumer Cyclical",
+      "stockCount": 2,
+      "universeCount": 319,
+      "breadthPct": 0.63,
+      "stocks": [
+        {
+          "symbol": "INDHOTEL",
+          "name": "The Indian Hotels Company Limited",
+          "marketCapCr": 120081
+        },
+        {
+          "symbol": "PASHUPATI",
+          "name": "Pashupati Cotspin Limited",
+          "marketCapCr": 2113
+        }
+      ]
+    },
+    {
+      "name": "Healthcare",
+      "stockCount": 1,
+      "universeCount": 153,
+      "breadthPct": 0.65,
+      "stocks": [
+        {
+          "symbol": "ASTRAZEN",
+          "name": "AstraZeneca Pharma India Limited",
+          "marketCapCr": 15885
+        }
+      ]
+    }
+  ]
+}

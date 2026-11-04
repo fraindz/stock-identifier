@@ -36,12 +36,6 @@ export default function PullbackPage({ data }: { data: PullbackData }) {
     <>
       <header>
         <h1>Rally, pullback, ready to resume</h1>
-        <p className="lede">
-          NSE stocks with market cap of at least ₹{inr.format(data.minMarketCapCr)} Cr that rallied at least{' '}
-          {data.minRallyPct}% to a peak in the last {data.peakWithinWeeks} weeks, then pulled back{' '}
-          {data.minRetracePct}–{data.maxRetracePct}% of that rally on lighter volume. Last week closed above the
-          previous week’s high while still below the peak.
-        </p>
         <ul className="criteria">
           {weeks.currentWeek && (
             <li className="current"><span>Current week (so far)</span>{formatRange(weeks.currentWeek)}</li>

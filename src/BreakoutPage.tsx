@@ -30,11 +30,6 @@ export default function BreakoutPage({ data }: { data: BreakoutData }) {
     <>
       <header>
         <h1>Range breakout on volume</h1>
-        <p className="lede">
-          NSE stocks with market cap of at least ₹{inr.format(data.minMarketCapCr)} Cr whose close last week was
-          above the highest high of the previous {data.lookbackWeeks} weeks, on at least {data.volumeMultiple}× their
-          average weekly volume.
-        </p>
         <ul className="criteria">
           {weeks.currentWeek && (
             <li className="current"><span>Current week (so far)</span>{formatRange(weeks.currentWeek)}</li>

@@ -58,17 +58,6 @@ export default function ScreenerPage({ trend, data, previous }: Props) {
     <>
       <header>
         <h1>{repeatView ? `Still in ${copy.name}` : copy.title}</h1>
-        <p className="lede">
-          {repeatView && (
-            <>
-              Stocks on this week’s {copy.name} list that were also on the list saved for the week of{' '}
-              {previous ? formatRange(previous.week) : 'an earlier week'}.{' '}
-            </>
-          )}
-          NSE stocks with market cap of at least ₹{inr.format(data.minMarketCapCr)} Cr where each of the
-          last two completed weeks made a {copy.direction} high, {copy.direction} low and {copy.direction} close
-          than the week before.
-        </p>
         <ul className="criteria">
           {weeks.currentWeek && (
             <li className="current"><span>Current week (so far)</span>{formatRange(weeks.currentWeek)}</li>

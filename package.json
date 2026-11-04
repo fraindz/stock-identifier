@@ -13,6 +13,7 @@
     "schedule:uninstall": "launchctl bootout gui/$(id -u) ~/Library/LaunchAgents/com.stock-identifier.weekly-screen.plist; rm -f ~/Library/LaunchAgents/com.stock-identifier.weekly-screen.plist"
   },
   "dependencies": {
+    "firebase": "^13.2.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1"
   },
