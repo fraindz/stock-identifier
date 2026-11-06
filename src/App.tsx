@@ -4,8 +4,9 @@ import BreakoutPage from './BreakoutPage'
 import PullbackPage from './PullbackPage'
 import SectorPage from './SectorPage'
 import ScreenerPage from './ScreenerPage'
+import SwingPage from './SwingPage'
 import { emptyHistory, loadHistory, previousList, saveList, type History } from './history'
-import type { BreakoutData, PullbackData, ScreenerData, SectorData, Trend } from './types'
+import type { BreakoutData, PullbackData, ScreenerData, SectorData, SwingData, Trend } from './types'
 import './App.css'
 
 type Page =
@@ -13,6 +14,7 @@ type Page =
   | { path: string; label: string; kind: 'breakout' }
   | { path: string; label: string; kind: 'pullback' }
   | { path: string; label: string; kind: 'sectors' }
+  | { path: string; label: string; kind: 'swing'; file: string; title: string; description: string }
 
 const PAGES: Page[] = [
   { path: '#/downtrend', label: 'Downtrend', kind: 'trend', trend: 'down', repeat: false },
@@ -22,8 +24,21 @@ const PAGES: Page[] = [
   { path: '#/breakout', label: 'Breakout', kind: 'breakout' },
   { path: '#/pullback', label: 'Pullback', kind: 'pullback' },
   { path: '#/sectors', label: 'Growing sectors', kind: 'sectors' },
+  { path: '#/momentum', label: 'Momentum', kind: 'swing', file: 'momentum', title: 'Momentum', description: 'Stocks in established short-term uptrends with positive 20-day performance and healthy RSI.' },
+  { path: '#/healthy-pullbacks', label: 'Healthy pullbacks', kind: 'swing', file: 'healthy-pullbacks', title: 'Healthy pullbacks', description: 'Uptrending stocks holding close to their 20-day EMA after a controlled retracement.' },
+  { path: '#/breakout-watchlist', label: 'Breakout watchlist', kind: 'swing', file: 'breakout-watchlist', title: 'Breakout watchlist', description: 'Stocks within 5% of a 20-day high with supportive trend and volume.' },
+  { path: '#/volume-surge', label: 'Volume surge', kind: 'swing', file: 'volume-surge', title: 'Volume surge', description: 'Stocks showing unusual volume and decisive price action near the top of the day range.' },
+  { path: '#/trade-plan', label: 'Trade plan', kind: 'swing', file: 'trade-plan', title: 'Trade plan', description: 'Ranked candidates combining momentum, pullback, and breakout conditions with ATR-based levels.' },
 ]
-const HIDDEN_PATHS = new Set(['#/still-downtrend', '#/still-uptrend'])
+const HIDDEN_PATHS = new Set([
+  '#/downtrend',
+  '#/uptrend',
+  '#/breakout',
+  '#/pullback',
+  '#/sectors',
+  '#/still-downtrend',
+  '#/still-uptrend',
+])
 
 const pageFromHash = (): Page => PAGES.find((p) => p.path === window.location.hash) ?? PAGES[0]
 
@@ -39,6 +54,7 @@ function App() {
   const [breakouts, setBreakouts] = useState<BreakoutData | null>(null)
   const [pullbacks, setPullbacks] = useState<PullbackData | null>(null)
   const [sectors, setSectors] = useState<SectorData | null>(null)
+  const [swingData, setSwingData] = useState<Record<string, SwingData>>({})
   const [history, setHistory] = useState<History>(emptyHistory)
   const [error, setError] = useState<string | null>(null)
   const [refreshing, setRefreshing] = useState(true)
@@ -59,12 +75,14 @@ function App() {
     setRefreshing(true)
     setError(null)
     try {
-      const [down, up, breakout, pullback, sectorData] = await Promise.all([
+      const swingPages = PAGES.filter((p): p is Extract<Page, { kind: 'swing' }> => p.kind === 'swing')
+      const [down, up, breakout, pullback, sectorData, ...allSwingData] = await Promise.all([
         fetchJson<ScreenerData>('/downtrend.json'),
         fetchJson<ScreenerData>('/uptrend.json'),
         fetchJson<BreakoutData>('/breakout.json'),
         fetchJson<PullbackData>('/pullback.json'),
         fetchJson<SectorData>('/sectors.json'),
+        ...swingPages.map((p) => fetchJson<SwingData>(`/${p.file}.json`)),
       ])
       await Promise.all([saveList('down', down), saveList('up', up)])
       const loadedHistory = await loadHistory()
@@ -73,6 +91,7 @@ function App() {
       setBreakouts(breakout)
       setPullbacks(pullback)
       setSectors(sectorData)
+      setSwingData(Object.fromEntries(swingPages.map((p, index) => [p.path, allSwingData[index]])))
     } catch {
       setError('No screener data found. Run `npm run screen` to generate it.')
     } finally {
@@ -84,9 +103,11 @@ function App() {
     setRefreshing(true)
     setError(null)
     try {
-      const response = await fetch('/api/refresh', { method: 'POST' })
-      if (!response.ok) {
-        throw new Error('Refresh failed')
+      if (import.meta.env.DEV) {
+        const response = await fetch('/api/refresh', { method: 'POST' })
+        if (!response.ok) {
+          throw new Error('Refresh failed')
+        }
       }
       await loadData()
     } catch {
@@ -108,6 +129,18 @@ function App() {
     }
     if (page.kind === 'sectors') {
       return sectors && <SectorPage data={sectors} onRefresh={refreshData} refreshing={refreshing} />
+    }
+    if (page.kind === 'swing') {
+      const data = swingData[page.path]
+      return data && (
+        <SwingPage
+          data={data}
+          title={page.title}
+          description={page.description}
+          onRefresh={refreshData}
+          refreshing={refreshing}
+        />
+      )
     }
     const data = lists?.[page.trend]
     return (

@@ -21,6 +21,13 @@ const SCREENS: { trend: Trend; minMarketCapCr: number; output: URL }[] = [
   { trend: 'up', minMarketCapCr: 500, output: new URL('../public/uptrend.json', import.meta.url) },
 ]
 const SECTORS_OUTPUT = new URL('../public/sectors.json', import.meta.url)
+const SWING_OUTPUTS = {
+  momentum: new URL('../public/momentum.json', import.meta.url),
+  pullbacks: new URL('../public/healthy-pullbacks.json', import.meta.url),
+  breakouts: new URL('../public/breakout-watchlist.json', import.meta.url),
+  volume: new URL('../public/volume-surge.json', import.meta.url),
+  tradePlan: new URL('../public/trade-plan.json', import.meta.url),
+}
 
 // Last week closed above the highest high of the previous `lookbackWeeks` weeks, on
 // at least `volumeMultiple` times their average weekly volume.
@@ -51,12 +58,12 @@ const MIN_MARKET_CAP_CR = Math.min(
   PULLBACK.minMarketCapCr,
 )
 // Enough daily history for the longest lookback plus last week and the current week.
-const HISTORY_DAYS =
-  (Math.max(BREAKOUT.lookbackWeeks, PULLBACK.peakWithinWeeks + PULLBACK.rallyWeeks) + 3) * 7
+const HISTORY_DAYS = Math.max((Math.max(BREAKOUT.lookbackWeeks, PULLBACK.peakWithinWeeks + PULLBACK.rallyWeeks) + 3) * 7, 120)
 
 const yf = new YahooFinance({ suppressNotices: ['yahooSurvey'] })
 
 type Week = { start: string; end: string; high: number; low: number; close: number; volume: number }
+type Day = { date: string; open: number; high: number; low: number; close: number; volume: number }
 type Company = { symbol: string; name: string; marketCapCr: number; sector: string }
 
 async function nseSymbols(): Promise<string[]> {
@@ -103,17 +110,19 @@ async function largeCaps(symbols: string[]) {
 
 // Daily bars grouped into Mon–Fri weeks, oldest first. The last entry may be the
 // current, still-incomplete week.
-async function weeklyBars(symbol: string): Promise<Week[]> {
+async function priceBars(symbol: string): Promise<{ weeks: Week[]; days: Day[] }> {
   const chart = await yf.chart(`${symbol}.NS`, {
     period1: new Date(Date.now() - HISTORY_DAYS * DAY_MS),
     interval: '1d',
   })
   const weeks = new Map<string, Week>()
+  const days: Day[] = []
   for (const bar of chart.quotes) {
-    if (bar.high == null || bar.low == null || bar.close == null) continue
+    if (bar.open == null || bar.high == null || bar.low == null || bar.close == null) continue
     const key = istWeekStart(bar.date)
     const day = istDate(bar.date)
     const volume = bar.volume ?? 0
+    days.push({ date: day, open: bar.open, high: bar.high, low: bar.low, close: bar.close, volume })
     const w = weeks.get(key)
     if (!w) {
       weeks.set(key, { start: day, end: day, high: bar.high, low: bar.low, close: bar.close, volume })
@@ -125,7 +134,10 @@ async function weeklyBars(symbol: string): Promise<Week[]> {
       w.volume += volume
     }
   }
-  return [...weeks.entries()].sort(([a], [b]) => a.localeCompare(b)).map(([, w]) => w)
+  return {
+    weeks: [...weeks.entries()].sort(([a], [b]) => a.localeCompare(b)).map(([, w]) => w),
+    days,
+  }
 }
 
 async function mapLimit<T, R>(items: T[], limit: number, fn: (item: T) => Promise<R>): Promise<R[]> {
@@ -188,6 +200,70 @@ function breakout(weeks: Week[]) {
 }
 
 const avg = (xs: number[]) => xs.reduce((sum, x) => sum + x, 0) / xs.length
+const sma = (xs: number[], length: number) => avg(xs.slice(-length))
+function ema(xs: number[], length: number) {
+  const alpha = 2 / (length + 1)
+  return xs.slice(1).reduce((value, price) => alpha * price + (1 - alpha) * value, xs[0])
+}
+function rsi(closes: number[], length = 14) {
+  const changes = closes.slice(1).map((close, i) => close - closes[i])
+  const gains = changes.slice(-length).map((change) => Math.max(change, 0))
+  const losses = changes.slice(-length).map((change) => Math.max(-change, 0))
+  const averageLoss = avg(losses)
+  return averageLoss === 0 ? 100 : 100 - 100 / (1 + avg(gains) / averageLoss)
+}
+function atr(days: Day[], length = 14) {
+  const ranges = days.slice(1).map((day, i) => Math.max(day.high - day.low, Math.abs(day.high - days[i].close), Math.abs(day.low - days[i].close)))
+  return avg(ranges.slice(-length))
+}
+
+type SwingStock = {
+  symbol: string
+  name: string
+  sector: string
+  marketCapCr: number
+  close: number
+  change5Pct: number
+  change20Pct: number
+  rsi: number
+  ema20: number
+  ema50: number
+  volumeRatio: number
+  high20: number
+  atr: number
+  entry: number
+  stop: number
+  target: number
+  score: number
+}
+
+function swingMetrics(company: Company, days: Day[]): SwingStock | null {
+  if (days.length < 51) return null
+  const closes = days.map((day) => day.close)
+  const latest = days.at(-1)!
+  const averageVolume = sma(days.map((day) => day.volume), 20)
+  const latestAtr = atr(days)
+  const entry = latest.close
+  return {
+    symbol: company.symbol,
+    name: company.name,
+    sector: company.sector,
+    marketCapCr: company.marketCapCr,
+    close: round(entry),
+    change5Pct: round(((entry - closes.at(-6)!) / closes.at(-6)!) * 100),
+    change20Pct: round(((entry - closes.at(-21)!) / closes.at(-21)!) * 100),
+    rsi: round(rsi(closes)),
+    ema20: round(ema(closes.slice(-60), 20)),
+    ema50: round(ema(closes, 50)),
+    volumeRatio: round(averageVolume ? latest.volume / averageVolume : 0),
+    high20: round(Math.max(...days.slice(-20).map((day) => day.high))),
+    atr: round(latestAtr),
+    entry: round(entry),
+    stop: round(entry - latestAtr * 1.5),
+    target: round(entry + latestAtr * 3),
+    score: 0,
+  }
+}
 
 // Rally/pullback figures for the latest completed week, or null if it doesn't fit the setup.
 function pullback(weeks: Week[]) {
@@ -240,12 +316,13 @@ async function main() {
   const failed: string[] = []
   const candidates = await mapLimit(universe, CHART_CONCURRENCY, async (stock) => {
     try {
-      const bars = await weeklyBars(stock.symbol)
-      const current = (bars.at(-1)?.start ?? '') >= currentWeek ? bars.pop() : undefined
-      return { ...stock, weeks: bars, current }
+      const { weeks: allWeeks, days: allDays } = await priceBars(stock.symbol)
+      const weeks = [...allWeeks]
+      const current = (weeks.at(-1)?.start ?? '') >= currentWeek ? weeks.pop() : undefined
+      return { ...stock, weeks, days: allDays, current }
     } catch {
       failed.push(stock.symbol)
-      return { ...stock, weeks: [] as Week[], current: undefined }
+      return { ...stock, weeks: [] as Week[], days: [] as Day[], current: undefined }
     }
   })
 
@@ -383,7 +460,52 @@ async function main() {
   )
   console.log(`pullback matches: ${pullbacks.length} of ${pullbackUniverse.length}`)
 
+  const swingStocks = candidates
+    .map(({ weeks: _weeks, current: _current, days, ...company }) => swingMetrics(company, days))
+    .filter((stock): stock is SwingStock => stock !== null)
+  const writeSwingScreen = async (output: URL, stocks: SwingStock[]) => {
+    await writeFile(output, JSON.stringify({
+      generatedAt: new Date().toISOString(),
+      asOf: swingStocks.length ? daysAsOf(candidates) : null,
+      universeSize: swingStocks.length,
+      stocks,
+    }, null, 2))
+  }
+  const momentum = swingStocks
+    .filter((s) => s.close > s.ema20 && s.ema20 > s.ema50 && s.change20Pct >= 5 && s.rsi >= 55 && s.rsi <= 78)
+    .map((s) => ({ ...s, score: round(s.change20Pct + s.volumeRatio * 2) }))
+  const healthyPullbacks = swingStocks
+    .filter((s) => s.close > s.ema50 && s.close >= s.ema20 * 0.97 && s.close <= s.ema20 * 1.03 && s.rsi >= 40 && s.rsi <= 65 && s.change20Pct > 0)
+    .map((s) => ({ ...s, score: round(s.change20Pct - Math.abs(s.close / s.ema20 - 1) * 100) }))
+  const breakoutWatchlist = swingStocks
+    .filter((s) => s.close <= s.high20 && s.close >= s.high20 * 0.95 && s.close > s.ema50 && s.volumeRatio >= 1)
+    .map((s) => ({ ...s, score: round((s.close / s.high20) * 100 + s.volumeRatio) }))
+  const volumeSurge = swingStocks
+    .filter((s) => {
+      const latest = candidates.find((candidate) => candidate.symbol === s.symbol)?.days.at(-1)
+      return latest && s.volumeRatio >= 2 && Math.abs(s.change5Pct) >= 2 && (latest.close - latest.low) / Math.max(latest.high - latest.low, 0.01) >= 0.65
+    })
+    .map((s) => ({ ...s, score: round(s.volumeRatio + Math.max(s.change5Pct, 0)) }))
+  const tradePlan = [...momentum, ...healthyPullbacks, ...breakoutWatchlist]
+    .reduce((all, stock) => all.some((item) => item.symbol === stock.symbol) ? all : [...all, stock], [] as SwingStock[])
+    .sort((a, b) => b.score - a.score)
+  await Promise.all([
+    writeSwingScreen(SWING_OUTPUTS.momentum, momentum.sort((a, b) => b.score - a.score)),
+    writeSwingScreen(SWING_OUTPUTS.pullbacks, healthyPullbacks.sort((a, b) => b.score - a.score)),
+    writeSwingScreen(SWING_OUTPUTS.breakouts, breakoutWatchlist.sort((a, b) => b.score - a.score)),
+    writeSwingScreen(SWING_OUTPUTS.volume, volumeSurge.sort((a, b) => b.score - a.score)),
+    writeSwingScreen(SWING_OUTPUTS.tradePlan, tradePlan),
+  ])
+  console.log(`swing screens: momentum ${momentum.length}, pullbacks ${healthyPullbacks.length}, breakouts ${breakoutWatchlist.length}, volume ${volumeSurge.length}`)
+
   if (failed.length) console.log(`Failed to fetch: ${failed.join(', ')}`)
+}
+
+function daysAsOf(candidates: { days: Day[] }[]) {
+  return candidates.reduce((latest, candidate) => {
+    const date = candidate.days.at(-1)?.date ?? ''
+    return date > latest ? date : latest
+  }, '')
 }
 
 main().catch((err) => {

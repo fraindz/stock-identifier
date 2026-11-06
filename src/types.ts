@@ -86,3 +86,30 @@ export type SectorData = {
   universeSize: number
   sectors: Sector[]
 }
+
+export type SwingStock = {
+  symbol: string
+  name: string
+  sector: string
+  marketCapCr: number
+  close: number
+  change5Pct: number
+  change20Pct: number
+  rsi: number
+  ema20: number
+  ema50: number
+  volumeRatio: number
+  high20: number
+  atr: number
+  entry: number
+  stop: number
+  target: number
+  score: number
+}
+
+export type SwingData = {
+  generatedAt: string
+  asOf: string | null
+  universeSize: number
+  stocks: SwingStock[]
+}
