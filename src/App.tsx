@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from 'react'
+import { trackPageView } from './analytics'
 import BreakoutPage from './BreakoutPage'
 import PullbackPage from './PullbackPage'
 import SectorPage from './SectorPage'
@@ -47,6 +48,10 @@ function App() {
     window.addEventListener('hashchange', onHashChange)
     return () => window.removeEventListener('hashchange', onHashChange)
   }, [])
+
+  useEffect(() => {
+    trackPageView(window.location.hash || '#/downtrend')
+  }, [page])
 
   // Both lists are loaded and saved on every visit, so a week is recorded
   // whichever tab is opened.
