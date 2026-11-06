@@ -14,7 +14,7 @@ type Page =
   | { path: string; label: string; kind: 'breakout' }
   | { path: string; label: string; kind: 'pullback' }
   | { path: string; label: string; kind: 'sectors' }
-  | { path: string; label: string; kind: 'swing'; file: string; title: string; description: string }
+  | { path: string; label: string; kind: 'swing'; file: string; title: string; limit?: number }
 
 const PAGES: Page[] = [
   { path: '#/downtrend', label: 'Downtrend', kind: 'trend', trend: 'down', repeat: false },
@@ -24,11 +24,12 @@ const PAGES: Page[] = [
   { path: '#/breakout', label: 'Breakout', kind: 'breakout' },
   { path: '#/pullback', label: 'Pullback', kind: 'pullback' },
   { path: '#/sectors', label: 'Growing sectors', kind: 'sectors' },
-  { path: '#/momentum', label: 'Momentum', kind: 'swing', file: 'momentum', title: 'Momentum', description: 'Stocks in established short-term uptrends with positive 20-day performance and healthy RSI.' },
-  { path: '#/healthy-pullbacks', label: 'Healthy pullbacks', kind: 'swing', file: 'healthy-pullbacks', title: 'Healthy pullbacks', description: 'Uptrending stocks holding close to their 20-day EMA after a controlled retracement.' },
-  { path: '#/breakout-watchlist', label: 'Breakout watchlist', kind: 'swing', file: 'breakout-watchlist', title: 'Breakout watchlist', description: 'Stocks within 5% of a 20-day high with supportive trend and volume.' },
-  { path: '#/volume-surge', label: 'Volume surge', kind: 'swing', file: 'volume-surge', title: 'Volume surge', description: 'Stocks showing unusual volume and decisive price action near the top of the day range.' },
-  { path: '#/trade-plan', label: 'Trade plan', kind: 'swing', file: 'trade-plan', title: 'Trade plan', description: 'Ranked candidates combining momentum, pullback, and breakout conditions with ATR-based levels.' },
+  { path: '#/momentum', label: 'Momentum', kind: 'swing', file: 'momentum', title: 'Momentum' },
+  { path: '#/healthy-pullbacks', label: 'Healthy pullbacks', kind: 'swing', file: 'healthy-pullbacks', title: 'Healthy pullbacks' },
+  { path: '#/breakout-watchlist', label: 'Breakout watchlist', kind: 'swing', file: 'breakout-watchlist', title: 'Breakout watchlist' },
+  { path: '#/volume-surge', label: 'Volume surge', kind: 'swing', file: 'volume-surge', title: 'Volume surge' },
+  { path: '#/trade-plan', label: 'Trade plan', kind: 'swing', file: 'trade-plan', title: 'Trade plan' },
+  { path: '#/top-10-bets', label: 'Top 10 bets', kind: 'swing', file: 'trade-plan', title: 'Top 10 bets', limit: 10 },
 ]
 const HIDDEN_PATHS = new Set([
   '#/downtrend',
@@ -40,7 +41,10 @@ const HIDDEN_PATHS = new Set([
   '#/still-uptrend',
 ])
 
-const pageFromHash = (): Page => PAGES.find((p) => p.path === window.location.hash) ?? PAGES[0]
+const pageFromHash = (): Page => {
+  const hash = window.location.hash === '#/top-bets' ? '#/top-10-bets' : window.location.hash
+  return PAGES.find((p) => p.path === hash) ?? PAGES[0]
+}
 
 async function fetchJson<T>(path: string): Promise<T> {
   const r = await fetch(`${path}?refresh=${Date.now()}`, { cache: 'no-store' })
@@ -136,7 +140,7 @@ function App() {
         <SwingPage
           data={data}
           title={page.title}
-          description={page.description}
+          limit={page.limit}
           onRefresh={refreshData}
           refreshing={refreshing}
         />

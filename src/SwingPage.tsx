@@ -5,17 +5,18 @@ import type { SwingData } from './types'
 type Props = {
   data: SwingData
   title: string
-  description: string
+  limit?: number
   onRefresh: () => void
   refreshing: boolean
 }
 
-export default function SwingPage({ data, title, description, onRefresh, refreshing }: Props) {
+export default function SwingPage({ data, title, limit, onRefresh, refreshing }: Props) {
   const [query, setQuery] = useState('')
+  const displayedStocks = limit ? data.stocks.slice(0, limit) : data.stocks
   const rows = useMemo(() => {
     const q = query.trim().toLowerCase()
-    return data.stocks.filter((stock) => !q || stock.symbol.toLowerCase().includes(q) || stock.name.toLowerCase().includes(q))
-  }, [data.stocks, query])
+    return displayedStocks.filter((stock) => !q || stock.symbol.toLowerCase().includes(q) || stock.name.toLowerCase().includes(q))
+  }, [displayedStocks, query])
 
   return (
     <>
@@ -24,9 +25,8 @@ export default function SwingPage({ data, title, description, onRefresh, refresh
           <h1>{title}</h1>
           <RefreshButton onRefresh={onRefresh} refreshing={refreshing} />
         </div>
-        <p className="lede">{description}</p>
         <p className="meta">
-          <strong>{data.stocks.length}</strong> candidates · data as of {data.asOf ?? 'unavailable'} · generated{' '}
+          <strong>{displayedStocks.length}</strong>{limit ? ` of ${data.stocks.length}` : ''} candidates · data as of {data.asOf ?? 'unavailable'} · generated{' '}
           {new Date(data.generatedAt).toLocaleString('en-IN', { dateStyle: 'medium', timeStyle: 'short' })}
         </p>
       </header>
