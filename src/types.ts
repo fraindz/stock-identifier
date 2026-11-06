@@ -74,9 +74,9 @@ export type PullbackData = {
 
 export type Sector = {
   name: string
-  stockCount: number
   universeCount: number
-  breadthPct: number
+  oneWeekBreadthPct: number
+  lastWeekBreadthPct: number
   stocks: { symbol: string; name: string; marketCapCr: number }[]
 }
 
@@ -84,6 +84,5 @@ export type SectorData = {
   generatedAt: string
   weeks: { lastWeek: Range; currentWeek: Range | null }
   universeSize: number
-  uptrendSize: number
   sectors: Sector[]
 }

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import BreakoutPage from './BreakoutPage'
 import PullbackPage from './PullbackPage'
 import SectorPage from './SectorPage'
@@ -27,7 +27,7 @@ const HIDDEN_PATHS = new Set(['#/still-downtrend', '#/still-uptrend'])
 const pageFromHash = (): Page => PAGES.find((p) => p.path === window.location.hash) ?? PAGES[0]
 
 async function fetchJson<T>(path: string): Promise<T> {
-  const r = await fetch(path)
+  const r = await fetch(`${path}?refresh=${Date.now()}`, { cache: 'no-store' })
   if (!r.ok) throw new Error(`HTTP ${r.status}`)
   return r.json() as Promise<T>
 }
@@ -40,6 +40,7 @@ function App() {
   const [sectors, setSectors] = useState<SectorData | null>(null)
   const [history, setHistory] = useState<History>(emptyHistory)
   const [error, setError] = useState<string | null>(null)
+  const [refreshing, setRefreshing] = useState(true)
 
   useEffect(() => {
     const onHashChange = () => setPage(pageFromHash())
@@ -49,30 +50,60 @@ function App() {
 
   // Both lists are loaded and saved on every visit, so a week is recorded
   // whichever tab is opened.
-  useEffect(() => {
-    Promise.all([
-      fetchJson<ScreenerData>('/downtrend.json'),
-      fetchJson<ScreenerData>('/uptrend.json'),
-      fetchJson<BreakoutData>('/breakout.json'),
-      fetchJson<PullbackData>('/pullback.json'),
-      fetchJson<SectorData>('/sectors.json'),
-    ])
-    .then(async ([down, up, breakout, pullback, sectorData]) => {
+  const loadData = useCallback(async () => {
+    setRefreshing(true)
+    setError(null)
+    try {
+      const [down, up, breakout, pullback, sectorData] = await Promise.all([
+        fetchJson<ScreenerData>('/downtrend.json'),
+        fetchJson<ScreenerData>('/uptrend.json'),
+        fetchJson<BreakoutData>('/breakout.json'),
+        fetchJson<PullbackData>('/pullback.json'),
+        fetchJson<SectorData>('/sectors.json'),
+      ])
       await Promise.all([saveList('down', down), saveList('up', up)])
       const loadedHistory = await loadHistory()
-        setHistory(loadedHistory)
-        setLists({ down, up })
-        setBreakouts(breakout)
-        setPullbacks(pullback)
-        setSectors(sectorData)
-      })
-      .catch(() => setError('No screener data found. Run `npm run screen` to generate it.'))
+      setHistory(loadedHistory)
+      setLists({ down, up })
+      setBreakouts(breakout)
+      setPullbacks(pullback)
+      setSectors(sectorData)
+    } catch {
+      setError('No screener data found. Run `npm run screen` to generate it.')
+    } finally {
+      setRefreshing(false)
+    }
   }, [])
 
+  const refreshData = useCallback(async () => {
+    setRefreshing(true)
+    setError(null)
+    try {
+      const response = await fetch('/api/refresh', { method: 'POST' })
+      if (!response.ok) {
+        throw new Error('Refresh failed')
+      }
+      await loadData()
+    } catch {
+      setError('Could not refresh market data. Make sure the local screen server is running.')
+      setRefreshing(false)
+    }
+  }, [loadData])
+
+  useEffect(() => {
+    void loadData()
+  }, [loadData])
+
   const content = (() => {
-    if (page.kind === 'breakout') return breakouts && <BreakoutPage data={breakouts} />
-    if (page.kind === 'pullback') return pullbacks && <PullbackPage data={pullbacks} />
-    if (page.kind === 'sectors') return sectors && <SectorPage data={sectors} />
+    if (page.kind === 'breakout') {
+      return breakouts && <BreakoutPage data={breakouts} onRefresh={refreshData} refreshing={refreshing} />
+    }
+    if (page.kind === 'pullback') {
+      return pullbacks && <PullbackPage data={pullbacks} onRefresh={refreshData} refreshing={refreshing} />
+    }
+    if (page.kind === 'sectors') {
+      return sectors && <SectorPage data={sectors} onRefresh={refreshData} refreshing={refreshing} />
+    }
     const data = lists?.[page.trend]
     return (
       data && (
@@ -80,6 +111,8 @@ function App() {
           key={page.path}
           trend={page.trend}
           data={data}
+          onRefresh={refreshData}
+          refreshing={refreshing}
           previous={page.repeat ? previousList(history, page.trend, data.weeks.lastWeek.start) : undefined}
         />
       )

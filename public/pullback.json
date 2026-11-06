@@ -1,284 +1,17 @@
 {
-  "generatedAt": "2026-11-04T06:36:31.924Z",
+  "generatedAt": "2026-11-06T07:18:19.617Z",
   "minMarketCapCr": 1000,
   "peakWithinWeeks": 12,
   "rallyWeeks": 12,
   "minRallyPct": 20,
   "minRetracePct": 25,
   "maxRetracePct": 62,
-  "universeSize": 1474,
-  "failed": [
-    "SJVN",
-    "SKFINDIA",
-    "SKFINDUS",
-    "SKIPPER",
-    "SKMEGGPROD",
-    "SKYGOLD",
-    "SKYWAYS",
-    "SMARTWORKS",
-    "SMCGLOBAL",
-    "SMLMAH",
-    "SMSPHARMA",
-    "SMT",
-    "SOBHA",
-    "SOLARA",
-    "SOLARINDS",
-    "SOMANYCERA",
-    "SONACOMS",
-    "SONATSOFTW",
-    "SOUTHBANK",
-    "SOTL",
-    "SPAL",
-    "SPANDANA",
-    "SPARC",
-    "SPECTRUM",
-    "SPIC",
-    "SPLPETRO",
-    "SPMLINFRA",
-    "SPORTKING",
-    "SRF",
-    "SSRETAIL",
-    "SSWL",
-    "STALLION",
-    "STAR",
-    "STARHEALTH",
-    "STARCEMENT",
-    "STEELCAS",
-    "STEELXIND",
-    "STLNETWORK",
-    "STLTECH",
-    "STOVEKRAFT",
-    "STUDDS",
-    "STYL",
-    "STYLEBAAZA",
-    "STYLAMIND",
-    "STYRENIX",
-    "SUBROS",
-    "SUDARSCHEM",
-    "SUDEEPPHRM",
-    "SULA",
-    "SUMICHEM",
-    "SUNCLAY",
-    "SUMMITSEC",
-    "SUNDARMFIN",
-    "SUNDRMFAST",
-    "SUNDROP",
-    "SUNFLAG",
-    "SUNPHARMA",
-    "SUNSHINE",
-    "SUNTECK",
-    "SUNTV",
-    "SUPRAJIT",
-    "SUPREMEIND",
-    "SUPRIYA",
-    "SURYAROSNI",
-    "SURAKSHA",
-    "SURYODAY",
-    "SUVEN",
-    "SUZLON",
-    "SWANCORP",
-    "SWANDEF",
-    "SWARAJENG",
-    "SWIGGY",
-    "SWSOLAR",
-    "SYMPHONY",
-    "SYNCOMF",
-    "SYNGENE",
-    "SYRMA",
-    "SYSTMTXC",
-    "TAALTECH",
-    "TAJGVK",
-    "TALBROAUTO",
-    "TANLA",
-    "TARIL",
-    "TARC",
-    "TARSONS",
-    "TASTYBITE",
-    "TATACHEM",
-    "TATACAP",
-    "TATACOMM",
-    "TATAELXSI",
-    "TATAINVEST",
-    "TATACONSUM",
-    "TATAPOWER",
-    "TATASTEEL",
-    "TATATECH",
-    "TATVA",
-    "TBOTEK",
-    "TBZ",
-    "TCI",
-    "TCIEXP",
-    "TCPLPACK",
-    "TCS",
-    "TDPOWERSYS",
-    "TEAMLEASE",
-    "TECHM",
-    "TECHNOCRAF",
-    "TECHNOE",
-    "TECHNVISN",
-    "TEGA",
-    "TEJASNET",
-    "TEMBO",
-    "TENNIND",
-    "TEXINFRA",
-    "TEXRAIL",
-    "TFCILTD",
-    "TGVSL",
-    "THANGAMAYL",
-    "THEJO",
-    "THELEELA",
-    "THERMAX",
-    "THOMASCOOK",
-    "THYROCARE",
-    "TI",
-    "TIIL",
-    "TIINDIA",
-    "TIL",
-    "TIMETECHNO",
-    "TIMKEN",
-    "TIMEX",
-    "TINNARUBR",
-    "TIPSMUSIC",
-    "TIRUMALCHM",
-    "TITAGARH",
-    "TITAN",
-    "TMCV",
-    "TMB",
-    "TMPV",
-    "TNPETRO",
-    "TONBO",
-    "TORNTPHARM",
-    "TORNTPOWER",
-    "TRANSRAILL",
-    "TRAVELFOOD",
-    "TRENT",
-    "TRIDENT",
-    "TRITURBINE",
-    "TRIVENI",
-    "TRIVENIPT",
-    "TRUALT",
-    "TSFINV",
-    "TTKHLTCARE",
-    "TTKPRESTIG",
-    "TTML",
-    "TVSHLTD",
-    "TVSMOTOR",
-    "TVSSCS",
-    "TVSSRICHAK",
-    "UBL",
-    "UCOBANK",
-    "UDS",
-    "UEL",
-    "UFBL",
-    "UFLEX",
-    "UGROCAP",
-    "UJJIVANSFB",
-    "ULTRACEMCO",
-    "ULTRAMAR",
-    "UNICHEMLAB",
-    "UNIENTER",
-    "UNIMECH",
-    "UNIONBANK",
-    "UNIPARTS",
-    "UNITDSPR",
-    "UNITECH",
-    "UNITEDPOLY",
-    "UNIVCABLES",
-    "UNOMINDA",
-    "UPL",
-    "URBANCO",
-    "USHAMART",
-    "UTIAMC",
-    "UTKARSHBNK",
-    "UTLSOLAR",
-    "UTTAMSUGAR",
-    "V2RETAIL",
-    "VADILALIND",
-    "VAIBHAVGBL",
-    "VALIANTORG",
-    "VAML",
-    "VARROC",
-    "VARMORA",
-    "VBL",
-    "VEDPOWER",
-    "VEDL",
-    "VEEDOL",
-    "VENKEYS",
-    "VENTIVE",
-    "VENUSPIPES",
-    "VENUSREM",
-    "VESUVIUS",
-    "VGUARD",
-    "VHL",
-    "VHLTD",
-    "VIDHIING",
-    "VIDYAWIRES",
-    "VIJAYA",
-    "VIKRAMSOLR",
-    "VIKRAN",
-    "VIMTALABS",
-    "VINATIORGA",
-    "VINCOFE",
-    "VINDHYATEL",
-    "VIPIND",
-    "VISHNU",
-    "VISL",
-    "VIYASH",
-    "VMART",
-    "VMM",
-    "VOEPL",
-    "VOGL",
-    "VOLTAMP",
-    "VOLTAS",
-    "VRLLOG",
-    "VSSL",
-    "VSTIND",
-    "VSTTILLERS",
-    "VTL",
-    "WAAREEENER",
-    "WAAREERTL",
-    "WABAG",
-    "WALCHANNAG",
-    "WAKEFIT",
-    "WEBELSOLAR",
-    "WELCORP",
-    "WELENT",
-    "WELSPLSOL",
-    "WELSPUNLIV",
-    "WENDT",
-    "WESTLIFE",
-    "WEWORK",
-    "WHEELS",
-    "WHIRLPOOL",
-    "WINDLAS",
-    "WINDMACHIN",
-    "WIPRO",
-    "WOCKPHARMA",
-    "WONDERLA",
-    "WPIL",
-    "WSTCSTPAPR",
-    "XPROINDIA",
-    "XTRANET",
-    "YASHO",
-    "YATHARTH",
-    "YATRA",
-    "YESBANK",
-    "YUKEN",
-    "ZAGGLE",
-    "ZEEL",
-    "ZENSARTECH",
-    "ZENTEC",
-    "ZETWERK",
-    "ZFCVINDIA",
-    "ZOTA",
-    "ZSARACOM",
-    "ZYDUSLIFE",
-    "ZYDUSWELL"
-  ],
+  "universeSize": 1482,
+  "failed": [],
   "weeks": {
     "currentWeek": {
       "start": "2026-11-02",
-      "end": "2026-11-04"
+      "end": "2026-11-06"
     },
     "lastWeek": {
       "start": "2026-10-26",
@@ -287,9 +20,46 @@
   },
   "stocks": [
     {
+      "symbol": "TVSMOTOR",
+      "name": "TVS Motor Company Limited",
+      "marketCapCr": 211861,
+      "sector": "Consumer Cyclical",
+      "rally": {
+        "start": "2026-06-08",
+        "low": 3265.6,
+        "peakWeek": "2026-08-24",
+        "high": 4484.5,
+        "pct": 37.33
+      },
+      "pullback": {
+        "weeks": 8,
+        "low": 3741.9,
+        "retracePct": 60.92,
+        "volumeVsRally": 0.61
+      },
+      "prevWeekHigh": 4138,
+      "belowPeakPct": 6.45,
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 4313.7,
+        "low": 3875.1,
+        "close": 4195.2,
+        "volume": 5172465
+      },
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-06",
+        "high": 4495.6,
+        "low": 4171.3,
+        "close": 4460,
+        "volume": 2948019
+      }
+    },
+    {
       "symbol": "BOSCHLTD",
       "name": "Bosch Limited",
-      "marketCapCr": 150061,
+      "marketCapCr": 151905,
       "sector": "Consumer Cyclical",
       "rally": {
         "start": "2026-06-08",
@@ -316,17 +86,17 @@
       },
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 51250,
+        "end": "2026-11-06",
+        "high": 52475,
         "low": 47335,
-        "close": 50905,
-        "volume": 45903
+        "close": 51455,
+        "volume": 210737
       }
     },
     {
       "symbol": "LENSKART",
       "name": "Lenskart Solutions Limited",
-      "marketCapCr": 118647,
+      "marketCapCr": 125432,
       "sector": "Healthcare",
       "rally": {
         "start": "2026-06-22",
@@ -353,17 +123,17 @@
       },
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 686.1,
+        "end": "2026-11-06",
+        "high": 762.75,
         "low": 648.15,
-        "close": 685.25,
-        "volume": 9196420
+        "close": 723.8,
+        "volume": 42112830
       }
     },
     {
       "symbol": "APLAPOLLO",
       "name": "APL Apollo Tubes Limited",
-      "marketCapCr": 60285,
+      "marketCapCr": 60110,
       "sector": "Basic Materials",
       "rally": {
         "start": "2026-06-08",
@@ -390,17 +160,17 @@
       },
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 2193.7,
+        "end": "2026-11-06",
+        "high": 2224.4,
         "low": 2128.6,
-        "close": 2171.4,
-        "volume": 1007287
+        "close": 2163.1,
+        "volume": 2405677
       }
     },
     {
       "symbol": "GLAND",
       "name": "Gland Pharma Limited",
-      "marketCapCr": 51965,
+      "marketCapCr": 52244,
       "sector": "Healthcare",
       "rally": {
         "start": "2026-07-20",
@@ -427,17 +197,17 @@
       },
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 3170,
+        "end": "2026-11-06",
+        "high": 3208.6,
         "low": 3035,
-        "close": 3155.5,
-        "volume": 293878
+        "close": 3164.1,
+        "volume": 1837813
       }
     },
     {
       "symbol": "LALPATHLAB",
       "name": "Dr. Lal PathLabs Limited",
-      "marketCapCr": 32066,
+      "marketCapCr": 33141,
       "sector": "Healthcare",
       "rally": {
         "start": "2026-06-29",
@@ -464,17 +234,17 @@
       },
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 1939.4,
+        "end": "2026-11-06",
+        "high": 2049,
         "low": 1856.5,
-        "close": 1916.4,
-        "volume": 264353
+        "close": 1981.1,
+        "volume": 1535813
       }
     },
     {
       "symbol": "RUBICON",
       "name": "Rubicon Research Limited",
-      "marketCapCr": 28536,
+      "marketCapCr": 27326,
       "sector": "Healthcare",
       "rally": {
         "start": "2026-06-01",
@@ -501,17 +271,17 @@
       },
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 1728.5,
-        "low": 1621.6,
-        "close": 1720.2,
-        "volume": 411499
+        "end": "2026-11-06",
+        "high": 1769,
+        "low": 1620.2,
+        "close": 1652.3,
+        "volume": 962998
       }
     },
     {
       "symbol": "CEMPRO",
       "name": "Cemindia Projects Limited",
-      "marketCapCr": 23643,
+      "marketCapCr": 22926,
       "sector": "Industrials",
       "rally": {
         "start": "2026-05-18",
@@ -538,17 +308,17 @@
       },
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 1296.5,
-        "low": 1259.3,
-        "close": 1282.5,
-        "volume": 308247
+        "end": "2026-11-06",
+        "high": 1414.3,
+        "low": 1239.6,
+        "close": 1241.8,
+        "volume": 2792185
       }
     },
     {
       "symbol": "MILKYMIST",
       "name": "Milky Mist Dairy Food Limited",
-      "marketCapCr": 22680,
+      "marketCapCr": 22560,
       "sector": "Consumer Defensive",
       "rally": {
         "start": "2026-08-18",
@@ -575,17 +345,17 @@
       },
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
+        "end": "2026-11-06",
         "high": 308.8,
         "low": 287,
-        "close": 295,
-        "volume": 1484321
+        "close": 292.6,
+        "volume": 2107428
       }
     },
     {
       "symbol": "SHILPAMED",
       "name": "Shilpa Medicare Limited",
-      "marketCapCr": 17953,
+      "marketCapCr": 18639,
       "sector": "Healthcare",
       "rally": {
         "start": "2026-07-06",
@@ -612,17 +382,17 @@
       },
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 961,
+        "end": "2026-11-06",
+        "high": 969.8,
         "low": 893.05,
-        "close": 918.3,
-        "volume": 843091
+        "close": 952.2,
+        "volume": 2403035
       }
     },
     {
       "symbol": "LUMAXTECH",
       "name": "Lumax Auto Technologies Limited",
-      "marketCapCr": 14134,
+      "marketCapCr": 15781,
       "sector": "Consumer Cyclical",
       "rally": {
         "start": "2026-07-13",
@@ -649,17 +419,17 @@
       },
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 2108.9,
+        "end": "2026-11-06",
+        "high": 2340,
         "low": 1973.3,
-        "close": 2072.9,
-        "volume": 241132
+        "close": 2312.3,
+        "volume": 1093893
       }
     },
     {
       "symbol": "SAREGAMA",
       "name": "Saregama India Limited",
-      "marketCapCr": 11091,
+      "marketCapCr": 11943,
       "sector": "Communication Services",
       "rally": {
         "start": "2026-05-11",
@@ -686,17 +456,17 @@
       },
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 579.8,
+        "end": "2026-11-06",
+        "high": 671,
         "low": 541.55,
-        "close": 578,
-        "volume": 503890
+        "close": 621.45,
+        "volume": 35483569
       }
     },
     {
       "symbol": "KINGFA",
       "name": "Kingfa Science & Technology (India) Limited",
-      "marketCapCr": 9171,
+      "marketCapCr": 8176,
       "sector": "Basic Materials",
       "rally": {
         "start": "2026-07-27",
@@ -723,17 +493,17 @@
       },
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 6840,
-        "low": 6615.5,
-        "close": 6767.5,
-        "volume": 6777
+        "end": "2026-11-06",
+        "high": 6852,
+        "low": 5660,
+        "close": 6021,
+        "volume": 79521
       }
     },
     {
       "symbol": "SETL",
       "name": "Standard Engineering Technology Limited",
-      "marketCapCr": 8267,
+      "marketCapCr": 7520,
       "sector": "Industrials",
       "rally": {
         "start": "2026-06-15",
@@ -760,17 +530,17 @@
       },
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 417,
-        "low": 389.85,
-        "close": 414.15,
-        "volume": 730369
+        "end": "2026-11-06",
+        "high": 426.7,
+        "low": 376.95,
+        "close": 376.95,
+        "volume": 1844888
       }
     },
     {
       "symbol": "ISGEC",
       "name": "Isgec Heavy Engineering Limited",
-      "marketCapCr": 6811,
+      "marketCapCr": 7058,
       "sector": "Industrials",
       "rally": {
         "start": "2026-08-17",
@@ -797,17 +567,91 @@
       },
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 944.5,
+        "end": "2026-11-06",
+        "high": 975.05,
         "low": 903.9,
-        "close": 925,
-        "volume": 80010
+        "close": 958.85,
+        "volume": 156959
+      }
+    },
+    {
+      "symbol": "VADILALIND",
+      "name": "Vadilal Industries Limited",
+      "marketCapCr": 5044,
+      "sector": "Consumer Defensive",
+      "rally": {
+        "start": "2026-05-18",
+        "low": 4071.1,
+        "peakWeek": "2026-08-10",
+        "high": 8447,
+        "pct": 107.49
+      },
+      "pullback": {
+        "weeks": 10,
+        "low": 6745,
+        "retracePct": 38.89,
+        "volumeVsRally": 0.44
+      },
+      "prevWeekHigh": 7335.5,
+      "belowPeakPct": 11.3,
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 7645.5,
+        "low": 6826,
+        "close": 7492.5,
+        "volume": 58979
+      },
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-06",
+        "high": 7575,
+        "low": 6946.5,
+        "close": 7018.5,
+        "volume": 40050
+      }
+    },
+    {
+      "symbol": "TASTYBITE",
+      "name": "Tasty Bite Eatables Limited",
+      "marketCapCr": 2580,
+      "sector": "Consumer Defensive",
+      "rally": {
+        "start": "2026-06-01",
+        "low": 7134,
+        "peakWeek": "2026-08-17",
+        "high": 10544,
+        "pct": 47.8
+      },
+      "pullback": {
+        "weeks": 9,
+        "low": 8645,
+        "retracePct": 55.69,
+        "volumeVsRally": 0.24
+      },
+      "prevWeekHigh": 9334.5,
+      "belowPeakPct": 7.69,
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 9940,
+        "low": 8645,
+        "close": 9733,
+        "volume": 18347
+      },
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-06",
+        "high": 11100,
+        "low": 9388.5,
+        "close": 10065.5,
+        "volume": 35158
       }
     },
     {
       "symbol": "MACPOWER",
       "name": "Macpower CNC Machines Limited",
-      "marketCapCr": 2131,
+      "marketCapCr": 2204,
       "sector": "Industrials",
       "rally": {
         "start": "2026-07-27",
@@ -834,17 +678,54 @@
       },
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 2251,
+        "end": "2026-11-06",
+        "high": 2331.6,
         "low": 1951.5,
-        "close": 2125.5,
-        "volume": 126280
+        "close": 2188.2,
+        "volume": 307610
+      }
+    },
+    {
+      "symbol": "YUKEN",
+      "name": "Yuken India Limited",
+      "marketCapCr": 1424,
+      "sector": "Industrials",
+      "rally": {
+        "start": "2026-07-27",
+        "low": 695,
+        "peakWeek": "2026-10-05",
+        "high": 1333.9,
+        "pct": 91.93
+      },
+      "pullback": {
+        "weeks": 2,
+        "low": 1046.6,
+        "retracePct": 44.97,
+        "volumeVsRally": 0.4
+      },
+      "prevWeekHigh": 1160,
+      "belowPeakPct": 12.36,
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 1184,
+        "low": 1053,
+        "close": 1169,
+        "volume": 61930
+      },
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-06",
+        "high": 1184,
+        "low": 1028.4,
+        "close": 1048.6,
+        "volume": 39536
       }
     },
     {
       "symbol": "CONSOFINVT",
       "name": "Consolidated Finvest & Holdings Limited",
-      "marketCapCr": 1039,
+      "marketCapCr": 1036,
       "sector": "Financial Services",
       "rally": {
         "start": "2026-06-08",
@@ -871,11 +752,11 @@
       },
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
+        "end": "2026-11-06",
         "high": 328.95,
         "low": 297.05,
-        "close": 321.5,
-        "volume": 11370
+        "close": 320.5,
+        "volume": 31600
       }
     }
   ]

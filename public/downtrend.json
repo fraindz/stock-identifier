@@ -1,113 +1,13 @@
 {
-  "generatedAt": "2026-11-04T06:36:31.852Z",
+  "generatedAt": "2026-11-06T07:18:19.586Z",
   "trend": "down",
   "minMarketCapCr": 10000,
-  "universeSize": 566,
-  "failed": [
-    "SJVN",
-    "SKFINDUS",
-    "SKYGOLD",
-    "SOBHA",
-    "SOLARINDS",
-    "SONACOMS",
-    "SOUTHBANK",
-    "SPLPETRO",
-    "SRF",
-    "STARHEALTH",
-    "STLTECH",
-    "SUDEEPPHRM",
-    "SUMICHEM",
-    "SUNDARMFIN",
-    "SUNDRMFAST",
-    "SUNPHARMA",
-    "SUNTV",
-    "SUPREMEIND",
-    "SUZLON",
-    "SWANDEF",
-    "SWIGGY",
-    "SYNGENE",
-    "SYRMA",
-    "TATACHEM",
-    "TATACAP",
-    "TATACOMM",
-    "TATAELXSI",
-    "TATAINVEST",
-    "TATACONSUM",
-    "TATAPOWER",
-    "TATASTEEL",
-    "TATATECH",
-    "TBOTEK",
-    "TCS",
-    "TDPOWERSYS",
-    "TECHM",
-    "TECHNOE",
-    "TEGA",
-    "TENNIND",
-    "THANGAMAYL",
-    "THELEELA",
-    "THERMAX",
-    "TI",
-    "TIINDIA",
-    "TIMKEN",
-    "TITAN",
-    "TMCV",
-    "TMB",
-    "TMPV",
-    "TORNTPHARM",
-    "TORNTPOWER",
-    "TRAVELFOOD",
-    "TRENT",
-    "TRIDENT",
-    "TRITURBINE",
-    "TVSHLTD",
-    "TVSMOTOR",
-    "UBL",
-    "UCOBANK",
-    "UJJIVANSFB",
-    "ULTRACEMCO",
-    "UNIONBANK",
-    "UNITDSPR",
-    "UNOMINDA",
-    "UPL",
-    "URBANCO",
-    "USHAMART",
-    "UTIAMC",
-    "UTLSOLAR",
-    "VAML",
-    "VARROC",
-    "VBL",
-    "VEDPOWER",
-    "VEDL",
-    "VENTIVE",
-    "VGUARD",
-    "VIJAYA",
-    "VINATIORGA",
-    "VISL",
-    "VIYASH",
-    "VMM",
-    "VOGL",
-    "VOLTAMP",
-    "VOLTAS",
-    "VTL",
-    "WAAREEENER",
-    "WABAG",
-    "WELCORP",
-    "WELSPUNLIV",
-    "WHIRLPOOL",
-    "WIPRO",
-    "WOCKPHARMA",
-    "YESBANK",
-    "ZENSARTECH",
-    "ZENTEC",
-    "ZETWERK",
-    "ZFCVINDIA",
-    "ZYDUSLIFE",
-    "ZYDUSWELL"
-  ],
+  "universeSize": 568,
+  "failed": [],
   "weeks": {
     "currentWeek": {
       "start": "2026-11-02",
-      "end": "2026-11-04"
+      "end": "2026-11-06"
     },
     "lastWeek": {
       "start": "2026-10-26",
@@ -126,15 +26,15 @@
     {
       "symbol": "COALINDIA",
       "name": "Coal India Limited",
-      "marketCapCr": 244938,
+      "marketCapCr": 245246,
       "sector": "Energy",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
+        "end": "2026-11-06",
         "high": 411,
-        "low": 395,
-        "close": 397.45,
-        "volume": 26854414
+        "low": 392,
+        "close": 398.1,
+        "volume": 46406077
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -164,15 +64,15 @@
     {
       "symbol": "NESTLEIND",
       "name": "Nestlé India Limited",
-      "marketCapCr": 237896,
+      "marketCapCr": 243141,
       "sector": "Consumer Defensive",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
+        "end": "2026-11-06",
         "high": 1272.8,
         "low": 1170.1,
-        "close": 1233.2,
-        "volume": 6312610
+        "close": 1261.3,
+        "volume": 7888741
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -202,15 +102,15 @@
     {
       "symbol": "SHRIRAMFIN",
       "name": "Shriram Finance Limited",
-      "marketCapCr": 209660,
+      "marketCapCr": 220967,
       "sector": "Financial Services",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 911.4,
+        "end": "2026-11-06",
+        "high": 974.7,
         "low": 829.6,
-        "close": 891,
-        "volume": 18716289
+        "close": 938.75,
+        "volume": 35440239
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -240,15 +140,15 @@
     {
       "symbol": "PIDILITIND",
       "name": "Pidilite Industries Limited",
-      "marketCapCr": 152812,
+      "marketCapCr": 157242,
       "sector": "Basic Materials",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 1528.5,
+        "end": "2026-11-06",
+        "high": 1548.4,
         "low": 1456,
-        "close": 1500.1,
-        "volume": 2195958
+        "close": 1543,
+        "volume": 2856261
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -278,15 +178,15 @@
     {
       "symbol": "PFC",
       "name": "Power Finance Corporation Limited",
-      "marketCapCr": 106131,
+      "marketCapCr": 107715,
       "sector": "Financial Services",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 323,
+        "end": "2026-11-06",
+        "high": 331.8,
         "low": 314.45,
-        "close": 321.5,
-        "volume": 16254329
+        "close": 326.4,
+        "volume": 42608713
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -316,15 +216,15 @@
     {
       "symbol": "IRFC",
       "name": "Indian Railway Finance Corporation Limited",
-      "marketCapCr": 100758,
+      "marketCapCr": 103385,
       "sector": "Financial Services",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 77.83,
+        "end": "2026-11-06",
+        "high": 80.43,
         "low": 73.4,
-        "close": 77.05,
-        "volume": 21717756
+        "close": 79.12,
+        "volume": 42333272
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -354,15 +254,15 @@
     {
       "symbol": "ASHOKLEY",
       "name": "Ashok Leyland Limited",
-      "marketCapCr": 90070,
+      "marketCapCr": 98058,
       "sector": "Industrials",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 156.13,
+        "end": "2026-11-06",
+        "high": 171.94,
         "low": 145.66,
-        "close": 153.29,
-        "volume": 43949428
+        "close": 167.11,
+        "volume": 166211988
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -392,15 +292,15 @@
     {
       "symbol": "ICICIGI",
       "name": "ICICI Lombard General Insurance Company Limited",
-      "marketCapCr": 79295,
+      "marketCapCr": 81139,
       "sector": "Financial Services",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
+        "end": "2026-11-06",
         "high": 1627.5,
         "low": 1533,
-        "close": 1593.8,
-        "volume": 1930547
+        "close": 1623.4,
+        "volume": 2599141
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -430,15 +330,15 @@
     {
       "symbol": "RECLTD",
       "name": "REC Limited",
-      "marketCapCr": 75587,
+      "marketCapCr": 77641,
       "sector": "Financial Services",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 288.95,
+        "end": "2026-11-06",
+        "high": 300.9,
         "low": 281.9,
-        "close": 286.75,
-        "volume": 8344466
+        "close": 294.6,
+        "volume": 21859444
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -468,15 +368,15 @@
     {
       "symbol": "DIXON",
       "name": "Dixon Technologies (India) Limited",
-      "marketCapCr": 74995,
+      "marketCapCr": 76537,
       "sector": "Technology",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 12498,
+        "end": "2026-11-06",
+        "high": 12726,
         "low": 11057,
-        "close": 12264,
-        "volume": 2296851
+        "close": 12505,
+        "volume": 2859206
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -506,15 +406,15 @@
     {
       "symbol": "MAZDOCK",
       "name": "Mazagon Dock Shipbuilders Limited",
-      "marketCapCr": 73064,
+      "marketCapCr": 73246,
       "sector": "Industrials",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 1831.5,
+        "end": "2026-11-06",
+        "high": 1864.8,
         "low": 1710.5,
-        "close": 1808.1,
-        "volume": 3849392
+        "close": 1815.7,
+        "volume": 5342776
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -544,15 +444,15 @@
     {
       "symbol": "AUBANK",
       "name": "AU Small Finance Bank Limited",
-      "marketCapCr": 66893,
+      "marketCapCr": 68676,
       "sector": "Financial Services",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 908,
+        "end": "2026-11-06",
+        "high": 947.65,
         "low": 867.9,
-        "close": 892.65,
-        "volume": 8542169
+        "close": 914.8,
+        "volume": 12048226
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -582,15 +482,15 @@
     {
       "symbol": "HAVELLS",
       "name": "Havells India Limited",
-      "marketCapCr": 66584,
+      "marketCapCr": 68103,
       "sector": "Industrials",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 1062,
+        "end": "2026-11-06",
+        "high": 1092.9,
         "low": 1012.7,
-        "close": 1061.3,
-        "volume": 1461041
+        "close": 1085.1,
+        "volume": 3465139
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -620,15 +520,15 @@
     {
       "symbol": "BAJAJHFL",
       "name": "Bajaj Housing Finance Limited",
-      "marketCapCr": 66274,
+      "marketCapCr": 66599,
       "sector": "Financial Services",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 79.67,
+        "end": "2026-11-06",
+        "high": 83.75,
         "low": 77.6,
-        "close": 79.4,
-        "volume": 6182953
+        "close": 79.88,
+        "volume": 16189052
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -658,15 +558,15 @@
     {
       "symbol": "IDFCFIRSTB",
       "name": "IDFC First Bank Limited",
-      "marketCapCr": 63684,
+      "marketCapCr": 65538,
       "sector": "Financial Services",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 74.22,
+        "end": "2026-11-06",
+        "high": 77.97,
         "low": 71.9,
-        "close": 73.85,
-        "volume": 39737589
+        "close": 76.1,
+        "volume": 93731014
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -696,15 +596,15 @@
     {
       "symbol": "ICICILIFE",
       "name": "ICICI Life Insurance Limited",
-      "marketCapCr": 61010,
+      "marketCapCr": 62708,
       "sector": "Financial Services",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 425.55,
+        "end": "2026-11-06",
+        "high": 436.3,
         "low": 404.65,
-        "close": 420.7,
-        "volume": 3960339
+        "close": 431.65,
+        "volume": 7279790
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -732,17 +632,55 @@
       }
     },
     {
-      "symbol": "BERGEPAINT",
-      "name": "Berger Paints India Limited",
-      "marketCapCr": 56032,
+      "symbol": "WELCORP",
+      "name": "Welspun Corp Limited",
+      "marketCapCr": 57371,
       "sector": "Basic Materials",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 485.6,
+        "end": "2026-11-06",
+        "high": 2462,
+        "low": 2168.4,
+        "close": 2173.5,
+        "volume": 5238274
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 2621.9,
+        "low": 2303,
+        "close": 2341.6,
+        "volume": 6961965
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 2643.5,
+        "low": 2330.1,
+        "close": 2388.7,
+        "volume": 4962034
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 2818,
+        "low": 2450.2,
+        "close": 2571.5,
+        "volume": 6913729
+      }
+    },
+    {
+      "symbol": "BERGEPAINT",
+      "name": "Berger Paints India Limited",
+      "marketCapCr": 55455,
+      "sector": "Basic Materials",
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-06",
+        "high": 499.5,
         "low": 462.4,
-        "close": 480.35,
-        "volume": 274918
+        "close": 475.3,
+        "volume": 1094936
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -772,15 +710,15 @@
     {
       "symbol": "LINDEINDIA",
       "name": "Linde India Limited",
-      "marketCapCr": 53686,
+      "marketCapCr": 54433,
       "sector": "Basic Materials",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 6298,
+        "end": "2026-11-06",
+        "high": 6474,
         "low": 5628.5,
-        "close": 6297,
-        "volume": 109202
+        "close": 6428,
+        "volume": 283755
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -810,15 +748,15 @@
     {
       "symbol": "MRF",
       "name": "MRF Limited",
-      "marketCapCr": 50037,
+      "marketCapCr": 52739,
       "sector": "Consumer Cyclical",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 118220,
+        "end": "2026-11-06",
+        "high": 126490,
         "low": 116685,
-        "close": 117990,
-        "volume": 3601
+        "close": 124300,
+        "volume": 25661
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -846,55 +784,93 @@
       }
     },
     {
-      "symbol": "FACT",
-      "name": "The Fertilisers and Chemicals Travancore Limited",
-      "marketCapCr": 48928,
-      "sector": "Basic Materials",
+      "symbol": "SUZLON",
+      "name": "Suzlon Energy Limited",
+      "marketCapCr": 52374,
+      "sector": "Industrials",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 795,
-        "low": 665.15,
-        "close": 755.55,
-        "volume": 1397799
+        "end": "2026-11-06",
+        "high": 38.69,
+        "low": 33.34,
+        "close": 38.09,
+        "volume": 394696486
       },
       "lastWeek": {
         "start": "2026-10-26",
         "end": "2026-10-30",
-        "high": 693.8,
-        "low": 658.8,
-        "close": 670.1,
-        "volume": 243906
+        "high": 37.87,
+        "low": 33.15,
+        "close": 33.9,
+        "volume": 707383342
       },
       "oneWeekAgo": {
         "start": "2026-10-19",
         "end": "2026-10-23",
-        "high": 737.55,
-        "low": 664.15,
-        "close": 670.7,
-        "volume": 218078
+        "high": 41.58,
+        "low": 36.88,
+        "close": 37.4,
+        "volume": 254487450
       },
       "twoWeeksAgo": {
         "start": "2026-10-12",
         "end": "2026-10-16",
-        "high": 749.95,
-        "low": 719.15,
-        "close": 733.2,
-        "volume": 249888
+        "high": 42,
+        "low": 38.15,
+        "close": 42,
+        "volume": 445103396
+      }
+    },
+    {
+      "symbol": "YESBANK",
+      "name": "Yes Bank Limited",
+      "marketCapCr": 51418,
+      "sector": "Financial Services",
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-06",
+        "high": 16.46,
+        "low": 15.14,
+        "close": 16.35,
+        "volume": 725680800
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 16.08,
+        "low": 15.1,
+        "close": 15.15,
+        "volume": 605864247
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 17.73,
+        "low": 15.64,
+        "close": 15.8,
+        "volume": 691877539
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 21.4,
+        "low": 16.96,
+        "close": 17.5,
+        "volume": 1255289841
       }
     },
     {
       "symbol": "PIRAMALFIN",
       "name": "Piramal Finance Limited",
-      "marketCapCr": 45943,
+      "marketCapCr": 49709,
       "sector": "Financial Services",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 1948.8,
+        "end": "2026-11-06",
+        "high": 2132,
         "low": 1820.9,
-        "close": 1947.2,
-        "volume": 710136
+        "close": 2103,
+        "volume": 2115358
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -922,17 +898,55 @@
       }
     },
     {
+      "symbol": "FACT",
+      "name": "The Fertilisers and Chemicals Travancore Limited",
+      "marketCapCr": 48249,
+      "sector": "Basic Materials",
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-06",
+        "high": 795,
+        "low": 665.15,
+        "close": 745.95,
+        "volume": 1881461
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 693.8,
+        "low": 658.8,
+        "close": 670.1,
+        "volume": 243906
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 737.55,
+        "low": 664.15,
+        "close": 670.7,
+        "volume": 218078
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 749.95,
+        "low": 719.15,
+        "close": 733.2,
+        "volume": 249888
+      }
+    },
+    {
       "symbol": "360ONE",
       "name": "360 One Wam Limited",
-      "marketCapCr": 45725,
+      "marketCapCr": 47979,
       "sector": "Financial Services",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 1089.55,
+        "end": "2026-11-06",
+        "high": 1148.95,
         "low": 981.9,
-        "close": 1066.15,
-        "volume": 623924
+        "close": 1118,
+        "volume": 4788071
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -960,17 +974,93 @@
       }
     },
     {
+      "symbol": "AIIL",
+      "name": "Authum Investment & Infrastructure Limited",
+      "marketCapCr": 47310,
+      "sector": "Financial Services",
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-06",
+        "high": 568,
+        "low": 488,
+        "close": 556.8,
+        "volume": 623678
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 505,
+        "low": 476,
+        "close": 492.15,
+        "volume": 544812
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 570.2,
+        "low": 488.7,
+        "close": 496.75,
+        "volume": 587677
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 575.25,
+        "low": 536.85,
+        "close": 571.9,
+        "volume": 1187285
+      }
+    },
+    {
+      "symbol": "SUNDARMFIN",
+      "name": "Sundaram Finance Limited",
+      "marketCapCr": 46005,
+      "sector": "Financial Services",
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-06",
+        "high": 4224.8,
+        "low": 3872.5,
+        "close": 4178.2,
+        "volume": 277821
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 4001.2,
+        "low": 3816,
+        "close": 3941,
+        "volume": 261545
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 4267,
+        "low": 3925,
+        "close": 3981.2,
+        "volume": 152508
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 4288.4,
+        "low": 4113.6,
+        "close": 4236.8,
+        "volume": 171858
+      }
+    },
+    {
       "symbol": "COLPAL",
       "name": "Colgate-Palmolive (India) Limited",
-      "marketCapCr": 44769,
+      "marketCapCr": 45049,
       "sector": "Consumer Defensive",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 1674.4,
+        "end": "2026-11-06",
+        "high": 1699.9,
         "low": 1563.9,
-        "close": 1643.4,
-        "volume": 850960
+        "close": 1655,
+        "volume": 2791106
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -1000,15 +1090,15 @@
     {
       "symbol": "POLICYBZR",
       "name": "PB Fintech Limited",
-      "marketCapCr": 44553,
+      "marketCapCr": 44530,
       "sector": "Financial Services",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
+        "end": "2026-11-06",
         "high": 1017.4,
         "low": 916,
-        "close": 963.6,
-        "volume": 15769831
+        "close": 963,
+        "volume": 21461610
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -1036,55 +1126,17 @@
       }
     },
     {
-      "symbol": "AIIL",
-      "name": "Authum Investment & Infrastructure Limited",
-      "marketCapCr": 44330,
-      "sector": "Financial Services",
-      "currentWeek": {
-        "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 524,
-        "low": 488,
-        "close": 521.55,
-        "volume": 298018
-      },
-      "lastWeek": {
-        "start": "2026-10-26",
-        "end": "2026-10-30",
-        "high": 505,
-        "low": 476,
-        "close": 492.15,
-        "volume": 544812
-      },
-      "oneWeekAgo": {
-        "start": "2026-10-19",
-        "end": "2026-10-23",
-        "high": 570.2,
-        "low": 488.7,
-        "close": 496.75,
-        "volume": 587677
-      },
-      "twoWeeksAgo": {
-        "start": "2026-10-12",
-        "end": "2026-10-16",
-        "high": 575.25,
-        "low": 536.85,
-        "close": 571.9,
-        "volume": 1187285
-      }
-    },
-    {
       "symbol": "MFSL",
       "name": "Max Financial Services Limited",
-      "marketCapCr": 43063,
+      "marketCapCr": 43581,
       "sector": "Financial Services",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 1253.1,
+        "end": "2026-11-06",
+        "high": 1275.8,
         "low": 1172.6,
-        "close": 1249.4,
-        "volume": 1553221
+        "close": 1263.1,
+        "volume": 3543904
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -1112,17 +1164,55 @@
       }
     },
     {
+      "symbol": "VMM",
+      "name": "Vishal Mega Mart Limited",
+      "marketCapCr": 43358,
+      "sector": "Consumer Cyclical",
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-06",
+        "high": 93.74,
+        "low": 84.16,
+        "close": 92.55,
+        "volume": 23662023
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 88.99,
+        "low": 84.33,
+        "close": 84.4,
+        "volume": 39784324
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 96.2,
+        "low": 84.9,
+        "close": 87.35,
+        "volume": 90651366
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 98.13,
+        "low": 94.8,
+        "close": 96,
+        "volume": 42971467
+      }
+    },
+    {
       "symbol": "AEGISLOG",
       "name": "Aegis Logistics Limited",
-      "marketCapCr": 42218,
+      "marketCapCr": 39726,
       "sector": "Energy",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 1254.1,
+        "end": "2026-11-06",
+        "high": 1259.1,
         "low": 1084.1,
-        "close": 1202,
-        "volume": 14212542
+        "close": 1131,
+        "volume": 16022126
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -1152,15 +1242,15 @@
     {
       "symbol": "RVNL",
       "name": "Rail Vikas Nigam Limited",
-      "marketCapCr": 39121,
+      "marketCapCr": 39584,
       "sector": "Industrials",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 192.3,
+        "end": "2026-11-06",
+        "high": 196.1,
         "low": 180.38,
-        "close": 187.55,
-        "volume": 19220266
+        "close": 189.75,
+        "volume": 30583822
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -1188,93 +1278,17 @@
       }
     },
     {
-      "symbol": "ASTRAL",
-      "name": "Astral Limited",
-      "marketCapCr": 37968,
-      "sector": "Industrials",
-      "currentWeek": {
-        "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 1414.9,
-        "low": 1336.9,
-        "close": 1413.3,
-        "volume": 552519
-      },
-      "lastWeek": {
-        "start": "2026-10-26",
-        "end": "2026-10-30",
-        "high": 1397.1,
-        "low": 1333,
-        "close": 1341.9,
-        "volume": 2077985
-      },
-      "oneWeekAgo": {
-        "start": "2026-10-19",
-        "end": "2026-10-23",
-        "high": 1438.2,
-        "low": 1347.3,
-        "close": 1357,
-        "volume": 1399034
-      },
-      "twoWeeksAgo": {
-        "start": "2026-10-12",
-        "end": "2026-10-16",
-        "high": 1469.4,
-        "low": 1412.8,
-        "close": 1427.4,
-        "volume": 1660400
-      }
-    },
-    {
-      "symbol": "BDL",
-      "name": "Bharat Dynamics Limited",
-      "marketCapCr": 37943,
-      "sector": "Industrials",
-      "currentWeek": {
-        "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 1044.8,
-        "low": 975.2,
-        "close": 1035.9,
-        "volume": 2839724
-      },
-      "lastWeek": {
-        "start": "2026-10-26",
-        "end": "2026-10-30",
-        "high": 1047.7,
-        "low": 974,
-        "close": 974,
-        "volume": 5033807
-      },
-      "oneWeekAgo": {
-        "start": "2026-10-19",
-        "end": "2026-10-23",
-        "high": 1114.7,
-        "low": 1000,
-        "close": 1017.5,
-        "volume": 2865019
-      },
-      "twoWeeksAgo": {
-        "start": "2026-10-12",
-        "end": "2026-10-16",
-        "high": 1141.8,
-        "low": 1076,
-        "close": 1114.7,
-        "volume": 3513135
-      }
-    },
-    {
       "symbol": "M&MFIN",
       "name": "Mahindra & Mahindra Financial Services Limited",
-      "marketCapCr": 37707,
+      "marketCapCr": 38444,
       "sector": "Financial Services",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 273.3,
+        "end": "2026-11-06",
+        "high": 293.4,
         "low": 259.65,
-        "close": 271.2,
-        "volume": 5937517
+        "close": 276.5,
+        "volume": 19294098
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -1302,17 +1316,55 @@
       }
     },
     {
+      "symbol": "BDL",
+      "name": "Bharat Dynamics Limited",
+      "marketCapCr": 37875,
+      "sector": "Industrials",
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-06",
+        "high": 1100.8,
+        "low": 975.2,
+        "close": 1034.5,
+        "volume": 6123891
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 1047.7,
+        "low": 974,
+        "close": 974,
+        "volume": 5033807
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 1114.7,
+        "low": 1000,
+        "close": 1017.5,
+        "volume": 2865019
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 1141.8,
+        "low": 1076,
+        "close": 1114.7,
+        "volume": 3513135
+      }
+    },
+    {
       "symbol": "IRCTC",
       "name": "Indian Railway Catering & Tourism Corporation Limited",
-      "marketCapCr": 35908,
+      "marketCapCr": 36428,
       "sector": "Consumer Cyclical",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 453.6,
+        "end": "2026-11-06",
+        "high": 468,
         "low": 437.55,
-        "close": 447.8,
-        "volume": 1596213
+        "close": 454.8,
+        "volume": 4274402
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -1340,17 +1392,55 @@
       }
     },
     {
-      "symbol": "GODREJIND",
-      "name": "Godrej Industries Limited",
-      "marketCapCr": 32580,
+      "symbol": "ASTRAL",
+      "name": "Astral Limited",
+      "marketCapCr": 33192,
       "sector": "Industrials",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 980.5,
+        "end": "2026-11-06",
+        "high": 1438,
+        "low": 1215.5,
+        "close": 1235.9,
+        "volume": 5102235
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 1397.1,
+        "low": 1333,
+        "close": 1341.9,
+        "volume": 2077985
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 1438.2,
+        "low": 1347.3,
+        "close": 1357,
+        "volume": 1399034
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 1469.4,
+        "low": 1412.8,
+        "close": 1427.4,
+        "volume": 1660400
+      }
+    },
+    {
+      "symbol": "GODREJIND",
+      "name": "Godrej Industries Limited",
+      "marketCapCr": 32075,
+      "sector": "Industrials",
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-06",
+        "high": 983,
         "low": 896,
-        "close": 968.9,
-        "volume": 692286
+        "close": 952.4,
+        "volume": 777013
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -1380,15 +1470,15 @@
     {
       "symbol": "COCHINSHIP",
       "name": "Cochin Shipyard Limited",
-      "marketCapCr": 32185,
+      "marketCapCr": 31693,
       "sector": "Industrials",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 1232.8,
+        "end": "2026-11-06",
+        "high": 1260,
         "low": 1118.5,
-        "close": 1223.2,
-        "volume": 2485854
+        "close": 1204.5,
+        "volume": 3923259
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -1418,15 +1508,15 @@
     {
       "symbol": "HUDCO",
       "name": "Housing and Urban Development Corporation Limited",
-      "marketCapCr": 29588,
+      "marketCapCr": 30991,
       "sector": "Financial Services",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 148.8,
+        "end": "2026-11-06",
+        "high": 162.95,
         "low": 142.69,
-        "close": 147.76,
-        "volume": 3718150
+        "close": 154.62,
+        "volume": 21308645
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -1454,93 +1544,17 @@
       }
     },
     {
-      "symbol": "REDINGTON",
-      "name": "Redington Limited",
-      "marketCapCr": 27006,
-      "sector": "Technology",
-      "currentWeek": {
-        "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 347.6,
-        "low": 315,
-        "close": 345.5,
-        "volume": 6116643
-      },
-      "lastWeek": {
-        "start": "2026-10-26",
-        "end": "2026-10-30",
-        "high": 372.4,
-        "low": 323.05,
-        "close": 326.95,
-        "volume": 19889254
-      },
-      "oneWeekAgo": {
-        "start": "2026-10-19",
-        "end": "2026-10-23",
-        "high": 387.5,
-        "low": 354.05,
-        "close": 359.1,
-        "volume": 15332799
-      },
-      "twoWeeksAgo": {
-        "start": "2026-10-12",
-        "end": "2026-10-16",
-        "high": 411.5,
-        "low": 380.25,
-        "close": 383.5,
-        "volume": 19171341
-      }
-    },
-    {
-      "symbol": "ESCORTS",
-      "name": "Escorts Kubota Limited",
-      "marketCapCr": 26872,
-      "sector": "Industrials",
-      "currentWeek": {
-        "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 2616.5,
-        "low": 2376.4,
-        "close": 2446.4,
-        "volume": 812137
-      },
-      "lastWeek": {
-        "start": "2026-10-26",
-        "end": "2026-10-30",
-        "high": 2720.5,
-        "low": 2565,
-        "close": 2576.4,
-        "volume": 417043
-      },
-      "oneWeekAgo": {
-        "start": "2026-10-19",
-        "end": "2026-10-23",
-        "high": 2740,
-        "low": 2595,
-        "close": 2627,
-        "volume": 181835
-      },
-      "twoWeeksAgo": {
-        "start": "2026-10-12",
-        "end": "2026-10-16",
-        "high": 2764.9,
-        "low": 2640,
-        "close": 2751,
-        "volume": 175161
-      }
-    },
-    {
       "symbol": "CENTRALBK",
       "name": "Central Bank of India",
-      "marketCapCr": 26792,
+      "marketCapCr": 27471,
       "sector": "Financial Services",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 29.79,
+        "end": "2026-11-06",
+        "high": 30.85,
         "low": 28.77,
-        "close": 29.6,
-        "volume": 12277946
+        "close": 30.33,
+        "volume": 23025862
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -1568,17 +1582,93 @@
       }
     },
     {
-      "symbol": "HONAUT",
-      "name": "Honeywell Automation India Limited",
-      "marketCapCr": 26228,
+      "symbol": "TATATECH",
+      "name": "Tata Technologies Limited",
+      "marketCapCr": 27126,
+      "sector": "Technology",
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-06",
+        "high": 677.8,
+        "low": 645.05,
+        "close": 668.3,
+        "volume": 2536775
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 674.7,
+        "low": 641.5,
+        "close": 647.1,
+        "volume": 2718278
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 725.45,
+        "low": 653.25,
+        "close": 657.35,
+        "volume": 2488007
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 807.55,
+        "low": 707.7,
+        "close": 723.85,
+        "volume": 11151974
+      }
+    },
+    {
+      "symbol": "ESCORTS",
+      "name": "Escorts Kubota Limited",
+      "marketCapCr": 26745,
       "sector": "Industrials",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 29840,
-        "low": 29055,
-        "close": 29645,
-        "volume": 7120
+        "end": "2026-11-06",
+        "high": 2616.5,
+        "low": 2376.4,
+        "close": 2428.6,
+        "volume": 993545
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 2720.5,
+        "low": 2565,
+        "close": 2576.4,
+        "volume": 417043
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 2740,
+        "low": 2595,
+        "close": 2627,
+        "volume": 181835
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 2764.9,
+        "low": 2640,
+        "close": 2751,
+        "volume": 175161
+      }
+    },
+    {
+      "symbol": "HONAUT",
+      "name": "Honeywell Automation India Limited",
+      "marketCapCr": 26608,
+      "sector": "Industrials",
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-06",
+        "high": 30645,
+        "low": 28800,
+        "close": 30090,
+        "volume": 33398
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -1606,93 +1696,17 @@
       }
     },
     {
-      "symbol": "NIACL",
-      "name": "The New India Assurance Company Limited",
-      "marketCapCr": 26208,
-      "sector": "Financial Services",
-      "currentWeek": {
-        "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 161.55,
-        "low": 145.18,
-        "close": 158.9,
-        "volume": 4681089
-      },
-      "lastWeek": {
-        "start": "2026-10-26",
-        "end": "2026-10-30",
-        "high": 168.29,
-        "low": 157.3,
-        "close": 158.94,
-        "volume": 4758306
-      },
-      "oneWeekAgo": {
-        "start": "2026-10-19",
-        "end": "2026-10-23",
-        "high": 182.33,
-        "low": 157.76,
-        "close": 159.8,
-        "volume": 3417745
-      },
-      "twoWeeksAgo": {
-        "start": "2026-10-12",
-        "end": "2026-10-16",
-        "high": 195,
-        "low": 162.6,
-        "close": 179.57,
-        "volume": 126908243
-      }
-    },
-    {
-      "symbol": "AEGISVOPAK",
-      "name": "Aegis Vopak Terminals Limited",
-      "marketCapCr": 26056,
-      "sector": "Energy",
-      "currentWeek": {
-        "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 239.47,
-        "low": 222.22,
-        "close": 235.45,
-        "volume": 776568
-      },
-      "lastWeek": {
-        "start": "2026-10-26",
-        "end": "2026-10-30",
-        "high": 253.45,
-        "low": 218.35,
-        "close": 220.95,
-        "volume": 4448876
-      },
-      "oneWeekAgo": {
-        "start": "2026-10-19",
-        "end": "2026-10-23",
-        "high": 275,
-        "low": 240,
-        "close": 242.7,
-        "volume": 3385995
-      },
-      "twoWeeksAgo": {
-        "start": "2026-10-12",
-        "end": "2026-10-16",
-        "high": 289.3,
-        "low": 274.15,
-        "close": 276,
-        "volume": 2580022
-      }
-    },
-    {
       "symbol": "APOLLOTYRE",
       "name": "Apollo Tyres Limited",
-      "marketCapCr": 25104,
+      "marketCapCr": 26239,
       "sector": "Consumer Cyclical",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 403.5,
+        "end": "2026-11-06",
+        "high": 416.3,
         "low": 382,
-        "close": 396.5,
-        "volume": 770522
+        "close": 414.45,
+        "volume": 2124759
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -1720,55 +1734,169 @@
       }
     },
     {
-      "symbol": "NETWEB",
-      "name": "Netweb Technologies India Limited",
-      "marketCapCr": 24542,
-      "sector": "Technology",
+      "symbol": "ZFCVINDIA",
+      "name": "ZF Commercial Vehicle Control Systems India Limited",
+      "marketCapCr": 25995,
+      "sector": "Consumer Cyclical",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 4176.6,
-        "low": 3992,
-        "close": 4122.9,
-        "volume": 2698865
+        "end": "2026-11-06",
+        "high": 2345.2,
+        "low": 2088.3,
+        "close": 2280.9,
+        "volume": 276977
       },
       "lastWeek": {
         "start": "2026-10-26",
         "end": "2026-10-30",
-        "high": 4534.8,
-        "low": 4106.1,
-        "close": 4172.6,
-        "volume": 9002936
+        "high": 2164,
+        "low": 2053,
+        "close": 2101.5,
+        "volume": 166778
       },
       "oneWeekAgo": {
         "start": "2026-10-19",
         "end": "2026-10-23",
-        "high": 4784,
-        "low": 4240,
-        "close": 4335.8,
-        "volume": 5483555
+        "high": 2172.7,
+        "low": 2064.9,
+        "close": 2132.7,
+        "volume": 437396
       },
       "twoWeeksAgo": {
         "start": "2026-10-12",
         "end": "2026-10-16",
-        "high": 5130,
-        "low": 4657.3,
-        "close": 4731.7,
-        "volume": 9640746
+        "high": 2185,
+        "low": 2082.2,
+        "close": 2157,
+        "volume": 440281
+      }
+    },
+    {
+      "symbol": "NIACL",
+      "name": "The New India Assurance Company Limited",
+      "marketCapCr": 25737,
+      "sector": "Financial Services",
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-06",
+        "high": 164.01,
+        "low": 145.18,
+        "close": 156.1,
+        "volume": 6765095
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 168.29,
+        "low": 157.3,
+        "close": 158.94,
+        "volume": 4758306
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 182.33,
+        "low": 157.76,
+        "close": 159.8,
+        "volume": 3417745
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 195,
+        "low": 162.6,
+        "close": 179.57,
+        "volume": 126908243
+      }
+    },
+    {
+      "symbol": "REDINGTON",
+      "name": "Redington Limited",
+      "marketCapCr": 25427,
+      "sector": "Technology",
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-06",
+        "high": 378.95,
+        "low": 315,
+        "close": 324.85,
+        "volume": 41482570
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 372.4,
+        "low": 323.05,
+        "close": 326.95,
+        "volume": 19889254
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 387.5,
+        "low": 354.05,
+        "close": 359.1,
+        "volume": 15332799
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 411.5,
+        "low": 380.25,
+        "close": 383.5,
+        "volume": 19171341
+      }
+    },
+    {
+      "symbol": "AEGISVOPAK",
+      "name": "Aegis Vopak Terminals Limited",
+      "marketCapCr": 25323,
+      "sector": "Energy",
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-06",
+        "high": 240.9,
+        "low": 222.22,
+        "close": 228.5,
+        "volume": 2195377
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 253.45,
+        "low": 218.35,
+        "close": 220.95,
+        "volume": 4448876
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 275,
+        "low": 240,
+        "close": 242.7,
+        "volume": 3385995
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 289.3,
+        "low": 274.15,
+        "close": 276,
+        "volume": 2580022
       }
     },
     {
       "symbol": "ABSLAMC",
       "name": "Aditya Birla Sun Life AMC Limited",
-      "marketCapCr": 24310,
+      "marketCapCr": 25259,
       "sector": "Financial Services",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 841.05,
+        "end": "2026-11-06",
+        "high": 912,
         "low": 800.5,
-        "close": 839.35,
-        "volume": 440903
+        "close": 871.05,
+        "volume": 1222600
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -1798,15 +1926,15 @@
     {
       "symbol": "HATSUN",
       "name": "Hatsun Agro Product Limited",
-      "marketCapCr": 23351,
+      "marketCapCr": 23639,
       "sector": "Consumer Defensive",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
+        "end": "2026-11-06",
         "high": 1084.05,
         "low": 982.5,
-        "close": 1048.3,
-        "volume": 67645
+        "close": 1062.05,
+        "volume": 134563
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -1834,55 +1962,17 @@
       }
     },
     {
-      "symbol": "RRKABEL",
-      "name": "R R Kabel Limited",
-      "marketCapCr": 22700,
-      "sector": "Industrials",
-      "currentWeek": {
-        "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 2064.4,
-        "low": 1916,
-        "close": 2004.4,
-        "volume": 1819948
-      },
-      "lastWeek": {
-        "start": "2026-10-26",
-        "end": "2026-10-30",
-        "high": 2269.4,
-        "low": 2000.1,
-        "close": 2055.7,
-        "volume": 3036214
-      },
-      "oneWeekAgo": {
-        "start": "2026-10-19",
-        "end": "2026-10-23",
-        "high": 2398.9,
-        "low": 2126,
-        "close": 2140,
-        "volume": 1572967
-      },
-      "twoWeeksAgo": {
-        "start": "2026-10-12",
-        "end": "2026-10-16",
-        "high": 2769,
-        "low": 2365.8,
-        "close": 2388,
-        "volume": 1992164
-      }
-    },
-    {
       "symbol": "AMBER",
       "name": "Amber Enterprises India Limited",
-      "marketCapCr": 22594,
+      "marketCapCr": 22513,
       "sector": "Consumer Cyclical",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 6448,
+        "end": "2026-11-06",
+        "high": 6537,
         "low": 5874,
-        "close": 6404.5,
-        "volume": 410675
+        "close": 6384,
+        "volume": 693098
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -1910,17 +2000,93 @@
       }
     },
     {
+      "symbol": "SUNDRMFAST",
+      "name": "Sundram Fasteners Limited",
+      "marketCapCr": 22419,
+      "sector": "Consumer Cyclical",
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-06",
+        "high": 1098,
+        "low": 1037.3,
+        "close": 1067.5,
+        "volume": 276761
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 1085.2,
+        "low": 991.9,
+        "close": 1034.7,
+        "volume": 848919
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 1119.5,
+        "low": 1009.8,
+        "close": 1040.9,
+        "volume": 230184
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 1180,
+        "low": 1102.5,
+        "close": 1110.9,
+        "volume": 463455
+      }
+    },
+    {
+      "symbol": "NETWEB",
+      "name": "Netweb Technologies India Limited",
+      "marketCapCr": 22220,
+      "sector": "Technology",
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-06",
+        "high": 4178.7,
+        "low": 3716.1,
+        "close": 3738.3,
+        "volume": 5789621
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 4534.8,
+        "low": 4106.1,
+        "close": 4172.6,
+        "volume": 9002936
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 4784,
+        "low": 4240,
+        "close": 4335.8,
+        "volume": 5483555
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 5130,
+        "low": 4657.3,
+        "close": 4731.7,
+        "volume": 9640746
+      }
+    },
+    {
       "symbol": "AWL",
       "name": "AWL Agri Business Limited",
-      "marketCapCr": 21160,
+      "marketCapCr": 21531,
       "sector": "Consumer Defensive",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 167.25,
+        "end": "2026-11-06",
+        "high": 169.85,
         "low": 162.58,
-        "close": 163.78,
-        "volume": 4300437
+        "close": 166.67,
+        "volume": 8036740
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -1948,55 +2114,55 @@
       }
     },
     {
-      "symbol": "GUJENERGY",
-      "name": "Gujarat Energy Limited",
-      "marketCapCr": 20735,
-      "sector": "Utilities",
+      "symbol": "RRKABEL",
+      "name": "R R Kabel Limited",
+      "marketCapCr": 21189,
+      "sector": "Industrials",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 223.93,
-        "low": 208.3,
-        "close": 220.86,
-        "volume": 3146096
+        "end": "2026-11-06",
+        "high": 2064.4,
+        "low": 1865.2,
+        "close": 1871,
+        "volume": 2716349
       },
       "lastWeek": {
         "start": "2026-10-26",
         "end": "2026-10-30",
-        "high": 218.54,
-        "low": 206.33,
-        "close": 208.1,
-        "volume": 9196880
+        "high": 2269.4,
+        "low": 2000.1,
+        "close": 2055.7,
+        "volume": 3036214
       },
       "oneWeekAgo": {
         "start": "2026-10-19",
         "end": "2026-10-23",
-        "high": 225.39,
-        "low": 211.32,
-        "close": 214.28,
-        "volume": 6555492
+        "high": 2398.9,
+        "low": 2126,
+        "close": 2140,
+        "volume": 1572967
       },
       "twoWeeksAgo": {
         "start": "2026-10-12",
         "end": "2026-10-16",
-        "high": 229.35,
-        "low": 218.95,
-        "close": 222.62,
-        "volume": 4103949
+        "high": 2769,
+        "low": 2365.8,
+        "close": 2388,
+        "volume": 1992164
       }
     },
     {
       "symbol": "IRB",
       "name": "IRB Infrastructure Developers Limited",
-      "marketCapCr": 20158,
+      "marketCapCr": 20412,
       "sector": "Industrials",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 16.74,
+        "end": "2026-11-06",
+        "high": 17.48,
         "low": 15.69,
-        "close": 16.66,
-        "volume": 27464590
+        "close": 16.88,
+        "volume": 71345170
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -2024,17 +2190,55 @@
       }
     },
     {
+      "symbol": "GUJENERGY",
+      "name": "Gujarat Energy Limited",
+      "marketCapCr": 20240,
+      "sector": "Utilities",
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-06",
+        "high": 228.1,
+        "low": 208.3,
+        "close": 215.78,
+        "volume": 6679420
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 218.54,
+        "low": 206.33,
+        "close": 208.1,
+        "volume": 9196880
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 225.39,
+        "low": 211.32,
+        "close": 214.28,
+        "volume": 6555492
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 229.35,
+        "low": 218.95,
+        "close": 222.62,
+        "volume": 4103949
+      }
+    },
+    {
       "symbol": "EIHOTEL",
       "name": "EIH Limited",
-      "marketCapCr": 18623,
+      "marketCapCr": 19227,
       "sector": "Consumer Cyclical",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 300.65,
+        "end": "2026-11-06",
+        "high": 312.85,
         "low": 286.3,
-        "close": 297.8,
-        "volume": 399036
+        "close": 307.65,
+        "volume": 695882
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -2062,17 +2266,55 @@
       }
     },
     {
+      "symbol": "RAMCOCEM",
+      "name": "The Ramco Cements Limited",
+      "marketCapCr": 19134,
+      "sector": "Basic Materials",
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-06",
+        "high": 827.55,
+        "low": 715.4,
+        "close": 809.15,
+        "volume": 2033754
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 752.15,
+        "low": 711.3,
+        "close": 719.65,
+        "volume": 646546
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 807.5,
+        "low": 730.85,
+        "close": 739.4,
+        "volume": 720179
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 815.05,
+        "low": 779.5,
+        "close": 805.4,
+        "volume": 726489
+      }
+    },
+    {
       "symbol": "KAJARIACER",
       "name": "Kajaria Ceramics Limited",
-      "marketCapCr": 18210,
+      "marketCapCr": 18574,
       "sector": "Industrials",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 1164.9,
+        "end": "2026-11-06",
+        "high": 1224.9,
         "low": 1104.5,
-        "close": 1155.5,
-        "volume": 459806
+        "close": 1185.7,
+        "volume": 731928
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -2102,15 +2344,15 @@
     {
       "symbol": "BRIGADE",
       "name": "Brigade Enterprises Limited",
-      "marketCapCr": 17629,
+      "marketCapCr": 17760,
       "sector": "Real Estate",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 547.95,
-        "low": 523.85,
-        "close": 540.4,
-        "volume": 422148
+        "end": "2026-11-06",
+        "high": 560.75,
+        "low": 521.1,
+        "close": 544.5,
+        "volume": 1868771
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -2138,169 +2380,17 @@
       }
     },
     {
-      "symbol": "RAMCOCEM",
-      "name": "The Ramco Cements Limited",
-      "marketCapCr": 17604,
-      "sector": "Basic Materials",
-      "currentWeek": {
-        "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 769,
-        "low": 715.4,
-        "close": 747.75,
-        "volume": 352683
-      },
-      "lastWeek": {
-        "start": "2026-10-26",
-        "end": "2026-10-30",
-        "high": 752.15,
-        "low": 711.3,
-        "close": 719.65,
-        "volume": 646546
-      },
-      "oneWeekAgo": {
-        "start": "2026-10-19",
-        "end": "2026-10-23",
-        "high": 807.5,
-        "low": 730.85,
-        "close": 739.4,
-        "volume": 720179
-      },
-      "twoWeeksAgo": {
-        "start": "2026-10-12",
-        "end": "2026-10-16",
-        "high": 815.05,
-        "low": 779.5,
-        "close": 805.4,
-        "volume": 726489
-      }
-    },
-    {
-      "symbol": "CESC",
-      "name": "CESC Limited",
-      "marketCapCr": 17228,
-      "sector": "Utilities",
-      "currentWeek": {
-        "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 130.4,
-        "low": 124.99,
-        "close": 129.98,
-        "volume": 2562196
-      },
-      "lastWeek": {
-        "start": "2026-10-26",
-        "end": "2026-10-30",
-        "high": 128.93,
-        "low": 122.15,
-        "close": 124.63,
-        "volume": 11607093
-      },
-      "oneWeekAgo": {
-        "start": "2026-10-19",
-        "end": "2026-10-23",
-        "high": 136.17,
-        "low": 123.66,
-        "close": 124.79,
-        "volume": 6244114
-      },
-      "twoWeeksAgo": {
-        "start": "2026-10-12",
-        "end": "2026-10-16",
-        "high": 139.49,
-        "low": 133.05,
-        "close": 135.9,
-        "volume": 7099050
-      }
-    },
-    {
-      "symbol": "CREDITACC",
-      "name": "CreditAccess Grameen Limited",
-      "marketCapCr": 17211,
-      "sector": "Financial Services",
-      "currentWeek": {
-        "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 1075.5,
-        "low": 1021,
-        "close": 1073.2,
-        "volume": 391143
-      },
-      "lastWeek": {
-        "start": "2026-10-26",
-        "end": "2026-10-30",
-        "high": 1045.8,
-        "low": 993.9,
-        "close": 1023.6,
-        "volume": 2043462
-      },
-      "oneWeekAgo": {
-        "start": "2026-10-19",
-        "end": "2026-10-23",
-        "high": 1247.7,
-        "low": 1012.8,
-        "close": 1027.4,
-        "volume": 4927597
-      },
-      "twoWeeksAgo": {
-        "start": "2026-10-12",
-        "end": "2026-10-16",
-        "high": 1324.7,
-        "low": 1230.2,
-        "close": 1233.2,
-        "volume": 705281
-      }
-    },
-    {
-      "symbol": "HAPPYFORGE",
-      "name": "Happy Forgings Limited",
-      "marketCapCr": 17189,
-      "sector": "Industrials",
-      "currentWeek": {
-        "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 1828,
-        "low": 1724.6,
-        "close": 1826.4,
-        "volume": 245444
-      },
-      "lastWeek": {
-        "start": "2026-10-26",
-        "end": "2026-10-30",
-        "high": 1819.8,
-        "low": 1680,
-        "close": 1748.2,
-        "volume": 470925
-      },
-      "oneWeekAgo": {
-        "start": "2026-10-19",
-        "end": "2026-10-23",
-        "high": 1878.1,
-        "low": 1736.1,
-        "close": 1762,
-        "volume": 269713
-      },
-      "twoWeeksAgo": {
-        "start": "2026-10-12",
-        "end": "2026-10-16",
-        "high": 2018.7,
-        "low": 1844.9,
-        "close": 1866,
-        "volume": 480369
-      }
-    },
-    {
       "symbol": "ELGIEQUIP",
       "name": "Elgi Equipments Limited",
-      "marketCapCr": 17050,
+      "marketCapCr": 17599,
       "sector": "Industrials",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 544.1,
+        "end": "2026-11-06",
+        "high": 575.65,
         "low": 506.1,
-        "close": 540.6,
-        "volume": 251804
+        "close": 552.05,
+        "volume": 2631873
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -2328,93 +2418,93 @@
       }
     },
     {
-      "symbol": "AZAD",
-      "name": "Azad Engineering Limited",
-      "marketCapCr": 16768,
-      "sector": "Industrials",
+      "symbol": "TENNIND",
+      "name": "Tenneco Clean Air India Limited",
+      "marketCapCr": 17575,
+      "sector": "Consumer Cyclical",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 2654.4,
-        "low": 2390,
-        "close": 2597.9,
-        "volume": 1545948
+        "end": "2026-11-06",
+        "high": 491,
+        "low": 431,
+        "close": 435.6,
+        "volume": 4406524
       },
       "lastWeek": {
         "start": "2026-10-26",
         "end": "2026-10-30",
-        "high": 2647.9,
-        "low": 2414,
-        "close": 2445.3,
-        "volume": 1903278
+        "high": 454.2,
+        "low": 419.1,
+        "close": 431.7,
+        "volume": 3430112
       },
       "oneWeekAgo": {
         "start": "2026-10-19",
         "end": "2026-10-23",
-        "high": 2744.2,
-        "low": 2440,
-        "close": 2478.7,
-        "volume": 2361582
+        "high": 460.4,
+        "low": 430.35,
+        "close": 439.65,
+        "volume": 2370781
       },
       "twoWeeksAgo": {
         "start": "2026-10-12",
         "end": "2026-10-16",
-        "high": 3043.2,
-        "low": 2691.1,
-        "close": 2741,
-        "volume": 3366494
+        "high": 480.9,
+        "low": 455.15,
+        "close": 456.5,
+        "volume": 2661264
       }
     },
     {
-      "symbol": "EMAMILTD",
-      "name": "Emami Limited",
-      "marketCapCr": 16400,
-      "sector": "Consumer Defensive",
+      "symbol": "CREDITACC",
+      "name": "CreditAccess Grameen Limited",
+      "marketCapCr": 17317,
+      "sector": "Financial Services",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 385.9,
-        "low": 361.1,
-        "close": 382,
-        "volume": 634256
+        "end": "2026-11-06",
+        "high": 1151,
+        "low": 1021,
+        "close": 1079,
+        "volume": 1761274
       },
       "lastWeek": {
         "start": "2026-10-26",
         "end": "2026-10-30",
-        "high": 377,
-        "low": 357,
-        "close": 359.75,
-        "volume": 3359779
+        "high": 1045.8,
+        "low": 993.9,
+        "close": 1023.6,
+        "volume": 2043462
       },
       "oneWeekAgo": {
         "start": "2026-10-19",
         "end": "2026-10-23",
-        "high": 379.25,
-        "low": 361.6,
-        "close": 373.15,
-        "volume": 3102936
+        "high": 1247.7,
+        "low": 1012.8,
+        "close": 1027.4,
+        "volume": 4927597
       },
       "twoWeeksAgo": {
         "start": "2026-10-12",
         "end": "2026-10-16",
-        "high": 383.35,
-        "low": 362,
-        "close": 376.15,
-        "volume": 2267394
+        "high": 1324.7,
+        "low": 1230.2,
+        "close": 1233.2,
+        "volume": 705281
       }
     },
     {
       "symbol": "EMMVEE",
       "name": "Emmvee Photovoltaic Power Limited",
-      "marketCapCr": 16384,
+      "marketCapCr": 17291,
       "sector": "Technology",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 238.5,
+        "end": "2026-11-06",
+        "high": 259,
         "low": 225.54,
-        "close": 236.74,
-        "volume": 4253971
+        "close": 249.71,
+        "volume": 10485751
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -2442,131 +2532,93 @@
       }
     },
     {
-      "symbol": "ANANTRAJ",
-      "name": "Anant Raj Limited",
-      "marketCapCr": 16257,
-      "sector": "Real Estate",
+      "symbol": "EMAMILTD",
+      "name": "Emami Limited",
+      "marketCapCr": 16664,
+      "sector": "Consumer Defensive",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 459.85,
-        "low": 438.8,
-        "close": 452,
-        "volume": 4524974
-      },
-      "lastWeek": {
-        "start": "2026-10-26",
-        "end": "2026-10-30",
-        "high": 477,
-        "low": 444,
-        "close": 447.3,
-        "volume": 9499282
-      },
-      "oneWeekAgo": {
-        "start": "2026-10-19",
-        "end": "2026-10-23",
-        "high": 520.9,
-        "low": 449,
-        "close": 460.4,
-        "volume": 7468455
-      },
-      "twoWeeksAgo": {
-        "start": "2026-10-12",
-        "end": "2026-10-16",
-        "high": 586.4,
-        "low": 510,
-        "close": 511.75,
-        "volume": 8870297
-      }
-    },
-    {
-      "symbol": "JINDALSAW",
-      "name": "Jindal Saw Limited",
-      "marketCapCr": 15908,
-      "sector": "Basic Materials",
-      "currentWeek": {
-        "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 249.99,
-        "low": 228.8,
-        "close": 249.42,
-        "volume": 1632943
-      },
-      "lastWeek": {
-        "start": "2026-10-26",
-        "end": "2026-10-30",
-        "high": 250.05,
-        "low": 227.05,
-        "close": 228.05,
-        "volume": 7763445
-      },
-      "oneWeekAgo": {
-        "start": "2026-10-19",
-        "end": "2026-10-23",
-        "high": 299.05,
-        "low": 230.8,
-        "close": 232.15,
-        "volume": 12798306
-      },
-      "twoWeeksAgo": {
-        "start": "2026-10-12",
-        "end": "2026-10-16",
-        "high": 312.5,
-        "low": 271.4,
-        "close": 301.55,
-        "volume": 11736395
-      }
-    },
-    {
-      "symbol": "CHAMBLFERT",
-      "name": "Chambal Fertilisers and Chemicals Limited",
-      "marketCapCr": 15794,
-      "sector": "Basic Materials",
-      "currentWeek": {
-        "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 396.95,
-        "low": 355.2,
-        "close": 394.25,
-        "volume": 916269
-      },
-      "lastWeek": {
-        "start": "2026-10-26",
-        "end": "2026-10-30",
-        "high": 373.95,
-        "low": 350,
-        "close": 353.9,
-        "volume": 2460369
-      },
-      "oneWeekAgo": {
-        "start": "2026-10-19",
-        "end": "2026-10-23",
-        "high": 389.75,
-        "low": 359,
-        "close": 363.95,
-        "volume": 1299200
-      },
-      "twoWeeksAgo": {
-        "start": "2026-10-12",
-        "end": "2026-10-16",
-        "high": 398.25,
-        "low": 372.4,
+        "end": "2026-11-06",
+        "high": 393.15,
+        "low": 361.1,
         "close": 388.1,
-        "volume": 2003033
+        "volume": 4067614
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 377,
+        "low": 357,
+        "close": 359.75,
+        "volume": 3359779
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 379.25,
+        "low": 361.6,
+        "close": 373.15,
+        "volume": 3102936
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 383.35,
+        "low": 362,
+        "close": 376.15,
+        "volume": 2267394
+      }
+    },
+    {
+      "symbol": "CESC",
+      "name": "CESC Limited",
+      "marketCapCr": 16605,
+      "sector": "Utilities",
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-06",
+        "high": 135.2,
+        "low": 124.99,
+        "close": 125.26,
+        "volume": 13118032
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 128.93,
+        "low": 122.15,
+        "close": 124.63,
+        "volume": 11607093
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 136.17,
+        "low": 123.66,
+        "close": 124.79,
+        "volume": 6244114
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 139.49,
+        "low": 133.05,
+        "close": 135.9,
+        "volume": 7099050
       }
     },
     {
       "symbol": "IFCI",
       "name": "IFCI Limited",
-      "marketCapCr": 15746,
+      "marketCapCr": 16222,
       "sector": "Financial Services",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 59.2,
+        "end": "2026-11-06",
+        "high": 62.14,
         "low": 54.62,
-        "close": 58.39,
-        "volume": 55022786
+        "close": 60.25,
+        "volume": 91934846
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -2594,93 +2646,207 @@
       }
     },
     {
-      "symbol": "SARDAEN",
-      "name": "Sarda Energy & Minerals Limited",
-      "marketCapCr": 15639,
+      "symbol": "SUMICHEM",
+      "name": "Sumitomo Chemical India Limited",
+      "marketCapCr": 16122,
       "sector": "Basic Materials",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 443.8,
-        "low": 424.05,
-        "close": 443.5,
-        "volume": 500653
+        "end": "2026-11-06",
+        "high": 335.5,
+        "low": 312.05,
+        "close": 322.8,
+        "volume": 3899759
       },
       "lastWeek": {
         "start": "2026-10-26",
         "end": "2026-10-30",
-        "high": 462,
-        "low": 435.5,
-        "close": 440.85,
-        "volume": 955591
+        "high": 365,
+        "low": 310.85,
+        "close": 315.1,
+        "volume": 6350592
       },
       "oneWeekAgo": {
         "start": "2026-10-19",
         "end": "2026-10-23",
-        "high": 492.8,
-        "low": 436.2,
-        "close": 443.95,
-        "volume": 1176932
+        "high": 404.05,
+        "low": 358.2,
+        "close": 360.6,
+        "volume": 1184801
       },
       "twoWeeksAgo": {
         "start": "2026-10-12",
         "end": "2026-10-16",
-        "high": 494,
-        "low": 462,
-        "close": 488.85,
-        "volume": 1414090
+        "high": 440,
+        "low": 400,
+        "close": 404.75,
+        "volume": 1986355
       }
     },
     {
-      "symbol": "GMDCLTD",
-      "name": "Gujarat Mineral Development Corporation Limited",
-      "marketCapCr": 15138,
-      "sector": "Energy",
+      "symbol": "JINDALSAW",
+      "name": "Jindal Saw Limited",
+      "marketCapCr": 16067,
+      "sector": "Basic Materials",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 477.25,
-        "low": 394.55,
-        "close": 475.55,
-        "volume": 18601955
+        "end": "2026-11-06",
+        "high": 255.9,
+        "low": 228.8,
+        "close": 251.43,
+        "volume": 3551938
       },
       "lastWeek": {
         "start": "2026-10-26",
         "end": "2026-10-30",
-        "high": 442.65,
-        "low": 406,
-        "close": 411.65,
-        "volume": 6052061
+        "high": 250.05,
+        "low": 227.05,
+        "close": 228.05,
+        "volume": 7763445
       },
       "oneWeekAgo": {
         "start": "2026-10-19",
         "end": "2026-10-23",
-        "high": 472.8,
-        "low": 416.4,
-        "close": 424.6,
-        "volume": 3088193
+        "high": 299.05,
+        "low": 230.8,
+        "close": 232.15,
+        "volume": 12798306
       },
       "twoWeeksAgo": {
         "start": "2026-10-12",
         "end": "2026-10-16",
-        "high": 482,
-        "low": 462.05,
-        "close": 471.05,
-        "volume": 3164616
+        "high": 312.5,
+        "low": 271.4,
+        "close": 301.55,
+        "volume": 11736395
+      }
+    },
+    {
+      "symbol": "HAPPYFORGE",
+      "name": "Happy Forgings Limited",
+      "marketCapCr": 15996,
+      "sector": "Industrials",
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-06",
+        "high": 1920.5,
+        "low": 1694.5,
+        "close": 1694.5,
+        "volume": 875760
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 1819.8,
+        "low": 1680,
+        "close": 1748.2,
+        "volume": 470925
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 1878.1,
+        "low": 1736.1,
+        "close": 1762,
+        "volume": 269713
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 2018.7,
+        "low": 1844.9,
+        "close": 1866,
+        "volume": 480369
+      }
+    },
+    {
+      "symbol": "ANANTRAJ",
+      "name": "Anant Raj Limited",
+      "marketCapCr": 15905,
+      "sector": "Real Estate",
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-06",
+        "high": 479.8,
+        "low": 438.45,
+        "close": 442.1,
+        "volume": 9935200
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 477,
+        "low": 444,
+        "close": 447.3,
+        "volume": 9499282
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 520.9,
+        "low": 449,
+        "close": 460.4,
+        "volume": 7468455
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 586.4,
+        "low": 510,
+        "close": 511.75,
+        "volume": 8870297
+      }
+    },
+    {
+      "symbol": "AZAD",
+      "name": "Azad Engineering Limited",
+      "marketCapCr": 15582,
+      "sector": "Industrials",
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-06",
+        "high": 2664,
+        "low": 2390,
+        "close": 2410.3,
+        "volume": 2750594
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 2647.9,
+        "low": 2414,
+        "close": 2445.3,
+        "volume": 1903278
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 2744.2,
+        "low": 2440,
+        "close": 2478.7,
+        "volume": 2361582
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 3043.2,
+        "low": 2691.1,
+        "close": 2741,
+        "volume": 3366494
       }
     },
     {
       "symbol": "ATUL",
       "name": "Atul Ltd",
-      "marketCapCr": 15047,
+      "marketCapCr": 15303,
       "sector": "Basic Materials",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 5154.5,
+        "end": "2026-11-06",
+        "high": 5260,
         "low": 4996,
-        "close": 5113.5,
-        "volume": 140717
+        "close": 5200,
+        "volume": 185351
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -2708,17 +2874,93 @@
       }
     },
     {
-      "symbol": "BAYERCROP",
-      "name": "Bayer CropScience Limited",
-      "marketCapCr": 14591,
+      "symbol": "CHAMBLFERT",
+      "name": "Chambal Fertilisers and Chemicals Limited",
+      "marketCapCr": 15295,
       "sector": "Basic Materials",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 3305.8,
+        "end": "2026-11-06",
+        "high": 403.55,
+        "low": 355.2,
+        "close": 381.5,
+        "volume": 2780309
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 373.95,
+        "low": 350,
+        "close": 353.9,
+        "volume": 2460369
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 389.75,
+        "low": 359,
+        "close": 363.95,
+        "volume": 1299200
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 398.25,
+        "low": 372.4,
+        "close": 388.1,
+        "volume": 2003033
+      }
+    },
+    {
+      "symbol": "SARDAEN",
+      "name": "Sarda Energy & Minerals Limited",
+      "marketCapCr": 15239,
+      "sector": "Basic Materials",
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-06",
+        "high": 446.1,
+        "low": 424.05,
+        "close": 432.2,
+        "volume": 972096
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 462,
+        "low": 435.5,
+        "close": 440.85,
+        "volume": 955591
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 492.8,
+        "low": 436.2,
+        "close": 443.95,
+        "volume": 1176932
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 494,
+        "low": 462,
+        "close": 488.85,
+        "volume": 1414090
+      }
+    },
+    {
+      "symbol": "BAYERCROP",
+      "name": "Bayer CropScience Limited",
+      "marketCapCr": 14777,
+      "sector": "Basic Materials",
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-06",
+        "high": 3336.3,
         "low": 3226.1,
-        "close": 3245.1,
-        "volume": 93557
+        "close": 3286.9,
+        "volume": 271139
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -2746,93 +2988,131 @@
       }
     },
     {
-      "symbol": "ESDS",
-      "name": "ESDS SOFTWARE SOLUTION L",
-      "marketCapCr": 14534,
-      "sector": "Technology",
+      "symbol": "VTL",
+      "name": "Vardhman Textiles Limited",
+      "marketCapCr": 14727,
+      "sector": "Consumer Cyclical",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 1246.9,
-        "low": 1102,
-        "close": 1240,
-        "volume": 2677626
+        "end": "2026-11-06",
+        "high": 543.9,
+        "low": 486.2,
+        "close": 507.6,
+        "volume": 1975878
       },
       "lastWeek": {
         "start": "2026-10-26",
         "end": "2026-10-30",
-        "high": 1357.8,
-        "low": 1160,
-        "close": 1160,
-        "volume": 7345668
+        "high": 509,
+        "low": 482.05,
+        "close": 486.15,
+        "volume": 721770
       },
       "oneWeekAgo": {
         "start": "2026-10-19",
         "end": "2026-10-23",
-        "high": 1477.5,
-        "low": 1231.7,
-        "close": 1231.7,
-        "volume": 2537144
+        "high": 531.15,
+        "low": 483.5,
+        "close": 501.45,
+        "volume": 849940
       },
       "twoWeeksAgo": {
         "start": "2026-10-12",
         "end": "2026-10-16",
-        "high": 1737.9,
-        "low": 1486.4,
-        "close": 1512.1,
-        "volume": 7073860
+        "high": 543.1,
+        "low": 512.95,
+        "close": 531.9,
+        "volume": 853701
       }
     },
     {
-      "symbol": "DEEPAKFERT",
-      "name": "Deepak Fertilisers And Petrochemicals Corporation Limited",
-      "marketCapCr": 14378,
-      "sector": "Basic Materials",
+      "symbol": "GMDCLTD",
+      "name": "Gujarat Mineral Development Corporation Limited",
+      "marketCapCr": 14574,
+      "sector": "Energy",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 1165.3,
-        "low": 1092.6,
-        "close": 1138.5,
-        "volume": 409817
+        "end": "2026-11-06",
+        "high": 477.95,
+        "low": 394.55,
+        "close": 457.85,
+        "volume": 30915425
       },
       "lastWeek": {
         "start": "2026-10-26",
         "end": "2026-10-30",
-        "high": 1199,
-        "low": 1094.3,
-        "close": 1100.2,
-        "volume": 1227876
+        "high": 442.65,
+        "low": 406,
+        "close": 411.65,
+        "volume": 6052061
       },
       "oneWeekAgo": {
         "start": "2026-10-19",
         "end": "2026-10-23",
-        "high": 1334.6,
-        "low": 1120.2,
-        "close": 1136.5,
-        "volume": 2098694
+        "high": 472.8,
+        "low": 416.4,
+        "close": 424.6,
+        "volume": 3088193
       },
       "twoWeeksAgo": {
         "start": "2026-10-12",
         "end": "2026-10-16",
-        "high": 1419.9,
-        "low": 1295.4,
-        "close": 1344.1,
-        "volume": 1031446
+        "high": 482,
+        "low": 462.05,
+        "close": 471.05,
+        "volume": 3164616
+      }
+    },
+    {
+      "symbol": "USHAMART",
+      "name": "Usha Martin Limited",
+      "marketCapCr": 14514,
+      "sector": "Basic Materials",
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-06",
+        "high": 488,
+        "low": 446.2,
+        "close": 476.65,
+        "volume": 1930775
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 486.85,
+        "low": 442.3,
+        "close": 445.9,
+        "volume": 2013643
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 494.65,
+        "low": 448.75,
+        "close": 460.05,
+        "volume": 1837376
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 509.6,
+        "low": 477.15,
+        "close": 491.3,
+        "volume": 2607341
       }
     },
     {
       "symbol": "LTFOODS",
       "name": "LT Foods Limited",
-      "marketCapCr": 14223,
+      "marketCapCr": 14512,
       "sector": "Consumer Defensive",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 415.7,
+        "end": "2026-11-06",
+        "high": 421.75,
         "low": 376.65,
-        "close": 409.65,
-        "volume": 902108
+        "close": 417.8,
+        "volume": 1299548
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -2860,17 +3140,131 @@
       }
     },
     {
+      "symbol": "SWANDEF",
+      "name": "Swan Defence and Heavy Industries Limited",
+      "marketCapCr": 14477,
+      "sector": "Industrials",
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-06",
+        "high": 2820,
+        "low": 2550,
+        "close": 2735,
+        "volume": 32457
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 2733.9,
+        "low": 2535.6,
+        "close": 2631.1,
+        "volume": 39556
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 3000,
+        "low": 2711.9,
+        "close": 2711.9,
+        "volume": 82255
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 3020,
+        "low": 2800,
+        "close": 2944.7,
+        "volume": 113418
+      }
+    },
+    {
+      "symbol": "DEEPAKFERT",
+      "name": "Deepak Fertilisers And Petrochemicals Corporation Limited",
+      "marketCapCr": 14344,
+      "sector": "Basic Materials",
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-06",
+        "high": 1165.3,
+        "low": 1092.6,
+        "close": 1135.5,
+        "volume": 630616
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 1199,
+        "low": 1094.3,
+        "close": 1100.2,
+        "volume": 1227876
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 1334.6,
+        "low": 1120.2,
+        "close": 1136.5,
+        "volume": 2098694
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 1419.9,
+        "low": 1295.4,
+        "close": 1344.1,
+        "volume": 1031446
+      }
+    },
+    {
+      "symbol": "BALRAMCHIN",
+      "name": "Balrampur Chini Mills Limited",
+      "marketCapCr": 14275,
+      "sector": "Consumer Defensive",
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-06",
+        "high": 685.75,
+        "low": 580.7,
+        "close": 670.2,
+        "volume": 11993882
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 645,
+        "low": 585.4,
+        "close": 589.5,
+        "volume": 2613034
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 708.3,
+        "low": 631.55,
+        "close": 639.9,
+        "volume": 3120153
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 736,
+        "low": 683.45,
+        "close": 721.15,
+        "volume": 6779093
+      }
+    },
+    {
       "symbol": "AEQUS",
       "name": "Aequs Limited",
       "marketCapCr": 14194,
       "sector": "Industrials",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 219.65,
+        "end": "2026-11-06",
+        "high": 228,
         "low": 205.3,
-        "close": 216.75,
-        "volume": 5978827
+        "close": 216.65,
+        "volume": 13743516
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -2900,15 +3294,15 @@
     {
       "symbol": "BBOX",
       "name": "Black Box Limited",
-      "marketCapCr": 14178,
+      "marketCapCr": 14175,
       "sector": "Technology",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 823.05,
+        "end": "2026-11-06",
+        "high": 872,
         "low": 770,
-        "close": 797.95,
-        "volume": 866962
+        "close": 800.2,
+        "volume": 2433105
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -2938,15 +3332,15 @@
     {
       "symbol": "PARADEEP",
       "name": "Paradeep Phosphates Limited",
-      "marketCapCr": 14107,
+      "marketCapCr": 14007,
       "sector": "Basic Materials",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 137.6,
+        "end": "2026-11-06",
+        "high": 141.2,
         "low": 125.72,
-        "close": 135.87,
-        "volume": 6183274
+        "close": 134.8,
+        "volume": 9797726
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -2974,131 +3368,17 @@
       }
     },
     {
-      "symbol": "BALRAMCHIN",
-      "name": "Balrampur Chini Mills Limited",
-      "marketCapCr": 14000,
-      "sector": "Consumer Defensive",
-      "currentWeek": {
-        "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 673.6,
-        "low": 580.7,
-        "close": 660.6,
-        "volume": 9929074
-      },
-      "lastWeek": {
-        "start": "2026-10-26",
-        "end": "2026-10-30",
-        "high": 645,
-        "low": 585.4,
-        "close": 589.5,
-        "volume": 2613034
-      },
-      "oneWeekAgo": {
-        "start": "2026-10-19",
-        "end": "2026-10-23",
-        "high": 708.3,
-        "low": 631.55,
-        "close": 639.9,
-        "volume": 3120153
-      },
-      "twoWeeksAgo": {
-        "start": "2026-10-12",
-        "end": "2026-10-16",
-        "high": 736,
-        "low": 683.45,
-        "close": 721.15,
-        "volume": 6779093
-      }
-    },
-    {
-      "symbol": "BASF",
-      "name": "BASF India Limited",
-      "marketCapCr": 13786,
-      "sector": "Basic Materials",
-      "currentWeek": {
-        "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 3212,
-        "low": 3067.3,
-        "close": 3185,
-        "volume": 43838
-      },
-      "lastWeek": {
-        "start": "2026-10-26",
-        "end": "2026-10-30",
-        "high": 3175,
-        "low": 3031.8,
-        "close": 3049.1,
-        "volume": 89919
-      },
-      "oneWeekAgo": {
-        "start": "2026-10-19",
-        "end": "2026-10-23",
-        "high": 3394.4,
-        "low": 3051,
-        "close": 3070.1,
-        "volume": 90810
-      },
-      "twoWeeksAgo": {
-        "start": "2026-10-12",
-        "end": "2026-10-16",
-        "high": 3467.9,
-        "low": 3340,
-        "close": 3385.9,
-        "volume": 52762
-      }
-    },
-    {
-      "symbol": "ARE&M",
-      "name": "Amara Raja Energy & Mobility Limited",
-      "marketCapCr": 13294,
-      "sector": "Industrials",
-      "currentWeek": {
-        "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 747.6,
-        "low": 690,
-        "close": 726,
-        "volume": 3392941
-      },
-      "lastWeek": {
-        "start": "2026-10-26",
-        "end": "2026-10-30",
-        "high": 719.5,
-        "low": 678,
-        "close": 686.85,
-        "volume": 2017125
-      },
-      "oneWeekAgo": {
-        "start": "2026-10-19",
-        "end": "2026-10-23",
-        "high": 745.35,
-        "low": 683,
-        "close": 687.2,
-        "volume": 1460339
-      },
-      "twoWeeksAgo": {
-        "start": "2026-10-12",
-        "end": "2026-10-16",
-        "high": 749.35,
-        "low": 722.1,
-        "close": 743,
-        "volume": 1379095
-      }
-    },
-    {
       "symbol": "ACE",
       "name": "Action Construction Equipment Limited",
-      "marketCapCr": 13219,
+      "marketCapCr": 13697,
       "sector": "Industrials",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 1121.85,
+        "end": "2026-11-06",
+        "high": 1159.5,
         "low": 982.15,
-        "close": 1111.55,
-        "volume": 540448
+        "close": 1150.8,
+        "volume": 1740954
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -3126,55 +3406,207 @@
       }
     },
     {
-      "symbol": "AMAGI",
-      "name": "Amagi Media Labs Limited",
-      "marketCapCr": 12454,
-      "sector": "Technology",
+      "symbol": "ARE&M",
+      "name": "Amara Raja Energy & Mobility Limited",
+      "marketCapCr": 13350,
+      "sector": "Industrials",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 577,
-        "low": 536.55,
-        "close": 575.65,
-        "volume": 136503
+        "end": "2026-11-06",
+        "high": 748,
+        "low": 681,
+        "close": 728.55,
+        "volume": 5335463
       },
       "lastWeek": {
         "start": "2026-10-26",
         "end": "2026-10-30",
-        "high": 552.8,
-        "low": 517.5,
-        "close": 540.6,
-        "volume": 731094
+        "high": 719.5,
+        "low": 678,
+        "close": 686.85,
+        "volume": 2017125
       },
       "oneWeekAgo": {
         "start": "2026-10-19",
         "end": "2026-10-23",
-        "high": 578,
-        "low": 520,
-        "close": 544.45,
-        "volume": 818608
+        "high": 745.35,
+        "low": 683,
+        "close": 687.2,
+        "volume": 1460339
       },
       "twoWeeksAgo": {
         "start": "2026-10-12",
         "end": "2026-10-16",
-        "high": 579,
-        "low": 559.4,
-        "close": 569.75,
-        "volume": 582142
+        "high": 749.35,
+        "low": 722.1,
+        "close": 743,
+        "volume": 1379095
+      }
+    },
+    {
+      "symbol": "THANGAMAYL",
+      "name": "Thangamayil Jewellery Limited",
+      "marketCapCr": 13127,
+      "sector": "Consumer Cyclical",
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-06",
+        "high": 4690,
+        "low": 4207.7,
+        "close": 4224,
+        "volume": 467798
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 4785,
+        "low": 4430,
+        "close": 4455,
+        "volume": 155106
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 5175,
+        "low": 4563.5,
+        "close": 4690.5,
+        "volume": 165268
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 5232,
+        "low": 4759.5,
+        "close": 5098,
+        "volume": 342524
+      }
+    },
+    {
+      "symbol": "ESDS",
+      "name": "ESDS SOFTWARE SOLUTION L",
+      "marketCapCr": 13081,
+      "sector": "Technology",
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-06",
+        "high": 1246.9,
+        "low": 1102,
+        "close": 1116,
+        "volume": 4900208
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 1357.8,
+        "low": 1160,
+        "close": 1160,
+        "volume": 7345668
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 1477.5,
+        "low": 1231.7,
+        "close": 1231.7,
+        "volume": 2537144
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 1737.9,
+        "low": 1486.4,
+        "close": 1512.1,
+        "volume": 7073860
+      }
+    },
+    {
+      "symbol": "SPLPETRO",
+      "name": "Supreme Petrochem Limited",
+      "marketCapCr": 12999,
+      "sector": "Basic Materials",
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-06",
+        "high": 705,
+        "low": 676.55,
+        "close": 691.1,
+        "volume": 382322
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 731.75,
+        "low": 670.55,
+        "close": 678.3,
+        "volume": 560572
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 796.9,
+        "low": 701.05,
+        "close": 712.6,
+        "volume": 342828
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 805,
+        "low": 749.3,
+        "close": 767.25,
+        "volume": 402043
+      }
+    },
+    {
+      "symbol": "BASF",
+      "name": "BASF India Limited",
+      "marketCapCr": 12796,
+      "sector": "Basic Materials",
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-06",
+        "high": 3212,
+        "low": 2922.1,
+        "close": 2954.7,
+        "volume": 393012
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 3175,
+        "low": 3031.8,
+        "close": 3049.1,
+        "volume": 89919
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 3394.4,
+        "low": 3051,
+        "close": 3070.1,
+        "volume": 90810
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 3467.9,
+        "low": 3340,
+        "close": 3385.9,
+        "volume": 52762
       }
     },
     {
       "symbol": "CARTRADE",
       "name": "CarTrade Tech Limited",
-      "marketCapCr": 12207,
+      "marketCapCr": 12781,
       "sector": "Consumer Cyclical",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 2525.3,
+        "end": "2026-11-06",
+        "high": 2640.9,
         "low": 2167,
-        "close": 2509.8,
-        "volume": 2588458
+        "close": 2640,
+        "volume": 2976602
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -3202,169 +3634,17 @@
       }
     },
     {
-      "symbol": "PGIL",
-      "name": "Pearl Global Industries Limited",
-      "marketCapCr": 12144,
-      "sector": "Consumer Cyclical",
-      "currentWeek": {
-        "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 1324.8,
-        "low": 1180.1,
-        "close": 1310.4,
-        "volume": 173707
-      },
-      "lastWeek": {
-        "start": "2026-10-26",
-        "end": "2026-10-30",
-        "high": 1240.5,
-        "low": 1163.2,
-        "close": 1192.6,
-        "volume": 341869
-      },
-      "oneWeekAgo": {
-        "start": "2026-10-19",
-        "end": "2026-10-23",
-        "high": 1302.4,
-        "low": 1170,
-        "close": 1224,
-        "volume": 413308
-      },
-      "twoWeeksAgo": {
-        "start": "2026-10-12",
-        "end": "2026-10-16",
-        "high": 1351.4,
-        "low": 1217.5,
-        "close": 1289.2,
-        "volume": 1069122
-      }
-    },
-    {
-      "symbol": "MANYAVAR",
-      "name": "Vedant Fashions Limited",
-      "marketCapCr": 12058,
-      "sector": "Consumer Cyclical",
-      "currentWeek": {
-        "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 502.95,
-        "low": 476.55,
-        "close": 496.35,
-        "volume": 168319
-      },
-      "lastWeek": {
-        "start": "2026-10-26",
-        "end": "2026-10-30",
-        "high": 491.25,
-        "low": 469.65,
-        "close": 478.55,
-        "volume": 438498
-      },
-      "oneWeekAgo": {
-        "start": "2026-10-19",
-        "end": "2026-10-23",
-        "high": 522.8,
-        "low": 470.1,
-        "close": 481.45,
-        "volume": 419597
-      },
-      "twoWeeksAgo": {
-        "start": "2026-10-12",
-        "end": "2026-10-16",
-        "high": 523,
-        "low": 489.25,
-        "close": 519.85,
-        "volume": 466075
-      }
-    },
-    {
-      "symbol": "JSWDULUX",
-      "name": "JSW Dulux Limited",
-      "marketCapCr": 12050,
-      "sector": "Basic Materials",
-      "currentWeek": {
-        "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 270.7,
-        "low": 257.15,
-        "close": 264.55,
-        "volume": 767948
-      },
-      "lastWeek": {
-        "start": "2026-10-26",
-        "end": "2026-10-30",
-        "high": 287.2,
-        "low": 261.2,
-        "close": 264.4,
-        "volume": 3661180
-      },
-      "oneWeekAgo": {
-        "start": "2026-10-19",
-        "end": "2026-10-23",
-        "high": 312.85,
-        "low": 280,
-        "close": 286.6,
-        "volume": 1322318
-      },
-      "twoWeeksAgo": {
-        "start": "2026-10-12",
-        "end": "2026-10-16",
-        "high": 315,
-        "low": 300.63,
-        "close": 304.5,
-        "volume": 873510
-      }
-    },
-    {
-      "symbol": "DOMS",
-      "name": "DOMS Industries Limited",
-      "marketCapCr": 12017,
-      "sector": "Industrials",
-      "currentWeek": {
-        "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 2011.7,
-        "low": 1821,
-        "close": 1980.3,
-        "volume": 97841
-      },
-      "lastWeek": {
-        "start": "2026-10-26",
-        "end": "2026-10-30",
-        "high": 1914.2,
-        "low": 1810,
-        "close": 1823.5,
-        "volume": 113751
-      },
-      "oneWeekAgo": {
-        "start": "2026-10-19",
-        "end": "2026-10-23",
-        "high": 2119.5,
-        "low": 1860,
-        "close": 1874.2,
-        "volume": 107755
-      },
-      "twoWeeksAgo": {
-        "start": "2026-10-12",
-        "end": "2026-10-16",
-        "high": 2169.3,
-        "low": 2058,
-        "close": 2104.5,
-        "volume": 96893
-      }
-    },
-    {
       "symbol": "FIVESTAR",
       "name": "Five-Star Business Finance Limited",
-      "marketCapCr": 11744,
+      "marketCapCr": 12446,
       "sector": "Financial Services",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 418,
+        "end": "2026-11-06",
+        "high": 427.7,
         "low": 386.8,
-        "close": 397.55,
-        "volume": 1885906
+        "close": 421.75,
+        "volume": 2486343
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -3392,55 +3672,131 @@
       }
     },
     {
-      "symbol": "JBMA",
-      "name": "JBM Auto Limited",
-      "marketCapCr": 11722,
-      "sector": "Consumer Cyclical",
+      "symbol": "DOMS",
+      "name": "DOMS Industries Limited",
+      "marketCapCr": 12422,
+      "sector": "Industrials",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 498.75,
-        "low": 465,
-        "close": 496,
-        "volume": 537742
+        "end": "2026-11-06",
+        "high": 2070,
+        "low": 1775,
+        "close": 2046.4,
+        "volume": 513993
       },
       "lastWeek": {
         "start": "2026-10-26",
         "end": "2026-10-30",
-        "high": 510.9,
-        "low": 465.35,
-        "close": 467.65,
-        "volume": 2388653
+        "high": 1914.2,
+        "low": 1810,
+        "close": 1823.5,
+        "volume": 113751
       },
       "oneWeekAgo": {
         "start": "2026-10-19",
         "end": "2026-10-23",
-        "high": 543.95,
-        "low": 478.05,
-        "close": 487.15,
-        "volume": 1078366
+        "high": 2119.5,
+        "low": 1860,
+        "close": 1874.2,
+        "volume": 107755
       },
       "twoWeeksAgo": {
         "start": "2026-10-12",
         "end": "2026-10-16",
-        "high": 547.3,
-        "low": 529.9,
-        "close": 539.1,
-        "volume": 868699
+        "high": 2169.3,
+        "low": 2058,
+        "close": 2104.5,
+        "volume": 96893
+      }
+    },
+    {
+      "symbol": "JSWDULUX",
+      "name": "JSW Dulux Limited",
+      "marketCapCr": 12353,
+      "sector": "Basic Materials",
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-06",
+        "high": 281.8,
+        "low": 257.15,
+        "close": 271.1,
+        "volume": 3169658
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 287.2,
+        "low": 261.2,
+        "close": 264.4,
+        "volume": 3661180
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 312.85,
+        "low": 280,
+        "close": 286.6,
+        "volume": 1322318
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 315,
+        "low": 300.63,
+        "close": 304.5,
+        "volume": 873510
+      }
+    },
+    {
+      "symbol": "AMAGI",
+      "name": "Amagi Media Labs Limited",
+      "marketCapCr": 12226,
+      "sector": "Technology",
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-06",
+        "high": 579.5,
+        "low": 536.55,
+        "close": 563.4,
+        "volume": 527978
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 552.8,
+        "low": 517.5,
+        "close": 540.6,
+        "volume": 731094
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 578,
+        "low": 520,
+        "close": 544.45,
+        "volume": 818608
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 579,
+        "low": 559.4,
+        "close": 569.75,
+        "volume": 582142
       }
     },
     {
       "symbol": "KTKBANK",
       "name": "The Karnataka Bank Limited",
-      "marketCapCr": 11713,
+      "marketCapCr": 12074,
       "sector": "Financial Services",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 311.4,
+        "end": "2026-11-06",
+        "high": 323.65,
         "low": 295.65,
-        "close": 309.8,
-        "volume": 2008056
+        "close": 319.5,
+        "volume": 5503542
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -3468,131 +3824,93 @@
       }
     },
     {
-      "symbol": "CANHLIFE",
-      "name": "Canara HSBC Life Insurance Company Limited",
-      "marketCapCr": 11640,
-      "sector": "Financial Services",
+      "symbol": "PGIL",
+      "name": "Pearl Global Industries Limited",
+      "marketCapCr": 11844,
+      "sector": "Consumer Cyclical",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 123.28,
-        "low": 119.84,
-        "close": 123.06,
-        "volume": 1500281
+        "end": "2026-11-06",
+        "high": 1343.8,
+        "low": 1180.1,
+        "close": 1305,
+        "volume": 610860
       },
       "lastWeek": {
         "start": "2026-10-26",
         "end": "2026-10-30",
-        "high": 125.58,
-        "low": 120,
-        "close": 121.41,
-        "volume": 2490893
+        "high": 1240.5,
+        "low": 1163.2,
+        "close": 1192.6,
+        "volume": 341869
       },
       "oneWeekAgo": {
         "start": "2026-10-19",
         "end": "2026-10-23",
-        "high": 131.15,
-        "low": 120.76,
-        "close": 124.75,
-        "volume": 2997927
+        "high": 1302.4,
+        "low": 1170,
+        "close": 1224,
+        "volume": 413308
       },
       "twoWeeksAgo": {
         "start": "2026-10-12",
         "end": "2026-10-16",
-        "high": 144.05,
-        "low": 128.6,
-        "close": 130.37,
-        "volume": 7778820
+        "high": 1351.4,
+        "low": 1217.5,
+        "close": 1289.2,
+        "volume": 1069122
       }
     },
     {
-      "symbol": "KSB",
-      "name": "KSB Limited",
-      "marketCapCr": 11499,
-      "sector": "Industrials",
+      "symbol": "JBMA",
+      "name": "JBM Auto Limited",
+      "marketCapCr": 11604,
+      "sector": "Consumer Cyclical",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 673.45,
-        "low": 649,
-        "close": 660.4,
-        "volume": 258510
+        "end": "2026-11-06",
+        "high": 503.1,
+        "low": 465,
+        "close": 490.6,
+        "volume": 1666358
       },
       "lastWeek": {
         "start": "2026-10-26",
         "end": "2026-10-30",
-        "high": 688,
-        "low": 641.1,
-        "close": 651.1,
-        "volume": 702184
+        "high": 510.9,
+        "low": 465.35,
+        "close": 467.65,
+        "volume": 2388653
       },
       "oneWeekAgo": {
         "start": "2026-10-19",
         "end": "2026-10-23",
-        "high": 787,
-        "low": 663,
-        "close": 681.75,
-        "volume": 723748
+        "high": 543.95,
+        "low": 478.05,
+        "close": 487.15,
+        "volume": 1078366
       },
       "twoWeeksAgo": {
         "start": "2026-10-12",
         "end": "2026-10-16",
-        "high": 799.85,
-        "low": 760.5,
-        "close": 779.6,
-        "volume": 294334
-      }
-    },
-    {
-      "symbol": "ATLANTAELE",
-      "name": "Atlanta Electricals Limited",
-      "marketCapCr": 11451,
-      "sector": "Industrials",
-      "currentWeek": {
-        "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 1508.8,
-        "low": 1328.9,
-        "close": 1487.4,
-        "volume": 1066149
-      },
-      "lastWeek": {
-        "start": "2026-10-26",
-        "end": "2026-10-30",
-        "high": 1690,
-        "low": 1551,
-        "close": 1589.2,
-        "volume": 576685
-      },
-      "oneWeekAgo": {
-        "start": "2026-10-19",
-        "end": "2026-10-23",
-        "high": 1725.9,
-        "low": 1587,
-        "close": 1619.5,
-        "volume": 377239
-      },
-      "twoWeeksAgo": {
-        "start": "2026-10-12",
-        "end": "2026-10-16",
-        "high": 1986.5,
-        "low": 1690,
-        "close": 1695.2,
-        "volume": 1101834
+        "high": 547.3,
+        "low": 529.9,
+        "close": 539.1,
+        "volume": 868699
       }
     },
     {
       "symbol": "EIDPARRY",
       "name": "E.I.D.- Parry (India) Limited",
-      "marketCapCr": 11395,
+      "marketCapCr": 11525,
       "sector": "Basic Materials",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 644.9,
+        "end": "2026-11-06",
+        "high": 655.9,
         "low": 598,
-        "close": 640.3,
-        "volume": 231172
+        "close": 647.4,
+        "volume": 647716
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -3620,55 +3938,169 @@
       }
     },
     {
-      "symbol": "E2E",
-      "name": "E2E Networks Limited",
-      "marketCapCr": 10670,
-      "sector": "Technology",
+      "symbol": "CANHLIFE",
+      "name": "Canara HSBC Life Insurance Company Limited",
+      "marketCapCr": 11462,
+      "sector": "Financial Services",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 519.35,
-        "low": 473.3,
-        "close": 519.35,
-        "volume": 5718047
+        "end": "2026-11-06",
+        "high": 125.68,
+        "low": 119.84,
+        "close": 121.27,
+        "volume": 2211268
       },
       "lastWeek": {
         "start": "2026-10-26",
         "end": "2026-10-30",
-        "high": 594.35,
-        "low": 513.2,
-        "close": 520.4,
-        "volume": 8296229
+        "high": 125.58,
+        "low": 120,
+        "close": 121.41,
+        "volume": 2490893
       },
       "oneWeekAgo": {
         "start": "2026-10-19",
         "end": "2026-10-23",
-        "high": 673,
-        "low": 566.05,
-        "close": 566.05,
-        "volume": 842039
+        "high": 131.15,
+        "low": 120.76,
+        "close": 124.75,
+        "volume": 2997927
       },
       "twoWeeksAgo": {
         "start": "2026-10-12",
         "end": "2026-10-16",
-        "high": 765,
-        "low": 675.4,
-        "close": 694.85,
-        "volume": 6084389
+        "high": 144.05,
+        "low": 128.6,
+        "close": 130.37,
+        "volume": 7778820
+      }
+    },
+    {
+      "symbol": "UJJIVANSFB",
+      "name": "Ujjivan Small Finance Bank Limited",
+      "marketCapCr": 11429,
+      "sector": "Financial Services",
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-06",
+        "high": 60,
+        "low": 53.17,
+        "close": 58.48,
+        "volume": 70432789
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 58,
+        "low": 53,
+        "close": 53.09,
+        "volume": 108298178
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 64.44,
+        "low": 56,
+        "close": 58.1,
+        "volume": 88631110
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 66.4,
+        "low": 61.54,
+        "close": 63.25,
+        "volume": 112586394
+      }
+    },
+    {
+      "symbol": "MANYAVAR",
+      "name": "Vedant Fashions Limited",
+      "marketCapCr": 11409,
+      "sector": "Consumer Cyclical",
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-06",
+        "high": 504.95,
+        "low": 468.8,
+        "close": 469.25,
+        "volume": 424631
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 491.25,
+        "low": 469.65,
+        "close": 478.55,
+        "volume": 438498
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 522.8,
+        "low": 470.1,
+        "close": 481.45,
+        "volume": 419597
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 523,
+        "low": 489.25,
+        "close": 519.85,
+        "volume": 466075
+      }
+    },
+    {
+      "symbol": "KSB",
+      "name": "KSB Limited",
+      "marketCapCr": 11070,
+      "sector": "Industrials",
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-06",
+        "high": 677.4,
+        "low": 631,
+        "close": 634.85,
+        "volume": 825883
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 688,
+        "low": 641.1,
+        "close": 651.1,
+        "volume": 702184
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 787,
+        "low": 663,
+        "close": 681.75,
+        "volume": 723748
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 799.85,
+        "low": 760.5,
+        "close": 779.6,
+        "volume": 294334
       }
     },
     {
       "symbol": "INOXWIND",
       "name": "Inox Wind Limited",
-      "marketCapCr": 10653,
+      "marketCapCr": 11049,
       "sector": "Industrials",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 62.96,
+        "end": "2026-11-06",
+        "high": 66.35,
         "low": 55.71,
-        "close": 61.61,
-        "volume": 56918922
+        "close": 63.96,
+        "volume": 89014723
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -3696,17 +4128,55 @@
       }
     },
     {
-      "symbol": "BLUEDART",
-      "name": "Blue Dart Express Limited",
-      "marketCapCr": 10499,
+      "symbol": "ATLANTAELE",
+      "name": "Atlanta Electricals Limited",
+      "marketCapCr": 11025,
       "sector": "Industrials",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 4457.6,
+        "end": "2026-11-06",
+        "high": 1549,
+        "low": 1328.9,
+        "close": 1431.7,
+        "volume": 1239280
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 1690,
+        "low": 1551,
+        "close": 1589.2,
+        "volume": 576685
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 1725.9,
+        "low": 1587,
+        "close": 1619.5,
+        "volume": 377239
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 1986.5,
+        "low": 1690,
+        "close": 1695.2,
+        "volume": 1101834
+      }
+    },
+    {
+      "symbol": "BLUEDART",
+      "name": "Blue Dart Express Limited",
+      "marketCapCr": 10678,
+      "sector": "Industrials",
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-06",
+        "high": 4610.6,
         "low": 4190.7,
-        "close": 4424.8,
-        "volume": 15946
+        "close": 4503.1,
+        "volume": 51264
       },
       "lastWeek": {
         "start": "2026-10-26",
@@ -3734,41 +4204,193 @@
       }
     },
     {
-      "symbol": "APTUS",
-      "name": "Aptus Value Housing Finance India Limited",
-      "marketCapCr": 10258,
+      "symbol": "UTIAMC",
+      "name": "UTI Asset Management Company Limited",
+      "marketCapCr": 10635,
       "sector": "Financial Services",
       "currentWeek": {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "high": 206.64,
-        "low": 192,
-        "close": 204.72,
-        "volume": 3007652
+        "end": "2026-11-06",
+        "high": 839.3,
+        "low": 794.4,
+        "close": 827.7,
+        "volume": 460347
       },
       "lastWeek": {
         "start": "2026-10-26",
         "end": "2026-10-30",
-        "high": 203.69,
-        "low": 190.1,
-        "close": 191.28,
-        "volume": 9068905
+        "high": 829.1,
+        "low": 781.8,
+        "close": 810.4,
+        "volume": 505529
       },
       "oneWeekAgo": {
         "start": "2026-10-19",
         "end": "2026-10-23",
-        "high": 221.85,
-        "low": 193.61,
-        "close": 196.47,
-        "volume": 6663525
+        "high": 884.4,
+        "low": 807.45,
+        "close": 817.05,
+        "volume": 490161
       },
       "twoWeeksAgo": {
         "start": "2026-10-12",
         "end": "2026-10-16",
-        "high": 225.99,
-        "low": 217.55,
-        "close": 222.5,
-        "volume": 9360270
+        "high": 891.1,
+        "low": 868,
+        "close": 869.9,
+        "volume": 291888
+      }
+    },
+    {
+      "symbol": "VINATIORGA",
+      "name": "Vinati Organics Limited",
+      "marketCapCr": 10445,
+      "sector": "Basic Materials",
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-06",
+        "high": 1036.85,
+        "low": 950.05,
+        "close": 1008.05,
+        "volume": 419250
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 1100,
+        "low": 955,
+        "close": 992.2,
+        "volume": 563436
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 1140,
+        "low": 1062.2,
+        "close": 1070.9,
+        "volume": 133825
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 1167.5,
+        "low": 1118,
+        "close": 1135,
+        "volume": 174293
+      }
+    },
+    {
+      "symbol": "VISL",
+      "name": "Vedanta Iron and Steel Limited",
+      "marketCapCr": 10424,
+      "sector": "Basic Materials",
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-06",
+        "high": 28.45,
+        "low": 25.31,
+        "close": 26.67,
+        "volume": 83706574
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 27.95,
+        "low": 25.24,
+        "close": 25.5,
+        "volume": 156162505
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 29.53,
+        "low": 25.85,
+        "close": 26.22,
+        "volume": 51269948
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 30.44,
+        "low": 28.33,
+        "close": 29.35,
+        "volume": 82720754
+      }
+    },
+    {
+      "symbol": "JKTYRE",
+      "name": "JK Tyre & Industries Limited",
+      "marketCapCr": 10244,
+      "sector": "Consumer Cyclical",
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-06",
+        "high": 358.5,
+        "low": 304.05,
+        "close": 355.25,
+        "volume": 2282092
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 312.15,
+        "low": 296.75,
+        "close": 301.8,
+        "volume": 2212506
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 338.4,
+        "low": 304.8,
+        "close": 309.15,
+        "volume": 1413032
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 342.6,
+        "low": 330.8,
+        "close": 338.4,
+        "volume": 1532408
+      }
+    },
+    {
+      "symbol": "E2E",
+      "name": "E2E Networks Limited",
+      "marketCapCr": 10004,
+      "sector": "Technology",
+      "currentWeek": {
+        "start": "2026-11-02",
+        "end": "2026-11-06",
+        "high": 542.5,
+        "low": 473.3,
+        "close": 486.9,
+        "volume": 8413460
+      },
+      "lastWeek": {
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "high": 594.35,
+        "low": 513.2,
+        "close": 520.4,
+        "volume": 8296229
+      },
+      "oneWeekAgo": {
+        "start": "2026-10-19",
+        "end": "2026-10-23",
+        "high": 673,
+        "low": 566.05,
+        "close": 566.05,
+        "volume": 842039
+      },
+      "twoWeeksAgo": {
+        "start": "2026-10-12",
+        "end": "2026-10-16",
+        "high": 765,
+        "low": 675.4,
+        "close": 694.85,
+        "volume": 6084389
       }
     }
   ]

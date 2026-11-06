@@ -260,7 +260,6 @@ async function main() {
     twoWeeksAgo: { start: w2.start, end: w2.end },
   }
 
-  let uptrendStocks: Company[] = []
   for (const screen of SCREENS) {
     const inUniverse = candidates.filter((c) => c.marketCapCr >= screen.minMarketCapCr)
     const matches = inUniverse
@@ -270,8 +269,6 @@ async function main() {
         return { ...stock, currentWeek: current ? roundWeek(current) : null, lastWeek, oneWeekAgo, twoWeeksAgo }
       })
       .sort((a, b) => b.marketCapCr - a.marketCapCr)
-    if (screen.trend === 'up') uptrendStocks = matches.map((stock) => ({ ...stock, sector: candidates.find((c) => c.symbol === stock.symbol)?.sector ?? 'Unclassified' }))
-
     await writeFile(
       screen.output,
       JSON.stringify(
@@ -290,28 +287,29 @@ async function main() {
     )
     console.log(`${screen.trend}trend matches: ${matches.length} of ${inUniverse.length}`)
   }
-  const sectorGroups = new Map<string, { universeCount: number; stocks: Company[] }>()
-  for (const company of candidates.filter((c) => c.marketCapCr >= SCREENS.find((s) => s.trend === 'up')!.minMarketCapCr)) {
-    const group = sectorGroups.get(company.sector) ?? { universeCount: 0, stocks: [] }
+  const sectorGroups = new Map<string, { universeCount: number; advancingOneWeek: number; advancingLastWeek: number; stocks: Company[] }>()
+  const sectorUniverse = candidates.filter((c) => c.marketCapCr >= 500 && c.weeks.length >= 3)
+  for (const company of sectorUniverse) {
+    const [twoWeeksAgo, oneWeekAgo, lastWeek] = company.weeks.slice(-3)
+    const group = sectorGroups.get(company.sector) ?? { universeCount: 0, advancingOneWeek: 0, advancingLastWeek: 0, stocks: [] }
     group.universeCount++
+    if (oneWeekAgo.close > twoWeeksAgo.close) group.advancingOneWeek++
+    if (lastWeek.close > oneWeekAgo.close) group.advancingLastWeek++
+    if (oneWeekAgo.close > twoWeeksAgo.close && lastWeek.close > oneWeekAgo.close) group.stocks.push(company)
     sectorGroups.set(company.sector, group)
   }
-  for (const stock of uptrendStocks) {
-    const group = sectorGroups.get(stock.sector)
-    if (group) group.stocks.push(stock)
-  }
   const sectorRows = [...sectorGroups.entries()]
-    .filter(([, group]) => group.stocks.length > 0)
+    .filter(([, group]) => group.advancingOneWeek + group.advancingLastWeek > group.universeCount)
     .map(([name, group]) => ({
       name,
-      stockCount: group.stocks.length,
       universeCount: group.universeCount,
-      breadthPct: round((group.stocks.length / group.universeCount) * 100),
+      oneWeekBreadthPct: round((group.advancingOneWeek / group.universeCount) * 100),
+      lastWeekBreadthPct: round((group.advancingLastWeek / group.universeCount) * 100),
       stocks: group.stocks
         .sort((a, b) => b.marketCapCr - a.marketCapCr)
         .map(({ symbol, name: stockName, marketCapCr }) => ({ symbol, name: stockName, marketCapCr })),
     }))
-    .sort((a, b) => b.stockCount - a.stockCount || b.breadthPct - a.breadthPct || a.name.localeCompare(b.name))
+    .sort((a, b) => b.lastWeekBreadthPct + b.oneWeekBreadthPct - a.lastWeekBreadthPct - a.oneWeekBreadthPct || a.name.localeCompare(b.name))
   await writeFile(
     SECTORS_OUTPUT,
     JSON.stringify(
@@ -319,7 +317,6 @@ async function main() {
         generatedAt: new Date().toISOString(),
         weeks: { currentWeek: weeks.currentWeek, lastWeek: weeks.lastWeek },
         universeSize: candidates.filter((c) => c.marketCapCr >= 500).length,
-        uptrendSize: uptrendStocks.length,
         sectors: sectorRows,
       },
       null,
