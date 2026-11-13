@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-12T11:15:17.230Z",
+  "updatedAt": "2026-11-13T18:31:18.806Z",
   "ideas": [
     {
       "id": "2026-11-12_DCXINDIA",
@@ -13,7 +13,7 @@
       "score": 114.35,
       "rank": 1,
       "status": "open",
-      "hitDate": null
+      "closedDate": null
     },
     {
       "id": "2026-11-12_AVANTIFEED",
@@ -27,7 +27,7 @@
       "score": 110.88,
       "rank": 2,
       "status": "open",
-      "hitDate": null
+      "closedDate": null
     },
     {
       "id": "2026-11-12_JARO",
@@ -41,7 +41,7 @@
       "score": 110.73,
       "rank": 3,
       "status": "open",
-      "hitDate": null
+      "closedDate": null
     },
     {
       "id": "2026-11-12_GODREJIND",
@@ -55,7 +55,7 @@
       "score": 110.12,
       "rank": 4,
       "status": "open",
-      "hitDate": null
+      "closedDate": null
     },
     {
       "id": "2026-11-12_CONTROLPR",
@@ -69,7 +69,7 @@
       "score": 110.06,
       "rank": 5,
       "status": "open",
-      "hitDate": null
+      "closedDate": null
     },
     {
       "id": "2026-11-12_ELPROINTL",
@@ -83,7 +83,7 @@
       "score": 108.49,
       "rank": 6,
       "status": "open",
-      "hitDate": null
+      "closedDate": null
     },
     {
       "id": "2026-11-12_HINDOILEXP",
@@ -97,7 +97,7 @@
       "score": 108.01,
       "rank": 7,
       "status": "open",
-      "hitDate": null
+      "closedDate": null
     },
     {
       "id": "2026-11-12_ABREL",
@@ -111,7 +111,7 @@
       "score": 105.73,
       "rank": 8,
       "status": "open",
-      "hitDate": null
+      "closedDate": null
     },
     {
       "id": "2026-11-12_MANAKCOAT",
@@ -125,7 +125,7 @@
       "score": 105.44,
       "rank": 9,
       "status": "open",
-      "hitDate": null
+      "closedDate": null
     },
     {
       "id": "2026-11-12_KOVAI",
@@ -139,7 +139,35 @@
       "score": 105.37,
       "rank": 10,
       "status": "open",
-      "hitDate": null
+      "closedDate": null
+    },
+    {
+      "id": "2026-11-12_RANEHOLDIN",
+      "symbol": "RANEHOLDIN",
+      "name": "Rane Holdings Limited",
+      "sector": "Consumer Cyclical",
+      "suggestionDate": "2026-11-12",
+      "entry": 1665.5,
+      "stop": 1564.99,
+      "target": 1866.52,
+      "score": 115.53,
+      "rank": 1,
+      "status": "open",
+      "closedDate": null
+    },
+    {
+      "id": "2026-11-12_ROTO",
+      "symbol": "ROTO",
+      "name": "Roto Pumps Limited",
+      "sector": "Industrials",
+      "suggestionDate": "2026-11-12",
+      "entry": 76.96,
+      "stop": 72.29,
+      "target": 86.3,
+      "score": 112.63,
+      "rank": 3,
+      "status": "open",
+      "closedDate": null
     }
   ]
 }
