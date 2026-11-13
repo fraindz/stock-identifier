@@ -39,39 +39,6 @@ h1 {
   color: var(--text-h);
 }
 
-.title-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-}
-
-.refresh-button {
-  flex: none;
-  padding: 6px 12px;
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  background: var(--surface);
-  color: var(--text-h);
-  font: inherit;
-  cursor: pointer;
-}
-
-.refresh-button:hover:not(:disabled) {
-  border-color: var(--accent);
-  color: var(--accent);
-}
-
-.refresh-button:disabled {
-  cursor: wait;
-  opacity: 0.65;
-}
-
-.lede {
-  margin: 0;
-  max-width: 70ch;
-}
-
 .criteria {
   display: flex;
   flex-wrap: wrap;
@@ -116,6 +83,42 @@ h1 {
   border: 1px dashed var(--border);
   border-radius: 8px;
   background: var(--surface);
+}
+
+.performance-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  margin: 24px 0;
+}
+
+.performance-card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--muted);
+}
+
+.performance-card strong {
+  color: var(--text-h);
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.performance-card.target strong {
+  color: var(--up);
+}
+
+.performance-card.stop strong {
+  color: var(--down);
+}
+
+.performance-note {
+  margin-top: 12px;
 }
 
 .controls {

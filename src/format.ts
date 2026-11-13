@@ -12,3 +12,8 @@ export const signed = (n: number, digits = 2) => `${n > 0 ? '+' : ''}${n.toFixed
 export const toneOf = (n: number) => (n > 0 ? 'up' : n < 0 ? 'down' : '')
 
 export const pctChange = (from: number, to: number) => ((to - from) / from) * 100
+
+export const pctFromEntry = (entry: number, level: number) => {
+  const change = pctChange(entry, level)
+  return `${change > 0 ? '+' : ''}${change.toFixed(1)}%`
+}

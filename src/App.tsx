@@ -5,8 +5,9 @@ import PullbackPage from './PullbackPage'
 import SectorPage from './SectorPage'
 import ScreenerPage from './ScreenerPage'
 import SwingPage from './SwingPage'
+import TopTenDashboard from './TopTenDashboard'
 import { emptyHistory, loadHistory, previousList, saveList, type History } from './history'
-import type { BreakoutData, PullbackData, ScreenerData, SectorData, SwingData, Trend } from './types'
+import type { BreakoutData, PullbackData, ScreenerData, SectorData, SwingData, TopTenPerformance, Trend } from './types'
 import './App.css'
 
 type Page =
@@ -14,7 +15,8 @@ type Page =
   | { path: string; label: string; kind: 'breakout' }
   | { path: string; label: string; kind: 'pullback' }
   | { path: string; label: string; kind: 'sectors' }
-  | { path: string; label: string; kind: 'swing'; file: string; title: string; limit?: number }
+  | { path: string; label: string; kind: 'swing'; file: string; title: string; limit?: number; showLevelPercent?: boolean }
+  | { path: string; label: string; kind: 'performance' }
 
 const PAGES: Page[] = [
   { path: '#/downtrend', label: 'Downtrend', kind: 'trend', trend: 'down', repeat: false },
@@ -29,7 +31,8 @@ const PAGES: Page[] = [
   { path: '#/breakout-watchlist', label: 'Breakout watchlist', kind: 'swing', file: 'breakout-watchlist', title: 'Breakout watchlist' },
   { path: '#/volume-surge', label: 'Volume surge', kind: 'swing', file: 'volume-surge', title: 'Volume surge' },
   { path: '#/trade-plan', label: 'Trade plan', kind: 'swing', file: 'trade-plan', title: 'Trade plan' },
-  { path: '#/top-10-bets', label: 'Top 10 bets', kind: 'swing', file: 'trade-plan', title: 'Top 10 bets', limit: 10 },
+  { path: '#/top-10-bets', label: 'Top 10 bets', kind: 'swing', file: 'trade-plan', title: 'Top 10 bets', limit: 10, showLevelPercent: true },
+  { path: '#/top-10-results', label: 'Top 10 results', kind: 'performance' },
 ]
 const HIDDEN_PATHS = new Set([
   '#/downtrend',
@@ -54,19 +57,32 @@ async function fetchJson<T>(path: string): Promise<T> {
 
 function App() {
   const [page, setPage] = useState<Page>(pageFromHash)
+  const [showDashboard, setShowDashboard] = useState(
+    () => window.localStorage.getItem('ShowDashboard') === 'true',
+  )
   const [lists, setLists] = useState<Record<Trend, ScreenerData> | null>(null)
   const [breakouts, setBreakouts] = useState<BreakoutData | null>(null)
   const [pullbacks, setPullbacks] = useState<PullbackData | null>(null)
   const [sectors, setSectors] = useState<SectorData | null>(null)
   const [swingData, setSwingData] = useState<Record<string, SwingData>>({})
+  const [performance, setPerformance] = useState<TopTenPerformance | null>(null)
   const [history, setHistory] = useState<History>(emptyHistory)
   const [error, setError] = useState<string | null>(null)
-  const [refreshing, setRefreshing] = useState(true)
 
   useEffect(() => {
     const onHashChange = () => setPage(pageFromHash())
     window.addEventListener('hashchange', onHashChange)
     return () => window.removeEventListener('hashchange', onHashChange)
+  }, [])
+
+  useEffect(() => {
+    const onStorage = (event: StorageEvent) => {
+      if (event.key === 'ShowDashboard' || event.key === null) {
+        setShowDashboard(window.localStorage.getItem('ShowDashboard') === 'true')
+      }
+    }
+    window.addEventListener('storage', onStorage)
+    return () => window.removeEventListener('storage', onStorage)
   }, [])
 
   useEffect(() => {
@@ -76,16 +92,16 @@ function App() {
   // Both lists are loaded and saved on every visit, so a week is recorded
   // whichever tab is opened.
   const loadData = useCallback(async () => {
-    setRefreshing(true)
     setError(null)
     try {
       const swingPages = PAGES.filter((p): p is Extract<Page, { kind: 'swing' }> => p.kind === 'swing')
-      const [down, up, breakout, pullback, sectorData, ...allSwingData] = await Promise.all([
+      const [down, up, breakout, pullback, sectorData, performanceData, ...allSwingData] = await Promise.all([
         fetchJson<ScreenerData>('/downtrend.json'),
         fetchJson<ScreenerData>('/uptrend.json'),
         fetchJson<BreakoutData>('/breakout.json'),
         fetchJson<PullbackData>('/pullback.json'),
         fetchJson<SectorData>('/sectors.json'),
+        fetchJson<TopTenPerformance>('/top-10-performance.json'),
         ...swingPages.map((p) => fetchJson<SwingData>(`/${p.file}.json`)),
       ])
       await Promise.all([saveList('down', down), saveList('up', up)])
@@ -95,30 +111,12 @@ function App() {
       setBreakouts(breakout)
       setPullbacks(pullback)
       setSectors(sectorData)
+      setPerformance(performanceData)
       setSwingData(Object.fromEntries(swingPages.map((p, index) => [p.path, allSwingData[index]])))
     } catch {
-      setError('No screener data found. Run `npm run screen` to generate it.')
-    } finally {
-      setRefreshing(false)
+      setError('Could not load market data. Please try again later.')
     }
   }, [])
-
-  const refreshData = useCallback(async () => {
-    setRefreshing(true)
-    setError(null)
-    try {
-      if (import.meta.env.DEV) {
-        const response = await fetch('/api/refresh', { method: 'POST' })
-        if (!response.ok) {
-          throw new Error('Refresh failed')
-        }
-      }
-      await loadData()
-    } catch {
-      setError('Could not refresh market data. Make sure the local screen server is running.')
-      setRefreshing(false)
-    }
-  }, [loadData])
 
   useEffect(() => {
     void loadData()
@@ -126,13 +124,16 @@ function App() {
 
   const content = (() => {
     if (page.kind === 'breakout') {
-      return breakouts && <BreakoutPage data={breakouts} onRefresh={refreshData} refreshing={refreshing} />
+      return breakouts && <BreakoutPage data={breakouts} />
     }
     if (page.kind === 'pullback') {
-      return pullbacks && <PullbackPage data={pullbacks} onRefresh={refreshData} refreshing={refreshing} />
+      return pullbacks && <PullbackPage data={pullbacks} />
     }
     if (page.kind === 'sectors') {
-      return sectors && <SectorPage data={sectors} onRefresh={refreshData} refreshing={refreshing} />
+      return sectors && <SectorPage data={sectors} />
+    }
+    if (page.kind === 'performance') {
+      return performance && <TopTenDashboard data={performance} />
     }
     if (page.kind === 'swing') {
       const data = swingData[page.path]
@@ -141,8 +142,7 @@ function App() {
           data={data}
           title={page.title}
           limit={page.limit}
-          onRefresh={refreshData}
-          refreshing={refreshing}
+          showLevelPercent={page.showLevelPercent}
         />
       )
     }
@@ -153,8 +153,6 @@ function App() {
           key={page.path}
           trend={page.trend}
           data={data}
-          onRefresh={refreshData}
-          refreshing={refreshing}
           previous={page.repeat ? previousList(history, page.trend, data.weeks.lastWeek.start) : undefined}
         />
       )
@@ -164,7 +162,7 @@ function App() {
   return (
     <main className="page">
       <nav className="tabs">
-        {PAGES.filter((p) => !HIDDEN_PATHS.has(p.path)).map((p) => (
+        {PAGES.filter((p) => !HIDDEN_PATHS.has(p.path) && (p.kind !== 'performance' || showDashboard)).map((p) => (
           <a key={p.path} href={p.path} aria-current={p === page ? 'page' : undefined}>
             {p.label}
           </a>

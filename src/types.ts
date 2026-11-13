@@ -92,6 +92,7 @@ export type SwingStock = {
   name: string
   sector: string
   marketCapCr: number
+  suggestionDate: string
   close: number
   change5Pct: number
   change20Pct: number
@@ -112,4 +113,24 @@ export type SwingData = {
   asOf: string | null
   universeSize: number
   stocks: SwingStock[]
+}
+
+export type TrackedIdea = {
+  id: string
+  symbol: string
+  name: string
+  sector: string
+  suggestionDate: string
+  entry: number
+  stop: number
+  target: number
+  score: number
+  rank: number
+  status: 'open' | 'target' | 'stop' | 'expired'
+  closedDate: string | null
+}
+
+export type TopTenPerformance = {
+  updatedAt: string
+  ideas: TrackedIdea[]
 }

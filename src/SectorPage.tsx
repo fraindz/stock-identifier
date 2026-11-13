@@ -1,23 +1,11 @@
 import { formatRange, inr } from './format'
 import type { SectorData } from './types'
-import RefreshButton from './RefreshButton'
 
-export default function SectorPage({
-  data,
-  onRefresh,
-  refreshing,
-}: {
-  data: SectorData
-  onRefresh: () => void
-  refreshing: boolean
-}) {
+export default function SectorPage({ data }: { data: SectorData }) {
   return (
     <>
       <header>
-        <div className="title-row">
-          <h1>Growing sectors</h1>
-          <RefreshButton onRefresh={onRefresh} refreshing={refreshing} />
-        </div>
+        <h1>Growing sectors</h1>
         <ul className="criteria">
           <li><span>Current week</span>{data.weeks.currentWeek ? formatRange(data.weeks.currentWeek) : 'No trades yet'}</li>
           <li><span>Last week</span>{formatRange(data.weeks.lastWeek)}</li>

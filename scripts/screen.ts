@@ -5,7 +5,7 @@
 // Writes public/{downtrend,uptrend,breakout,pullback,sectors}.json for the web pages.
 //
 // Usage: npm run screen
-import { writeFile } from 'node:fs/promises'
+import { readFile, writeFile } from 'node:fs/promises'
 import YahooFinance from 'yahoo-finance2'
 
 const CRORE = 1e7
@@ -28,6 +28,7 @@ const SWING_OUTPUTS = {
   volume: new URL('../public/volume-surge.json', import.meta.url),
   tradePlan: new URL('../public/trade-plan.json', import.meta.url),
 }
+const PERFORMANCE_OUTPUT = new URL('../public/top-10-performance.json', import.meta.url)
 
 // Last week closed above the highest high of the previous `lookbackWeeks` weeks, on
 // at least `volumeMultiple` times their average weekly volume.
@@ -58,7 +59,7 @@ const MIN_MARKET_CAP_CR = Math.min(
   PULLBACK.minMarketCapCr,
 )
 // Enough daily history for the longest lookback plus last week and the current week.
-const HISTORY_DAYS = Math.max((Math.max(BREAKOUT.lookbackWeeks, PULLBACK.peakWithinWeeks + PULLBACK.rallyWeeks) + 3) * 7, 120)
+const HISTORY_DAYS = Math.max((Math.max(BREAKOUT.lookbackWeeks, PULLBACK.peakWithinWeeks + PULLBACK.rallyWeeks) + 3) * 7, 180)
 
 const yf = new YahooFinance({ suppressNotices: ['yahooSurvey'] })
 
@@ -133,11 +134,21 @@ async function priceBars(symbol: string): Promise<{ weeks: Week[]; days: Day[] }
       w.end = day
       w.volume += volume
     }
+
   }
   return {
     weeks: [...weeks.entries()].sort(([a], [b]) => a.localeCompare(b)).map(([, w]) => w),
     days,
   }
+}
+
+function addCalendarMonths(date: string, months: number): string {
+  const [year, month, day] = date.split('-').map(Number)
+  const monthIndex = year * 12 + month - 1 + months
+  const targetYear = Math.floor(monthIndex / 12)
+  const targetMonth = monthIndex % 12
+  const lastDay = new Date(Date.UTC(targetYear, targetMonth + 1, 0)).getUTCDate()
+  return new Date(Date.UTC(targetYear, targetMonth, Math.min(day, lastDay))).toISOString().slice(0, 10)
 }
 
 async function mapLimit<T, R>(items: T[], limit: number, fn: (item: T) => Promise<R>): Promise<R[]> {
@@ -222,6 +233,7 @@ type SwingStock = {
   name: string
   sector: string
   marketCapCr: number
+  suggestionDate: string
   close: number
   change5Pct: number
   change20Pct: number
@@ -249,6 +261,7 @@ function swingMetrics(company: Company, days: Day[]): SwingStock | null {
     name: company.name,
     sector: company.sector,
     marketCapCr: company.marketCapCr,
+    suggestionDate: latest.date,
     close: round(entry),
     change5Pct: round(((entry - closes.at(-6)!) / closes.at(-6)!) * 100),
     change20Pct: round(((entry - closes.at(-21)!) / closes.at(-21)!) * 100),
@@ -489,12 +502,93 @@ async function main() {
   const tradePlan = [...momentum, ...healthyPullbacks, ...breakoutWatchlist]
     .reduce((all, stock) => all.some((item) => item.symbol === stock.symbol) ? all : [...all, stock], [] as SwingStock[])
     .sort((a, b) => b.score - a.score)
+  const topTen = tradePlan.slice(0, 10)
+  const performance = JSON.parse(await readFile(PERFORMANCE_OUTPUT, 'utf8')) as {
+    updatedAt: string
+    ideas: {
+      id: string
+      symbol: string
+      name: string
+      sector: string
+      suggestionDate: string
+      entry: number
+      stop: number
+      target: number
+      score: number
+      rank: number
+      status: 'open' | 'target' | 'stop' | 'expired'
+      hitDate?: string | null
+      closedDate?: string | null
+    }[]
+  }
+  for (const idea of performance.ideas) {
+    idea.closedDate ??= idea.hitDate ?? null
+    delete idea.hitDate
+  }
+  const barsBySymbol = new Map(candidates.map((candidate) => [candidate.symbol, candidate.days]))
+  const missingOpenSymbols = [...new Set(
+    performance.ideas
+      .filter((idea) => idea.status === 'open')
+      .map((idea) => idea.symbol)
+      .filter((symbol) => !(barsBySymbol.get(symbol)?.length)),
+  )]
+  const missingBars = await mapLimit(missingOpenSymbols, CHART_CONCURRENCY, async (symbol) => {
+    try {
+      return [symbol, (await priceBars(symbol)).days] as const
+    } catch (error) {
+      console.error(`Could not update tracked idea ${symbol}:`, error)
+      return [symbol, [] as Day[]] as const
+    }
+  })
+  for (const [symbol, days] of missingBars) barsBySymbol.set(symbol, days)
+  for (const idea of performance.ideas) {
+    if (idea.status !== 'open') continue
+    const expiryDate = addCalendarMonths(idea.suggestionDate, 4)
+    const laterDays = (barsBySymbol.get(idea.symbol) ?? []).filter(
+      (day) => day.date > idea.suggestionDate && day.date <= expiryDate,
+    )
+    for (const day of laterDays) {
+      const hitStop = day.low <= idea.stop
+      const hitTarget = day.high >= idea.target
+      if (!hitStop && !hitTarget) continue
+      idea.status = hitStop ? 'stop' : 'target'
+      idea.closedDate = day.date
+      break
+    }
+    const latestAvailableDate = (barsBySymbol.get(idea.symbol) ?? []).at(-1)?.date
+    if (idea.status === 'open' && latestAvailableDate && latestAvailableDate >= expiryDate) {
+      idea.status = 'expired'
+      idea.closedDate = laterDays.at(-1)?.date ?? expiryDate
+    }
+    delete idea.hitDate
+  }
+  const trackedIds = new Set(performance.ideas.map((idea) => idea.id))
+  for (const [index, stock] of topTen.entries()) {
+    const id = `${stock.suggestionDate}_${stock.symbol}`
+    if (trackedIds.has(id)) continue
+    performance.ideas.push({
+      id,
+      symbol: stock.symbol,
+      name: stock.name,
+      sector: stock.sector,
+      suggestionDate: stock.suggestionDate,
+      entry: stock.entry,
+      stop: stock.stop,
+      target: stock.target,
+      score: stock.score,
+      rank: index + 1,
+      status: 'open',
+      closedDate: null,
+    })
+  }
+  performance.updatedAt = new Date().toISOString()
   await Promise.all([
     writeSwingScreen(SWING_OUTPUTS.momentum, momentum.sort((a, b) => b.score - a.score)),
     writeSwingScreen(SWING_OUTPUTS.pullbacks, healthyPullbacks.sort((a, b) => b.score - a.score)),
     writeSwingScreen(SWING_OUTPUTS.breakouts, breakoutWatchlist.sort((a, b) => b.score - a.score)),
     writeSwingScreen(SWING_OUTPUTS.volume, volumeSurge.sort((a, b) => b.score - a.score)),
     writeSwingScreen(SWING_OUTPUTS.tradePlan, tradePlan),
+    writeFile(PERFORMANCE_OUTPUT, JSON.stringify(performance, null, 2)),
   ])
   console.log(`swing screens: momentum ${momentum.length}, pullbacks ${healthyPullbacks.length}, breakouts ${breakoutWatchlist.length}, volume ${volumeSurge.length}`)
 

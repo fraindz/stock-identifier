@@ -33,6 +33,18 @@ Add these GitHub repository secrets before enabling the workflow:
   deploy Hosting for the `stock-identifier` project.
 - `VITE_GA_MEASUREMENT_ID`: Optional GA4 measurement ID.
 
-The `Refresh` button in local development regenerates data through the Vite
-server. On the deployed static site, it reloads the latest files from Hosting;
-the scheduled workflow is what generates and publishes new data.
+## Top 10 outcome tracking
+
+The scanner records each day's top 10 Trade Plan ideas in
+`public/top-10-performance.json`, including the suggestion date, entry, stop,
+and target. Subsequent daily candles are checked until the stop or target is
+reached. If neither level is reached within four calendar months, the idea is
+closed as expired on the last trading date up to its expiry. If both stop and
+target are within a single day's range, the idea is conservatively recorded as
+a stop loss because daily candles do not reveal which level traded first.
+
+The scheduled workflow commits this ledger back to the repository before
+deploying, preserving its history across daily runs. The **Top 10 results**
+tab shows target, stop-loss, expired, and open counts, plus the full list of
+tracked ideas and their suggestion and close dates. Trade Plan scores are a ranking
+heuristic, not a statistically calibrated probability.

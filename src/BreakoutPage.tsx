@@ -2,22 +2,13 @@ import { useMemo, useState } from 'react'
 import { compact, formatRange, inr, pctChange } from './format'
 import { CurrentWeekCells, StockCell, WeekCells, WeekHeaders } from './TableCells'
 import type { BreakoutData, BreakoutStock } from './types'
-import RefreshButton from './RefreshButton'
 
 type SortKey = 'marketCapCr' | 'abovePct' | 'volumeRatio' | 'currentChange' | 'symbol'
 
 const currentChangePct = (s: BreakoutStock) =>
   s.currentWeek ? pctChange(s.lastWeek.close, s.currentWeek.close) : -Infinity
 
-export default function BreakoutPage({
-  data,
-  onRefresh,
-  refreshing,
-}: {
-  data: BreakoutData
-  onRefresh: () => void
-  refreshing: boolean
-}) {
+export default function BreakoutPage({ data }: { data: BreakoutData }) {
   const [query, setQuery] = useState('')
   const [sort, setSort] = useState<SortKey>('marketCapCr')
 
@@ -38,10 +29,7 @@ export default function BreakoutPage({
   return (
     <>
       <header>
-        <div className="title-row">
-          <h1>Range breakout on volume</h1>
-          <RefreshButton onRefresh={onRefresh} refreshing={refreshing} />
-        </div>
+        <h1>Range breakout on volume</h1>
         <ul className="criteria">
           {weeks.currentWeek && (
             <li className="current"><span>Current week (so far)</span>{formatRange(weeks.currentWeek)}</li>

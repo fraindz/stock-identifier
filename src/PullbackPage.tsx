@@ -2,7 +2,6 @@ import { useMemo, useState } from 'react'
 import { formatRange, inr, pctChange } from './format'
 import { CurrentWeekCells, StockCell, WeekCells, WeekHeaders } from './TableCells'
 import type { PullbackData, PullbackStock } from './types'
-import RefreshButton from './RefreshButton'
 
 type SortKey = 'marketCapCr' | 'rallyPct' | 'retracePct' | 'belowPeakPct' | 'currentChange' | 'symbol'
 
@@ -17,15 +16,7 @@ const sortValue: Record<Exclude<SortKey, 'symbol'>, (s: PullbackStock) => number
   currentChange: (s) => (s.currentWeek ? -pctChange(s.lastWeek.close, s.currentWeek.close) : Infinity),
 }
 
-export default function PullbackPage({
-  data,
-  onRefresh,
-  refreshing,
-}: {
-  data: PullbackData
-  onRefresh: () => void
-  refreshing: boolean
-}) {
+export default function PullbackPage({ data }: { data: PullbackData }) {
   const [query, setQuery] = useState('')
   const [sort, setSort] = useState<SortKey>('marketCapCr')
 
@@ -44,10 +35,7 @@ export default function PullbackPage({
   return (
     <>
       <header>
-        <div className="title-row">
-          <h1>Rally, pullback, ready to resume</h1>
-          <RefreshButton onRefresh={onRefresh} refreshing={refreshing} />
-        </div>
+        <h1>Rally, pullback, ready to resume</h1>
         <ul className="criteria">
           {weeks.currentWeek && (
             <li className="current"><span>Current week (so far)</span>{formatRange(weeks.currentWeek)}</li>

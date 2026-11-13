@@ -3,7 +3,6 @@ import { formatRange, inr, pctChange, signed, toneOf } from './format'
 import type { SavedList } from './history'
 import { CurrentWeekCells, StockCell, WeekCells, WeekHeaders } from './TableCells'
 import type { ScreenerData, Stock, Trend } from './types'
-import RefreshButton from './RefreshButton'
 
 type SortKey = 'marketCapCr' | 'symbol' | 'change' | 'currentChange'
 
@@ -21,14 +20,12 @@ const COPY = {
 type Props = {
   trend: Trend
   data: ScreenerData
-  onRefresh: () => void
-  refreshing: boolean
   // Set for the "still listed" view: the earlier saved list to compare against,
   // or null when no earlier week has been saved yet.
   previous?: SavedList | null
 }
 
-export default function ScreenerPage({ trend, data, previous, onRefresh, refreshing }: Props) {
+export default function ScreenerPage({ trend, data, previous }: Props) {
   const copy = COPY[trend]
   const repeatView = previous !== undefined
   const [query, setQuery] = useState('')
@@ -60,10 +57,7 @@ export default function ScreenerPage({ trend, data, previous, onRefresh, refresh
   return (
     <>
       <header>
-        <div className="title-row">
-          <h1>{repeatView ? `Still in ${copy.name}` : copy.title}</h1>
-          <RefreshButton onRefresh={onRefresh} refreshing={refreshing} />
-        </div>
+        <h1>{repeatView ? `Still in ${copy.name}` : copy.title}</h1>
         <ul className="criteria">
           {weeks.currentWeek && (
             <li className="current"><span>Current week (so far)</span>{formatRange(weeks.currentWeek)}</li>

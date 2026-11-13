@@ -1,16 +1,15 @@
 import { useMemo, useState } from 'react'
-import RefreshButton from './RefreshButton'
+import { pctFromEntry } from './format'
 import type { SwingData } from './types'
 
 type Props = {
   data: SwingData
   title: string
   limit?: number
-  onRefresh: () => void
-  refreshing: boolean
+  showLevelPercent?: boolean
 }
 
-export default function SwingPage({ data, title, limit, onRefresh, refreshing }: Props) {
+export default function SwingPage({ data, title, limit, showLevelPercent = false }: Props) {
   const [query, setQuery] = useState('')
   const displayedStocks = limit ? data.stocks.slice(0, limit) : data.stocks
   const rows = useMemo(() => {
@@ -21,10 +20,7 @@ export default function SwingPage({ data, title, limit, onRefresh, refreshing }:
   return (
     <>
       <header>
-        <div className="title-row">
-          <h1>{title}</h1>
-          <RefreshButton onRefresh={onRefresh} refreshing={refreshing} />
-        </div>
+        <h1>{title}</h1>
         <p className="meta">
           <strong>{displayedStocks.length}</strong>{limit ? ` of ${data.stocks.length}` : ''} candidates · data as of {data.asOf ?? 'unavailable'} · generated{' '}
           {new Date(data.generatedAt).toLocaleString('en-IN', { dateStyle: 'medium', timeStyle: 'short' })}
@@ -68,8 +64,12 @@ export default function SwingPage({ data, title, limit, onRefresh, refreshing }:
                 <td className="num">{stock.ema50.toFixed(2)}</td>
                 <td className="num">{stock.volumeRatio.toFixed(2)}×</td>
                 <td className="num">{stock.entry.toFixed(2)}</td>
-                <td className="num down">{stock.stop.toFixed(2)}</td>
-                <td className="num up">{stock.target.toFixed(2)}</td>
+                <td className="num down">
+                  {stock.stop.toFixed(2)}{showLevelPercent && <> ({pctFromEntry(stock.entry, stock.stop)})</>}
+                </td>
+                <td className="num up">
+                  {stock.target.toFixed(2)}{showLevelPercent && <> ({pctFromEntry(stock.entry, stock.target)})</>}
+                </td>
                 <td>{stock.sector}</td>
               </tr>
             ))}
