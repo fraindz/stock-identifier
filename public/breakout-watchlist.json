@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-14T11:07:41.967Z",
+  "generatedAt": "2026-11-14T11:17:10.219Z",
   "asOf": "2026-11-13",
-  "universeSize": 1743,
+  "universeSize": 1724,
   "stocks": [
     {
       "symbol": "ALICON",
@@ -682,26 +682,6 @@
       "stop": 736.46,
       "target": 799.14,
       "score": 101.32
-    },
-    {
-      "symbol": "RELINFRA",
-      "name": "Reliance Infrastructure Limited",
-      "sector": "Utilities",
-      "marketCapCr": 2303,
-      "suggestionDate": "2026-11-13",
-      "close": 56.41,
-      "change5Pct": 12.57,
-      "change20Pct": 1.06,
-      "rsi": 73.77,
-      "ema20": 51.62,
-      "ema50": 53.5,
-      "volumeRatio": 1.28,
-      "high20": 56.41,
-      "atr": 1.61,
-      "entry": 56.41,
-      "stop": 54,
-      "target": 61.24,
-      "score": 101.28
     },
     {
       "symbol": "STUDDS",
@@ -1684,26 +1664,6 @@
       "score": 100.17
     },
     {
-      "symbol": "MCX",
-      "name": "Multi Commodity Exchange of India Limited",
-      "sector": "Financial Services",
-      "marketCapCr": 94679,
-      "suggestionDate": "2026-11-13",
-      "close": 3720,
-      "change5Pct": 10.52,
-      "change20Pct": 14.44,
-      "rsi": 80.51,
-      "ema20": 3395.36,
-      "ema50": 3275.46,
-      "volumeRatio": 1.42,
-      "high20": 3767.4,
-      "atr": 135.8,
-      "entry": 3720,
-      "stop": 3516.3,
-      "target": 4127.4,
-      "score": 100.16
-    },
-    {
       "symbol": "BALUFORGE",
       "name": "Balu Forge Industries Limited",
       "sector": "Industrials",
@@ -2162,26 +2122,6 @@
       "stop": 1070.75,
       "target": 1257.79,
       "score": 99.79
-    },
-    {
-      "symbol": "PRICOLLTD",
-      "name": "Pricol Limited",
-      "sector": "Consumer Cyclical",
-      "marketCapCr": 9202,
-      "suggestionDate": "2026-11-13",
-      "close": 747.85,
-      "change5Pct": 2.74,
-      "change20Pct": 10.84,
-      "rsi": 80.84,
-      "ema20": 694.42,
-      "ema50": 697.8,
-      "volumeRatio": 1.05,
-      "high20": 758,
-      "atr": 26.93,
-      "entry": 747.85,
-      "stop": 707.46,
-      "target": 828.64,
-      "score": 99.71
     },
     {
       "symbol": "AMANTA",

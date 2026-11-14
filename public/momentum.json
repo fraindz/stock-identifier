@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-14T11:07:41.965Z",
+  "generatedAt": "2026-11-14T11:17:10.216Z",
   "asOf": "2026-11-13",
-  "universeSize": 1743,
+  "universeSize": 1724,
   "stocks": [
     {
       "symbol": "DCMSRIND",
@@ -1044,26 +1044,6 @@
       "score": 13.79
     },
     {
-      "symbol": "IOC",
-      "name": "Indian Oil Corporation Limited",
-      "sector": "Energy",
-      "marketCapCr": 203402,
-      "suggestionDate": "2026-11-13",
-      "close": 144.04,
-      "change5Pct": -0.32,
-      "change20Pct": 12.71,
-      "rsi": 77.33,
-      "ema20": 138.68,
-      "ema50": 136.34,
-      "volumeRatio": 0.44,
-      "high20": 150.05,
-      "atr": 3.55,
-      "entry": 144.04,
-      "stop": 138.71,
-      "target": 154.7,
-      "score": 13.59
-    },
-    {
       "symbol": "JAYAGROGN",
       "name": "Jayant Agro-Organics Limited",
       "sector": "Basic Materials",
@@ -1502,26 +1482,6 @@
       "stop": 110.84,
       "target": 142.12,
       "score": 12.03
-    },
-    {
-      "symbol": "BOSCHLTD",
-      "name": "Bosch Limited",
-      "sector": "Consumer Cyclical",
-      "marketCapCr": 145681,
-      "suggestionDate": "2026-11-13",
-      "close": 49390,
-      "change5Pct": -5.88,
-      "change20Pct": 9.76,
-      "rsi": 68.65,
-      "ema20": 48441.43,
-      "ema50": 47008.35,
-      "volumeRatio": 1.07,
-      "high20": 52475,
-      "atr": 1441.07,
-      "entry": 49390,
-      "stop": 47228.39,
-      "target": 53713.21,
-      "score": 11.9
     },
     {
       "symbol": "EIHOTEL",
@@ -2422,26 +2382,6 @@
       "stop": 1696.1,
       "target": 1926.5,
       "score": 8.37
-    },
-    {
-      "symbol": "HESTERBIO",
-      "name": "Hester Biosciences Limited",
-      "sector": "Healthcare",
-      "marketCapCr": 1984,
-      "suggestionDate": "2026-11-13",
-      "close": 2323.6,
-      "change5Pct": -3.48,
-      "change20Pct": 7.69,
-      "rsi": 72.46,
-      "ema20": 2272.47,
-      "ema50": 2245.08,
-      "volumeRatio": 0.31,
-      "high20": 2548,
-      "atr": 106.81,
-      "entry": 2323.6,
-      "stop": 2163.39,
-      "target": 2644.02,
-      "score": 8.31
     },
     {
       "symbol": "NRL",
