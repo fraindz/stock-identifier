@@ -9,6 +9,7 @@
     "lint": "oxlint",
     "preview": "vite preview",
     "screen": "tsx scripts/screen.ts",
+    "test:top10": "tsx --test scripts/top10.test.ts",
     "schedule:install": "cp scripts/com.stock-identifier.weekly-screen.plist ~/Library/LaunchAgents/com.stock-identifier.weekly-screen.plist && launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.stock-identifier.weekly-screen.plist",
     "schedule:uninstall": "launchctl bootout gui/$(id -u) ~/Library/LaunchAgents/com.stock-identifier.weekly-screen.plist; rm -f ~/Library/LaunchAgents/com.stock-identifier.weekly-screen.plist"
   },

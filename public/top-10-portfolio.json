@@ -1,0 +1,167 @@
+{
+  "updatedAt": "2026-11-14T11:07:41.974Z",
+  "asOf": "2026-11-13",
+  "lastReviewWeek": "2026-11-09",
+  "rules": {
+    "minMarketCapCr": 5000,
+    "minTradedValueCr": 10,
+    "maxBelowHighPct": 25,
+    "maxExtension": 1.25,
+    "maxRsi": 75,
+    "baseMinWeeks": 6,
+    "baseMaxRangePct": 15,
+    "baseTopPct": 25,
+    "benchSize": 30,
+    "keepRank": 40,
+    "maxSlots": 10,
+    "maxPerSector": 2,
+    "maxNewPerWeek": 3,
+    "watchReviews": 2,
+    "triggerBufferPct": 0.5,
+    "atrWeeks": 10,
+    "atrStopMultiple": 2,
+    "maxRiskPct": 12,
+    "breakevenR": 1,
+    "partialR": 2,
+    "trailWeeks": 3,
+    "timeStopWeeks": 13,
+    "weights": {
+      "rs": 0.4,
+      "sector": 0.2,
+      "trend": 0.2,
+      "setup": 0.2
+    }
+  },
+  "slots": [
+    {
+      "id": "2026-11-09_BLISSGVS",
+      "symbol": "BLISSGVS",
+      "name": "Bliss GVS Pharma Limited",
+      "sector": "Healthcare",
+      "setup": "pullback",
+      "setupNote": "48.06% pullback of a 67.02% rally, turned up last week",
+      "addedWeek": "2026-11-09",
+      "reviewsWaiting": 0,
+      "rankAtAdd": 1,
+      "lastRank": 1,
+      "status": "watch",
+      "trigger": 676.97,
+      "initialStop": 597.2,
+      "stop": 597.2,
+      "riskPct": 11.78,
+      "lastDate": "2026-11-13",
+      "lastClose": 673.1,
+      "events": [
+        {
+          "date": "2026-11-13",
+          "type": "added",
+          "note": "Added to watch at #1: buy above 676.97, stop 597.2 (11.78% risk)"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-09_RPEL",
+      "symbol": "RPEL",
+      "name": "Raghav Productivity Enhancers Limited",
+      "sector": "Basic Materials",
+      "setup": "breakout",
+      "setupNote": "Closed 0.13% above the 1943.7 range high on 1.82× volume",
+      "addedWeek": "2026-11-09",
+      "reviewsWaiting": 0,
+      "rankAtAdd": 5,
+      "lastRank": 5,
+      "status": "watch",
+      "trigger": 1997.84,
+      "initialStop": 1795.8,
+      "stop": 1795.8,
+      "riskPct": 10.11,
+      "lastDate": "2026-11-13",
+      "lastClose": 1946.2,
+      "events": [
+        {
+          "date": "2026-11-13",
+          "type": "added",
+          "note": "Added to watch at #5: buy above 1997.84, stop 1795.8 (10.11% risk)"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-09_CRAFTSMAN",
+      "symbol": "CRAFTSMAN",
+      "name": "Craftsman Automation Limited",
+      "sector": "Consumer Cyclical",
+      "setup": "base",
+      "setupNote": "8-week base, 14.65% deep, closing near its high",
+      "addedWeek": "2026-11-09",
+      "reviewsWaiting": 0,
+      "rankAtAdd": 9,
+      "lastRank": 9,
+      "status": "watch",
+      "trigger": 11233.89,
+      "initialStop": 9980,
+      "stop": 9980,
+      "riskPct": 11.16,
+      "lastDate": "2026-11-13",
+      "lastClose": 11077,
+      "events": [
+        {
+          "date": "2026-11-13",
+          "type": "added",
+          "note": "Added to watch at #9: buy above 11233.89, stop 9980 (11.16% risk)"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-09_PETRONET",
+      "symbol": "PETRONET",
+      "name": "Petronet LNG Limited",
+      "sector": "Energy",
+      "setup": "breakout",
+      "setupNote": "Closed 1.28% above the 319.95 range high on 2.15× volume",
+      "addedWeek": "2026-11-09",
+      "reviewsWaiting": 0,
+      "rankAtAdd": 10,
+      "lastRank": 10,
+      "status": "watch",
+      "trigger": 337.98,
+      "initialStop": 313.2,
+      "stop": 313.2,
+      "riskPct": 7.33,
+      "lastDate": "2026-11-13",
+      "lastClose": 324.05,
+      "events": [
+        {
+          "date": "2026-11-13",
+          "type": "added",
+          "note": "Added to watch at #10: buy above 337.98, stop 313.2 (7.33% risk)"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-09_BAJAJHLDNG",
+      "symbol": "BAJAJHLDNG",
+      "name": "Bajaj Holdings & Investment Limited",
+      "sector": "Financial Services",
+      "setup": "base",
+      "setupNote": "10-week base, 14.14% deep, closing near its high",
+      "addedWeek": "2026-11-09",
+      "reviewsWaiting": 0,
+      "rankAtAdd": 11,
+      "lastRank": 11,
+      "status": "watch",
+      "trigger": 11482.12,
+      "initialStop": 10183.32,
+      "stop": 10183.32,
+      "riskPct": 11.31,
+      "lastDate": "2026-11-13",
+      "lastClose": 11096,
+      "events": [
+        {
+          "date": "2026-11-13",
+          "type": "added",
+          "note": "Added to watch at #11: buy above 11482.12, stop 10183.32 (11.31% risk)"
+        }
+      ]
+    }
+  ]
+}

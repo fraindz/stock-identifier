@@ -115,22 +115,99 @@ export type SwingData = {
   stocks: SwingStock[]
 }
 
-export type TrackedIdea = {
+// Top 10 portfolio (public/top-10-portfolio.json); mirrors scripts/top10.ts.
+export type Setup = 'breakout' | 'pullback' | 'base'
+export type ExitReason = 'stop' | 'trail' | 'time' | 'thesis' | 'dropped'
+export type SlotEvent = {
+  date: string
+  type: 'added' | 'triggered' | 'breakeven' | 'partial' | 'trail' | 'closed' | 'dropped'
+  note: string
+}
+
+export type Slot = {
   id: string
   symbol: string
   name: string
   sector: string
-  suggestionDate: string
-  entry: number
+  setup: Setup
+  setupNote: string
+  addedWeek: string
+  reviewsWaiting: number
+  rankAtAdd: number
+  lastRank: number | null
+  status: 'watch' | 'active' | 'closed'
+  trigger: number
+  initialStop: number
   stop: number
-  target: number
-  score: number
-  rank: number
-  status: 'open' | 'target' | 'stop' | 'expired'
-  closedDate: string | null
+  riskPct: number
+  entryDate?: string
+  entry?: number
+  r?: number
+  partialBooked?: boolean
+  lastDate: string
+  lastClose: number
+  maxHigh?: number
+  closedDate?: string
+  exitPrice?: number
+  exitReason?: ExitReason
+  rMultiple?: number
+  mfeR?: number
+  daysHeld?: number
+  events: SlotEvent[]
 }
 
-export type TopTenPerformance = {
+export type TopTenRules = {
+  maxSlots: number
+  maxNewPerWeek: number
+  watchReviews: number
+  partialR: number
+  breakevenR: number
+  timeStopWeeks: number
+  trailWeeks: number
+  [key: string]: unknown
+}
+
+export type Portfolio = {
   updatedAt: string
-  ideas: TrackedIdea[]
+  asOf: string
+  lastReviewWeek: string
+  rules: TopTenRules
+  slots: Slot[]
+}
+
+export type Candidate = {
+  rank: number
+  eligible: boolean
+  symbol: string
+  name: string
+  sector: string
+  marketCapCr: number
+  setup: Setup | null
+  setupNote: string
+  score: number
+  rsPct: number
+  sectorPct: number
+  trendPct: number
+  setupPct: number
+  rel6mPct: number
+  rel3mPct: number
+  trendQuality: number
+  sectorBreadthPct: number
+  close: number
+  rsi: number
+  belowHighPct: number
+  extensionPct: number
+  tradedValueCr: number
+  trigger: number
+  stop: number
+  riskPct: number
+}
+
+export type CandidatesData = {
+  generatedAt: string
+  asOf: string
+  reviewWeek: string
+  trendUniverse: number
+  eligibleCount: number
+  candidates: Candidate[]
 }

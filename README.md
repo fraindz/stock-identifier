@@ -33,18 +33,25 @@ Add these GitHub repository secrets before enabling the workflow:
   deploy Hosting for the `stock-identifier` project.
 - `VITE_GA_MEASUREMENT_ID`: Optional GA4 measurement ID.
 
-## Top 10 outcome tracking
+## Top 10 bets
 
-The scanner records each day's top 10 Trade Plan ideas in
-`public/top-10-performance.json`, including the suggestion date, entry, stop,
-and target. Subsequent daily candles are checked until the stop or target is
-reached. If neither level is reached within four calendar months, the idea is
-closed as expired on the last trading date up to its expiry. If both stop and
-target are within a single day's range, the idea is conservatively recorded as
-a stop loss because daily candles do not reveal which level traded first.
+**Top 10 bets** is a fixed portfolio of up to 10 positional (1–3 month) trades,
+stored in `public/top-10-portfolio.json`. The logic is in `scripts/top10.ts`
+(pure functions, tested by `npm run test:top10`).
 
-The scheduled workflow commits this ledger back to the repository before
-deploying, preserving its history across daily runs. The **Top 10 results**
-tab shows target, stop-loss, expired, and open counts, plus the full list of
-tracked ideas and their suggestion and close dates. Trade Plan scores are a ranking
-heuristic, not a statistically calibrated probability.
+- **Weekly review** (the Saturday workflow run, or `npm run screen -- --review`):
+  stocks with market cap of at least ₹5,000 Cr, a 20-day traded value of at least
+  ₹10 Cr, a rising 30-week trend, a price within 25% of the 52-week high, and a
+  weekly breakout, pullback or base setup are ranked by relative strength vs
+  Nifty 50, sector breadth, trend quality and setup quality. The top 30 are written to
+  `public/top-10-candidates.json`. Watch names that fall out of the top 40, fail the
+  trend filter, or don't trigger within 2 reviews are dropped. Free slots are filled
+  from the ranking, with at most 3 new names a week and 2 per sector.
+- **Daily run** (Mon–Fri): updates the open slots only. A Watch name becomes Active
+  when a day's high reaches its trigger. Its stop moves to breakeven at +1R, half is
+  booked at +2R, and after that the stop trails the lowest low of the last 3 weeks.
+  Exits happen on a stop hit, after 13 weeks below +1R, or on a weekly close below
+  the 30-week SMA.
+
+The scheduled workflow commits `public/*.json` back to the repository before
+deploying.

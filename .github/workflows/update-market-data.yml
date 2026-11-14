@@ -4,6 +4,8 @@ on:
   schedule:
     # 16:45 IST (11:15 UTC), Monday through Friday, after the NSE session.
     - cron: '15 11 * * 1-5'
+    # 08:45 IST (03:15 UTC) Saturday: weekly Top 10 review on Friday's completed candle.
+    - cron: '15 3 * * 6'
   workflow_dispatch:
 
 permissions:
@@ -34,13 +36,13 @@ jobs:
       - name: Generate market data
         run: npm run screen
 
-      - name: Persist Top 10 outcome history
+      - name: Persist market data and Top 10 portfolio
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/top-10-performance.json
+          git add public/*.json
           if ! git diff --cached --quiet; then
-            git commit -m "Update Top 10 outcome history"
+            git commit -m "Update market data and Top 10 portfolio"
             git push
           fi
 

@@ -7,12 +7,31 @@
 // Usage: npm run screen
 import { readFile, writeFile } from 'node:fs/promises'
 import YahooFinance from 'yahoo-finance2'
+import {
+  atr,
+  BREAKOUT,
+  CRORE,
+  DAY_MS,
+  ema,
+  mondayOf,
+  percentileRanks,
+  pullback,
+  breakout,
+  PULLBACK,
+  round,
+  rsi,
+  sectorBreadth,
+  sma,
+  type Company,
+  type Day,
+  type Week,
+} from './indicators'
+import { dailyUpdate, eligible, emptyPortfolio, rankCandidates, RULES, weeklyReview, type Portfolio } from './top10'
 
-const CRORE = 1e7
 const IST_OFFSET_MS = 5.5 * 60 * 60 * 1000
-const DAY_MS = 24 * 60 * 60 * 1000
 const QUOTE_BATCH = 100
-const CHART_CONCURRENCY = 6
+// Yahoo starts answering HTTP 429 when more requests run at once.
+const CHART_CONCURRENCY = 3
 
 type Trend = 'down' | 'up'
 
@@ -21,6 +40,8 @@ const SCREENS: { trend: Trend; minMarketCapCr: number; output: URL }[] = [
   { trend: 'up', minMarketCapCr: 500, output: new URL('../public/uptrend.json', import.meta.url) },
 ]
 const SECTORS_OUTPUT = new URL('../public/sectors.json', import.meta.url)
+const BREAKOUT_OUTPUT = new URL('../public/breakout.json', import.meta.url)
+const PULLBACK_OUTPUT = new URL('../public/pullback.json', import.meta.url)
 const SWING_OUTPUTS = {
   momentum: new URL('../public/momentum.json', import.meta.url),
   pullbacks: new URL('../public/healthy-pullbacks.json', import.meta.url),
@@ -28,44 +49,18 @@ const SWING_OUTPUTS = {
   volume: new URL('../public/volume-surge.json', import.meta.url),
   tradePlan: new URL('../public/trade-plan.json', import.meta.url),
 }
-const PERFORMANCE_OUTPUT = new URL('../public/top-10-performance.json', import.meta.url)
-
-// Last week closed above the highest high of the previous `lookbackWeeks` weeks, on
-// at least `volumeMultiple` times their average weekly volume.
-const BREAKOUT = {
-  minMarketCapCr: 1_000,
-  lookbackWeeks: 20,
-  volumeMultiple: 1.5,
-  output: new URL('../public/breakout.json', import.meta.url),
-}
-
-// A rally of at least `minRallyPct` up to a peak within the last `peakWithinWeeks` weeks,
-// measured from the lowest low of the `rallyWeeks` weeks up to the peak; then a pullback
-// of `minRetracePct`–`maxRetracePct` of the rally on lighter volume than the rally; and
-// last week closing above the previous week's high while still below the peak.
-const PULLBACK = {
-  minMarketCapCr: 1_000,
-  peakWithinWeeks: 12,
-  rallyWeeks: 12,
-  minRallyPct: 20,
-  minRetracePct: 25,
-  maxRetracePct: 62,
-  output: new URL('../public/pullback.json', import.meta.url),
-}
+const PORTFOLIO_OUTPUT = new URL('../public/top-10-portfolio.json', import.meta.url)
+const CANDIDATES_OUTPUT = new URL('../public/top-10-candidates.json', import.meta.url)
 
 const MIN_MARKET_CAP_CR = Math.min(
   ...SCREENS.map((s) => s.minMarketCapCr),
   BREAKOUT.minMarketCapCr,
   PULLBACK.minMarketCapCr,
 )
-// Enough daily history for the longest lookback plus last week and the current week.
-const HISTORY_DAYS = Math.max((Math.max(BREAKOUT.lookbackWeeks, PULLBACK.peakWithinWeeks + PULLBACK.rallyWeeks) + 3) * 7, 180)
+// About 54 weeks of daily history: the 52-week high and the 30-week SMA (rising vs 4 weeks ago).
+const HISTORY_DAYS = 380
 
 const yf = new YahooFinance({ suppressNotices: ['yahooSurvey'] })
-
-type Week = { start: string; end: string; high: number; low: number; close: number; volume: number }
-type Day = { date: string; open: number; high: number; low: number; close: number; volume: number }
-type Company = { symbol: string; name: string; marketCapCr: number; sector: string }
 
 async function nseSymbols(): Promise<string[]> {
   const res = await fetch('https://archives.nseindia.com/content/equities/EQUITY_L.csv')
@@ -84,6 +79,15 @@ function istWeekStart(d: Date): string {
   return new Date(ist.getTime() - daysSinceMonday * DAY_MS).toISOString().slice(0, 10)
 }
 
+// Monday of the first week that hasn't finished yet. On Saturday and Sunday the week just
+// ended counts as completed, so the weekend review uses Friday's weekly candle.
+function openWeekStart(d: Date): string {
+  const monday = istWeekStart(d)
+  const weekday = new Date(d.getTime() + IST_OFFSET_MS).getUTCDay()
+  if (weekday !== 0 && weekday !== 6) return monday
+  return new Date(Date.parse(`${monday}T00:00:00Z`) + 7 * DAY_MS).toISOString().slice(0, 10)
+}
+
 function istDate(d: Date): string {
   return new Date(d.getTime() + IST_OFFSET_MS).toISOString().slice(0, 10)
 }
@@ -92,7 +96,7 @@ async function largeCaps(symbols: string[]) {
   const out: Omit<Company, 'sector'>[] = []
   for (let i = 0; i < symbols.length; i += QUOTE_BATCH) {
     const batch = symbols.slice(i, i + QUOTE_BATCH).map((s) => `${s}.NS`)
-    const quotes = await yf.quote(batch, { fields: ['symbol', 'marketCap', 'longName', 'shortName'] })
+    const quotes = await withRetry(() => yf.quote(batch, { fields: ['symbol', 'marketCap', 'longName', 'shortName'] }))
     for (const q of quotes) {
       const capCr = (q.marketCap ?? 0) / CRORE
       if (capCr >= MIN_MARKET_CAP_CR) {
@@ -111,11 +115,29 @@ async function largeCaps(symbols: string[]) {
 
 // Daily bars grouped into Mon–Fri weeks, oldest first. The last entry may be the
 // current, still-incomplete week.
-async function priceBars(symbol: string): Promise<{ weeks: Week[]; days: Day[] }> {
-  const chart = await yf.chart(`${symbol}.NS`, {
-    period1: new Date(Date.now() - HISTORY_DAYS * DAY_MS),
-    interval: '1d',
-  })
+const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms))
+const isRateLimited = (error: unknown) => (error as { code?: unknown })?.code === 429
+
+// Retries with exponential backoff: 1s, 2s, 4s… for ordinary errors and 5s, 10s, 20s…
+// when Yahoo rate-limits (HTTP 429), since its blocks last several seconds.
+async function withRetry<T>(fn: () => Promise<T>, tries = 5): Promise<T> {
+  for (let attempt = 1; ; attempt++) {
+    try {
+      return await fn()
+    } catch (error) {
+      if (attempt >= tries) throw error
+      await sleep((isRateLimited(error) ? 5_000 : 1_000) * 2 ** (attempt - 1))
+    }
+  }
+}
+
+async function priceBars(ticker: string): Promise<{ weeks: Week[]; days: Day[] }> {
+  const chart = await withRetry(() =>
+    yf.chart(ticker, {
+      period1: new Date(Date.now() - HISTORY_DAYS * DAY_MS),
+      interval: '1d',
+    }),
+  )
   const weeks = new Map<string, Week>()
   const days: Day[] = []
   for (const bar of chart.quotes) {
@@ -142,15 +164,6 @@ async function priceBars(symbol: string): Promise<{ weeks: Week[]; days: Day[] }
   }
 }
 
-function addCalendarMonths(date: string, months: number): string {
-  const [year, month, day] = date.split('-').map(Number)
-  const monthIndex = year * 12 + month - 1 + months
-  const targetYear = Math.floor(monthIndex / 12)
-  const targetMonth = monthIndex % 12
-  const lastDay = new Date(Date.UTC(targetYear, targetMonth + 1, 0)).getUTCDate()
-  return new Date(Date.UTC(targetYear, targetMonth, Math.min(day, lastDay))).toISOString().slice(0, 10)
-}
-
 async function mapLimit<T, R>(items: T[], limit: number, fn: (item: T) => Promise<R>): Promise<R[]> {
   const results: R[] = new Array(items.length)
   let next = 0
@@ -171,15 +184,13 @@ async function mapLimit<T, R>(items: T[], limit: number, fn: (item: T) => Promis
 async function loadSectors(companies: Omit<Company, 'sector'>[]): Promise<Company[]> {
   return mapLimit(companies, CHART_CONCURRENCY, async (company) => {
     try {
-      const summary = await yf.quoteSummary(`${company.symbol}.NS`, { modules: ['assetProfile'] })
+      const summary = await withRetry(() => yf.quoteSummary(`${company.symbol}.NS`, { modules: ['assetProfile'] }))
       return { ...company, sector: summary.assetProfile?.sector?.trim() || 'Unclassified' }
     } catch {
       return { ...company, sector: 'Unclassified' }
     }
   })
 }
-
-const round = (n: number) => Math.round(n * 100) / 100
 
 // Each week's high, low and close is strictly below (down) or above (up) the week before.
 function isTrending(weeks: Week[], trend: Trend): boolean {
@@ -193,40 +204,6 @@ function isTrending(weeks: Week[], trend: Trend): boolean {
 }
 
 const roundWeek = (w: Week) => ({ ...w, high: round(w.high), low: round(w.low), close: round(w.close) })
-
-// Breakout figures for the latest completed week, or null if it isn't a breakout.
-function breakout(weeks: Week[]) {
-  if (weeks.length < BREAKOUT.lookbackWeeks + 1) return null
-  const last = weeks[weeks.length - 1]
-  const lookback = weeks.slice(-BREAKOUT.lookbackWeeks - 1, -1)
-  const rangeHigh = Math.max(...lookback.map((w) => w.high))
-  const avgVolume = lookback.reduce((sum, w) => sum + w.volume, 0) / lookback.length
-  if (!(last.close > rangeHigh && avgVolume > 0 && last.volume >= BREAKOUT.volumeMultiple * avgVolume)) return null
-  return {
-    rangeHigh: round(rangeHigh),
-    abovePct: round(((last.close - rangeHigh) / rangeHigh) * 100),
-    avgVolume: Math.round(avgVolume),
-    volumeRatio: round(last.volume / avgVolume),
-  }
-}
-
-const avg = (xs: number[]) => xs.reduce((sum, x) => sum + x, 0) / xs.length
-const sma = (xs: number[], length: number) => avg(xs.slice(-length))
-function ema(xs: number[], length: number) {
-  const alpha = 2 / (length + 1)
-  return xs.slice(1).reduce((value, price) => alpha * price + (1 - alpha) * value, xs[0])
-}
-function rsi(closes: number[], length = 14) {
-  const changes = closes.slice(1).map((close, i) => close - closes[i])
-  const gains = changes.slice(-length).map((change) => Math.max(change, 0))
-  const losses = changes.slice(-length).map((change) => Math.max(-change, 0))
-  const averageLoss = avg(losses)
-  return averageLoss === 0 ? 100 : 100 - 100 / (1 + avg(gains) / averageLoss)
-}
-function atr(days: Day[], length = 14) {
-  const ranges = days.slice(1).map((day, i) => Math.max(day.high - day.low, Math.abs(day.high - days[i].close), Math.abs(day.low - days[i].close)))
-  return avg(ranges.slice(-length))
-}
 
 type SwingStock = {
   symbol: string
@@ -278,66 +255,40 @@ function swingMetrics(company: Company, days: Day[]): SwingStock | null {
   }
 }
 
-// Rally/pullback figures for the latest completed week, or null if it doesn't fit the setup.
-function pullback(weeks: Week[]) {
-  const L = weeks.length - 1
-  // The peak needs at least one pullback week between it and last week (the turn week).
-  const peakFrom = Math.max(0, L - PULLBACK.peakWithinWeeks)
-  if (L - 2 < peakFrom) return null
-  let p = peakFrom
-  for (let i = peakFrom; i <= L - 2; i++) if (weeks[i].high > weeks[p].high) p = i
-  const peak = weeks[p]
-  const after = weeks.slice(p + 1) // pullback weeks plus last week
-  if (after.some((w) => w.high >= peak.high)) return null
-
-  const rally = weeks.slice(Math.max(0, p - PULLBACK.rallyWeeks), p + 1)
-  let s = 0
-  for (let i = 1; i < rally.length; i++) if (rally[i].low < rally[s].low) s = i
-  const start = rally[s]
-  if (s === rally.length - 1) return null // the peak week itself was the low
-  const rallyPct = ((peak.high - start.low) / start.low) * 100
-  if (rallyPct < PULLBACK.minRallyPct) return null
-
-  const pullbackLow = Math.min(...after.map((w) => w.low))
-  const retracePct = ((peak.high - pullbackLow) / (peak.high - start.low)) * 100
-  if (retracePct < PULLBACK.minRetracePct || retracePct > PULLBACK.maxRetracePct) return null
-
-  const rallyVolume = avg(rally.slice(s + 1).map((w) => w.volume))
-  const pullbackVolume = avg(after.slice(0, -1).map((w) => w.volume))
-  if (!(rallyVolume > 0 && pullbackVolume < rallyVolume)) return null
-
-  const last = weeks[L]
-  const prev = weeks[L - 1]
-  if (!(last.close > prev.high && last.close < peak.high)) return null
-
-  return {
-    rally: { start: start.start, low: round(start.low), peakWeek: peak.start, high: round(peak.high), pct: round(rallyPct) },
-    pullback: { weeks: after.length - 1, low: round(pullbackLow), retracePct: round(retracePct), volumeVsRally: round(pullbackVolume / rallyVolume) },
-    prevWeekHigh: round(prev.high),
-    belowPeakPct: round(((peak.high - last.close) / peak.high) * 100),
-  }
-}
-
 async function main() {
-  const currentWeek = istWeekStart(new Date())
+  const now = new Date()
+  const currentWeek = openWeekStart(now)
+  const weekday = new Date(now.getTime() + IST_OFFSET_MS).getUTCDay()
+  const forceReview = process.argv.includes('--review')
+  // Fetched first, before the bulk requests can trip Yahoo's rate limit.
+  const niftyWeeks = (await priceBars('^NSEI')).weeks
   const symbols = await nseSymbols()
   console.log(`NSE symbols: ${symbols.length}`)
 
   const universe = await loadSectors(await largeCaps(symbols))
   console.log(`Market cap >= ₹${MIN_MARKET_CAP_CR.toLocaleString('en-IN')} Cr: ${universe.length}`)
 
-  const failed: string[] = []
-  const candidates = await mapLimit(universe, CHART_CONCURRENCY, async (stock) => {
+  const loadBars = async (stock: Company) => {
     try {
-      const { weeks: allWeeks, days: allDays } = await priceBars(stock.symbol)
+      const { weeks: allWeeks, days: allDays } = await priceBars(`${stock.symbol}.NS`)
       const weeks = [...allWeeks]
       const current = (weeks.at(-1)?.start ?? '') >= currentWeek ? weeks.pop() : undefined
-      return { ...stock, weeks, days: allDays, current }
+      return { ...stock, weeks, days: allDays, current, ok: true }
     } catch {
-      failed.push(stock.symbol)
-      return { ...stock, weeks: [] as Week[], days: [] as Day[], current: undefined }
+      return { ...stock, weeks: [] as Week[], days: [] as Day[], current: undefined as Week | undefined, ok: false }
     }
-  })
+  }
+  const firstPass = await mapLimit(universe, CHART_CONCURRENCY, loadBars)
+  // Second pass: give Yahoo a pause, then retry the failures one at a time.
+  const retryIndexes = firstPass.flatMap((c, i) => (c.ok ? [] : [i]))
+  if (retryIndexes.length) {
+    console.log(`Retrying ${retryIndexes.length} failed charts one at a time…`)
+    await sleep(30_000)
+    const retried = await mapLimit(retryIndexes, 1, (i) => loadBars(universe[i]))
+    retryIndexes.forEach((i, k) => (firstPass[i] = retried[k]))
+  }
+  const failed = firstPass.filter((c) => !c.ok).map((c) => c.symbol)
+  const candidates = firstPass.map(({ ok: _ok, ...c }) => c)
 
   // Week ranges are taken from the largest stock, which trades every session.
   const ref = candidates.reduce((a, b) => (b.weeks.length >= 3 && b.marketCapCr > a.marketCapCr ? b : a))
@@ -377,17 +328,7 @@ async function main() {
     )
     console.log(`${screen.trend}trend matches: ${matches.length} of ${inUniverse.length}`)
   }
-  const sectorGroups = new Map<string, { universeCount: number; advancingOneWeek: number; advancingLastWeek: number; stocks: Company[] }>()
-  const sectorUniverse = candidates.filter((c) => c.marketCapCr >= 500 && c.weeks.length >= 3)
-  for (const company of sectorUniverse) {
-    const [twoWeeksAgo, oneWeekAgo, lastWeek] = company.weeks.slice(-3)
-    const group = sectorGroups.get(company.sector) ?? { universeCount: 0, advancingOneWeek: 0, advancingLastWeek: 0, stocks: [] }
-    group.universeCount++
-    if (oneWeekAgo.close > twoWeeksAgo.close) group.advancingOneWeek++
-    if (lastWeek.close > oneWeekAgo.close) group.advancingLastWeek++
-    if (oneWeekAgo.close > twoWeeksAgo.close && lastWeek.close > oneWeekAgo.close) group.stocks.push(company)
-    sectorGroups.set(company.sector, group)
-  }
+  const sectorGroups = sectorBreadth(candidates.filter((c) => c.marketCapCr >= 500))
   const sectorRows = [...sectorGroups.entries()]
     .filter(([, group]) => group.advancingOneWeek + group.advancingLastWeek > group.universeCount)
     .map(([name, group]) => ({
@@ -422,7 +363,7 @@ async function main() {
     .sort((a, b) => b.marketCapCr - a.marketCapCr)
   const lookbackWeeks = ref.weeks.slice(-BREAKOUT.lookbackWeeks - 1, -1)
   await writeFile(
-    BREAKOUT.output,
+    BREAKOUT_OUTPUT,
     JSON.stringify(
       {
         generatedAt: new Date().toISOString(),
@@ -452,7 +393,7 @@ async function main() {
     })
     .sort((a, b) => b.marketCapCr - a.marketCapCr)
   await writeFile(
-    PULLBACK.output,
+    PULLBACK_OUTPUT,
     JSON.stringify(
       {
         generatedAt: new Date().toISOString(),
@@ -499,100 +440,106 @@ async function main() {
       return latest && s.volumeRatio >= 2 && Math.abs(s.change5Pct) >= 2 && (latest.close - latest.low) / Math.max(latest.high - latest.low, 0.01) >= 0.65
     })
     .map((s) => ({ ...s, score: round(s.volumeRatio + Math.max(s.change5Pct, 0)) }))
-  const tradePlan = [...momentum, ...healthyPullbacks, ...breakoutWatchlist]
-    .reduce((all, stock) => all.some((item) => item.symbol === stock.symbol) ? all : [...all, stock], [] as SwingStock[])
-    .sort((a, b) => b.score - a.score)
-  const topTen = tradePlan.slice(0, 10)
-  const performance = JSON.parse(await readFile(PERFORMANCE_OUTPUT, 'utf8')) as {
-    updatedAt: string
-    ideas: {
-      id: string
-      symbol: string
-      name: string
-      sector: string
-      suggestionDate: string
-      entry: number
-      stop: number
-      target: number
-      score: number
-      rank: number
-      status: 'open' | 'target' | 'stop' | 'expired'
-      hitDate?: string | null
-      closedDate?: string | null
-    }[]
+  // Each screen's score is on its own scale, so rank within each list (0–100) before merging.
+  const normalized = (stocks: SwingStock[]) => {
+    const ranks = percentileRanks(stocks.map((s) => s.score))
+    return stocks.map((s, i) => ({ ...s, score: round(ranks[i]) }))
   }
-  for (const idea of performance.ideas) {
-    idea.closedDate ??= idea.hitDate ?? null
-    delete idea.hitDate
+  const bestBySymbol = new Map<string, SwingStock>()
+  for (const stock of [...normalized(momentum), ...normalized(healthyPullbacks), ...normalized(breakoutWatchlist)]) {
+    const seen = bestBySymbol.get(stock.symbol)
+    if (!seen || stock.score > seen.score) bestBySymbol.set(stock.symbol, stock)
   }
-  const barsBySymbol = new Map(candidates.map((candidate) => [candidate.symbol, candidate.days]))
-  const missingOpenSymbols = [...new Set(
-    performance.ideas
-      .filter((idea) => idea.status === 'open')
-      .map((idea) => idea.symbol)
-      .filter((symbol) => !(barsBySymbol.get(symbol)?.length)),
-  )]
-  const missingBars = await mapLimit(missingOpenSymbols, CHART_CONCURRENCY, async (symbol) => {
-    try {
-      return [symbol, (await priceBars(symbol)).days] as const
-    } catch (error) {
-      console.error(`Could not update tracked idea ${symbol}:`, error)
-      return [symbol, [] as Day[]] as const
-    }
-  })
-  for (const [symbol, days] of missingBars) barsBySymbol.set(symbol, days)
-  for (const idea of performance.ideas) {
-    if (idea.status !== 'open') continue
-    const expiryDate = addCalendarMonths(idea.suggestionDate, 4)
-    const laterDays = (barsBySymbol.get(idea.symbol) ?? []).filter(
-      (day) => day.date > idea.suggestionDate && day.date <= expiryDate,
-    )
-    for (const day of laterDays) {
-      const hitStop = day.low <= idea.stop
-      const hitTarget = day.high >= idea.target
-      if (!hitStop && !hitTarget) continue
-      idea.status = hitStop ? 'stop' : 'target'
-      idea.closedDate = day.date
-      break
-    }
-    const latestAvailableDate = (barsBySymbol.get(idea.symbol) ?? []).at(-1)?.date
-    if (idea.status === 'open' && latestAvailableDate && latestAvailableDate >= expiryDate) {
-      idea.status = 'expired'
-      idea.closedDate = laterDays.at(-1)?.date ?? expiryDate
-    }
-    delete idea.hitDate
-  }
-  const trackedIds = new Set(performance.ideas.map((idea) => idea.id))
-  for (const [index, stock] of topTen.entries()) {
-    const id = `${stock.suggestionDate}_${stock.symbol}`
-    if (trackedIds.has(id)) continue
-    performance.ideas.push({
-      id,
-      symbol: stock.symbol,
-      name: stock.name,
-      sector: stock.sector,
-      suggestionDate: stock.suggestionDate,
-      entry: stock.entry,
-      stop: stock.stop,
-      target: stock.target,
-      score: stock.score,
-      rank: index + 1,
-      status: 'open',
-      closedDate: null,
-    })
-  }
-  performance.updatedAt = new Date().toISOString()
+  const tradePlan = [...bestBySymbol.values()].sort((a, b) => b.score - a.score || b.marketCapCr - a.marketCapCr)
   await Promise.all([
     writeSwingScreen(SWING_OUTPUTS.momentum, momentum.sort((a, b) => b.score - a.score)),
     writeSwingScreen(SWING_OUTPUTS.pullbacks, healthyPullbacks.sort((a, b) => b.score - a.score)),
     writeSwingScreen(SWING_OUTPUTS.breakouts, breakoutWatchlist.sort((a, b) => b.score - a.score)),
     writeSwingScreen(SWING_OUTPUTS.volume, volumeSurge.sort((a, b) => b.score - a.score)),
     writeSwingScreen(SWING_OUTPUTS.tradePlan, tradePlan),
-    writeFile(PERFORMANCE_OUTPUT, JSON.stringify(performance, null, 2)),
   ])
   console.log(`swing screens: momentum ${momentum.length}, pullbacks ${healthyPullbacks.length}, breakouts ${breakoutWatchlist.length}, volume ${volumeSurge.length}`)
 
+  await updateTopTen(candidates, {
+    currentWeek,
+    review: forceReview || weekday === 0 || weekday === 6,
+    forceReview,
+    sectorGroups,
+    niftyWeeks,
+    asOf: daysAsOf(candidates),
+  })
+
   if (failed.length) console.log(`Failed to fetch: ${failed.join(', ')}`)
+}
+
+type Loaded = Company & { weeks: Week[]; days: Day[]; current: Week | undefined }
+
+// Top 10 portfolio: daily update of the open slots, then (on weekends, with --review, or
+// when there's no portfolio yet) the weekly review that refills free slots.
+async function updateTopTen(
+  candidates: Loaded[],
+  opts: { currentWeek: string; review: boolean; forceReview: boolean; sectorGroups: ReturnType<typeof sectorBreadth>; niftyWeeks: Week[]; asOf: string },
+) {
+  let existing: Portfolio | null = null
+  try {
+    existing = JSON.parse(await readFile(PORTFOLIO_OUTPUT, 'utf8')) as Portfolio
+  } catch {
+    console.log('No Top 10 portfolio yet: running the first review')
+  }
+  const portfolio = existing ?? emptyPortfolio()
+  portfolio.rules = RULES
+
+  const bars = new Map(
+    candidates.map((c) => [c.symbol, { days: c.days, weeks: c.current ? [...c.weeks, c.current] : c.weeks }]),
+  )
+  const missing = [...new Set(portfolio.slots.filter((s) => s.status !== 'closed' && !bars.get(s.symbol)?.days.length).map((s) => s.symbol))]
+  for (const [symbol, b] of await mapLimit(missing, CHART_CONCURRENCY, async (symbol) => {
+    try {
+      return [symbol, await priceBars(`${symbol}.NS`)] as const
+    } catch (error) {
+      console.error(`Could not update Top 10 slot ${symbol}:`, error)
+      return [symbol, { weeks: [] as Week[], days: [] as Day[] }] as const
+    }
+  })) bars.set(symbol, b)
+  dailyUpdate(portfolio, bars)
+
+  const nifty = opts.niftyWeeks.filter((w) => w.start < opts.currentWeek)
+  const reviewWeek = mondayOf(nifty.at(-1)!.start)
+  const doReview = !existing || opts.forceReview || (opts.review && reviewWeek > portfolio.lastReviewWeek)
+
+  if (doReview) {
+    const sectorStrength = new Map(
+      [...opts.sectorGroups.entries()].map(([name, g]) => [name, ((g.advancingOneWeek + g.advancingLastWeek) / (2 * g.universeCount)) * 100]),
+    )
+    const analysed = candidates.flatMap((c) => {
+      const analysis = eligible(c, nifty)
+      return analysis ? [{ symbol: c.symbol, name: c.name, sector: c.sector, marketCapCr: c.marketCapCr, analysis }] : []
+    })
+    const ranked = rankCandidates(analysed, sectorStrength)
+    weeklyReview(portfolio, ranked, reviewWeek, opts.asOf)
+    const bench = ranked.filter((c) => c.eligible)
+    await writeFile(
+      CANDIDATES_OUTPUT,
+      JSON.stringify(
+        {
+          generatedAt: new Date().toISOString(),
+          asOf: opts.asOf,
+          reviewWeek,
+          trendUniverse: analysed.length,
+          eligibleCount: bench.length,
+          rules: RULES,
+          candidates: bench.slice(0, RULES.benchSize),
+        },
+        null,
+        2,
+      ),
+    )
+    console.log(`Top 10 review (week of ${reviewWeek}): ${analysed.length} pass the trend filter, ${bench.length} eligible`)
+  }
+  portfolio.updatedAt = new Date().toISOString()
+  await writeFile(PORTFOLIO_OUTPUT, JSON.stringify(portfolio, null, 2))
+  const open = portfolio.slots.filter((s) => s.status !== 'closed')
+  console.log(`Top 10 portfolio: ${open.filter((s) => s.status === 'active').length} active, ${open.filter((s) => s.status === 'watch').length} watch`)
 }
 
 function daysAsOf(candidates: { days: Day[] }[]) {
