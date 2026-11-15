@@ -9,7 +9,7 @@ Pullbacks, Breakout Watchlist, Volume Surge, and Trade Plan. These use daily
 EMA, RSI, volume-ratio, 20-day-high, and ATR-based calculations.
 
 **Targets** follow one rule on every tab (`targetFor()` in `scripts/indicators.ts`): the nearer of the
-52-week high and 3R, where R is the entry minus the stop. When the 52-week high is within 2% of the entry,
+52-week high + 1% and 3R, where R is the entry minus the stop. When the 52-week high is within 2% of the entry,
 or below it, there's no resistance overhead and the target is 3R. Short-term scans use the latest close
 as the entry and 1.5 daily ATR as the stop; the other tabs use their own buy-above and stop levels.
 
@@ -83,7 +83,7 @@ traded value of at least ₹10 Cr, and a bar on the latest session. The logic is
 | Setup quality | 25 | 15 | Swing: 20-day-high breakout, tight consolidation or pullback to the 20 EMA. Positional: weekly breakout, pullback or base |
 | Volume confirmation | 15 | 10 | Up-day/up-week relative volume, up/down volume ratio, delivery % vs its 60-day average when available |
 | Fundamental health | 5 | 15 | Sales and earnings growth, ROE, operating margin, debt/equity (not scored for financials); missing fields score neutral |
-| Risk/reward | 10 | 15 | Stop distance, distance to the buy-above price, and R to the target (52-week high or 3R, whichever is nearer) |
+| Risk/reward | 10 | 15 | Stop distance, distance to the buy-above price, and R to the target (52-week high + 1% or 3R, whichever is nearer) |
 
 Grades: **A** 80+ (detailed analysis and entry monitoring), **B** 70–79 (active watchlist), **C** 60–69
 (developing candidate). The **market regime** is based on Nifty against its 50/200-DMA and on universe
@@ -133,7 +133,7 @@ Stocks are ranked by the average of their two scores, and `public/hotlist.json` 
 run. The logic is in `scripts/hotlist.ts` (tested by `npm run test:hotlist`).
 
 **Entry and management:** buy above, stop and target are the swing levels. The target is the nearer of
-the 52-week high and 3R, so R:R is at most 3. Bought trades follow the positional rules (stop to entry
+the 52-week high + 1% and 3R, so R:R is at most 3. Bought trades follow the positional rules (stop to entry
 at +1R, half booked at +2R, the rest trailing), so winners can run past the target.
 
 **What the page shows:**

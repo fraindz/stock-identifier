@@ -90,7 +90,7 @@ export type Candidate = {
   trigger: number
   stop: number
   riskPct: number
-  target: number // the nearer of the 52-week high and 3R
+  target: number // the nearer of the 52-week high + 1% and 3R
   triggerGapPct: number // buy-above vs latest close (negative: already above it)
   confidence: number // 0–100, see confidence()
   qualityScore?: number | null // Positional quality score; null: not scored (fails its filters)
@@ -115,7 +115,7 @@ export type Slot = {
   initialStop: number
   stop: number
   riskPct: number
-  target?: number // the nearer of the 52-week high and 3R; missing on slots added before targets
+  target?: number // the nearer of the 52-week high + 1% and 3R; missing on slots added before targets
   confidence?: number // at the latest review, while on watch
   entryDate?: string
   entry?: number

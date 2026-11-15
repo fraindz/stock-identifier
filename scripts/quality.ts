@@ -5,7 +5,7 @@
 //
 // Every sub-score is a piecewise-linear map of an absolute threshold (not a percentile),
 // so grades stay comparable from one day to the next and a weak tape produces fewer A's.
-import { atr, avg, CRORE, ema, round, sma, targetFor, type Company, type Day, type Week } from './indicators'
+import { atr, avg, CRORE, ema, round, sma, targetFor, TARGET_R, type Company, type Day, type Week } from './indicators'
 import { setupFor, RULES as TOP10_RULES } from './top10'
 
 export type Mode = 'swing' | 'positional'
@@ -483,7 +483,7 @@ export function riskRewardScore(mode: Mode, close: number, trigger: number, stop
       { w: 0.2, v: lin(Math.abs(gapPct), mode === 'swing' ? 4 : 8, 0.5), label: `${gapPct.toFixed(1)}% to trigger` },
       { w: 0.4, v: lin(rr, 1, QUALITY_RULES.fullRR), label: `${rr.toFixed(1)}R to target` },
     ],
-    `${riskPct.toFixed(1)}% risk, ${rr.toFixed(1)}R to ${blueSky ? 'blue-sky target' : '52-week high'}`,
+    `${riskPct.toFixed(1)}% risk, ${rr.toFixed(1)}R to ${blueSky ? 'blue-sky 3R target' : rr < TARGET_R - 0.005 ? '52-week high + 1%' : '3R target'}`,
   )
   return { component, target: round(target), rr: round(rr), riskPct: round(riskPct), gapPct: round(gapPct) }
 }

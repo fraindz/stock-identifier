@@ -212,7 +212,7 @@ export default function QualityPage({ data, title }: { data: QualityData; title:
         Relative strength compares the stock with Nifty 50 (two-thirds) and its equal-weight sector index (one-third). In a Caution market every score loses 5
         points; in a Risk-off market scores are capped at 79. A 80+ = {GRADE_ACTIONS.A.toLowerCase()}; B 70–79 = {GRADE_ACTIONS.B.toLowerCase()}; C 60–69 ={' '}
         {GRADE_ACTIONS.C.toLowerCase()}. {swing ? 'Swing levels use daily bars: buy above the latest high, stop at the setup low or 1.5 daily ATR.' : 'Positional levels use weekly bars: buy above last week’s high, stop at the setup low or 2 weekly ATR.'}{' '}
-        Target is the 52-week high or 3R, whichever is nearer.
+        Target is the 52-week high + 1% or 3R, whichever is nearer.
       </p>
     </>
   )

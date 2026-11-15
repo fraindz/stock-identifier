@@ -138,13 +138,14 @@ test('volume confirmation rescales onto relative volume when delivery is missing
   assert.equal(strongDelivery.points, QUALITY_RULES.weights.swing.volume)
 })
 
-test('risk/reward: blue-sky target is 3R, resistance caps it', () => {
+test('risk/reward: blue-sky target is 3R, the 52-week high + 1% caps it', () => {
   const blue = riskRewardScore('swing', 100, 101, 98, 100)
   assert.equal(blue.rr, 3)
   assert.equal(blue.target, 110)
   const capped = riskRewardScore('swing', 100, 101, 98, 104)
-  assert.equal(capped.target, 104)
-  assert.equal(capped.rr, 1)
+  assert.equal(capped.target, 105.04) // 52-week high + 1%
+  assert.equal(capped.rr, 1.35)
+  assert.match(capped.component.note, /52-week high \+ 1%/)
 })
 
 test('swing setup detects a 20-day-high breakout', () => {
@@ -210,9 +211,12 @@ test('only stocks with market cap of ₹1,000 Cr or more are scored', () => {
   assert.equal(passesFilters(stock(1000), nifty), true)
 })
 
-test('one target rule: the nearer of the 52-week high and 3R', async () => {
+test('one target rule: the nearer of the 52-week high + 1% and 3R', async () => {
   const { targetFor } = await import('./indicators')
   assert.deepEqual(targetFor(100, 95, 100), { target: 115, rr: 3, blueSky: true }) // at the high: 3R
-  assert.deepEqual(targetFor(100, 95, 108), { target: 108, rr: 1.6, blueSky: false }) // resistance first
-  assert.equal(targetFor(100, 95, 130).target, 115) // high further than 3R: 3R
+  const r = targetFor(100, 95, 108) // resistance first: 108 + 1%
+  assert.equal(Math.round(r.target * 100) / 100, 109.08)
+  assert.equal(Math.round(r.rr * 1000) / 1000, 1.816)
+  assert.equal(targetFor(100, 95, 114.5).target, 115) // 114.5 + 1% is beyond 3R: 3R
+  assert.equal(targetFor(100, 95, 130).target, 115)
 })

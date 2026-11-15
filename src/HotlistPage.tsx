@@ -184,7 +184,7 @@ export default function HotlistPage({ data, tracker, portfolio }: { data: Hotlis
       <p className="meta performance-note">
         Hotlist = graded C or better ({rules.minScore}+) on both Rolling swing and Positional, B or better ({rules.oneAtLeast}+) on at
         least one, with a swing stop no more than {rules.maxSwingRiskPct}% away; ranked by the average of the two scores. Buy
-        above, stop and target are the swing levels (target = the nearer of the 52-week high and 3R). Bought trades are
+        above, stop and target are the swing levels (target = the nearer of the 52-week high + 1% and 3R). Bought trades are
         managed with the positional rules, so a winner can run past the target: stop to entry at +1R, half booked at +2R, the rest trailing the 3-week low. Orders are kept
         automatically: a pending order is cancelled when the stock drops off the hotlist and expires after 5 trading days.
         Qty = risk per trade ÷ (buy above − stop). Every hotlist signal is recorded in the Grade tracker.

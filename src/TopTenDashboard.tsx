@@ -217,7 +217,7 @@ export default function TopTenDashboard({ data }: { data: Portfolio }) {
       <p className="meta performance-note">
         <strong>How to act:</strong> for each watch name you want, place a buy-stop (SL or GTT) order at the buy-above
         price, valid until the date shown, and attach the stop as a stop-loss once it fills. Target = the nearer of
-        the 52-week high and 3R (the same rule on every tab). Move the stop to entry at +{rules.breakevenR}R, book half at
+        the 52-week high + 1% and 3R (the same rule on every tab). Move the stop to entry at +{rules.breakevenR}R, book half at
         +{rules.partialR}R, and let the rest run on the trailing stop, which can carry it past the target. Levels assume a fill at the trigger; a gap above it raises R slightly. Qty = capital × risk % ÷
         (buy − stop).
       </p>

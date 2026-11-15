@@ -67,7 +67,7 @@
           "note": "Added to watch at #3, confidence 62.6: buy above 676.97, stop 597.2 (11.78% risk)"
         }
       ],
-      "target": 739.91
+      "target": 747.31
     },
     {
       "id": "2026-11-09_RPEL",
@@ -123,7 +123,7 @@
           "note": "Added to watch at #13, confidence 45.99: buy above 11233.89, stop 9980 (11.16% risk)"
         }
       ],
-      "target": 11998.48
+      "target": 12118.46
     },
     {
       "id": "2026-11-09_PETRONET",
@@ -179,7 +179,7 @@
           "note": "Added to watch at #15, confidence 34.19: buy above 11482.12, stop 10183.32 (11.31% risk)"
         }
       ],
-      "target": 12964.13
+      "target": 13093.77
     }
   ]
 }

@@ -71,7 +71,7 @@
       "riskPct": 19.25,
       "triggerGapPct": 3.55,
       "confidence": 54.2,
-      "target": 114.58
+      "target": 115.73
     },
     {
       "rank": 2,
@@ -101,7 +101,7 @@
       "riskPct": 16.43,
       "triggerGapPct": 3.82,
       "confidence": 52.65,
-      "target": 326.4
+      "target": 329.66
     },
     {
       "rank": 3,
@@ -131,7 +131,7 @@
       "riskPct": 11.78,
       "triggerGapPct": 0.57,
       "confidence": 62.6,
-      "target": 739.91
+      "target": 747.31
     },
     {
       "rank": 4,
@@ -161,7 +161,7 @@
       "riskPct": 18.5,
       "triggerGapPct": 1.68,
       "confidence": 56.66,
-      "target": 1699.03
+      "target": 1716.02
     },
     {
       "rank": 5,
@@ -221,7 +221,7 @@
       "riskPct": 12.94,
       "triggerGapPct": 1.85,
       "confidence": 52.28,
-      "target": 912.23
+      "target": 921.35
     },
     {
       "rank": 7,
@@ -431,7 +431,7 @@
       "riskPct": 11.16,
       "triggerGapPct": 1.42,
       "confidence": 45.99,
-      "target": 11998.48
+      "target": 12118.46
     },
     {
       "rank": 14,
@@ -491,7 +491,7 @@
       "riskPct": 11.31,
       "triggerGapPct": 3.48,
       "confidence": 34.19,
-      "target": 12964.13
+      "target": 13093.77
     },
     {
       "rank": 16,

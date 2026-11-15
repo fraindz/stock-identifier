@@ -1,7 +1,7 @@
 // Hotlist: stocks graded on both Rolling swing (daily chart) and Positional (weekly chart),
 // i.e. where the short- and medium-term pictures agree. The daily starting point.
 // Entries and the target use the swing levels: the stop is tight, so the target is the nearer
-// of the 52-week high and 3R. Bought trades follow the positional exit rules (trailing stop),
+// of the 52-week high + 1% and 3R. Bought trades follow the positional exit rules (trailing stop),
 // so a winner can still run past the target. Pure functions only; screen.ts does the file writes.
 import { round, type Company } from './indicators'
 import type { QualityStock } from './quality'
@@ -24,7 +24,7 @@ export type HotStock = Company & {
   trigger: number // swing buy-above
   stop: number // swing stop
   riskPct: number
-  target: number // swing target: the nearer of the 52-week high and 3R
+  target: number // swing target: the nearer of the 52-week high + 1% and 3R
   rr: number
   swingComponents: QualityStock['components']
 }
