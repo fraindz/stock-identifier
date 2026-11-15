@@ -7,40 +7,50 @@ import ScreenerPage from './ScreenerPage'
 import SwingPage from './SwingPage'
 import TopTenDashboard from './TopTenDashboard'
 import CandidatesPage from './CandidatesPage'
+import QualityPage from './QualityPage'
 import { emptyHistory, loadHistory, previousList, saveList, type History } from './history'
-import type { BreakoutData, CandidatesData, Portfolio, PullbackData, ScreenerData, SectorData, SwingData, Trend } from './types'
+import type { BreakoutData, CandidatesData, Portfolio, PullbackData, QualityData, ScreenerData, SectorData, SwingData, Trend } from './types'
 import './App.css'
 
 type Page =
   | { path: string; label: string; kind: 'trend'; trend: Trend; repeat: boolean }
-  | { path: string; label: string; kind: 'breakout' }
-  | { path: string; label: string; kind: 'pullback' }
+  | { path: string; label: string; kind: 'breakout'; group?: Group }
+  | { path: string; label: string; kind: 'pullback'; group?: Group }
   | { path: string; label: string; kind: 'sectors' }
-  | { path: string; label: string; kind: 'swing'; file: string; title: string; limit?: number; showLevelPercent?: boolean }
+  | { path: string; label: string; kind: 'swing'; file: string; title: string; limit?: number; showLevelPercent?: boolean; group?: Group }
   | { path: string; label: string; kind: 'portfolio' }
   | { path: string; label: string; kind: 'candidates' }
+  | { path: string; label: string; kind: 'quality'; file: string; title: string }
+
+// Grouped pages share one top-level tab (linking to the group's first page) and get a
+// second row of sub-tabs while one of them is open.
+type Group = 'Short-term scans'
 
 const PAGES: Page[] = [
   { path: '#/downtrend', label: 'Downtrend', kind: 'trend', trend: 'down', repeat: false },
   { path: '#/uptrend', label: 'Uptrend', kind: 'trend', trend: 'up', repeat: false },
   { path: '#/still-downtrend', label: 'Still in downtrend', kind: 'trend', trend: 'down', repeat: true },
   { path: '#/still-uptrend', label: 'Still in uptrend', kind: 'trend', trend: 'up', repeat: true },
-  { path: '#/breakout', label: 'Breakout', kind: 'breakout' },
-  { path: '#/pullback', label: 'Pullback', kind: 'pullback' },
   { path: '#/sectors', label: 'Growing sectors', kind: 'sectors' },
-  { path: '#/momentum', label: 'Momentum', kind: 'swing', file: 'momentum', title: 'Momentum' },
-  { path: '#/healthy-pullbacks', label: 'Healthy pullbacks', kind: 'swing', file: 'healthy-pullbacks', title: 'Healthy pullbacks' },
-  { path: '#/breakout-watchlist', label: 'Breakout watchlist', kind: 'swing', file: 'breakout-watchlist', title: 'Breakout watchlist' },
+  { path: '#/momentum', label: 'Momentum', kind: 'swing', file: 'momentum', title: 'Momentum', group: 'Short-term scans' },
+  { path: '#/healthy-pullbacks', label: 'Healthy pullbacks', kind: 'swing', file: 'healthy-pullbacks', title: 'Healthy pullbacks', group: 'Short-term scans' },
+  { path: '#/breakout-watchlist', label: 'Breakout watchlist', kind: 'swing', file: 'breakout-watchlist', title: 'Breakout watchlist', group: 'Short-term scans' },
   { path: '#/volume-surge', label: 'Volume surge', kind: 'swing', file: 'volume-surge', title: 'Volume surge' },
-  { path: '#/trade-plan', label: 'Trade plan', kind: 'swing', file: 'trade-plan', title: 'Trade plan' },
+  { path: '#/trade-plan', label: 'Trade plan', kind: 'swing', file: 'trade-plan', title: 'Trade plan', group: 'Short-term scans' },
+  { path: '#/breakout', label: 'Breakout', kind: 'breakout', group: 'Short-term scans' },
+  { path: '#/pullback', label: 'Pullback', kind: 'pullback', group: 'Short-term scans' },
   { path: '#/top-10-bets', label: 'Top 10 bets', kind: 'portfolio' },
   { path: '#/top-10-candidates', label: 'Top 10 candidates', kind: 'candidates' },
+  { path: '#/rolling-swing', label: 'Rolling swing', kind: 'quality', file: 'rolling-swing', title: 'Rolling swing' },
+  { path: '#/positional', label: 'Positional', kind: 'quality', file: 'positional', title: 'Positional trading' },
 ]
+// Hidden pages still open from a direct link. Weekly Breakout and Pullback are covered,
+// with scores, by the Positional tab.
 const HIDDEN_PATHS = new Set([
-  '#/downtrend',
-  '#/uptrend',
   '#/breakout',
   '#/pullback',
+  '#/downtrend',
+  '#/uptrend',
   '#/sectors',
   '#/still-downtrend',
   '#/still-uptrend',
@@ -70,6 +80,7 @@ function App() {
   const [portfolio, setPortfolio] = useState<Portfolio | null>(null)
   const [candidates, setCandidates] = useState<CandidatesData | null>(null)
   const [topTenLoaded, setTopTenLoaded] = useState(false)
+  const [qualityData, setQualityData] = useState<Record<string, QualityData | null> | null>(null)
   const [history, setHistory] = useState<History>(emptyHistory)
   const [error, setError] = useState<string | null>(null)
 
@@ -89,6 +100,8 @@ function App() {
     setError(null)
     try {
       const swingPages = PAGES.filter((p): p is Extract<Page, { kind: 'swing' }> => p.kind === 'swing')
+      const qualityPages = PAGES.filter((p): p is Extract<Page, { kind: 'quality' }> => p.kind === 'quality')
+      const qualityPromise = Promise.all(qualityPages.map((p) => fetchOptional<QualityData>(`/${p.file}.json`)))
       const [down, up, breakout, pullback, sectorData, portfolioData, candidatesData, ...allSwingData] = await Promise.all([
         fetchJson<ScreenerData>('/downtrend.json'),
         fetchJson<ScreenerData>('/uptrend.json'),
@@ -110,6 +123,8 @@ function App() {
       setCandidates(candidatesData)
       setTopTenLoaded(true)
       setSwingData(Object.fromEntries(swingPages.map((p, index) => [p.path, allSwingData[index]])))
+      const allQualityData = await qualityPromise
+      setQualityData(Object.fromEntries(qualityPages.map((p, index) => [p.path, allQualityData[index]])))
     } catch {
       setError('Could not load market data. Please try again later.')
     }
@@ -137,6 +152,11 @@ function App() {
       if (!portfolio) return <p className="notice">The Top 10 portfolio hasn’t been created yet.</p>
       return <TopTenDashboard data={portfolio} />
     }
+    if (page.kind === 'quality') {
+      if (!qualityData) return null
+      const data = qualityData[page.path]
+      return data ? <QualityPage key={page.path} data={data} title={page.title} /> : <p className="notice">No {page.label.toLowerCase()} scores yet: they are generated by the next market data run.</p>
+    }
     if (page.kind === 'swing') {
       const data = swingData[page.path]
       return data && <SwingPage data={data} title={page.title} limit={page.limit} showLevelPercent={page.showLevelPercent} />
@@ -154,15 +174,37 @@ function App() {
     )
   })()
 
+  const groupOf = (p: Page) => ('group' in p ? p.group : undefined)
+  const activeGroup = groupOf(page)
+  const visible = PAGES.filter((p) => !HIDDEN_PATHS.has(p.path))
+  const topTabs = visible.filter((p) => !groupOf(p))
+  const groups = [...new Set(visible.map(groupOf).filter((g): g is Group => g !== undefined))]
+
   return (
     <main className="page">
       <nav className="tabs">
-        {PAGES.filter((p) => !HIDDEN_PATHS.has(p.path)).map((p) => (
+        {topTabs.map((p) => (
           <a key={p.path} href={p.path} aria-current={p === page ? 'page' : undefined}>
             {p.label}
           </a>
         ))}
+        {groups.map((g) => (
+          <a key={g} href={visible.find((p) => groupOf(p) === g)!.path} aria-current={g === activeGroup ? 'page' : undefined}>
+            {g}
+          </a>
+        ))}
       </nav>
+      {activeGroup && (
+        <nav className="tabs subtabs" aria-label={activeGroup}>
+          {visible
+            .filter((p) => groupOf(p) === activeGroup)
+            .map((p) => (
+              <a key={p.path} href={p.path} aria-current={p === page ? 'page' : undefined}>
+                {p.label}
+              </a>
+            ))}
+        </nav>
+      )}
       {error ? (
         <p className="notice">{error}</p>
       ) : (

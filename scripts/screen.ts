@@ -5,7 +5,7 @@
 // Writes public/{downtrend,uptrend,breakout,pullback,sectors}.json for the web pages.
 //
 // Usage: npm run screen
-import { readFile, writeFile } from 'node:fs/promises'
+import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import YahooFinance from 'yahoo-finance2'
 import {
   atr,
@@ -27,6 +27,20 @@ import {
   type Week,
 } from './indicators'
 import { dailyUpdate, eligible, emptyPortfolio, rankCandidates, RULES, weeklyReview, type Portfolio } from './top10'
+import {
+  carryFirstSeen,
+  deliveryStats,
+  marketRegime,
+  parseBhavcopy,
+  passesFilters,
+  QUALITY_RULES,
+  qualityScore,
+  sectorIndices,
+  type Delivery,
+  type Fundamentals,
+  type Mode,
+  type QualityStock,
+} from './quality'
 
 const IST_OFFSET_MS = 5.5 * 60 * 60 * 1000
 const QUOTE_BATCH = 100
@@ -51,6 +65,13 @@ const SWING_OUTPUTS = {
 }
 const PORTFOLIO_OUTPUT = new URL('../public/top-10-portfolio.json', import.meta.url)
 const CANDIDATES_OUTPUT = new URL('../public/top-10-candidates.json', import.meta.url)
+const QUALITY_OUTPUTS: Record<Mode, URL> = {
+  swing: new URL('../public/rolling-swing.json', import.meta.url),
+  positional: new URL('../public/positional.json', import.meta.url),
+}
+const BHAV_CACHE = new URL('../.cache/bhav/', import.meta.url)
+// Rows below grade C kept in each quality file for the page's "show all" toggle.
+const QUALITY_UNGRADED_ROWS = 50
 
 const MIN_MARKET_CAP_CR = Math.min(
   ...SCREENS.map((s) => s.minMarketCapCr),
@@ -181,15 +202,68 @@ async function mapLimit<T, R>(items: T[], limit: number, fn: (item: T) => Promis
   return results
 }
 
-async function loadSectors(companies: Omit<Company, 'sector'>[]): Promise<Company[]> {
-  return mapLimit(companies, CHART_CONCURRENCY, async (company) => {
+// Sector plus fundamentals from one quoteSummary call per stock. Fundamentals are kept in
+// a separate map so they don't leak into the per-screen JSON files.
+async function loadProfiles(companies: Omit<Company, 'sector'>[]) {
+  const fundamentals = new Map<string, Fundamentals>()
+  const finite = (n: number | undefined) => (typeof n === 'number' && Number.isFinite(n) ? n : undefined)
+  const withSectors = await mapLimit(companies, CHART_CONCURRENCY, async (company): Promise<Company> => {
     try {
-      const summary = await withRetry(() => yf.quoteSummary(`${company.symbol}.NS`, { modules: ['assetProfile'] }))
+      const summary = await withRetry(() =>
+        yf.quoteSummary(`${company.symbol}.NS`, { modules: ['assetProfile', 'financialData'] }),
+      )
+      const f = summary.financialData
+      if (f) {
+        const de = finite(f.debtToEquity)
+        fundamentals.set(company.symbol, {
+          revenueGrowth: finite(f.revenueGrowth),
+          earningsGrowth: finite(f.earningsGrowth),
+          debtToEquity: de === undefined ? undefined : de / 100, // Yahoo reports D/E in percent
+          roe: finite(f.returnOnEquity),
+          operatingMargin: finite(f.operatingMargins),
+        })
+      }
       return { ...company, sector: summary.assetProfile?.sector?.trim() || 'Unclassified' }
     } catch {
       return { ...company, sector: 'Unclassified' }
     }
   })
+  return { companies: withSectors, fundamentals }
+}
+
+// Delivery % from NSE's daily bhavcopy for the given trading dates (YYYY-MM-DD). Files are
+// cached in .cache/bhav so later runs only fetch new days. Returns null when too few days
+// could be fetched (NSE sometimes blocks cloud runners), and scoring falls back to volume only.
+async function fetchDeliveryHistory(dates: string[]): Promise<Map<string, Delivery> | null> {
+  await mkdir(BHAV_CACHE, { recursive: true })
+  const byDate = new Map<string, Map<string, number>>()
+  let failures = 0
+  await mapLimit(dates, 2, async (date) => {
+    const [y, m, d] = date.split('-')
+    const file = new URL(`sec_bhavdata_full_${d}${m}${y}.csv`, BHAV_CACHE)
+    let csv: string | null = null
+    try {
+      csv = await readFile(file, 'utf8')
+    } catch {
+      try {
+        csv = await withRetry(async () => {
+          const res = await fetch(`https://archives.nseindia.com/products/content/sec_bhavdata_full_${d}${m}${y}.csv`, {
+            headers: { 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36' },
+            signal: AbortSignal.timeout(20_000),
+          })
+          if (!res.ok) throw new Error(`HTTP ${res.status}`)
+          return res.text()
+        }, 3)
+        await writeFile(file, csv)
+      } catch {
+        failures++
+      }
+    }
+    const parsed = csv ? parseBhavcopy(csv) : null
+    if (parsed?.size) byDate.set(date, parsed)
+  })
+  console.log(`Delivery data: ${byDate.size}/${dates.length} days${failures ? ` (${failures} failed)` : ''}`)
+  return byDate.size >= 20 ? deliveryStats(byDate) : null
 }
 
 // Each week's high, low and close is strictly below (down) or above (up) the week before.
@@ -261,11 +335,12 @@ async function main() {
   const weekday = new Date(now.getTime() + IST_OFFSET_MS).getUTCDay()
   const forceReview = process.argv.includes('--review')
   // Fetched first, before the bulk requests can trip Yahoo's rate limit.
-  const niftyWeeks = (await priceBars('^NSEI')).weeks
+  const niftyBars = await priceBars('^NSEI')
+  const niftyWeeks = niftyBars.weeks
   const symbols = await nseSymbols()
   console.log(`NSE symbols: ${symbols.length}`)
 
-  const universe = await loadSectors(await largeCaps(symbols))
+  const { companies: universe, fundamentals } = await loadProfiles(await largeCaps(symbols))
   console.log(`Market cap >= ₹${MIN_MARKET_CAP_CR.toLocaleString('en-IN')} Cr: ${universe.length}`)
 
   const loadBars = async (stock: Company) => {
@@ -460,6 +535,8 @@ async function main() {
   ])
   console.log(`swing screens: momentum ${momentum.length}, pullbacks ${healthyPullbacks.length}, breakouts ${breakoutWatchlist.length}, volume ${volumeSurge.length}`)
 
+  await writeQualityScreens(candidates, niftyBars.days, fundamentals, currentWeek)
+
   await updateTopTen(candidates, {
     currentWeek,
     review: forceReview || weekday === 0 || weekday === 6,
@@ -473,6 +550,74 @@ async function main() {
 }
 
 type Loaded = Company & { weeks: Week[]; days: Day[]; current: Week | undefined }
+
+// Rolling Swing and Positional: score every liquid stock on the 100-point quality score,
+// gated by the market regime, and write the graded lists.
+async function writeQualityScreens(candidates: Loaded[], niftyDays: Day[], fundamentals: Map<string, Fundamentals>, currentWeek: string) {
+  let delivery: Map<string, Delivery> | null = null
+  try {
+    delivery = await fetchDeliveryHistory(niftyDays.slice(-60).map((d) => d.date))
+  } catch (error) {
+    console.error('Delivery data unavailable:', error)
+  }
+  const liquid = candidates.filter((c) => c.marketCapCr >= QUALITY_RULES.minMarketCapCr && c.days.length >= 50)
+  const regime = marketRegime(niftyDays, liquid)
+  const sectors = sectorIndices(liquid, niftyDays)
+  const ctx = { niftyDays, regime, sectors }
+  const inputs = candidates
+    .map((c) => ({
+      symbol: c.symbol,
+      name: c.name,
+      sector: c.sector,
+      marketCapCr: c.marketCapCr,
+      days: c.days,
+      weeks: c.weeks.filter((w) => w.start < currentWeek),
+      fundamentals: fundamentals.get(c.symbol) ?? null,
+      delivery: delivery?.get(c.symbol) ?? null,
+    }))
+    .filter((s) => passesFilters(s, niftyDays))
+  const asOf = niftyDays.at(-1)!.date
+  const tradingDates = niftyDays.map((d) => d.date)
+  const sectorRows = [...sectors.values()].sort((a, b) => b.rel20Pct + b.rel65Pct - (a.rel20Pct + a.rel65Pct))
+
+  for (const mode of ['swing', 'positional'] as const) {
+    let previous: { stocks: QualityStock[] } | null = null
+    try {
+      previous = JSON.parse(await readFile(QUALITY_OUTPUTS[mode], 'utf8'))
+    } catch {
+      // first run
+    }
+    const scored = inputs
+      .map((s) => qualityScore(s, mode, ctx))
+      .sort((a, b) => b.score - a.score || b.rawScore - a.rawScore || b.marketCapCr - a.marketCapCr)
+    const graded = scored.filter((s) => s.grade)
+    const kept = [...graded, ...scored.filter((s) => !s.grade).slice(0, QUALITY_UNGRADED_ROWS)]
+    await writeFile(
+      QUALITY_OUTPUTS[mode],
+      JSON.stringify(
+        {
+          generatedAt: new Date().toISOString(),
+          asOf,
+          mode,
+          scoredCount: scored.length,
+          minMarketCapCr: QUALITY_RULES.minMarketCapCr,
+          minTradedValueCr: QUALITY_RULES.minTradedValueCr,
+          deliveryAvailable: delivery !== null,
+          weights: QUALITY_RULES.weights[mode],
+          grades: QUALITY_RULES.grades,
+          regime,
+          sectors: sectorRows,
+          stocks: carryFirstSeen(kept, previous, tradingDates, asOf),
+        },
+        null,
+        2,
+      ),
+    )
+    const count = (g: string) => graded.filter((s) => s.grade === g).length
+    console.log(`${mode} quality: ${scored.length} scored, A ${count('A')}, B ${count('B')}, C ${count('C')}`)
+  }
+  console.log(`Market regime: ${regime.regime} (Nifty ${regime.niftyVs50Pct}% vs 50-DMA, breadth ${regime.breadthPct}%), ${sectors.size} sector indices`)
+}
 
 // Top 10 portfolio: daily update of the open slots, then (on weekends, with --review, or
 // when there's no portfolio yet) the weekly review that refills free slots.

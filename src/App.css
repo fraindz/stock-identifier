@@ -31,6 +31,15 @@
   color: var(--text-h);
 }
 
+.tabs:has(+ .subtabs) {
+  margin-bottom: 12px;
+}
+
+.subtabs a {
+  padding: 6px 12px;
+  font-size: 14px;
+}
+
 h1 {
   margin: 0 0 8px;
   font-size: 28px;
@@ -242,5 +251,187 @@ h2 {
   margin: 28px 0 10px;
   font-size: 18px;
   font-weight: 600;
+  color: var(--text-h);
+}
+
+/* Rolling swing / Positional quality pages */
+.regime {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  align-items: baseline;
+  margin-top: 16px;
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-left-width: 4px;
+  border-radius: 8px;
+  background: var(--surface);
+  font-size: 14px;
+}
+
+.regime strong {
+  color: var(--text-h);
+}
+
+.regime-note {
+  color: var(--muted);
+}
+
+.regime-risk-on {
+  border-left-color: var(--up);
+}
+
+.regime-caution {
+  border-left-color: var(--caution);
+}
+
+.regime-risk-off {
+  border-left-color: var(--down);
+}
+
+.criteria .criteria-title {
+  border: none;
+  background: none;
+  padding-left: 0;
+  color: var(--muted);
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.chips button {
+  font: inherit;
+  font-size: 13px;
+  padding: 5px 10px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--text);
+  cursor: pointer;
+}
+
+.chips button[aria-pressed='true'] {
+  border-color: var(--accent);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.controls label input {
+  flex: none;
+}
+
+.grade {
+  display: inline-block;
+  min-width: 24px;
+  padding: 2px 6px;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--bg);
+}
+
+.grade-A {
+  background: var(--up);
+}
+
+.grade-B {
+  background: var(--accent);
+}
+
+.grade-C {
+  background: var(--muted);
+}
+
+.score {
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+th .max {
+  font-weight: 400;
+  text-transform: none;
+}
+
+.component-cell {
+  min-width: 56px;
+}
+
+.component-bar {
+  display: block;
+  height: 4px;
+  margin-top: 3px;
+  border-radius: 2px;
+  background: var(--border);
+  overflow: hidden;
+}
+
+.component-bar span {
+  display: block;
+  height: 100%;
+}
+
+.component-bar .strong {
+  background: var(--up);
+}
+
+.component-bar .mid {
+  background: var(--caution);
+}
+
+.component-bar .weak {
+  background: var(--down);
+}
+
+.new-tag {
+  padding: 1px 6px;
+  border-radius: 4px;
+  background: var(--accent);
+  color: var(--bg);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.link-button {
+  font: inherit;
+  font-size: 13px;
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--accent);
+  cursor: pointer;
+}
+
+.link-button:hover {
+  text-decoration: underline;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+tr.expanded td {
+  border-bottom: none;
+}
+
+.details-row td {
+  white-space: normal;
+  background: var(--surface);
+}
+
+.component-notes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 6px 24px;
+  margin: 0;
+  padding: 4px 0;
+  list-style: none;
+  font-size: 13px;
+}
+
+.component-notes strong {
   color: var(--text-h);
 }

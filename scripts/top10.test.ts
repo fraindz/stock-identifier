@@ -2,7 +2,7 @@
 import assert from 'node:assert/strict'
 import { test } from 'node:test'
 import type { Day, Week } from './indicators'
-import { dailyUpdate, emptyPortfolio, RULES, weeklyReview, type Candidate, type Portfolio, type Slot } from './top10'
+import { confidence, dailyUpdate, emptyPortfolio, RULES, weeklyReview, type Candidate, type Portfolio, type Slot } from './top10'
 
 const addDays = (date: string, n: number) => new Date(Date.parse(`${date}T00:00:00Z`) + n * 86_400_000).toISOString().slice(0, 10)
 
@@ -107,7 +107,8 @@ test('daily update never changes membership', () => {
 
 // --- weekly review ---
 
-const candidate = (rank: number, sector = `S${rank}`, over: Partial<Candidate> = {}): Candidate => ({
+const candidate = (rank: number, sector = `S${rank}`, over: Partial<Candidate> = {}): Candidate => {
+  const c: Candidate = {
   rank,
   eligible: true,
   symbol: `C${rank}`,
@@ -120,9 +121,11 @@ const candidate = (rank: number, sector = `S${rank}`, over: Partial<Candidate> =
   rsPct: 0, sectorPct: 0, trendPct: 0, setupPct: 0,
   rel6mPct: 0, rel3mPct: 0, trendQuality: 0, sectorBreadthPct: 0,
   close: 100, rsi: 60, belowHighPct: 5, extensionPct: 5, tradedValueCr: 50,
-  trigger: 101, stop: 92, riskPct: 9,
+  trigger: 101, stop: 92, riskPct: 9, triggerGapPct: 1, confidence: 0,
   ...over,
-})
+  }
+  return { ...c, confidence: over.confidence ?? confidence(c.score, c.riskPct, c.triggerGapPct) }
+}
 
 test('first review fills 10 slots with ≤ 2 per sector', () => {
   const ranked = Array.from({ length: 30 }, (_, i) => candidate(i + 1, `S${i % 4}`))
@@ -161,4 +164,43 @@ test('watch name below keepRank is dropped', () => {
   const reRanked = ranked.map((c) => (c.symbol === 'C1' ? { ...c, rank: 45 } : c))
   weeklyReview(p, reRanked, '2026-01-12', '2026-01-16')
   assert.equal(p.slots.find((s) => s.symbol === 'C1')!.exitReason, 'dropped')
+})
+
+test('confidence favours tight stops and closes near the trigger', () => {
+  assert.ok(confidence(70, 5, 1) > confidence(70, 11, 1))
+  assert.ok(confidence(70, 8, 1) > confidence(70, 8, 7))
+  assert.ok(confidence(70, 8, -1) > confidence(70, 8, -6)) // gapped well above: chasing
+  assert.equal(confidence(100, RULES.idealRiskPct, 0), 100)
+})
+
+test('free slots go to the highest-confidence names, not just the highest rank', () => {
+  const ranked = [
+    candidate(1, 'A', { riskPct: 11.5, triggerGapPct: 7 }),
+    candidate(2, 'B', { riskPct: 5, triggerGapPct: 1 }),
+    candidate(3, 'C'),
+  ]
+  const p = { ...emptyPortfolio(), lastReviewWeek: '2025-12-29' } // not a first fill: ≤ 3 adds
+  weeklyReview(p, [...ranked, ...Array.from({ length: 5 }, (_, i) => candidate(i + 4))], '2026-01-05', '2026-01-09')
+  assert.deepEqual(p.slots.map((s) => s.symbol), ['C2', 'C3', 'C4'])
+})
+
+test('names ranked below keepRank are never added', () => {
+  const p = weeklyReview(emptyPortfolio(), [candidate(RULES.keepRank + 1, 'A', { confidence: 99 })], '2026-01-05', '2026-01-09')
+  assert.equal(p.slots.length, 0)
+})
+
+test('when full, a clearly stronger candidate replaces the weakest watch name', () => {
+  const ranked = Array.from({ length: 10 }, (_, i) => candidate(i + 1, `S${i}`, { riskPct: 11, triggerGapPct: 6 }))
+  const p = weeklyReview(emptyPortfolio(), ranked, '2026-01-05', '2026-01-09')
+  assert.equal(p.slots.length, 10)
+  const strong = candidate(11, 'X', { riskPct: 4, triggerGapPct: 0.5 })
+  const marginal = candidate(12, 'Y', { riskPct: 10.5, triggerGapPct: 5.5 })
+  weeklyReview(p, [...ranked, strong, marginal], '2026-01-12', '2026-01-16')
+  const open = p.slots.filter((s) => s.status !== 'closed')
+  assert.equal(open.length, 10)
+  assert.ok(open.some((s) => s.symbol === 'C11'))
+  assert.ok(!open.some((s) => s.symbol === 'C12'))
+  const replaced = p.slots.find((s) => s.exitReason === 'dropped')!
+  assert.equal(replaced.symbol, 'C10') // lowest score, same risk and gap → lowest confidence
+  assert.match(replaced.events.at(-1)!.note, /replaced by C11/)
 })

@@ -5,7 +5,8 @@
 //   eligible()        hard filters + raw factors for one stock
 //   setupFor()        breakout / pullback / base on completed weekly bars
 //   rankCandidates()  percentile-ranked composite score
-//   weeklyReview()    drop stale Watch names and fill free slots (max 3 a week)
+//   confidence()      how likely a Watch name is to trigger and work out (picks and swaps)
+//   weeklyReview()    drop stale Watch names, fill free slots and swap weak Watch names (max 3 a week)
 //   dailyUpdate()     move each open slot through Watch → Active → Closed
 import {
   avg,
@@ -25,7 +26,7 @@ import {
 } from './indicators'
 
 export const RULES = {
-  minMarketCapCr: 5_000,
+  minMarketCapCr: 1_000,
   minTradedValueCr: 10, // 20-day average of close × volume
   maxBelowHighPct: 25, // close within this % of the 52-week high
   maxExtension: 1.25, // weekly close ≤ this × 10-week SMA
@@ -48,6 +49,11 @@ export const RULES = {
   trailWeeks: 3,
   timeStopWeeks: 13,
   weights: { rs: 0.4, sector: 0.2, trend: 0.2, setup: 0.2 },
+  // Confidence decides which names take the slots when more qualify than there is room for.
+  confidenceWeights: { score: 0.5, risk: 0.25, proximity: 0.25 },
+  idealRiskPct: 4, // risk at or below this scores 100; maxRiskPct scores 0
+  maxTriggerGapPct: 8, // close this far (or more) from the buy-above price scores 0 on proximity
+  swapMargin: 10, // a candidate replaces the weakest Watch name only if its confidence is this much higher
 }
 
 export type Setup = 'breakout' | 'pullback' | 'base'
@@ -79,6 +85,8 @@ export type Candidate = {
   trigger: number
   stop: number
   riskPct: number
+  triggerGapPct: number // buy-above vs latest close (negative: already above it)
+  confidence: number // 0–100, see confidence()
 }
 
 export type SlotEvent = { date: string; type: 'added' | 'triggered' | 'breakeven' | 'partial' | 'trail' | 'closed' | 'dropped'; note: string }
@@ -100,6 +108,7 @@ export type Slot = {
   initialStop: number
   stop: number
   riskPct: number
+  confidence?: number // at the latest review, while on watch
   entryDate?: string
   entry?: number
   r?: number
@@ -149,6 +158,17 @@ export function base(weeks: Week[]) {
 }
 
 // The latest completed week's setup with its swing low and a 0–100 quality score.
+// 0–100 estimate of how likely a Watch name is to become a winning trade: half the ranking
+// score (strength, sector, trend, setup), a quarter for a tight stop (a smaller R is
+// reached sooner and loses less when wrong), and a quarter for a close near the buy-above
+// price (likely to trigger within the watch window without chasing a gap).
+export function confidence(score: number, riskPct: number, triggerGapPct: number) {
+  const w = RULES.confidenceWeights
+  const risk = clamp(((RULES.maxRiskPct - riskPct) / (RULES.maxRiskPct - RULES.idealRiskPct)) * 100)
+  const proximity = clamp(((RULES.maxTriggerGapPct - Math.abs(triggerGapPct)) / RULES.maxTriggerGapPct) * 100)
+  return round(w.score * score + w.risk * risk + w.proximity * proximity)
+}
+
 export function setupFor(weeks: Week[]): SetupInfo | null {
   const last = weeks.at(-1)
   if (!last) return null
@@ -282,6 +302,8 @@ export function rankCandidates(
   const { weights } = RULES
   const scored = stocks.map((s, i) => {
     const a = s.analysis
+    const score = weights.rs * rs[i] + weights.sector * sector[i] + weights.trend * trend[i] + weights.setup * setup[i]
+    const triggerGapPct = ((a.trigger - a.close) / a.close) * 100
     return {
       rank: 0,
       eligible: a.eligible,
@@ -291,7 +313,7 @@ export function rankCandidates(
       marketCapCr: s.marketCapCr,
       setup: a.setup?.setup ?? null,
       setupNote: a.setup?.note ?? '',
-      score: round(weights.rs * rs[i] + weights.sector * sector[i] + weights.trend * trend[i] + weights.setup * setup[i]),
+      score: round(score),
       rsPct: round(rs[i]),
       sectorPct: round(sector[i]),
       trendPct: round(trend[i]),
@@ -308,6 +330,8 @@ export function rankCandidates(
       trigger: round(a.trigger),
       stop: round(a.stop),
       riskPct: round(a.riskPct),
+      triggerGapPct: round(triggerGapPct),
+      confidence: confidence(score, a.riskPct, triggerGapPct),
     } satisfies Candidate
   })
   const ranked = scored.filter((c) => c.eligible).sort((a, b) => b.score - a.score || b.marketCapCr - a.marketCapCr)
@@ -331,12 +355,21 @@ const isOpen = (slot: Slot) => slot.status !== 'closed'
 // Weekly review on the latest completed week (`weekStart` = its Monday; `asOf` = its last
 // trading day). Active names are left to their trade rules; Watch names are dropped when
 // they fail the trend filter, fall out of the top `keepRank`, or wait `watchReviews`
-// reviews without triggering. Free slots are then filled from the ranked candidates,
-// at most `maxNewPerWeek` (no cap on the first fill of an empty portfolio).
+// reviews without triggering. Free slots are then filled with the qualifying candidates
+// of highest confidence; once full, a candidate replaces the weakest Watch name when its
+// confidence is at least `swapMargin` higher. At most `maxNewPerWeek` names are added
+// (no cap on the first fill of an empty portfolio).
 export function weeklyReview(portfolio: Portfolio, ranked: Candidate[], weekStart: string, asOf: string): Portfolio {
   const bySymbol = new Map(ranked.map((c) => [c.symbol, c]))
   const bootstrap = portfolio.lastReviewWeek === '' && !portfolio.slots.some(isOpen)
   const dropped = new Set<string>()
+  const drop = (slot: Slot, reason: string) => {
+    slot.status = 'closed'
+    slot.exitReason = 'dropped'
+    slot.closedDate = asOf
+    slot.events.push({ date: asOf, type: 'dropped', note: `Removed from watch: ${reason}` })
+    dropped.add(slot.symbol)
+  }
 
   for (const slot of portfolio.slots.filter(isOpen)) {
     const c = bySymbol.get(slot.symbol)
@@ -350,34 +383,27 @@ export function weeklyReview(portfolio: Portfolio, ranked: Candidate[], weekStar
         : slot.reviewsWaiting >= RULES.watchReviews
           ? `did not trigger in ${RULES.watchReviews} weeks`
           : null
-    if (!reason) continue
-    slot.status = 'closed'
-    slot.exitReason = 'dropped'
-    slot.closedDate = asOf
-    slot.events.push({ date: asOf, type: 'dropped', note: `Removed from watch: ${reason}` })
-    dropped.add(slot.symbol)
+    if (reason) drop(slot, reason)
+    else slot.confidence = confidence(c!.score, slot.riskPct, ((slot.trigger - c!.close) / c!.close) * 100)
   }
 
   const open = portfolio.slots.filter(isOpen)
   const held = new Set(open.map((s) => s.symbol))
   const perSector = new Map<string, number>()
   for (const s of open) perSector.set(s.sector, (perSector.get(s.sector) ?? 0) + 1)
-  const free = RULES.maxSlots - open.length
-  const toAdd = bootstrap ? free : Math.min(free, RULES.maxNewPerWeek)
+  const cap = bootstrap ? RULES.maxSlots : RULES.maxNewPerWeek
+  const picks = ranked
+    .filter((c) => c.eligible && c.setup && c.rank <= RULES.keepRank && c.riskPct <= RULES.maxRiskPct)
+    .filter((c) => !held.has(c.symbol) && !dropped.has(c.symbol))
+    .sort((a, b) => b.confidence - a.confidence || a.rank - b.rank)
 
-  let added = 0
-  for (const c of ranked) {
-    if (added >= toAdd) break
-    if (!c.eligible || !c.setup) continue
-    if (held.has(c.symbol) || dropped.has(c.symbol)) continue
-    if ((perSector.get(c.sector) ?? 0) >= RULES.maxPerSector) continue
-    if (c.riskPct > RULES.maxRiskPct) continue
+  const add = (c: Candidate, note: string) => {
     portfolio.slots.push({
       id: `${weekStart}_${c.symbol}`,
       symbol: c.symbol,
       name: c.name,
       sector: c.sector,
-      setup: c.setup,
+      setup: c.setup!,
       setupNote: c.setupNote,
       addedWeek: weekStart,
       reviewsWaiting: 0,
@@ -388,12 +414,37 @@ export function weeklyReview(portfolio: Portfolio, ranked: Candidate[], weekStar
       initialStop: c.stop,
       stop: c.stop,
       riskPct: c.riskPct,
+      confidence: c.confidence,
       lastDate: asOf,
       lastClose: c.close,
-      events: [{ date: asOf, type: 'added', note: `Added to watch at #${c.rank}: buy above ${c.trigger}, stop ${c.stop} (${c.riskPct}% risk)` }],
+      events: [{ date: asOf, type: 'added', note: `${note} at #${c.rank}, confidence ${c.confidence}: buy above ${c.trigger}, stop ${c.stop} (${c.riskPct}% risk)` }],
     })
     held.add(c.symbol)
     perSector.set(c.sector, (perSector.get(c.sector) ?? 0) + 1)
+  }
+
+  let added = 0
+  const sectorFull = (c: Candidate, freed?: Slot) =>
+    (perSector.get(c.sector) ?? 0) - (freed?.sector === c.sector ? 1 : 0) >= RULES.maxPerSector
+  for (const c of picks) {
+    if (added >= cap) break
+    if (held.has(c.symbol)) continue
+    if (portfolio.slots.filter(isOpen).length < RULES.maxSlots) {
+      if (sectorFull(c)) continue
+      add(c, 'Added to watch')
+      added++
+      continue
+    }
+    // Full: swap out the weakest Watch name kept from earlier weeks, if clearly weaker.
+    const weakest = portfolio.slots
+      .filter((s) => s.status === 'watch' && s.addedWeek !== weekStart)
+      .sort((a, b) => (a.confidence ?? 0) - (b.confidence ?? 0))[0]
+    if (!weakest || c.confidence < (weakest.confidence ?? 0) + RULES.swapMargin) break
+    if (sectorFull(c, weakest)) continue
+    drop(weakest, `replaced by ${c.symbol} (confidence ${weakest.confidence} vs ${c.confidence})`)
+    held.delete(weakest.symbol)
+    perSector.set(weakest.sector, perSector.get(weakest.sector)! - 1)
+    add(c, `Added to watch, replacing ${weakest.symbol},`)
     added++
   }
 

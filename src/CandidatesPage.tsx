@@ -34,6 +34,7 @@ export default function CandidatesPage({ data, portfolio }: { data: CandidatesDa
               <th className="num">Rank</th>
               <th>Setup</th>
               <th className="num">Score</th>
+              <th className="num">Confidence</th>
               <th className="num">6M vs Nifty</th>
               <th className="num">3M vs Nifty</th>
               <th className="num">Trend</th>
@@ -60,13 +61,17 @@ export default function CandidatesPage({ data, portfolio }: { data: CandidatesDa
                   <div className="name">{c.setupNote}</div>
                 </td>
                 <td className="num">{c.score.toFixed(1)}</td>
+                <td className="num">{c.confidence?.toFixed(0) ?? '—'}</td>
                 <td className={`num ${toneOf(c.rel6mPct)}`}>{signed(c.rel6mPct, 1)}%</td>
                 <td className={`num ${toneOf(c.rel3mPct)}`}>{signed(c.rel3mPct, 1)}%</td>
                 <td className="num">{c.trendQuality.toFixed(0)}%</td>
                 <td className="num">{c.sectorBreadthPct.toFixed(0)}%</td>
                 <td className="num">{c.rsi.toFixed(1)}</td>
                 <td className="num">{c.belowHighPct.toFixed(1)}%</td>
-                <td className="num up">{inr.format(c.trigger)}</td>
+                <td className="num up">
+                  {inr.format(c.trigger)}
+                  {c.triggerGapPct !== undefined && <div className="name">{signed(c.triggerGapPct, 1)}% away</div>}
+                </td>
                 <td className="num down">{inr.format(c.stop)}</td>
                 <td className="num">{c.riskPct.toFixed(1)}%</td>
                 <td className="num">{inr.format(c.marketCapCr)}</td>
@@ -75,7 +80,7 @@ export default function CandidatesPage({ data, portfolio }: { data: CandidatesDa
             ))}
             {rows.length === 0 && (
               <tr>
-                <td colSpan={15} className="empty">No candidates match.</td>
+                <td colSpan={16} className="empty">No candidates match.</td>
               </tr>
             )}
           </tbody>
@@ -83,7 +88,10 @@ export default function CandidatesPage({ data, portfolio }: { data: CandidatesDa
       </div>
       <p className="meta performance-note">
         Score = 40% relative strength vs Nifty 50 + 20% sector breadth + 20% trend quality + 20% setup quality, each as a
-        percentile. Trend = share of the last 26 weeks closing above the 10-week average.
+        percentile. Trend = share of the last 26 weeks closing above the 10-week average. Confidence = 50% score + 25%
+        stop tightness (4% risk or less scores full, 12% scores zero) + 25% closeness to the buy-above price (8% or more
+        away scores zero). Free Top 10 slots go to the highest-confidence names ranked in the top 40, and a name at least
+        10 points higher replaces the weakest name on watch.
       </p>
     </>
   )

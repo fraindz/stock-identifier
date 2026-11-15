@@ -140,6 +140,7 @@ export type Slot = {
   initialStop: number
   stop: number
   riskPct: number
+  confidence?: number // at the latest review, while on watch
   entryDate?: string
   entry?: number
   r?: number
@@ -201,6 +202,8 @@ export type Candidate = {
   trigger: number
   stop: number
   riskPct: number
+  triggerGapPct?: number // missing in files written before confidence was added
+  confidence?: number
 }
 
 export type CandidatesData = {
@@ -210,4 +213,70 @@ export type CandidatesData = {
   trendUniverse: number
   eligibleCount: number
   candidates: Candidate[]
+}
+
+// Rolling Swing / Positional quality scores (public/{rolling-swing,positional}.json); mirrors scripts/quality.ts.
+export type QualityComponentKey = 'trend' | 'rs' | 'sector' | 'setup' | 'volume' | 'fundamentals' | 'riskReward'
+export type QualityComponent = { key: QualityComponentKey; label: string; points: number; max: number; note: string }
+export type Grade = 'A' | 'B' | 'C'
+
+export type MarketRegime = {
+  regime: 'risk-on' | 'caution' | 'risk-off'
+  asOf: string
+  niftyClose: number
+  niftyVs50Pct: number
+  niftyVs200Pct: number
+  sma50Rising: boolean
+  breadthPct: number
+  note: string
+}
+
+export type QualitySector = {
+  name: string
+  members: number
+  ret20Pct: number
+  ret65Pct: number
+  rel20Pct: number
+  rel65Pct: number
+  breadthPct: number
+  above50: boolean
+}
+
+export type QualityStock = {
+  symbol: string
+  name: string
+  sector: string
+  marketCapCr: number
+  close: number
+  rawScore: number
+  score: number
+  grade: Grade | null
+  setup: string | null
+  setupNote: string
+  trigger: number
+  stop: number
+  target: number
+  riskPct: number
+  rr: number
+  triggerGapPct: number
+  deliveryPct: number | null
+  fundamentalsCoverage: number
+  components: QualityComponent[]
+  firstSeen: string
+  daysListed: number
+}
+
+export type QualityData = {
+  generatedAt: string
+  asOf: string
+  mode: 'swing' | 'positional'
+  scoredCount: number
+  minMarketCapCr?: number // missing in files written before it was added
+  minTradedValueCr?: number
+  deliveryAvailable: boolean
+  weights: Record<QualityComponentKey, number>
+  grades: Record<Grade, number>
+  regime: MarketRegime
+  sectors: QualitySector[]
+  stocks: QualityStock[]
 }

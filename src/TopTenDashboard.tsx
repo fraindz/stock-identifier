@@ -169,6 +169,7 @@ export default function TopTenDashboard({ data }: { data: Portfolio }) {
               <th className="sticky-col">Stock</th>
               <th>Setup</th>
               <th className="num">Rank</th>
+              <th className="num">Confidence</th>
               <th className="num">Last close</th>
               <th className="num">Buy above</th>
               <th className="num">Stop</th>
@@ -194,6 +195,7 @@ export default function TopTenDashboard({ data }: { data: Portfolio }) {
                 <td className="num">
                   #{slot.lastRank ?? slot.rankAtAdd}
                 </td>
+                <td className="num">{slot.confidence?.toFixed(0) ?? '—'}</td>
                 <td className="num">{inr.format(slot.lastClose)}</td>
                 <td className="num up">
                   {inr.format(slot.trigger)} ({pctFromEntry(slot.lastClose, slot.trigger)})
@@ -213,7 +215,7 @@ export default function TopTenDashboard({ data }: { data: Portfolio }) {
             })}
             {watch.length === 0 && (
               <tr>
-                <td colSpan={13} className="empty">No names on watch.</td>
+                <td colSpan={14} className="empty">No names on watch.</td>
               </tr>
             )}
           </tbody>
@@ -227,7 +229,9 @@ export default function TopTenDashboard({ data }: { data: Portfolio }) {
         (buy − stop).
       </p>
       <p className="meta performance-note">
-        Reviewed every Saturday on the completed weekly candle; at most {rules.maxNewPerWeek} new names a week. A watch
+        Reviewed every Saturday on the completed weekly candle; at most {rules.maxNewPerWeek} new names a week, chosen by
+        confidence (ranking score, stop tightness and closeness to the buy level). A stronger candidate can replace the
+        weakest watch name when the slots are full. A watch
         name becomes active when a day’s high reaches its buy level. Stops move to breakeven at +{rules.breakevenR}R; at +
         {rules.partialR}R half is booked and the stop trails the lowest low of the last {rules.trailWeeks} weeks. Positions
         under +{rules.breakevenR}R after {rules.timeStopWeeks} weeks, or with a weekly close below the 30-week average, are
