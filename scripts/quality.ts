@@ -5,7 +5,7 @@
 //
 // Every sub-score is a piecewise-linear map of an absolute threshold (not a percentile),
 // so grades stay comparable from one day to the next and a weak tape produces fewer A's.
-import { atr, avg, CRORE, ema, round, sma, type Company, type Day, type Week } from './indicators'
+import { atr, avg, CRORE, ema, round, sma, targetFor, type Company, type Day, type Week } from './indicators'
 import { setupFor, RULES as TOP10_RULES } from './top10'
 
 export type Mode = 'swing' | 'positional'
@@ -51,7 +51,6 @@ export const QUALITY_RULES = {
     maxRiskPct: 12,
     idealRiskPct: 4,
   },
-  targetR: 3, // target = resistance (52-week high) or this many R, whichever is nearer
   fullRR: 2.5,
 }
 
@@ -473,10 +472,7 @@ export function riskRewardScore(mode: Mode, close: number, trigger: number, stop
   const R = trigger - stop
   const riskPct = (R / trigger) * 100
   const gapPct = pct(close, trigger)
-  const blueSky = high52 <= trigger * 1.02
-  const cap = trigger + QUALITY_RULES.targetR * R
-  const target = blueSky ? cap : Math.min(high52, cap)
-  const rr = R > 0 ? (target - trigger) / R : 0
+  const { target, rr, blueSky } = targetFor(trigger, stop, high52)
   const { maxRiskPct, idealRiskPct } = QUALITY_RULES[mode]
   const component = fromChecks(
     'riskReward',
@@ -559,12 +555,12 @@ export function qualityScore(stock: QualityInput, mode: Mode, ctx: Context): Omi
 
 // Carries `firstSeen` over from the previous file for names that stay graded; `daysListed`
 // counts trading days since then (1 = new today).
-export function carryFirstSeen(
-  stocks: Omit<QualityStock, 'firstSeen' | 'daysListed'>[],
+export function carryFirstSeen<T extends { symbol: string; grade: string | null }>(
+  stocks: T[],
   previous: { stocks: { symbol: string; grade: string | null; firstSeen: string }[] } | null,
   tradingDates: string[],
   asOf: string,
-): QualityStock[] {
+): (T & { firstSeen: string; daysListed: number })[] {
   const prev = new Map((previous?.stocks ?? []).filter((s) => s.grade).map((s) => [s.symbol, s.firstSeen]))
   return stocks.map((s) => {
     const firstSeen = (s.grade && prev.get(s.symbol)) || asOf

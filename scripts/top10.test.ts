@@ -121,7 +121,7 @@ const candidate = (rank: number, sector = `S${rank}`, over: Partial<Candidate> =
   rsPct: 0, sectorPct: 0, trendPct: 0, setupPct: 0,
   rel6mPct: 0, rel3mPct: 0, trendQuality: 0, sectorBreadthPct: 0,
   close: 100, rsi: 60, belowHighPct: 5, extensionPct: 5, tradedValueCr: 50,
-  trigger: 101, stop: 92, riskPct: 9, triggerGapPct: 1, confidence: 0,
+  trigger: 101, stop: 92, riskPct: 9, target: 128, triggerGapPct: 1, confidence: 0,
   ...over,
   }
   return { ...c, confidence: over.confidence ?? confidence(c.score, c.riskPct, c.triggerGapPct) }
@@ -223,4 +223,10 @@ test('a weak candidate cannot swap out a Watch name, however confident', () => {
   const strongButLowQuality = candidate(11, 'X', { confidence: 95, qualityScore: 50 })
   weeklyReview(p, [...ranked, strongButLowQuality], '2026-01-12', '2026-01-16')
   assert.ok(!p.slots.some((s) => s.symbol === 'C11'))
+})
+
+test('new slots carry the candidate target', () => {
+  const p = weeklyReview(emptyPortfolio(), [candidate(1, 'A', { target: 125 })], '2026-01-05', '2026-01-09')
+  assert.equal(p.slots[0].target, 125)
+  assert.match(p.slots[0].events[0].note, /target 125/)
 })

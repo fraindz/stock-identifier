@@ -8,6 +8,11 @@ The scanner also generates daily swing-trading screens for Momentum, Healthy
 Pullbacks, Breakout Watchlist, Volume Surge, and Trade Plan. These use daily
 EMA, RSI, volume-ratio, 20-day-high, and ATR-based calculations.
 
+**Targets** follow one rule on every tab (`targetFor()` in `scripts/indicators.ts`): the nearer of the
+52-week high and 3R, where R is the entry minus the stop. When the 52-week high is within 2% of the entry,
+or below it, there's no resistance overhead and the target is 3R. Short-term scans use the latest close
+as the entry and 1.5 daily ATR as the stop; the other tabs use their own buy-above and stop levels.
+
 To enable Google Analytics 4, set `VITE_GA_MEASUREMENT_ID` to the property's
 measurement ID before building and deploying:
 
@@ -91,3 +96,52 @@ breadth:
 Delivery % comes from NSE's daily bhavcopy (`sec_bhavdata_full`), cached in `.cache/bhav/`. If NSE
 can't be reached, volume is scored on relative volume only. Thresholds and weights are in
 `QUALITY_RULES`.
+
+## Grade tracker
+
+The **Grade tracker** tab answers one question: do higher grades lead to better trades? Every stock
+graded A or B on Rolling swing or Positional is recorded as a paper trade in
+`public/grade-tracker.json` and followed with fixed rules. The logic is in `scripts/tracker.ts`
+(pure functions, tested by `npm run test:tracker`).
+
+A stock can have only one open trade per tab at a time.
+
+- **Entry:** a later session's high reaches the buy-above price (at the open if it gaps above).
+  Unfilled signals expire after 5 trading days (swing) or 10 (positional), and are cancelled
+  automatically when the stock falls below grade C or leaves the list.
+- **Management:** the stop moves to entry at +1R, and half is booked at +2R. The rest trails the
+  lowest low of the last 3 days (swing) or 3 weeks (positional).
+- **Exits:**
+  - stop or trailing stop hit;
+  - swing: 10 days below +1R, or 20 days in total;
+  - positional: 65 days below +1R, or a weekly close below the 30-week SMA.
+
+The page lists each day's order changes (new, bought, cancel, exit) and summarises trigger rate, win rate, average R, days held and best R for each tab and
+grade. Results ignore costs and slippage. Rows with fewer than 20 closed trades are too small a
+sample to judge.
+
+## Hotlist
+
+The **Hotlist** tab is the site's landing page and the daily starting point. It lists stocks where the
+daily and weekly pictures agree. To qualify, a stock must:
+
+- grade C or better (60+) on both Rolling swing and Positional, and B or better (70+) on at least
+  one of them;
+- have a swing stop no more than 8% away.
+
+Stocks are ranked by the average of their two scores, and `public/hotlist.json` is rewritten on every
+run. The logic is in `scripts/hotlist.ts` (tested by `npm run test:hotlist`).
+
+**Entry and management:** buy above, stop and target are the swing levels. The target is the nearer of
+the 52-week high and 3R, so R:R is at most 3. Bought trades follow the positional rules (stop to entry
+at +1R, half booked at +2R, the rest trailing), so winners can run past the target.
+
+**What the page shows:**
+
+- the day's order changes (new, bought, cancel, exit);
+- position sizes from your capital and risk per trade, halved when the market isn't risk-on;
+- each stock's order status and whether it's also a Top 10 name;
+- trades already bought whose stock has since dropped off the list.
+
+**Tracking:** every Hotlist stock is tracked as its own group in the Grade tracker. A pending order is
+cancelled when the stock drops off the hotlist, and expires after 5 trading days.

@@ -45,6 +45,7 @@ export default function CandidatesPage({ data, portfolio }: { data: CandidatesDa
               <th className="num">Buy above</th>
               <th className="num">Stop</th>
               <th className="num">Risk</th>
+              <th className="num">Target</th>
               <th className="num">Mkt cap (Cr)</th>
               <th>Sector</th>
             </tr>
@@ -78,13 +79,17 @@ export default function CandidatesPage({ data, portfolio }: { data: CandidatesDa
                 </td>
                 <td className="num down">{inr.format(c.stop)}</td>
                 <td className="num">{c.riskPct.toFixed(1)}%</td>
+                <td className="num">
+                  {c.target ? inr.format(c.target) : '—'}
+                  {c.target && <div className="name">{((c.target - c.trigger) / (c.trigger - c.stop)).toFixed(1)}R</div>}
+                </td>
                 <td className="num">{inr.format(c.marketCapCr)}</td>
                 <td>{c.sector}</td>
               </tr>
             ))}
             {rows.length === 0 && (
               <tr>
-                <td colSpan={17} className="empty">No candidates match.</td>
+                <td colSpan={18} className="empty">No candidates match.</td>
               </tr>
             )}
           </tbody>

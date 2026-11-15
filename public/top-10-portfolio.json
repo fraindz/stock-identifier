@@ -66,7 +66,8 @@
           "type": "added",
           "note": "Added to watch at #3, confidence 62.6: buy above 676.97, stop 597.2 (11.78% risk)"
         }
-      ]
+      ],
+      "target": 739.91
     },
     {
       "id": "2026-11-09_RPEL",
@@ -93,7 +94,8 @@
           "type": "added",
           "note": "Added to watch at #7, confidence 55.08: buy above 1997.84, stop 1795.8 (10.11% risk)"
         }
-      ]
+      ],
+      "target": 2603.96
     },
     {
       "id": "2026-11-09_CRAFTSMAN",
@@ -120,7 +122,8 @@
           "type": "added",
           "note": "Added to watch at #13, confidence 45.99: buy above 11233.89, stop 9980 (11.16% risk)"
         }
-      ]
+      ],
+      "target": 11998.48
     },
     {
       "id": "2026-11-09_PETRONET",
@@ -147,7 +150,8 @@
           "type": "added",
           "note": "Added to watch at #14, confidence 44.69: buy above 337.98, stop 313.2 (7.33% risk)"
         }
-      ]
+      ],
+      "target": 412.32
     },
     {
       "id": "2026-11-09_BAJAJHLDNG",
@@ -174,7 +178,8 @@
           "type": "added",
           "note": "Added to watch at #15, confidence 34.19: buy above 11482.12, stop 10183.32 (11.31% risk)"
         }
-      ]
+      ],
+      "target": 12964.13
     }
   ]
 }

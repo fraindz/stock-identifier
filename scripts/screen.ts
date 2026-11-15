@@ -22,11 +22,14 @@ import {
   rsi,
   sectorBreadth,
   sma,
+  targetFor,
   type Company,
   type Day,
   type Week,
 } from './indicators'
 import { dailyUpdate, eligible, emptyPortfolio, rankCandidates, RULES, weeklyReview, type Portfolio } from './top10'
+import { asSignal, buildHotlist, HOTLIST_RULES } from './hotlist'
+import { addSignals, cancelStale, emptyTracker, summarize, updateTrades, TRACKER_RULES, type Tracker } from './tracker'
 import {
   carryFirstSeen,
   deliveryStats,
@@ -69,6 +72,8 @@ const QUALITY_OUTPUTS: Record<Mode, URL> = {
   swing: new URL('../public/rolling-swing.json', import.meta.url),
   positional: new URL('../public/positional.json', import.meta.url),
 }
+const HOTLIST_OUTPUT = new URL('../public/hotlist.json', import.meta.url)
+const TRACKER_OUTPUT = new URL('../public/grade-tracker.json', import.meta.url)
 const BHAV_CACHE = new URL('../.cache/bhav/', import.meta.url)
 // Rows below grade C kept in each quality file for the page's "show all" toggle.
 const QUALITY_UNGRADED_ROWS = 50
@@ -307,6 +312,8 @@ function swingMetrics(company: Company, days: Day[]): SwingStock | null {
   const averageVolume = sma(days.map((day) => day.volume), 20)
   const latestAtr = atr(days)
   const entry = latest.close
+  const stop = entry - latestAtr * 1.5
+  const high52 = Math.max(...days.slice(-250).map((day) => day.high))
   return {
     symbol: company.symbol,
     name: company.name,
@@ -323,8 +330,8 @@ function swingMetrics(company: Company, days: Day[]): SwingStock | null {
     high20: round(Math.max(...days.slice(-20).map((day) => day.high))),
     atr: round(latestAtr),
     entry: round(entry),
-    stop: round(entry - latestAtr * 1.5),
-    target: round(entry + latestAtr * 3),
+    stop: round(stop),
+    target: round(targetFor(entry, stop, high52).target),
     score: 0,
   }
 }
@@ -535,7 +542,9 @@ async function main() {
   ])
   console.log(`swing screens: momentum ${momentum.length}, pullbacks ${healthyPullbacks.length}, breakouts ${breakoutWatchlist.length}, volume ${volumeSurge.length}`)
 
-  const qualityScores = await writeQualityScreens(candidates, niftyBars.days, fundamentals, currentWeek)
+  const quality = await writeQualityScreens(candidates, niftyBars.days, fundamentals, currentWeek)
+  const hotlist = await writeHotlist(quality, niftyBars.days.map((d) => d.date))
+  await updateTracker(candidates, quality, hotlist)
 
   await updateTopTen(candidates, {
     currentWeek,
@@ -543,7 +552,7 @@ async function main() {
     forceReview,
     sectorGroups,
     niftyWeeks,
-    qualityScores,
+    qualityScores: quality.positionalScores,
     asOf: daysAsOf(candidates),
   })
 
@@ -552,11 +561,91 @@ async function main() {
 
 type Loaded = Company & { weeks: Week[]; days: Day[]; current: Week | undefined }
 
+// Daily bars and weeks (including the current week) for the given symbols: taken from the
+// screened universe, and fetched for any that dropped out of it (e.g. market cap fell).
+async function barsFor(candidates: Loaded[], symbols: string[], label: string) {
+  const bars = new Map(
+    candidates.map((c) => [c.symbol, { days: c.days, weeks: c.current ? [...c.weeks, c.current] : c.weeks }]),
+  )
+  const missing = [...new Set(symbols.filter((symbol) => !bars.get(symbol)?.days.length))]
+  for (const [symbol, b] of await mapLimit(missing, CHART_CONCURRENCY, async (symbol) => {
+    try {
+      return [symbol, await priceBars(`${symbol}.NS`)] as const
+    } catch (error) {
+      console.error(`Could not update ${label} ${symbol}:`, error)
+      return [symbol, { weeks: [] as Week[], days: [] as Day[] }] as const
+    }
+  })) bars.set(symbol, b)
+  return bars
+}
+
+// Grade tracker: follow the open paper trades with today's bars, then add today's new
+// A/B names from both quality tabs.
+// Hotlist: graded on both Rolling swing and Positional (see scripts/hotlist.ts).
+async function writeHotlist(quality: Awaited<ReturnType<typeof writeQualityScreens>>, tradingDates: string[]) {
+  let previous: { stocks: { symbol: string; grade: string | null; firstSeen: string }[] } | null = null
+  try {
+    previous = JSON.parse(await readFile(HOTLIST_OUTPUT, 'utf8'))
+  } catch {
+    // first run
+  }
+  const hot = buildHotlist(quality.stocks.swing, quality.stocks.positional)
+  await writeFile(
+    HOTLIST_OUTPUT,
+    JSON.stringify(
+      {
+        generatedAt: new Date().toISOString(),
+        asOf: quality.asOf,
+        regime: quality.regimeInfo,
+        rules: HOTLIST_RULES,
+        stocks: carryFirstSeen(hot, previous, tradingDates, quality.asOf),
+      },
+      null,
+      2,
+    ),
+  )
+  console.log(`Hotlist: ${hot.length} stocks (${hot.map((h) => h.symbol).join(', ')})`)
+  return hot
+}
+
+async function updateTracker(
+  candidates: Loaded[],
+  quality: Awaited<ReturnType<typeof writeQualityScreens>>,
+  hotlist: ReturnType<typeof buildHotlist>,
+) {
+  let tracker: Tracker = emptyTracker()
+  try {
+    tracker = JSON.parse(await readFile(TRACKER_OUTPUT, 'utf8')) as Tracker
+  } catch {
+    console.log('No grade tracker yet: starting one')
+  }
+  tracker.rules = TRACKER_RULES
+  const open = tracker.trades.filter((t) => t.status === 'watch' || t.status === 'active')
+  updateTrades(tracker, await barsFor(candidates, open.map((t) => t.symbol), 'tracked trade'))
+  // A rerun on the same data must not add the day's signals twice.
+  if (quality.asOf > tracker.asOf) {
+    for (const mode of ['swing', 'positional'] as const) {
+      const cancelled = cancelStale(tracker, mode, quality.scores[mode], quality.asOf)
+      const added = addSignals(tracker, mode, quality.stocks[mode], quality.asOf, quality.regime)
+      console.log(`Grade tracker (${mode}): ${added} signals added, ${cancelled} cancelled`)
+    }
+    const hotScores = new Map(hotlist.map((h) => [h.symbol, { score: h.avgScore, grade: h.grade as string | null }]))
+    const cancelled = cancelStale(tracker, 'hotlist', hotScores, quality.asOf, 'dropped off the hotlist')
+    const added = addSignals(tracker, 'hotlist', hotlist.map(asSignal), quality.asOf, quality.regime)
+    console.log(`Grade tracker (hotlist): ${added} signals added, ${cancelled} cancelled`)
+    tracker.asOf = quality.asOf
+  }
+  tracker.updatedAt = new Date().toISOString()
+  await writeFile(TRACKER_OUTPUT, JSON.stringify({ ...tracker, summary: summarize(tracker.trades) }, null, 2))
+}
+
 // Rolling Swing and Positional: score every liquid stock on the 100-point quality score,
 // gated by the market regime, and write the graded lists.
 // Returns every scored stock's Positional score, which gates new Top 10 names.
 async function writeQualityScreens(candidates: Loaded[], niftyDays: Day[], fundamentals: Map<string, Fundamentals>, currentWeek: string) {
   const positionalScores = new Map<string, number>()
+  const allScores = {} as Record<Mode, Map<string, { score: number; grade: string | null }>>
+  const gradedStocks = {} as Record<Mode, Omit<QualityStock, 'firstSeen' | 'daysListed'>[]>
   let delivery: Map<string, Delivery> | null = null
   try {
     delivery = await fetchDeliveryHistory(niftyDays.slice(-60).map((d) => d.date))
@@ -593,8 +682,10 @@ async function writeQualityScreens(candidates: Loaded[], niftyDays: Day[], funda
     const scored = inputs
       .map((s) => qualityScore(s, mode, ctx))
       .sort((a, b) => b.score - a.score || b.rawScore - a.rawScore || b.marketCapCr - a.marketCapCr)
+    allScores[mode] = new Map(scored.map((s) => [s.symbol, { score: s.score, grade: s.grade }]))
     if (mode === 'positional') for (const s of scored) positionalScores.set(s.symbol, s.score)
     const graded = scored.filter((s) => s.grade)
+    gradedStocks[mode] = graded
     const kept = [...graded, ...scored.filter((s) => !s.grade).slice(0, QUALITY_UNGRADED_ROWS)]
     await writeFile(
       QUALITY_OUTPUTS[mode],
@@ -621,7 +712,7 @@ async function writeQualityScreens(candidates: Loaded[], niftyDays: Day[], funda
     console.log(`${mode} quality: ${scored.length} scored, A ${count('A')}, B ${count('B')}, C ${count('C')}`)
   }
   console.log(`Market regime: ${regime.regime} (Nifty ${regime.niftyVs50Pct}% vs 50-DMA, breadth ${regime.breadthPct}%), ${sectors.size} sector indices`)
-  return positionalScores
+  return { positionalScores, scores: allScores, stocks: gradedStocks, asOf, regime: regime.regime, regimeInfo: regime }
 }
 
 // Top 10 portfolio: daily update of the open slots, then (on weekends, with --review, or
@@ -639,18 +730,7 @@ async function updateTopTen(
   const portfolio = existing ?? emptyPortfolio()
   portfolio.rules = RULES
 
-  const bars = new Map(
-    candidates.map((c) => [c.symbol, { days: c.days, weeks: c.current ? [...c.weeks, c.current] : c.weeks }]),
-  )
-  const missing = [...new Set(portfolio.slots.filter((s) => s.status !== 'closed' && !bars.get(s.symbol)?.days.length).map((s) => s.symbol))]
-  for (const [symbol, b] of await mapLimit(missing, CHART_CONCURRENCY, async (symbol) => {
-    try {
-      return [symbol, await priceBars(`${symbol}.NS`)] as const
-    } catch (error) {
-      console.error(`Could not update Top 10 slot ${symbol}:`, error)
-      return [symbol, { weeks: [] as Week[], days: [] as Day[] }] as const
-    }
-  })) bars.set(symbol, b)
+  const bars = await barsFor(candidates, portfolio.slots.filter((s) => s.status !== 'closed').map((s) => s.symbol), 'Top 10 slot')
   dailyUpdate(portfolio, bars)
 
   const nifty = opts.niftyWeeks.filter((w) => w.start < opts.currentWeek)

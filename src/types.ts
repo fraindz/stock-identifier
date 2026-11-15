@@ -140,6 +140,7 @@ export type Slot = {
   initialStop: number
   stop: number
   riskPct: number
+  target?: number // missing on slots added before targets
   confidence?: number // at the latest review, while on watch
   entryDate?: string
   entry?: number
@@ -202,6 +203,7 @@ export type Candidate = {
   trigger: number
   stop: number
   riskPct: number
+  target?: number // missing in files written before targets were added
   triggerGapPct?: number // missing in files written before confidence was added
   confidence?: number
   qualityScore?: number | null // Positional quality score; missing in older files
@@ -280,4 +282,108 @@ export type QualityData = {
   regime: MarketRegime
   sectors: QualitySector[]
   stocks: QualityStock[]
+}
+
+// Grade tracker (public/grade-tracker.json); mirrors scripts/tracker.ts.
+export type TrackedTrade = {
+  id: string
+  mode: 'swing' | 'positional' | 'hotlist'
+  symbol: string
+  name: string
+  sector: string
+  grade: Grade
+  score: number
+  components: Partial<Record<QualityComponentKey, number>>
+  setup: string | null
+  regime: MarketRegime['regime']
+  addedDate: string
+  trigger: number
+  initialStop: number
+  stop: number
+  target: number
+  status: 'watch' | 'active' | 'closed' | 'expired' | 'cancelled'
+  barsWaiting: number
+  endedDate?: string
+  cancelReason?: string
+  entryDate?: string
+  entry?: number
+  entryGapPct?: number
+  r?: number
+  partialBooked?: boolean
+  maxHigh?: number
+  barsHeld?: number
+  exitDate?: string
+  exitPrice?: number
+  exitReason?: 'stop' | 'trail' | 'time' | 'max-hold' | 'thesis'
+  rMultiple?: number
+  mfeR?: number
+  lastDate: string
+  lastClose: number
+}
+
+export type TrackerSummaryRow = {
+  mode: 'swing' | 'positional' | 'hotlist'
+  grade: Grade | 'all'
+  signals: number
+  watching: number
+  expired: number
+  cancelled?: number // missing in files written before cancellation was added
+  triggered: number
+  triggerRatePct: number | null
+  active: number
+  closed: number
+  winRatePct: number | null
+  avgR: number | null
+  totalR: number
+  avgWinR: number | null
+  avgLossR: number | null
+  avgBarsHeld: number | null
+  avgMfeR: number | null
+  openR: number | null
+}
+
+export type TrackerData = {
+  updatedAt: string
+  asOf: string
+  startedOn: string
+  rules: {
+    grades: Grade[]
+    breakevenR: number
+    partialR: number
+    swing: { watchDays: number; timeStopDays: number; maxHoldDays: number; trailDays: number }
+    positional: { watchDays: number; timeStopDays: number; trailWeeks: number; thesisSmaWeeks: number }
+    hotlist?: { watchDays: number }
+  }
+  trades: TrackedTrade[]
+  summary: TrackerSummaryRow[]
+}
+
+// Hotlist (public/hotlist.json); mirrors scripts/hotlist.ts.
+export type HotLevels = { score: number; grade: Grade; setup: string | null; setupNote: string; trigger: number; stop: number; riskPct: number }
+export type HotStock = {
+  rank: number
+  symbol: string
+  name: string
+  sector: string
+  marketCapCr: number
+  grade: 'A' | 'B'
+  close: number
+  avgScore: number
+  swing: HotLevels
+  positional: HotLevels
+  trigger: number
+  stop: number
+  riskPct: number
+  target: number
+  rr: number
+  firstSeen: string
+  daysListed: number
+}
+
+export type HotlistData = {
+  generatedAt: string
+  asOf: string
+  regime: MarketRegime
+  rules: { minScore: number; oneAtLeast: number; maxSwingRiskPct: number }
+  stocks: HotStock[]
 }

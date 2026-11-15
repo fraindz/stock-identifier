@@ -30,6 +30,18 @@ export const PULLBACK = {
 }
 
 export const round = (n: number) => Math.round(n * 100) / 100
+
+// One target rule for every tab: the nearer of the 52-week high (overhead resistance) and
+// TARGET_R times the risk. With the 52-week high within 2% of the entry (or below it) there's
+// no resistance overhead ("blue sky") and the target is TARGET_R.
+export const TARGET_R = 3
+export function targetFor(entry: number, stop: number, high52: number) {
+  const risk = entry - stop
+  const cap = entry + TARGET_R * risk
+  const blueSky = high52 <= entry * 1.02
+  const target = blueSky ? cap : Math.min(high52, cap)
+  return { target, rr: risk > 0 ? (target - entry) / risk : 0, blueSky }
+}
 export const avg = (xs: number[]) => xs.reduce((sum, x) => sum + x, 0) / xs.length
 export const sma = (xs: number[], length: number) => avg(xs.slice(-length))
 

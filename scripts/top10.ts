@@ -21,6 +21,7 @@ import {
   round,
   rsi,
   sma,
+  targetFor,
   type Company,
   type Day,
   type Week,
@@ -89,6 +90,7 @@ export type Candidate = {
   trigger: number
   stop: number
   riskPct: number
+  target: number // the nearer of the 52-week high and 3R
   triggerGapPct: number // buy-above vs latest close (negative: already above it)
   confidence: number // 0–100, see confidence()
   qualityScore?: number | null // Positional quality score; null: not scored (fails its filters)
@@ -113,6 +115,7 @@ export type Slot = {
   initialStop: number
   stop: number
   riskPct: number
+  target?: number // the nearer of the 52-week high and 3R; missing on slots added before targets
   confidence?: number // at the latest review, while on watch
   entryDate?: string
   entry?: number
@@ -226,6 +229,7 @@ export type Analysis = {
   trigger: number
   stop: number
   riskPct: number
+  target: number
 }
 
 // Hard filters for one stock. Returns null when it fails market cap, liquidity, trend
@@ -286,6 +290,7 @@ export function eligible(stock: StockInput, nifty: Week[]): Analysis | null {
     trigger,
     stop,
     riskPct: ((trigger - stop) / trigger) * 100,
+    target: targetFor(trigger, stop, high52).target,
   }
 }
 
@@ -335,6 +340,7 @@ export function rankCandidates(
       trigger: round(a.trigger),
       stop: round(a.stop),
       riskPct: round(a.riskPct),
+      target: round(a.target),
       triggerGapPct: round(triggerGapPct),
       confidence: confidence(score, a.riskPct, triggerGapPct),
     } satisfies Candidate
@@ -420,10 +426,11 @@ export function weeklyReview(portfolio: Portfolio, ranked: Candidate[], weekStar
       initialStop: c.stop,
       stop: c.stop,
       riskPct: c.riskPct,
+      target: c.target,
       confidence: c.confidence,
       lastDate: asOf,
       lastClose: c.close,
-      events: [{ date: asOf, type: 'added', note: `${note} at #${c.rank}, confidence ${c.confidence}${c.qualityScore != null ? `, quality ${c.qualityScore}` : ''}: buy above ${c.trigger}, stop ${c.stop} (${c.riskPct}% risk)` }],
+      events: [{ date: asOf, type: 'added', note: `${note} at #${c.rank}, confidence ${c.confidence}${c.qualityScore != null ? `, quality ${c.qualityScore}` : ''}: buy above ${c.trigger}, stop ${c.stop} (${c.riskPct}% risk), target ${c.target}` }],
     })
     held.add(c.symbol)
     perSector.set(c.sector, (perSector.get(c.sector) ?? 0) + 1)

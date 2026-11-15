@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { addDays, daysBetween, formatDay, inr, pctFromEntry, signed, toneOf } from './format'
 import { StockCell } from './TableCells'
+import { readStored, store } from './tracking'
 import type { Portfolio, Slot, SlotEvent } from './types'
 
 const SETUP_LABEL: Record<Slot['setup'], string> = { breakout: 'Breakout', pullback: 'Pullback', base: 'Base' }
@@ -12,21 +13,6 @@ const EVENT_LABEL: Record<SlotEvent['type'], string> = {
   trail: 'Stop raised',
   closed: 'Exit',
   dropped: 'Removed',
-}
-
-const readStored = (key: string, fallback: string) => {
-  try {
-    return window.localStorage.getItem(key) ?? fallback
-  } catch {
-    return fallback
-  }
-}
-const store = (key: string, value: string) => {
-  try {
-    window.localStorage.setItem(key, value)
-  } catch {
-    // storage unavailable (private window): keep the value for this visit only
-  }
 }
 
 const rNow = (slot: Slot) => (slot.lastClose - slot.entry!) / slot.r!
@@ -120,6 +106,7 @@ export default function TopTenDashboard({ data }: { data: Portfolio }) {
               <th className="num">Entry</th>
               <th className="num">Current</th>
               <th className="num">Stop</th>
+              <th className="num">Target</th>
               <th className="num">R now</th>
               <th className="num">Days held</th>
               <th className="num">Qty</th>
@@ -139,6 +126,7 @@ export default function TopTenDashboard({ data }: { data: Portfolio }) {
                   <td className="num down">
                     {inr.format(slot.stop)} ({pctFromEntry(slot.lastClose, slot.stop)})
                   </td>
+                  <td className="num up">{slot.target ? inr.format(slot.target) : '—'}</td>
                   <td className={`num ${toneOf(r)}`}>{signed(r, 1)}R</td>
                   <td className="num">{daysBetween(slot.entryDate!, slot.lastDate)}</td>
                   <td className="num">{qty(slot.r!)}</td>
@@ -154,7 +142,7 @@ export default function TopTenDashboard({ data }: { data: Portfolio }) {
             })}
             {active.length === 0 && (
               <tr>
-                <td colSpan={10} className="empty">No active positions yet.</td>
+                <td colSpan={11} className="empty">No active positions yet.</td>
               </tr>
             )}
           </tbody>
@@ -176,6 +164,7 @@ export default function TopTenDashboard({ data }: { data: Portfolio }) {
               <th className="num">Risk</th>
               <th className="num">+1R (stop to entry)</th>
               <th className="num">+2R (book half)</th>
+              <th className="num">Target</th>
               <th className="num">Qty</th>
               <th>Order valid until</th>
               <th className="num">Weeks waiting</th>
@@ -204,6 +193,10 @@ export default function TopTenDashboard({ data }: { data: Portfolio }) {
                 <td className="num">{slot.riskPct.toFixed(1)}%</td>
                 <td className="num">{inr.format(slot.trigger + rules.breakevenR * r)}</td>
                 <td className="num up">{inr.format(slot.trigger + rules.partialR * r)}</td>
+                <td className="num">
+                  {slot.target ? inr.format(slot.target) : '—'}
+                  {slot.target && <div className="name">{((slot.target - slot.trigger) / r).toFixed(1)}R</div>}
+                </td>
                 <td className="num">{qty(r)}</td>
                 <td>{formatDay(addDays(slot.addedWeek, 7 * rules.watchReviews + 4))}</td>
                 <td className="num">
@@ -215,7 +208,7 @@ export default function TopTenDashboard({ data }: { data: Portfolio }) {
             })}
             {watch.length === 0 && (
               <tr>
-                <td colSpan={14} className="empty">No names on watch.</td>
+                <td colSpan={15} className="empty">No names on watch.</td>
               </tr>
             )}
           </tbody>
@@ -223,9 +216,9 @@ export default function TopTenDashboard({ data }: { data: Portfolio }) {
       </div>
       <p className="meta performance-note">
         <strong>How to act:</strong> for each watch name you want, place a buy-stop (SL or GTT) order at the buy-above
-        price, valid until the date shown, and attach the stop as a stop-loss once it fills. There is no fixed final
-        target: move the stop to entry at +{rules.breakevenR}R, book half at +{rules.partialR}R, and let the rest run on
-        the trailing stop. Levels assume a fill at the trigger; a gap above it raises R slightly. Qty = capital × risk % ÷
+        price, valid until the date shown, and attach the stop as a stop-loss once it fills. Target = the nearer of
+        the 52-week high and 3R (the same rule on every tab). Move the stop to entry at +{rules.breakevenR}R, book half at
+        +{rules.partialR}R, and let the rest run on the trailing stop, which can carry it past the target. Levels assume a fill at the trigger; a gap above it raises R slightly. Qty = capital × risk % ÷
         (buy − stop).
       </p>
       <p className="meta performance-note">

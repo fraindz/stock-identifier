@@ -209,3 +209,10 @@ test('only stocks with market cap of ₹1,000 Cr or more are scored', () => {
   assert.equal(passesFilters(stock(999), nifty), false)
   assert.equal(passesFilters(stock(1000), nifty), true)
 })
+
+test('one target rule: the nearer of the 52-week high and 3R', async () => {
+  const { targetFor } = await import('./indicators')
+  assert.deepEqual(targetFor(100, 95, 100), { target: 115, rr: 3, blueSky: true }) // at the high: 3R
+  assert.deepEqual(targetFor(100, 95, 108), { target: 108, rr: 1.6, blueSky: false }) // resistance first
+  assert.equal(targetFor(100, 95, 130).target, 115) // high further than 3R: 3R
+})
