@@ -535,7 +535,7 @@ async function main() {
   ])
   console.log(`swing screens: momentum ${momentum.length}, pullbacks ${healthyPullbacks.length}, breakouts ${breakoutWatchlist.length}, volume ${volumeSurge.length}`)
 
-  await writeQualityScreens(candidates, niftyBars.days, fundamentals, currentWeek)
+  const qualityScores = await writeQualityScreens(candidates, niftyBars.days, fundamentals, currentWeek)
 
   await updateTopTen(candidates, {
     currentWeek,
@@ -543,6 +543,7 @@ async function main() {
     forceReview,
     sectorGroups,
     niftyWeeks,
+    qualityScores,
     asOf: daysAsOf(candidates),
   })
 
@@ -553,7 +554,9 @@ type Loaded = Company & { weeks: Week[]; days: Day[]; current: Week | undefined 
 
 // Rolling Swing and Positional: score every liquid stock on the 100-point quality score,
 // gated by the market regime, and write the graded lists.
+// Returns every scored stock's Positional score, which gates new Top 10 names.
 async function writeQualityScreens(candidates: Loaded[], niftyDays: Day[], fundamentals: Map<string, Fundamentals>, currentWeek: string) {
+  const positionalScores = new Map<string, number>()
   let delivery: Map<string, Delivery> | null = null
   try {
     delivery = await fetchDeliveryHistory(niftyDays.slice(-60).map((d) => d.date))
@@ -590,6 +593,7 @@ async function writeQualityScreens(candidates: Loaded[], niftyDays: Day[], funda
     const scored = inputs
       .map((s) => qualityScore(s, mode, ctx))
       .sort((a, b) => b.score - a.score || b.rawScore - a.rawScore || b.marketCapCr - a.marketCapCr)
+    if (mode === 'positional') for (const s of scored) positionalScores.set(s.symbol, s.score)
     const graded = scored.filter((s) => s.grade)
     const kept = [...graded, ...scored.filter((s) => !s.grade).slice(0, QUALITY_UNGRADED_ROWS)]
     await writeFile(
@@ -617,13 +621,14 @@ async function writeQualityScreens(candidates: Loaded[], niftyDays: Day[], funda
     console.log(`${mode} quality: ${scored.length} scored, A ${count('A')}, B ${count('B')}, C ${count('C')}`)
   }
   console.log(`Market regime: ${regime.regime} (Nifty ${regime.niftyVs50Pct}% vs 50-DMA, breadth ${regime.breadthPct}%), ${sectors.size} sector indices`)
+  return positionalScores
 }
 
 // Top 10 portfolio: daily update of the open slots, then (on weekends, with --review, or
 // when there's no portfolio yet) the weekly review that refills free slots.
 async function updateTopTen(
   candidates: Loaded[],
-  opts: { currentWeek: string; review: boolean; forceReview: boolean; sectorGroups: ReturnType<typeof sectorBreadth>; niftyWeeks: Week[]; asOf: string },
+  opts: { currentWeek: string; review: boolean; forceReview: boolean; sectorGroups: ReturnType<typeof sectorBreadth>; niftyWeeks: Week[]; qualityScores: Map<string, number>; asOf: string },
 ) {
   let existing: Portfolio | null = null
   try {
@@ -661,6 +666,7 @@ async function updateTopTen(
       return analysis ? [{ symbol: c.symbol, name: c.name, sector: c.sector, marketCapCr: c.marketCapCr, analysis }] : []
     })
     const ranked = rankCandidates(analysed, sectorStrength)
+    for (const c of ranked) c.qualityScore = opts.qualityScores.get(c.symbol) ?? null
     weeklyReview(portfolio, ranked, reviewWeek, opts.asOf)
     const bench = ranked.filter((c) => c.eligible)
     await writeFile(

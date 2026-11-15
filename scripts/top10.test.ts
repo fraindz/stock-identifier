@@ -204,3 +204,23 @@ test('when full, a clearly stronger candidate replaces the weakest watch name', 
   assert.equal(replaced.symbol, 'C10') // lowest score, same risk and gap → lowest confidence
   assert.match(replaced.events.at(-1)!.note, /replaced by C11/)
 })
+
+test('new names need a Positional quality score of at least 60', () => {
+  const ranked = [
+    candidate(1, 'A', { qualityScore: 59.9 }),
+    candidate(2, 'B', { qualityScore: null }), // not scored
+    candidate(3, 'C', { qualityScore: 60 }),
+    candidate(4, 'D', { qualityScore: 85 }),
+  ]
+  const p = weeklyReview(emptyPortfolio(), ranked, '2026-01-05', '2026-01-09')
+  assert.deepEqual(p.slots.map((s) => s.symbol).sort(), ['C3', 'C4'])
+  assert.match(p.slots.find((s) => s.symbol === 'C4')!.events[0].note, /quality 85/)
+})
+
+test('a weak candidate cannot swap out a Watch name, however confident', () => {
+  const ranked = Array.from({ length: 10 }, (_, i) => candidate(i + 1, `S${i}`, { confidence: 40, qualityScore: 70 }))
+  const p = weeklyReview(emptyPortfolio(), ranked, '2026-01-05', '2026-01-09')
+  const strongButLowQuality = candidate(11, 'X', { confidence: 95, qualityScore: 50 })
+  weeklyReview(p, [...ranked, strongButLowQuality], '2026-01-12', '2026-01-16')
+  assert.ok(!p.slots.some((s) => s.symbol === 'C11'))
+})

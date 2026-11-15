@@ -35,6 +35,7 @@ export default function CandidatesPage({ data, portfolio }: { data: CandidatesDa
               <th>Setup</th>
               <th className="num">Score</th>
               <th className="num">Confidence</th>
+              <th className="num">Positional</th>
               <th className="num">6M vs Nifty</th>
               <th className="num">3M vs Nifty</th>
               <th className="num">Trend</th>
@@ -62,6 +63,9 @@ export default function CandidatesPage({ data, portfolio }: { data: CandidatesDa
                 </td>
                 <td className="num">{c.score.toFixed(1)}</td>
                 <td className="num">{c.confidence?.toFixed(0) ?? '—'}</td>
+                <td className={`num ${c.qualityScore != null && c.qualityScore < 60 ? 'down' : ''}`}>
+                  {c.qualityScore != null ? c.qualityScore.toFixed(0) : '—'}
+                </td>
                 <td className={`num ${toneOf(c.rel6mPct)}`}>{signed(c.rel6mPct, 1)}%</td>
                 <td className={`num ${toneOf(c.rel3mPct)}`}>{signed(c.rel3mPct, 1)}%</td>
                 <td className="num">{c.trendQuality.toFixed(0)}%</td>
@@ -80,7 +84,7 @@ export default function CandidatesPage({ data, portfolio }: { data: CandidatesDa
             ))}
             {rows.length === 0 && (
               <tr>
-                <td colSpan={16} className="empty">No candidates match.</td>
+                <td colSpan={17} className="empty">No candidates match.</td>
               </tr>
             )}
           </tbody>
@@ -90,8 +94,9 @@ export default function CandidatesPage({ data, portfolio }: { data: CandidatesDa
         Score = 40% relative strength vs Nifty 50 + 20% sector breadth + 20% trend quality + 20% setup quality, each as a
         percentile. Trend = share of the last 26 weeks closing above the 10-week average. Confidence = 50% score + 25%
         stop tightness (4% risk or less scores full, 12% scores zero) + 25% closeness to the buy-above price (8% or more
-        away scores zero). Free Top 10 slots go to the highest-confidence names ranked in the top 40, and a name at least
-        10 points higher replaces the weakest name on watch.
+        away scores zero). Free Top 10 slots go to the highest-confidence names ranked in the top 40 that also score at least
+        60 (grade C) on the Positional tab, and a name at least 10 points higher replaces the weakest name on watch.
+        When too few names qualify, slots stay empty.
       </p>
     </>
   )

@@ -204,6 +204,7 @@ export type Candidate = {
   riskPct: number
   triggerGapPct?: number // missing in files written before confidence was added
   confidence?: number
+  qualityScore?: number | null // Positional quality score; missing in older files
 }
 
 export type CandidatesData = {

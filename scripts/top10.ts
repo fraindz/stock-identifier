@@ -6,7 +6,8 @@
 //   setupFor()        breakout / pullback / base on completed weekly bars
 //   rankCandidates()  percentile-ranked composite score
 //   confidence()      how likely a Watch name is to trigger and work out (picks and swaps)
-//   weeklyReview()    drop stale Watch names, fill free slots and swap weak Watch names (max 3 a week)
+//   weeklyReview()    drop stale Watch names, fill free slots and swap weak Watch names (max 3 a
+//                     week; new names need a Positional quality score of at least 60)
 //   dailyUpdate()     move each open slot through Watch → Active → Closed
 import {
   avg,
@@ -54,6 +55,9 @@ export const RULES = {
   idealRiskPct: 4, // risk at or below this scores 100; maxRiskPct scores 0
   maxTriggerGapPct: 8, // close this far (or more) from the buy-above price scores 0 on proximity
   swapMargin: 10, // a candidate replaces the weakest Watch name only if its confidence is this much higher
+  // New names must also grade C or better on the absolute Positional quality score
+  // (scripts/quality.ts), so weak weeks leave slots empty instead of filling them.
+  minQualityScore: 60,
 }
 
 export type Setup = 'breakout' | 'pullback' | 'base'
@@ -87,6 +91,7 @@ export type Candidate = {
   riskPct: number
   triggerGapPct: number // buy-above vs latest close (negative: already above it)
   confidence: number // 0–100, see confidence()
+  qualityScore?: number | null // Positional quality score; null: not scored (fails its filters)
 }
 
 export type SlotEvent = { date: string; type: 'added' | 'triggered' | 'breakeven' | 'partial' | 'trail' | 'closed' | 'dropped'; note: string }
@@ -394,6 +399,7 @@ export function weeklyReview(portfolio: Portfolio, ranked: Candidate[], weekStar
   const cap = bootstrap ? RULES.maxSlots : RULES.maxNewPerWeek
   const picks = ranked
     .filter((c) => c.eligible && c.setup && c.rank <= RULES.keepRank && c.riskPct <= RULES.maxRiskPct)
+    .filter((c) => c.qualityScore === undefined || (c.qualityScore ?? 0) >= RULES.minQualityScore)
     .filter((c) => !held.has(c.symbol) && !dropped.has(c.symbol))
     .sort((a, b) => b.confidence - a.confidence || a.rank - b.rank)
 
@@ -417,7 +423,7 @@ export function weeklyReview(portfolio: Portfolio, ranked: Candidate[], weekStar
       confidence: c.confidence,
       lastDate: asOf,
       lastClose: c.close,
-      events: [{ date: asOf, type: 'added', note: `${note} at #${c.rank}, confidence ${c.confidence}: buy above ${c.trigger}, stop ${c.stop} (${c.riskPct}% risk)` }],
+      events: [{ date: asOf, type: 'added', note: `${note} at #${c.rank}, confidence ${c.confidence}${c.qualityScore != null ? `, quality ${c.qualityScore}` : ''}: buy above ${c.trigger}, stop ${c.stop} (${c.riskPct}% risk)` }],
     })
     held.add(c.symbol)
     perSector.set(c.sector, (perSector.get(c.sector) ?? 0) + 1)

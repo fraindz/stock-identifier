@@ -48,7 +48,9 @@ stored in `public/top-10-portfolio.json`. The logic is in `scripts/top10.ts`
   trend filter, or don't trigger within 2 reviews are dropped. Free slots are filled
   from the top 40 by **confidence**: 50% ranking score, 25% stop tightness (risk of 4%
   or less scores full, 12% scores zero) and 25% closeness of the latest close to the
-  buy-above price (8% or more away scores zero). When all 10 slots are taken, a
+  buy-above price (8% or more away scores zero). A new name must also score at least
+  60 (grade C) on the Positional tab's quality score, so in weak weeks slots stay empty.
+  When all 10 slots are taken, a
   candidate whose confidence is at least 10 points higher replaces the weakest Watch
   name. At most 3 names are added a week, with at most 2 per sector.
 - **Daily run** (Mon–Fri): updates the open slots only. A Watch name becomes Active
