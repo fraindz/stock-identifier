@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-15T08:28:17.806Z",
-  "asOf": "2026-11-13",
+  "updatedAt": "2026-11-16T17:30:05.870Z",
+  "asOf": "2026-11-16",
   "lastReviewWeek": "2026-11-09",
   "rules": {
     "minMarketCapCr": 1000,
@@ -38,7 +38,8 @@
     },
     "idealRiskPct": 4,
     "maxTriggerGapPct": 8,
-    "swapMargin": 10
+    "swapMargin": 10,
+    "minQualityScore": 60
   },
   "slots": [
     {
@@ -52,22 +53,32 @@
       "reviewsWaiting": 0,
       "rankAtAdd": 3,
       "lastRank": 3,
-      "status": "watch",
+      "status": "active",
       "trigger": 676.97,
       "initialStop": 597.2,
       "stop": 597.2,
       "riskPct": 11.78,
       "confidence": 62.6,
-      "lastDate": "2026-11-13",
-      "lastClose": 673.1,
+      "lastDate": "2026-11-16",
+      "lastClose": 659.8,
       "events": [
         {
           "date": "2026-11-13",
           "type": "added",
           "note": "Added to watch at #3, confidence 62.6: buy above 676.97, stop 597.2 (11.78% risk)"
+        },
+        {
+          "date": "2026-11-16",
+          "type": "triggered",
+          "note": "Bought at 680.9; stop 597.2, 1R = 83.7"
         }
       ],
-      "target": 747.31
+      "target": 747.31,
+      "entry": 680.9,
+      "entryDate": "2026-11-16",
+      "r": 83.7,
+      "partialBooked": false,
+      "maxHigh": 698
     },
     {
       "id": "2026-11-09_RPEL",
@@ -86,8 +97,8 @@
       "stop": 1795.8,
       "riskPct": 10.11,
       "confidence": 55.08,
-      "lastDate": "2026-11-13",
-      "lastClose": 1946.2,
+      "lastDate": "2026-11-16",
+      "lastClose": 1977.2,
       "events": [
         {
           "date": "2026-11-13",
@@ -114,8 +125,8 @@
       "stop": 9980,
       "riskPct": 11.16,
       "confidence": 45.99,
-      "lastDate": "2026-11-13",
-      "lastClose": 11077,
+      "lastDate": "2026-11-16",
+      "lastClose": 11134,
       "events": [
         {
           "date": "2026-11-13",
@@ -142,8 +153,8 @@
       "stop": 313.2,
       "riskPct": 7.33,
       "confidence": 44.69,
-      "lastDate": "2026-11-13",
-      "lastClose": 324.05,
+      "lastDate": "2026-11-16",
+      "lastClose": 326,
       "events": [
         {
           "date": "2026-11-13",
@@ -170,8 +181,8 @@
       "stop": 10183.32,
       "riskPct": 11.31,
       "confidence": 34.19,
-      "lastDate": "2026-11-13",
-      "lastClose": 11096,
+      "lastDate": "2026-11-16",
+      "lastClose": 11319,
       "events": [
         {
           "date": "2026-11-13",
