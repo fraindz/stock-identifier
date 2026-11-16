@@ -1,10 +1,7 @@
 {
-  "generatedAt": "2026-11-16T17:29:50.593Z",
+  "generatedAt": "2026-11-16T21:01:14.507Z",
   "weeks": {
-    "currentWeek": {
-      "start": "2026-11-16",
-      "end": "2026-11-16"
-    },
+    "currentWeek": null,
     "lastWeek": {
       "start": "2026-11-09",
       "end": "2026-11-13"
