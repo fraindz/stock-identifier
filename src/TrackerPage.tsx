@@ -1,8 +1,7 @@
 import { useMemo, useState } from 'react'
 import { formatDay, inr, signed, toneOf } from './format'
 import { StockCell } from './TableCells'
-import { OrdersList } from './TradeParts'
-import { actionsOn, EXIT_LABEL, MODE_LABEL, openR, rText, type TrackerMode } from './tracking'
+import { EXIT_LABEL, MODE_LABEL, openR, rText, type TrackerMode } from './tracking'
 import type { TrackedTrade, TrackerData, TrackerSummaryRow } from './types'
 
 type Mode = TrackerMode
@@ -85,7 +84,6 @@ export default function TrackerPage({ data }: { data: TrackerData }) {
   const summary = data.summary.filter((r) => mode === 'all' || r.mode === mode)
   const closedCount = data.trades.filter((t) => t.status === 'closed').length
   const { rules } = data
-  const actions = useMemo(() => actionsOn(data.trades, data.asOf).filter((a) => mode === 'all' || a.t.mode === mode), [data, mode])
 
   return (
     <>
@@ -97,7 +95,6 @@ export default function TrackerPage({ data }: { data: TrackerData }) {
         </p>
       </header>
 
-      <OrdersList actions={actions} date={data.asOf} />
       <section aria-label="Order rules">
         <p className="meta performance-note">
           Pending orders are kept automatically: a signal is cancelled when its stock falls below grade C or leaves the list,

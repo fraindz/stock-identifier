@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
 import { formatDay, inr, signed, toneOf } from './format'
-import { OrdersList, RegimeBanner } from './TradeParts'
-import { actionsOn, openR, readStored, rText, store } from './tracking'
+import { RegimeBanner } from './TradeParts'
+import { openR, readStored, rText, store } from './tracking'
 import type { HotlistData, HotStock, Portfolio, TrackedTrade, TrackerData } from './types'
 
 function OrderStatus({ trade }: { trade: TrackedTrade | undefined }) {
@@ -46,7 +46,6 @@ export default function HotlistPage({ data, tracker, portfolio }: { data: Hotlis
     [tracker],
   )
   const top10 = useMemo(() => new Map((portfolio?.slots ?? []).filter((s) => s.status !== 'closed').map((s) => [s.symbol, s.status])), [portfolio])
-  const actions = useMemo(() => (tracker ? actionsOn(tracker.trades.filter((t) => t.mode === 'hotlist'), tracker.asOf) : []), [tracker])
   // Bought trades whose stock has since left the list still need managing.
   const heldOffList = [...openTrades.values()].filter((t) => t.status === 'active' && !data.stocks.some((s) => s.symbol === t.symbol))
   const { rules } = data
@@ -62,7 +61,19 @@ export default function HotlistPage({ data, tracker, portfolio }: { data: Hotlis
 
       <RegimeBanner regime={data.regime} />
 
-      {tracker && <OrdersList actions={actions} date={tracker.asOf} showMode={false} />}
+      {heldOffList.length > 0 && (
+        <>
+          <h2>Active Trades</h2>
+          <p className="meta">Bought, but no longer on the list. Keep managing these with their stops; leaving the list is not an exit signal.</p>
+          <ul className="criteria">
+            {heldOffList.map((t) => (
+              <li key={t.id}>
+                <StockLink symbol={t.symbol} /> <OrderStatus trade={t} />
+              </li>
+            ))}
+          </ul>
+        </>
+      )}
 
       <div className="controls">
         <label>
@@ -128,7 +139,7 @@ export default function HotlistPage({ data, tracker, portfolio }: { data: Hotlis
                   <a className="symbol" href={`https://www.nseindia.com/get-quotes/equity?symbol=${encodeURIComponent(s.symbol)}`} target="_blank" rel="noreferrer">
                     {s.symbol}
                   </a>
-                  {top10.has(s.symbol) && <span className="tag">Top 10 {top10.get(s.symbol)}</span>}
+                  {top10.has(s.symbol) && <span className="tag">Top weekly {top10.get(s.symbol)}</span>}
                   <div className="name">{s.name}</div>
                 </td>
                 <GradeCell levels={s.swing} />
@@ -167,26 +178,12 @@ export default function HotlistPage({ data, tracker, portfolio }: { data: Hotlis
         </table>
       </div>
 
-      {heldOffList.length > 0 && (
-        <>
-          <h2>Still held, no longer on the list</h2>
-          <p className="meta">Keep managing these with their stops; leaving the list is not an exit signal.</p>
-          <ul className="criteria">
-            {heldOffList.map((t) => (
-              <li key={t.id}>
-                <StockLink symbol={t.symbol} /> <OrderStatus trade={t} />
-              </li>
-            ))}
-          </ul>
-        </>
-      )}
-
       <p className="meta performance-note">
         Hotlist = graded C or better ({rules.minScore}+) on both Rolling swing and Positional, B or better ({rules.oneAtLeast}+) on at
         least one, with a swing stop no more than {rules.maxSwingRiskPct}% away; ranked by the average of the two scores. Buy
         above, stop and target are the swing levels (target = the nearer of the 52-week high + 1% and 3R). Bought trades are
-        managed with the positional rules, so a winner can run past the target: stop to entry at +1R, half booked at +2R, the rest trailing the 3-week low. Orders are kept
-        automatically: a pending order is cancelled when the stock drops off the hotlist and expires after 5 trading days.
+        managed with the positional rules, so a winner can run past the target: stop to entry at +1R, half booked at +2R, the rest trailing the 3-week low. Calls that are no longer valid are removed
+        automatically: a pending call is cancelled when the stock drops off the hotlist and expires after 5 trading days.
         Qty = risk per trade ÷ (buy above − stop). Every hotlist signal is recorded in the Grade tracker.
       </p>
     </>

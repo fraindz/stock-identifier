@@ -44,7 +44,7 @@ const PAGES: Page[] = [
   { path: '#/trade-plan', label: 'Trade plan', kind: 'swing', file: 'trade-plan', title: 'Trade plan', group: 'Short-term scans' },
   { path: '#/breakout', label: 'Breakout', kind: 'breakout', group: 'Short-term scans' },
   { path: '#/pullback', label: 'Pullback', kind: 'pullback', group: 'Short-term scans' },
-  { path: '#/top-10-bets', label: 'Top 10 bets', kind: 'portfolio' },
+  { path: '#/top-10-bets', label: 'Top weekly bets', kind: 'portfolio' },
   { path: '#/top-10-candidates', label: 'Top 10 candidates', kind: 'candidates' },
   { path: '#/rolling-swing', label: 'Rolling swing', kind: 'quality', file: 'rolling-swing', title: 'Rolling swing' },
   { path: '#/positional', label: 'Positional', kind: 'quality', file: 'positional', title: 'Positional trading' },

@@ -41,7 +41,7 @@ export default function TopTenDashboard({ data }: { data: Portfolio }) {
   return (
     <>
       <header>
-        <h1>Top 10 bets</h1>
+        <h1>Top weekly bets</h1>
         <p className="meta">
           <strong>{active.length}</strong> active · <strong>{watch.length}</strong> on watch ·{' '}
           {rules.maxSlots - open.length} free slots · prices as of {formatDay(data.asOf)} · next review: Sat{' '}
