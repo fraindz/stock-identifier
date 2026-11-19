@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-18T19:25:06.680Z",
-  "asOf": "2026-11-17",
+  "updatedAt": "2026-11-19T09:17:14.714Z",
+  "asOf": "2026-11-19",
   "lastReviewWeek": "2026-11-09",
   "rules": {
     "minMarketCapCr": 1000,
@@ -59,8 +59,8 @@
       "stop": 597.2,
       "riskPct": 11.78,
       "confidence": 62.6,
-      "lastDate": "2026-11-17",
-      "lastClose": 656.35,
+      "lastDate": "2026-11-19",
+      "lastClose": 665.5,
       "events": [
         {
           "date": "2026-11-13",
@@ -97,8 +97,8 @@
       "stop": 1795.8,
       "riskPct": 10.11,
       "confidence": 55.08,
-      "lastDate": "2026-11-17",
-      "lastClose": 1971.5,
+      "lastDate": "2026-11-19",
+      "lastClose": 1907.1,
       "events": [
         {
           "date": "2026-11-13",
@@ -135,8 +135,8 @@
       "stop": 9980,
       "riskPct": 11.16,
       "confidence": 45.99,
-      "lastDate": "2026-11-17",
-      "lastClose": 11195,
+      "lastDate": "2026-11-19",
+      "lastClose": 11756,
       "events": [
         {
           "date": "2026-11-13",
@@ -154,7 +154,7 @@
       "entryDate": "2026-11-17",
       "r": 1253.89,
       "partialBooked": false,
-      "maxHigh": 11325
+      "maxHigh": 11870
     },
     {
       "id": "2026-11-09_PETRONET",
@@ -173,8 +173,8 @@
       "stop": 313.2,
       "riskPct": 7.33,
       "confidence": 44.69,
-      "lastDate": "2026-11-17",
-      "lastClose": 328.1,
+      "lastDate": "2026-11-19",
+      "lastClose": 329.8,
       "events": [
         {
           "date": "2026-11-13",
@@ -201,8 +201,8 @@
       "stop": 10183.32,
       "riskPct": 11.31,
       "confidence": 34.19,
-      "lastDate": "2026-11-17",
-      "lastClose": 11384,
+      "lastDate": "2026-11-19",
+      "lastClose": 11258,
       "events": [
         {
           "date": "2026-11-13",

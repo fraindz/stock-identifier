@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-11-18T19:25:06.672Z",
-  "asOf": "2026-11-17",
+  "generatedAt": "2026-11-19T09:17:14.702Z",
+  "asOf": "2026-11-19",
   "regime": {
     "regime": "caution",
-    "asOf": "2026-11-17",
-    "niftyClose": 25387.4,
-    "niftyVs50Pct": 8.56,
-    "niftyVs200Pct": 5.81,
+    "asOf": "2026-11-19",
+    "niftyClose": 25452.9,
+    "niftyVs50Pct": 8.57,
+    "niftyVs200Pct": 6.07,
     "sma50Rising": true,
-    "breadthPct": 45.34,
+    "breadthPct": 43.91,
     "note": "Mixed market: 5 points deducted from every score"
   },
   "rules": {
@@ -19,110 +19,24 @@
   "stocks": [
     {
       "rank": 1,
-      "symbol": "MOTILALOFS",
-      "name": "Motilal Oswal Financial Services Limited",
-      "sector": "Financial Services",
-      "marketCapCr": 74103,
-      "grade": "B",
-      "close": 1240.25,
-      "avgScore": 72.41,
-      "swing": {
-        "score": 76.87,
-        "grade": "B",
-        "setup": "breakout",
-        "setupNote": "Closed 0.2% above the 20-day high on 1.8× volume",
-        "trigger": 1280.36,
-        "stop": 1203.77,
-        "riskPct": 5.98
-      },
-      "positional": {
-        "score": 67.96,
-        "grade": "C",
-        "setup": "breakout",
-        "setupNote": "Closed 10.41% above the 1105 range high on 1.84× volume",
-        "trigger": 1244.19,
-        "stop": 1127.15,
-        "riskPct": 9.41
-      },
-      "trigger": 1280.36,
-      "stop": 1203.77,
-      "riskPct": 5.98,
-      "target": 1510.12,
-      "rr": 3,
-      "swingComponents": [
-        {
-          "key": "trend",
-          "label": "Trend strength",
-          "points": 19.65,
-          "max": 20,
-          "note": "77% of 26 weeks above 10w; all checks pass"
-        },
-        {
-          "key": "rs",
-          "label": "Relative strength",
-          "points": 15,
-          "max": 15,
-          "note": "+16.9% vs Nifty, +22.6% vs Financial Services"
-        },
-        {
-          "key": "sector",
-          "label": "Sector strength",
-          "points": 5.21,
-          "max": 10,
-          "note": "Financial Services -6.1% vs Nifty, 62% above 50-DMA; weak: sector lagging Nifty"
-        },
-        {
-          "key": "setup",
-          "label": "Setup quality",
-          "points": 20.51,
-          "max": 25,
-          "note": "breakout: Closed 0.2% above the 20-day high on 1.8× volume"
-        },
-        {
-          "key": "volume",
-          "label": "Volume confirmation",
-          "points": 10.68,
-          "max": 15,
-          "note": "up-day volume 4.3×, up/down 3.98, delivery 33% vs 38% avg; weak: delivery 33%"
-        },
-        {
-          "key": "fundamentals",
-          "label": "Fundamental health",
-          "points": 4.91,
-          "max": 5,
-          "note": "sales growth +68%, earnings growth +196%, ROE 19%, op. margin 35%"
-        },
-        {
-          "key": "riskReward",
-          "label": "Risk/reward",
-          "points": 5.91,
-          "max": 10,
-          "note": "6.0% risk, 3.0R to blue-sky 3R target; weak: 6.0% risk, 3.2% to trigger"
-        }
-      ],
-      "firstSeen": "2026-11-17",
-      "daysListed": 1
-    },
-    {
-      "rank": 2,
       "symbol": "PNB",
       "name": "Punjab National Bank",
       "sector": "Financial Services",
-      "marketCapCr": 171900,
+      "marketCapCr": 177853,
       "grade": "B",
-      "close": 150,
-      "avgScore": 72.19,
+      "close": 154.69,
+      "avgScore": 71.48,
       "swing": {
-        "score": 77.08,
+        "score": 77.33,
         "grade": "B",
         "setup": "breakout",
-        "setupNote": "Closed 2.1% above the 20-day high on 1.7× volume",
-        "trigger": 151.97,
-        "stop": 145.64,
-        "riskPct": 4.16
+        "setupNote": "Closed 1.4% above the 20-day high on 1.9× volume",
+        "trigger": 156.8,
+        "stop": 150.01,
+        "riskPct": 4.33
       },
       "positional": {
-        "score": 67.3,
+        "score": 65.63,
         "grade": "C",
         "setup": "breakout",
         "setupNote": "Closed 12.58% above the 126.85 range high on 3.13× volume",
@@ -130,10 +44,10 @@
         "stop": 131.06,
         "riskPct": 10.15
       },
-      "trigger": 151.97,
-      "stop": 145.64,
-      "riskPct": 4.16,
-      "target": 170.96,
+      "trigger": 156.8,
+      "stop": 150.01,
+      "riskPct": 4.33,
+      "target": 177.18,
       "rr": 3,
       "swingComponents": [
         {
@@ -148,28 +62,28 @@
           "label": "Relative strength",
           "points": 15,
           "max": 15,
-          "note": "+20.8% vs Nifty, +26.4% vs Financial Services"
+          "note": "+21.2% vs Nifty, +27.3% vs Financial Services"
         },
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 5.21,
+          "points": 4.71,
           "max": 10,
-          "note": "Financial Services -6.1% vs Nifty, 62% above 50-DMA; weak: sector lagging Nifty"
+          "note": "Financial Services -5.5% vs Nifty, 57% above 50-DMA; weak: sector lagging Nifty"
         },
         {
           "key": "setup",
           "label": "Setup quality",
-          "points": 19.74,
+          "points": 20.85,
           "max": 25,
-          "note": "breakout: Closed 2.1% above the 20-day high on 1.7× volume"
+          "note": "breakout: Closed 1.4% above the 20-day high on 1.9× volume"
         },
         {
           "key": "volume",
           "label": "Volume confirmation",
-          "points": 11.02,
+          "points": 10.81,
           "max": 15,
-          "note": "up-day volume 3.4×, up/down 8.08, delivery 39% vs 45% avg; weak: delivery 39%"
+          "note": "up-day volume 2.1×, up/down 5.40, delivery 35% vs 45% avg; weak: delivery 35%"
         },
         {
           "key": "fundamentals",
@@ -181,356 +95,184 @@
         {
           "key": "riskReward",
           "label": "Risk/reward",
-          "points": 8.32,
-          "max": 10,
-          "note": "4.2% risk, 3.0R to blue-sky 3R target; all checks pass"
-        }
-      ],
-      "firstSeen": "2026-11-17",
-      "daysListed": 1
-    },
-    {
-      "rank": 3,
-      "symbol": "ALICON",
-      "name": "Alicon Castalloy Limited",
-      "sector": "Industrials",
-      "marketCapCr": 1629,
-      "grade": "B",
-      "close": 1005.5,
-      "avgScore": 70.41,
-      "swing": {
-        "score": 69.43,
-        "grade": "C",
-        "setup": "breakout",
-        "setupNote": "Closed 1.1% above the 20-day high on 1.3× volume",
-        "trigger": 1020.04,
-        "stop": 950.92,
-        "riskPct": 6.78
-      },
-      "positional": {
-        "score": 71.39,
-        "grade": "B",
-        "setup": "breakout",
-        "setupNote": "Closed 7.39% above the 909 range high on 13.23× volume",
-        "trigger": 999.97,
-        "stop": 827,
-        "riskPct": 17.3
-      },
-      "trigger": 1020.04,
-      "stop": 950.92,
-      "riskPct": 6.78,
-      "target": 1227.41,
-      "rr": 3,
-      "swingComponents": [
-        {
-          "key": "trend",
-          "label": "Trend strength",
-          "points": 19.16,
-          "max": 20,
-          "note": "65% of 26 weeks above 10w; weak: consistent weekly trend"
-        },
-        {
-          "key": "rs",
-          "label": "Relative strength",
-          "points": 15,
-          "max": 15,
-          "note": "+18.1% vs Nifty, +27.5% vs Industrials"
-        },
-        {
-          "key": "sector",
-          "label": "Sector strength",
-          "points": 0.9,
-          "max": 10,
-          "note": "Industrials -11.1% vs Nifty, 39% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth, sector index below 50-DMA"
-        },
-        {
-          "key": "setup",
-          "label": "Setup quality",
-          "points": 18.82,
-          "max": 25,
-          "note": "breakout: Closed 1.1% above the 20-day high on 1.3× volume"
-        },
-        {
-          "key": "volume",
-          "label": "Volume confirmation",
-          "points": 10.73,
-          "max": 15,
-          "note": "up-day volume 132.9×, up/down 9.42, delivery 34% vs 52% avg; weak: delivery 34%"
-        },
-        {
-          "key": "fundamentals",
-          "label": "Fundamental health",
-          "points": 3.47,
-          "max": 5,
-          "note": "sales growth +38%, earnings growth +23%, op. margin 5%, D/E 0.56 (4/5 fields)"
-        },
-        {
-          "key": "riskReward",
-          "label": "Risk/reward",
-          "points": 6.35,
-          "max": 10,
-          "note": "6.8% risk, 3.0R to blue-sky 3R target; weak: 6.8% risk"
-        }
-      ],
-      "firstSeen": "2026-11-17",
-      "daysListed": 1
-    },
-    {
-      "rank": 4,
-      "symbol": "KOTAKBANK",
-      "name": "Kotak Mahindra Bank Limited",
-      "sector": "Financial Services",
-      "marketCapCr": 492294,
-      "grade": "B",
-      "close": 497.25,
-      "avgScore": 68.08,
-      "swing": {
-        "score": 71.28,
-        "grade": "B",
-        "setup": "consolidation",
-        "setupNote": "10-day range 9.8% wide, 0.1% below the 20-day high",
-        "trigger": 500.9,
-        "stop": 485.23,
-        "riskPct": 3.13
-      },
-      "positional": {
-        "score": 64.88,
-        "grade": "C",
-        "setup": null,
-        "setupNote": "",
-        "trigger": 496.52,
-        "stop": 449.86,
-        "riskPct": 9.4
-      },
-      "trigger": 500.9,
-      "stop": 485.23,
-      "riskPct": 3.13,
-      "target": 547.92,
-      "rr": 3,
-      "swingComponents": [
-        {
-          "key": "trend",
-          "label": "Trend strength",
-          "points": 19.32,
-          "max": 20,
-          "note": "69% of 26 weeks above 10w; all checks pass"
-        },
-        {
-          "key": "rs",
-          "label": "Relative strength",
-          "points": 14.77,
-          "max": 15,
-          "note": "+11.7% vs Nifty, +17.4% vs Financial Services"
-        },
-        {
-          "key": "sector",
-          "label": "Sector strength",
-          "points": 5.21,
-          "max": 10,
-          "note": "Financial Services -6.1% vs Nifty, 62% above 50-DMA; weak: sector lagging Nifty"
-        },
-        {
-          "key": "setup",
-          "label": "Setup quality",
-          "points": 14.65,
-          "max": 25,
-          "note": "consolidation: 10-day range 9.8% wide, 0.1% below the 20-day high"
-        },
-        {
-          "key": "volume",
-          "label": "Volume confirmation",
-          "points": 8.6,
-          "max": 15,
-          "note": "up-day volume 1.2×, up/down 2.01, delivery 63% vs 67% avg; weak: up-day volume 1.2×, delivery 63%"
-        },
-        {
-          "key": "fundamentals",
-          "label": "Fundamental health",
-          "points": 4.32,
-          "max": 5,
-          "note": "sales growth +21%, earnings growth +26%, ROE 12%, op. margin 30%"
-        },
-        {
-          "key": "riskReward",
-          "label": "Risk/reward",
-          "points": 9.41,
-          "max": 10,
-          "note": "3.1% risk, 3.0R to blue-sky 3R target; all checks pass"
-        }
-      ],
-      "firstSeen": "2026-11-13",
-      "daysListed": 3
-    },
-    {
-      "rank": 5,
-      "symbol": "KTKBANK",
-      "name": "The Karnataka Bank Limited",
-      "sector": "Financial Services",
-      "marketCapCr": 12954,
-      "grade": "B",
-      "close": 368.8,
-      "avgScore": 66.86,
-      "swing": {
-        "score": 72.45,
-        "grade": "B",
-        "setup": "breakout",
-        "setupNote": "Closed 0.2% above the 20-day high on 0.8× volume",
-        "trigger": 371.54,
-        "stop": 355.2,
-        "riskPct": 4.4
-      },
-      "positional": {
-        "score": 61.27,
-        "grade": "C",
-        "setup": null,
-        "setupNote": "",
-        "trigger": 369.84,
-        "stop": 315.8,
-        "riskPct": 14.61
-      },
-      "trigger": 371.54,
-      "stop": 355.2,
-      "riskPct": 4.4,
-      "target": 420.56,
-      "rr": 3,
-      "swingComponents": [
-        {
-          "key": "trend",
-          "label": "Trend strength",
-          "points": 19.98,
-          "max": 20,
-          "note": "85% of 26 weeks above 10w; all checks pass"
-        },
-        {
-          "key": "rs",
-          "label": "Relative strength",
-          "points": 9.37,
-          "max": 15,
-          "note": "+5.2% vs Nifty, +10.9% vs Financial Services"
-        },
-        {
-          "key": "sector",
-          "label": "Sector strength",
-          "points": 5.21,
-          "max": 10,
-          "note": "Financial Services -6.1% vs Nifty, 62% above 50-DMA; weak: sector lagging Nifty"
-        },
-        {
-          "key": "setup",
-          "label": "Setup quality",
-          "points": 18.08,
-          "max": 25,
-          "note": "breakout: Closed 0.2% above the 20-day high on 0.8× volume"
-        },
-        {
-          "key": "volume",
-          "label": "Volume confirmation",
-          "points": 12.05,
-          "max": 15,
-          "note": "up-day volume 3.8×, up/down 1.63, delivery 50% vs 53% avg; weak: delivery 50%"
-        },
-        {
-          "key": "fundamentals",
-          "label": "Fundamental health",
-          "points": 4.28,
-          "max": 5,
-          "note": "sales growth +20%, earnings growth +36%, ROE 12%, op. margin 43%"
-        },
-        {
-          "key": "riskReward",
-          "label": "Risk/reward",
-          "points": 8.48,
-          "max": 10,
-          "note": "4.4% risk, 3.0R to blue-sky 3R target; all checks pass"
-        }
-      ],
-      "firstSeen": "2026-11-17",
-      "daysListed": 1
-    },
-    {
-      "rank": 6,
-      "symbol": "PVRINOX",
-      "name": "PVR INOX Limited",
-      "sector": "Communication Services",
-      "marketCapCr": 16481,
-      "grade": "B",
-      "close": 1677.4,
-      "avgScore": 65.94,
-      "swing": {
-        "score": 71.58,
-        "grade": "B",
-        "setup": "breakout",
-        "setupNote": "Closed 0.1% above the 20-day high on 0.7× volume",
-        "trigger": 1693.38,
-        "stop": 1620.2,
-        "riskPct": 4.32
-      },
-      "positional": {
-        "score": 60.3,
-        "grade": "C",
-        "setup": null,
-        "setupNote": "",
-        "trigger": 1683.37,
-        "stop": 1446.17,
-        "riskPct": 14.09
-      },
-      "trigger": 1693.38,
-      "stop": 1620.2,
-      "riskPct": 4.32,
-      "target": 1912.92,
-      "rr": 3,
-      "swingComponents": [
-        {
-          "key": "trend",
-          "label": "Trend strength",
-          "points": 19.49,
-          "max": 20,
-          "note": "73% of 26 weeks above 10w; all checks pass"
-        },
-        {
-          "key": "rs",
-          "label": "Relative strength",
-          "points": 15,
-          "max": 15,
-          "note": "+22.1% vs Nifty, +28.0% vs Communication Services"
-        },
-        {
-          "key": "sector",
-          "label": "Sector strength",
-          "points": 4,
-          "max": 10,
-          "note": "Communication Services -8.9% vs Nifty, 50% above 50-DMA; weak: sector lagging Nifty"
-        },
-        {
-          "key": "setup",
-          "label": "Setup quality",
-          "points": 17.99,
-          "max": 25,
-          "note": "breakout: Closed 0.1% above the 20-day high on 0.7× volume"
-        },
-        {
-          "key": "volume",
-          "label": "Volume confirmation",
-          "points": 8.5,
-          "max": 15,
-          "note": "up-day volume 1.0×, up/down 2.19, delivery 54% vs 48% avg; weak: up-day volume 1.0×"
-        },
-        {
-          "key": "fundamentals",
-          "label": "Fundamental health",
-          "points": 3.18,
-          "max": 5,
-          "note": "sales growth +16%, earnings growth +149%, ROE 6%, op. margin 16%, D/E 0.85"
-        },
-        {
-          "key": "riskReward",
-          "label": "Risk/reward",
-          "points": 8.42,
+          "points": 8.17,
           "max": 10,
           "note": "4.3% risk, 3.0R to blue-sky 3R target; all checks pass"
         }
       ],
       "firstSeen": "2026-11-17",
+      "daysListed": 3
+    },
+    {
+      "rank": 2,
+      "symbol": "KOPRAN",
+      "name": "Kopran Limited",
+      "sector": "Healthcare",
+      "marketCapCr": 1292,
+      "grade": "B",
+      "close": 267.17,
+      "avgScore": 68.51,
+      "swing": {
+        "score": 72.82,
+        "grade": "B",
+        "setup": "pullback",
+        "setupNote": "Within 1.1% of the rising 20 EMA, RSI 57",
+        "trigger": 272.64,
+        "stop": 263.81,
+        "riskPct": 3.24
+      },
+      "positional": {
+        "score": 64.2,
+        "grade": "C",
+        "setup": "pullback",
+        "setupNote": "57.17% pullback of a 78.21% rally, turned up last week",
+        "trigger": 295.47,
+        "stop": 222.74,
+        "riskPct": 24.62
+      },
+      "trigger": 272.64,
+      "stop": 263.81,
+      "riskPct": 3.24,
+      "target": 298.79,
+      "rr": 2.96,
+      "swingComponents": [
+        {
+          "key": "trend",
+          "label": "Trend strength",
+          "points": 19.82,
+          "max": 20,
+          "note": "81% of 26 weeks above 10w; all checks pass"
+        },
+        {
+          "key": "rs",
+          "label": "Relative strength",
+          "points": 13.71,
+          "max": 15,
+          "note": "+10.4% vs Nifty, +14.0% vs Healthcare"
+        },
+        {
+          "key": "sector",
+          "label": "Sector strength",
+          "points": 4.07,
+          "max": 10,
+          "note": "Healthcare -4.2% vs Nifty, 51% above 50-DMA; weak: sector lagging Nifty"
+        },
+        {
+          "key": "setup",
+          "label": "Setup quality",
+          "points": 17.53,
+          "max": 25,
+          "note": "pullback: Within 1.1% of the rising 20 EMA, RSI 57"
+        },
+        {
+          "key": "volume",
+          "label": "Volume confirmation",
+          "points": 11.05,
+          "max": 15,
+          "note": "up-day volume 1.8×, up/down 3.46, delivery 39% vs 38% avg; weak: delivery 39%"
+        },
+        {
+          "key": "fundamentals",
+          "label": "Fundamental health",
+          "points": 3.06,
+          "max": 5,
+          "note": "sales growth +79%, ROE 8%, op. margin 9%, D/E 0.39 (4/5 fields)"
+        },
+        {
+          "key": "riskReward",
+          "label": "Risk/reward",
+          "points": 8.58,
+          "max": 10,
+          "note": "3.2% risk, 3.0R to 52-week high + 1%; all checks pass"
+        }
+      ],
+      "firstSeen": "2026-11-19",
+      "daysListed": 1
+    },
+    {
+      "rank": 3,
+      "symbol": "TFCILTD",
+      "name": "Tourism Finance Corporation of India Limited",
+      "sector": "Financial Services",
+      "marketCapCr": 7884,
+      "grade": "B",
+      "close": 170.3,
+      "avgScore": 67.16,
+      "swing": {
+        "score": 71.58,
+        "grade": "B",
+        "setup": "consolidation",
+        "setupNote": "10-day range 8.3% wide, 1.0% below the 20-day high, NR7",
+        "trigger": 172.34,
+        "stop": 162.39,
+        "riskPct": 5.77
+      },
+      "positional": {
+        "score": 62.75,
+        "grade": "C",
+        "setup": null,
+        "setupNote": "",
+        "trigger": 172.86,
+        "stop": 147.66,
+        "riskPct": 14.58
+      },
+      "trigger": 172.34,
+      "stop": 162.39,
+      "riskPct": 5.77,
+      "target": 202.2,
+      "rr": 3,
+      "swingComponents": [
+        {
+          "key": "trend",
+          "label": "Trend strength",
+          "points": 20,
+          "max": 20,
+          "note": "92% of 26 weeks above 10w; all checks pass"
+        },
+        {
+          "key": "rs",
+          "label": "Relative strength",
+          "points": 15,
+          "max": 15,
+          "note": "+13.4% vs Nifty, +19.5% vs Financial Services"
+        },
+        {
+          "key": "sector",
+          "label": "Sector strength",
+          "points": 4.71,
+          "max": 10,
+          "note": "Financial Services -5.5% vs Nifty, 57% above 50-DMA; weak: sector lagging Nifty"
+        },
+        {
+          "key": "setup",
+          "label": "Setup quality",
+          "points": 18.62,
+          "max": 25,
+          "note": "consolidation: 10-day range 8.3% wide, 1.0% below the 20-day high, NR7"
+        },
+        {
+          "key": "volume",
+          "label": "Volume confirmation",
+          "points": 6.66,
+          "max": 15,
+          "note": "up-day volume 0.6×, up/down 1.66, delivery 44% vs 40% avg; weak: up-day volume 0.6×, delivery 44%"
+        },
+        {
+          "key": "fundamentals",
+          "label": "Fundamental health",
+          "points": 4.37,
+          "max": 5,
+          "note": "sales growth +29%, earnings growth +32%, ROE 12%, op. margin 87%"
+        },
+        {
+          "key": "riskReward",
+          "label": "Risk/reward",
+          "points": 7.22,
+          "max": 10,
+          "note": "5.8% risk, 3.0R to blue-sky 3R target; weak: 5.8% risk"
+        }
+      ],
+      "firstSeen": "2026-11-19",
       "daysListed": 1
     }
   ]
