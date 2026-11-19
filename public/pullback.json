@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-19T09:16:55.191Z",
+  "generatedAt": "2026-11-19T16:40:04.876Z",
   "minMarketCapCr": 1000,
   "peakWithinWeeks": 12,
   "rallyWeeks": 12,
   "minRallyPct": 20,
   "minRetracePct": 25,
   "maxRetracePct": 62,
-  "universeSize": 1481,
+  "universeSize": 1467,
   "failed": [],
   "weeks": {
     "currentWeek": {
@@ -22,7 +22,7 @@
     {
       "symbol": "INDOMIM",
       "name": "INDO-MIM Limited",
-      "marketCapCr": 63298,
+      "marketCapCr": 63526,
       "sector": "Industrials",
       "days": [
         {
@@ -636,10 +636,10 @@
         {
           "date": "2026-11-19",
           "open": 1200.699951171875,
-          "high": 1288.9000244140625,
+          "high": 1293,
           "low": 1195.0999755859375,
-          "close": 1282,
-          "volume": 1063170
+          "close": 1284.699951171875,
+          "volume": 1364198
         }
       ],
       "rally": {
@@ -668,16 +668,16 @@
       "currentWeek": {
         "start": "2026-11-16",
         "end": "2026-11-19",
-        "high": 1288.9,
+        "high": 1293,
         "low": 1157.6,
-        "close": 1282,
-        "volume": 7110305
+        "close": 1284.7,
+        "volume": 7411333
       }
     },
     {
       "symbol": "RADICO",
       "name": "Radico Khaitan Limited",
-      "marketCapCr": 62103,
+      "marketCapCr": 62439,
       "sector": "Consumer Defensive",
       "days": [
         {
@@ -2733,8 +2733,8 @@
           "open": 4595,
           "high": 4665.7001953125,
           "low": 4500.10009765625,
-          "close": 4637,
-          "volume": 441521
+          "close": 4660,
+          "volume": 514306
         }
       ],
       "rally": {
@@ -2765,14 +2765,14 @@
         "end": "2026-11-19",
         "high": 4703.7,
         "low": 4500.1,
-        "close": 4637,
-        "volume": 1251088
+        "close": 4660,
+        "volume": 1323873
       }
     },
     {
       "symbol": "APLAPOLLO",
       "name": "APL Apollo Tubes Limited",
-      "marketCapCr": 60632,
+      "marketCapCr": 59638,
       "sector": "Basic Materials",
       "days": [
         {
@@ -4835,9 +4835,9 @@
           "date": "2026-11-19",
           "open": 2163.800048828125,
           "high": 2191.89990234375,
-          "low": 2150.10009765625,
-          "close": 2185.10009765625,
-          "volume": 602984
+          "low": 2147.89990234375,
+          "close": 2147.89990234375,
+          "volume": 691918
         }
       ],
       "rally": {
@@ -4867,15 +4867,15 @@
         "start": "2026-11-16",
         "end": "2026-11-19",
         "high": 2312.3,
-        "low": 2150,
-        "close": 2185.1,
-        "volume": 3260479
+        "low": 2147.9,
+        "close": 2147.9,
+        "volume": 3349413
       }
     },
     {
       "symbol": "SUNTV",
       "name": "Sun TV Network Limited",
-      "marketCapCr": 27617,
+      "marketCapCr": 27413,
       "sector": "Communication Services",
       "days": [
         {
@@ -6939,8 +6939,8 @@
           "open": 696.3499755859375,
           "high": 713.8499755859375,
           "low": 680.3499755859375,
-          "close": 700.7999877929688,
-          "volume": 1953332
+          "close": 695.5999755859375,
+          "volume": 2178424
         }
       ],
       "rally": {
@@ -6971,14 +6971,14 @@
         "end": "2026-11-19",
         "high": 713.85,
         "low": 646.15,
-        "close": 700.8,
-        "volume": 5842633
+        "close": 695.6,
+        "volume": 6067725
       }
     },
     {
       "symbol": "SHILPAMED",
       "name": "Shilpa Medicare Limited",
-      "marketCapCr": 17761,
+      "marketCapCr": 17616,
       "sector": "Healthcare",
       "days": [
         {
@@ -9041,9 +9041,9 @@
           "date": "2026-11-19",
           "open": 922,
           "high": 927.9000244140625,
-          "low": 902.7000122070312,
-          "close": 908.25,
-          "volume": 231762
+          "low": 893.6500244140625,
+          "close": 900.7000122070312,
+          "volume": 373546
         }
       ],
       "rally": {
@@ -9073,15 +9073,15 @@
         "start": "2026-11-16",
         "end": "2026-11-19",
         "high": 999.35,
-        "low": 902.7,
-        "close": 908.25,
-        "volume": 1731748
+        "low": 893.65,
+        "close": 900.7,
+        "volume": 1873532
       }
     },
     {
       "symbol": "VARROC",
       "name": "Varroc Engineering Limited",
-      "marketCapCr": 12527,
+      "marketCapCr": 12521,
       "sector": "Consumer Cyclical",
       "days": [
         {
@@ -11145,8 +11145,8 @@
           "open": 820.7000122070312,
           "high": 836.9500122070312,
           "low": 815.8499755859375,
-          "close": 819.8499755859375,
-          "volume": 80453
+          "close": 819.4500122070312,
+          "volume": 119128
         }
       ],
       "rally": {
@@ -11177,14 +11177,14 @@
         "end": "2026-11-19",
         "high": 872.45,
         "low": 806.1,
-        "close": 819.85,
-        "volume": 1254713
+        "close": 819.45,
+        "volume": 1293388
       }
     },
     {
       "symbol": "BLISSGVS",
       "name": "Bliss GVS Pharma Limited",
-      "marketCapCr": 7080,
+      "marketCapCr": 7078,
       "sector": "Healthcare",
       "days": [
         {
@@ -13247,9 +13247,9 @@
           "date": "2026-11-19",
           "open": 680.5999755859375,
           "high": 685.4000244140625,
-          "low": 665.0999755859375,
-          "close": 665.5,
-          "volume": 81653
+          "low": 665,
+          "close": 665.3499755859375,
+          "volume": 101537
         }
       ],
       "rally": {
@@ -13280,14 +13280,14 @@
         "end": "2026-11-19",
         "high": 698,
         "low": 648.05,
-        "close": 665.5,
-        "volume": 529339
+        "close": 665.35,
+        "volume": 549223
       }
     },
     {
       "symbol": "ROSSTECH",
       "name": "Rossell Techsys Limited",
-      "marketCapCr": 5891,
+      "marketCapCr": 5895,
       "sector": "Industrials",
       "days": [
         {
@@ -15349,10 +15349,10 @@
         {
           "date": "2026-11-19",
           "open": 1518.5,
-          "high": 1559.300048828125,
+          "high": 1565.300048828125,
           "low": 1517,
-          "close": 1555,
-          "volume": 34367
+          "close": 1557.800048828125,
+          "volume": 48465
         }
       ],
       "rally": {
@@ -15383,14 +15383,205 @@
         "end": "2026-11-19",
         "high": 1603.5,
         "low": 1514.9,
-        "close": 1555,
-        "volume": 360741
+        "close": 1557.8,
+        "volume": 374839
+      }
+    },
+    {
+      "symbol": "SMT",
+      "name": "Sahajanand Medical Technologies Limited",
+      "marketCapCr": 5479,
+      "sector": "Healthcare",
+      "days": [
+        {
+          "date": "2026-10-23",
+          "open": 371.1499938964844,
+          "high": 409.95001220703125,
+          "low": 346.6499938964844,
+          "close": 377.6499938964844,
+          "volume": 17413517
+        },
+        {
+          "date": "2026-10-26",
+          "open": 384,
+          "high": 446.6000061035156,
+          "low": 381.45001220703125,
+          "close": 410.6000061035156,
+          "volume": 3752978
+        },
+        {
+          "date": "2026-10-27",
+          "open": 413,
+          "high": 492.70001220703125,
+          "low": 403.8500061035156,
+          "close": 492.70001220703125,
+          "volume": 4273194
+        },
+        {
+          "date": "2026-10-28",
+          "open": 540,
+          "high": 565.75,
+          "low": 461.20001220703125,
+          "close": 471.04998779296875,
+          "volume": 16218431
+        },
+        {
+          "date": "2026-10-29",
+          "open": 482.79998779296875,
+          "high": 492.3999938964844,
+          "low": 441.70001220703125,
+          "close": 476.54998779296875,
+          "volume": 5248881
+        },
+        {
+          "date": "2026-10-30",
+          "open": 485,
+          "high": 487.5,
+          "low": 452.29998779296875,
+          "close": 462.70001220703125,
+          "volume": 1474635
+        },
+        {
+          "date": "2026-11-02",
+          "open": 469.95001220703125,
+          "high": 478.1499938964844,
+          "low": 448.70001220703125,
+          "close": 460.1000061035156,
+          "volume": 901841
+        },
+        {
+          "date": "2026-11-03",
+          "open": 456.70001220703125,
+          "high": 468,
+          "low": 450.04998779296875,
+          "close": 458.6000061035156,
+          "volume": 423221
+        },
+        {
+          "date": "2026-11-04",
+          "open": 464.3500061035156,
+          "high": 499.8999938964844,
+          "low": 451.25,
+          "close": 485.8999938964844,
+          "volume": 887208
+        },
+        {
+          "date": "2026-11-05",
+          "open": 489,
+          "high": 514.4000244140625,
+          "low": 477,
+          "close": 487.75,
+          "volume": 1117895
+        },
+        {
+          "date": "2026-11-06",
+          "open": 517,
+          "high": 531.9500122070312,
+          "low": 485.20001220703125,
+          "close": 525.9500122070312,
+          "volume": 3543889
+        },
+        {
+          "date": "2026-11-09",
+          "open": 535.9000244140625,
+          "high": 537.9000244140625,
+          "low": 489.54998779296875,
+          "close": 492.8999938964844,
+          "volume": 657736
+        },
+        {
+          "date": "2026-11-11",
+          "open": 502.79998779296875,
+          "high": 504,
+          "low": 478.79998779296875,
+          "close": 498,
+          "volume": 472901
+        },
+        {
+          "date": "2026-11-12",
+          "open": 504.20001220703125,
+          "high": 518.9500122070312,
+          "low": 498.5,
+          "close": 504.6499938964844,
+          "volume": 475013
+        },
+        {
+          "date": "2026-11-13",
+          "open": 505,
+          "high": 544,
+          "low": 492.04998779296875,
+          "close": 533.9500122070312,
+          "volume": 1927485
+        },
+        {
+          "date": "2026-11-16",
+          "open": 557,
+          "high": 578.7000122070312,
+          "low": 540,
+          "close": 543.25,
+          "volume": 2822360
+        },
+        {
+          "date": "2026-11-17",
+          "open": 545,
+          "high": 565,
+          "low": 541,
+          "close": 548.8499755859375,
+          "volume": 715963
+        },
+        {
+          "date": "2026-11-18",
+          "open": 550,
+          "high": 561,
+          "low": 535.4000244140625,
+          "close": 546.7999877929688,
+          "volume": 418530
+        },
+        {
+          "date": "2026-11-19",
+          "open": 546.9000244140625,
+          "high": 553.5,
+          "low": 536.0999755859375,
+          "close": 539.0499877929688,
+          "volume": 472001
+        }
+      ],
+      "rally": {
+        "start": "2026-10-23",
+        "low": 346.65,
+        "peakWeek": "2026-10-26",
+        "high": 565.75,
+        "pct": 63.2
+      },
+      "pullback": {
+        "weeks": 1,
+        "low": 448.7,
+        "retracePct": 53.42,
+        "volumeVsRally": 0.22
+      },
+      "prevWeekHigh": 531.95,
+      "belowPeakPct": 5.62,
+      "lastWeek": {
+        "start": "2026-11-09",
+        "end": "2026-11-13",
+        "high": 544,
+        "low": 478.8,
+        "close": 533.95,
+        "volume": 3533135
+      },
+      "currentWeek": {
+        "start": "2026-11-16",
+        "end": "2026-11-19",
+        "high": 578.7,
+        "low": 535.4,
+        "close": 539.05,
+        "volume": 4428854
       }
     },
     {
       "symbol": "QUESS",
       "name": "Quess Corp Limited",
-      "marketCapCr": 5097,
+      "marketCapCr": 5125,
       "sector": "Industrials",
       "days": [
         {
@@ -17452,10 +17643,10 @@
         {
           "date": "2026-11-19",
           "open": 329.1499938964844,
-          "high": 345.95001220703125,
+          "high": 348.8999938964844,
           "low": 325,
-          "close": 345.3500061035156,
-          "volume": 335716
+          "close": 347.20001220703125,
+          "volume": 509970
         }
       ],
       "rally": {
@@ -17486,14 +17677,14 @@
         "end": "2026-11-19",
         "high": 352,
         "low": 325,
-        "close": 345.35,
-        "volume": 919656
+        "close": 347.2,
+        "volume": 1093910
       }
     },
     {
       "symbol": "FILATEX",
       "name": "Filatex India Limited",
-      "marketCapCr": 4942,
+      "marketCapCr": 4943,
       "sector": "Consumer Cyclical",
       "days": [
         {
@@ -19557,8 +19748,8 @@
           "open": 110.41000366210938,
           "high": 113.75,
           "low": 109.36000061035156,
-          "close": 111.30000305175781,
-          "volume": 2088200
+          "close": 111.31999969482422,
+          "volume": 2364298
         }
       ],
       "rally": {
@@ -19589,14 +19780,14 @@
         "end": "2026-11-19",
         "high": 119.78,
         "low": 97.99,
-        "close": 111.3,
-        "volume": 27722309
+        "close": 111.32,
+        "volume": 27998407
       }
     },
     {
       "symbol": "BOSCH-HCIL",
       "name": "Bosch Home Comfort India Limited",
-      "marketCapCr": 4802,
+      "marketCapCr": 4794,
       "sector": "Consumer Cyclical",
       "days": [
         {
@@ -21660,8 +21851,8 @@
           "open": 1725,
           "high": 1777.0999755859375,
           "low": 1721,
-          "close": 1767.699951171875,
-          "volume": 11457
+          "close": 1763.199951171875,
+          "volume": 13561
         }
       ],
       "rally": {
@@ -21692,14 +21883,14 @@
         "end": "2026-11-19",
         "high": 1780,
         "low": 1701.1,
-        "close": 1767.7,
-        "volume": 56667
+        "close": 1763.2,
+        "volume": 58771
       }
     },
     {
       "symbol": "UFLEX",
       "name": "Uflex Limited",
-      "marketCapCr": 4534,
+      "marketCapCr": 4535,
       "sector": "Consumer Cyclical",
       "days": [
         {
@@ -23755,8 +23946,8 @@
           "open": 631.9000244140625,
           "high": 636.2999877929688,
           "low": 620.0999755859375,
-          "close": 628,
-          "volume": 54451
+          "close": 628.0499877929688,
+          "volume": 64466
         }
       ],
       "rally": {
@@ -23787,14 +23978,14 @@
         "end": "2026-11-19",
         "high": 664,
         "low": 612.05,
-        "close": 628,
-        "volume": 1067195
+        "close": 628.05,
+        "volume": 1077210
       }
     },
     {
       "symbol": "BGRENERGY",
       "name": "BGR Energy Systems Limited",
-      "marketCapCr": 2093,
+      "marketCapCr": 2118,
       "sector": "Industrials",
       "days": [
         {
@@ -25848,10 +26039,10 @@
         {
           "date": "2026-11-19",
           "open": 292.95001220703125,
-          "high": 295,
+          "high": 295.8999938964844,
           "low": 284,
-          "close": 290.04998779296875,
-          "volume": 21470
+          "close": 293.54998779296875,
+          "volume": 27520
         }
       ],
       "rally": {
@@ -25882,14 +26073,14 @@
         "end": "2026-11-19",
         "high": 310.55,
         "low": 281.05,
-        "close": 290.05,
-        "volume": 355758
+        "close": 293.55,
+        "volume": 361808
       }
     },
     {
       "symbol": "DELTACORP",
       "name": "Delta Corp Limited",
-      "marketCapCr": 2088,
+      "marketCapCr": 2085,
       "sector": "Consumer Cyclical",
       "days": [
         {
@@ -27952,9 +28143,9 @@
           "date": "2026-11-19",
           "open": 81.94000244140625,
           "high": 83.69999694824219,
-          "low": 77.51000213623047,
-          "close": 77.94999694824219,
-          "volume": 3864688
+          "low": 77.1500015258789,
+          "close": 77.8499984741211,
+          "volume": 4673129
         }
       ],
       "rally": {
@@ -27984,15 +28175,15 @@
         "start": "2026-11-16",
         "end": "2026-11-19",
         "high": 87.5,
-        "low": 77.51,
-        "close": 77.95,
-        "volume": 14036865
+        "low": 77.15,
+        "close": 77.85,
+        "volume": 14845306
       }
     },
     {
       "symbol": "KROSS",
       "name": "Kross Limited",
-      "marketCapCr": 1880,
+      "marketCapCr": 1884,
       "sector": "Consumer Cyclical",
       "days": [
         {
@@ -30056,8 +30247,8 @@
           "open": 287.79998779296875,
           "high": 287.8500061035156,
           "low": 281.1499938964844,
-          "close": 284.5,
-          "volume": 299930
+          "close": 285.45001220703125,
+          "volume": 390264
         }
       ],
       "rally": {
@@ -30088,14 +30279,14 @@
         "end": "2026-11-19",
         "high": 306.2,
         "low": 274.5,
-        "close": 284.5,
-        "volume": 3778238
+        "close": 285.45,
+        "volume": 3868572
       }
     },
     {
       "symbol": "BPLPHARMA",
       "name": "Bharat Parenterals Limited",
-      "marketCapCr": 1672,
+      "marketCapCr": 1655,
       "sector": "Healthcare",
       "days": [
         {
@@ -30607,8 +30798,8 @@
           "open": 2391.10009765625,
           "high": 2468.300048828125,
           "low": 2375,
-          "close": 2426.5,
-          "volume": 13578
+          "close": 2401,
+          "volume": 15765
         }
       ],
       "rally": {
@@ -30639,14 +30830,14 @@
         "end": "2026-11-19",
         "high": 2492.8,
         "low": 2059.2,
-        "close": 2426.5,
-        "volume": 158073
+        "close": 2401,
+        "volume": 160260
       }
     },
     {
       "symbol": "KAPSTON",
       "name": "Kapston Services Limited",
-      "marketCapCr": 1643,
+      "marketCapCr": 1634,
       "sector": "Industrials",
       "days": [
         {
@@ -32710,8 +32901,8 @@
           "open": 532.7999877929688,
           "high": 544,
           "low": 526.0999755859375,
-          "close": 540,
-          "volume": 47685
+          "close": 536.9000244140625,
+          "volume": 53663
         }
       ],
       "rally": {
@@ -32742,14 +32933,14 @@
         "end": "2026-11-19",
         "high": 551,
         "low": 526.1,
-        "close": 540,
-        "volume": 150662
+        "close": 536.9,
+        "volume": 156640
       }
     },
     {
       "symbol": "KOPRAN",
       "name": "Kopran Limited",
-      "marketCapCr": 1292,
+      "marketCapCr": 1291,
       "sector": "Healthcare",
       "days": [
         {
@@ -34813,8 +35004,8 @@
           "open": 267.70001220703125,
           "high": 272.1000061035156,
           "low": 263.80999755859375,
-          "close": 267.1700134277344,
-          "volume": 110841
+          "close": 267.04998779296875,
+          "volume": 132875
         }
       ],
       "rally": {
@@ -34845,14 +35036,14 @@
         "end": "2026-11-19",
         "high": 293.79,
         "low": 263.81,
-        "close": 267.17,
-        "volume": 1255293
+        "close": 267.05,
+        "volume": 1277327
       }
     },
     {
       "symbol": "SEJALLTD",
       "name": "Sejal Glass Limited",
-      "marketCapCr": 1034,
+      "marketCapCr": 1029,
       "sector": "Industrials",
       "days": [
         {
@@ -36916,8 +37107,8 @@
           "open": 880,
           "high": 903.25,
           "low": 865,
-          "close": 881.7999877929688,
-          "volume": 51695
+          "close": 877.9500122070312,
+          "volume": 57987
         }
       ],
       "rally": {
@@ -36948,8 +37139,8 @@
         "end": "2026-11-19",
         "high": 944.65,
         "low": 822.3,
-        "close": 881.8,
-        "volume": 206438
+        "close": 877.95,
+        "volume": 212730
       }
     }
   ]

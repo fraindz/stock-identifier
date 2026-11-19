@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-11-19T09:17:14.702Z",
+  "generatedAt": "2026-11-19T16:40:19.263Z",
   "asOf": "2026-11-19",
   "regime": {
     "regime": "caution",
     "asOf": "2026-11-19",
-    "niftyClose": 25452.9,
-    "niftyVs50Pct": 8.57,
-    "niftyVs200Pct": 6.07,
+    "niftyClose": 25514.3,
+    "niftyVs50Pct": 8.82,
+    "niftyVs200Pct": 6.33,
     "sma50Rising": true,
-    "breadthPct": 43.91,
+    "breadthPct": 44.48,
     "note": "Mixed market: 5 points deducted from every score"
   },
   "rules": {
@@ -22,21 +22,21 @@
       "symbol": "PNB",
       "name": "Punjab National Bank",
       "sector": "Financial Services",
-      "marketCapCr": 177853,
+      "marketCapCr": 177968,
       "grade": "B",
-      "close": 154.69,
-      "avgScore": 71.48,
+      "close": 154.85,
+      "avgScore": 72.02,
       "swing": {
-        "score": 77.33,
+        "score": 78.49,
         "grade": "B",
         "setup": "breakout",
-        "setupNote": "Closed 1.4% above the 20-day high on 1.9× volume",
+        "setupNote": "Closed 1.5% above the 20-day high on 2.2× volume",
         "trigger": 156.8,
         "stop": 150.01,
         "riskPct": 4.33
       },
       "positional": {
-        "score": 65.63,
+        "score": 65.54,
         "grade": "C",
         "setup": "breakout",
         "setupNote": "Closed 12.58% above the 126.85 range high on 3.13× volume",
@@ -62,28 +62,28 @@
           "label": "Relative strength",
           "points": 15,
           "max": 15,
-          "note": "+21.2% vs Nifty, +27.3% vs Financial Services"
+          "note": "+21.1% vs Nifty, +27.4% vs Financial Services"
         },
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 4.71,
+          "points": 4.72,
           "max": 10,
-          "note": "Financial Services -5.5% vs Nifty, 57% above 50-DMA; weak: sector lagging Nifty"
+          "note": "Financial Services -5.8% vs Nifty, 57% above 50-DMA; weak: sector lagging Nifty"
         },
         {
           "key": "setup",
           "label": "Setup quality",
-          "points": 20.85,
+          "points": 21.9,
           "max": 25,
-          "note": "breakout: Closed 1.4% above the 20-day high on 1.9× volume"
+          "note": "breakout: Closed 1.5% above the 20-day high on 2.2× volume"
         },
         {
           "key": "volume",
           "label": "Volume confirmation",
-          "points": 10.81,
+          "points": 10.85,
           "max": 15,
-          "note": "up-day volume 2.1×, up/down 5.40, delivery 35% vs 45% avg; weak: delivery 35%"
+          "note": "up-day volume 2.4×, up/down 5.48, delivery 36% vs 45% avg; weak: delivery 36%"
         },
         {
           "key": "fundamentals",
@@ -95,7 +95,7 @@
         {
           "key": "riskReward",
           "label": "Risk/reward",
-          "points": 8.17,
+          "points": 8.23,
           "max": 10,
           "note": "4.3% risk, 3.0R to blue-sky 3R target; all checks pass"
         }
@@ -108,12 +108,12 @@
       "symbol": "KOPRAN",
       "name": "Kopran Limited",
       "sector": "Healthcare",
-      "marketCapCr": 1292,
+      "marketCapCr": 1291,
       "grade": "B",
-      "close": 267.17,
-      "avgScore": 68.51,
+      "close": 267.05,
+      "avgScore": 68.83,
       "swing": {
-        "score": 72.82,
+        "score": 73.42,
         "grade": "B",
         "setup": "pullback",
         "setupNote": "Within 1.1% of the rising 20 EMA, RSI 57",
@@ -122,7 +122,7 @@
         "riskPct": 3.24
       },
       "positional": {
-        "score": 64.2,
+        "score": 64.23,
         "grade": "C",
         "setup": "pullback",
         "setupNote": "57.17% pullback of a 78.21% rally, turned up last week",
@@ -146,30 +146,30 @@
         {
           "key": "rs",
           "label": "Relative strength",
-          "points": 13.71,
+          "points": 13.45,
           "max": 15,
-          "note": "+10.4% vs Nifty, +14.0% vs Healthcare"
+          "note": "+10.1% vs Nifty, +13.8% vs Healthcare"
         },
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 4.07,
+          "points": 4.15,
           "max": 10,
-          "note": "Healthcare -4.2% vs Nifty, 51% above 50-DMA; weak: sector lagging Nifty"
+          "note": "Healthcare -4.4% vs Nifty, 51% above 50-DMA; weak: sector lagging Nifty"
         },
         {
           "key": "setup",
           "label": "Setup quality",
-          "points": 17.53,
+          "points": 17.61,
           "max": 25,
           "note": "pullback: Within 1.1% of the rising 20 EMA, RSI 57"
         },
         {
           "key": "volume",
           "label": "Volume confirmation",
-          "points": 11.05,
+          "points": 11.78,
           "max": 15,
-          "note": "up-day volume 1.8×, up/down 3.46, delivery 39% vs 38% avg; weak: delivery 39%"
+          "note": "up-day volume 1.8×, up/down 3.47, delivery 42% vs 38% avg; weak: delivery 42%"
         },
         {
           "key": "fundamentals",
@@ -181,7 +181,7 @@
         {
           "key": "riskReward",
           "label": "Risk/reward",
-          "points": 8.58,
+          "points": 8.55,
           "max": 10,
           "note": "3.2% risk, 3.0R to 52-week high + 1%; all checks pass"
         }
@@ -194,21 +194,21 @@
       "symbol": "TFCILTD",
       "name": "Tourism Finance Corporation of India Limited",
       "sector": "Financial Services",
-      "marketCapCr": 7884,
+      "marketCapCr": 7879,
       "grade": "B",
-      "close": 170.3,
-      "avgScore": 67.16,
+      "close": 170.18,
+      "avgScore": 67.32,
       "swing": {
-        "score": 71.58,
+        "score": 71.8,
         "grade": "B",
         "setup": "consolidation",
-        "setupNote": "10-day range 8.3% wide, 1.0% below the 20-day high, NR7",
+        "setupNote": "10-day range 8.3% wide, 1.1% below the 20-day high, NR7",
         "trigger": 172.34,
-        "stop": 162.39,
-        "riskPct": 5.77
+        "stop": 162.5,
+        "riskPct": 5.71
       },
       "positional": {
-        "score": 62.75,
+        "score": 62.84,
         "grade": "C",
         "setup": null,
         "setupNote": "",
@@ -217,9 +217,9 @@
         "riskPct": 14.58
       },
       "trigger": 172.34,
-      "stop": 162.39,
-      "riskPct": 5.77,
-      "target": 202.2,
+      "stop": 162.5,
+      "riskPct": 5.71,
+      "target": 201.85,
       "rr": 3,
       "swingComponents": [
         {
@@ -234,28 +234,28 @@
           "label": "Relative strength",
           "points": 15,
           "max": 15,
-          "note": "+13.4% vs Nifty, +19.5% vs Financial Services"
+          "note": "+13.1% vs Nifty, +19.4% vs Financial Services"
         },
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 4.71,
+          "points": 4.72,
           "max": 10,
-          "note": "Financial Services -5.5% vs Nifty, 57% above 50-DMA; weak: sector lagging Nifty"
+          "note": "Financial Services -5.8% vs Nifty, 57% above 50-DMA; weak: sector lagging Nifty"
         },
         {
           "key": "setup",
           "label": "Setup quality",
-          "points": 18.62,
+          "points": 18.56,
           "max": 25,
-          "note": "consolidation: 10-day range 8.3% wide, 1.0% below the 20-day high, NR7"
+          "note": "consolidation: 10-day range 8.3% wide, 1.1% below the 20-day high, NR7"
         },
         {
           "key": "volume",
           "label": "Volume confirmation",
-          "points": 6.66,
+          "points": 6.92,
           "max": 15,
-          "note": "up-day volume 0.6×, up/down 1.66, delivery 44% vs 40% avg; weak: up-day volume 0.6×, delivery 44%"
+          "note": "up-day volume 0.6×, up/down 1.67, delivery 45% vs 40% avg; weak: up-day volume 0.6×"
         },
         {
           "key": "fundamentals",
@@ -267,9 +267,9 @@
         {
           "key": "riskReward",
           "label": "Risk/reward",
-          "points": 7.22,
+          "points": 7.23,
           "max": 10,
-          "note": "5.8% risk, 3.0R to blue-sky 3R target; weak: 5.8% risk"
+          "note": "5.7% risk, 3.0R to blue-sky 3R target; weak: 5.7% risk"
         }
       ],
       "firstSeen": "2026-11-19",

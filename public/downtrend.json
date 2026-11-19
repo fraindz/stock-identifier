@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-19T09:16:54.842Z",
+  "generatedAt": "2026-11-19T16:40:04.511Z",
   "trend": "down",
   "minMarketCapCr": 10000,
-  "universeSize": 575,
+  "universeSize": 564,
   "failed": [],
   "weeks": {
     "currentWeek": {
@@ -26,7 +26,7 @@
     {
       "symbol": "STLTECH",
       "name": "Sterlite Technologies Limited",
-      "marketCapCr": 33308,
+      "marketCapCr": 33658,
       "sector": "Technology",
       "days": [
         {
@@ -2090,8 +2090,8 @@
           "open": 656,
           "high": 669.2000122070312,
           "low": 639.5,
-          "close": 646,
-          "volume": 2159105
+          "close": 654.5499877929688,
+          "volume": 2629394
         }
       ],
       "currentWeek": {
@@ -2099,8 +2099,8 @@
         "end": "2026-11-19",
         "high": 699.95,
         "low": 612,
-        "close": 646,
-        "volume": 10619123
+        "close": 654.55,
+        "volume": 11089412
       },
       "lastWeek": {
         "start": "2026-11-09",
@@ -2130,7 +2130,7 @@
     {
       "symbol": "CRISIL",
       "name": "CRISIL Limited",
-      "marketCapCr": 30523,
+      "marketCapCr": 30386,
       "sector": "Financial Services",
       "days": [
         {
@@ -4193,18 +4193,18 @@
           "date": "2026-11-19",
           "open": 4182,
           "high": 4187.89990234375,
-          "low": 4136.10009765625,
-          "close": 4173,
-          "volume": 17709
+          "low": 4136,
+          "close": 4155,
+          "volume": 26134
         }
       ],
       "currentWeek": {
         "start": "2026-11-16",
         "end": "2026-11-19",
         "high": 4368.5,
-        "low": 4136.1,
-        "close": 4173,
-        "volume": 103594
+        "low": 4136,
+        "close": 4155,
+        "volume": 112019
       },
       "lastWeek": {
         "start": "2026-11-09",
@@ -4234,7 +4234,7 @@
     {
       "symbol": "HFCL",
       "name": "HFCL Limited",
-      "marketCapCr": 29037,
+      "marketCapCr": 29754,
       "sector": "Technology",
       "days": [
         {
@@ -6296,10 +6296,10 @@
         {
           "date": "2026-11-19",
           "open": 193.5,
-          "high": 193.5,
+          "high": 197.02999877929688,
           "low": 188,
-          "close": 189.75,
-          "volume": 4093933
+          "close": 194.44000244140625,
+          "volume": 6686615
         }
       ],
       "currentWeek": {
@@ -6307,8 +6307,8 @@
         "end": "2026-11-19",
         "high": 204.9,
         "low": 183.46,
-        "close": 189.75,
-        "volume": 31001552
+        "close": 194.44,
+        "volume": 33594234
       },
       "lastWeek": {
         "start": "2026-11-09",
@@ -6338,7 +6338,7 @@
     {
       "symbol": "CYIENT",
       "name": "Cyient Limited",
-      "marketCapCr": 11515,
+      "marketCapCr": 11583,
       "sector": "Industrials",
       "days": [
         {
@@ -8400,19 +8400,19 @@
         {
           "date": "2026-11-19",
           "open": 1106.4000244140625,
-          "high": 1119.5999755859375,
+          "high": 1124.4000244140625,
           "low": 1076.4000244140625,
-          "close": 1103.800048828125,
-          "volume": 282451
+          "close": 1111,
+          "volume": 528170
         }
       ],
       "currentWeek": {
         "start": "2026-11-16",
         "end": "2026-11-19",
-        "high": 1119.6,
+        "high": 1124.4,
         "low": 1065.8,
-        "close": 1103.8,
-        "volume": 1146901
+        "close": 1111,
+        "volume": 1392620
       },
       "lastWeek": {
         "start": "2026-11-09",
