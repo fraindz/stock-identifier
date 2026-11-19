@@ -1,11 +1,10 @@
 name: Update market data
 
 on:
-  schedule:
-    # 16:45 IST (11:15 UTC), Monday through Friday, after the NSE session.
-    - cron: '15 11 * * 1-5'
-    # 08:45 IST (03:15 UTC) Saturday: weekly Top 10 review on Friday's completed candle.
-    - cron: '15 3 * * 6'
+  # Started by cron-job.org through the GitHub API, not by `schedule:`. GitHub ran our
+  # scheduled jobs 7-10 hours late, and runs after midnight IST got day-old bars from Yahoo.
+  #   16:35 and 16:50 IST, Monday-Friday: daily update, done by 17:00 (the second is a retry).
+  #   08:45 IST Saturday: weekly Top 10 review on Friday's completed candle.
   workflow_dispatch:
 
 permissions:
@@ -35,6 +34,9 @@ jobs:
 
       - name: Generate market data
         run: npm run screen
+
+      - name: Refuse to publish stale data
+        run: npx tsx scripts/check-freshness.ts
 
       - name: Persist market data and Top 10 portfolio
         run: |
