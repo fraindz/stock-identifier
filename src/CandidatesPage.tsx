@@ -17,7 +17,7 @@ export default function CandidatesPage({ data, portfolio }: { data: CandidatesDa
   return (
     <>
       <header>
-        <h1>Top 10 candidates</h1>
+        <h1>Top Weekly Candidates</h1>
         <p className="meta">
           Top <strong>{data.candidates.length}</strong> of {data.eligibleCount} eligible ({data.trendUniverse} pass the trend
           filter) · week of {formatDay(data.reviewWeek)} · data as of {formatDay(data.asOf)}
