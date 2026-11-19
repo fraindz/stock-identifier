@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-19T16:40:04.980Z",
+  "generatedAt": "2026-11-19T16:55:51.525Z",
   "asOf": "2026-11-19",
-  "universeSize": 1717,
+  "universeSize": 1731,
   "stocks": [
     {
       "symbol": "GNRL",
@@ -502,6 +502,26 @@
       "stop": 424.87,
       "target": 521,
       "score": 9.52
+    },
+    {
+      "symbol": "BOSCHLTD",
+      "name": "Bosch Limited",
+      "sector": "Consumer Cyclical",
+      "marketCapCr": 145711,
+      "suggestionDate": "2026-11-19",
+      "close": 49400,
+      "change5Pct": -2.18,
+      "change20Pct": 11.01,
+      "rsi": 57.76,
+      "ema20": 48669.23,
+      "ema50": 47320.92,
+      "volumeRatio": 0.9,
+      "high20": 52475,
+      "atr": 1332.14,
+      "entry": 49400,
+      "stop": 47401.79,
+      "target": 52999.75,
+      "score": 9.51
     },
     {
       "symbol": "PNBGILTS",
@@ -1207,7 +1227,7 @@
       "symbol": "BAJAJ-AUTO",
       "name": "Bajaj Auto Limited",
       "sector": "Consumer Cyclical",
-      "marketCapCr": 297255,
+      "marketCapCr": 297011,
       "suggestionDate": "2026-11-19",
       "close": 10817,
       "change5Pct": -1.17,
@@ -2527,7 +2547,7 @@
       "symbol": "LICI",
       "name": "Life Insurance Corporation of India",
       "sector": "Financial Services",
-      "marketCapCr": 511186,
+      "marketCapCr": 255593,
       "suggestionDate": "2026-11-19",
       "close": 404.1,
       "change5Pct": 0.02,

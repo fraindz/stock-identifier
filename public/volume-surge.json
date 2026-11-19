@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-19T16:40:04.982Z",
+  "generatedAt": "2026-11-19T16:55:51.527Z",
   "asOf": "2026-11-19",
-  "universeSize": 1717,
+  "universeSize": 1731,
   "stocks": [
     {
       "symbol": "BLKASHYAP",
@@ -127,7 +127,7 @@
       "symbol": "TIRUPATIFL",
       "name": "Tirupati Forge Limited",
       "sector": "Industrials",
-      "marketCapCr": 932,
+      "marketCapCr": 871,
       "suggestionDate": "2026-11-19",
       "close": 73.63,
       "change5Pct": 10.61,

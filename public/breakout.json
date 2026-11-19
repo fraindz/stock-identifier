@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-19T16:40:04.852Z",
+  "generatedAt": "2026-11-19T16:55:51.407Z",
   "minMarketCapCr": 1000,
   "lookbackWeeks": 20,
   "volumeMultiple": 1.5,
-  "universeSize": 1467,
+  "universeSize": 1480,
   "failed": [],
   "weeks": {
     "currentWeek": {
@@ -6291,7 +6291,7 @@
     {
       "symbol": "UNOMINDA",
       "name": "Uno Minda Limited",
-      "marketCapCr": 79979,
+      "marketCapCr": 79978,
       "sector": "Consumer Cyclical",
       "days": [
         {

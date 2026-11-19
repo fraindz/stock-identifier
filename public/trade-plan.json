@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-19T16:40:04.983Z",
+  "generatedAt": "2026-11-19T16:55:51.528Z",
   "asOf": "2026-11-19",
-  "universeSize": 1717,
+  "universeSize": 1731,
   "stocks": [
     {
       "symbol": "RAMKY",
@@ -121,7 +121,7 @@
       "entry": 2130.8,
       "stop": 1919.72,
       "target": 2474.5,
-      "score": 99.35
+      "score": 99.36
     },
     {
       "symbol": "JYOTISTRUC",
@@ -161,7 +161,7 @@
       "entry": 576,
       "stop": 531.51,
       "target": 594.18,
-      "score": 98.97
+      "score": 98.99
     },
     {
       "symbol": "GLOBUSSPR",
@@ -181,7 +181,7 @@
       "entry": 810.4,
       "stop": 759.06,
       "target": 964.41,
-      "score": 98.75
+      "score": 98.76
     },
     {
       "symbol": "TANLA",
@@ -201,7 +201,7 @@
       "entry": 670,
       "stop": 622.28,
       "target": 746.34,
-      "score": 98.71
+      "score": 98.72
     },
     {
       "symbol": "SSWL",
@@ -221,7 +221,7 @@
       "entry": 548.4,
       "stop": 505.06,
       "target": 594.69,
-      "score": 98.63
+      "score": 98.65
     },
     {
       "symbol": "LGHL",
@@ -241,7 +241,7 @@
       "entry": 294,
       "stop": 272.26,
       "target": 359.21,
-      "score": 98.29
+      "score": 98.31
     },
     {
       "symbol": "LTFOODS",
@@ -261,7 +261,7 @@
       "entry": 438.75,
       "stop": 417.94,
       "target": 495.61,
-      "score": 98.13
+      "score": 98.14
     },
     {
       "symbol": "HUBTOWN",
@@ -281,7 +281,7 @@
       "entry": 176.18,
       "stop": 161.4,
       "target": 220.53,
-      "score": 98.06
+      "score": 98.08
     },
     {
       "symbol": "BPLPHARMA",
@@ -301,7 +301,7 @@
       "entry": 2401,
       "stop": 2146.88,
       "target": 2517.73,
-      "score": 97.95
+      "score": 97.97
     },
     {
       "symbol": "IGIL",
@@ -321,7 +321,7 @@
       "entry": 437.3,
       "stop": 409.82,
       "target": 458.19,
-      "score": 97.6
+      "score": 97.64
     },
     {
       "symbol": "TATATECH",
@@ -341,7 +341,7 @@
       "entry": 703.75,
       "stop": 670.63,
       "target": 803.1,
-      "score": 97.5
+      "score": 97.52
     },
     {
       "symbol": "ONESOURCE",
@@ -361,7 +361,7 @@
       "entry": 1602.9,
       "stop": 1521.84,
       "target": 1846.09,
-      "score": 97.42
+      "score": 97.44
     },
     {
       "symbol": "PERMAGN",
@@ -381,7 +381,7 @@
       "entry": 1173.55,
       "stop": 1044.62,
       "target": 1291.79,
-      "score": 97.26
+      "score": 97.3
     },
     {
       "symbol": "SGMART",
@@ -401,7 +401,7 @@
       "entry": 1010.5,
       "stop": 951.16,
       "target": 1058.23,
-      "score": 96.92
+      "score": 96.96
     },
     {
       "symbol": "IREDA",
@@ -421,7 +421,7 @@
       "entry": 129.8,
       "stop": 121.96,
       "target": 153.31,
-      "score": 96.88
+      "score": 96.89
     },
     {
       "symbol": "SONACOMS",
@@ -441,7 +441,7 @@
       "entry": 902.1,
       "stop": 865.86,
       "target": 944.25,
-      "score": 96.77
+      "score": 96.79
     },
     {
       "symbol": "GHCLTEXTIL",
@@ -461,27 +461,7 @@
       "entry": 141.98,
       "stop": 131.55,
       "target": 151.15,
-      "score": 96.58
-    },
-    {
-      "symbol": "TIRUPATIFL",
-      "name": "Tirupati Forge Limited",
-      "sector": "Industrials",
-      "marketCapCr": 932,
-      "suggestionDate": "2026-11-19",
-      "close": 73.63,
-      "change5Pct": 10.61,
-      "change20Pct": 9.34,
-      "rsi": 63.37,
-      "ema20": 67.6,
-      "ema50": 68.21,
-      "volumeRatio": 5.9,
-      "high20": 74.43,
-      "atr": 3.92,
-      "entry": 73.63,
-      "stop": 67.75,
-      "target": 84.74,
-      "score": 96.25
+      "score": 96.62
     },
     {
       "symbol": "ATHERENERG",
@@ -501,7 +481,27 @@
       "entry": 1924.9,
       "stop": 1818.17,
       "target": 2041.72,
-      "score": 96.23
+      "score": 96.28
+    },
+    {
+      "symbol": "TIRUPATIFL",
+      "name": "Tirupati Forge Limited",
+      "sector": "Industrials",
+      "marketCapCr": 871,
+      "suggestionDate": "2026-11-19",
+      "close": 73.63,
+      "change5Pct": 10.61,
+      "change20Pct": 9.34,
+      "rsi": 63.37,
+      "ema20": 67.6,
+      "ema50": 68.21,
+      "volumeRatio": 5.9,
+      "high20": 74.43,
+      "atr": 3.92,
+      "entry": 73.63,
+      "stop": 67.75,
+      "target": 84.74,
+      "score": 96.27
     },
     {
       "symbol": "TTML",
@@ -521,7 +521,7 @@
       "entry": 36.81,
       "stop": 33.8,
       "target": 45.85,
-      "score": 96.13
+      "score": 96.15
     },
     {
       "symbol": "URBANCO",
@@ -541,7 +541,7 @@
       "entry": 176.05,
       "stop": 164.77,
       "target": 185.81,
-      "score": 95.89
+      "score": 95.95
     },
     {
       "symbol": "BLUESTARCO",
@@ -561,7 +561,7 @@
       "entry": 1764,
       "stop": 1666.59,
       "target": 2049.9,
-      "score": 95.63
+      "score": 95.65
     },
     {
       "symbol": "ENTERO",
@@ -581,7 +581,7 @@
       "entry": 1973,
       "stop": 1820.36,
       "target": 2158.98,
-      "score": 95.55
+      "score": 95.61
     },
     {
       "symbol": "ALIVUS",
@@ -601,27 +601,27 @@
       "entry": 1449.9,
       "stop": 1346.19,
       "target": 1569.54,
-      "score": 95.48
+      "score": 95.51
     },
     {
-      "symbol": "ZIMLAB",
-      "name": "ZIM Laboratories Limited",
+      "symbol": "SYMBIOTEC",
+      "name": "SYMBIOTEC PHARMALAB LTD",
       "sector": "Healthcare",
-      "marketCapCr": 797,
+      "marketCapCr": 10312,
       "suggestionDate": "2026-11-19",
-      "close": 148.82,
-      "change5Pct": 5.53,
-      "change20Pct": 12.5,
-      "rsi": 60.63,
-      "ema20": 138.21,
-      "ema50": 135.1,
-      "volumeRatio": 10.21,
-      "high20": 159.46,
-      "atr": 8.4,
-      "entry": 148.82,
-      "stop": 136.21,
-      "target": 161.41,
-      "score": 95.21
+      "close": 1604.8,
+      "change5Pct": -2.29,
+      "change20Pct": 32.8,
+      "rsi": 76.56,
+      "ema20": 1439.63,
+      "ema50": 1296.7,
+      "volumeRatio": 0.2,
+      "high20": 1664.9,
+      "atr": 82.83,
+      "entry": 1604.8,
+      "stop": 1480.56,
+      "target": 1681.55,
+      "score": 95.27
     },
     {
       "symbol": "VOLTAS",
@@ -641,27 +641,27 @@
       "entry": 1237,
       "stop": 1169.67,
       "target": 1438.99,
-      "score": 95
+      "score": 95.03
     },
     {
-      "symbol": "MMFL",
-      "name": "M M Forgings Limited",
-      "sector": "Industrials",
-      "marketCapCr": 3118,
+      "symbol": "ZIMLAB",
+      "name": "ZIM Laboratories Limited",
+      "sector": "Healthcare",
+      "marketCapCr": 799,
       "suggestionDate": "2026-11-19",
-      "close": 645.8,
-      "change5Pct": 1.12,
-      "change20Pct": 32.54,
-      "rsi": 73.77,
-      "ema20": 598.58,
-      "ema50": 579.08,
-      "volumeRatio": 0.18,
-      "high20": 703,
-      "atr": 38.35,
-      "entry": 645.8,
-      "stop": 588.27,
-      "target": 710.03,
-      "score": 94.86
+      "close": 148.82,
+      "change5Pct": 5.53,
+      "change20Pct": 12.5,
+      "rsi": 60.63,
+      "ema20": 138.21,
+      "ema50": 135.1,
+      "volumeRatio": 10.21,
+      "high20": 159.46,
+      "atr": 8.4,
+      "entry": 148.82,
+      "stop": 136.21,
+      "target": 161.41,
+      "score": 94.93
     },
     {
       "symbol": "LAURUSLABS",
@@ -681,27 +681,27 @@
       "entry": 2306,
       "stop": 2161.05,
       "target": 2512.88,
-      "score": 94.84
+      "score": 94.87
     },
     {
-      "symbol": "UYFINCORP",
-      "name": "U. Y. Fincorp Limited",
-      "sector": "Financial Services",
-      "marketCapCr": 579,
+      "symbol": "MMFL",
+      "name": "M M Forgings Limited",
+      "sector": "Industrials",
+      "marketCapCr": 3118,
       "suggestionDate": "2026-11-19",
-      "close": 30.41,
-      "change5Pct": 1.13,
-      "change20Pct": 32.22,
-      "rsi": 58.96,
-      "ema20": 28.7,
-      "ema50": 25.58,
-      "volumeRatio": 0.28,
-      "high20": 31.95,
-      "atr": 1.64,
-      "entry": 30.41,
-      "stop": 27.95,
-      "target": 32.27,
-      "score": 94.52
+      "close": 645.8,
+      "change5Pct": 1.12,
+      "change20Pct": 32.54,
+      "rsi": 73.77,
+      "ema20": 598.58,
+      "ema50": 579.08,
+      "volumeRatio": 0.18,
+      "high20": 703,
+      "atr": 38.35,
+      "entry": 645.8,
+      "stop": 588.27,
+      "target": 710.03,
+      "score": 94.59
     },
     {
       "symbol": "WEL",
@@ -721,7 +721,27 @@
       "entry": 82.36,
       "stop": 77.29,
       "target": 97.58,
-      "score": 94.38
+      "score": 94.41
+    },
+    {
+      "symbol": "UYFINCORP",
+      "name": "U. Y. Fincorp Limited",
+      "sector": "Financial Services",
+      "marketCapCr": 579,
+      "suggestionDate": "2026-11-19",
+      "close": 30.41,
+      "change5Pct": 1.13,
+      "change20Pct": 32.22,
+      "rsi": 58.96,
+      "ema20": 28.7,
+      "ema50": 25.58,
+      "volumeRatio": 0.28,
+      "high20": 31.95,
+      "atr": 1.64,
+      "entry": 30.41,
+      "stop": 27.95,
+      "target": 32.27,
+      "score": 94.26
     },
     {
       "symbol": "SANOFI",
@@ -741,7 +761,7 @@
       "entry": 3202.5,
       "stop": 3072.24,
       "target": 3593.29,
-      "score": 94.19
+      "score": 94.23
     },
     {
       "symbol": "WESTLIFE",
@@ -761,27 +781,7 @@
       "entry": 684.2,
       "stop": 642.93,
       "target": 730.84,
-      "score": 94.18
-    },
-    {
-      "symbol": "SUDEEPPHRM",
-      "name": "Sudeep Pharma Limited",
-      "sector": "Healthcare",
-      "marketCapCr": 13691,
-      "suggestionDate": "2026-11-19",
-      "close": 1212.1,
-      "change5Pct": 0.55,
-      "change20Pct": 24.75,
-      "rsi": 61.48,
-      "ema20": 1154.87,
-      "ema50": 1117.49,
-      "volumeRatio": 3.17,
-      "high20": 1257.3,
-      "atr": 61.89,
-      "entry": 1212.1,
-      "stop": 1119.27,
-      "target": 1391.78,
-      "score": 93.84
+      "score": 93.92
     },
     {
       "symbol": "DCI",
@@ -801,7 +801,7 @@
       "entry": 365.4,
       "stop": 346.74,
       "target": 421.38,
-      "score": 93.75
+      "score": 93.79
     },
     {
       "symbol": "SURAKSHA",
@@ -821,7 +821,27 @@
       "entry": 329.9,
       "stop": 303.61,
       "target": 387.84,
-      "score": 93.55
+      "score": 93.59
+    },
+    {
+      "symbol": "SUDEEPPHRM",
+      "name": "Sudeep Pharma Limited",
+      "sector": "Healthcare",
+      "marketCapCr": 13691,
+      "suggestionDate": "2026-11-19",
+      "close": 1212.1,
+      "change5Pct": 0.55,
+      "change20Pct": 24.75,
+      "rsi": 61.48,
+      "ema20": 1154.87,
+      "ema50": 1117.49,
+      "volumeRatio": 3.17,
+      "high20": 1257.3,
+      "atr": 61.89,
+      "entry": 1212.1,
+      "stop": 1119.27,
+      "target": 1391.78,
+      "score": 93.58
     },
     {
       "symbol": "SGFIN",
@@ -841,27 +861,7 @@
       "entry": 813.2,
       "stop": 748.94,
       "target": 848.4,
-      "score": 93.49
-    },
-    {
-      "symbol": "MARSONS",
-      "name": "Marsons Limited",
-      "sector": "Industrials",
-      "marketCapCr": 2665,
-      "suggestionDate": "2026-11-19",
-      "close": 154.83,
-      "change5Pct": 1.16,
-      "change20Pct": 28.46,
-      "rsi": 69.44,
-      "ema20": 147.92,
-      "ema50": 136.64,
-      "volumeRatio": 0.51,
-      "high20": 172.78,
-      "atr": 12.67,
-      "entry": 154.83,
-      "stop": 135.83,
-      "target": 177.15,
-      "score": 93.15
+      "score": 93.24
     },
     {
       "symbol": "PGEL",
@@ -881,7 +881,7 @@
       "entry": 578.25,
       "stop": 548.28,
       "target": 650.84,
-      "score": 93.13
+      "score": 93.17
     },
     {
       "symbol": "NELCAST",
@@ -901,7 +901,27 @@
       "entry": 141.8,
       "stop": 127.1,
       "target": 174.93,
-      "score": 92.9
+      "score": 92.95
+    },
+    {
+      "symbol": "MARSONS",
+      "name": "Marsons Limited",
+      "sector": "Industrials",
+      "marketCapCr": 2665,
+      "suggestionDate": "2026-11-19",
+      "close": 154.83,
+      "change5Pct": 1.16,
+      "change20Pct": 28.46,
+      "rsi": 69.44,
+      "ema20": 147.92,
+      "ema50": 136.64,
+      "volumeRatio": 0.51,
+      "high20": 172.78,
+      "atr": 12.67,
+      "entry": 154.83,
+      "stop": 135.83,
+      "target": 177.15,
+      "score": 92.91
     },
     {
       "symbol": "CNL",
@@ -921,7 +941,7 @@
       "entry": 1389,
       "stop": 1245.89,
       "target": 1565.7,
-      "score": 92.81
+      "score": 92.57
     },
     {
       "symbol": "PWL",
@@ -941,27 +961,7 @@
       "entry": 136.21,
       "stop": 127.52,
       "target": 162.27,
-      "score": 92.5
-    },
-    {
-      "symbol": "SAILIFE",
-      "name": "Sai Life Sciences Limited",
-      "sector": "Healthcare",
-      "marketCapCr": 37999,
-      "suggestionDate": "2026-11-19",
-      "close": 1788.4,
-      "change5Pct": -6.13,
-      "change20Pct": 28.33,
-      "rsi": 70.08,
-      "ema20": 1696.18,
-      "ema50": 1589.48,
-      "volumeRatio": 0.23,
-      "high20": 1954.8,
-      "atr": 95.75,
-      "entry": 1788.4,
-      "stop": 1644.78,
-      "target": 1974.35,
-      "score": 92.47
+      "score": 92.55
     },
     {
       "symbol": "ORICONENT",
@@ -981,27 +981,27 @@
       "entry": 56.17,
       "stop": 52.16,
       "target": 68.19,
-      "score": 92.26
+      "score": 92.31
     },
     {
-      "symbol": "AARTIDRUGS",
-      "name": "Aarti Drugs Limited",
+      "symbol": "SAILIFE",
+      "name": "Sai Life Sciences Limited",
       "sector": "Healthcare",
-      "marketCapCr": 4553,
+      "marketCapCr": 37999,
       "suggestionDate": "2026-11-19",
-      "close": 498.9,
-      "change5Pct": -1.94,
-      "change20Pct": 28.38,
-      "rsi": 64.84,
-      "ema20": 469.2,
-      "ema50": 443.26,
-      "volumeRatio": 0.11,
-      "high20": 527.5,
-      "atr": 25.68,
-      "entry": 498.9,
-      "stop": 460.38,
-      "target": 532.78,
-      "score": 92.12
+      "close": 1788.4,
+      "change5Pct": -6.13,
+      "change20Pct": 28.33,
+      "rsi": 70.08,
+      "ema20": 1696.18,
+      "ema50": 1589.48,
+      "volumeRatio": 0.23,
+      "high20": 1954.8,
+      "atr": 95.75,
+      "entry": 1788.4,
+      "stop": 1644.78,
+      "target": 1974.35,
+      "score": 92.23
     },
     {
       "symbol": "KAMAHOLD",
@@ -1021,27 +1021,27 @@
       "entry": 2357.3,
       "stop": 2254.58,
       "target": 2499.55,
-      "score": 91.88
+      "score": 91.93
     },
     {
-      "symbol": "WSI",
-      "name": "W.S. Industries (India) Limited",
-      "sector": "Industrials",
-      "marketCapCr": 583,
+      "symbol": "AARTIDRUGS",
+      "name": "Aarti Drugs Limited",
+      "sector": "Healthcare",
+      "marketCapCr": 4553,
       "suggestionDate": "2026-11-19",
-      "close": 76.87,
-      "change5Pct": 10.68,
-      "change20Pct": 20.49,
-      "rsi": 58.98,
-      "ema20": 68.68,
-      "ema50": 64.92,
-      "volumeRatio": 3.99,
-      "high20": 83,
-      "atr": 4.75,
-      "entry": 76.87,
-      "stop": 69.74,
-      "target": 95.95,
-      "score": 91.78
+      "close": 498.9,
+      "change5Pct": -1.94,
+      "change20Pct": 28.38,
+      "rsi": 64.84,
+      "ema20": 469.2,
+      "ema50": 443.26,
+      "volumeRatio": 0.11,
+      "high20": 527.5,
+      "atr": 25.68,
+      "entry": 498.9,
+      "stop": 460.38,
+      "target": 532.78,
+      "score": 91.89
     },
     {
       "symbol": "GREENPOWER",
@@ -1061,27 +1061,27 @@
       "entry": 9.05,
       "stop": 8.32,
       "target": 11.23,
-      "score": 91.61
+      "score": 91.67
     },
     {
-      "symbol": "FREDUN",
-      "name": "Fredun Pharmaceuticals Limited",
-      "sector": "Healthcare",
-      "marketCapCr": 2918,
+      "symbol": "WSI",
+      "name": "W.S. Industries (India) Limited",
+      "sector": "Industrials",
+      "marketCapCr": 583,
       "suggestionDate": "2026-11-19",
-      "close": 1708,
-      "change5Pct": 11.83,
-      "change20Pct": 25.05,
-      "rsi": 70.28,
-      "ema20": 1513.06,
-      "ema50": 1467.74,
-      "volumeRatio": 1.63,
-      "high20": 1712.9,
-      "atr": 84.11,
-      "entry": 1708,
-      "stop": 1581.84,
-      "target": 2086.48,
-      "score": 91.44
+      "close": 76.87,
+      "change5Pct": 10.68,
+      "change20Pct": 20.49,
+      "rsi": 58.98,
+      "ema20": 68.68,
+      "ema50": 64.92,
+      "volumeRatio": 3.99,
+      "high20": 83,
+      "atr": 4.75,
+      "entry": 76.87,
+      "stop": 69.74,
+      "target": 95.95,
+      "score": 91.55
     },
     {
       "symbol": "WOCKPHARMA",
@@ -1101,27 +1101,27 @@
       "entry": 2187,
       "stop": 2058.65,
       "target": 2446.52,
-      "score": 91.25
+      "score": 91.3
     },
     {
-      "symbol": "HMAAGRO",
-      "name": "HMA Agro Industries Limited",
-      "sector": "Consumer Defensive",
-      "marketCapCr": 1469,
+      "symbol": "FREDUN",
+      "name": "Fredun Pharmaceuticals Limited",
+      "sector": "Healthcare",
+      "marketCapCr": 2918,
       "suggestionDate": "2026-11-19",
-      "close": 29.34,
-      "change5Pct": 7.75,
-      "change20Pct": 20.79,
-      "rsi": 72.97,
-      "ema20": 26.35,
-      "ema50": 24.88,
-      "volumeRatio": 3.74,
-      "high20": 30.1,
-      "atr": 1.65,
-      "entry": 29.34,
-      "stop": 26.86,
-      "target": 34.58,
-      "score": 91.1
+      "close": 1708,
+      "change5Pct": 11.83,
+      "change20Pct": 25.05,
+      "rsi": 70.28,
+      "ema20": 1513.06,
+      "ema50": 1467.74,
+      "volumeRatio": 1.63,
+      "high20": 1712.9,
+      "atr": 84.11,
+      "entry": 1708,
+      "stop": 1581.84,
+      "target": 2086.48,
+      "score": 91.22
     },
     {
       "symbol": "PATANJALI",
@@ -1141,27 +1141,27 @@
       "entry": 402,
       "stop": 380.81,
       "target": 465.56,
-      "score": 90.97
+      "score": 91.03
     },
     {
-      "symbol": "LUMAXTECH",
-      "name": "Lumax Auto Technologies Limited",
-      "sector": "Consumer Cyclical",
-      "marketCapCr": 15930,
+      "symbol": "HMAAGRO",
+      "name": "HMA Agro Industries Limited",
+      "sector": "Consumer Defensive",
+      "marketCapCr": 1469,
       "suggestionDate": "2026-11-19",
-      "close": 2337.2,
-      "change5Pct": -0.2,
-      "change20Pct": 27.47,
-      "rsi": 66.03,
-      "ema20": 2187.51,
-      "ema50": 2052.36,
-      "volumeRatio": 0.35,
-      "high20": 2503,
-      "atr": 118.71,
-      "entry": 2337.2,
-      "stop": 2159.13,
-      "target": 2528.03,
-      "score": 90.75
+      "close": 29.34,
+      "change5Pct": 7.75,
+      "change20Pct": 20.79,
+      "rsi": 72.97,
+      "ema20": 26.35,
+      "ema50": 24.88,
+      "volumeRatio": 3.74,
+      "high20": 30.1,
+      "atr": 1.65,
+      "entry": 29.34,
+      "stop": 26.86,
+      "target": 34.58,
+      "score": 90.88
     },
     {
       "symbol": "CENTRALBK",
@@ -1181,27 +1181,27 @@
       "entry": 33.61,
       "stop": 32.42,
       "target": 37.18,
-      "score": 90.63
+      "score": 90.68
     },
     {
-      "symbol": "KDDL",
-      "name": "KDDL Limited",
+      "symbol": "LUMAXTECH",
+      "name": "Lumax Auto Technologies Limited",
       "sector": "Consumer Cyclical",
-      "marketCapCr": 5756,
+      "marketCapCr": 15930,
       "suggestionDate": "2026-11-19",
-      "close": 4679.8,
-      "change5Pct": 9.9,
-      "change20Pct": 25.11,
-      "rsi": 67.86,
-      "ema20": 4154.49,
-      "ema50": 3958.46,
-      "volumeRatio": 1.49,
-      "high20": 5198,
-      "atr": 278.8,
-      "entry": 4679.8,
-      "stop": 4261.6,
-      "target": 5249.98,
-      "score": 90.41
+      "close": 2337.2,
+      "change5Pct": -0.2,
+      "change20Pct": 27.47,
+      "rsi": 66.03,
+      "ema20": 2187.51,
+      "ema50": 2052.36,
+      "volumeRatio": 0.35,
+      "high20": 2503,
+      "atr": 118.71,
+      "entry": 2337.2,
+      "stop": 2159.13,
+      "target": 2528.03,
+      "score": 90.54
     },
     {
       "symbol": "SWARAJ",
@@ -1221,27 +1221,27 @@
       "entry": 363.95,
       "stop": 338.61,
       "target": 398.95,
-      "score": 90.32
+      "score": 90.38
     },
     {
-      "symbol": "MINDACORP",
-      "name": "Minda Corporation Limited",
+      "symbol": "KDDL",
+      "name": "KDDL Limited",
       "sector": "Consumer Cyclical",
-      "marketCapCr": 17727,
+      "marketCapCr": 5756,
       "suggestionDate": "2026-11-19",
-      "close": 753.2,
-      "change5Pct": 4.13,
-      "change20Pct": 23.79,
-      "rsi": 76,
-      "ema20": 692.71,
-      "ema50": 679.08,
-      "volumeRatio": 1.87,
-      "high20": 762.85,
-      "atr": 31.64,
-      "entry": 753.2,
-      "stop": 705.74,
-      "target": 776.69,
-      "score": 90.07
+      "close": 4679.8,
+      "change5Pct": 9.9,
+      "change20Pct": 25.11,
+      "rsi": 67.86,
+      "ema20": 4154.49,
+      "ema50": 3958.46,
+      "volumeRatio": 1.49,
+      "high20": 5198,
+      "atr": 278.8,
+      "entry": 4679.8,
+      "stop": 4261.6,
+      "target": 5249.98,
+      "score": 90.2
     },
     {
       "symbol": "KWIL",
@@ -1261,27 +1261,27 @@
       "entry": 44.42,
       "stop": 41.3,
       "target": 51.19,
-      "score": 90
+      "score": 90.06
     },
     {
-      "symbol": "ROLEXRINGS",
-      "name": "Rolex Rings Limited",
-      "sector": "Industrials",
-      "marketCapCr": 5256,
+      "symbol": "MINDACORP",
+      "name": "Minda Corporation Limited",
+      "sector": "Consumer Cyclical",
+      "marketCapCr": 17727,
       "suggestionDate": "2026-11-19",
-      "close": 200.34,
-      "change5Pct": -8.19,
-      "change20Pct": 25.83,
-      "rsi": 67.53,
-      "ema20": 193.42,
-      "ema50": 182.44,
-      "volumeRatio": 0.4,
-      "high20": 220,
-      "atr": 9.92,
-      "entry": 200.34,
-      "stop": 185.46,
-      "target": 222.2,
-      "score": 89.73
+      "close": 753.2,
+      "change5Pct": 4.13,
+      "change20Pct": 23.79,
+      "rsi": 76,
+      "ema20": 692.71,
+      "ema50": 679.08,
+      "volumeRatio": 1.87,
+      "high20": 762.85,
+      "atr": 31.64,
+      "entry": 753.2,
+      "stop": 705.74,
+      "target": 776.69,
+      "score": 89.86
     },
     {
       "symbol": "SATIN",
@@ -1301,27 +1301,27 @@
       "entry": 254.55,
       "stop": 240.5,
       "target": 276.88,
-      "score": 89.68
+      "score": 89.74
     },
     {
-      "symbol": "KPL",
-      "name": "Kwality Pharmaceuticals Limited",
-      "sector": "Healthcare",
-      "marketCapCr": 4448,
+      "symbol": "ROLEXRINGS",
+      "name": "Rolex Rings Limited",
+      "sector": "Industrials",
+      "marketCapCr": 5256,
       "suggestionDate": "2026-11-19",
-      "close": 4286.6,
-      "change5Pct": 8.56,
-      "change20Pct": 25.07,
-      "rsi": 69.73,
-      "ema20": 3844.1,
-      "ema50": 3686.82,
-      "volumeRatio": 0.71,
-      "high20": 4299,
-      "atr": 242.73,
-      "entry": 4286.6,
-      "stop": 3922.51,
-      "target": 5378.88,
-      "score": 89.38
+      "close": 200.34,
+      "change5Pct": -8.19,
+      "change20Pct": 25.83,
+      "rsi": 67.53,
+      "ema20": 193.42,
+      "ema50": 182.44,
+      "volumeRatio": 0.4,
+      "high20": 220,
+      "atr": 9.92,
+      "entry": 200.34,
+      "stop": 185.46,
+      "target": 222.2,
+      "score": 89.53
     },
     {
       "symbol": "PDMJEPAPER",
@@ -1341,7 +1341,27 @@
       "entry": 92.27,
       "stop": 87.02,
       "target": 108.03,
-      "score": 89.38
+      "score": 89.44
+    },
+    {
+      "symbol": "KPL",
+      "name": "Kwality Pharmaceuticals Limited",
+      "sector": "Healthcare",
+      "marketCapCr": 4448,
+      "suggestionDate": "2026-11-19",
+      "close": 4286.6,
+      "change5Pct": 8.56,
+      "change20Pct": 25.07,
+      "rsi": 69.73,
+      "ema20": 3844.1,
+      "ema50": 3686.82,
+      "volumeRatio": 0.71,
+      "high20": 4299,
+      "atr": 242.73,
+      "entry": 4286.6,
+      "stop": 3922.51,
+      "target": 5378.88,
+      "score": 89.19
     },
     {
       "symbol": "DCW",
@@ -1361,7 +1381,7 @@
       "entry": 47.05,
       "stop": 44.65,
       "target": 54.24,
-      "score": 89.03
+      "score": 89.1
     },
     {
       "symbol": "HEROMOTOCO",
@@ -1381,7 +1401,7 @@
       "entry": 5556,
       "stop": 5349.86,
       "target": 6174.43,
-      "score": 88.75
+      "score": 88.82
     },
     {
       "symbol": "PPLPHARMA",
@@ -1401,7 +1421,7 @@
       "entry": 239.65,
       "stop": 226.98,
       "target": 256.44,
-      "score": 88.7
+      "score": 88.51
     },
     {
       "symbol": "FDC",
@@ -1421,27 +1441,7 @@
       "entry": 378.05,
       "stop": 365.14,
       "target": 416.78,
-      "score": 88.39
-    },
-    {
-      "symbol": "PDSL",
-      "name": "PDS Limited",
-      "sector": "Industrials",
-      "marketCapCr": 5841,
-      "suggestionDate": "2026-11-19",
-      "close": 413.6,
-      "change5Pct": -0.29,
-      "change20Pct": 24.94,
-      "rsi": 75.16,
-      "ema20": 385.4,
-      "ema50": 366.75,
-      "volumeRatio": 0.27,
-      "high20": 424.9,
-      "atr": 19.64,
-      "entry": 413.6,
-      "stop": 384.15,
-      "target": 429.15,
-      "score": 88.36
+      "score": 88.46
     },
     {
       "symbol": "FLUOROCHEM",
@@ -1461,7 +1461,27 @@
       "entry": 4978.6,
       "stop": 4695.26,
       "target": 5828.62,
-      "score": 88.13
+      "score": 88.2
+    },
+    {
+      "symbol": "PDSL",
+      "name": "PDS Limited",
+      "sector": "Industrials",
+      "marketCapCr": 5841,
+      "suggestionDate": "2026-11-19",
+      "close": 413.6,
+      "change5Pct": -0.29,
+      "change20Pct": 24.94,
+      "rsi": 75.16,
+      "ema20": 385.4,
+      "ema50": 366.75,
+      "volumeRatio": 0.27,
+      "high20": 424.9,
+      "atr": 19.64,
+      "entry": 413.6,
+      "stop": 384.15,
+      "target": 429.15,
+      "score": 88.18
     },
     {
       "symbol": "GUFICBIO",
@@ -1481,27 +1501,7 @@
       "entry": 431.9,
       "stop": 394.61,
       "target": 498.89,
-      "score": 87.74
-    },
-    {
-      "symbol": "NILKAMAL",
-      "name": "Nilkamal Limited",
-      "sector": "Consumer Cyclical",
-      "marketCapCr": 3248,
-      "suggestionDate": "2026-11-19",
-      "close": 2169.6,
-      "change5Pct": -0.82,
-      "change20Pct": 24.42,
-      "rsi": 63.9,
-      "ema20": 2050.92,
-      "ema50": 1939.51,
-      "volumeRatio": 0.2,
-      "high20": 2280,
-      "atr": 93.68,
-      "entry": 2169.6,
-      "stop": 2029.08,
-      "target": 2302.8,
-      "score": 87.67
+      "score": 87.82
     },
     {
       "symbol": "MARUTI",
@@ -1521,27 +1521,27 @@
       "entry": 13589,
       "stop": 13045.46,
       "target": 15219.61,
-      "score": 87.5
+      "score": 87.58
     },
     {
-      "symbol": "SPECTRUM",
-      "name": "Spectrum Electrical Industries Limited",
-      "sector": "Industrials",
-      "marketCapCr": 7778,
+      "symbol": "NILKAMAL",
+      "name": "Nilkamal Limited",
+      "sector": "Consumer Cyclical",
+      "marketCapCr": 3248,
       "suggestionDate": "2026-11-19",
-      "close": 4551.7,
-      "change5Pct": 2.95,
-      "change20Pct": 23.25,
-      "rsi": 72.23,
-      "ema20": 4266.19,
-      "ema50": 3756.84,
-      "volumeRatio": 0.76,
-      "high20": 4839,
-      "atr": 266.44,
-      "entry": 4551.7,
-      "stop": 4152.05,
-      "target": 4887.39,
-      "score": 87.33
+      "close": 2169.6,
+      "change5Pct": -0.82,
+      "change20Pct": 24.42,
+      "rsi": 63.9,
+      "ema20": 2050.92,
+      "ema50": 1939.51,
+      "volumeRatio": 0.2,
+      "high20": 2280,
+      "atr": 93.68,
+      "entry": 2169.6,
+      "stop": 2029.08,
+      "target": 2302.8,
+      "score": 87.5
     },
     {
       "symbol": "IOLCP",
@@ -1561,7 +1561,27 @@
       "entry": 191.78,
       "stop": 175.03,
       "target": 226.24,
-      "score": 87.1
+      "score": 87.18
+    },
+    {
+      "symbol": "SPECTRUM",
+      "name": "Spectrum Electrical Industries Limited",
+      "sector": "Industrials",
+      "marketCapCr": 7778,
+      "suggestionDate": "2026-11-19",
+      "close": 4551.7,
+      "change5Pct": 2.95,
+      "change20Pct": 23.25,
+      "rsi": 72.23,
+      "ema20": 4266.19,
+      "ema50": 3756.84,
+      "volumeRatio": 0.76,
+      "high20": 4839,
+      "atr": 266.44,
+      "entry": 4551.7,
+      "stop": 4152.05,
+      "target": 4887.39,
+      "score": 87.16
     },
     {
       "symbol": "NEOGEN",
@@ -1581,7 +1601,7 @@
       "entry": 2888.5,
       "stop": 2663,
       "target": 3565.01,
-      "score": 86.99
+      "score": 86.82
     },
     {
       "symbol": "BANKBARODA",
@@ -1601,7 +1621,7 @@
       "entry": 285.9,
       "stop": 274.83,
       "target": 319.11,
-      "score": 86.56
+      "score": 86.65
     },
     {
       "symbol": "TI",
@@ -1621,7 +1641,7 @@
       "entry": 550.05,
       "stop": 514.2,
       "target": 613.88,
-      "score": 86.56
+      "score": 86.65
     },
     {
       "symbol": "SMSPHARMA",
@@ -1641,7 +1661,7 @@
       "entry": 481.35,
       "stop": 441.44,
       "target": 540.35,
-      "score": 86.45
+      "score": 86.54
     },
     {
       "symbol": "MANAKCOAT",
@@ -1661,27 +1681,7 @@
       "entry": 160.33,
       "stop": 144.98,
       "target": 186.66,
-      "score": 86.3
-    },
-    {
-      "symbol": "ROTO",
-      "name": "Roto Pumps Limited",
-      "sector": "Industrials",
-      "marketCapCr": 1352,
-      "suggestionDate": "2026-11-19",
-      "close": 71.58,
-      "change5Pct": -6.99,
-      "change20Pct": 23.31,
-      "rsi": 67.83,
-      "ema20": 66.74,
-      "ema50": 64.56,
-      "volumeRatio": 0.4,
-      "high20": 79.9,
-      "atr": 3.73,
-      "entry": 71.58,
-      "stop": 65.99,
-      "target": 81.58,
-      "score": 85.96
+      "score": 86.15
     },
     {
       "symbol": "HARIOMPIPE",
@@ -1701,6 +1701,26 @@
       "entry": 348.55,
       "stop": 321.74,
       "target": 428.99,
+      "score": 85.9
+    },
+    {
+      "symbol": "ROTO",
+      "name": "Roto Pumps Limited",
+      "sector": "Industrials",
+      "marketCapCr": 1352,
+      "suggestionDate": "2026-11-19",
+      "close": 71.58,
+      "change5Pct": -6.99,
+      "change20Pct": 23.31,
+      "rsi": 67.83,
+      "ema20": 66.74,
+      "ema50": 64.56,
+      "volumeRatio": 0.4,
+      "high20": 79.9,
+      "atr": 3.73,
+      "entry": 71.58,
+      "stop": 65.99,
+      "target": 81.58,
       "score": 85.81
     },
     {
@@ -1721,7 +1741,7 @@
       "entry": 198.81,
       "stop": 183.65,
       "target": 217.76,
-      "score": 85.63
+      "score": 85.71
     },
     {
       "symbol": "MANCREDIT",
@@ -1741,27 +1761,7 @@
       "entry": 259.76,
       "stop": 242.23,
       "target": 294.42,
-      "score": 85.62
-    },
-    {
-      "symbol": "XPROINDIA",
-      "name": "Xpro India Limited",
-      "sector": "Basic Materials",
-      "marketCapCr": 2952,
-      "suggestionDate": "2026-11-19",
-      "close": 1257.6,
-      "change5Pct": 10.1,
-      "change20Pct": 22.9,
-      "rsi": 75.9,
-      "ema20": 1136.48,
-      "ema50": 1131.08,
-      "volumeRatio": 0.55,
-      "high20": 1308.7,
-      "atr": 61.12,
-      "entry": 1257.6,
-      "stop": 1165.92,
-      "target": 1532.65,
-      "score": 85.27
+      "score": 85.47
     },
     {
       "symbol": "WINDLAS",
@@ -1781,7 +1781,27 @@
       "entry": 982.45,
       "stop": 909.73,
       "target": 1193.72,
-      "score": 85.16
+      "score": 85.26
+    },
+    {
+      "symbol": "XPROINDIA",
+      "name": "Xpro India Limited",
+      "sector": "Basic Materials",
+      "marketCapCr": 2952,
+      "suggestionDate": "2026-11-19",
+      "close": 1257.6,
+      "change5Pct": 10.1,
+      "change20Pct": 22.9,
+      "rsi": 75.9,
+      "ema20": 1136.48,
+      "ema50": 1131.08,
+      "volumeRatio": 0.55,
+      "high20": 1308.7,
+      "atr": 61.12,
+      "entry": 1257.6,
+      "stop": 1165.92,
+      "target": 1532.65,
+      "score": 85.14
     },
     {
       "symbol": "ARIS",
@@ -1801,7 +1821,7 @@
       "entry": 157.98,
       "stop": 146.73,
       "target": 191.72,
-      "score": 85
+      "score": 85.09
     },
     {
       "symbol": "ASAL",
@@ -1821,7 +1841,7 @@
       "entry": 448.9,
       "stop": 424.87,
       "target": 521,
-      "score": 84.52
+      "score": 84.62
     },
     {
       "symbol": "HINDUNILVR",
@@ -1841,7 +1861,7 @@
       "entry": 2074.2,
       "stop": 2012.34,
       "target": 2259.79,
-      "score": 84.38
+      "score": 84.47
     },
     {
       "symbol": "HMVL",
@@ -1861,47 +1881,27 @@
       "entry": 91.04,
       "stop": 82.73,
       "target": 109.24,
-      "score": 84.25
+      "score": 84.12
     },
     {
-      "symbol": "PNBGILTS",
-      "name": "PNB Gilts Ltd.",
-      "sector": "Financial Services",
-      "marketCapCr": 1430,
+      "symbol": "BOSCHLTD",
+      "name": "Bosch Limited",
+      "sector": "Consumer Cyclical",
+      "marketCapCr": 145711,
       "suggestionDate": "2026-11-19",
-      "close": 79.45,
-      "change5Pct": 1.47,
-      "change20Pct": 12.42,
-      "rsi": 60.77,
-      "ema20": 77.16,
-      "ema50": 76.75,
-      "volumeRatio": 0.47,
-      "high20": 82.07,
-      "atr": 3.23,
-      "entry": 79.45,
-      "stop": 74.61,
-      "target": 93.96,
-      "score": 83.87
-    },
-    {
-      "symbol": "DIVISLAB",
-      "name": "Divi's Laboratories Limited",
-      "sector": "Healthcare",
-      "marketCapCr": 296741,
-      "suggestionDate": "2026-11-19",
-      "close": 11178,
-      "change5Pct": -2.67,
-      "change20Pct": 21.63,
-      "rsi": 75.44,
-      "ema20": 10534.77,
-      "ema50": 9813.51,
-      "volumeRatio": 0.72,
-      "high20": 11824,
-      "atr": 367.54,
-      "entry": 11178,
-      "stop": 10626.7,
-      "target": 11942.24,
-      "score": 83.56
+      "close": 49400,
+      "change5Pct": -2.18,
+      "change20Pct": 11.01,
+      "rsi": 57.76,
+      "ema20": 48669.23,
+      "ema50": 47320.92,
+      "volumeRatio": 0.9,
+      "high20": 52475,
+      "atr": 1332.14,
+      "entry": 49400,
+      "stop": 47401.79,
+      "target": 52999.75,
+      "score": 83.97
     },
     {
       "symbol": "ENDURANCE",
@@ -1921,27 +1921,47 @@
       "entry": 2593.8,
       "stop": 2471.28,
       "target": 2961.35,
-      "score": 83.44
+      "score": 83.54
     },
     {
-      "symbol": "BBL",
-      "name": "Bharat Bijlee Limited",
-      "sector": "Industrials",
-      "marketCapCr": 2928,
+      "symbol": "DIVISLAB",
+      "name": "Divi's Laboratories Limited",
+      "sector": "Healthcare",
+      "marketCapCr": 296741,
       "suggestionDate": "2026-11-19",
-      "close": 2590.3,
-      "change5Pct": -5.27,
-      "change20Pct": 11.35,
-      "rsi": 59.5,
-      "ema20": 2539.24,
-      "ema50": 2439.45,
-      "volumeRatio": 0.39,
-      "high20": 2789,
-      "atr": 101.04,
-      "entry": 2590.3,
-      "stop": 2438.75,
-      "target": 3044.96,
-      "score": 83.23
+      "close": 11178,
+      "change5Pct": -2.67,
+      "change20Pct": 21.63,
+      "rsi": 75.44,
+      "ema20": 10534.77,
+      "ema50": 9813.51,
+      "volumeRatio": 0.72,
+      "high20": 11824,
+      "atr": 367.54,
+      "entry": 11178,
+      "stop": 10626.7,
+      "target": 11942.24,
+      "score": 83.45
+    },
+    {
+      "symbol": "PNBGILTS",
+      "name": "PNB Gilts Ltd.",
+      "sector": "Financial Services",
+      "marketCapCr": 1430,
+      "suggestionDate": "2026-11-19",
+      "close": 79.45,
+      "change5Pct": 1.47,
+      "change20Pct": 12.42,
+      "rsi": 60.77,
+      "ema20": 77.16,
+      "ema50": 76.75,
+      "volumeRatio": 0.47,
+      "high20": 82.07,
+      "atr": 3.23,
+      "entry": 79.45,
+      "stop": 74.61,
+      "target": 93.96,
+      "score": 83.33
     },
     {
       "symbol": "AARTIPHARM",
@@ -1961,7 +1981,7 @@
       "entry": 1024.6,
       "stop": 959.62,
       "target": 1057.72,
-      "score": 83.22
+      "score": 83.11
     },
     {
       "symbol": "TASTYBITE",
@@ -1981,47 +2001,27 @@
       "entry": 10874,
       "stop": 9815.43,
       "target": 11867.5,
-      "score": 82.88
+      "score": 82.77
     },
     {
-      "symbol": "TATACAP",
-      "name": "Tata Capital Limited",
-      "sector": "Financial Services",
-      "marketCapCr": 145708,
+      "symbol": "BBL",
+      "name": "Bharat Bijlee Limited",
+      "sector": "Industrials",
+      "marketCapCr": 2928,
       "suggestionDate": "2026-11-19",
-      "close": 345.55,
-      "change5Pct": -3.11,
-      "change20Pct": 10.77,
-      "rsi": 62.8,
-      "ema20": 339.75,
-      "ema50": 338.24,
-      "volumeRatio": 0.28,
-      "high20": 362,
-      "atr": 9.73,
-      "entry": 345.55,
-      "stop": 330.96,
-      "target": 389.31,
-      "score": 82.58
-    },
-    {
-      "symbol": "PRECOT",
-      "name": "Precot Limited",
-      "sector": "Consumer Cyclical",
-      "marketCapCr": 864,
-      "suggestionDate": "2026-11-19",
-      "close": 720.3,
-      "change5Pct": 14.53,
-      "change20Pct": 21.16,
-      "rsi": 77.84,
-      "ema20": 655.24,
-      "ema50": 652,
-      "volumeRatio": 0.38,
-      "high20": 754.65,
-      "atr": 47.73,
-      "entry": 720.3,
-      "stop": 648.7,
-      "target": 907.99,
-      "score": 82.53
+      "close": 2590.3,
+      "change5Pct": -5.27,
+      "change20Pct": 11.35,
+      "rsi": 59.5,
+      "ema20": 2539.24,
+      "ema50": 2439.45,
+      "volumeRatio": 0.39,
+      "high20": 2789,
+      "atr": 101.04,
+      "entry": 2590.3,
+      "stop": 2438.75,
+      "target": 3044.96,
+      "score": 82.69
     },
     {
       "symbol": "DPSCLTD",
@@ -2041,7 +2041,27 @@
       "entry": 7.14,
       "stop": 6.54,
       "target": 8.94,
-      "score": 82.5
+      "score": 82.61
+    },
+    {
+      "symbol": "PRECOT",
+      "name": "Precot Limited",
+      "sector": "Consumer Cyclical",
+      "marketCapCr": 864,
+      "suggestionDate": "2026-11-19",
+      "close": 720.3,
+      "change5Pct": 14.53,
+      "change20Pct": 21.16,
+      "rsi": 77.84,
+      "ema20": 655.24,
+      "ema50": 652,
+      "volumeRatio": 0.38,
+      "high20": 754.65,
+      "atr": 47.73,
+      "entry": 720.3,
+      "stop": 648.7,
+      "target": 907.99,
+      "score": 82.43
     },
     {
       "symbol": "STEELCAS",
@@ -2061,27 +2081,27 @@
       "entry": 387.55,
       "stop": 358.97,
       "target": 402.99,
-      "score": 82.19
+      "score": 82.09
     },
     {
-      "symbol": "KAYA",
-      "name": "Kaya Limited",
-      "sector": "Consumer Defensive",
-      "marketCapCr": 560,
+      "symbol": "TATACAP",
+      "name": "Tata Capital Limited",
+      "sector": "Financial Services",
+      "marketCapCr": 145708,
       "suggestionDate": "2026-11-19",
-      "close": 329,
-      "change5Pct": -5.77,
-      "change20Pct": 10.22,
-      "rsi": 59.99,
-      "ema20": 325,
-      "ema50": 317.09,
+      "close": 345.55,
+      "change5Pct": -3.11,
+      "change20Pct": 10.77,
+      "rsi": 62.8,
+      "ema20": 339.75,
+      "ema50": 338.24,
       "volumeRatio": 0.28,
-      "high20": 365.2,
-      "atr": 11.98,
-      "entry": 329,
-      "stop": 311.03,
-      "target": 382.92,
-      "score": 81.94
+      "high20": 362,
+      "atr": 9.73,
+      "entry": 345.55,
+      "stop": 330.96,
+      "target": 389.31,
+      "score": 82.05
     },
     {
       "symbol": "IDFCFIRSTB",
@@ -2101,7 +2121,7 @@
       "entry": 86.05,
       "stop": 82.61,
       "target": 90.51,
-      "score": 81.88
+      "score": 81.99
     },
     {
       "symbol": "MEDANTA",
@@ -2121,7 +2141,7 @@
       "entry": 1478.3,
       "stop": 1407.04,
       "target": 1559.44,
-      "score": 81.85
+      "score": 81.76
     },
     {
       "symbol": "SANSERA",
@@ -2141,27 +2161,27 @@
       "entry": 4720.9,
       "stop": 4408.29,
       "target": 4898.4,
-      "score": 81.51
+      "score": 81.42
     },
     {
-      "symbol": "NAHARPOLY",
-      "name": "Nahar Poly Films Limited",
-      "sector": "Consumer Cyclical",
-      "marketCapCr": 580,
+      "symbol": "KAYA",
+      "name": "Kaya Limited",
+      "sector": "Consumer Defensive",
+      "marketCapCr": 560,
       "suggestionDate": "2026-11-19",
-      "close": 235.95,
-      "change5Pct": -0.81,
-      "change20Pct": 10.4,
-      "rsi": 56.69,
-      "ema20": 232.5,
-      "ema50": 232.06,
-      "volumeRatio": 0.47,
-      "high20": 248,
-      "atr": 9.18,
-      "entry": 235.95,
-      "stop": 222.19,
-      "target": 277.24,
-      "score": 81.29
+      "close": 329,
+      "change5Pct": -5.77,
+      "change20Pct": 10.22,
+      "rsi": 59.99,
+      "ema20": 325,
+      "ema50": 317.09,
+      "volumeRatio": 0.28,
+      "high20": 365.2,
+      "atr": 11.98,
+      "entry": 329,
+      "stop": 311.03,
+      "target": 382.92,
+      "score": 81.41
     },
     {
       "symbol": "EICHERMOT",
@@ -2181,7 +2201,7 @@
       "entry": 8058.5,
       "stop": 7706.7,
       "target": 8312.3,
-      "score": 80.94
+      "score": 81.06
     },
     {
       "symbol": "BFINVEST",
@@ -2201,7 +2221,27 @@
       "entry": 487.25,
       "stop": 462.17,
       "target": 562.48,
-      "score": 80.94
+      "score": 81.06
+    },
+    {
+      "symbol": "NAHARPOLY",
+      "name": "Nahar Poly Films Limited",
+      "sector": "Consumer Cyclical",
+      "marketCapCr": 580,
+      "suggestionDate": "2026-11-19",
+      "close": 235.95,
+      "change5Pct": -0.81,
+      "change20Pct": 10.4,
+      "rsi": 56.69,
+      "ema20": 232.5,
+      "ema50": 232.06,
+      "volumeRatio": 0.47,
+      "high20": 248,
+      "atr": 9.18,
+      "entry": 235.95,
+      "stop": 222.19,
+      "target": 277.24,
+      "score": 80.77
     },
     {
       "symbol": "PHOENIXLTD",
@@ -2221,27 +2261,7 @@
       "entry": 2237.5,
       "stop": 2123.79,
       "target": 2323,
-      "score": 80.82
-    },
-    {
-      "symbol": "JINDALPHOT",
-      "name": "Jindal Photo Limited",
-      "sector": "Financial Services",
-      "marketCapCr": 1150,
-      "suggestionDate": "2026-11-19",
-      "close": 1116.6,
-      "change5Pct": -0.73,
-      "change20Pct": 9.28,
-      "rsi": 41.92,
-      "ema20": 1108.21,
-      "ema50": 1087.8,
-      "volumeRatio": 0.32,
-      "high20": 1160,
-      "atr": 22.72,
-      "entry": 1116.6,
-      "stop": 1082.52,
-      "target": 1218.85,
-      "score": 80.65
+      "score": 80.74
     },
     {
       "symbol": "DELHIVERY",
@@ -2261,7 +2281,27 @@
       "entry": 456.7,
       "stop": 433.61,
       "target": 525.98,
-      "score": 80.48
+      "score": 80.41
+    },
+    {
+      "symbol": "JINDALPHOT",
+      "name": "Jindal Photo Limited",
+      "sector": "Financial Services",
+      "marketCapCr": 1150,
+      "suggestionDate": "2026-11-19",
+      "close": 1116.6,
+      "change5Pct": -0.73,
+      "change20Pct": 9.28,
+      "rsi": 41.92,
+      "ema20": 1108.21,
+      "ema50": 1087.8,
+      "volumeRatio": 0.32,
+      "high20": 1160,
+      "atr": 22.72,
+      "entry": 1116.6,
+      "stop": 1082.52,
+      "target": 1218.85,
+      "score": 80.13
     },
     {
       "symbol": "RKFORGE",
@@ -2281,27 +2321,7 @@
       "entry": 767.5,
       "stop": 717.09,
       "target": 812.04,
-      "score": 80.14
-    },
-    {
-      "symbol": "NBCC",
-      "name": "NBCC (India) Limited",
-      "sector": "Industrials",
-      "marketCapCr": 21465,
-      "suggestionDate": "2026-11-19",
-      "close": 79.5,
-      "change5Pct": -1,
-      "change20Pct": 11.27,
-      "rsi": 64.68,
-      "ema20": 77.31,
-      "ema50": 79.12,
-      "volumeRatio": 0.74,
-      "high20": 82.8,
-      "atr": 3,
-      "entry": 79.5,
-      "stop": 75,
-      "target": 93.01,
-      "score": 80
+      "score": 80.07
     },
     {
       "symbol": "ITCHOTELS",
@@ -2321,27 +2341,7 @@
       "entry": 183.66,
       "stop": 176.35,
       "target": 205.6,
-      "score": 79.79
-    },
-    {
-      "symbol": "ORIENTHOT",
-      "name": "Oriental Hotels Limited",
-      "sector": "Consumer Cyclical",
-      "marketCapCr": 3161,
-      "suggestionDate": "2026-11-19",
-      "close": 176.99,
-      "change5Pct": 1.78,
-      "change20Pct": 20.09,
-      "rsi": 73.65,
-      "ema20": 167.5,
-      "ema50": 155.57,
-      "volumeRatio": 0.48,
-      "high20": 181.8,
-      "atr": 5,
-      "entry": 176.99,
-      "stop": 169.48,
-      "target": 183.62,
-      "score": 79.45
+      "score": 79.73
     },
     {
       "symbol": "HYUNDAI",
@@ -2361,7 +2361,7 @@
       "entry": 2219.2,
       "stop": 2124.2,
       "target": 2488.14,
-      "score": 79.38
+      "score": 79.5
     },
     {
       "symbol": "SHADOWFAX",
@@ -2381,27 +2381,47 @@
       "entry": 313.6,
       "stop": 292.26,
       "target": 377.63,
-      "score": 79.38
+      "score": 79.5
     },
     {
-      "symbol": "JINDALSTEL",
-      "name": "Jindal Steel Limited",
-      "sector": "Basic Materials",
-      "marketCapCr": 113453,
+      "symbol": "NBCC",
+      "name": "NBCC (India) Limited",
+      "sector": "Industrials",
+      "marketCapCr": 21465,
       "suggestionDate": "2026-11-19",
-      "close": 1114.5,
-      "change5Pct": -4.18,
-      "change20Pct": 8.41,
-      "rsi": 62.81,
-      "ema20": 1115.22,
-      "ema50": 1105.16,
-      "volumeRatio": 1.08,
-      "high20": 1175.5,
-      "atr": 28.94,
-      "entry": 1114.5,
-      "stop": 1071.09,
-      "target": 1244.74,
-      "score": 79.35
+      "close": 79.5,
+      "change5Pct": -1,
+      "change20Pct": 11.27,
+      "rsi": 64.68,
+      "ema20": 77.31,
+      "ema50": 79.12,
+      "volumeRatio": 0.74,
+      "high20": 82.8,
+      "atr": 3,
+      "entry": 79.5,
+      "stop": 75,
+      "target": 93.01,
+      "score": 79.49
+    },
+    {
+      "symbol": "ORIENTHOT",
+      "name": "Oriental Hotels Limited",
+      "sector": "Consumer Cyclical",
+      "marketCapCr": 3161,
+      "suggestionDate": "2026-11-19",
+      "close": 176.99,
+      "change5Pct": 1.78,
+      "change20Pct": 20.09,
+      "rsi": 73.65,
+      "ema20": 167.5,
+      "ema50": 155.57,
+      "volumeRatio": 0.48,
+      "high20": 181.8,
+      "atr": 5,
+      "entry": 176.99,
+      "stop": 169.48,
+      "target": 183.62,
+      "score": 79.39
     },
     {
       "symbol": "THELEELA",
@@ -2421,7 +2441,27 @@
       "entry": 695.65,
       "stop": 653.74,
       "target": 821.39,
-      "score": 79.11
+      "score": 79.05
+    },
+    {
+      "symbol": "JINDALSTEL",
+      "name": "Jindal Steel Limited",
+      "sector": "Basic Materials",
+      "marketCapCr": 113453,
+      "suggestionDate": "2026-11-19",
+      "close": 1114.5,
+      "change5Pct": -4.18,
+      "change20Pct": 8.41,
+      "rsi": 62.81,
+      "ema20": 1115.22,
+      "ema50": 1105.16,
+      "volumeRatio": 1.08,
+      "high20": 1175.5,
+      "atr": 28.94,
+      "entry": 1114.5,
+      "stop": 1071.09,
+      "target": 1244.74,
+      "score": 78.85
     },
     {
       "symbol": "AWFIS",
@@ -2441,27 +2481,7 @@
       "entry": 282.25,
       "stop": 261.26,
       "target": 345.22,
-      "score": 78.77
-    },
-    {
-      "symbol": "ICEMAKE",
-      "name": "Ice Make Refrigeration Limited",
-      "sector": "Industrials",
-      "marketCapCr": 1087,
-      "suggestionDate": "2026-11-19",
-      "close": 689.15,
-      "change5Pct": -0.27,
-      "change20Pct": 10.23,
-      "rsi": 58.08,
-      "ema20": 674.53,
-      "ema50": 683.27,
-      "volumeRatio": 0.85,
-      "high20": 730.85,
-      "atr": 31.54,
-      "entry": 689.15,
-      "stop": 641.85,
-      "target": 831.06,
-      "score": 78.71
+      "score": 78.72
     },
     {
       "symbol": "AGARWALEYE",
@@ -2481,7 +2501,7 @@
       "entry": 553.1,
       "stop": 520.56,
       "target": 577.62,
-      "score": 78.42
+      "score": 78.38
     },
     {
       "symbol": "ADVENZYMES",
@@ -2501,7 +2521,27 @@
       "entry": 296.25,
       "stop": 281.15,
       "target": 341.56,
-      "score": 78.13
+      "score": 78.26
+    },
+    {
+      "symbol": "ICEMAKE",
+      "name": "Ice Make Refrigeration Limited",
+      "sector": "Industrials",
+      "marketCapCr": 1087,
+      "suggestionDate": "2026-11-19",
+      "close": 689.15,
+      "change5Pct": -0.27,
+      "change20Pct": 10.23,
+      "rsi": 58.08,
+      "ema20": 674.53,
+      "ema50": 683.27,
+      "volumeRatio": 0.85,
+      "high20": 730.85,
+      "atr": 31.54,
+      "entry": 689.15,
+      "stop": 641.85,
+      "target": 831.06,
+      "score": 78.21
     },
     {
       "symbol": "KALYANKJIL",
@@ -2521,27 +2561,7 @@
       "entry": 661,
       "stop": 609.67,
       "target": 736.64,
-      "score": 78.08
-    },
-    {
-      "symbol": "DIACABS",
-      "name": "Diamond Power Infrastructure Limited",
-      "sector": "Industrials",
-      "marketCapCr": 21892,
-      "suggestionDate": "2026-11-19",
-      "close": 366.05,
-      "change5Pct": -3.24,
-      "change20Pct": 8.35,
-      "rsi": 63.5,
-      "ema20": 364.36,
-      "ema50": 353.97,
-      "volumeRatio": 0.97,
-      "high20": 398.5,
-      "atr": 17.32,
-      "entry": 366.05,
-      "stop": 340.07,
-      "target": 408.04,
-      "score": 78.06
+      "score": 78.04
     },
     {
       "symbol": "RUBICON",
@@ -2561,7 +2581,7 @@
       "entry": 1722.3,
       "stop": 1612.06,
       "target": 1917.99,
-      "score": 77.74
+      "score": 77.7
     },
     {
       "symbol": "SUNSHINE",
@@ -2581,27 +2601,27 @@
       "entry": 509.3,
       "stop": 467.51,
       "target": 530.2,
-      "score": 77.5
+      "score": 77.64
     },
     {
-      "symbol": "FRONTSP",
-      "name": "Frontier Springs Limited",
+      "symbol": "DIACABS",
+      "name": "Diamond Power Infrastructure Limited",
       "sector": "Industrials",
-      "marketCapCr": 1695,
+      "marketCapCr": 21892,
       "suggestionDate": "2026-11-19",
-      "close": 1434.6,
-      "change5Pct": -7.82,
-      "change20Pct": 10.3,
-      "rsi": 61.86,
-      "ema20": 1399.4,
-      "ema50": 1359.82,
-      "volumeRatio": 0.2,
-      "high20": 1671.8,
-      "atr": 73.96,
-      "entry": 1434.6,
-      "stop": 1323.65,
-      "target": 1688.52,
-      "score": 77.42
+      "close": 366.05,
+      "change5Pct": -3.24,
+      "change20Pct": 8.35,
+      "rsi": 63.5,
+      "ema20": 364.36,
+      "ema50": 353.97,
+      "volumeRatio": 0.97,
+      "high20": 398.5,
+      "atr": 17.32,
+      "entry": 366.05,
+      "stop": 340.07,
+      "target": 408.04,
+      "score": 77.56
     },
     {
       "symbol": "JYOTIRES",
@@ -2621,7 +2641,7 @@
       "entry": 972.35,
       "stop": 906.61,
       "target": 1169.56,
-      "score": 77.4
+      "score": 77.36
     },
     {
       "symbol": "AXISBANK",
@@ -2641,7 +2661,27 @@
       "entry": 1380.8,
       "stop": 1337.21,
       "target": 1432.48,
-      "score": 76.88
+      "score": 77.02
+    },
+    {
+      "symbol": "FRONTSP",
+      "name": "Frontier Springs Limited",
+      "sector": "Industrials",
+      "marketCapCr": 1695,
+      "suggestionDate": "2026-11-19",
+      "close": 1434.6,
+      "change5Pct": -7.82,
+      "change20Pct": 10.3,
+      "rsi": 61.86,
+      "ema20": 1399.4,
+      "ema50": 1359.82,
+      "volumeRatio": 0.2,
+      "high20": 1671.8,
+      "atr": 73.96,
+      "entry": 1434.6,
+      "stop": 1323.65,
+      "target": 1688.52,
+      "score": 76.92
     },
     {
       "symbol": "SIGNATURE",
@@ -2661,7 +2701,7 @@
       "entry": 849.15,
       "stop": 797.5,
       "target": 1004.09,
-      "score": 76.88
+      "score": 76.86
     },
     {
       "symbol": "VRLLOG",
@@ -2681,27 +2721,7 @@
       "entry": 341.3,
       "stop": 306.12,
       "target": 353.8,
-      "score": 76.88
-    },
-    {
-      "symbol": "TTKPRESTIG",
-      "name": "TTK Prestige Limited",
-      "sector": "Consumer Cyclical",
-      "marketCapCr": 7606,
-      "suggestionDate": "2026-11-19",
-      "close": 555.3,
-      "change5Pct": -4.24,
-      "change20Pct": 8.07,
-      "rsi": 58.16,
-      "ema20": 552.88,
-      "ema50": 549.78,
-      "volumeRatio": 0.18,
-      "high20": 630,
-      "atr": 24.59,
-      "entry": 555.3,
-      "stop": 518.41,
-      "target": 665.97,
-      "score": 76.77
+      "score": 76.86
     },
     {
       "symbol": "SARDAEN",
@@ -2721,27 +2741,27 @@
       "entry": 476.1,
       "stop": 454.24,
       "target": 541.67,
-      "score": 76.25
+      "score": 76.4
     },
     {
-      "symbol": "RATNAVEER",
-      "name": "Ratnaveer Precision Engineering Limited",
-      "sector": "Basic Materials",
-      "marketCapCr": 3081,
+      "symbol": "TTKPRESTIG",
+      "name": "TTK Prestige Limited",
+      "sector": "Consumer Cyclical",
+      "marketCapCr": 7606,
       "suggestionDate": "2026-11-19",
-      "close": 367.1,
-      "change5Pct": -1.56,
-      "change20Pct": 9.55,
-      "rsi": 58.89,
-      "ema20": 360.07,
-      "ema50": 333.81,
-      "volumeRatio": 0.49,
-      "high20": 389.9,
-      "atr": 16.21,
-      "entry": 367.1,
-      "stop": 342.78,
-      "target": 393.8,
-      "score": 76.13
+      "close": 555.3,
+      "change5Pct": -4.24,
+      "change20Pct": 8.07,
+      "rsi": 58.16,
+      "ema20": 552.88,
+      "ema50": 549.78,
+      "volumeRatio": 0.18,
+      "high20": 630,
+      "atr": 24.59,
+      "entry": 555.3,
+      "stop": 518.41,
+      "target": 665.97,
+      "score": 76.28
     },
     {
       "symbol": "CEMPRO",
@@ -2764,24 +2784,24 @@
       "score": 75.68
     },
     {
-      "symbol": "NUVAMA",
-      "name": "Nuvama Wealth Management Limited",
-      "sector": "Financial Services",
-      "marketCapCr": 33859,
+      "symbol": "RATNAVEER",
+      "name": "Ratnaveer Precision Engineering Limited",
+      "sector": "Basic Materials",
+      "marketCapCr": 3081,
       "suggestionDate": "2026-11-19",
-      "close": 1834.6,
-      "change5Pct": -2.74,
-      "change20Pct": 8.18,
-      "rsi": 55.33,
-      "ema20": 1822.82,
-      "ema50": 1783.01,
-      "volumeRatio": 0.48,
-      "high20": 1964.3,
-      "atr": 88.14,
-      "entry": 1834.6,
-      "stop": 1702.39,
-      "target": 2086.66,
-      "score": 75.48
+      "close": 367.1,
+      "change5Pct": -1.56,
+      "change20Pct": 9.55,
+      "rsi": 58.89,
+      "ema20": 360.07,
+      "ema50": 333.81,
+      "volumeRatio": 0.49,
+      "high20": 389.9,
+      "atr": 16.21,
+      "entry": 367.1,
+      "stop": 342.78,
+      "target": 393.8,
+      "score": 75.64
     },
     {
       "symbol": "WELSPUNLIV",
@@ -2804,44 +2824,44 @@
       "score": 75.34
     },
     {
-      "symbol": "MARICO",
-      "name": "Marico Limited",
-      "sector": "Consumer Defensive",
-      "marketCapCr": 119264,
+      "symbol": "MCX",
+      "name": "Multi Commodity Exchange of India Limited",
+      "sector": "Financial Services",
+      "marketCapCr": 92770,
       "suggestionDate": "2026-11-19",
-      "close": 918.8,
-      "change5Pct": 1.86,
-      "change20Pct": 18.46,
-      "rsi": 76.95,
-      "ema20": 871.5,
-      "ema50": 841.6,
-      "volumeRatio": 0.68,
-      "high20": 925,
-      "atr": 22.34,
-      "entry": 918.8,
-      "stop": 885.29,
-      "target": 1019.34,
+      "close": 3645,
+      "change5Pct": 0.56,
+      "change20Pct": 18.08,
+      "rsi": 69.35,
+      "ema20": 3486.67,
+      "ema50": 3334.26,
+      "volumeRatio": 0.88,
+      "high20": 3774,
+      "atr": 139.9,
+      "entry": 3645,
+      "stop": 3435.15,
+      "target": 3811.74,
       "score": 75
     },
     {
-      "symbol": "HLEGLAS",
-      "name": "HLE Glascoat Limited",
-      "sector": "Industrials",
-      "marketCapCr": 2901,
+      "symbol": "NUVAMA",
+      "name": "Nuvama Wealth Management Limited",
+      "sector": "Financial Services",
+      "marketCapCr": 33859,
       "suggestionDate": "2026-11-19",
-      "close": 417.7,
-      "change5Pct": -8.01,
+      "close": 1834.6,
+      "change5Pct": -2.74,
       "change20Pct": 8.18,
-      "rsi": 47.73,
-      "ema20": 420.89,
-      "ema50": 410.8,
-      "volumeRatio": 0.31,
-      "high20": 464,
-      "atr": 19.87,
-      "entry": 417.7,
-      "stop": 387.89,
-      "target": 507.12,
-      "score": 74.84
+      "rsi": 55.33,
+      "ema20": 1822.82,
+      "ema50": 1783.01,
+      "volumeRatio": 0.48,
+      "high20": 1964.3,
+      "atr": 88.14,
+      "entry": 1834.6,
+      "stop": 1702.39,
+      "target": 2086.66,
+      "score": 75
     },
     {
       "symbol": "SJS",
@@ -2861,7 +2881,7 @@
       "entry": 2246.8,
       "stop": 2094.91,
       "target": 2615.9,
-      "score": 74.69
+      "score": 74.84
     },
     {
       "symbol": "PTL",
@@ -2881,7 +2901,47 @@
       "entry": 39.88,
       "stop": 38.66,
       "target": 43.55,
-      "score": 74.69
+      "score": 74.84
+    },
+    {
+      "symbol": "MARICO",
+      "name": "Marico Limited",
+      "sector": "Consumer Defensive",
+      "marketCapCr": 119264,
+      "suggestionDate": "2026-11-19",
+      "close": 918.8,
+      "change5Pct": 1.86,
+      "change20Pct": 18.46,
+      "rsi": 76.95,
+      "ema20": 871.5,
+      "ema50": 841.6,
+      "volumeRatio": 0.68,
+      "high20": 925,
+      "atr": 22.34,
+      "entry": 918.8,
+      "stop": 885.29,
+      "target": 1019.34,
+      "score": 74.66
+    },
+    {
+      "symbol": "HLEGLAS",
+      "name": "HLE Glascoat Limited",
+      "sector": "Industrials",
+      "marketCapCr": 2901,
+      "suggestionDate": "2026-11-19",
+      "close": 417.7,
+      "change5Pct": -8.01,
+      "change20Pct": 8.18,
+      "rsi": 47.73,
+      "ema20": 420.89,
+      "ema50": 410.8,
+      "volumeRatio": 0.31,
+      "high20": 464,
+      "atr": 19.87,
+      "entry": 417.7,
+      "stop": 387.89,
+      "target": 507.12,
+      "score": 74.36
     },
     {
       "symbol": "GLENMARK",
@@ -2901,7 +2961,7 @@
       "entry": 2608.5,
       "stop": 2470.44,
       "target": 2741.14,
-      "score": 74.66
+      "score": 74.32
     },
     {
       "symbol": "GROWW",
@@ -2921,7 +2981,7 @@
       "entry": 220.89,
       "stop": 207.7,
       "target": 235.73,
-      "score": 74.32
+      "score": 73.99
     },
     {
       "symbol": "GRPLTD",
@@ -2941,7 +3001,7 @@
       "entry": 1892.4,
       "stop": 1741.7,
       "target": 2164.83,
-      "score": 74.19
+      "score": 73.72
     },
     {
       "symbol": "SKYWAYS",
@@ -2961,47 +3021,7 @@
       "entry": 123.35,
       "stop": 113.3,
       "target": 139.68,
-      "score": 73.97
-    },
-    {
-      "symbol": "ETERNAL",
-      "name": "Eternal Limited",
-      "sector": "Consumer Cyclical",
-      "marketCapCr": 337971,
-      "suggestionDate": "2026-11-19",
-      "close": 366.85,
-      "change5Pct": 0.69,
-      "change20Pct": 17.45,
-      "rsi": 72.98,
-      "ema20": 353.25,
-      "ema50": 337.35,
-      "volumeRatio": 1.07,
-      "high20": 378,
-      "atr": 9.44,
-      "entry": 366.85,
-      "stop": 352.7,
-      "target": 381.78,
-      "score": 73.63
-    },
-    {
-      "symbol": "BEML",
-      "name": "BEML Limited",
-      "sector": "Industrials",
-      "marketCapCr": 16948,
-      "suggestionDate": "2026-11-19",
-      "close": 2034.8,
-      "change5Pct": -4.27,
-      "change20Pct": 7.76,
-      "rsi": 54.83,
-      "ema20": 2025.63,
-      "ema50": 1991.5,
-      "volumeRatio": 0.3,
-      "high20": 2236,
-      "atr": 84.36,
-      "entry": 2034.8,
-      "stop": 1908.26,
-      "target": 2258.36,
-      "score": 73.55
+      "score": 73.65
     },
     {
       "symbol": "SBIN",
@@ -3021,7 +3041,7 @@
       "entry": 1156,
       "stop": 1115.12,
       "target": 1247.05,
-      "score": 73.44
+      "score": 73.6
     },
     {
       "symbol": "GAIL",
@@ -3041,7 +3061,47 @@
       "entry": 192.1,
       "stop": 185.7,
       "target": 211.29,
-      "score": 73.44
+      "score": 73.6
+    },
+    {
+      "symbol": "ETERNAL",
+      "name": "Eternal Limited",
+      "sector": "Consumer Cyclical",
+      "marketCapCr": 337971,
+      "suggestionDate": "2026-11-19",
+      "close": 366.85,
+      "change5Pct": 0.69,
+      "change20Pct": 17.45,
+      "rsi": 72.98,
+      "ema20": 353.25,
+      "ema50": 337.35,
+      "volumeRatio": 1.07,
+      "high20": 378,
+      "atr": 9.44,
+      "entry": 366.85,
+      "stop": 352.7,
+      "target": 381.78,
+      "score": 73.31
+    },
+    {
+      "symbol": "BEML",
+      "name": "BEML Limited",
+      "sector": "Industrials",
+      "marketCapCr": 16948,
+      "suggestionDate": "2026-11-19",
+      "close": 2034.8,
+      "change5Pct": -4.27,
+      "change20Pct": 7.76,
+      "rsi": 54.83,
+      "ema20": 2025.63,
+      "ema50": 1991.5,
+      "volumeRatio": 0.3,
+      "high20": 2236,
+      "atr": 84.36,
+      "entry": 2034.8,
+      "stop": 1908.26,
+      "target": 2258.36,
+      "score": 73.08
     },
     {
       "symbol": "PGIL",
@@ -3061,67 +3121,7 @@
       "entry": 1404.1,
       "stop": 1294.14,
       "target": 1464.5,
-      "score": 73.29
-    },
-    {
-      "symbol": "ALICON",
-      "name": "Alicon Castalloy Limited",
-      "sector": "Industrials",
-      "marketCapCr": 1664,
-      "suggestionDate": "2026-11-19",
-      "close": 1018.5,
-      "change5Pct": 22.41,
-      "change20Pct": 18.64,
-      "rsi": 75.5,
-      "ema20": 901.52,
-      "ema50": 839.72,
-      "volumeRatio": 0.36,
-      "high20": 1033.95,
-      "atr": 48.73,
-      "entry": 1018.5,
-      "stop": 945.4,
-      "target": 1237.79,
-      "score": 72.95
-    },
-    {
-      "symbol": "MANAKSTEEL",
-      "name": "Manaksia Steels Limited",
-      "sector": "Basic Materials",
-      "marketCapCr": 769,
-      "suggestionDate": "2026-11-19",
-      "close": 117.34,
-      "change5Pct": -1.99,
-      "change20Pct": 7.32,
-      "rsi": 54.98,
-      "ema20": 117.31,
-      "ema50": 110.09,
-      "volumeRatio": 0.63,
-      "high20": 132.3,
-      "atr": 7.58,
-      "entry": 117.34,
-      "stop": 105.97,
-      "target": 133.62,
-      "score": 72.9
-    },
-    {
-      "symbol": "LODHA",
-      "name": "Lodha Developers Limited",
-      "sector": "Real Estate",
-      "marketCapCr": 120180,
-      "suggestionDate": "2026-11-19",
-      "close": 1202.7,
-      "change5Pct": -1.9,
-      "change20Pct": 18.49,
-      "rsi": 71.65,
-      "ema20": 1145.6,
-      "ema50": 1126.07,
-      "volumeRatio": 0.42,
-      "high20": 1242.6,
-      "atr": 49.04,
-      "entry": 1202.7,
-      "stop": 1129.14,
-      "target": 1358.4,
-      "score": 72.6
+      "score": 72.97
     },
     {
       "symbol": "COLPAL",
@@ -3141,27 +3141,67 @@
       "entry": 1776.6,
       "stop": 1711.05,
       "target": 1973.25,
-      "score": 72.5
+      "score": 72.67
     },
     {
-      "symbol": "DOLPHIN",
-      "name": "Dolphin Offshore Enterprises (India) Limited",
-      "sector": "Energy",
-      "marketCapCr": 2579,
+      "symbol": "ALICON",
+      "name": "Alicon Castalloy Limited",
+      "sector": "Industrials",
+      "marketCapCr": 1664,
       "suggestionDate": "2026-11-19",
-      "close": 644.8,
-      "change5Pct": -1.91,
-      "change20Pct": 8.22,
-      "rsi": 57.52,
-      "ema20": 638.68,
-      "ema50": 619.48,
-      "volumeRatio": 0.31,
-      "high20": 694.9,
-      "atr": 31.26,
-      "entry": 644.8,
-      "stop": 597.91,
-      "target": 757,
-      "score": 72.26
+      "close": 1018.5,
+      "change5Pct": 22.41,
+      "change20Pct": 18.64,
+      "rsi": 75.5,
+      "ema20": 901.52,
+      "ema50": 839.72,
+      "volumeRatio": 0.36,
+      "high20": 1033.95,
+      "atr": 48.73,
+      "entry": 1018.5,
+      "stop": 945.4,
+      "target": 1237.79,
+      "score": 72.64
+    },
+    {
+      "symbol": "MANAKSTEEL",
+      "name": "Manaksia Steels Limited",
+      "sector": "Basic Materials",
+      "marketCapCr": 769,
+      "suggestionDate": "2026-11-19",
+      "close": 117.34,
+      "change5Pct": -1.99,
+      "change20Pct": 7.32,
+      "rsi": 54.98,
+      "ema20": 117.31,
+      "ema50": 110.09,
+      "volumeRatio": 0.63,
+      "high20": 132.3,
+      "atr": 7.58,
+      "entry": 117.34,
+      "stop": 105.97,
+      "target": 133.62,
+      "score": 72.44
+    },
+    {
+      "symbol": "LODHA",
+      "name": "Lodha Developers Limited",
+      "sector": "Real Estate",
+      "marketCapCr": 120180,
+      "suggestionDate": "2026-11-19",
+      "close": 1202.7,
+      "change5Pct": -1.9,
+      "change20Pct": 18.49,
+      "rsi": 71.65,
+      "ema20": 1145.6,
+      "ema50": 1126.07,
+      "volumeRatio": 0.42,
+      "high20": 1242.6,
+      "atr": 49.04,
+      "entry": 1202.7,
+      "stop": 1129.14,
+      "target": 1358.4,
+      "score": 72.3
     },
     {
       "symbol": "MBAPL",
@@ -3181,7 +3221,7 @@
       "entry": 192.31,
       "stop": 180.3,
       "target": 211.09,
-      "score": 72.09
+      "score": 71.79
     },
     {
       "symbol": "KSHINTL",
@@ -3201,27 +3241,47 @@
       "entry": 1050.7,
       "stop": 966.64,
       "target": 1209.98,
-      "score": 72.09
+      "score": 71.79
     },
     {
-      "symbol": "ADANIPORTS",
-      "name": "Adani Ports and Special Economic Zone Limited",
-      "sector": "Industrials",
-      "marketCapCr": 441692,
+      "symbol": "DOLPHIN",
+      "name": "Dolphin Offshore Enterprises (India) Limited",
+      "sector": "Energy",
+      "marketCapCr": 2579,
       "suggestionDate": "2026-11-19",
-      "close": 1917.1,
-      "change5Pct": -0.67,
-      "change20Pct": 9.62,
-      "rsi": 57.18,
-      "ema20": 1870.84,
-      "ema50": 1816.87,
-      "volumeRatio": 0.56,
-      "high20": 1979,
-      "atr": 46.11,
-      "entry": 1917.1,
-      "stop": 1847.94,
-      "target": 1998.79,
-      "score": 71.61
+      "close": 644.8,
+      "change5Pct": -1.91,
+      "change20Pct": 8.22,
+      "rsi": 57.52,
+      "ema20": 638.68,
+      "ema50": 619.48,
+      "volumeRatio": 0.31,
+      "high20": 694.9,
+      "atr": 31.26,
+      "entry": 644.8,
+      "stop": 597.91,
+      "target": 757,
+      "score": 71.79
+    },
+    {
+      "symbol": "TVSMOTOR",
+      "name": "TVS Motor Company Limited",
+      "sector": "Consumer Cyclical",
+      "marketCapCr": 218671,
+      "suggestionDate": "2026-11-19",
+      "close": 4601.4,
+      "change5Pct": 2.25,
+      "change20Pct": 15.25,
+      "rsi": 67.87,
+      "ema20": 4359.24,
+      "ema50": 4225.27,
+      "volumeRatio": 1.84,
+      "high20": 4636.1,
+      "atr": 119.28,
+      "entry": 4601.4,
+      "stop": 4422.48,
+      "target": 5138.15,
+      "score": 71.43
     },
     {
       "symbol": "TIMETECHNO",
@@ -3241,27 +3301,27 @@
       "entry": 191.89,
       "stop": 180.06,
       "target": 219.36,
-      "score": 71.58
+      "score": 71.28
     },
     {
-      "symbol": "M&M",
-      "name": "Mahindra & Mahindra Limited",
-      "sector": "Consumer Cyclical",
-      "marketCapCr": 421347,
+      "symbol": "ADANIPORTS",
+      "name": "Adani Ports and Special Economic Zone Limited",
+      "sector": "Industrials",
+      "marketCapCr": 441692,
       "suggestionDate": "2026-11-19",
-      "close": 3509,
-      "change5Pct": 3.24,
-      "change20Pct": 21.46,
-      "rsi": 79.14,
-      "ema20": 3195.68,
-      "ema50": 3108.48,
-      "volumeRatio": 1.56,
-      "high20": 3525.9,
-      "atr": 101.09,
-      "entry": 3509,
-      "stop": 3357.36,
-      "target": 3878.3,
-      "score": 71.25
+      "close": 1917.1,
+      "change5Pct": -0.67,
+      "change20Pct": 9.62,
+      "rsi": 57.18,
+      "ema20": 1870.84,
+      "ema50": 1816.87,
+      "volumeRatio": 0.56,
+      "high20": 1979,
+      "atr": 46.11,
+      "entry": 1917.1,
+      "stop": 1847.94,
+      "target": 1998.79,
+      "score": 71.15
     },
     {
       "symbol": "MODIS",
@@ -3281,27 +3341,27 @@
       "entry": 457.25,
       "stop": 427.95,
       "target": 545.14,
-      "score": 71.23
+      "score": 70.95
     },
     {
-      "symbol": "PRINCEPIPE",
-      "name": "Prince Pipes and Fittings Limited",
-      "sector": "Industrials",
-      "marketCapCr": 3211,
+      "symbol": "M&M",
+      "name": "Mahindra & Mahindra Limited",
+      "sector": "Consumer Cyclical",
+      "marketCapCr": 421347,
       "suggestionDate": "2026-11-19",
-      "close": 290.4,
-      "change5Pct": -8.94,
-      "change20Pct": 7.64,
-      "rsi": 62.97,
-      "ema20": 292.03,
-      "ema50": 280.78,
-      "volumeRatio": 0.31,
-      "high20": 325.9,
-      "atr": 16.38,
-      "entry": 290.4,
-      "stop": 265.83,
-      "target": 329.16,
-      "score": 70.97
+      "close": 3509,
+      "change5Pct": 3.24,
+      "change20Pct": 21.46,
+      "rsi": 79.14,
+      "ema20": 3195.68,
+      "ema50": 3108.48,
+      "volumeRatio": 1.56,
+      "high20": 3525.9,
+      "atr": 101.09,
+      "entry": 3509,
+      "stop": 3357.36,
+      "target": 3878.3,
+      "score": 70.81
     },
     {
       "symbol": "LENSKART",
@@ -3321,7 +3381,27 @@
       "entry": 741.65,
       "stop": 705.39,
       "target": 770.38,
-      "score": 70.89
+      "score": 70.61
+    },
+    {
+      "symbol": "PRINCEPIPE",
+      "name": "Prince Pipes and Fittings Limited",
+      "sector": "Industrials",
+      "marketCapCr": 3211,
+      "suggestionDate": "2026-11-19",
+      "close": 290.4,
+      "change5Pct": -8.94,
+      "change20Pct": 7.64,
+      "rsi": 62.97,
+      "ema20": 292.03,
+      "ema50": 280.78,
+      "volumeRatio": 0.31,
+      "high20": 325.9,
+      "atr": 16.38,
+      "entry": 290.4,
+      "stop": 265.83,
+      "target": 329.16,
+      "score": 70.51
     },
     {
       "symbol": "APOLLOPIPE",
@@ -3341,27 +3421,7 @@
       "entry": 554.95,
       "stop": 512.51,
       "target": 675.49,
-      "score": 70.63
-    },
-    {
-      "symbol": "JSWENERGY",
-      "name": "JSW Energy Limited",
-      "sector": "Utilities",
-      "marketCapCr": 94400,
-      "suggestionDate": "2026-11-19",
-      "close": 515,
-      "change5Pct": -0.89,
-      "change20Pct": 8.43,
-      "rsi": 54.17,
-      "ema20": 506.84,
-      "ema50": 507.35,
-      "volumeRatio": 0.4,
-      "high20": 527.7,
-      "atr": 11.39,
-      "entry": 515,
-      "stop": 497.92,
-      "target": 566.25,
-      "score": 70.32
+      "score": 70.19
     },
     {
       "symbol": "INDHOTEL",
@@ -3381,7 +3441,27 @@
       "entry": 889.65,
       "stop": 856,
       "target": 918.75,
-      "score": 70.21
+      "score": 69.93
+    },
+    {
+      "symbol": "JSWENERGY",
+      "name": "JSW Energy Limited",
+      "sector": "Utilities",
+      "marketCapCr": 94400,
+      "suggestionDate": "2026-11-19",
+      "close": 515,
+      "change5Pct": -0.89,
+      "change20Pct": 8.43,
+      "rsi": 54.17,
+      "ema20": 506.84,
+      "ema50": 507.35,
+      "volumeRatio": 0.4,
+      "high20": 527.7,
+      "atr": 11.39,
+      "entry": 515,
+      "stop": 497.92,
+      "target": 566.25,
+      "score": 69.87
     },
     {
       "symbol": "ADANIPOWER",
@@ -3401,7 +3481,7 @@
       "entry": 210.5,
       "stop": 203.41,
       "target": 231.78,
-      "score": 70
+      "score": 69.57
     },
     {
       "symbol": "SHARDAMOTR",
@@ -3421,27 +3501,7 @@
       "entry": 969.45,
       "stop": 894.78,
       "target": 1058.48,
-      "score": 69.86
-    },
-    {
-      "symbol": "UNIMECH",
-      "name": "Unimech Aerospace and Manufacturing Limited",
-      "sector": "Industrials",
-      "marketCapCr": 9453,
-      "suggestionDate": "2026-11-19",
-      "close": 1857.1,
-      "change5Pct": -6.24,
-      "change20Pct": 17.87,
-      "rsi": 61.47,
-      "ema20": 1790.37,
-      "ema50": 1693.59,
-      "volumeRatio": 0.51,
-      "high20": 2025.6,
-      "atr": 99.56,
-      "entry": 1857.1,
-      "stop": 1707.75,
-      "target": 2045.86,
-      "score": 69.52
+      "score": 69.43
     },
     {
       "symbol": "EMAMILTD",
@@ -3461,7 +3521,27 @@
       "entry": 425.1,
       "stop": 404.97,
       "target": 485.48,
-      "score": 69.38
+      "score": 68.94
+    },
+    {
+      "symbol": "UNIMECH",
+      "name": "Unimech Aerospace and Manufacturing Limited",
+      "sector": "Industrials",
+      "marketCapCr": 9453,
+      "suggestionDate": "2026-11-19",
+      "close": 1857.1,
+      "change5Pct": -6.24,
+      "change20Pct": 17.87,
+      "rsi": 61.47,
+      "ema20": 1790.37,
+      "ema50": 1693.59,
+      "volumeRatio": 0.51,
+      "high20": 2025.6,
+      "atr": 99.56,
+      "entry": 1857.1,
+      "stop": 1707.75,
+      "target": 2045.86,
+      "score": 68.92
     },
     {
       "symbol": "TITAN",
@@ -3481,7 +3561,7 @@
       "entry": 4700,
       "stop": 4491.73,
       "target": 5238.57,
-      "score": 69.35
+      "score": 68.91
     },
     {
       "symbol": "NYKAA",
@@ -3501,7 +3581,7 @@
       "entry": 357.8,
       "stop": 343.08,
       "target": 371.98,
-      "score": 69.35
+      "score": 68.91
     },
     {
       "symbol": "ENGINERSIN",
@@ -3521,7 +3601,7 @@
       "entry": 307.5,
       "stop": 285.14,
       "target": 326.89,
-      "score": 69.18
+      "score": 68.58
     },
     {
       "symbol": "PNB",
@@ -3541,27 +3621,7 @@
       "entry": 154.85,
       "stop": 148.06,
       "target": 175.23,
-      "score": 68.75
-    },
-    {
-      "symbol": "ETHOSLTD",
-      "name": "Ethos Limited",
-      "sector": "Consumer Cyclical",
-      "marketCapCr": 7468,
-      "suggestionDate": "2026-11-19",
-      "close": 2790.9,
-      "change5Pct": -2.23,
-      "change20Pct": 11.41,
-      "rsi": 66.73,
-      "ema20": 2697.52,
-      "ema50": 2656.43,
-      "volumeRatio": 3.61,
-      "high20": 2945.9,
-      "atr": 118.41,
-      "entry": 2790.9,
-      "stop": 2613.29,
-      "target": 3278.36,
-      "score": 68.49
+      "score": 68.32
     },
     {
       "symbol": "BLISSGVS",
@@ -3581,27 +3641,27 @@
       "entry": 665.35,
       "stop": 616.11,
       "target": 747.3,
-      "score": 68.39
+      "score": 67.95
     },
     {
-      "symbol": "MAXESTATES",
-      "name": "Max Estates Limited",
-      "sector": "Real Estate",
-      "marketCapCr": 9466,
+      "symbol": "ETHOSLTD",
+      "name": "Ethos Limited",
+      "sector": "Consumer Cyclical",
+      "marketCapCr": 7468,
       "suggestionDate": "2026-11-19",
-      "close": 578.65,
-      "change5Pct": 1.6,
-      "change20Pct": 17.17,
-      "rsi": 71,
-      "ema20": 545.76,
-      "ema50": 531.93,
-      "volumeRatio": 0.7,
-      "high20": 591,
-      "atr": 23.7,
-      "entry": 578.65,
-      "stop": 543.1,
-      "target": 659.33,
-      "score": 68.15
+      "close": 2790.9,
+      "change5Pct": -2.23,
+      "change20Pct": 11.41,
+      "rsi": 66.73,
+      "ema20": 2697.52,
+      "ema50": 2656.43,
+      "volumeRatio": 3.61,
+      "high20": 2945.9,
+      "atr": 118.41,
+      "entry": 2790.9,
+      "stop": 2613.29,
+      "target": 3278.36,
+      "score": 67.91
     },
     {
       "symbol": "GFLLIMITED",
@@ -3621,27 +3681,27 @@
       "entry": 59.65,
       "stop": 55.62,
       "target": 64.63,
-      "score": 68.13
+      "score": 67.7
     },
     {
-      "symbol": "SHRJAGP",
-      "name": "Shri Jagdamba Polymers Limited",
-      "sector": "Consumer Cyclical",
-      "marketCapCr": 653,
+      "symbol": "MAXESTATES",
+      "name": "Max Estates Limited",
+      "sector": "Real Estate",
+      "marketCapCr": 9466,
       "suggestionDate": "2026-11-19",
-      "close": 745.75,
-      "change5Pct": -5.53,
-      "change20Pct": 17.44,
-      "rsi": 65.5,
-      "ema20": 728.62,
-      "ema50": 697.48,
-      "volumeRatio": 0.56,
-      "high20": 810,
-      "atr": 34.98,
-      "entry": 745.75,
-      "stop": 693.28,
-      "target": 818.1,
-      "score": 67.81
+      "close": 578.65,
+      "change5Pct": 1.6,
+      "change20Pct": 17.17,
+      "rsi": 71,
+      "ema20": 545.76,
+      "ema50": 531.93,
+      "volumeRatio": 0.7,
+      "high20": 591,
+      "atr": 23.7,
+      "entry": 578.65,
+      "stop": 543.1,
+      "target": 659.33,
+      "score": 67.57
     },
     {
       "symbol": "LALPATHLAB",
@@ -3661,7 +3721,27 @@
       "entry": 1963.2,
       "stop": 1859.3,
       "target": 2099.79,
-      "score": 67.74
+      "score": 67.31
+    },
+    {
+      "symbol": "SHRJAGP",
+      "name": "Shri Jagdamba Polymers Limited",
+      "sector": "Consumer Cyclical",
+      "marketCapCr": 653,
+      "suggestionDate": "2026-11-19",
+      "close": 745.75,
+      "change5Pct": -5.53,
+      "change20Pct": 17.44,
+      "rsi": 65.5,
+      "ema20": 728.62,
+      "ema50": 697.48,
+      "volumeRatio": 0.56,
+      "high20": 810,
+      "atr": 34.98,
+      "entry": 745.75,
+      "stop": 693.28,
+      "target": 818.1,
+      "score": 67.23
     },
     {
       "symbol": "ITC",
@@ -3681,7 +3761,7 @@
       "entry": 301,
       "stop": 290.39,
       "target": 332.84,
-      "score": 67.19
+      "score": 66.77
     },
     {
       "symbol": "SAYAJIHOTL",
@@ -3701,7 +3781,7 @@
       "entry": 316.9,
       "stop": 301.52,
       "target": 363.04,
-      "score": 67.19
+      "score": 66.77
     },
     {
       "symbol": "PROTEAN",
@@ -3721,7 +3801,7 @@
       "entry": 712.1,
       "stop": 652.58,
       "target": 866.38,
-      "score": 66.95
+      "score": 66.39
     },
     {
       "symbol": "ALGOQUANT",
@@ -3741,7 +3821,7 @@
       "entry": 84.12,
       "stop": 78.75,
       "target": 88.26,
-      "score": 66.95
+      "score": 66.39
     },
     {
       "symbol": "SAMHI",
@@ -3761,7 +3841,7 @@
       "entry": 157.71,
       "stop": 147,
       "target": 189.84,
-      "score": 66.77
+      "score": 66.35
     },
     {
       "symbol": "ACGL",
@@ -3781,7 +3861,7 @@
       "entry": 1805,
       "stop": 1723.04,
       "target": 1981.52,
-      "score": 66.77
+      "score": 66.35
     },
     {
       "symbol": "FORCEMOT",
@@ -3801,7 +3881,7 @@
       "entry": 20443,
       "stop": 19308.36,
       "target": 23846.93,
-      "score": 66.25
+      "score": 65.84
     },
     {
       "symbol": "ANTHEM",
@@ -3821,7 +3901,7 @@
       "entry": 936.8,
       "stop": 892.95,
       "target": 998.99,
-      "score": 66.1
+      "score": 65.54
     },
     {
       "symbol": "ZYDUSLIFE",
@@ -3841,27 +3921,7 @@
       "entry": 1202.9,
       "stop": 1154.41,
       "target": 1279.27,
-      "score": 65.81
-    },
-    {
-      "symbol": "STEL",
-      "name": "STEL Holdings Limited",
-      "sector": "Financial Services",
-      "marketCapCr": 1111,
-      "suggestionDate": "2026-11-19",
-      "close": 602.05,
-      "change5Pct": -2.43,
-      "change20Pct": 17.94,
-      "rsi": 69.77,
-      "ema20": 576.68,
-      "ema50": 569.74,
-      "volumeRatio": 0.2,
-      "high20": 699.9,
-      "atr": 38.69,
-      "entry": 602.05,
-      "stop": 544.02,
-      "target": 706.9,
-      "score": 65.75
+      "score": 65.38
     },
     {
       "symbol": "HAVELLS",
@@ -3881,7 +3941,27 @@
       "entry": 1200.8,
       "stop": 1151.39,
       "target": 1349.04,
-      "score": 65.63
+      "score": 65.22
+    },
+    {
+      "symbol": "STEL",
+      "name": "STEL Holdings Limited",
+      "sector": "Financial Services",
+      "marketCapCr": 1111,
+      "suggestionDate": "2026-11-19",
+      "close": 602.05,
+      "change5Pct": -2.43,
+      "change20Pct": 17.94,
+      "rsi": 69.77,
+      "ema20": 576.68,
+      "ema50": 569.74,
+      "volumeRatio": 0.2,
+      "high20": 699.9,
+      "atr": 38.69,
+      "entry": 602.05,
+      "stop": 544.02,
+      "target": 706.9,
+      "score": 65.2
     },
     {
       "symbol": "KOLTEPATIL",
@@ -3901,27 +3981,7 @@
       "entry": 447.15,
       "stop": 415.99,
       "target": 540.62,
-      "score": 65.16
-    },
-    {
-      "symbol": "SHREEJISPG",
-      "name": "Shreeji Shipping Global Limited",
-      "sector": "Industrials",
-      "marketCapCr": 14765,
-      "suggestionDate": "2026-11-19",
-      "close": 906.3,
-      "change5Pct": 2.18,
-      "change20Pct": 16.29,
-      "rsi": 71.93,
-      "ema20": 869.15,
-      "ema50": 804.66,
-      "volumeRatio": 0.95,
-      "high20": 924.75,
-      "atr": 24.88,
-      "entry": 906.3,
-      "stop": 868.98,
-      "target": 934,
-      "score": 65.07
+      "score": 64.74
     },
     {
       "symbol": "MEESHO",
@@ -3941,7 +4001,27 @@
       "entry": 258.85,
       "stop": 246.59,
       "target": 295.62,
-      "score": 65
+      "score": 64.6
+    },
+    {
+      "symbol": "SHREEJISPG",
+      "name": "Shreeji Shipping Global Limited",
+      "sector": "Industrials",
+      "marketCapCr": 14765,
+      "suggestionDate": "2026-11-19",
+      "close": 906.3,
+      "change5Pct": 2.18,
+      "change20Pct": 16.29,
+      "rsi": 71.93,
+      "ema20": 869.15,
+      "ema50": 804.66,
+      "volumeRatio": 0.95,
+      "high20": 924.75,
+      "atr": 24.88,
+      "entry": 906.3,
+      "stop": 868.98,
+      "target": 934,
+      "score": 64.53
     },
     {
       "symbol": "SBC",
@@ -3961,7 +4041,7 @@
       "entry": 68.49,
       "stop": 65.7,
       "target": 72,
-      "score": 64.52
+      "score": 64.1
     },
     {
       "symbol": "MSUMI",
@@ -3981,7 +4061,7 @@
       "entry": 41.25,
       "stop": 39.36,
       "target": 46.93,
-      "score": 64.38
+      "score": 63.98
     },
     {
       "symbol": "BALUFORGE",
@@ -4001,7 +4081,7 @@
       "entry": 526.5,
       "stop": 490.19,
       "target": 635.43,
-      "score": 64.38
+      "score": 63.85
     },
     {
       "symbol": "NRL",
@@ -4021,7 +4101,7 @@
       "entry": 187.92,
       "stop": 172.33,
       "target": 202,
-      "score": 64.04
+      "score": 63.51
     },
     {
       "symbol": "DIFFNKG",
@@ -4041,7 +4121,7 @@
       "entry": 436.7,
       "stop": 405.36,
       "target": 525.1,
-      "score": 63.87
+      "score": 63.46
     },
     {
       "symbol": "SMLMAH",
@@ -4061,7 +4141,7 @@
       "entry": 5677.6,
       "stop": 5313.9,
       "target": 6768.69,
-      "score": 63.75
+      "score": 63.35
     },
     {
       "symbol": "JYOTICNC",
@@ -4081,7 +4161,7 @@
       "entry": 1071.75,
       "stop": 998.46,
       "target": 1145.95,
-      "score": 63.7
+      "score": 63.18
     },
     {
       "symbol": "HDFCAMC",
@@ -4101,7 +4181,7 @@
       "entry": 2689.3,
       "stop": 2567.22,
       "target": 2930.52,
-      "score": 63.36
+      "score": 62.84
     },
     {
       "symbol": "GRASIM",
@@ -4121,7 +4201,7 @@
       "entry": 3111.1,
       "stop": 2997.53,
       "target": 3445.21,
-      "score": 63.23
+      "score": 62.82
     },
     {
       "symbol": "MILKYMIST",
@@ -4141,7 +4221,7 @@
       "entry": 316.75,
       "stop": 296.51,
       "target": 345.82,
-      "score": 63.13
+      "score": 62.73
     },
     {
       "symbol": "KRBL",
@@ -4161,27 +4241,7 @@
       "entry": 421.55,
       "stop": 394.05,
       "target": 457.33,
-      "score": 63.01
-    },
-    {
-      "symbol": "KPRMILL",
-      "name": "K.P.R. Mill Limited",
-      "sector": "Consumer Cyclical",
-      "marketCapCr": 40740,
-      "suggestionDate": "2026-11-19",
-      "close": 1189.4,
-      "change5Pct": 3.44,
-      "change20Pct": 15.5,
-      "rsi": 74.96,
-      "ema20": 1150.64,
-      "ema50": 1123.64,
-      "volumeRatio": 1.11,
-      "high20": 1247.3,
-      "atr": 41.11,
-      "entry": 1189.4,
-      "stop": 1127.74,
-      "target": 1347.34,
-      "score": 62.67
+      "score": 62.5
     },
     {
       "symbol": "CSLFINANCE",
@@ -4201,7 +4261,27 @@
       "entry": 231.1,
       "stop": 217.51,
       "target": 271.86,
-      "score": 62.58
+      "score": 62.18
+    },
+    {
+      "symbol": "KPRMILL",
+      "name": "K.P.R. Mill Limited",
+      "sector": "Consumer Cyclical",
+      "marketCapCr": 40740,
+      "suggestionDate": "2026-11-19",
+      "close": 1189.4,
+      "change5Pct": 3.44,
+      "change20Pct": 15.5,
+      "rsi": 74.96,
+      "ema20": 1150.64,
+      "ema50": 1123.64,
+      "volumeRatio": 1.11,
+      "high20": 1247.3,
+      "atr": 41.11,
+      "entry": 1189.4,
+      "stop": 1127.74,
+      "target": 1347.34,
+      "score": 62.16
     },
     {
       "symbol": "SAFARI",
@@ -4221,7 +4301,7 @@
       "entry": 1405,
       "stop": 1310.32,
       "target": 1689.05,
-      "score": 62.5
+      "score": 62.11
     },
     {
       "symbol": "KMEW",
@@ -4241,27 +4321,7 @@
       "entry": 728.4,
       "stop": 664.86,
       "target": 781.13,
-      "score": 62.33
-    },
-    {
-      "symbol": "GHCL",
-      "name": "GHCL Limited",
-      "sector": "Basic Materials",
-      "marketCapCr": 4158,
-      "suggestionDate": "2026-11-19",
-      "close": 451.3,
-      "change5Pct": 1.19,
-      "change20Pct": 16.27,
-      "rsi": 77.24,
-      "ema20": 426.82,
-      "ema50": 418.77,
-      "volumeRatio": 0.66,
-      "high20": 460,
-      "atr": 15.57,
-      "entry": 451.3,
-      "stop": 427.95,
-      "target": 521.36,
-      "score": 61.99
+      "score": 61.82
     },
     {
       "symbol": "GRAPHITE",
@@ -4281,7 +4341,27 @@
       "entry": 785.25,
       "stop": 746.88,
       "target": 883.09,
-      "score": 61.94
+      "score": 61.54
+    },
+    {
+      "symbol": "GHCL",
+      "name": "GHCL Limited",
+      "sector": "Basic Materials",
+      "marketCapCr": 4158,
+      "suggestionDate": "2026-11-19",
+      "close": 451.3,
+      "change5Pct": 1.19,
+      "change20Pct": 16.27,
+      "rsi": 77.24,
+      "ema20": 426.82,
+      "ema50": 418.77,
+      "volumeRatio": 0.66,
+      "high20": 460,
+      "atr": 15.57,
+      "entry": 451.3,
+      "stop": 427.95,
+      "target": 521.36,
+      "score": 61.49
     },
     {
       "symbol": "WINDMACHIN",
@@ -4301,7 +4381,7 @@
       "entry": 313.45,
       "stop": 294.11,
       "target": 347.34,
-      "score": 61.88
+      "score": 61.49
     },
     {
       "symbol": "TVSSCS",
@@ -4321,13 +4401,13 @@
       "entry": 133.45,
       "stop": 123.59,
       "target": 151.4,
-      "score": 61.47
+      "score": 60.98
     },
     {
       "symbol": "BAJAJ-AUTO",
       "name": "Bajaj Auto Limited",
       "sector": "Consumer Cyclical",
-      "marketCapCr": 297255,
+      "marketCapCr": 297011,
       "suggestionDate": "2026-11-19",
       "close": 10817,
       "change5Pct": -1.17,
@@ -4341,7 +4421,7 @@
       "entry": 10817,
       "stop": 10473.82,
       "target": 11846.54,
-      "score": 61.29
+      "score": 60.9
     },
     {
       "symbol": "QPOWER",
@@ -4361,7 +4441,7 @@
       "entry": 1619.1,
       "stop": 1502.08,
       "target": 1697.81,
-      "score": 61.25
+      "score": 60.87
     },
     {
       "symbol": "SANGAMIND",
@@ -4381,7 +4461,7 @@
       "entry": 676.95,
       "stop": 631.41,
       "target": 720.13,
-      "score": 60.96
+      "score": 60.47
     },
     {
       "symbol": "MAHASTEEL",
@@ -4401,7 +4481,7 @@
       "entry": 1437.5,
       "stop": 1315.97,
       "target": 1575.6,
-      "score": 60.65
+      "score": 60.26
     },
     {
       "symbol": "GKWLIMITED",
@@ -4421,7 +4501,7 @@
       "entry": 1700,
       "stop": 1611.74,
       "target": 1949.3,
-      "score": 60.62
+      "score": 60.25
     },
     {
       "symbol": "ULTRACEMCO",
@@ -4441,7 +4521,7 @@
       "entry": 12560,
       "stop": 12150.93,
       "target": 13241.1,
-      "score": 60.27
+      "score": 59.8
     },
     {
       "symbol": "BANKINDIA",
@@ -4461,7 +4541,7 @@
       "entry": 161.9,
       "stop": 155,
       "target": 180.14,
-      "score": 60
+      "score": 59.63
     },
     {
       "symbol": "JAGRAN",
@@ -4481,7 +4561,7 @@
       "entry": 64.46,
       "stop": 62.17,
       "target": 71.32,
-      "score": 60
+      "score": 59.62
     },
     {
       "symbol": "AETHER",
@@ -4501,7 +4581,7 @@
       "entry": 1696.5,
       "stop": 1587.5,
       "target": 1832.24,
-      "score": 59.93
+      "score": 59.46
     },
     {
       "symbol": "BSE",
@@ -4521,7 +4601,7 @@
       "entry": 3765,
       "stop": 3583.46,
       "target": 4309.63,
-      "score": 59.59
+      "score": 59.12
     },
     {
       "symbol": "MHRIL",
@@ -4541,7 +4621,7 @@
       "entry": 197.78,
       "stop": 187.62,
       "target": 228.27,
-      "score": 59.38
+      "score": 59.01
     },
     {
       "symbol": "KILITCH",
@@ -4561,7 +4641,7 @@
       "entry": 236.95,
       "stop": 215.43,
       "target": 270.58,
-      "score": 59.25
+      "score": 58.78
     },
     {
       "symbol": "CYIENTDLM",
@@ -4581,7 +4661,7 @@
       "entry": 828.15,
       "stop": 765.84,
       "target": 1015.08,
-      "score": 59.03
+      "score": 58.65
     },
     {
       "symbol": "WONDERLA",
@@ -4601,7 +4681,7 @@
       "entry": 509.3,
       "stop": 480.3,
       "target": 589.84,
-      "score": 59.03
+      "score": 58.65
     },
     {
       "symbol": "ZFSTEERING",
@@ -4621,7 +4701,7 @@
       "entry": 771.15,
       "stop": 709.92,
       "target": 903.93,
-      "score": 58.9
+      "score": 58.45
     },
     {
       "symbol": "LAOPALA",
@@ -4641,7 +4721,7 @@
       "entry": 160.7,
       "stop": 150.74,
       "target": 190.57,
-      "score": 58.75
+      "score": 58.39
     },
     {
       "symbol": "ASKAUTOLTD",
@@ -4661,7 +4741,7 @@
       "entry": 640.9,
       "stop": 598.39,
       "target": 694.58,
-      "score": 58.56
+      "score": 58.11
     },
     {
       "symbol": "GRWRHITECH",
@@ -4681,7 +4761,7 @@
       "entry": 7790.5,
       "stop": 7312.32,
       "target": 8160.3,
-      "score": 58.22
+      "score": 57.77
     },
     {
       "symbol": "ASAHIINDIA",
@@ -4701,7 +4781,7 @@
       "entry": 1192.05,
       "stop": 1128.26,
       "target": 1383.41,
-      "score": 58.13
+      "score": 57.76
     },
     {
       "symbol": "RELIGARE",
@@ -4721,7 +4801,7 @@
       "entry": 230.3,
       "stop": 216.95,
       "target": 270.35,
-      "score": 58.06
+      "score": 57.69
     },
     {
       "symbol": "DLF",
@@ -4741,7 +4821,7 @@
       "entry": 768,
       "stop": 740.28,
       "target": 851.15,
-      "score": 57.88
+      "score": 57.43
     },
     {
       "symbol": "CENTUM",
@@ -4761,7 +4841,7 @@
       "entry": 4483.3,
       "stop": 4197.67,
       "target": 5049.5,
-      "score": 57.53
+      "score": 57.09
     },
     {
       "symbol": "FLAIR",
@@ -4781,7 +4861,7 @@
       "entry": 240.77,
       "stop": 227.51,
       "target": 280.56,
-      "score": 57.42
+      "score": 57.05
     },
     {
       "symbol": "KRISHNADEF",
@@ -4801,7 +4881,7 @@
       "entry": 1280.5,
       "stop": 1167.21,
       "target": 1414,
-      "score": 57.19
+      "score": 56.76
     },
     {
       "symbol": "MOLBIO",
@@ -4821,7 +4901,7 @@
       "entry": 1526.4,
       "stop": 1402.78,
       "target": 1703.67,
-      "score": 56.85
+      "score": 56.42
     },
     {
       "symbol": "INDUSINDBK",
@@ -4841,7 +4921,7 @@
       "entry": 923.65,
       "stop": 883.28,
       "target": 1044.76,
-      "score": 56.77
+      "score": 56.41
     },
     {
       "symbol": "EXIDEIND",
@@ -4861,7 +4941,7 @@
       "entry": 400.25,
       "stop": 377.06,
       "target": 469.82,
-      "score": 56.56
+      "score": 56.21
     },
     {
       "symbol": "J&KBANK",
@@ -4881,7 +4961,7 @@
       "entry": 146.53,
       "stop": 139.96,
       "target": 166.25,
-      "score": 56.56
+      "score": 56.21
     },
     {
       "symbol": "KRISHANA",
@@ -4901,27 +4981,7 @@
       "entry": 242.11,
       "stop": 227.45,
       "target": 257.54,
-      "score": 56.51
-    },
-    {
-      "symbol": "KITEX",
-      "name": "Kitex Garments Limited",
-      "sector": "Consumer Cyclical",
-      "marketCapCr": 2666,
-      "suggestionDate": "2026-11-19",
-      "close": 133.61,
-      "change5Pct": 3.16,
-      "change20Pct": 15.9,
-      "rsi": 67.36,
-      "ema20": 127.65,
-      "ema50": 125.93,
-      "volumeRatio": 0.29,
-      "high20": 146.97,
-      "atr": 7.32,
-      "entry": 133.61,
-      "stop": 122.63,
-      "target": 166.56,
-      "score": 56.16
+      "score": 56.08
     },
     {
       "symbol": "CANFINHOME",
@@ -4941,7 +5001,27 @@
       "entry": 771.1,
       "stop": 737.44,
       "target": 872.09,
-      "score": 56.13
+      "score": 55.77
+    },
+    {
+      "symbol": "KITEX",
+      "name": "Kitex Garments Limited",
+      "sector": "Consumer Cyclical",
+      "marketCapCr": 2666,
+      "suggestionDate": "2026-11-19",
+      "close": 133.61,
+      "change5Pct": 3.16,
+      "change20Pct": 15.9,
+      "rsi": 67.36,
+      "ema20": 127.65,
+      "ema50": 125.93,
+      "volumeRatio": 0.29,
+      "high20": 146.97,
+      "atr": 7.32,
+      "entry": 133.61,
+      "stop": 122.63,
+      "target": 166.56,
+      "score": 55.74
     },
     {
       "symbol": "360ONE",
@@ -4961,7 +5041,7 @@
       "entry": 1197.9,
       "stop": 1141.38,
       "target": 1248.56,
-      "score": 55.82
+      "score": 55.41
     },
     {
       "symbol": "AJAXENGG",
@@ -4981,7 +5061,7 @@
       "entry": 624.95,
       "stop": 593.96,
       "target": 684.78,
-      "score": 55.63
+      "score": 55.28
     },
     {
       "symbol": "NTPC",
@@ -5001,7 +5081,7 @@
       "entry": 325,
       "stop": 313.88,
       "target": 358.35,
-      "score": 55.48
+      "score": 55.13
     },
     {
       "symbol": "ANGELONE",
@@ -5021,7 +5101,7 @@
       "entry": 336.45,
       "stop": 313.82,
       "target": 382.94,
-      "score": 55.48
+      "score": 55.07
     },
     {
       "symbol": "INDOMIM",
@@ -5041,7 +5121,7 @@
       "entry": 1284.7,
       "stop": 1198.4,
       "target": 1388.14,
-      "score": 55.14
+      "score": 54.73
     },
     {
       "symbol": "MAHABANK",
@@ -5061,7 +5141,7 @@
       "entry": 97.98,
       "stop": 93.91,
       "target": 110.18,
-      "score": 55
+      "score": 54.66
     },
     {
       "symbol": "BPCL",
@@ -5081,7 +5161,7 @@
       "entry": 308.1,
       "stop": 296.26,
       "target": 343.62,
-      "score": 54.84
+      "score": 54.49
     },
     {
       "symbol": "SYNGENE",
@@ -5101,7 +5181,7 @@
       "entry": 437.35,
       "stop": 416.24,
       "target": 500.69,
-      "score": 54.79
+      "score": 54.39
     },
     {
       "symbol": "CDSL",
@@ -5121,7 +5201,7 @@
       "entry": 1423.4,
       "stop": 1356.7,
       "target": 1623.49,
-      "score": 54.45
+      "score": 54.05
     },
     {
       "symbol": "ASTRAMICRO",
@@ -5141,7 +5221,7 @@
       "entry": 1671.5,
       "stop": 1562.3,
       "target": 1979.6,
-      "score": 54.19
+      "score": 53.85
     },
     {
       "symbol": "GABRIEL",
@@ -5161,7 +5241,7 @@
       "entry": 1585.1,
       "stop": 1470.49,
       "target": 1706.9,
-      "score": 54.11
+      "score": 53.72
     },
     {
       "symbol": "VEDPOWER",
@@ -5181,7 +5261,7 @@
       "entry": 35.02,
       "stop": 32.21,
       "target": 43.46,
-      "score": 53.77
+      "score": 53.38
     },
     {
       "symbol": "IRCON",
@@ -5201,7 +5281,7 @@
       "entry": 109.2,
       "stop": 102.17,
       "target": 130.3,
-      "score": 53.55
+      "score": 53.21
     },
     {
       "symbol": "GPIL",
@@ -5221,7 +5301,7 @@
       "entry": 228.4,
       "stop": 214.58,
       "target": 269.86,
-      "score": 53.44
+      "score": 53.11
     },
     {
       "symbol": "APOLLOHOSP",
@@ -5241,7 +5321,7 @@
       "entry": 8738,
       "stop": 8455.25,
       "target": 9161.21,
-      "score": 53.42
+      "score": 53.04
     },
     {
       "symbol": "MRPL",
@@ -5261,7 +5341,7 @@
       "entry": 176.18,
       "stop": 166.46,
       "target": 205.34,
-      "score": 52.9
+      "score": 52.56
     },
     {
       "symbol": "JLHL",
@@ -5281,7 +5361,7 @@
       "entry": 281.2,
       "stop": 265.08,
       "target": 329.56,
-      "score": 52.74
+      "score": 52.36
     },
     {
       "symbol": "AEROPLANE",
@@ -5301,7 +5381,7 @@
       "entry": 240.08,
       "stop": 221.62,
       "target": 254.52,
-      "score": 52.4
+      "score": 52.03
     },
     {
       "symbol": "HARSHA",
@@ -5321,7 +5401,7 @@
       "entry": 451.25,
       "stop": 424.71,
       "target": 489.65,
-      "score": 52.26
+      "score": 51.92
     },
     {
       "symbol": "SIMPLEXINF",
@@ -5341,7 +5421,7 @@
       "entry": 302.2,
       "stop": 280.68,
       "target": 321.18,
-      "score": 52.05
+      "score": 51.69
     },
     {
       "symbol": "GPPL",
@@ -5361,7 +5441,7 @@
       "entry": 178.28,
       "stop": 169.74,
       "target": 202.09,
-      "score": 51.88
+      "score": 51.55
     },
     {
       "symbol": "PRESTIGE",
@@ -5381,7 +5461,7 @@
       "entry": 1655,
       "stop": 1570.71,
       "target": 1796.18,
-      "score": 51.71
+      "score": 51.35
     },
     {
       "symbol": "ZENTEC",
@@ -5401,7 +5481,7 @@
       "entry": 1706,
       "stop": 1607.61,
       "target": 2001.17,
-      "score": 51.61
+      "score": 51.28
     },
     {
       "symbol": "AUROPHARMA",
@@ -5421,7 +5501,7 @@
       "entry": 1805.7,
       "stop": 1740.99,
       "target": 1878.5,
-      "score": 51.37
+      "score": 51.01
     },
     {
       "symbol": "CANBK",
@@ -5441,13 +5521,13 @@
       "entry": 136.03,
       "stop": 130.94,
       "target": 151.3,
-      "score": 51.25
+      "score": 50.93
     },
     {
       "symbol": "MANKIND",
       "name": "Mankind Pharma Limited",
       "sector": "Healthcare",
-      "marketCapCr": 108590,
+      "marketCapCr": 108577,
       "suggestionDate": "2026-11-19",
       "close": 2629,
       "change5Pct": -0.36,
@@ -5461,27 +5541,27 @@
       "entry": 2629,
       "stop": 2536.88,
       "target": 2732.05,
-      "score": 51.03
+      "score": 50.51
     },
     {
-      "symbol": "ADANIGREEN",
-      "name": "Adani Green Energy Limited",
-      "sector": "Utilities",
-      "marketCapCr": 234723,
+      "symbol": "ASHOKLEY",
+      "name": "Ashok Leyland Limited",
+      "sector": "Industrials",
+      "marketCapCr": 97594,
       "suggestionDate": "2026-11-19",
-      "close": 1425,
-      "change5Pct": 0.21,
+      "close": 166.15,
+      "change5Pct": -4.48,
       "change20Pct": 13.23,
-      "rsi": 68.52,
-      "ema20": 1373.8,
-      "ema50": 1342,
-      "volumeRatio": 1.16,
-      "high20": 1479,
-      "atr": 40.96,
-      "entry": 1425,
-      "stop": 1363.56,
-      "target": 1609.31,
-      "score": 50.68
+      "rsi": 71.01,
+      "ema20": 161.02,
+      "ema50": 158.85,
+      "volumeRatio": 1.18,
+      "high20": 178.83,
+      "atr": 6.88,
+      "entry": 166.15,
+      "stop": 155.84,
+      "target": 197.09,
+      "score": 50.51
     },
     {
       "symbol": "KANSAINER",
@@ -5501,7 +5581,7 @@
       "entry": 196.01,
       "stop": 185.38,
       "target": 227.9,
-      "score": 50.65
+      "score": 50.32
     },
     {
       "symbol": "SRHHYPOLTD",
@@ -5521,7 +5601,7 @@
       "entry": 528.5,
       "stop": 496.5,
       "target": 624.49,
-      "score": 50.65
+      "score": 50.32
     },
     {
       "symbol": "DOMS",
@@ -5541,27 +5621,27 @@
       "entry": 2104.2,
       "stop": 1990.3,
       "target": 2445.91,
-      "score": 50.63
+      "score": 50.31
     },
     {
-      "symbol": "RPEL",
-      "name": "Raghav Productivity Enhancers Limited",
-      "sector": "Basic Materials",
-      "marketCapCr": 8732,
+      "symbol": "ADANIGREEN",
+      "name": "Adani Green Energy Limited",
+      "sector": "Utilities",
+      "marketCapCr": 234723,
       "suggestionDate": "2026-11-19",
-      "close": 1901.5,
-      "change5Pct": 0.05,
-      "change20Pct": 13.02,
-      "rsi": 65,
-      "ema20": 1843.92,
-      "ema50": 1749.33,
-      "volumeRatio": 1.23,
-      "high20": 2050.9,
-      "atr": 98.62,
-      "entry": 1901.5,
-      "stop": 1753.57,
-      "target": 2071.41,
-      "score": 50.17
+      "close": 1425,
+      "change5Pct": 0.21,
+      "change20Pct": 13.23,
+      "rsi": 68.52,
+      "ema20": 1373.8,
+      "ema50": 1342,
+      "volumeRatio": 1.16,
+      "high20": 1479,
+      "atr": 40.96,
+      "entry": 1425,
+      "stop": 1363.56,
+      "target": 1609.31,
+      "score": 50
     },
     {
       "symbol": "UNITDSPR",
@@ -5581,7 +5661,27 @@
       "entry": 1460,
       "stop": 1404.05,
       "target": 1579.03,
-      "score": 50
+      "score": 49.69
+    },
+    {
+      "symbol": "RPEL",
+      "name": "Raghav Productivity Enhancers Limited",
+      "sector": "Basic Materials",
+      "marketCapCr": 8732,
+      "suggestionDate": "2026-11-19",
+      "close": 1901.5,
+      "change5Pct": 0.05,
+      "change20Pct": 13.02,
+      "rsi": 65,
+      "ema20": 1843.92,
+      "ema50": 1749.33,
+      "volumeRatio": 1.23,
+      "high20": 2050.9,
+      "atr": 98.62,
+      "entry": 1901.5,
+      "stop": 1753.57,
+      "target": 2071.41,
+      "score": 49.49
     },
     {
       "symbol": "BAHETI",
@@ -5601,47 +5701,7 @@
       "entry": 771.35,
       "stop": 712.81,
       "target": 889.81,
-      "score": 49.68
-    },
-    {
-      "symbol": "NITTAGELA",
-      "name": "Nitta Gelatin India Limited",
-      "sector": "Basic Materials",
-      "marketCapCr": 1584,
-      "suggestionDate": "2026-11-19",
-      "close": 1744.6,
-      "change5Pct": -2.5,
-      "change20Pct": 15.11,
-      "rsi": 72.32,
-      "ema20": 1713.17,
-      "ema50": 1680.98,
-      "volumeRatio": 0.18,
-      "high20": 1870,
-      "atr": 75.63,
-      "entry": 1744.6,
-      "stop": 1631.16,
-      "target": 2084.93,
-      "score": 49.49
-    },
-    {
-      "symbol": "UNIVASTU",
-      "name": "Univastu India Limited",
-      "sector": "Industrials",
-      "marketCapCr": 552,
-      "suggestionDate": "2026-11-19",
-      "close": 153.48,
-      "change5Pct": 3.03,
-      "change20Pct": 13.79,
-      "rsi": 67.06,
-      "ema20": 144.37,
-      "ema50": 140.56,
-      "volumeRatio": 0.84,
-      "high20": 166,
-      "atr": 7.95,
-      "entry": 153.48,
-      "stop": 141.55,
-      "target": 180.77,
-      "score": 49.49
+      "score": 49.36
     },
     {
       "symbol": "UPL",
@@ -5661,7 +5721,47 @@
       "entry": 569.8,
       "stop": 539.93,
       "target": 659.4,
-      "score": 49.38
+      "score": 49.07
+    },
+    {
+      "symbol": "NITTAGELA",
+      "name": "Nitta Gelatin India Limited",
+      "sector": "Basic Materials",
+      "marketCapCr": 1584,
+      "suggestionDate": "2026-11-19",
+      "close": 1744.6,
+      "change5Pct": -2.5,
+      "change20Pct": 15.11,
+      "rsi": 72.32,
+      "ema20": 1713.17,
+      "ema50": 1680.98,
+      "volumeRatio": 0.18,
+      "high20": 1870,
+      "atr": 75.63,
+      "entry": 1744.6,
+      "stop": 1631.16,
+      "target": 2084.93,
+      "score": 48.82
+    },
+    {
+      "symbol": "UNIVASTU",
+      "name": "Univastu India Limited",
+      "sector": "Industrials",
+      "marketCapCr": 552,
+      "suggestionDate": "2026-11-19",
+      "close": 153.48,
+      "change5Pct": 3.03,
+      "change20Pct": 13.79,
+      "rsi": 67.06,
+      "ema20": 144.37,
+      "ema50": 140.56,
+      "volumeRatio": 0.84,
+      "high20": 166,
+      "atr": 7.95,
+      "entry": 153.48,
+      "stop": 141.55,
+      "target": 180.77,
+      "score": 48.82
     },
     {
       "symbol": "JSWINFRA",
@@ -5681,27 +5781,7 @@
       "entry": 337.15,
       "stop": 322.01,
       "target": 379.26,
-      "score": 49.03
-    },
-    {
-      "symbol": "ORIENTCEM",
-      "name": "Orient Cement Limited",
-      "sector": "Basic Materials",
-      "marketCapCr": 2655,
-      "suggestionDate": "2026-11-19",
-      "close": 129.23,
-      "change5Pct": 1.9,
-      "change20Pct": 13.55,
-      "rsi": 75.56,
-      "ema20": 122.39,
-      "ema50": 122.14,
-      "volumeRatio": 0.95,
-      "high20": 131.47,
-      "atr": 4.22,
-      "entry": 129.23,
-      "stop": 122.9,
-      "target": 148.21,
-      "score": 48.97
+      "score": 48.72
     },
     {
       "symbol": "CROMPTON",
@@ -5721,27 +5801,27 @@
       "entry": 220,
       "stop": 208.35,
       "target": 254.94,
-      "score": 48.75
+      "score": 48.45
     },
     {
-      "symbol": "SUNTV",
-      "name": "Sun TV Network Limited",
-      "sector": "Communication Services",
-      "marketCapCr": 27413,
+      "symbol": "ORIENTCEM",
+      "name": "Orient Cement Limited",
+      "sector": "Basic Materials",
+      "marketCapCr": 2655,
       "suggestionDate": "2026-11-19",
-      "close": 695.6,
-      "change5Pct": 4.06,
-      "change20Pct": 10.91,
-      "rsi": 69.32,
-      "ema20": 636.15,
-      "ema50": 594.49,
-      "volumeRatio": 2.22,
-      "high20": 713.85,
-      "atr": 28.4,
-      "entry": 695.6,
-      "stop": 653,
-      "target": 720.99,
-      "score": 48.63
+      "close": 129.23,
+      "change5Pct": 1.9,
+      "change20Pct": 13.55,
+      "rsi": 75.56,
+      "ema20": 122.39,
+      "ema50": 122.14,
+      "volumeRatio": 0.95,
+      "high20": 131.47,
+      "atr": 4.22,
+      "entry": 129.23,
+      "stop": 122.9,
+      "target": 148.21,
+      "score": 48.31
     },
     {
       "symbol": "NHPC",
@@ -5761,27 +5841,27 @@
       "entry": 76.3,
       "stop": 73.17,
       "target": 85.69,
-      "score": 48.39
+      "score": 48.08
     },
     {
-      "symbol": "ARIES",
-      "name": "Aries Agro Limited",
-      "sector": "Basic Materials",
-      "marketCapCr": 686,
+      "symbol": "SUNTV",
+      "name": "Sun TV Network Limited",
+      "sector": "Communication Services",
+      "marketCapCr": 27413,
       "suggestionDate": "2026-11-19",
-      "close": 527.35,
-      "change5Pct": 5.76,
-      "change20Pct": 13.09,
-      "rsi": 75.27,
-      "ema20": 496.32,
-      "ema50": 472.93,
-      "volumeRatio": 1.11,
-      "high20": 563.95,
-      "atr": 24.42,
-      "entry": 527.35,
-      "stop": 490.72,
-      "target": 569.59,
-      "score": 48.29
+      "close": 695.6,
+      "change5Pct": 4.06,
+      "change20Pct": 10.91,
+      "rsi": 69.32,
+      "ema20": 636.15,
+      "ema50": 594.49,
+      "volumeRatio": 2.22,
+      "high20": 713.85,
+      "atr": 28.4,
+      "entry": 695.6,
+      "stop": 653,
+      "target": 720.99,
+      "score": 47.97
     },
     {
       "symbol": "BAJAJFINSV",
@@ -5801,7 +5881,27 @@
       "entry": 1885,
       "stop": 1814.95,
       "target": 2095.15,
-      "score": 48.13
+      "score": 47.83
+    },
+    {
+      "symbol": "ARIES",
+      "name": "Aries Agro Limited",
+      "sector": "Basic Materials",
+      "marketCapCr": 686,
+      "suggestionDate": "2026-11-19",
+      "close": 527.35,
+      "change5Pct": 5.76,
+      "change20Pct": 13.09,
+      "rsi": 75.27,
+      "ema20": 496.32,
+      "ema50": 472.93,
+      "volumeRatio": 1.11,
+      "high20": 563.95,
+      "atr": 24.42,
+      "entry": 527.35,
+      "stop": 490.72,
+      "target": 569.59,
+      "score": 47.64
     },
     {
       "symbol": "AIIL",
@@ -5821,27 +5921,7 @@
       "entry": 549.1,
       "stop": 516.01,
       "target": 648.36,
-      "score": 47.74
-    },
-    {
-      "symbol": "SCPL",
-      "name": "Sheetal Cool Products Limited",
-      "sector": "Consumer Defensive",
-      "marketCapCr": 687,
-      "suggestionDate": "2026-11-19",
-      "close": 654.3,
-      "change5Pct": -2.05,
-      "change20Pct": 14.08,
-      "rsi": 74.08,
-      "ema20": 627.4,
-      "ema50": 614.67,
-      "volumeRatio": 0.56,
-      "high20": 697,
-      "atr": 29.6,
-      "entry": 654.3,
-      "stop": 609.91,
-      "target": 703.97,
-      "score": 47.6
+      "score": 47.44
     },
     {
       "symbol": "KMCSHIL",
@@ -5861,7 +5941,27 @@
       "entry": 201.64,
       "stop": 187.16,
       "target": 245.09,
-      "score": 47.5
+      "score": 47.2
+    },
+    {
+      "symbol": "SCPL",
+      "name": "Sheetal Cool Products Limited",
+      "sector": "Consumer Defensive",
+      "marketCapCr": 687,
+      "suggestionDate": "2026-11-19",
+      "close": 654.3,
+      "change5Pct": -2.05,
+      "change20Pct": 14.08,
+      "rsi": 74.08,
+      "ema20": 627.4,
+      "ema50": 614.67,
+      "volumeRatio": 0.56,
+      "high20": 697,
+      "atr": 29.6,
+      "entry": 654.3,
+      "stop": 609.91,
+      "target": 703.97,
+      "score": 46.96
     },
     {
       "symbol": "GALAPREC",
@@ -5881,27 +5981,7 @@
       "entry": 1187.1,
       "stop": 1085.83,
       "target": 1333.1,
-      "score": 47.26
-    },
-    {
-      "symbol": "DCBBANK",
-      "name": "DCB Bank Limited",
-      "sector": "Financial Services",
-      "marketCapCr": 7579,
-      "suggestionDate": "2026-11-19",
-      "close": 235.18,
-      "change5Pct": 3.17,
-      "change20Pct": 13.2,
-      "rsi": 73.25,
-      "ema20": 214.9,
-      "ema50": 208.98,
-      "volumeRatio": 0.92,
-      "high20": 237.02,
-      "atr": 9.5,
-      "entry": 235.18,
-      "stop": 220.92,
-      "target": 277.95,
-      "score": 46.92
+      "score": 46.62
     },
     {
       "symbol": "CIPLA",
@@ -5921,7 +6001,7 @@
       "entry": 1418.5,
       "stop": 1382.51,
       "target": 1526.47,
-      "score": 46.88
+      "score": 46.58
     },
     {
       "symbol": "MGL",
@@ -5941,7 +6021,7 @@
       "entry": 1103.3,
       "stop": 1047.52,
       "target": 1270.64,
-      "score": 46.77
+      "score": 46.47
     },
     {
       "symbol": "SUMMITSEC",
@@ -5961,7 +6041,27 @@
       "entry": 1399.8,
       "stop": 1326.05,
       "target": 1621.04,
-      "score": 46.77
+      "score": 46.47
+    },
+    {
+      "symbol": "DCBBANK",
+      "name": "DCB Bank Limited",
+      "sector": "Financial Services",
+      "marketCapCr": 7579,
+      "suggestionDate": "2026-11-19",
+      "close": 235.18,
+      "change5Pct": 3.17,
+      "change20Pct": 13.2,
+      "rsi": 73.25,
+      "ema20": 214.9,
+      "ema50": 208.98,
+      "volumeRatio": 0.92,
+      "high20": 237.02,
+      "atr": 9.5,
+      "entry": 235.18,
+      "stop": 220.92,
+      "target": 277.95,
+      "score": 46.28
     },
     {
       "symbol": "IFBAGRO",
@@ -5981,47 +6081,7 @@
       "entry": 962.9,
       "stop": 872.48,
       "target": 1234.17,
-      "score": 46.58
-    },
-    {
-      "symbol": "DHOOTTRANS",
-      "name": "Dhoot Transmission Limited",
-      "sector": "Consumer Cyclical",
-      "marketCapCr": 33065,
-      "suggestionDate": "2026-11-19",
-      "close": 1616,
-      "change5Pct": -0.66,
-      "change20Pct": 13.01,
-      "rsi": 56.44,
-      "ema20": 1565.34,
-      "ema50": 1514.31,
-      "volumeRatio": 0.93,
-      "high20": 1708.9,
-      "atr": 85.66,
-      "entry": 1616,
-      "stop": 1487.51,
-      "target": 1752.65,
-      "score": 45.89
-    },
-    {
-      "symbol": "LEMONTREE",
-      "name": "Lemon Tree Hotels Limited",
-      "sector": "Consumer Cyclical",
-      "marketCapCr": 9885,
-      "suggestionDate": "2026-11-19",
-      "close": 124.83,
-      "change5Pct": 3.67,
-      "change20Pct": 13.67,
-      "rsi": 77.84,
-      "ema20": 117.39,
-      "ema50": 113.35,
-      "volumeRatio": 0.6,
-      "high20": 125.6,
-      "atr": 3.58,
-      "entry": 124.83,
-      "stop": 119.45,
-      "target": 140.96,
-      "score": 45.89
+      "score": 45.95
     },
     {
       "symbol": "DELTACORP",
@@ -6041,7 +6101,7 @@
       "entry": 77.85,
       "stop": 70.9,
       "target": 89.49,
-      "score": 45.81
+      "score": 45.51
     },
     {
       "symbol": "PSB",
@@ -6061,27 +6121,47 @@
       "entry": 22.14,
       "stop": 21.06,
       "target": 25.39,
-      "score": 45.63
+      "score": 45.34
     },
     {
-      "symbol": "BALKRISIND",
-      "name": "Balkrishna Industries Limited",
+      "symbol": "DHOOTTRANS",
+      "name": "Dhoot Transmission Limited",
       "sector": "Consumer Cyclical",
-      "marketCapCr": 44991,
+      "marketCapCr": 33065,
       "suggestionDate": "2026-11-19",
-      "close": 2327.3,
-      "change5Pct": 1.33,
-      "change20Pct": 14.11,
-      "rsi": 67.85,
-      "ema20": 2244.68,
-      "ema50": 2206.8,
-      "volumeRatio": 0.37,
-      "high20": 2424,
-      "atr": 74.19,
-      "entry": 2327.3,
-      "stop": 2216.01,
-      "target": 2661.17,
-      "score": 45.21
+      "close": 1616,
+      "change5Pct": -0.66,
+      "change20Pct": 13.01,
+      "rsi": 56.44,
+      "ema20": 1565.34,
+      "ema50": 1514.31,
+      "volumeRatio": 0.93,
+      "high20": 1708.9,
+      "atr": 85.66,
+      "entry": 1616,
+      "stop": 1487.51,
+      "target": 1752.65,
+      "score": 45.27
+    },
+    {
+      "symbol": "LEMONTREE",
+      "name": "Lemon Tree Hotels Limited",
+      "sector": "Consumer Cyclical",
+      "marketCapCr": 9885,
+      "suggestionDate": "2026-11-19",
+      "close": 124.83,
+      "change5Pct": 3.67,
+      "change20Pct": 13.67,
+      "rsi": 77.84,
+      "ema20": 117.39,
+      "ema50": 113.35,
+      "volumeRatio": 0.6,
+      "high20": 125.6,
+      "atr": 3.58,
+      "entry": 124.83,
+      "stop": 119.45,
+      "target": 140.96,
+      "score": 45.27
     },
     {
       "symbol": "TATASTEEL",
@@ -6101,7 +6181,7 @@
       "entry": 180.89,
       "stop": 173.28,
       "target": 203.73,
-      "score": 45.16
+      "score": 44.87
     },
     {
       "symbol": "IGL",
@@ -6121,7 +6201,27 @@
       "entry": 152.03,
       "stop": 144.96,
       "target": 173.23,
-      "score": 45
+      "score": 44.72
+    },
+    {
+      "symbol": "BALKRISIND",
+      "name": "Balkrishna Industries Limited",
+      "sector": "Consumer Cyclical",
+      "marketCapCr": 44991,
+      "suggestionDate": "2026-11-19",
+      "close": 2327.3,
+      "change5Pct": 1.33,
+      "change20Pct": 14.11,
+      "rsi": 67.85,
+      "ema20": 2244.68,
+      "ema50": 2206.8,
+      "volumeRatio": 0.37,
+      "high20": 2424,
+      "atr": 74.19,
+      "entry": 2327.3,
+      "stop": 2216.01,
+      "target": 2661.17,
+      "score": 44.59
     },
     {
       "symbol": "EIMCOELECO",
@@ -6141,27 +6241,7 @@
       "entry": 2558.1,
       "stop": 2370.94,
       "target": 2767.4,
-      "score": 44.86
-    },
-    {
-      "symbol": "APOLLO",
-      "name": "Apollo Micro Systems Limited",
-      "sector": "Industrials",
-      "marketCapCr": 16694,
-      "suggestionDate": "2026-11-19",
-      "close": 449.25,
-      "change5Pct": 2.08,
-      "change20Pct": 13.52,
-      "rsi": 56.84,
-      "ema20": 433.79,
-      "ema50": 416.89,
-      "volumeRatio": 0.61,
-      "high20": 478,
-      "atr": 24.79,
-      "entry": 449.25,
-      "stop": 412.07,
-      "target": 482.78,
-      "score": 44.52
+      "score": 44.26
     },
     {
       "symbol": "DAMCAPITAL",
@@ -6181,27 +6261,27 @@
       "entry": 144.66,
       "stop": 134.34,
       "target": 175.62,
-      "score": 44.52
+      "score": 44.23
     },
     {
-      "symbol": "BHARTIARTL",
-      "name": "Bharti Airtel Limited",
-      "sector": "Communication Services",
-      "marketCapCr": 1337738,
+      "symbol": "APOLLO",
+      "name": "Apollo Micro Systems Limited",
+      "sector": "Industrials",
+      "marketCapCr": 16694,
       "suggestionDate": "2026-11-19",
-      "close": 2144,
-      "change5Pct": 2.29,
-      "change20Pct": 13.34,
-      "rsi": 75.85,
-      "ema20": 2048.9,
-      "ema50": 1963.96,
-      "volumeRatio": 0.65,
-      "high20": 2172.3,
-      "atr": 44.14,
-      "entry": 2144,
-      "stop": 2077.8,
-      "target": 2342.61,
-      "score": 44.18
+      "close": 449.25,
+      "change5Pct": 2.08,
+      "change20Pct": 13.52,
+      "rsi": 56.84,
+      "ema20": 433.79,
+      "ema50": 416.89,
+      "volumeRatio": 0.61,
+      "high20": 478,
+      "atr": 24.79,
+      "entry": 449.25,
+      "stop": 412.07,
+      "target": 482.78,
+      "score": 43.92
     },
     {
       "symbol": "AJMERA",
@@ -6221,7 +6301,27 @@
       "entry": 133.48,
       "stop": 123.12,
       "target": 164.57,
-      "score": 43.87
+      "score": 43.59
+    },
+    {
+      "symbol": "BHARTIARTL",
+      "name": "Bharti Airtel Limited",
+      "sector": "Communication Services",
+      "marketCapCr": 1337738,
+      "suggestionDate": "2026-11-19",
+      "close": 2144,
+      "change5Pct": 2.29,
+      "change20Pct": 13.34,
+      "rsi": 75.85,
+      "ema20": 2048.9,
+      "ema50": 1963.96,
+      "volumeRatio": 0.65,
+      "high20": 2172.3,
+      "atr": 44.14,
+      "entry": 2144,
+      "stop": 2077.8,
+      "target": 2342.61,
+      "score": 43.58
     },
     {
       "symbol": "TVSHLTD",
@@ -6241,27 +6341,7 @@
       "entry": 13550,
       "stop": 12757.57,
       "target": 15927.29,
-      "score": 43.75
-    },
-    {
-      "symbol": "TFCILTD",
-      "name": "Tourism Finance Corporation of India Limited",
-      "sector": "Financial Services",
-      "marketCapCr": 7879,
-      "suggestionDate": "2026-11-19",
-      "close": 170.18,
-      "change5Pct": 2.2,
-      "change20Pct": 13.3,
-      "rsi": 69.58,
-      "ema20": 162,
-      "ema50": 150.73,
-      "volumeRatio": 0.59,
-      "high20": 172,
-      "atr": 5.51,
-      "entry": 170.18,
-      "stop": 161.91,
-      "target": 194.98,
-      "score": 43.49
+      "score": 43.48
     },
     {
       "symbol": "GANESHCP",
@@ -6281,7 +6361,27 @@
       "entry": 176.28,
       "stop": 163.03,
       "target": 216.04,
-      "score": 43.23
+      "score": 42.95
+    },
+    {
+      "symbol": "TFCILTD",
+      "name": "Tourism Finance Corporation of India Limited",
+      "sector": "Financial Services",
+      "marketCapCr": 7879,
+      "suggestionDate": "2026-11-19",
+      "close": 170.18,
+      "change5Pct": 2.2,
+      "change20Pct": 13.3,
+      "rsi": 69.58,
+      "ema20": 162,
+      "ema50": 150.73,
+      "volumeRatio": 0.59,
+      "high20": 172,
+      "atr": 5.51,
+      "entry": 170.18,
+      "stop": 161.91,
+      "target": 194.98,
+      "score": 42.91
     },
     {
       "symbol": "ECOSMOBLTY",
@@ -6301,7 +6401,7 @@
       "entry": 121.11,
       "stop": 110.51,
       "target": 152.91,
-      "score": 43.15
+      "score": 42.57
     },
     {
       "symbol": "UCOBANK",
@@ -6321,27 +6421,7 @@
       "entry": 25.08,
       "stop": 24.14,
       "target": 27.9,
-      "score": 42.81
-    },
-    {
-      "symbol": "AFFLE",
-      "name": "Affle 3i Limited",
-      "sector": "Communication Services",
-      "marketCapCr": 22855,
-      "suggestionDate": "2026-11-19",
-      "close": 1590.8,
-      "change5Pct": -0.87,
-      "change20Pct": 14.01,
-      "rsi": 70.55,
-      "ema20": 1542.58,
-      "ema50": 1524.55,
-      "volumeRatio": 0.18,
-      "high20": 1658,
-      "atr": 63.5,
-      "entry": 1590.8,
-      "stop": 1495.55,
-      "target": 1847.39,
-      "score": 42.81
+      "score": 42.55
     },
     {
       "symbol": "GREENLAM",
@@ -6361,7 +6441,7 @@
       "entry": 229.23,
       "stop": 214.45,
       "target": 273.56,
-      "score": 42.81
+      "score": 42.55
     },
     {
       "symbol": "SUDARSCHEM",
@@ -6381,7 +6461,27 @@
       "entry": 1148.05,
       "stop": 1067.79,
       "target": 1360.47,
-      "score": 42.58
+      "score": 42.31
+    },
+    {
+      "symbol": "AFFLE",
+      "name": "Affle 3i Limited",
+      "sector": "Communication Services",
+      "marketCapCr": 22855,
+      "suggestionDate": "2026-11-19",
+      "close": 1590.8,
+      "change5Pct": -0.87,
+      "change20Pct": 14.01,
+      "rsi": 70.55,
+      "ema20": 1542.58,
+      "ema50": 1524.55,
+      "volumeRatio": 0.18,
+      "high20": 1658,
+      "atr": 63.5,
+      "entry": 1590.8,
+      "stop": 1495.55,
+      "target": 1847.39,
+      "score": 42.23
     },
     {
       "symbol": "PRSMJOHNSN",
@@ -6401,27 +6501,7 @@
       "entry": 109.79,
       "stop": 102.39,
       "target": 132,
-      "score": 42.47
-    },
-    {
-      "symbol": "NDRAUTO",
-      "name": "NDR Auto Components Limited",
-      "sector": "Consumer Cyclical",
-      "marketCapCr": 1803,
-      "suggestionDate": "2026-11-19",
-      "close": 755.7,
-      "change5Pct": 1.16,
-      "change20Pct": 13.54,
-      "rsi": 65.52,
-      "ema20": 725.27,
-      "ema50": 723.16,
-      "volumeRatio": 0.32,
-      "high20": 809.85,
-      "atr": 44.14,
-      "entry": 755.7,
-      "stop": 689.49,
-      "target": 940.26,
-      "score": 42.12
+      "score": 41.89
     },
     {
       "symbol": "UPHOT",
@@ -6441,7 +6521,7 @@
       "entry": 1505,
       "stop": 1470.71,
       "target": 1607.86,
-      "score": 41.94
+      "score": 41.67
     },
     {
       "symbol": "EVEREADY",
@@ -6461,7 +6541,27 @@
       "entry": 327.15,
       "stop": 311.52,
       "target": 374.05,
-      "score": 41.88
+      "score": 41.61
+    },
+    {
+      "symbol": "NDRAUTO",
+      "name": "NDR Auto Components Limited",
+      "sector": "Consumer Cyclical",
+      "marketCapCr": 1803,
+      "suggestionDate": "2026-11-19",
+      "close": 755.7,
+      "change5Pct": 1.16,
+      "change20Pct": 13.54,
+      "rsi": 65.52,
+      "ema20": 725.27,
+      "ema50": 723.16,
+      "volumeRatio": 0.32,
+      "high20": 809.85,
+      "atr": 44.14,
+      "entry": 755.7,
+      "stop": 689.49,
+      "target": 940.26,
+      "score": 41.55
     },
     {
       "symbol": "CONSOFINVT",
@@ -6481,27 +6581,7 @@
       "entry": 320.4,
       "stop": 306.61,
       "target": 342.34,
-      "score": 41.78
-    },
-    {
-      "symbol": "FILATEX",
-      "name": "Filatex India Limited",
-      "sector": "Consumer Cyclical",
-      "marketCapCr": 4943,
-      "suggestionDate": "2026-11-19",
-      "close": 111.32,
-      "change5Pct": 9.16,
-      "change20Pct": 12.24,
-      "rsi": 71.78,
-      "ema20": 100.86,
-      "ema50": 96.22,
-      "volumeRatio": 0.93,
-      "high20": 119.78,
-      "atr": 6.45,
-      "entry": 111.32,
-      "stop": 101.65,
-      "target": 120.98,
-      "score": 41.44
+      "score": 41.22
     },
     {
       "symbol": "CAMS",
@@ -6521,7 +6601,7 @@
       "entry": 713.75,
       "stop": 671.34,
       "target": 840.97,
-      "score": 41.29
+      "score": 41.03
     },
     {
       "symbol": "PRIVISCL",
@@ -6541,7 +6621,27 @@
       "entry": 3535,
       "stop": 3341.37,
       "target": 3823.15,
-      "score": 41.25
+      "score": 40.99
+    },
+    {
+      "symbol": "FILATEX",
+      "name": "Filatex India Limited",
+      "sector": "Consumer Cyclical",
+      "marketCapCr": 4943,
+      "suggestionDate": "2026-11-19",
+      "close": 111.32,
+      "change5Pct": 9.16,
+      "change20Pct": 12.24,
+      "rsi": 71.78,
+      "ema20": 100.86,
+      "ema50": 96.22,
+      "volumeRatio": 0.93,
+      "high20": 119.78,
+      "atr": 6.45,
+      "entry": 111.32,
+      "stop": 101.65,
+      "target": 120.98,
+      "score": 40.88
     },
     {
       "symbol": "DRREDDY",
@@ -6561,27 +6661,7 @@
       "entry": 1400.9,
       "stop": 1366.07,
       "target": 1505.4,
-      "score": 41.1
-    },
-    {
-      "symbol": "TRITONV",
-      "name": "Triton Valves Limited",
-      "sector": "Consumer Cyclical",
-      "marketCapCr": 580,
-      "suggestionDate": "2026-11-19",
-      "close": 1131.75,
-      "change5Pct": -0.6,
-      "change20Pct": 11.66,
-      "rsi": 72.52,
-      "ema20": 1086.62,
-      "ema50": 1077.79,
-      "volumeRatio": 1.06,
-      "high20": 1189,
-      "atr": 63.19,
-      "entry": 1131.75,
-      "stop": 1036.96,
-      "target": 1231.49,
-      "score": 40.75
+      "score": 40.54
     },
     {
       "symbol": "PROZONER",
@@ -6601,7 +6681,27 @@
       "entry": 54.98,
       "stop": 49.85,
       "target": 69.69,
-      "score": 40.65
+      "score": 40.38
+    },
+    {
+      "symbol": "TRITONV",
+      "name": "Triton Valves Limited",
+      "sector": "Consumer Cyclical",
+      "marketCapCr": 580,
+      "suggestionDate": "2026-11-19",
+      "close": 1131.75,
+      "change5Pct": -0.6,
+      "change20Pct": 11.66,
+      "rsi": 72.52,
+      "ema20": 1086.62,
+      "ema50": 1077.79,
+      "volumeRatio": 1.06,
+      "high20": 1189,
+      "atr": 63.19,
+      "entry": 1131.75,
+      "stop": 1036.96,
+      "target": 1231.49,
+      "score": 40.2
     },
     {
       "symbol": "SHREECEM",
@@ -6621,47 +6721,7 @@
       "entry": 25115,
       "stop": 24275,
       "target": 27635,
-      "score": 40.41
-    },
-    {
-      "symbol": "IIFL",
-      "name": "IIFL Finance Limited",
-      "sector": "Financial Services",
-      "marketCapCr": 27519,
-      "suggestionDate": "2026-11-19",
-      "close": 644.45,
-      "change5Pct": -2.82,
-      "change20Pct": 10.22,
-      "rsi": 64.12,
-      "ema20": 616.75,
-      "ema50": 603.53,
-      "volumeRatio": 1.76,
-      "high20": 694.4,
-      "atr": 36.29,
-      "entry": 644.45,
-      "stop": 590.01,
-      "target": 712.05,
-      "score": 40.07
-    },
-    {
-      "symbol": "ABB",
-      "name": "ABB India Limited",
-      "sector": "Industrials",
-      "marketCapCr": 147298,
-      "suggestionDate": "2026-11-19",
-      "close": 6951,
-      "change5Pct": 0.4,
-      "change20Pct": 5.97,
-      "rsi": 64.6,
-      "ema20": 6818.32,
-      "ema50": 6896.83,
-      "volumeRatio": 0.57,
-      "high20": 7120,
-      "atr": 230.36,
-      "entry": 6951,
-      "stop": 6605.46,
-      "target": 7987.61,
-      "score": 40
+      "score": 39.86
     },
     {
       "symbol": "BBTC",
@@ -6681,7 +6741,47 @@
       "entry": 1330.7,
       "stop": 1259.36,
       "target": 1544.71,
-      "score": 40
+      "score": 39.75
+    },
+    {
+      "symbol": "ABB",
+      "name": "ABB India Limited",
+      "sector": "Industrials",
+      "marketCapCr": 147298,
+      "suggestionDate": "2026-11-19",
+      "close": 6951,
+      "change5Pct": 0.4,
+      "change20Pct": 5.97,
+      "rsi": 64.6,
+      "ema20": 6818.32,
+      "ema50": 6896.83,
+      "volumeRatio": 0.57,
+      "high20": 7120,
+      "atr": 230.36,
+      "entry": 6951,
+      "stop": 6605.46,
+      "target": 7987.61,
+      "score": 39.74
+    },
+    {
+      "symbol": "IIFL",
+      "name": "IIFL Finance Limited",
+      "sector": "Financial Services",
+      "marketCapCr": 27519,
+      "suggestionDate": "2026-11-19",
+      "close": 644.45,
+      "change5Pct": -2.82,
+      "change20Pct": 10.22,
+      "rsi": 64.12,
+      "ema20": 616.75,
+      "ema50": 603.53,
+      "volumeRatio": 1.76,
+      "high20": 694.4,
+      "atr": 36.29,
+      "entry": 644.45,
+      "stop": 590.01,
+      "target": 712.05,
+      "score": 39.53
     },
     {
       "symbol": "SUNDARMFIN",
@@ -6701,27 +6801,7 @@
       "entry": 4360.5,
       "stop": 4148.91,
       "target": 4995.26,
-      "score": 39.38
-    },
-    {
-      "symbol": "PRIMESECU",
-      "name": "Prime Securities Limited",
-      "sector": "Financial Services",
-      "marketCapCr": 1047,
-      "suggestionDate": "2026-11-19",
-      "close": 308.4,
-      "change5Pct": 2.09,
-      "change20Pct": 12.43,
-      "rsi": 67.2,
-      "ema20": 299.75,
-      "ema50": 294.34,
-      "volumeRatio": 0.61,
-      "high20": 318.95,
-      "atr": 11.8,
-      "entry": 308.4,
-      "stop": 290.69,
-      "target": 328.25,
-      "score": 39.38
+      "score": 39.13
     },
     {
       "symbol": "EIHOTEL",
@@ -6741,13 +6821,33 @@
       "entry": 310,
       "stop": 295.03,
       "target": 354.9,
-      "score": 39.35
+      "score": 39.1
+    },
+    {
+      "symbol": "PRIMESECU",
+      "name": "Prime Securities Limited",
+      "sector": "Financial Services",
+      "marketCapCr": 1047,
+      "suggestionDate": "2026-11-19",
+      "close": 308.4,
+      "change5Pct": 2.09,
+      "change20Pct": 12.43,
+      "rsi": 67.2,
+      "ema20": 299.75,
+      "ema50": 294.34,
+      "volumeRatio": 0.61,
+      "high20": 318.95,
+      "atr": 11.8,
+      "entry": 308.4,
+      "stop": 290.69,
+      "target": 328.25,
+      "score": 38.85
     },
     {
       "symbol": "UNOMINDA",
       "name": "Uno Minda Limited",
       "sector": "Consumer Cyclical",
-      "marketCapCr": 79979,
+      "marketCapCr": 79978,
       "suggestionDate": "2026-11-19",
       "close": 1385,
       "change5Pct": -0.07,
@@ -6761,7 +6861,7 @@
       "entry": 1385,
       "stop": 1307.39,
       "target": 1617.84,
-      "score": 38.75
+      "score": 38.51
     },
     {
       "symbol": "EDELWEISS",
@@ -6781,7 +6881,7 @@
       "entry": 130.15,
       "stop": 122.3,
       "target": 147.46,
-      "score": 38.71
+      "score": 38.46
     },
     {
       "symbol": "RANEHOLDIN",
@@ -6801,7 +6901,7 @@
       "entry": 1567.1,
       "stop": 1460.79,
       "target": 1886.02,
-      "score": 38.06
+      "score": 37.82
     },
     {
       "symbol": "NITINSPIN",
@@ -6821,27 +6921,7 @@
       "entry": 694.8,
       "stop": 653.44,
       "target": 818.87,
-      "score": 38.01
-    },
-    {
-      "symbol": "JAYAGROGN",
-      "name": "Jayant Agro-Organics Limited",
-      "sector": "Basic Materials",
-      "marketCapCr": 710,
-      "suggestionDate": "2026-11-19",
-      "close": 236.72,
-      "change5Pct": 3.55,
-      "change20Pct": 12.85,
-      "rsi": 63.09,
-      "ema20": 229.55,
-      "ema50": 225.58,
-      "volumeRatio": 0.27,
-      "high20": 247.4,
-      "atr": 10.72,
-      "entry": 236.72,
-      "stop": 220.64,
-      "target": 267.65,
-      "score": 37.67
+      "score": 37.5
     },
     {
       "symbol": "GICRE",
@@ -6861,7 +6941,7 @@
       "entry": 338.1,
       "stop": 323.74,
       "target": 381.17,
-      "score": 37.5
+      "score": 37.27
     },
     {
       "symbol": "COFORGE",
@@ -6881,27 +6961,27 @@
       "entry": 2041,
       "stop": 1945.63,
       "target": 2149.18,
-      "score": 37.42
+      "score": 37.18
     },
     {
-      "symbol": "QUESS",
-      "name": "Quess Corp Limited",
-      "sector": "Industrials",
-      "marketCapCr": 5125,
+      "symbol": "JAYAGROGN",
+      "name": "Jayant Agro-Organics Limited",
+      "sector": "Basic Materials",
+      "marketCapCr": 710,
       "suggestionDate": "2026-11-19",
-      "close": 347.2,
-      "change5Pct": 1.39,
-      "change20Pct": 9.49,
-      "rsi": 58.92,
-      "ema20": 334.01,
-      "ema50": 331.59,
-      "volumeRatio": 1.92,
-      "high20": 356.6,
-      "atr": 17.29,
-      "entry": 347.2,
-      "stop": 321.27,
-      "target": 392.64,
-      "score": 36.99
+      "close": 236.72,
+      "change5Pct": 3.55,
+      "change20Pct": 12.85,
+      "rsi": 63.09,
+      "ema20": 229.55,
+      "ema50": 225.58,
+      "volumeRatio": 0.27,
+      "high20": 247.4,
+      "atr": 10.72,
+      "entry": 236.72,
+      "stop": 220.64,
+      "target": 267.65,
+      "score": 37.16
     },
     {
       "symbol": "LGEINDIA",
@@ -6921,7 +7001,27 @@
       "entry": 1716.2,
       "stop": 1634.4,
       "target": 1854.36,
-      "score": 36.77
+      "score": 36.54
+    },
+    {
+      "symbol": "QUESS",
+      "name": "Quess Corp Limited",
+      "sector": "Industrials",
+      "marketCapCr": 5125,
+      "suggestionDate": "2026-11-19",
+      "close": 347.2,
+      "change5Pct": 1.39,
+      "change20Pct": 9.49,
+      "rsi": 58.92,
+      "ema20": 334.01,
+      "ema50": 331.59,
+      "volumeRatio": 1.92,
+      "high20": 356.6,
+      "atr": 17.29,
+      "entry": 347.2,
+      "stop": 321.27,
+      "target": 392.64,
+      "score": 36.49
     },
     {
       "symbol": "AVTNPL",
@@ -6941,7 +7041,7 @@
       "entry": 103.12,
       "stop": 94.91,
       "target": 109.53,
-      "score": 36.64
+      "score": 36.15
     },
     {
       "symbol": "TATACOMM",
@@ -6961,7 +7061,7 @@
       "entry": 1751.7,
       "stop": 1672.77,
       "target": 1988.5,
-      "score": 36.13
+      "score": 35.9
     },
     {
       "symbol": "CRAFTSMAN",
@@ -6981,13 +7081,13 @@
       "entry": 11930,
       "stop": 11255.32,
       "target": 12332.1,
-      "score": 35.94
+      "score": 35.71
     },
     {
       "symbol": "GOKEX",
       "name": "Gokaldas Exports Limited",
       "sector": "Consumer Cyclical",
-      "marketCapCr": 5413,
+      "marketCapCr": 5412,
       "suggestionDate": "2026-11-19",
       "close": 738.65,
       "change5Pct": 10.09,
@@ -7001,27 +7101,7 @@
       "entry": 738.65,
       "stop": 685.57,
       "target": 897.9,
-      "score": 35.94
-    },
-    {
-      "symbol": "SANATHAN",
-      "name": "Sanathan Textiles Limited",
-      "sector": "Consumer Cyclical",
-      "marketCapCr": 4942,
-      "suggestionDate": "2026-11-19",
-      "close": 585.55,
-      "change5Pct": -1.32,
-      "change20Pct": 12.05,
-      "rsi": 72.51,
-      "ema20": 558.26,
-      "ema50": 526.95,
-      "volumeRatio": 0.55,
-      "high20": 617.45,
-      "atr": 28.03,
-      "entry": 585.55,
-      "stop": 543.51,
-      "target": 623.62,
-      "score": 35.62
+      "score": 35.71
     },
     {
       "symbol": "CPPLUS",
@@ -7041,7 +7121,27 @@
       "entry": 4023.2,
       "stop": 3735.48,
       "target": 4666.2,
-      "score": 35.48
+      "score": 35.26
+    },
+    {
+      "symbol": "SANATHAN",
+      "name": "Sanathan Textiles Limited",
+      "sector": "Consumer Cyclical",
+      "marketCapCr": 4942,
+      "suggestionDate": "2026-11-19",
+      "close": 585.55,
+      "change5Pct": -1.32,
+      "change20Pct": 12.05,
+      "rsi": 72.51,
+      "ema20": 558.26,
+      "ema50": 526.95,
+      "volumeRatio": 0.55,
+      "high20": 617.45,
+      "atr": 28.03,
+      "entry": 585.55,
+      "stop": 543.51,
+      "target": 623.62,
+      "score": 35.14
     },
     {
       "symbol": "VIJAYA",
@@ -7061,27 +7161,7 @@
       "entry": 1510.6,
       "stop": 1418.39,
       "target": 1609.54,
-      "score": 35.27
-    },
-    {
-      "symbol": "HINDPETRO",
-      "name": "Hindustan Petroleum Corporation Limited",
-      "sector": "Energy",
-      "marketCapCr": 82985,
-      "suggestionDate": "2026-11-19",
-      "close": 390,
-      "change5Pct": -0.15,
-      "change20Pct": 12.29,
-      "rsi": 74.46,
-      "ema20": 373.05,
-      "ema50": 364.53,
-      "volumeRatio": 0.39,
-      "high20": 404.6,
-      "atr": 11.44,
-      "entry": 390,
-      "stop": 372.84,
-      "target": 441.48,
-      "score": 34.93
+      "score": 34.8
     },
     {
       "symbol": "KISSHT",
@@ -7101,27 +7181,27 @@
       "entry": 340,
       "stop": 312.76,
       "target": 392.03,
-      "score": 34.84
+      "score": 34.62
     },
     {
-      "symbol": "COROMANDEL",
-      "name": "Coromandel International Limited",
-      "sector": "Basic Materials",
-      "marketCapCr": 58084,
+      "symbol": "HINDPETRO",
+      "name": "Hindustan Petroleum Corporation Limited",
+      "sector": "Energy",
+      "marketCapCr": 82985,
       "suggestionDate": "2026-11-19",
-      "close": 1972,
-      "change5Pct": -1,
-      "change20Pct": 10.06,
-      "rsi": 72.73,
-      "ema20": 1883.63,
-      "ema50": 1869.84,
-      "volumeRatio": 1.45,
-      "high20": 2054,
-      "atr": 69.13,
-      "entry": 1972,
-      "stop": 1868.31,
-      "target": 2283.08,
-      "score": 34.59
+      "close": 390,
+      "change5Pct": -0.15,
+      "change20Pct": 12.29,
+      "rsi": 74.46,
+      "ema20": 373.05,
+      "ema50": 364.53,
+      "volumeRatio": 0.39,
+      "high20": 404.6,
+      "atr": 11.44,
+      "entry": 390,
+      "stop": 372.84,
+      "target": 441.48,
+      "score": 34.46
     },
     {
       "symbol": "JAINREC",
@@ -7141,27 +7221,27 @@
       "entry": 293,
       "stop": 275.89,
       "target": 344.32,
-      "score": 34.38
+      "score": 34.16
     },
     {
-      "symbol": "AYMSYNTEX",
-      "name": "AYM Syntex Limited",
-      "sector": "Consumer Cyclical",
-      "marketCapCr": 1621,
+      "symbol": "COROMANDEL",
+      "name": "Coromandel International Limited",
+      "sector": "Basic Materials",
+      "marketCapCr": 58084,
       "suggestionDate": "2026-11-19",
-      "close": 275.67,
-      "change5Pct": 4.53,
-      "change20Pct": 11.81,
-      "rsi": 67.51,
-      "ema20": 266.58,
-      "ema50": 266.53,
-      "volumeRatio": 0.56,
-      "high20": 285,
-      "atr": 16.18,
-      "entry": 275.67,
-      "stop": 251.39,
-      "target": 333.3,
-      "score": 34.25
+      "close": 1972,
+      "change5Pct": -1,
+      "change20Pct": 10.06,
+      "rsi": 72.73,
+      "ema20": 1883.63,
+      "ema50": 1869.84,
+      "volumeRatio": 1.45,
+      "high20": 2054,
+      "atr": 69.13,
+      "entry": 1972,
+      "stop": 1868.31,
+      "target": 2283.08,
+      "score": 34.12
     },
     {
       "symbol": "MOTHERSON",
@@ -7181,27 +7261,27 @@
       "entry": 165.44,
       "stop": 155.5,
       "target": 175,
-      "score": 34.19
+      "score": 33.97
     },
     {
-      "symbol": "ADANIENSOL",
-      "name": "Adani Energy Solutions Limited",
-      "sector": "Utilities",
-      "marketCapCr": 180190,
+      "symbol": "AYMSYNTEX",
+      "name": "AYM Syntex Limited",
+      "sector": "Consumer Cyclical",
+      "marketCapCr": 1621,
       "suggestionDate": "2026-11-19",
-      "close": 1473.4,
-      "change5Pct": 2.74,
-      "change20Pct": 11.28,
-      "rsi": 69.54,
-      "ema20": 1415.46,
-      "ema50": 1404.63,
-      "volumeRatio": 0.75,
-      "high20": 1515,
-      "atr": 42.63,
-      "entry": 1473.4,
-      "stop": 1409.46,
-      "target": 1665.23,
-      "score": 33.9
+      "close": 275.67,
+      "change5Pct": 4.53,
+      "change20Pct": 11.81,
+      "rsi": 67.51,
+      "ema20": 266.58,
+      "ema50": 266.53,
+      "volumeRatio": 0.56,
+      "high20": 285,
+      "atr": 16.18,
+      "entry": 275.67,
+      "stop": 251.39,
+      "target": 333.3,
+      "score": 33.78
     },
     {
       "symbol": "BANDHANBNK",
@@ -7221,27 +7301,7 @@
       "entry": 175,
       "stop": 166.49,
       "target": 200.52,
-      "score": 33.75
-    },
-    {
-      "symbol": "GLAND",
-      "name": "Gland Pharma Limited",
-      "sector": "Healthcare",
-      "marketCapCr": 54338,
-      "suggestionDate": "2026-11-19",
-      "close": 3292.9,
-      "change5Pct": -0.48,
-      "change20Pct": 12.19,
-      "rsi": 65.77,
-      "ema20": 3183.61,
-      "ema50": 3042.95,
-      "volumeRatio": 0.26,
-      "high20": 3429,
-      "atr": 99.86,
-      "entry": 3292.9,
-      "stop": 3143.11,
-      "target": 3463.29,
-      "score": 33.56
+      "score": 33.54
     },
     {
       "symbol": "SEJALLTD",
@@ -7261,27 +7321,27 @@
       "entry": 877.95,
       "stop": 786.61,
       "target": 1034.64,
-      "score": 33.55
+      "score": 33.33
     },
     {
-      "symbol": "ISGEC",
-      "name": "Isgec Heavy Engineering Limited",
-      "sector": "Industrials",
-      "marketCapCr": 7334,
+      "symbol": "ADANIENSOL",
+      "name": "Adani Energy Solutions Limited",
+      "sector": "Utilities",
+      "marketCapCr": 180190,
       "suggestionDate": "2026-11-19",
-      "close": 997.4,
-      "change5Pct": 0.92,
-      "change20Pct": 11.27,
-      "rsi": 75.61,
-      "ema20": 955.47,
-      "ema50": 912.81,
-      "volumeRatio": 0.7,
-      "high20": 999.9,
-      "atr": 29.29,
-      "entry": 997.4,
-      "stop": 953.47,
-      "target": 1125.04,
-      "score": 33.22
+      "close": 1473.4,
+      "change5Pct": 2.74,
+      "change20Pct": 11.28,
+      "rsi": 69.54,
+      "ema20": 1415.46,
+      "ema50": 1404.63,
+      "volumeRatio": 0.75,
+      "high20": 1515,
+      "atr": 42.63,
+      "entry": 1473.4,
+      "stop": 1409.46,
+      "target": 1665.23,
+      "score": 33.11
     },
     {
       "symbol": "JKTYRE",
@@ -7301,7 +7361,27 @@
       "entry": 366.35,
       "stop": 345.49,
       "target": 428.93,
-      "score": 33.13
+      "score": 32.92
+    },
+    {
+      "symbol": "GLAND",
+      "name": "Gland Pharma Limited",
+      "sector": "Healthcare",
+      "marketCapCr": 54338,
+      "suggestionDate": "2026-11-19",
+      "close": 3292.9,
+      "change5Pct": -0.48,
+      "change20Pct": 12.19,
+      "rsi": 65.77,
+      "ema20": 3183.61,
+      "ema50": 3042.95,
+      "volumeRatio": 0.26,
+      "high20": 3429,
+      "atr": 99.86,
+      "entry": 3292.9,
+      "stop": 3143.11,
+      "target": 3463.29,
+      "score": 32.77
     },
     {
       "symbol": "POWERGRID",
@@ -7321,7 +7401,27 @@
       "entry": 264.5,
       "stop": 254.61,
       "target": 294.17,
-      "score": 32.9
+      "score": 32.69
+    },
+    {
+      "symbol": "ISGEC",
+      "name": "Isgec Heavy Engineering Limited",
+      "sector": "Industrials",
+      "marketCapCr": 7334,
+      "suggestionDate": "2026-11-19",
+      "close": 997.4,
+      "change5Pct": 0.92,
+      "change20Pct": 11.27,
+      "rsi": 75.61,
+      "ema20": 955.47,
+      "ema50": 912.81,
+      "volumeRatio": 0.7,
+      "high20": 999.9,
+      "atr": 29.29,
+      "entry": 997.4,
+      "stop": 953.47,
+      "target": 1125.04,
+      "score": 32.43
     },
     {
       "symbol": "AVANTEL",
@@ -7341,27 +7441,7 @@
       "entry": 160.61,
       "stop": 150.27,
       "target": 191.62,
-      "score": 32.88
-    },
-    {
-      "symbol": "IRFC",
-      "name": "Indian Railway Finance Corporation Limited",
-      "sector": "Financial Services",
-      "marketCapCr": 110115,
-      "suggestionDate": "2026-11-19",
-      "close": 84.26,
-      "change5Pct": -1.21,
-      "change20Pct": 9.71,
-      "rsi": 66.76,
-      "ema20": 80.68,
-      "ema50": 80.67,
-      "volumeRatio": 1.4,
-      "high20": 89.93,
-      "atr": 2.97,
-      "entry": 84.26,
-      "stop": 79.81,
-      "target": 97.6,
-      "score": 32.53
+      "score": 32.09
     },
     {
       "symbol": "NUVOCO",
@@ -7381,27 +7461,27 @@
       "entry": 348.2,
       "stop": 333.03,
       "target": 393.7,
-      "score": 32.26
+      "score": 32.05
     },
     {
-      "symbol": "RACLGEAR",
-      "name": "RACL Geartech Limited",
-      "sector": "Consumer Cyclical",
-      "marketCapCr": 1864,
+      "symbol": "IRFC",
+      "name": "Indian Railway Finance Corporation Limited",
+      "sector": "Financial Services",
+      "marketCapCr": 110115,
       "suggestionDate": "2026-11-19",
-      "close": 1578.8,
-      "change5Pct": 0.66,
-      "change20Pct": 11.76,
-      "rsi": 76.26,
-      "ema20": 1500.12,
-      "ema50": 1494.91,
-      "volumeRatio": 0.35,
-      "high20": 1605.7,
-      "atr": 65.49,
-      "entry": 1578.8,
-      "stop": 1480.57,
-      "target": 1873.49,
-      "score": 32.19
+      "close": 84.26,
+      "change5Pct": -1.21,
+      "change20Pct": 9.71,
+      "rsi": 66.76,
+      "ema20": 80.68,
+      "ema50": 80.67,
+      "volumeRatio": 1.4,
+      "high20": 89.93,
+      "atr": 2.97,
+      "entry": 84.26,
+      "stop": 79.81,
+      "target": 97.6,
+      "score": 31.76
     },
     {
       "symbol": "BLAL",
@@ -7421,27 +7501,27 @@
       "entry": 170.07,
       "stop": 160.62,
       "target": 198.41,
-      "score": 31.87
+      "score": 31.68
     },
     {
-      "symbol": "KOVAI",
-      "name": "Kovai Medical Center and Hospital Limited",
-      "sector": "Healthcare",
-      "marketCapCr": 7068,
+      "symbol": "RACLGEAR",
+      "name": "RACL Geartech Limited",
+      "sector": "Consumer Cyclical",
+      "marketCapCr": 1864,
       "suggestionDate": "2026-11-19",
-      "close": 6459,
-      "change5Pct": -1.08,
-      "change20Pct": 11.71,
-      "rsi": 67.39,
-      "ema20": 6190.33,
-      "ema50": 6060.38,
-      "volumeRatio": 0.37,
-      "high20": 6750,
-      "atr": 225.18,
-      "entry": 6459,
-      "stop": 6121.23,
-      "target": 6817.5,
-      "score": 31.85
+      "close": 1578.8,
+      "change5Pct": 0.66,
+      "change20Pct": 11.76,
+      "rsi": 76.26,
+      "ema20": 1500.12,
+      "ema50": 1494.91,
+      "volumeRatio": 0.35,
+      "high20": 1605.7,
+      "atr": 65.49,
+      "entry": 1578.8,
+      "stop": 1480.57,
+      "target": 1873.49,
+      "score": 31.42
     },
     {
       "symbol": "TEXRAIL",
@@ -7461,27 +7541,27 @@
       "entry": 110.96,
       "stop": 103.32,
       "target": 133.88,
-      "score": 31.61
+      "score": 31.41
     },
     {
-      "symbol": "INDGN",
-      "name": "Indegene Limited",
+      "symbol": "KOVAI",
+      "name": "Kovai Medical Center and Hospital Limited",
       "sector": "Healthcare",
-      "marketCapCr": 15543,
+      "marketCapCr": 7068,
       "suggestionDate": "2026-11-19",
-      "close": 645.4,
-      "change5Pct": -3.1,
-      "change20Pct": 11.18,
-      "rsi": 67.65,
-      "ema20": 626.97,
-      "ema50": 604.5,
-      "volumeRatio": 0.56,
-      "high20": 677,
-      "atr": 23.23,
-      "entry": 645.4,
-      "stop": 610.56,
-      "target": 683.77,
-      "score": 31.51
+      "close": 6459,
+      "change5Pct": -1.08,
+      "change20Pct": 11.71,
+      "rsi": 67.39,
+      "ema20": 6190.33,
+      "ema50": 6060.38,
+      "volumeRatio": 0.37,
+      "high20": 6750,
+      "atr": 225.18,
+      "entry": 6459,
+      "stop": 6121.23,
+      "target": 6817.5,
+      "score": 31.08
     },
     {
       "symbol": "INOXINDIA",
@@ -7501,27 +7581,27 @@
       "entry": 2127.6,
       "stop": 1978.33,
       "target": 2362.9,
-      "score": 31.25
+      "score": 31.06
     },
     {
-      "symbol": "MTNL",
-      "name": "Mahanagar Telephone Nigam Limited",
-      "sector": "Communication Services",
-      "marketCapCr": 1566,
+      "symbol": "INDGN",
+      "name": "Indegene Limited",
+      "sector": "Healthcare",
+      "marketCapCr": 15543,
       "suggestionDate": "2026-11-19",
-      "close": 24.86,
-      "change5Pct": -6.47,
-      "change20Pct": 11.98,
-      "rsi": 65.55,
-      "ema20": 24.76,
-      "ema50": 24.74,
-      "volumeRatio": 0.09,
-      "high20": 28.49,
-      "atr": 1.33,
-      "entry": 24.86,
-      "stop": 22.87,
-      "target": 30.83,
-      "score": 31.16
+      "close": 645.4,
+      "change5Pct": -3.1,
+      "change20Pct": 11.18,
+      "rsi": 67.65,
+      "ema20": 626.97,
+      "ema50": 604.5,
+      "volumeRatio": 0.56,
+      "high20": 677,
+      "atr": 23.23,
+      "entry": 645.4,
+      "stop": 610.56,
+      "target": 683.77,
+      "score": 30.74
     },
     {
       "symbol": "BLS",
@@ -7541,7 +7621,7 @@
       "entry": 226.8,
       "stop": 214.07,
       "target": 264.99,
-      "score": 30.65
+      "score": 30.45
     },
     {
       "symbol": "MADRASFERT",
@@ -7561,7 +7641,27 @@
       "entry": 58.83,
       "stop": 53.6,
       "target": 74.51,
-      "score": 30.65
+      "score": 30.45
+    },
+    {
+      "symbol": "MTNL",
+      "name": "Mahanagar Telephone Nigam Limited",
+      "sector": "Communication Services",
+      "marketCapCr": 1566,
+      "suggestionDate": "2026-11-19",
+      "close": 24.86,
+      "change5Pct": -6.47,
+      "change20Pct": 11.98,
+      "rsi": 65.55,
+      "ema20": 24.76,
+      "ema50": 24.74,
+      "volumeRatio": 0.09,
+      "high20": 28.49,
+      "atr": 1.33,
+      "entry": 24.86,
+      "stop": 22.87,
+      "target": 30.83,
+      "score": 30.41
     },
     {
       "symbol": "GREAVESCOT",
@@ -7581,7 +7681,7 @@
       "entry": 263.5,
       "stop": 244.55,
       "target": 274.62,
-      "score": 30.31
+      "score": 30.12
     },
     {
       "symbol": "JINDWORLD",
@@ -7601,27 +7701,7 @@
       "entry": 40.7,
       "stop": 36.93,
       "target": 52.01,
-      "score": 30.31
-    },
-    {
-      "symbol": "DHANBANK",
-      "name": "Dhanlaxmi Bank Limited",
-      "sector": "Financial Services",
-      "marketCapCr": 1555,
-      "suggestionDate": "2026-11-19",
-      "close": 39.4,
-      "change5Pct": 12.41,
-      "change20Pct": 10.89,
-      "rsi": 70.35,
-      "ema20": 36.11,
-      "ema50": 33.95,
-      "volumeRatio": 0.57,
-      "high20": 44.74,
-      "atr": 2.45,
-      "entry": 39.4,
-      "stop": 35.73,
-      "target": 45.19,
-      "score": 29.79
+      "score": 30.12
     },
     {
       "symbol": "BOSCH-HCIL",
@@ -7641,47 +7721,27 @@
       "entry": 1763.2,
       "stop": 1659.39,
       "target": 2057.37,
-      "score": 29.68
+      "score": 29.49
     },
     {
-      "symbol": "AEROENTER",
-      "name": "Aeroflex Enterprises Limited",
-      "sector": "Industrials",
-      "marketCapCr": 1552,
+      "symbol": "DHANBANK",
+      "name": "Dhanlaxmi Bank Limited",
+      "sector": "Financial Services",
+      "marketCapCr": 1555,
       "suggestionDate": "2026-11-19",
-      "close": 137.11,
-      "change5Pct": 5.15,
-      "change20Pct": 10.58,
-      "rsi": 60.28,
-      "ema20": 129.11,
-      "ema50": 127.97,
-      "volumeRatio": 0.7,
-      "high20": 137.85,
-      "atr": 5.95,
-      "entry": 137.11,
-      "stop": 128.19,
-      "target": 161.2,
-      "score": 29.45
-    },
-    {
-      "symbol": "STLNETWORK",
-      "name": "STL Networks Limited",
-      "sector": "Communication Services",
-      "marketCapCr": 2106,
-      "suggestionDate": "2026-11-19",
-      "close": 43.13,
-      "change5Pct": -5.75,
-      "change20Pct": 10.56,
-      "rsi": 70.26,
-      "ema20": 41.59,
-      "ema50": 39.48,
-      "volumeRatio": 0.56,
-      "high20": 47.09,
-      "atr": 2.46,
-      "entry": 43.13,
-      "stop": 39.44,
-      "target": 54.2,
-      "score": 29.11
+      "close": 39.4,
+      "change5Pct": 12.41,
+      "change20Pct": 10.89,
+      "rsi": 70.35,
+      "ema20": 36.11,
+      "ema50": 33.95,
+      "volumeRatio": 0.57,
+      "high20": 44.74,
+      "atr": 2.45,
+      "entry": 39.4,
+      "stop": 35.73,
+      "target": 45.19,
+      "score": 29.05
     },
     {
       "symbol": "GLAXO",
@@ -7701,7 +7761,7 @@
       "entry": 2713.4,
       "stop": 2576.52,
       "target": 3124.02,
-      "score": 29.06
+      "score": 28.88
     },
     {
       "symbol": "TIMKEN",
@@ -7721,7 +7781,7 @@
       "entry": 3096.9,
       "stop": 2966.86,
       "target": 3487.02,
-      "score": 29.06
+      "score": 28.88
     },
     {
       "symbol": "SHRADDHA",
@@ -7741,27 +7801,47 @@
       "entry": 162.14,
       "stop": 151.98,
       "target": 180.79,
-      "score": 29.03
+      "score": 28.85
     },
     {
-      "symbol": "LMW",
-      "name": "LMW Limited",
+      "symbol": "AEROENTER",
+      "name": "Aeroflex Enterprises Limited",
       "sector": "Industrials",
-      "marketCapCr": 18893,
+      "marketCapCr": 1552,
       "suggestionDate": "2026-11-19",
-      "close": 17685,
-      "change5Pct": 1.81,
-      "change20Pct": 10.59,
-      "rsi": 60.44,
-      "ema20": 17123.56,
-      "ema50": 17030.05,
-      "volumeRatio": 0.48,
-      "high20": 18025,
-      "atr": 573.79,
-      "entry": 17685,
-      "stop": 16824.32,
-      "target": 20267.04,
-      "score": 28.42
+      "close": 137.11,
+      "change5Pct": 5.15,
+      "change20Pct": 10.58,
+      "rsi": 60.28,
+      "ema20": 129.11,
+      "ema50": 127.97,
+      "volumeRatio": 0.7,
+      "high20": 137.85,
+      "atr": 5.95,
+      "entry": 137.11,
+      "stop": 128.19,
+      "target": 161.2,
+      "score": 28.72
+    },
+    {
+      "symbol": "STLNETWORK",
+      "name": "STL Networks Limited",
+      "sector": "Communication Services",
+      "marketCapCr": 2106,
+      "suggestionDate": "2026-11-19",
+      "close": 43.13,
+      "change5Pct": -5.75,
+      "change20Pct": 10.56,
+      "rsi": 70.26,
+      "ema20": 41.59,
+      "ema50": 39.48,
+      "volumeRatio": 0.56,
+      "high20": 47.09,
+      "atr": 2.46,
+      "entry": 43.13,
+      "stop": 39.44,
+      "target": 54.2,
+      "score": 28.38
     },
     {
       "symbol": "KROSS",
@@ -7781,7 +7861,7 @@
       "entry": 285.45,
       "stop": 260.41,
       "target": 329.66,
-      "score": 28.39
+      "score": 28.21
     },
     {
       "symbol": "IEX",
@@ -7801,47 +7881,27 @@
       "entry": 115.17,
       "stop": 109.76,
       "target": 131.4,
-      "score": 28.13
+      "score": 27.95
     },
     {
-      "symbol": "ESAFSFB",
-      "name": "ESAF Small Finance Bank",
-      "sector": "Financial Services",
-      "marketCapCr": 2361,
+      "symbol": "LMW",
+      "name": "LMW Limited",
+      "sector": "Industrials",
+      "marketCapCr": 18893,
       "suggestionDate": "2026-11-19",
-      "close": 45.74,
-      "change5Pct": 1.46,
-      "change20Pct": 9.69,
-      "rsi": 61.73,
-      "ema20": 43.81,
-      "ema50": 42.29,
-      "volumeRatio": 0.9,
-      "high20": 48.4,
-      "atr": 1.87,
-      "entry": 45.74,
-      "stop": 42.94,
-      "target": 48.88,
-      "score": 28.08
-    },
-    {
-      "symbol": "CEATLTD",
-      "name": "CEAT Limited",
-      "sector": "Consumer Cyclical",
-      "marketCapCr": 14277,
-      "suggestionDate": "2026-11-19",
-      "close": 3541.6,
-      "change5Pct": -0.28,
-      "change20Pct": 10.46,
-      "rsi": 73.11,
-      "ema20": 3419.8,
-      "ema50": 3381.48,
+      "close": 17685,
+      "change5Pct": 1.81,
+      "change20Pct": 10.59,
+      "rsi": 60.44,
+      "ema20": 17123.56,
+      "ema50": 17030.05,
       "volumeRatio": 0.48,
-      "high20": 3595,
-      "atr": 101.21,
-      "entry": 3541.6,
-      "stop": 3389.79,
-      "target": 3997.03,
-      "score": 27.74
+      "high20": 18025,
+      "atr": 573.79,
+      "entry": 17685,
+      "stop": 16824.32,
+      "target": 20267.04,
+      "score": 27.7
     },
     {
       "symbol": "ENKEIWHEL",
@@ -7861,7 +7921,27 @@
       "entry": 400.2,
       "stop": 376.07,
       "target": 429.25,
-      "score": 27.74
+      "score": 27.56
+    },
+    {
+      "symbol": "ESAFSFB",
+      "name": "ESAF Small Finance Bank",
+      "sector": "Financial Services",
+      "marketCapCr": 2361,
+      "suggestionDate": "2026-11-19",
+      "close": 45.74,
+      "change5Pct": 1.46,
+      "change20Pct": 9.69,
+      "rsi": 61.73,
+      "ema20": 43.81,
+      "ema50": 42.29,
+      "volumeRatio": 0.9,
+      "high20": 48.4,
+      "atr": 1.87,
+      "entry": 45.74,
+      "stop": 42.94,
+      "target": 48.88,
+      "score": 27.36
     },
     {
       "symbol": "HORIZONIND",
@@ -7881,27 +7961,27 @@
       "entry": 48.88,
       "stop": 45.61,
       "target": 58.7,
-      "score": 27.5
+      "score": 27.33
     },
     {
-      "symbol": "RAYMOND",
-      "name": "Raymond Limited",
-      "sector": "Industrials",
-      "marketCapCr": 7974,
+      "symbol": "CEATLTD",
+      "name": "CEAT Limited",
+      "sector": "Consumer Cyclical",
+      "marketCapCr": 14277,
       "suggestionDate": "2026-11-19",
-      "close": 1195.3,
-      "change5Pct": 6.12,
-      "change20Pct": 9.77,
-      "rsi": 63.95,
-      "ema20": 1143.77,
-      "ema50": 1061.14,
-      "volumeRatio": 0.82,
-      "high20": 1250,
-      "atr": 57.74,
-      "entry": 1195.3,
-      "stop": 1108.7,
-      "target": 1352.39,
-      "score": 27.4
+      "close": 3541.6,
+      "change5Pct": -0.28,
+      "change20Pct": 10.46,
+      "rsi": 73.11,
+      "ema20": 3419.8,
+      "ema50": 3381.48,
+      "volumeRatio": 0.48,
+      "high20": 3595,
+      "atr": 101.21,
+      "entry": 3541.6,
+      "stop": 3389.79,
+      "target": 3997.03,
+      "score": 27.03
     },
     {
       "symbol": "JAMNAAUTO",
@@ -7921,27 +8001,7 @@
       "entry": 140.69,
       "stop": 129.51,
       "target": 157.56,
-      "score": 27.1
-    },
-    {
-      "symbol": "MSTCLTD",
-      "name": "MSTC Limited",
-      "sector": "Industrials",
-      "marketCapCr": 4764,
-      "suggestionDate": "2026-11-19",
-      "close": 676.65,
-      "change5Pct": 3.65,
-      "change20Pct": 10.74,
-      "rsi": 62.77,
-      "ema20": 655.34,
-      "ema50": 654.49,
-      "volumeRatio": 0.33,
-      "high20": 798.65,
-      "atr": 44.96,
-      "entry": 676.65,
-      "stop": 609.21,
-      "target": 813.05,
-      "score": 27.05
+      "score": 26.92
     },
     {
       "symbol": "JTEKTINDIA",
@@ -7961,7 +8021,47 @@
       "entry": 122.94,
       "stop": 116.19,
       "target": 143.19,
-      "score": 26.88
+      "score": 26.71
+    },
+    {
+      "symbol": "RAYMOND",
+      "name": "Raymond Limited",
+      "sector": "Industrials",
+      "marketCapCr": 7974,
+      "suggestionDate": "2026-11-19",
+      "close": 1195.3,
+      "change5Pct": 6.12,
+      "change20Pct": 9.77,
+      "rsi": 63.95,
+      "ema20": 1143.77,
+      "ema50": 1061.14,
+      "volumeRatio": 0.82,
+      "high20": 1250,
+      "atr": 57.74,
+      "entry": 1195.3,
+      "stop": 1108.7,
+      "target": 1352.39,
+      "score": 26.69
+    },
+    {
+      "symbol": "MSTCLTD",
+      "name": "MSTC Limited",
+      "sector": "Industrials",
+      "marketCapCr": 4764,
+      "suggestionDate": "2026-11-19",
+      "close": 676.65,
+      "change5Pct": 3.65,
+      "change20Pct": 10.74,
+      "rsi": 62.77,
+      "ema20": 655.34,
+      "ema50": 654.49,
+      "volumeRatio": 0.33,
+      "high20": 798.65,
+      "atr": 44.96,
+      "entry": 676.65,
+      "stop": 609.21,
+      "target": 813.05,
+      "score": 26.35
     },
     {
       "symbol": "MAZDA",
@@ -7981,7 +8081,7 @@
       "entry": 279,
       "stop": 252.54,
       "target": 346.63,
-      "score": 26.45
+      "score": 26.28
     },
     {
       "symbol": "STARHEALTH",
@@ -8001,7 +8101,7 @@
       "entry": 568.65,
       "stop": 538.62,
       "target": 631.15,
-      "score": 25.94
+      "score": 25.78
     },
     {
       "symbol": "SANDHAR",
@@ -8021,47 +8121,7 @@
       "entry": 574.95,
       "stop": 534.63,
       "target": 695.9,
-      "score": 25.94
-    },
-    {
-      "symbol": "OBEROIRLTY",
-      "name": "Oberoi Realty Limited",
-      "sector": "Real Estate",
-      "marketCapCr": 65812,
-      "suggestionDate": "2026-11-19",
-      "close": 1810,
-      "change5Pct": -0.39,
-      "change20Pct": 9.87,
-      "rsi": 72.31,
-      "ema20": 1746.74,
-      "ema50": 1745.46,
-      "volumeRatio": 0.66,
-      "high20": 1835,
-      "atr": 51.36,
-      "entry": 1810,
-      "stop": 1732.96,
-      "target": 2005.96,
-      "score": 25.86
-    },
-    {
-      "symbol": "ROSSTECH",
-      "name": "Rossell Techsys Limited",
-      "sector": "Industrials",
-      "marketCapCr": 5895,
-      "suggestionDate": "2026-11-19",
-      "close": 1557.8,
-      "change5Pct": 4.68,
-      "change20Pct": 10.43,
-      "rsi": 64.06,
-      "ema20": 1478.12,
-      "ema50": 1405.83,
-      "volumeRatio": 0.38,
-      "high20": 1603.5,
-      "atr": 71.88,
-      "entry": 1557.8,
-      "stop": 1449.98,
-      "target": 1715.99,
-      "score": 25.86
+      "score": 25.78
     },
     {
       "symbol": "INDUSTOWER",
@@ -8081,27 +8141,47 @@
       "entry": 387.65,
       "stop": 373.03,
       "target": 431.51,
-      "score": 25.81
+      "score": 25.64
     },
     {
-      "symbol": "JSWSTEEL",
-      "name": "JSW Steel Limited",
-      "sector": "Basic Materials",
-      "marketCapCr": 326431,
+      "symbol": "OBEROIRLTY",
+      "name": "Oberoi Realty Limited",
+      "sector": "Real Estate",
+      "marketCapCr": 65812,
       "suggestionDate": "2026-11-19",
-      "close": 1336.8,
-      "change5Pct": -1.13,
-      "change20Pct": 9.31,
-      "rsi": 70.85,
-      "ema20": 1309.85,
-      "ema50": 1284.5,
-      "volumeRatio": 0.88,
-      "high20": 1370,
-      "atr": 28.39,
-      "entry": 1336.8,
-      "stop": 1294.21,
-      "target": 1383.7,
-      "score": 25.34
+      "close": 1810,
+      "change5Pct": -0.39,
+      "change20Pct": 9.87,
+      "rsi": 72.31,
+      "ema20": 1746.74,
+      "ema50": 1745.46,
+      "volumeRatio": 0.66,
+      "high20": 1835,
+      "atr": 51.36,
+      "entry": 1810,
+      "stop": 1732.96,
+      "target": 2005.96,
+      "score": 25.17
+    },
+    {
+      "symbol": "ROSSTECH",
+      "name": "Rossell Techsys Limited",
+      "sector": "Industrials",
+      "marketCapCr": 5895,
+      "suggestionDate": "2026-11-19",
+      "close": 1557.8,
+      "change5Pct": 4.68,
+      "change20Pct": 10.43,
+      "rsi": 64.06,
+      "ema20": 1478.12,
+      "ema50": 1405.83,
+      "volumeRatio": 0.38,
+      "high20": 1603.5,
+      "atr": 71.88,
+      "entry": 1557.8,
+      "stop": 1449.98,
+      "target": 1715.99,
+      "score": 25.17
     },
     {
       "symbol": "SHAILY",
@@ -8121,27 +8201,27 @@
       "entry": 3131.3,
       "stop": 2971.91,
       "target": 3609.46,
-      "score": 25.16
+      "score": 25
     },
     {
-      "symbol": "KFINTECH",
-      "name": "KFin Technologies Limited",
-      "sector": "Technology",
-      "marketCapCr": 16184,
+      "symbol": "JSWSTEEL",
+      "name": "JSW Steel Limited",
+      "sector": "Basic Materials",
+      "marketCapCr": 326431,
       "suggestionDate": "2026-11-19",
-      "close": 936,
-      "change5Pct": -2.95,
-      "change20Pct": 10.27,
-      "rsi": 66.24,
-      "ema20": 911.88,
-      "ema50": 898.99,
-      "volumeRatio": 0.33,
-      "high20": 985,
-      "atr": 33.45,
-      "entry": 936,
-      "stop": 885.82,
-      "target": 1086.53,
-      "score": 25
+      "close": 1336.8,
+      "change5Pct": -1.13,
+      "change20Pct": 9.31,
+      "rsi": 70.85,
+      "ema20": 1309.85,
+      "ema50": 1284.5,
+      "volumeRatio": 0.88,
+      "high20": 1370,
+      "atr": 28.39,
+      "entry": 1336.8,
+      "stop": 1294.21,
+      "target": 1383.7,
+      "score": 24.66
     },
     {
       "symbol": "SOBHA",
@@ -8161,7 +8241,27 @@
       "entry": 1269.4,
       "stop": 1195.52,
       "target": 1491.03,
-      "score": 24.52
+      "score": 24.36
+    },
+    {
+      "symbol": "KFINTECH",
+      "name": "KFin Technologies Limited",
+      "sector": "Technology",
+      "marketCapCr": 16184,
+      "suggestionDate": "2026-11-19",
+      "close": 936,
+      "change5Pct": -2.95,
+      "change20Pct": 10.27,
+      "rsi": 66.24,
+      "ema20": 911.88,
+      "ema50": 898.99,
+      "volumeRatio": 0.33,
+      "high20": 985,
+      "atr": 33.45,
+      "entry": 936,
+      "stop": 885.82,
+      "target": 1086.53,
+      "score": 24.32
     },
     {
       "symbol": "DABUR",
@@ -8181,7 +8281,7 @@
       "entry": 390.65,
       "stop": 376.49,
       "target": 433.14,
-      "score": 24.38
+      "score": 24.22
     },
     {
       "symbol": "VARROC",
@@ -8201,7 +8301,7 @@
       "entry": 819.45,
       "stop": 767.96,
       "target": 921.32,
-      "score": 23.87
+      "score": 23.72
     },
     {
       "symbol": "AMBER",
@@ -8221,7 +8321,7 @@
       "entry": 6697,
       "stop": 6191.88,
       "target": 8212.38,
-      "score": 23.75
+      "score": 23.6
     },
     {
       "symbol": "MGEL",
@@ -8241,7 +8341,7 @@
       "entry": 17.5,
       "stop": 16.27,
       "target": 19.54,
-      "score": 23.23
+      "score": 23.08
     },
     {
       "symbol": "SYMPHONY",
@@ -8261,7 +8361,7 @@
       "entry": 554.35,
       "stop": 524.88,
       "target": 642.76,
-      "score": 22.81
+      "score": 22.67
     },
     {
       "symbol": "MUFIN",
@@ -8281,7 +8381,7 @@
       "entry": 137.83,
       "stop": 132.6,
       "target": 146.45,
-      "score": 22.26
+      "score": 22.12
     },
     {
       "symbol": "BEL",
@@ -8301,27 +8401,7 @@
       "entry": 404.2,
       "stop": 391.02,
       "target": 443.74,
-      "score": 21.92
-    },
-    {
-      "symbol": "TIMEX",
-      "name": "Timex Group India Limited",
-      "sector": "Consumer Cyclical",
-      "marketCapCr": 7300,
-      "suggestionDate": "2026-11-19",
-      "close": 723.15,
-      "change5Pct": -3.7,
-      "change20Pct": 9.85,
-      "rsi": 69.62,
-      "ema20": 706.1,
-      "ema50": 676.91,
-      "volumeRatio": 0.31,
-      "high20": 766.9,
-      "atr": 35.9,
-      "entry": 723.15,
-      "stop": 669.29,
-      "target": 774.57,
-      "score": 21.92
+      "score": 21.45
     },
     {
       "symbol": "BRITANNIA",
@@ -8341,7 +8421,7 @@
       "entry": 4868,
       "stop": 4667.42,
       "target": 5469.75,
-      "score": 21.29
+      "score": 21.15
     },
     {
       "symbol": "GULFOILLUB",
@@ -8361,7 +8441,7 @@
       "entry": 1150.1,
       "stop": 1103.85,
       "target": 1242.7,
-      "score": 21.23
+      "score": 20.95
     },
     {
       "symbol": "SOUTHBANK",
@@ -8381,7 +8461,7 @@
       "entry": 59.64,
       "stop": 56.96,
       "target": 63.2,
-      "score": 20.89
+      "score": 20.61
     },
     {
       "symbol": "NIRLON",
@@ -8401,7 +8481,7 @@
       "entry": 641,
       "stop": 618.49,
       "target": 668.57,
-      "score": 20.65
+      "score": 20.51
     },
     {
       "symbol": "BBOX",
@@ -8421,27 +8501,7 @@
       "entry": 907.4,
       "stop": 840.97,
       "target": 1106.7,
-      "score": 20.63
-    },
-    {
-      "symbol": "TRIDENT",
-      "name": "Trident Limited",
-      "sector": "Consumer Cyclical",
-      "marketCapCr": 11949,
-      "suggestionDate": "2026-11-19",
-      "close": 23.45,
-      "change5Pct": -1.35,
-      "change20Pct": 9.84,
-      "rsi": 70.67,
-      "ema20": 23.02,
-      "ema50": 23.01,
-      "volumeRatio": 0.2,
-      "high20": 25.19,
-      "atr": 0.78,
-      "entry": 23.45,
-      "stop": 22.28,
-      "target": 26.97,
-      "score": 20.03
+      "score": 20.5
     },
     {
       "symbol": "ELECON",
@@ -8461,7 +8521,27 @@
       "entry": 450.5,
       "stop": 425.03,
       "target": 526.9,
-      "score": 20
+      "score": 19.87
+    },
+    {
+      "symbol": "TRIDENT",
+      "name": "Trident Limited",
+      "sector": "Consumer Cyclical",
+      "marketCapCr": 11949,
+      "suggestionDate": "2026-11-19",
+      "close": 23.45,
+      "change5Pct": -1.35,
+      "change20Pct": 9.84,
+      "rsi": 70.67,
+      "ema20": 23.02,
+      "ema50": 23.01,
+      "volumeRatio": 0.2,
+      "high20": 25.19,
+      "atr": 0.78,
+      "entry": 23.45,
+      "stop": 22.28,
+      "target": 26.97,
+      "score": 19.76
     },
     {
       "symbol": "UNIENTER",
@@ -8481,7 +8561,7 @@
       "entry": 93.46,
       "stop": 86.52,
       "target": 114.29,
-      "score": 19.52
+      "score": 19.26
     },
     {
       "symbol": "GPTINFRA",
@@ -8501,7 +8581,7 @@
       "entry": 116.64,
       "stop": 109.51,
       "target": 138.02,
-      "score": 19.38
+      "score": 19.25
     },
     {
       "symbol": "BLUSPRING",
@@ -8521,7 +8601,7 @@
       "entry": 159.62,
       "stop": 143.41,
       "target": 183.72,
-      "score": 19.35
+      "score": 19.23
     },
     {
       "symbol": "ACSTECH",
@@ -8541,7 +8621,27 @@
       "entry": 69.42,
       "stop": 64.04,
       "target": 85.22,
-      "score": 19.18
+      "score": 18.92
+    },
+    {
+      "symbol": "LICI",
+      "name": "Life Insurance Corporation of India",
+      "sector": "Financial Services",
+      "marketCapCr": 255593,
+      "suggestionDate": "2026-11-19",
+      "close": 404.1,
+      "change5Pct": 0.02,
+      "change20Pct": 3.07,
+      "rsi": 55.36,
+      "ema20": 397.87,
+      "ema50": 399.15,
+      "volumeRatio": 1.34,
+      "high20": 417.35,
+      "atr": 9.64,
+      "entry": 404.1,
+      "stop": 389.64,
+      "target": 447.49,
+      "score": 18.59
     },
     {
       "symbol": "KARURVYSYA",
@@ -8561,27 +8661,7 @@
       "entry": 384,
       "stop": 364.02,
       "target": 401.83,
-      "score": 18.84
-    },
-    {
-      "symbol": "LICI",
-      "name": "Life Insurance Corporation of India",
-      "sector": "Financial Services",
-      "marketCapCr": 511186,
-      "suggestionDate": "2026-11-19",
-      "close": 404.1,
-      "change5Pct": 0.02,
-      "change20Pct": 3.07,
-      "rsi": 55.36,
-      "ema20": 397.87,
-      "ema50": 399.15,
-      "volumeRatio": 1.34,
-      "high20": 417.35,
-      "atr": 9.64,
-      "entry": 404.1,
-      "stop": 389.64,
-      "target": 447.49,
-      "score": 18.71
+      "score": 18.58
     },
     {
       "symbol": "TIPSMUSIC",
@@ -8601,27 +8681,7 @@
       "entry": 812.95,
       "stop": 768.44,
       "target": 842.85,
-      "score": 18.49
-    },
-    {
-      "symbol": "NINSYS",
-      "name": "NINtec Systems Limited",
-      "sector": "Technology",
-      "marketCapCr": 1737,
-      "suggestionDate": "2026-11-19",
-      "close": 934.9,
-      "change5Pct": 3.9,
-      "change20Pct": 7.35,
-      "rsi": 57.69,
-      "ema20": 907.63,
-      "ema50": 854.18,
-      "volumeRatio": 1.24,
-      "high20": 991,
-      "atr": 43.51,
-      "entry": 934.9,
-      "stop": 869.64,
-      "target": 1000.91,
-      "score": 18.15
+      "score": 18.24
     },
     {
       "symbol": "CANTABIL",
@@ -8641,7 +8701,27 @@
       "entry": 252.85,
       "stop": 238.38,
       "target": 296.27,
-      "score": 18.06
+      "score": 17.95
+    },
+    {
+      "symbol": "NINSYS",
+      "name": "NINtec Systems Limited",
+      "sector": "Technology",
+      "marketCapCr": 1737,
+      "suggestionDate": "2026-11-19",
+      "close": 934.9,
+      "change5Pct": 3.9,
+      "change20Pct": 7.35,
+      "rsi": 57.69,
+      "ema20": 907.63,
+      "ema50": 854.18,
+      "volumeRatio": 1.24,
+      "high20": 991,
+      "atr": 43.51,
+      "entry": 934.9,
+      "stop": 869.64,
+      "target": 1000.91,
+      "score": 17.91
     },
     {
       "symbol": "TPLPLASTEH",
@@ -8661,7 +8741,7 @@
       "entry": 72.98,
       "stop": 67.9,
       "target": 88.23,
-      "score": 17.81
+      "score": 17.57
     },
     {
       "symbol": "STUDDS",
@@ -8681,7 +8761,7 @@
       "entry": 416.05,
       "stop": 399.46,
       "target": 465.82,
-      "score": 17.42
+      "score": 17.31
     },
     {
       "symbol": "SBILIFE",
@@ -8701,7 +8781,7 @@
       "entry": 1804.6,
       "stop": 1737.75,
       "target": 2005.14,
-      "score": 17.29
+      "score": 17.06
     },
     {
       "symbol": "NH",
@@ -8721,27 +8801,7 @@
       "entry": 1873.1,
       "stop": 1794.9,
       "target": 2107.71,
-      "score": 17.29
-    },
-    {
-      "symbol": "ALLDIGI",
-      "name": "Alldigi Tech Limited",
-      "sector": "Industrials",
-      "marketCapCr": 1264,
-      "suggestionDate": "2026-11-19",
-      "close": 829.2,
-      "change5Pct": -0.64,
-      "change20Pct": 8.36,
-      "rsi": 72.11,
-      "ema20": 822.1,
-      "ema50": 811.09,
-      "volumeRatio": 0.69,
-      "high20": 849.85,
-      "atr": 13.11,
-      "entry": 829.2,
-      "stop": 809.54,
-      "target": 888.18,
-      "score": 16.78
+      "score": 17.06
     },
     {
       "symbol": "5PAISA",
@@ -8761,7 +8821,27 @@
       "entry": 340.85,
       "stop": 318.96,
       "target": 406.53,
-      "score": 16.77
+      "score": 16.67
+    },
+    {
+      "symbol": "ALLDIGI",
+      "name": "Alldigi Tech Limited",
+      "sector": "Industrials",
+      "marketCapCr": 1264,
+      "suggestionDate": "2026-11-19",
+      "close": 829.2,
+      "change5Pct": -0.64,
+      "change20Pct": 8.36,
+      "rsi": 72.11,
+      "ema20": 822.1,
+      "ema50": 811.09,
+      "volumeRatio": 0.69,
+      "high20": 849.85,
+      "atr": 13.11,
+      "entry": 829.2,
+      "stop": 809.54,
+      "target": 888.18,
+      "score": 16.55
     },
     {
       "symbol": "KTKBANK",
@@ -8781,7 +8861,7 @@
       "entry": 345.55,
       "stop": 325.85,
       "target": 374.51,
-      "score": 16.44
+      "score": 16.22
     },
     {
       "symbol": "STYLEBAAZA",
@@ -8801,7 +8881,7 @@
       "entry": 524.25,
       "stop": 484.19,
       "target": 550.45,
-      "score": 16.25
+      "score": 16.15
     },
     {
       "symbol": "ACMESOLAR",
@@ -8821,7 +8901,7 @@
       "entry": 409.15,
       "stop": 387.81,
       "target": 473.16,
-      "score": 16.13
+      "score": 16.03
     },
     {
       "symbol": "HDFCLIFE",
@@ -8841,7 +8921,7 @@
       "entry": 577.05,
       "stop": 553.98,
       "target": 646.25,
-      "score": 16.1
+      "score": 15.88
     },
     {
       "symbol": "ATL",
@@ -8861,7 +8941,7 @@
       "entry": 26.31,
       "stop": 24,
       "target": 32,
-      "score": 15.48
+      "score": 15.38
     },
     {
       "symbol": "MBEL",
@@ -8881,7 +8961,7 @@
       "entry": 292.35,
       "stop": 271.48,
       "target": 354.96,
-      "score": 15.41
+      "score": 15.2
     },
     {
       "symbol": "SDBL",
@@ -8901,7 +8981,7 @@
       "entry": 76.64,
       "stop": 72.22,
       "target": 89.9,
-      "score": 15.41
+      "score": 15.2
     },
     {
       "symbol": "ALUFLUOR",
@@ -8921,7 +9001,7 @@
       "entry": 694.4,
       "stop": 640.67,
       "target": 723.16,
-      "score": 15
+      "score": 14.91
     },
     {
       "symbol": "REGAAL",
@@ -8941,7 +9021,7 @@
       "entry": 94.26,
       "stop": 87.19,
       "target": 104.03,
-      "score": 14.73
+      "score": 14.53
     },
     {
       "symbol": "SMARTWORKS",
@@ -8961,7 +9041,7 @@
       "entry": 514.85,
       "stop": 485.24,
       "target": 593.83,
-      "score": 14.38
+      "score": 14.19
     },
     {
       "symbol": "DALMIASUG",
@@ -8981,7 +9061,7 @@
       "entry": 461.95,
       "stop": 422.73,
       "target": 525.2,
-      "score": 14.19
+      "score": 14.1
     },
     {
       "symbol": "ARVSMART",
@@ -9001,7 +9081,7 @@
       "entry": 637.7,
       "stop": 608.48,
       "target": 714.93,
-      "score": 14.04
+      "score": 13.85
     },
     {
       "symbol": "GESHIP",
@@ -9021,7 +9101,7 @@
       "entry": 1555.1,
       "stop": 1461.36,
       "target": 1815.98,
-      "score": 13.55
+      "score": 13.46
     },
     {
       "symbol": "CAPITALSFB",
@@ -9041,7 +9121,7 @@
       "entry": 285.05,
       "stop": 268.32,
       "target": 326.94,
-      "score": 13.36
+      "score": 13.18
     },
     {
       "symbol": "NCLIND",
@@ -9061,7 +9141,7 @@
       "entry": 169.44,
       "stop": 160,
       "target": 197.77,
-      "score": 13.13
+      "score": 13.04
     },
     {
       "symbol": "RADICO",
@@ -9081,7 +9161,7 @@
       "entry": 4660,
       "stop": 4458.77,
       "target": 5263.68,
-      "score": 13.01
+      "score": 12.84
     },
     {
       "symbol": "WHIRLPOOL",
@@ -9101,7 +9181,7 @@
       "entry": 830.3,
       "stop": 789.81,
       "target": 951.78,
-      "score": 12.9
+      "score": 12.82
     },
     {
       "symbol": "SALSTEEL",
@@ -9121,7 +9201,7 @@
       "entry": 88.92,
       "stop": 81.64,
       "target": 103.42,
-      "score": 12.67
+      "score": 12.5
     },
     {
       "symbol": "JKCEMENT",
@@ -9141,7 +9221,7 @@
       "entry": 5320.4,
       "stop": 5061.9,
       "target": 6095.91,
-      "score": 11.99
+      "score": 11.82
     },
     {
       "symbol": "PANORAMA",
@@ -9161,7 +9241,7 @@
       "entry": 59.69,
       "stop": 54.83,
       "target": 70.2,
-      "score": 11.61
+      "score": 11.54
     },
     {
       "symbol": "INDIGO",
@@ -9181,7 +9261,7 @@
       "entry": 5475,
       "stop": 5226.28,
       "target": 6029.7,
-      "score": 11.56
+      "score": 11.49
     },
     {
       "symbol": "TRANSPEK",
@@ -9201,7 +9281,7 @@
       "entry": 1370.6,
       "stop": 1292.49,
       "target": 1489.75,
-      "score": 11.56
+      "score": 11.49
     },
     {
       "symbol": "ANANDRATHI",
@@ -9221,7 +9301,7 @@
       "entry": 2369.6,
       "stop": 2319.31,
       "target": 2520.48,
-      "score": 11.3
+      "score": 11.15
     },
     {
       "symbol": "BHARTIHEXA",
@@ -9241,7 +9321,7 @@
       "entry": 1639.3,
       "stop": 1546.16,
       "target": 1878.6,
-      "score": 10.97
+      "score": 10.9
     },
     {
       "symbol": "CUPID",
@@ -9261,7 +9341,7 @@
       "entry": 365.95,
       "stop": 341.64,
       "target": 396.93,
-      "score": 10.62
+      "score": 10.47
     },
     {
       "symbol": "ARIHANTCAP",
@@ -9281,7 +9361,7 @@
       "entry": 93.08,
       "stop": 86.86,
       "target": 109.66,
-      "score": 10.32
+      "score": 10.26
     },
     {
       "symbol": "KAPSTON",
@@ -9301,7 +9381,7 @@
       "entry": 536.9,
       "stop": 510.01,
       "target": 617.58,
-      "score": 10
+      "score": 9.94
     },
     {
       "symbol": "TMCV",
@@ -9321,7 +9401,7 @@
       "entry": 445.85,
       "stop": 421.61,
       "target": 514.09,
-      "score": 9.76
+      "score": 9.63
     },
     {
       "symbol": "RPSGVENT",
@@ -9341,7 +9421,7 @@
       "entry": 871.8,
       "stop": 814.51,
       "target": 1043.67,
-      "score": 9.68
+      "score": 9.62
     },
     {
       "symbol": "CLSEL",
@@ -9361,7 +9441,7 @@
       "entry": 285.25,
       "stop": 266.99,
       "target": 328.05,
-      "score": 9.25
+      "score": 9.12
     },
     {
       "symbol": "MARINE",
@@ -9381,7 +9461,7 @@
       "entry": 425.4,
       "stop": 382.76,
       "target": 495.76,
-      "score": 9.03
+      "score": 8.97
     },
     {
       "symbol": "JSWCEMENT",
@@ -9401,7 +9481,7 @@
       "entry": 124.05,
       "stop": 119.44,
       "target": 137.87,
-      "score": 8.9
+      "score": 8.78
     },
     {
       "symbol": "KSCL",
@@ -9421,7 +9501,7 @@
       "entry": 727.45,
       "stop": 692.7,
       "target": 831.69,
-      "score": 8.75
+      "score": 8.7
     },
     {
       "symbol": "KOPRAN",
@@ -9441,7 +9521,7 @@
       "entry": 267.05,
       "stop": 243.44,
       "target": 298.79,
-      "score": 8.39
+      "score": 8.33
     },
     {
       "symbol": "ORIENTELEC",
@@ -9461,7 +9541,7 @@
       "entry": 202.37,
       "stop": 192.35,
       "target": 217.15,
-      "score": 7.88
+      "score": 7.77
     },
     {
       "symbol": "FINEORG",
@@ -9481,7 +9561,7 @@
       "entry": 5457,
       "stop": 5189.46,
       "target": 5722.66,
-      "score": 7.53
+      "score": 7.43
     },
     {
       "symbol": "PERSISTENT",
@@ -9501,7 +9581,7 @@
       "entry": 5880,
       "stop": 5673.27,
       "target": 6500.2,
-      "score": 7.1
+      "score": 7.05
     },
     {
       "symbol": "DYNAMATECH",
@@ -9521,7 +9601,7 @@
       "entry": 13548,
       "stop": 12695.89,
       "target": 14642.98,
-      "score": 6.85
+      "score": 6.76
     },
     {
       "symbol": "KAMDHENU",
@@ -9541,7 +9621,7 @@
       "entry": 38.08,
       "stop": 34.62,
       "target": 44.14,
-      "score": 6.51
+      "score": 6.42
     },
     {
       "symbol": "BHAGERIA",
@@ -9561,7 +9641,7 @@
       "entry": 354.15,
       "stop": 314.08,
       "target": 419.96,
-      "score": 6.45
+      "score": 6.41
     },
     {
       "symbol": "VMART",
@@ -9581,7 +9661,7 @@
       "entry": 777.7,
       "stop": 728.19,
       "target": 877.59,
-      "score": 5.81
+      "score": 5.77
     },
     {
       "symbol": "KNAGRI",
@@ -9601,7 +9681,7 @@
       "entry": 208.01,
       "stop": 191.69,
       "target": 236.24,
-      "score": 5.48
+      "score": 5.41
     },
     {
       "symbol": "BMWVENTLTD",
@@ -9621,7 +9701,7 @@
       "entry": 64.69,
       "stop": 61.81,
       "target": 73.34,
-      "score": 5.16
+      "score": 5.13
     },
     {
       "symbol": "NAZARA",
@@ -9641,7 +9721,7 @@
       "entry": 425.55,
       "stop": 406.42,
       "target": 439.6,
-      "score": 5.14
+      "score": 5.07
     },
     {
       "symbol": "BHEL",
@@ -9661,7 +9741,7 @@
       "entry": 435,
       "stop": 413.47,
       "target": 468.64,
-      "score": 4.79
+      "score": 4.73
     },
     {
       "symbol": "HEXATRADEX",
@@ -9681,7 +9761,7 @@
       "entry": 156.13,
       "stop": 149.59,
       "target": 175.74,
-      "score": 4.52
+      "score": 4.49
     },
     {
       "symbol": "SYSTMTXC",
@@ -9701,7 +9781,7 @@
       "entry": 79.54,
       "stop": 73.56,
       "target": 97.49,
-      "score": 4.38
+      "score": 4.35
     },
     {
       "symbol": "UFLEX",
@@ -9721,7 +9801,7 @@
       "entry": 628.05,
       "stop": 590.3,
       "target": 730.74,
-      "score": 4.11
+      "score": 4.05
     },
     {
       "symbol": "FEDDERSHOL",
@@ -9741,7 +9821,7 @@
       "entry": 57.58,
       "stop": 52.66,
       "target": 72.35,
-      "score": 3.87
+      "score": 3.85
     },
     {
       "symbol": "IOB",
@@ -9761,7 +9841,7 @@
       "entry": 31.49,
       "stop": 30.07,
       "target": 35.75,
-      "score": 3.75
+      "score": 3.73
     },
     {
       "symbol": "FEDERALBNK",
@@ -9781,7 +9861,7 @@
       "entry": 364.5,
       "stop": 351.51,
       "target": 403.46,
-      "score": 3.42
+      "score": 3.38
     },
     {
       "symbol": "SAGILITY",
@@ -9801,7 +9881,7 @@
       "entry": 44.86,
       "stop": 42.87,
       "target": 50.83,
-      "score": 3.23
+      "score": 3.21
     },
     {
       "symbol": "CONTROLPR",
@@ -9821,7 +9901,7 @@
       "entry": 624.3,
       "stop": 596.17,
       "target": 708.69,
-      "score": 3.08
+      "score": 3.04
     },
     {
       "symbol": "GEECEE",
@@ -9841,7 +9921,7 @@
       "entry": 363,
       "stop": 340.66,
       "target": 393.9,
-      "score": 2.58
+      "score": 2.56
     },
     {
       "symbol": "SUBEXLTD",
@@ -9861,7 +9941,7 @@
       "entry": 17.39,
       "stop": 15.9,
       "target": 21.86,
-      "score": 2.5
+      "score": 2.48
     },
     {
       "symbol": "BALAJITELE",
@@ -9881,7 +9961,7 @@
       "entry": 98.47,
       "stop": 90.48,
       "target": 122.45,
-      "score": 2.4
+      "score": 2.36
     },
     {
       "symbol": "HITECHCORP",
@@ -9901,7 +9981,7 @@
       "entry": 414.95,
       "stop": 406.32,
       "target": 429.25,
-      "score": 1.94
+      "score": 1.92
     },
     {
       "symbol": "JYOTHYLAB",
@@ -9921,7 +10001,7 @@
       "entry": 195.39,
       "stop": 183.67,
       "target": 230.54,
-      "score": 1.88
+      "score": 1.86
     },
     {
       "symbol": "TMB",
@@ -9941,7 +10021,7 @@
       "entry": 894.5,
       "stop": 854.5,
       "target": 963.74,
-      "score": 1.37
+      "score": 1.35
     },
     {
       "symbol": "ZENSARTECH",
@@ -9961,7 +10041,7 @@
       "entry": 515.6,
       "stop": 485.37,
       "target": 606.27,
-      "score": 1.29
+      "score": 1.28
     },
     {
       "symbol": "SYNCOMF",
@@ -9981,7 +10061,7 @@
       "entry": 22.09,
       "stop": 20.29,
       "target": 27.48,
-      "score": 1.25
+      "score": 1.24
     },
     {
       "symbol": "HIKAL",
@@ -10021,7 +10101,7 @@
       "entry": 6229,
       "stop": 5896.11,
       "target": 6580.15,
-      "score": 0.65
+      "score": 0.64
     },
     {
       "symbol": "PNBHOUSING",

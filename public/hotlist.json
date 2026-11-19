@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T16:40:19.263Z",
+  "generatedAt": "2026-11-19T16:56:09.042Z",
   "asOf": "2026-11-19",
   "regime": {
     "regime": "caution",
@@ -8,7 +8,7 @@
     "niftyVs50Pct": 8.82,
     "niftyVs200Pct": 6.33,
     "sma50Rising": true,
-    "breadthPct": 44.48,
+    "breadthPct": 44.63,
     "note": "Mixed market: 5 points deducted from every score"
   },
   "rules": {
@@ -25,9 +25,9 @@
       "marketCapCr": 177968,
       "grade": "B",
       "close": 154.85,
-      "avgScore": 72.02,
+      "avgScore": 72.01,
       "swing": {
-        "score": 78.49,
+        "score": 78.48,
         "grade": "B",
         "setup": "breakout",
         "setupNote": "Closed 1.5% above the 20-day high on 2.2× volume",
@@ -36,7 +36,7 @@
         "riskPct": 4.33
       },
       "positional": {
-        "score": 65.54,
+        "score": 65.53,
         "grade": "C",
         "setup": "breakout",
         "setupNote": "Closed 12.58% above the 126.85 range high on 3.13× volume",
@@ -67,9 +67,9 @@
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 4.72,
+          "points": 4.71,
           "max": 10,
-          "note": "Financial Services -5.8% vs Nifty, 57% above 50-DMA; weak: sector lagging Nifty"
+          "note": "Financial Services -5.7% vs Nifty, 57% above 50-DMA; weak: sector lagging Nifty"
         },
         {
           "key": "setup",
@@ -197,9 +197,9 @@
       "marketCapCr": 7879,
       "grade": "B",
       "close": 170.18,
-      "avgScore": 67.32,
+      "avgScore": 67.31,
       "swing": {
-        "score": 71.8,
+        "score": 71.79,
         "grade": "B",
         "setup": "consolidation",
         "setupNote": "10-day range 8.3% wide, 1.1% below the 20-day high, NR7",
@@ -208,7 +208,7 @@
         "riskPct": 5.71
       },
       "positional": {
-        "score": 62.84,
+        "score": 62.83,
         "grade": "C",
         "setup": null,
         "setupNote": "",
@@ -239,9 +239,9 @@
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 4.72,
+          "points": 4.71,
           "max": 10,
-          "note": "Financial Services -5.8% vs Nifty, 57% above 50-DMA; weak: sector lagging Nifty"
+          "note": "Financial Services -5.7% vs Nifty, 57% above 50-DMA; weak: sector lagging Nifty"
         },
         {
           "key": "setup",
