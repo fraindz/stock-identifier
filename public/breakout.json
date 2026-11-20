@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-11-19T16:55:51.407Z",
+  "generatedAt": "2026-11-20T16:39:15.420Z",
   "minMarketCapCr": 1000,
   "lookbackWeeks": 20,
   "volumeMultiple": 1.5,
-  "universeSize": 1480,
+  "universeSize": 1463,
   "failed": [],
   "weeks": {
     "currentWeek": {
       "start": "2026-11-16",
-      "end": "2026-11-19"
+      "end": "2026-11-20"
     },
     "lastWeek": {
       "start": "2026-11-09",
@@ -23,17 +23,9 @@
     {
       "symbol": "DIVISLAB",
       "name": "Divi's Laboratories Limited",
-      "marketCapCr": 296741,
+      "marketCapCr": 296807,
       "sector": "Healthcare",
       "days": [
-        {
-          "date": "2025-11-04",
-          "open": 6803,
-          "high": 6866,
-          "low": 6757,
-          "close": 6804.5,
-          "volume": 801413
-        },
         {
           "date": "2025-11-06",
           "open": 6792.5,
@@ -2088,7 +2080,15 @@
           "high": 11178,
           "low": 10965,
           "close": 11178,
-          "volume": 619166
+          "volume": 619182
+        },
+        {
+          "date": "2026-11-20",
+          "open": 11125,
+          "high": 11198,
+          "low": 11025,
+          "close": 11180.5,
+          "volume": 404820
         }
       ],
       "rangeHigh": 10320.5,
@@ -2105,27 +2105,19 @@
       },
       "currentWeek": {
         "start": "2026-11-16",
-        "end": "2026-11-19",
+        "end": "2026-11-20",
         "high": 11544.5,
         "low": 10954,
-        "close": 11178,
-        "volume": 2723482
+        "close": 11180.5,
+        "volume": 3128318
       }
     },
     {
       "symbol": "PNB",
       "name": "Punjab National Bank",
-      "marketCapCr": 177968,
+      "marketCapCr": 178520,
       "sector": "Financial Services",
       "days": [
-        {
-          "date": "2025-11-04",
-          "open": 123.1500015258789,
-          "high": 123.79000091552734,
-          "low": 122.22000122070312,
-          "close": 123.25,
-          "volume": 14185419
-        },
         {
           "date": "2025-11-06",
           "open": 123.98999786376953,
@@ -4180,7 +4172,15 @@
           "high": 156.49000549316406,
           "low": 149.75,
           "close": 154.85000610351562,
-          "volume": 73280976
+          "volume": 73288634
+        },
+        {
+          "date": "2026-11-20",
+          "open": 154,
+          "high": 155.41000366210938,
+          "low": 151.1300048828125,
+          "close": 155.3300018310547,
+          "volume": 38866704
         }
       ],
       "rangeHigh": 126.85,
@@ -4197,27 +4197,19 @@
       },
       "currentWeek": {
         "start": "2026-11-16",
-        "end": "2026-11-19",
+        "end": "2026-11-20",
         "high": 156.49,
         "low": 143.01,
-        "close": 154.85,
-        "volume": 215498859
+        "close": 155.33,
+        "volume": 254373221
       }
     },
     {
       "symbol": "AUROPHARMA",
       "name": "Aurobindo Pharma Limited",
-      "marketCapCr": 103896,
+      "marketCapCr": 103510,
       "sector": "Healthcare",
       "days": [
-        {
-          "date": "2025-11-04",
-          "open": 1158.5999755859375,
-          "high": 1162.9000244140625,
-          "low": 1138,
-          "close": 1149.0999755859375,
-          "volume": 1054886
-        },
         {
           "date": "2025-11-06",
           "open": 1156,
@@ -6264,7 +6256,15 @@
           "high": 1805.699951171875,
           "low": 1778,
           "close": 1805.699951171875,
-          "volume": 864486
+          "volume": 864937
+        },
+        {
+          "date": "2026-11-20",
+          "open": 1788.0999755859375,
+          "high": 1817.5,
+          "low": 1788.0999755859375,
+          "close": 1799,
+          "volume": 810913
         }
       ],
       "rangeHigh": 1805,
@@ -6281,27 +6281,19 @@
       },
       "currentWeek": {
         "start": "2026-11-16",
-        "end": "2026-11-19",
+        "end": "2026-11-20",
         "high": 1849.3,
         "low": 1778,
-        "close": 1805.7,
-        "volume": 4451326
+        "close": 1799,
+        "volume": 5262690
       }
     },
     {
       "symbol": "UNOMINDA",
       "name": "Uno Minda Limited",
-      "marketCapCr": 79978,
+      "marketCapCr": 79690,
       "sector": "Consumer Cyclical",
       "days": [
-        {
-          "date": "2025-11-04",
-          "open": 1264,
-          "high": 1275.9000244140625,
-          "low": 1248.0999755859375,
-          "close": 1252,
-          "volume": 700575
-        },
         {
           "date": "2025-11-06",
           "open": 1242,
@@ -8356,7 +8348,15 @@
           "high": 1409.699951171875,
           "low": 1369.9000244140625,
           "close": 1385,
-          "volume": 1875404
+          "volume": 1875543
+        },
+        {
+          "date": "2026-11-20",
+          "open": 1382,
+          "high": 1399.9000244140625,
+          "low": 1369.5999755859375,
+          "close": 1380,
+          "volume": 1184430
         }
       ],
       "rangeHigh": 1342,
@@ -8373,27 +8373,19 @@
       },
       "currentWeek": {
         "start": "2026-11-16",
-        "end": "2026-11-19",
+        "end": "2026-11-20",
         "high": 1409.7,
         "low": 1335,
-        "close": 1385,
-        "volume": 4921118
+        "close": 1380,
+        "volume": 6105687
       }
     },
     {
       "symbol": "BANKINDIA",
       "name": "Bank of India",
-      "marketCapCr": 73708,
+      "marketCapCr": 74982,
       "sector": "Financial Services",
       "days": [
-        {
-          "date": "2025-11-04",
-          "open": 142.27999877929688,
-          "high": 143.3300018310547,
-          "low": 141,
-          "close": 142.16000366210938,
-          "volume": 21244500
-        },
         {
           "date": "2025-11-06",
           "open": 142,
@@ -10448,7 +10440,15 @@
           "high": 162.89999389648438,
           "low": 157.6999969482422,
           "close": 161.89999389648438,
-          "volume": 14919660
+          "volume": 14922948
+        },
+        {
+          "date": "2026-11-20",
+          "open": 160.5,
+          "high": 165.67999267578125,
+          "low": 159.3699951171875,
+          "close": 164.6999969482422,
+          "volume": 12319346
         }
       ],
       "rangeHigh": 149.33,
@@ -10465,27 +10465,19 @@
       },
       "currentWeek": {
         "start": "2026-11-16",
-        "end": "2026-11-19",
-        "high": 162.9,
+        "end": "2026-11-20",
+        "high": 165.68,
         "low": 151.37,
-        "close": 161.9,
-        "volume": 62094810
+        "close": 164.7,
+        "volume": 74417444
       }
     },
     {
       "symbol": "MOTILALOFS",
       "name": "Motilal Oswal Financial Services Limited",
-      "marketCapCr": 72984,
+      "marketCapCr": 72698,
       "sector": "Financial Services",
       "days": [
-        {
-          "date": "2025-11-04",
-          "open": 1009.9500122070312,
-          "high": 1016.3499755859375,
-          "low": 982.6500244140625,
-          "close": 986,
-          "volume": 742536
-        },
         {
           "date": "2025-11-06",
           "open": 987,
@@ -12540,7 +12532,15 @@
           "high": 1226,
           "low": 1188.25,
           "close": 1210.4000244140625,
-          "volume": 1665868
+          "volume": 1665869
+        },
+        {
+          "date": "2026-11-20",
+          "open": 1205,
+          "high": 1215.1500244140625,
+          "low": 1186.800048828125,
+          "close": 1205.6500244140625,
+          "volume": 1028444
         }
       ],
       "rangeHigh": 1105,
@@ -12557,27 +12557,19 @@
       },
       "currentWeek": {
         "start": "2026-11-16",
-        "end": "2026-11-19",
+        "end": "2026-11-20",
         "high": 1277.8,
-        "low": 1188.25,
-        "close": 1210.4,
-        "volume": 6707869
+        "low": 1186.8,
+        "close": 1205.65,
+        "volume": 7736314
       }
     },
     {
       "symbol": "KALYANKJIL",
       "name": "Kalyan Jewellers India Limited",
-      "marketCapCr": 68265,
+      "marketCapCr": 65962,
       "sector": "Consumer Cyclical",
       "days": [
-        {
-          "date": "2025-11-04",
-          "open": 515,
-          "high": 528.5,
-          "low": 515,
-          "close": 522.5999755859375,
-          "volume": 5177171
-        },
         {
           "date": "2025-11-06",
           "open": 523.7000122070312,
@@ -14632,7 +14624,15 @@
           "high": 663,
           "low": 638.5999755859375,
           "close": 661,
-          "volume": 13457939
+          "volume": 13460330
+        },
+        {
+          "date": "2026-11-20",
+          "open": 648.9000244140625,
+          "high": 648.9000244140625,
+          "low": 617,
+          "close": 638.7000122070312,
+          "volume": 20143884
         }
       ],
       "rangeHigh": 648.95,
@@ -14649,27 +14649,19 @@
       },
       "currentWeek": {
         "start": "2026-11-16",
-        "end": "2026-11-19",
+        "end": "2026-11-20",
         "high": 729.35,
-        "low": 638.6,
-        "close": 661,
-        "volume": 63618557
+        "low": 617,
+        "close": 638.7,
+        "volume": 83764832
       }
     },
     {
       "symbol": "NAVINFLUOR",
       "name": "Navin Fluorine International Limited",
-      "marketCapCr": 52374,
+      "marketCapCr": 51727,
       "sector": "Basic Materials",
       "days": [
-        {
-          "date": "2025-11-04",
-          "open": 5869.5,
-          "high": 6099,
-          "low": 5818,
-          "close": 6055,
-          "volume": 808707
-        },
         {
           "date": "2025-11-06",
           "open": 6023,
@@ -16717,6 +16709,14 @@
           "low": 10112.5,
           "close": 10203,
           "volume": 179852
+        },
+        {
+          "date": "2026-11-20",
+          "open": 10103,
+          "high": 10308,
+          "low": 10009,
+          "close": 10077,
+          "volume": 299836
         }
       ],
       "rangeHigh": 9035,
@@ -16733,27 +16733,19 @@
       },
       "currentWeek": {
         "start": "2026-11-16",
-        "end": "2026-11-19",
+        "end": "2026-11-20",
         "high": 10360,
         "low": 9756,
-        "close": 10203,
-        "volume": 874491
+        "close": 10077,
+        "volume": 1174327
       }
     },
     {
       "symbol": "PETRONET",
       "name": "Petronet LNG Limited",
-      "marketCapCr": 49620,
+      "marketCapCr": 49373,
       "sector": "Energy",
       "days": [
-        {
-          "date": "2025-11-04",
-          "open": 286,
-          "high": 286.3500061035156,
-          "low": 280,
-          "close": 280.5,
-          "volume": 1146375
-        },
         {
           "date": "2025-11-06",
           "open": 283.29998779296875,
@@ -18808,7 +18800,15 @@
           "high": 330.79998779296875,
           "low": 325.3500061035156,
           "close": 330.79998779296875,
-          "volume": 2793264
+          "volume": 2793464
+        },
+        {
+          "date": "2026-11-20",
+          "open": 329.1499938964844,
+          "high": 330.1499938964844,
+          "low": 325.8500061035156,
+          "close": 329.1499938964844,
+          "volume": 3431839
         }
       ],
       "rangeHigh": 319.95,
@@ -18825,27 +18825,19 @@
       },
       "currentWeek": {
         "start": "2026-11-16",
-        "end": "2026-11-19",
+        "end": "2026-11-20",
         "high": 330.9,
         "low": 322.45,
-        "close": 330.8,
-        "volume": 9331328
+        "close": 329.15,
+        "volume": 12763367
       }
     },
     {
       "symbol": "EMCURE",
       "name": "Emcure Pharmaceuticals Limited",
-      "marketCapCr": 44481,
+      "marketCapCr": 44351,
       "sector": "Healthcare",
       "days": [
-        {
-          "date": "2025-11-04",
-          "open": 1316.800048828125,
-          "high": 1335,
-          "low": 1306.5,
-          "close": 1324.699951171875,
-          "volume": 95781
-        },
         {
           "date": "2025-11-06",
           "open": 1328,
@@ -20900,7 +20892,15 @@
           "high": 2374.39990234375,
           "low": 2321.5,
           "close": 2344.699951171875,
-          "volume": 107204
+          "volume": 107206
+        },
+        {
+          "date": "2026-11-20",
+          "open": 2357.89990234375,
+          "high": 2389,
+          "low": 2331,
+          "close": 2337.800048828125,
+          "volume": 79029
         }
       ],
       "rangeHigh": 2266.4,
@@ -20917,27 +20917,19 @@
       },
       "currentWeek": {
         "start": "2026-11-16",
-        "end": "2026-11-19",
+        "end": "2026-11-20",
         "high": 2402,
         "low": 2321.5,
-        "close": 2344.7,
-        "volume": 619516
+        "close": 2337.8,
+        "volume": 698547
       }
     },
     {
       "symbol": "SAILIFE",
       "name": "Sai Life Sciences Limited",
-      "marketCapCr": 37999,
+      "marketCapCr": 38260,
       "sector": "Healthcare",
       "days": [
-        {
-          "date": "2025-11-04",
-          "open": 928.5,
-          "high": 938.8499755859375,
-          "low": 915.7000122070312,
-          "close": 923.0999755859375,
-          "volume": 365789
-        },
         {
           "date": "2025-11-06",
           "open": 928.7999877929688,
@@ -22992,7 +22984,15 @@
           "high": 1814.300048828125,
           "low": 1772.0999755859375,
           "close": 1788.4000244140625,
-          "volume": 459292
+          "volume": 459393
+        },
+        {
+          "date": "2026-11-20",
+          "open": 1780,
+          "high": 1829.9000244140625,
+          "low": 1776.9000244140625,
+          "close": 1800.699951171875,
+          "volume": 617750
         }
       ],
       "rangeHigh": 1814.9,
@@ -23009,27 +23009,19 @@
       },
       "currentWeek": {
         "start": "2026-11-16",
-        "end": "2026-11-19",
+        "end": "2026-11-20",
         "high": 1948.7,
         "low": 1738,
-        "close": 1788.4,
-        "volume": 4743795
+        "close": 1800.7,
+        "volume": 5361646
       }
     },
     {
       "symbol": "APLLTD",
       "name": "Alembic Pharmaceuticals Limited",
-      "marketCapCr": 20631,
+      "marketCapCr": 20461,
       "sector": "Healthcare",
       "days": [
-        {
-          "date": "2025-11-04",
-          "open": 929.9500122070312,
-          "high": 998,
-          "low": 927.9000244140625,
-          "close": 960.7000122070312,
-          "volume": 1596017
-        },
         {
           "date": "2025-11-06",
           "open": 962,
@@ -25084,7 +25076,15 @@
           "high": 1054.25,
           "low": 1038.5,
           "close": 1049.5999755859375,
-          "volume": 333337
+          "volume": 333407
+        },
+        {
+          "date": "2026-11-20",
+          "open": 1045.550048828125,
+          "high": 1053.800048828125,
+          "low": 1034.9000244140625,
+          "close": 1040.949951171875,
+          "volume": 191247
         }
       ],
       "rangeHigh": 985,
@@ -25101,27 +25101,19 @@
       },
       "currentWeek": {
         "start": "2026-11-16",
-        "end": "2026-11-19",
+        "end": "2026-11-20",
         "high": 1075,
         "low": 1033.5,
-        "close": 1049.6,
-        "volume": 1216021
+        "close": 1040.95,
+        "volume": 1407338
       }
     },
     {
       "symbol": "APOLLO",
       "name": "Apollo Micro Systems Limited",
-      "marketCapCr": 16694,
+      "marketCapCr": 15893,
       "sector": "Industrials",
       "days": [
-        {
-          "date": "2025-11-04",
-          "open": 279.8999938964844,
-          "high": 286,
-          "low": 276.3500061035156,
-          "close": 277.8999938964844,
-          "volume": 3474407
-        },
         {
           "date": "2025-11-06",
           "open": 289,
@@ -27176,7 +27168,15 @@
           "high": 459.20001220703125,
           "low": 442.6000061035156,
           "close": 449.25,
-          "volume": 9024147
+          "volume": 9027335
+        },
+        {
+          "date": "2026-11-20",
+          "open": 446,
+          "high": 452.75,
+          "low": 425.5,
+          "close": 427.70001220703125,
+          "volume": 10008210
         }
       ],
       "rangeHigh": 466.5,
@@ -27193,27 +27193,19 @@
       },
       "currentWeek": {
         "start": "2026-11-16",
-        "end": "2026-11-19",
+        "end": "2026-11-20",
         "high": 477,
-        "low": 442.05,
-        "close": 449.25,
-        "volume": 38394084
+        "low": 425.5,
+        "close": 427.7,
+        "volume": 48405482
       }
     },
     {
       "symbol": "INDGN",
       "name": "Indegene Limited",
-      "marketCapCr": 15543,
+      "marketCapCr": 15838,
       "sector": "Healthcare",
       "days": [
-        {
-          "date": "2025-11-04",
-          "open": 534.0499877929688,
-          "high": 543.7000122070312,
-          "low": 534.0499877929688,
-          "close": 539.0499877929688,
-          "volume": 153790
-        },
         {
           "date": "2025-11-06",
           "open": 539,
@@ -29268,7 +29260,15 @@
           "high": 661,
           "low": 642,
           "close": 645.4000244140625,
-          "volume": 396317
+          "volume": 396327
+        },
+        {
+          "date": "2026-11-20",
+          "open": 644,
+          "high": 659.8499755859375,
+          "low": 640.25,
+          "close": 657.6500244140625,
+          "volume": 320857
         }
       ],
       "rangeHigh": 638,
@@ -29285,27 +29285,19 @@
       },
       "currentWeek": {
         "start": "2026-11-16",
-        "end": "2026-11-19",
+        "end": "2026-11-20",
         "high": 673.95,
-        "low": 642,
-        "close": 645.4,
-        "volume": 1834679
+        "low": 640.25,
+        "close": 657.65,
+        "volume": 2155546
       }
     },
     {
       "symbol": "ANURAS",
       "name": "Anupam Rasayan India Ltd",
-      "marketCapCr": 15108,
+      "marketCapCr": 15135,
       "sector": "Basic Materials",
       "days": [
-        {
-          "date": "2025-11-04",
-          "open": 1087,
-          "high": 1087,
-          "low": 1063.199951171875,
-          "close": 1075,
-          "volume": 69235
-        },
         {
           "date": "2025-11-06",
           "open": 1072.800048828125,
@@ -31360,7 +31352,15 @@
           "high": 1330,
           "low": 1308.800048828125,
           "close": 1327,
-          "volume": 508396
+          "volume": 509301
+        },
+        {
+          "date": "2026-11-20",
+          "open": 1323.0999755859375,
+          "high": 1339.5,
+          "low": 1314.0999755859375,
+          "close": 1329.4000244140625,
+          "volume": 393242
         }
       ],
       "rangeHigh": 1297.5,
@@ -31377,27 +31377,19 @@
       },
       "currentWeek": {
         "start": "2026-11-16",
-        "end": "2026-11-19",
-        "high": 1330.4,
+        "end": "2026-11-20",
+        "high": 1339.5,
         "low": 1300,
-        "close": 1327,
-        "volume": 2240518
+        "close": 1329.4,
+        "volume": 2634665
       }
     },
     {
       "symbol": "KMEW",
       "name": "Knowledge Marine & Engineering Works Limited",
-      "marketCapCr": 9238,
+      "marketCapCr": 9089,
       "sector": "Industrials",
       "days": [
-        {
-          "date": "2025-11-04",
-          "open": 273,
-          "high": 285.8999938964844,
-          "low": 263.1700134277344,
-          "close": 278.7900085449219,
-          "volume": 2996750
-        },
         {
           "date": "2025-11-06",
           "open": 275,
@@ -33452,7 +33444,15 @@
           "high": 754.7999877929688,
           "low": 721.7999877929688,
           "close": 728.4000244140625,
-          "volume": 369684
+          "volume": 369717
+        },
+        {
+          "date": "2026-11-20",
+          "open": 719.0999755859375,
+          "high": 724.7999877929688,
+          "low": 700.5,
+          "close": 716.7000122070312,
+          "volume": 448304
         }
       ],
       "rangeHigh": 683.4,
@@ -33469,27 +33469,19 @@
       },
       "currentWeek": {
         "start": "2026-11-16",
-        "end": "2026-11-19",
+        "end": "2026-11-20",
         "high": 773.4,
-        "low": 704.2,
-        "close": 728.4,
-        "volume": 2964027
+        "low": 700.5,
+        "close": 716.7,
+        "volume": 3412364
       }
     },
     {
       "symbol": "TANLA",
       "name": "Tanla Platforms Limited",
-      "marketCapCr": 8847,
+      "marketCapCr": 8723,
       "sector": "Technology",
       "days": [
-        {
-          "date": "2025-11-04",
-          "open": 624,
-          "high": 636,
-          "low": 620,
-          "close": 621.5999755859375,
-          "volume": 496716
-        },
         {
           "date": "2025-11-06",
           "open": 621.5999755859375,
@@ -35544,7 +35536,15 @@
           "high": 698,
           "low": 660.0499877929688,
           "close": 670,
-          "volume": 672125
+          "volume": 672182
+        },
+        {
+          "date": "2026-11-20",
+          "open": 669.9000244140625,
+          "high": 692.9000244140625,
+          "low": 658.0999755859375,
+          "close": 660.5999755859375,
+          "volume": 763056
         }
       ],
       "rangeHigh": 681.55,
@@ -35561,27 +35561,19 @@
       },
       "currentWeek": {
         "start": "2026-11-16",
-        "end": "2026-11-19",
+        "end": "2026-11-20",
         "high": 733.7,
-        "low": 660.05,
-        "close": 670,
-        "volume": 2082953
+        "low": 658.1,
+        "close": 660.6,
+        "volume": 2846066
       }
     },
     {
       "symbol": "RPEL",
       "name": "Raghav Productivity Enhancers Limited",
-      "marketCapCr": 8732,
+      "marketCapCr": 8515,
       "sector": "Basic Materials",
       "days": [
-        {
-          "date": "2025-11-04",
-          "open": 877,
-          "high": 920,
-          "low": 865.6500244140625,
-          "close": 902.6500244140625,
-          "volume": 412793
-        },
         {
           "date": "2025-11-06",
           "open": 902.6500244140625,
@@ -37637,6 +37629,14 @@
           "low": 1824.4000244140625,
           "close": 1901.5,
           "volume": 143587
+        },
+        {
+          "date": "2026-11-20",
+          "open": 1880,
+          "high": 1924.4000244140625,
+          "low": 1850,
+          "close": 1854.300048828125,
+          "volume": 57526
         }
       ],
       "rangeHigh": 1943.7,
@@ -37653,17 +37653,17 @@
       },
       "currentWeek": {
         "start": "2026-11-16",
-        "end": "2026-11-19",
+        "end": "2026-11-20",
         "high": 2050.9,
         "low": 1824.4,
-        "close": 1901.5,
-        "volume": 691625
+        "close": 1854.3,
+        "volume": 749151
       }
     },
     {
       "symbol": "KOVAI",
       "name": "Kovai Medical Center and Hospital Limited",
-      "marketCapCr": 7068,
+      "marketCapCr": 7201,
       "sector": "Healthcare",
       "days": [
         {
@@ -38873,6 +38873,14 @@
           "low": 6424.5,
           "close": 6459,
           "volume": 3125
+        },
+        {
+          "date": "2026-11-20",
+          "open": 6390,
+          "high": 6636,
+          "low": 6390,
+          "close": 6581,
+          "volume": 5335
         }
       ],
       "rangeHigh": 6444,
@@ -38889,27 +38897,19 @@
       },
       "currentWeek": {
         "start": "2026-11-16",
-        "end": "2026-11-19",
+        "end": "2026-11-20",
         "high": 6657,
         "low": 6315,
-        "close": 6459,
-        "volume": 27238
+        "close": 6581,
+        "volume": 32573
       }
     },
     {
       "symbol": "AARTIDRUGS",
       "name": "Aarti Drugs Limited",
-      "marketCapCr": 4553,
+      "marketCapCr": 4422,
       "sector": "Healthcare",
       "days": [
-        {
-          "date": "2025-11-04",
-          "open": 503.3999938964844,
-          "high": 509,
-          "low": 500.04998779296875,
-          "close": 503.6000061035156,
-          "volume": 87386
-        },
         {
           "date": "2025-11-06",
           "open": 504.3999938964844,
@@ -40964,7 +40964,15 @@
           "high": 507.45001220703125,
           "low": 494.1000061035156,
           "close": 498.8999938964844,
-          "volume": 268253
+          "volume": 268291
+        },
+        {
+          "date": "2026-11-20",
+          "open": 500,
+          "high": 503.70001220703125,
+          "low": 481.3500061035156,
+          "close": 484.5,
+          "volume": 291952
         }
       ],
       "rangeHigh": 496.95,
@@ -40981,27 +40989,19 @@
       },
       "currentWeek": {
         "start": "2026-11-16",
-        "end": "2026-11-19",
+        "end": "2026-11-20",
         "high": 515.7,
-        "low": 494.1,
-        "close": 498.9,
-        "volume": 1475160
+        "low": 481.35,
+        "close": 484.5,
+        "volume": 1767150
       }
     },
     {
       "symbol": "GUFICBIO",
       "name": "Gufic Biosciences Limited",
-      "marketCapCr": 4331,
+      "marketCapCr": 4194,
       "sector": "Healthcare",
       "days": [
-        {
-          "date": "2025-11-04",
-          "open": 328.79998779296875,
-          "high": 330,
-          "low": 323,
-          "close": 327,
-          "volume": 70639
-        },
         {
           "date": "2025-11-06",
           "open": 325,
@@ -43057,6 +43057,14 @@
           "low": 417.54998779296875,
           "close": 431.8999938964844,
           "volume": 47566
+        },
+        {
+          "date": "2026-11-20",
+          "open": 425.1000061035156,
+          "high": 432.04998779296875,
+          "low": 415.25,
+          "close": 418.25,
+          "volume": 46565
         }
       ],
       "rangeHigh": 467.8,
@@ -43073,27 +43081,19 @@
       },
       "currentWeek": {
         "start": "2026-11-16",
-        "end": "2026-11-19",
+        "end": "2026-11-20",
         "high": 465.55,
         "low": 390.65,
-        "close": 431.9,
-        "volume": 712753
+        "close": 418.25,
+        "volume": 759318
       }
     },
     {
       "symbol": "STYLEBAAZA",
       "name": "Baazar Style Retail Limited",
-      "marketCapCr": 4148,
+      "marketCapCr": 3957,
       "sector": "Consumer Cyclical",
       "days": [
-        {
-          "date": "2025-11-04",
-          "open": 325,
-          "high": 340,
-          "low": 325,
-          "close": 333,
-          "volume": 626001
-        },
         {
           "date": "2025-11-06",
           "open": 336,
@@ -45148,7 +45148,15 @@
           "high": 545,
           "low": 515,
           "close": 524.25,
-          "volume": 3983888
+          "volume": 3984388
+        },
+        {
+          "date": "2026-11-20",
+          "open": 521.6500244140625,
+          "high": 535.3499755859375,
+          "low": 498.04998779296875,
+          "close": 500.1499938964844,
+          "volume": 2222181
         }
       ],
       "rangeHigh": 447.1,
@@ -45165,27 +45173,19 @@
       },
       "currentWeek": {
         "start": "2026-11-16",
-        "end": "2026-11-19",
+        "end": "2026-11-20",
         "high": 545,
         "low": 461,
-        "close": 524.25,
-        "volume": 17988444
+        "close": 500.15,
+        "volume": 20211125
       }
     },
     {
       "symbol": "CHEMPLASTS",
       "name": "Chemplast Sanmar Limited",
-      "marketCapCr": 3953,
+      "marketCapCr": 3954,
       "sector": "Basic Materials",
       "days": [
-        {
-          "date": "2025-11-04",
-          "open": 410.20001220703125,
-          "high": 412.5,
-          "low": 385.79998779296875,
-          "close": 386.79998779296875,
-          "volume": 77551
-        },
         {
           "date": "2025-11-06",
           "open": 388,
@@ -47240,7 +47240,15 @@
           "high": 251.88999938964844,
           "low": 244.22000122070312,
           "close": 250.02999877929688,
-          "volume": 296926
+          "volume": 297126
+        },
+        {
+          "date": "2026-11-20",
+          "open": 248.39999389648438,
+          "high": 252.35000610351562,
+          "low": 245.1999969482422,
+          "close": 250.05999755859375,
+          "volume": 227644
         }
       ],
       "rangeHigh": 235.9,
@@ -47257,27 +47265,19 @@
       },
       "currentWeek": {
         "start": "2026-11-16",
-        "end": "2026-11-19",
+        "end": "2026-11-20",
         "high": 259.78,
         "low": 229.65,
-        "close": 250.03,
-        "volume": 2475679
+        "close": 250.06,
+        "volume": 2703523
       }
     },
     {
       "symbol": "TASTYBITE",
       "name": "Tasty Bite Eatables Limited",
-      "marketCapCr": 2790,
+      "marketCapCr": 2672,
       "sector": "Consumer Defensive",
       "days": [
-        {
-          "date": "2025-11-04",
-          "open": 8959,
-          "high": 9083.5,
-          "low": 8900,
-          "close": 8928.5,
-          "volume": 978
-        },
         {
           "date": "2025-11-06",
           "open": 9050,
@@ -49325,6 +49325,14 @@
           "low": 10115,
           "close": 10874,
           "volume": 7597
+        },
+        {
+          "date": "2026-11-20",
+          "open": 10751,
+          "high": 10989,
+          "low": 10297,
+          "close": 10412,
+          "volume": 4428
         }
       ],
       "rangeHigh": 11303.5,
@@ -49341,27 +49349,19 @@
       },
       "currentWeek": {
         "start": "2026-11-16",
-        "end": "2026-11-19",
+        "end": "2026-11-20",
         "high": 11750,
         "low": 10115,
-        "close": 10874,
-        "volume": 31366
+        "close": 10412,
+        "volume": 35794
       }
     },
     {
       "symbol": "SIMPLEXINF",
       "name": "Simplex Infrastructures Limited",
-      "marketCapCr": 2390,
+      "marketCapCr": 2371,
       "sector": "Industrials",
       "days": [
-        {
-          "date": "2025-11-04",
-          "open": 287,
-          "high": 305,
-          "low": 274.6000061035156,
-          "close": 296.6499938964844,
-          "volume": 1172887
-        },
         {
           "date": "2025-11-06",
           "open": 306.6499938964844,
@@ -51409,6 +51409,14 @@
           "low": 294,
           "close": 302.20001220703125,
           "volume": 417455
+        },
+        {
+          "date": "2026-11-20",
+          "open": 303,
+          "high": 306,
+          "low": 292.1499938964844,
+          "close": 299.75,
+          "volume": 462940
         }
       ],
       "rangeHigh": 294.65,
@@ -51425,27 +51433,19 @@
       },
       "currentWeek": {
         "start": "2026-11-16",
-        "end": "2026-11-19",
-        "high": 305,
+        "end": "2026-11-20",
+        "high": 306,
         "low": 280.5,
-        "close": 302.2,
-        "volume": 1476036
+        "close": 299.75,
+        "volume": 1938976
       }
     },
     {
       "symbol": "MANAKCOAT",
       "name": "Manaksia Coated Metals & Industries Limited",
-      "marketCapCr": 1902,
+      "marketCapCr": 1869,
       "sector": "Industrials",
       "days": [
-        {
-          "date": "2025-11-04",
-          "open": 163.2899932861328,
-          "high": 164.75,
-          "low": 156,
-          "close": 156.8000030517578,
-          "volume": 729450
-        },
         {
           "date": "2025-11-06",
           "open": 156.88999938964844,
@@ -53492,7 +53492,15 @@
           "high": 163.8000030517578,
           "low": 157.35000610351562,
           "close": 160.3300018310547,
-          "volume": 507380
+          "volume": 507880
+        },
+        {
+          "date": "2026-11-20",
+          "open": 160,
+          "high": 163.10000610351562,
+          "low": 155.83999633789062,
+          "close": 157.52000427246094,
+          "volume": 2159866
         }
       ],
       "rangeHigh": 160.2,
@@ -53509,27 +53517,19 @@
       },
       "currentWeek": {
         "start": "2026-11-16",
-        "end": "2026-11-19",
+        "end": "2026-11-20",
         "high": 176.19,
-        "low": 157.35,
-        "close": 160.33,
-        "volume": 4031885
+        "low": 155.84,
+        "close": 157.52,
+        "volume": 6192251
       }
     },
     {
       "symbol": "ALICON",
       "name": "Alicon Castalloy Limited",
-      "marketCapCr": 1664,
+      "marketCapCr": 1757,
       "sector": "Industrials",
       "days": [
-        {
-          "date": "2025-11-04",
-          "open": 970.0499877929688,
-          "high": 988,
-          "low": 955,
-          "close": 966.5499877929688,
-          "volume": 35377
-        },
         {
           "date": "2025-11-06",
           "open": 966,
@@ -55576,7 +55576,15 @@
           "high": 1033.949951171875,
           "low": 965,
           "close": 1018.5,
-          "volume": 79748
+          "volume": 79753
+        },
+        {
+          "date": "2026-11-20",
+          "open": 1001.0499877929688,
+          "high": 1112,
+          "low": 1001.0499877929688,
+          "close": 1075.75,
+          "volume": 882635
         }
       ],
       "rangeHigh": 909,
@@ -55593,27 +55601,19 @@
       },
       "currentWeek": {
         "start": "2026-11-16",
-        "end": "2026-11-19",
-        "high": 1033.95,
+        "end": "2026-11-20",
+        "high": 1112,
         "low": 933,
-        "close": 1018.5,
-        "volume": 713336
+        "close": 1075.75,
+        "volume": 1595976
       }
     },
     {
       "symbol": "DHANBANK",
       "name": "Dhanlaxmi Bank Limited",
-      "marketCapCr": 1555,
+      "marketCapCr": 1560,
       "sector": "Financial Services",
       "days": [
-        {
-          "date": "2025-11-04",
-          "open": 26.450000762939453,
-          "high": 26.469999313354492,
-          "low": 26,
-          "close": 26.139999389648438,
-          "volume": 454208
-        },
         {
           "date": "2025-11-06",
           "open": 26.1200008392334,
@@ -57668,7 +57668,15 @@
           "high": 40.7599983215332,
           "low": 39.02000045776367,
           "close": 39.400001525878906,
-          "volume": 8910986
+          "volume": 8911268
+        },
+        {
+          "date": "2026-11-20",
+          "open": 40,
+          "high": 41.40999984741211,
+          "low": 39.099998474121094,
+          "close": 39.52000045776367,
+          "volume": 6150189
         }
       ],
       "rangeHigh": 37.99,
@@ -57685,27 +57693,19 @@
       },
       "currentWeek": {
         "start": "2026-11-16",
-        "end": "2026-11-19",
+        "end": "2026-11-20",
         "high": 44.74,
         "low": 38.32,
-        "close": 39.4,
-        "volume": 167057390
+        "close": 39.52,
+        "volume": 173207861
       }
     },
     {
       "symbol": "JYOTISTRUC",
       "name": "Jyoti Structures Limited",
-      "marketCapCr": 1483,
+      "marketCapCr": 1430,
       "sector": "Industrials",
       "days": [
-        {
-          "date": "2025-11-04",
-          "open": 12.989999771118164,
-          "high": 12.989999771118164,
-          "low": 11.630000114440918,
-          "close": 12.350000381469727,
-          "volume": 24670780
-        },
         {
           "date": "2025-11-06",
           "open": 12.40999984741211,
@@ -59760,7 +59760,15 @@
           "high": 12.770000457763672,
           "low": 12.3100004196167,
           "close": 12.420000076293945,
-          "volume": 7063370
+          "volume": 7064453
+        },
+        {
+          "date": "2026-11-20",
+          "open": 12.300000190734863,
+          "high": 12.34000015258789,
+          "low": 11.779999732971191,
+          "close": 11.979999542236328,
+          "volume": 12878477
         }
       ],
       "rangeHigh": 12.59,
@@ -59777,11 +59785,11 @@
       },
       "currentWeek": {
         "start": "2026-11-16",
-        "end": "2026-11-19",
+        "end": "2026-11-20",
         "high": 13.55,
-        "low": 12.31,
-        "close": 12.42,
-        "volume": 52642944
+        "low": 11.78,
+        "close": 11.98,
+        "volume": 65522504
       }
     }
   ]

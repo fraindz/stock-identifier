@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-19T16:56:09.050Z",
-  "asOf": "2026-11-19",
+  "updatedAt": "2026-11-20T16:39:28.711Z",
+  "asOf": "2026-11-20",
   "lastReviewWeek": "2026-11-09",
   "rules": {
     "minMarketCapCr": 1000,
@@ -59,8 +59,8 @@
       "stop": 597.2,
       "riskPct": 11.78,
       "confidence": 62.6,
-      "lastDate": "2026-11-19",
-      "lastClose": 665.5,
+      "lastDate": "2026-11-20",
+      "lastClose": 640.55,
       "events": [
         {
           "date": "2026-11-13",
@@ -97,8 +97,8 @@
       "stop": 1795.8,
       "riskPct": 10.11,
       "confidence": 55.08,
-      "lastDate": "2026-11-19",
-      "lastClose": 1907.1,
+      "lastDate": "2026-11-20",
+      "lastClose": 1854.3,
       "events": [
         {
           "date": "2026-11-13",
@@ -135,8 +135,8 @@
       "stop": 9980,
       "riskPct": 11.16,
       "confidence": 45.99,
-      "lastDate": "2026-11-19",
-      "lastClose": 11756,
+      "lastDate": "2026-11-20",
+      "lastClose": 11723,
       "events": [
         {
           "date": "2026-11-13",
@@ -154,7 +154,7 @@
       "entryDate": "2026-11-17",
       "r": 1253.89,
       "partialBooked": false,
-      "maxHigh": 11870
+      "maxHigh": 12084
     },
     {
       "id": "2026-11-09_PETRONET",
@@ -173,8 +173,8 @@
       "stop": 313.2,
       "riskPct": 7.33,
       "confidence": 44.69,
-      "lastDate": "2026-11-19",
-      "lastClose": 329.8,
+      "lastDate": "2026-11-20",
+      "lastClose": 329.15,
       "events": [
         {
           "date": "2026-11-13",
@@ -195,22 +195,32 @@
       "reviewsWaiting": 0,
       "rankAtAdd": 15,
       "lastRank": 15,
-      "status": "watch",
+      "status": "active",
       "trigger": 11482.12,
       "initialStop": 10183.32,
       "stop": 10183.32,
       "riskPct": 11.31,
       "confidence": 34.19,
-      "lastDate": "2026-11-19",
-      "lastClose": 11258,
+      "lastDate": "2026-11-20",
+      "lastClose": 11669,
       "events": [
         {
           "date": "2026-11-13",
           "type": "added",
           "note": "Added to watch at #15, confidence 34.19: buy above 11482.12, stop 10183.32 (11.31% risk)"
+        },
+        {
+          "date": "2026-11-20",
+          "type": "triggered",
+          "note": "Bought at 11482.12; stop 10183.32, 1R = 1298.8"
         }
       ],
-      "target": 13093.77
+      "target": 13093.77,
+      "entry": 11482.12,
+      "entryDate": "2026-11-20",
+      "r": 1298.8,
+      "partialBooked": false,
+      "maxHigh": 11733
     }
   ]
 }

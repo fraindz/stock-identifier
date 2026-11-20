@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-11-19T16:56:09.042Z",
-  "asOf": "2026-11-19",
+  "generatedAt": "2026-11-20T16:39:28.701Z",
+  "asOf": "2026-11-20",
   "regime": {
     "regime": "caution",
-    "asOf": "2026-11-19",
-    "niftyClose": 25514.3,
-    "niftyVs50Pct": 8.82,
-    "niftyVs200Pct": 6.33,
+    "asOf": "2026-11-20",
+    "niftyClose": 25800.6,
+    "niftyVs50Pct": 9.86,
+    "niftyVs200Pct": 7.51,
     "sma50Rising": true,
-    "breadthPct": 44.63,
+    "breadthPct": 43.38,
     "note": "Mixed market: 5 points deducted from every score"
   },
   "rules": {
@@ -19,35 +19,35 @@
   "stocks": [
     {
       "rank": 1,
-      "symbol": "PNB",
-      "name": "Punjab National Bank",
-      "sector": "Financial Services",
-      "marketCapCr": 177968,
+      "symbol": "INDHOTEL",
+      "name": "The Indian Hotels Company Limited",
+      "sector": "Consumer Cyclical",
+      "marketCapCr": 129817,
       "grade": "B",
-      "close": 154.85,
-      "avgScore": 72.01,
+      "close": 912,
+      "avgScore": 69.21,
       "swing": {
-        "score": 78.48,
+        "score": 72.01,
         "grade": "B",
         "setup": "breakout",
-        "setupNote": "Closed 1.5% above the 20-day high on 2.2× volume",
-        "trigger": 156.8,
-        "stop": 150.01,
-        "riskPct": 4.33
+        "setupNote": "Closed 0.3% above the 20-day high on 0.7× volume",
+        "trigger": 914.83,
+        "stop": 879.71,
+        "riskPct": 3.84
       },
       "positional": {
-        "score": 65.53,
+        "score": 66.4,
         "grade": "C",
-        "setup": "breakout",
-        "setupNote": "Closed 12.58% above the 126.85 range high on 3.13× volume",
-        "trigger": 145.87,
-        "stop": 131.06,
-        "riskPct": 10.15
+        "setup": null,
+        "setupNote": "",
+        "trigger": 907.11,
+        "stop": 817.66,
+        "riskPct": 9.86
       },
-      "trigger": 156.8,
-      "stop": 150.01,
-      "riskPct": 4.33,
-      "target": 177.18,
+      "trigger": 914.83,
+      "stop": 879.71,
+      "riskPct": 3.84,
+      "target": 1020.19,
       "rr": 3,
       "swingComponents": [
         {
@@ -60,155 +60,69 @@
         {
           "key": "rs",
           "label": "Relative strength",
-          "points": 15,
+          "points": 13.94,
           "max": 15,
-          "note": "+21.1% vs Nifty, +27.4% vs Financial Services"
+          "note": "+10.7% vs Nifty, +18.5% vs Consumer Cyclical"
         },
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 4.71,
+          "points": 3.98,
           "max": 10,
-          "note": "Financial Services -5.7% vs Nifty, 57% above 50-DMA; weak: sector lagging Nifty"
+          "note": "Consumer Cyclical -8.1% vs Nifty, 50% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth"
         },
         {
           "key": "setup",
           "label": "Setup quality",
-          "points": 21.9,
+          "points": 18.48,
           "max": 25,
-          "note": "breakout: Closed 1.5% above the 20-day high on 2.2× volume"
+          "note": "breakout: Closed 0.3% above the 20-day high on 0.7× volume"
         },
         {
           "key": "volume",
           "label": "Volume confirmation",
-          "points": 10.85,
+          "points": 7.4,
           "max": 15,
-          "note": "up-day volume 2.4×, up/down 5.48, delivery 36% vs 45% avg; weak: delivery 36%"
+          "note": "up-day volume 0.8×, up/down 5.27, delivery 63% vs 61% avg; weak: up-day volume 0.8×"
         },
         {
           "key": "fundamentals",
           "label": "Fundamental health",
-          "points": 3.3,
+          "points": 4.69,
           "max": 5,
-          "note": "sales growth +7%, earnings growth +15%, ROE 15%, op. margin 48%"
+          "note": "sales growth +21%, earnings growth +23%, ROE 17%, op. margin 29%, D/E 0.22"
         },
         {
           "key": "riskReward",
           "label": "Risk/reward",
-          "points": 8.23,
+          "points": 9.03,
           "max": 10,
-          "note": "4.3% risk, 3.0R to blue-sky 3R target; all checks pass"
+          "note": "3.8% risk, 3.0R to blue-sky 3R target; all checks pass"
         }
       ],
-      "firstSeen": "2026-11-17",
-      "daysListed": 3
-    },
-    {
-      "rank": 2,
-      "symbol": "KOPRAN",
-      "name": "Kopran Limited",
-      "sector": "Healthcare",
-      "marketCapCr": 1291,
-      "grade": "B",
-      "close": 267.05,
-      "avgScore": 68.83,
-      "swing": {
-        "score": 73.42,
-        "grade": "B",
-        "setup": "pullback",
-        "setupNote": "Within 1.1% of the rising 20 EMA, RSI 57",
-        "trigger": 272.64,
-        "stop": 263.81,
-        "riskPct": 3.24
-      },
-      "positional": {
-        "score": 64.23,
-        "grade": "C",
-        "setup": "pullback",
-        "setupNote": "57.17% pullback of a 78.21% rally, turned up last week",
-        "trigger": 295.47,
-        "stop": 222.74,
-        "riskPct": 24.62
-      },
-      "trigger": 272.64,
-      "stop": 263.81,
-      "riskPct": 3.24,
-      "target": 298.79,
-      "rr": 2.96,
-      "swingComponents": [
-        {
-          "key": "trend",
-          "label": "Trend strength",
-          "points": 19.82,
-          "max": 20,
-          "note": "81% of 26 weeks above 10w; all checks pass"
-        },
-        {
-          "key": "rs",
-          "label": "Relative strength",
-          "points": 13.45,
-          "max": 15,
-          "note": "+10.1% vs Nifty, +13.8% vs Healthcare"
-        },
-        {
-          "key": "sector",
-          "label": "Sector strength",
-          "points": 4.15,
-          "max": 10,
-          "note": "Healthcare -4.4% vs Nifty, 51% above 50-DMA; weak: sector lagging Nifty"
-        },
-        {
-          "key": "setup",
-          "label": "Setup quality",
-          "points": 17.61,
-          "max": 25,
-          "note": "pullback: Within 1.1% of the rising 20 EMA, RSI 57"
-        },
-        {
-          "key": "volume",
-          "label": "Volume confirmation",
-          "points": 11.78,
-          "max": 15,
-          "note": "up-day volume 1.8×, up/down 3.47, delivery 42% vs 38% avg; weak: delivery 42%"
-        },
-        {
-          "key": "fundamentals",
-          "label": "Fundamental health",
-          "points": 3.06,
-          "max": 5,
-          "note": "sales growth +79%, ROE 8%, op. margin 9%, D/E 0.39 (4/5 fields)"
-        },
-        {
-          "key": "riskReward",
-          "label": "Risk/reward",
-          "points": 8.55,
-          "max": 10,
-          "note": "3.2% risk, 3.0R to 52-week high + 1%; all checks pass"
-        }
-      ],
-      "firstSeen": "2026-11-19",
+      "firstSeen": "2026-11-20",
       "daysListed": 1
     },
     {
-      "rank": 3,
+      "rank": 2,
       "symbol": "TFCILTD",
       "name": "Tourism Finance Corporation of India Limited",
       "sector": "Financial Services",
-      "marketCapCr": 7879,
+      "marketCapCr": 7956,
       "grade": "B",
-      "close": 170.18,
-      "avgScore": 67.31,
+      "close": 171.85,
+      "avgScore": 66.97,
       "swing": {
-        "score": 71.79,
+        "score": 70.4,
         "grade": "B",
         "setup": "consolidation",
-        "setupNote": "10-day range 8.3% wide, 1.1% below the 20-day high, NR7",
+        "setupNote": "10-day range 8.3% wide, 0.1% below the 20-day high",
         "trigger": 172.34,
-        "stop": 162.5,
-        "riskPct": 5.71
+        "stop": 164.18,
+        "riskPct": 4.74
       },
       "positional": {
-        "score": 62.83,
+        "score": 63.53,
         "grade": "C",
         "setup": null,
         "setupNote": "",
@@ -217,9 +131,9 @@
         "riskPct": 14.58
       },
       "trigger": 172.34,
-      "stop": 162.5,
-      "riskPct": 5.71,
-      "target": 201.85,
+      "stop": 164.18,
+      "riskPct": 4.74,
+      "target": 196.83,
       "rr": 3,
       "swingComponents": [
         {
@@ -234,28 +148,28 @@
           "label": "Relative strength",
           "points": 15,
           "max": 15,
-          "note": "+13.1% vs Nifty, +19.4% vs Financial Services"
+          "note": "+13.2% vs Nifty, +20.3% vs Financial Services"
         },
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 4.71,
+          "points": 4.97,
           "max": 10,
-          "note": "Financial Services -5.7% vs Nifty, 57% above 50-DMA; weak: sector lagging Nifty"
+          "note": "Financial Services -6.4% vs Nifty, 60% above 50-DMA; weak: sector lagging Nifty"
         },
         {
           "key": "setup",
           "label": "Setup quality",
-          "points": 18.56,
+          "points": 16.3,
           "max": 25,
-          "note": "consolidation: 10-day range 8.3% wide, 1.1% below the 20-day high, NR7"
+          "note": "consolidation: 10-day range 8.3% wide, 0.1% below the 20-day high"
         },
         {
           "key": "volume",
           "label": "Volume confirmation",
-          "points": 6.92,
+          "points": 6.39,
           "max": 15,
-          "note": "up-day volume 0.6×, up/down 1.67, delivery 45% vs 40% avg; weak: up-day volume 0.6×"
+          "note": "up-day volume 0.6×, up/down 1.96, delivery 43% vs 40% avg; weak: up-day volume 0.6×, delivery 43%"
         },
         {
           "key": "fundamentals",
@@ -267,12 +181,98 @@
         {
           "key": "riskReward",
           "label": "Risk/reward",
-          "points": 7.23,
+          "points": 8.37,
           "max": 10,
-          "note": "5.7% risk, 3.0R to blue-sky 3R target; weak: 5.7% risk"
+          "note": "4.7% risk, 3.0R to blue-sky 3R target; all checks pass"
         }
       ],
       "firstSeen": "2026-11-19",
+      "daysListed": 2
+    },
+    {
+      "rank": 3,
+      "symbol": "RADICO",
+      "name": "Radico Khaitan Limited",
+      "sector": "Consumer Defensive",
+      "marketCapCr": 62506,
+      "grade": "B",
+      "close": 4665,
+      "avgScore": 66.69,
+      "swing": {
+        "score": 61.31,
+        "grade": "C",
+        "setup": "consolidation",
+        "setupNote": "10-day range 6.7% wide, 0.8% below the 20-day high, NR7",
+        "trigger": 4713.11,
+        "stop": 4486.99,
+        "riskPct": 4.8
+      },
+      "positional": {
+        "score": 72.08,
+        "grade": "B",
+        "setup": "pullback",
+        "setupNote": "54.01% pullback of a 39.2% rally, turned up last week",
+        "trigger": 4687.32,
+        "stop": 4074.42,
+        "riskPct": 13.08
+      },
+      "trigger": 4713.11,
+      "stop": 4486.99,
+      "riskPct": 4.8,
+      "target": 5391.47,
+      "rr": 3,
+      "swingComponents": [
+        {
+          "key": "trend",
+          "label": "Trend strength",
+          "points": 19.82,
+          "max": 20,
+          "note": "81% of 26 weeks above 10w; all checks pass"
+        },
+        {
+          "key": "rs",
+          "label": "Relative strength",
+          "points": 3.31,
+          "max": 15,
+          "note": "-3.9% vs Nifty, +5.3% vs Consumer Defensive"
+        },
+        {
+          "key": "sector",
+          "label": "Sector strength",
+          "points": 4.06,
+          "max": 10,
+          "note": "Consumer Defensive -8.1% vs Nifty, 51% above 50-DMA; weak: sector lagging Nifty"
+        },
+        {
+          "key": "setup",
+          "label": "Setup quality",
+          "points": 20.4,
+          "max": 25,
+          "note": "consolidation: 10-day range 6.7% wide, 0.8% below the 20-day high, NR7"
+        },
+        {
+          "key": "volume",
+          "label": "Volume confirmation",
+          "points": 6.02,
+          "max": 15,
+          "note": "up-day volume 0.7×, up/down 2.28, delivery 51% vs 54% avg; weak: up-day volume 0.7×, delivery 51%"
+        },
+        {
+          "key": "fundamentals",
+          "label": "Fundamental health",
+          "points": 4.67,
+          "max": 5,
+          "note": "sales growth +17%, earnings growth +66%, ROE 24%, op. margin 17%, D/E 0.11"
+        },
+        {
+          "key": "riskReward",
+          "label": "Risk/reward",
+          "points": 8.03,
+          "max": 10,
+          "note": "4.8% risk, 3.0R to blue-sky 3R target; all checks pass"
+        }
+      ],
+      "firstSeen": "2026-11-20",
       "daysListed": 1
     }
   ]
