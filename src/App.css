@@ -451,3 +451,38 @@ tr.expanded td {
   font-weight: 600;
   white-space: nowrap;
 }
+
+.caution-ticker {
+  overflow: hidden;
+  margin: 12px 0 16px;
+  padding: 8px 0;
+  border: 1px solid var(--caution);
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--caution) 10%, transparent);
+  color: var(--caution);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.caution-track {
+  display: inline-flex;
+  animation: caution-scroll 30s linear infinite;
+}
+
+.caution-track span {
+  padding-right: 6rem;
+}
+
+.caution-ticker:hover .caution-track {
+  animation-play-state: paused;
+}
+
+@keyframes caution-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .caution-track { animation: none; }
+  .caution-track span + span { display: none; }
+}

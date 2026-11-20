@@ -53,6 +53,7 @@ const PAGES: Page[] = [
 // Hidden pages still open from a direct link. Weekly Breakout and Pullback are covered,
 // with scores, by the Positional tab.
 const HIDDEN_PATHS = new Set([
+  '#/top-10-bets',
   '#/breakout',
   '#/pullback',
   '#/downtrend',
@@ -61,6 +62,10 @@ const HIDDEN_PATHS = new Set([
   '#/still-downtrend',
   '#/still-uptrend',
 ])
+
+const CAUTION_KINDS = new Set<Page['kind']>(['hotlist', 'candidates', 'quality'])
+const CAUTION_TEXT =
+  'Caution: The list here is just to help find out potential candidates to start your analysis. No buy/sell recommendation. Do your own research'
 
 const pageFromHash = (): Page => {
   const hash = window.location.hash === '#/top-bets' ? '#/top-10-bets' : window.location.hash
@@ -224,6 +229,14 @@ function App() {
               </a>
             ))}
         </nav>
+      )}
+      {CAUTION_KINDS.has(page.kind) && (
+        <div className="caution-ticker" role="note" aria-label={CAUTION_TEXT}>
+          <div className="caution-track" aria-hidden="true">
+            <span>{CAUTION_TEXT}</span>
+            <span>{CAUTION_TEXT}</span>
+          </div>
+        </div>
       )}
       {error ? (
         <p className="notice">{error}</p>
