@@ -103,7 +103,10 @@ function App() {
     return () => window.removeEventListener('hashchange', onHashChange)
   }, [])
 
+  // Each tab gets its own title, so GA4's Pages and screens report (which ignores the
+  // #/ route) can tell the tabs apart. The title must be set before the page view is sent.
   useEffect(() => {
+    document.title = `${page.label} · Weekly Trend Screener`
     trackPageView(window.location.hash || '#/hotlist')
   }, [page])
 

@@ -15,8 +15,11 @@ export function initializeAnalytics() {
   if (!measurementId || initialized) return
 
   window.dataLayer = window.dataLayer ?? []
-  window.gtag = (...args: unknown[]) => {
-    window.dataLayer.push(args)
+  // gtag.js only processes `arguments` objects from the dataLayer; a plain array
+  // (e.g. from rest params) is silently ignored and no hits are sent.
+  window.gtag = function gtag() {
+    // eslint-disable-next-line prefer-rest-params
+    window.dataLayer.push(arguments)
   }
 
   const script = document.createElement('script')
