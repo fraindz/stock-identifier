@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-20T16:54:45.218Z",
+  "updatedAt": "2026-11-21T08:49:15.651Z",
   "asOf": "2026-11-20",
-  "lastReviewWeek": "2026-11-09",
+  "lastReviewWeek": "2026-11-16",
   "rules": {
     "minMarketCapCr": 1000,
     "minTradedValueCr": 10,
@@ -90,7 +90,7 @@
       "addedWeek": "2026-11-09",
       "reviewsWaiting": 0,
       "rankAtAdd": 7,
-      "lastRank": 7,
+      "lastRank": 5,
       "status": "active",
       "trigger": 1997.84,
       "initialStop": 1795.8,
@@ -128,7 +128,7 @@
       "addedWeek": "2026-11-09",
       "reviewsWaiting": 0,
       "rankAtAdd": 13,
-      "lastRank": 13,
+      "lastRank": 6,
       "status": "active",
       "trigger": 11233.89,
       "initialStop": 9980,
@@ -164,15 +164,15 @@
       "setup": "breakout",
       "setupNote": "Closed 1.28% above the 319.95 range high on 2.15× volume",
       "addedWeek": "2026-11-09",
-      "reviewsWaiting": 0,
+      "reviewsWaiting": 1,
       "rankAtAdd": 14,
-      "lastRank": 14,
+      "lastRank": 10,
       "status": "watch",
       "trigger": 337.98,
       "initialStop": 313.2,
       "stop": 313.2,
       "riskPct": 7.33,
-      "confidence": 44.69,
+      "confidence": 51.06,
       "lastDate": "2026-11-20",
       "lastClose": 329.15,
       "events": [
@@ -194,7 +194,7 @@
       "addedWeek": "2026-11-09",
       "reviewsWaiting": 0,
       "rankAtAdd": 15,
-      "lastRank": 15,
+      "lastRank": 8,
       "status": "active",
       "trigger": 11482.12,
       "initialStop": 10183.32,
@@ -221,6 +221,90 @@
       "r": 1298.8,
       "partialBooked": false,
       "maxHigh": 11733
+    },
+    {
+      "id": "2026-11-16_THELEELA",
+      "symbol": "THELEELA",
+      "name": "Leela Palaces Hotels & Resorts Limited",
+      "sector": "Consumer Cyclical",
+      "setup": "pullback",
+      "setupNote": "28.21% pullback of a 42.94% rally, turned up last week",
+      "addedWeek": "2026-11-16",
+      "reviewsWaiting": 0,
+      "rankAtAdd": 3,
+      "lastRank": 3,
+      "status": "watch",
+      "trigger": 708.73,
+      "initialStop": 646.8,
+      "stop": 646.8,
+      "riskPct": 8.74,
+      "target": 894.5,
+      "confidence": 66.37,
+      "lastDate": "2026-11-20",
+      "lastClose": 698.1,
+      "events": [
+        {
+          "date": "2026-11-20",
+          "type": "added",
+          "note": "Added to watch at #3, confidence 66.37, quality 72.23: buy above 708.73, stop 646.8 (8.74% risk), target 894.5"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-16_LOTUSDEV",
+      "symbol": "LOTUSDEV",
+      "name": "Sri Lotus Developers and Realty Limited",
+      "sector": "Industrials",
+      "setup": "pullback",
+      "setupNote": "33.34% pullback of a 58% rally, turned up last week",
+      "addedWeek": "2026-11-16",
+      "reviewsWaiting": 0,
+      "rankAtAdd": 4,
+      "lastRank": 4,
+      "status": "watch",
+      "trigger": 242.71,
+      "initialStop": 221.51,
+      "stop": 221.51,
+      "riskPct": 8.73,
+      "target": 254.92,
+      "confidence": 61.48,
+      "lastDate": "2026-11-20",
+      "lastClose": 235.48,
+      "events": [
+        {
+          "date": "2026-11-20",
+          "type": "added",
+          "note": "Added to watch at #4, confidence 61.48, quality 65.58: buy above 242.71, stop 221.51 (8.73% risk), target 254.92"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-16_PERSISTENT",
+      "symbol": "PERSISTENT",
+      "name": "Persistent Systems Limited",
+      "sector": "Technology",
+      "setup": "pullback",
+      "setupNote": "43.78% pullback of a 20.88% rally, turned up last week",
+      "addedWeek": "2026-11-16",
+      "reviewsWaiting": 0,
+      "rankAtAdd": 9,
+      "lastRank": 9,
+      "status": "watch",
+      "trigger": 6246.07,
+      "initialStop": 5768,
+      "stop": 5768,
+      "riskPct": 7.65,
+      "target": 6664.99,
+      "confidence": 52.44,
+      "lastDate": "2026-11-20",
+      "lastClose": 6124,
+      "events": [
+        {
+          "date": "2026-11-20",
+          "type": "added",
+          "note": "Added to watch at #9, confidence 52.44, quality 60.62: buy above 6246.07, stop 5768 (7.65% risk), target 6664.99"
+        }
+      ]
     }
   ]
 }
