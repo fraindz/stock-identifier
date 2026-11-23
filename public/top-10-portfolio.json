@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-21T08:49:15.651Z",
-  "asOf": "2026-11-20",
+  "updatedAt": "2026-11-23T16:40:26.937Z",
+  "asOf": "2026-11-23",
   "lastReviewWeek": "2026-11-16",
   "rules": {
     "minMarketCapCr": 1000,
@@ -59,8 +59,8 @@
       "stop": 597.2,
       "riskPct": 11.78,
       "confidence": 62.6,
-      "lastDate": "2026-11-20",
-      "lastClose": 640.55,
+      "lastDate": "2026-11-23",
+      "lastClose": 665.25,
       "events": [
         {
           "date": "2026-11-13",
@@ -97,8 +97,8 @@
       "stop": 1795.8,
       "riskPct": 10.11,
       "confidence": 55.08,
-      "lastDate": "2026-11-20",
-      "lastClose": 1854.3,
+      "lastDate": "2026-11-23",
+      "lastClose": 1863.7,
       "events": [
         {
           "date": "2026-11-13",
@@ -135,8 +135,8 @@
       "stop": 9980,
       "riskPct": 11.16,
       "confidence": 45.99,
-      "lastDate": "2026-11-20",
-      "lastClose": 11723,
+      "lastDate": "2026-11-23",
+      "lastClose": 11649,
       "events": [
         {
           "date": "2026-11-13",
@@ -173,8 +173,8 @@
       "stop": 313.2,
       "riskPct": 7.33,
       "confidence": 51.06,
-      "lastDate": "2026-11-20",
-      "lastClose": 329.15,
+      "lastDate": "2026-11-23",
+      "lastClose": 326.05,
       "events": [
         {
           "date": "2026-11-13",
@@ -201,8 +201,8 @@
       "stop": 10183.32,
       "riskPct": 11.31,
       "confidence": 34.19,
-      "lastDate": "2026-11-20",
-      "lastClose": 11669,
+      "lastDate": "2026-11-23",
+      "lastClose": 11541,
       "events": [
         {
           "date": "2026-11-13",
@@ -220,7 +220,7 @@
       "entryDate": "2026-11-20",
       "r": 1298.8,
       "partialBooked": false,
-      "maxHigh": 11733
+      "maxHigh": 11769
     },
     {
       "id": "2026-11-16_THELEELA",
@@ -240,8 +240,8 @@
       "riskPct": 8.74,
       "target": 894.5,
       "confidence": 66.37,
-      "lastDate": "2026-11-20",
-      "lastClose": 698.1,
+      "lastDate": "2026-11-23",
+      "lastClose": 686.35,
       "events": [
         {
           "date": "2026-11-20",
@@ -268,8 +268,8 @@
       "riskPct": 8.73,
       "target": 254.92,
       "confidence": 61.48,
-      "lastDate": "2026-11-20",
-      "lastClose": 235.48,
+      "lastDate": "2026-11-23",
+      "lastClose": 229.82,
       "events": [
         {
           "date": "2026-11-20",
@@ -289,22 +289,32 @@
       "reviewsWaiting": 0,
       "rankAtAdd": 9,
       "lastRank": 9,
-      "status": "watch",
+      "status": "active",
       "trigger": 6246.07,
       "initialStop": 5768,
       "stop": 5768,
       "riskPct": 7.65,
       "target": 6664.99,
       "confidence": 52.44,
-      "lastDate": "2026-11-20",
-      "lastClose": 6124,
+      "lastDate": "2026-11-23",
+      "lastClose": 6282.5,
       "events": [
         {
           "date": "2026-11-20",
           "type": "added",
           "note": "Added to watch at #9, confidence 52.44, quality 60.62: buy above 6246.07, stop 5768 (7.65% risk), target 6664.99"
+        },
+        {
+          "date": "2026-11-23",
+          "type": "triggered",
+          "note": "Bought at 6246.07; stop 5768, 1R = 478.07"
         }
-      ]
+      ],
+      "entry": 6246.07,
+      "entryDate": "2026-11-23",
+      "r": 478.07,
+      "partialBooked": false,
+      "maxHigh": 6339.5
     }
   ]
 }
