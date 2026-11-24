@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-24T16:38:44.485Z",
+  "generatedAt": "2026-11-24T16:54:20.012Z",
   "asOf": "2026-11-23",
-  "universeSize": 1712,
+  "universeSize": 1726,
   "stocks": [
     {
       "symbol": "HMAAGRO",
@@ -47,7 +47,7 @@
       "symbol": "THOMASCOOK",
       "name": "Thomas Cook (India) Limited",
       "sector": "Consumer Cyclical",
-      "marketCapCr": 6086,
+      "marketCapCr": 6029,
       "suggestionDate": "2026-11-23",
       "close": 129.39,
       "change5Pct": 16.59,

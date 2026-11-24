@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-24T16:38:44.485Z",
+  "generatedAt": "2026-11-24T16:54:20.011Z",
   "asOf": "2026-11-23",
-  "universeSize": 1712,
+  "universeSize": 1726,
   "stocks": [
     {
       "symbol": "WELSPLSOL",
@@ -27,7 +27,7 @@
       "symbol": "THOMASCOOK",
       "name": "Thomas Cook (India) Limited",
       "sector": "Consumer Cyclical",
-      "marketCapCr": 6086,
+      "marketCapCr": 6029,
       "suggestionDate": "2026-11-23",
       "close": 129.39,
       "change5Pct": 16.59,
@@ -1607,7 +1607,7 @@
       "symbol": "LICI",
       "name": "Life Insurance Corporation of India",
       "sector": "Financial Services",
-      "marketCapCr": 515234,
+      "marketCapCr": 257617,
       "suggestionDate": "2026-11-23",
       "close": 407.3,
       "change5Pct": 1.82,
@@ -2144,6 +2144,26 @@
       "score": 98.02
     },
     {
+      "symbol": "TCS",
+      "name": "Tata Consultancy Services Limited",
+      "sector": "Technology",
+      "marketCapCr": 890050,
+      "suggestionDate": "2026-11-23",
+      "close": 2460,
+      "change5Pct": 2.29,
+      "change20Pct": -2.77,
+      "rsi": 44.85,
+      "ema20": 2414.5,
+      "ema50": 2361.54,
+      "volumeRatio": 2.1,
+      "high20": 2565,
+      "atr": 67.3,
+      "entry": 2460,
+      "stop": 2359.05,
+      "target": 2762.85,
+      "score": 98.01
+    },
+    {
       "symbol": "RAMCOIND",
       "name": "Ramco Industries Limited",
       "sector": "Industrials",
@@ -2647,7 +2667,7 @@
       "symbol": "PENIND",
       "name": "Pennar Industries Limited",
       "sector": "Industrials",
-      "marketCapCr": 2256,
+      "marketCapCr": 2265,
       "suggestionDate": "2026-11-23",
       "close": 167.16,
       "change5Pct": 0.13,

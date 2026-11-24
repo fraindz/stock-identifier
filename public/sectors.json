@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T16:38:44.388Z",
+  "generatedAt": "2026-11-24T16:54:19.879Z",
   "weeks": {
     "currentWeek": {
       "start": "2026-11-23",
@@ -10,13 +10,13 @@
       "end": "2026-11-20"
     }
   },
-  "universeSize": 1753,
+  "universeSize": 1767,
   "sectors": [
     {
       "name": "Financial Services",
-      "universeCount": 194,
-      "oneWeekBreadthPct": 83.51,
-      "lastWeekBreadthPct": 42.78,
+      "universeCount": 196,
+      "oneWeekBreadthPct": 83.67,
+      "lastWeekBreadthPct": 42.35,
       "stocks": [
         {
           "symbol": "HDFCBANK",
@@ -39,11 +39,6 @@
           "marketCapCr": 694333
         },
         {
-          "symbol": "LICI",
-          "name": "Life Insurance Corporation of India",
-          "marketCapCr": 515234
-        },
-        {
           "symbol": "KOTAKBANK",
           "name": "Kotak Mahindra Bank Limited",
           "marketCapCr": 500253
@@ -57,6 +52,11 @@
           "symbol": "BAJAJFINSV",
           "name": "Bajaj Finserv Ltd.",
           "marketCapCr": 300862
+        },
+        {
+          "symbol": "LICI",
+          "name": "Life Insurance Corporation of India",
+          "marketCapCr": 257617
         },
         {
           "symbol": "SHRIRAMFIN",
@@ -371,119 +371,6 @@
       ]
     },
     {
-      "name": "Real Estate",
-      "universeCount": 56,
-      "oneWeekBreadthPct": 76.79,
-      "lastWeekBreadthPct": 42.86,
-      "stocks": [
-        {
-          "symbol": "DLF",
-          "name": "DLF Limited",
-          "marketCapCr": 196564
-        },
-        {
-          "symbol": "PHOENIXLTD",
-          "name": "The Phoenix Mills Limited",
-          "marketCapCr": 81420
-        },
-        {
-          "symbol": "PRESTIGE",
-          "name": "Prestige Estates Projects Limited",
-          "marketCapCr": 72664
-        },
-        {
-          "symbol": "OBEROIRLTY",
-          "name": "Oberoi Realty Limited",
-          "marketCapCr": 67630
-        },
-        {
-          "symbol": "GODREJPROP",
-          "name": "Godrej Properties Limited",
-          "marketCapCr": 57926
-        },
-        {
-          "symbol": "ABREL",
-          "name": "Aditya Birla Real Estate Limited",
-          "marketCapCr": 13945
-        },
-        {
-          "symbol": "HORIZONIND",
-          "name": "Horizon Industrial Parks Limited",
-          "marketCapCr": 13789
-        },
-        {
-          "symbol": "SIGNATURE",
-          "name": "Signatureglobal (India) Limited",
-          "marketCapCr": 12097
-        },
-        {
-          "symbol": "MAXESTATES",
-          "name": "Max Estates Limited",
-          "marketCapCr": 9777
-        },
-        {
-          "symbol": "RUSTOMJEE",
-          "name": "Keystone Realtors Limited",
-          "marketCapCr": 4649
-        },
-        {
-          "symbol": "SUNTECK",
-          "name": "Sunteck Realty Limited",
-          "marketCapCr": 4645
-        },
-        {
-          "symbol": "RAYMONDREL",
-          "name": "Raymond Realty Limited",
-          "marketCapCr": 4079
-        },
-        {
-          "symbol": "RUNWALENTR",
-          "name": "Runwal Enterprises Limited",
-          "marketCapCr": 3846
-        },
-        {
-          "symbol": "ASHIANA",
-          "name": "Ashiana Housing Limited",
-          "marketCapCr": 3581
-        },
-        {
-          "symbol": "AJMERA",
-          "name": "Ajmera Realty & Infra India Limited",
-          "marketCapCr": 3200
-        },
-        {
-          "symbol": "MARATHON",
-          "name": "Marathon Nextgen Realty Limited",
-          "marketCapCr": 2929
-        },
-        {
-          "symbol": "ARVSMART",
-          "name": "Arvind SmartSpaces Limited",
-          "marketCapCr": 2874
-        },
-        {
-          "symbol": "ARKADE",
-          "name": "Arkade Developers Limited",
-          "marketCapCr": 2065
-        },
-        {
-          "symbol": "MODIS",
-          "name": "Modi's Navnirman Limited",
-          "marketCapCr": 902
-        },
-        {
-          "symbol": "TREL",
-          "name": "Transindia Real Estate Limited",
-          "marketCapCr": 684
-        },
-        {
-          "symbol": "PTL",
-          "name": "PTL Enterprises Limited",
-          "marketCapCr": 524
-        }
-      ]
-    },
-    {
       "name": "Healthcare",
       "universeCount": 151,
       "oneWeekBreadthPct": 77.48,
@@ -692,7 +579,7 @@
         {
           "symbol": "ZIMLAB",
           "name": "ZIM Laboratories Limited",
-          "marketCapCr": 763
+          "marketCapCr": 765
         },
         {
           "symbol": "KILITCH",
@@ -707,10 +594,123 @@
       ]
     },
     {
+      "name": "Real Estate",
+      "universeCount": 57,
+      "oneWeekBreadthPct": 75.44,
+      "lastWeekBreadthPct": 42.11,
+      "stocks": [
+        {
+          "symbol": "DLF",
+          "name": "DLF Limited",
+          "marketCapCr": 196564
+        },
+        {
+          "symbol": "PHOENIXLTD",
+          "name": "The Phoenix Mills Limited",
+          "marketCapCr": 81420
+        },
+        {
+          "symbol": "PRESTIGE",
+          "name": "Prestige Estates Projects Limited",
+          "marketCapCr": 72664
+        },
+        {
+          "symbol": "OBEROIRLTY",
+          "name": "Oberoi Realty Limited",
+          "marketCapCr": 67630
+        },
+        {
+          "symbol": "GODREJPROP",
+          "name": "Godrej Properties Limited",
+          "marketCapCr": 57926
+        },
+        {
+          "symbol": "ABREL",
+          "name": "Aditya Birla Real Estate Limited",
+          "marketCapCr": 13945
+        },
+        {
+          "symbol": "HORIZONIND",
+          "name": "Horizon Industrial Parks Limited",
+          "marketCapCr": 13789
+        },
+        {
+          "symbol": "SIGNATURE",
+          "name": "Signatureglobal (India) Limited",
+          "marketCapCr": 12097
+        },
+        {
+          "symbol": "MAXESTATES",
+          "name": "Max Estates Limited",
+          "marketCapCr": 9777
+        },
+        {
+          "symbol": "RUSTOMJEE",
+          "name": "Keystone Realtors Limited",
+          "marketCapCr": 4649
+        },
+        {
+          "symbol": "SUNTECK",
+          "name": "Sunteck Realty Limited",
+          "marketCapCr": 4645
+        },
+        {
+          "symbol": "RAYMONDREL",
+          "name": "Raymond Realty Limited",
+          "marketCapCr": 4079
+        },
+        {
+          "symbol": "RUNWALENTR",
+          "name": "Runwal Enterprises Limited",
+          "marketCapCr": 3846
+        },
+        {
+          "symbol": "ASHIANA",
+          "name": "Ashiana Housing Limited",
+          "marketCapCr": 3581
+        },
+        {
+          "symbol": "AJMERA",
+          "name": "Ajmera Realty & Infra India Limited",
+          "marketCapCr": 3200
+        },
+        {
+          "symbol": "MARATHON",
+          "name": "Marathon Nextgen Realty Limited",
+          "marketCapCr": 2929
+        },
+        {
+          "symbol": "ARVSMART",
+          "name": "Arvind SmartSpaces Limited",
+          "marketCapCr": 2874
+        },
+        {
+          "symbol": "ARKADE",
+          "name": "Arkade Developers Limited",
+          "marketCapCr": 2065
+        },
+        {
+          "symbol": "MODIS",
+          "name": "Modi's Navnirman Limited",
+          "marketCapCr": 902
+        },
+        {
+          "symbol": "TREL",
+          "name": "Transindia Real Estate Limited",
+          "marketCapCr": 684
+        },
+        {
+          "symbol": "PTL",
+          "name": "PTL Enterprises Limited",
+          "marketCapCr": 524
+        }
+      ]
+    },
+    {
       "name": "Consumer Cyclical",
-      "universeCount": 313,
-      "oneWeekBreadthPct": 73.16,
-      "lastWeekBreadthPct": 36.1,
+      "universeCount": 312,
+      "oneWeekBreadthPct": 72.44,
+      "lastWeekBreadthPct": 36.54,
       "stocks": [
         {
           "symbol": "MARUTI",
@@ -726,6 +726,11 @@
           "symbol": "ETERNAL",
           "name": "Eternal Limited",
           "marketCapCr": 333595
+        },
+        {
+          "symbol": "TVSMOTOR",
+          "name": "TVS Motor Company Limited",
+          "marketCapCr": 215192
         },
         {
           "symbol": "MOTHERSON",
@@ -830,7 +835,7 @@
         {
           "symbol": "ARVIND",
           "name": "Arvind Limited",
-          "marketCapCr": 14095
+          "marketCapCr": 14628
         },
         {
           "symbol": "CIEINDIA",
@@ -905,7 +910,7 @@
         {
           "symbol": "THOMASCOOK",
           "name": "Thomas Cook (India) Limited",
-          "marketCapCr": 6086
+          "marketCapCr": 6029
         },
         {
           "symbol": "KDDL",
@@ -1035,7 +1040,7 @@
         {
           "symbol": "FAZE3Q",
           "name": "Faze Three Limited",
-          "marketCapCr": 1417
+          "marketCapCr": 1434
         },
         {
           "symbol": "JAYBARMARU",

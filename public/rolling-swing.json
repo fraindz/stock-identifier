@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-24T16:38:58.629Z",
+  "generatedAt": "2026-11-24T16:54:36.736Z",
   "asOf": "2026-11-23",
   "mode": "swing",
-  "scoredCount": 880,
+  "scoredCount": 891,
   "minMarketCapCr": 1000,
   "minTradedValueCr": 10,
   "deliveryAvailable": true,
@@ -27,7 +27,7 @@
     "niftyVs50Pct": 7.78,
     "niftyVs200Pct": 5.63,
     "sma50Rising": true,
-    "breadthPct": 40.46,
+    "breadthPct": 40.65,
     "note": "Mixed market: 5 points deducted from every score"
   },
   "sectors": [
@@ -57,14 +57,14 @@
     },
     {
       "name": "Financial Services",
-      "members": 170,
+      "members": 172,
       "ret20Pct": 9,
-      "ret60Pct": -2.72,
-      "ret65Pct": -1.86,
-      "ret130Pct": 5.15,
-      "rel20Pct": -3.17,
-      "rel65Pct": -6.81,
-      "breadthPct": 52.35,
+      "ret60Pct": -2.68,
+      "ret65Pct": -1.82,
+      "ret130Pct": 5.05,
+      "rel20Pct": -3.16,
+      "rel65Pct": -6.76,
+      "breadthPct": 52.33,
       "above50": true
     },
     {
@@ -81,14 +81,14 @@
     },
     {
       "name": "Consumer Cyclical",
-      "members": 245,
-      "ret20Pct": 7.05,
-      "ret60Pct": -1.25,
-      "ret65Pct": -1.44,
-      "ret130Pct": 15.9,
-      "rel20Pct": -5.11,
-      "rel65Pct": -6.39,
-      "breadthPct": 46.53,
+      "members": 247,
+      "ret20Pct": 7.04,
+      "ret60Pct": -1.36,
+      "ret65Pct": -1.59,
+      "ret130Pct": 15.63,
+      "rel20Pct": -5.13,
+      "rel65Pct": -6.54,
+      "breadthPct": 46.56,
       "above50": true
     },
     {
@@ -105,38 +105,38 @@
     },
     {
       "name": "Industrials",
-      "members": 312,
-      "ret20Pct": 5.6,
-      "ret60Pct": -5.18,
-      "ret65Pct": -4.83,
-      "ret130Pct": 7.13,
-      "rel20Pct": -6.56,
-      "rel65Pct": -9.77,
-      "breadthPct": 33.97,
-      "above50": false
-    },
-    {
-      "name": "Utilities",
-      "members": 33,
-      "ret20Pct": 7.19,
-      "ret60Pct": -8.85,
-      "ret65Pct": -8.93,
-      "ret130Pct": -12.77,
-      "rel20Pct": -4.98,
-      "rel65Pct": -13.88,
-      "breadthPct": 39.39,
+      "members": 314,
+      "ret20Pct": 5.58,
+      "ret60Pct": -5.24,
+      "ret65Pct": -4.91,
+      "ret130Pct": 7.07,
+      "rel20Pct": -6.58,
+      "rel65Pct": -9.85,
+      "breadthPct": 34.08,
       "above50": false
     },
     {
       "name": "Energy",
-      "members": 28,
-      "ret20Pct": 1.45,
-      "ret60Pct": -3.14,
-      "ret65Pct": -4.36,
-      "ret130Pct": 13.81,
-      "rel20Pct": -10.72,
-      "rel65Pct": -9.31,
-      "breadthPct": 28.57,
+      "members": 30,
+      "ret20Pct": 2.2,
+      "ret60Pct": -2.66,
+      "ret65Pct": -3.79,
+      "ret130Pct": 13.19,
+      "rel20Pct": -9.97,
+      "rel65Pct": -8.74,
+      "breadthPct": 33.33,
+      "above50": false
+    },
+    {
+      "name": "Utilities",
+      "members": 35,
+      "ret20Pct": 7.3,
+      "ret60Pct": -9.27,
+      "ret65Pct": -9.43,
+      "ret130Pct": -13.64,
+      "rel20Pct": -4.87,
+      "rel65Pct": -14.38,
+      "breadthPct": 40,
       "above50": false
     },
     {
@@ -153,14 +153,14 @@
     },
     {
       "name": "Technology",
-      "members": 113,
-      "ret20Pct": 1.21,
-      "ret60Pct": -7.24,
-      "ret65Pct": -7.39,
-      "ret130Pct": 10.04,
-      "rel20Pct": -10.96,
-      "rel65Pct": -12.33,
-      "breadthPct": 36.28,
+      "members": 114,
+      "ret20Pct": 1.18,
+      "ret60Pct": -7.12,
+      "ret65Pct": -7.25,
+      "ret130Pct": 10.05,
+      "rel20Pct": -10.99,
+      "rel65Pct": -12.2,
+      "breadthPct": 36.84,
       "above50": false
     }
   ],
@@ -244,8 +244,8 @@
       "sector": "Consumer Cyclical",
       "marketCapCr": 13683,
       "close": 1479.4,
-      "rawScore": 81.05,
-      "score": 76.05,
+      "rawScore": 81.06,
+      "score": 76.06,
       "grade": "B",
       "setup": "breakout",
       "setupNote": "Closed 0.6% above the 20-day high on 2.0× volume",
@@ -270,12 +270,12 @@
           "label": "Relative strength",
           "points": 15,
           "max": 15,
-          "note": "+15.8% vs Nifty, +21.1% vs Consumer Cyclical"
+          "note": "+15.8% vs Nifty, +21.2% vs Consumer Cyclical"
         },
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 3.65,
+          "points": 3.66,
           "max": 10,
           "note": "Consumer Cyclical -5.1% vs Nifty, 47% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth"
         },
@@ -390,8 +390,8 @@
       "sector": "Financial Services",
       "marketCapCr": 8033,
       "close": 173.51,
-      "rawScore": 77.16,
-      "score": 72.16,
+      "rawScore": 77.15,
+      "score": 72.15,
       "grade": "B",
       "setup": "breakout",
       "setupNote": "Closed 0.9% above the 20-day high on 0.3× volume",
@@ -416,12 +416,12 @@
           "label": "Relative strength",
           "points": 15,
           "max": 15,
-          "note": "+13.9% vs Nifty, +19.0% vs Financial Services"
+          "note": "+13.9% vs Nifty, +18.9% vs Financial Services"
         },
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 4.24,
+          "points": 4.23,
           "max": 10,
           "note": "Financial Services -3.2% vs Nifty, 52% above 50-DMA; weak: sector lagging Nifty"
         },
@@ -463,8 +463,8 @@
       "sector": "Consumer Cyclical",
       "marketCapCr": 128963,
       "close": 906,
-      "rawScore": 76.86,
-      "score": 71.86,
+      "rawScore": 76.87,
+      "score": 71.87,
       "grade": "B",
       "setup": "consolidation",
       "setupNote": "10-day range 6.1% wide, 0.8% below the 20-day high",
@@ -489,12 +489,12 @@
           "label": "Relative strength",
           "points": 14.86,
           "max": 15,
-          "note": "+11.8% vs Nifty, +17.1% vs Consumer Cyclical"
+          "note": "+11.8% vs Nifty, +17.2% vs Consumer Cyclical"
         },
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 3.65,
+          "points": 3.66,
           "max": 10,
           "note": "Consumer Cyclical -5.1% vs Nifty, 47% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth"
         },
@@ -609,8 +609,8 @@
       "sector": "Financial Services",
       "marketCapCr": 7668,
       "close": 237.93,
-      "rawScore": 74.4,
-      "score": 69.4,
+      "rawScore": 74.39,
+      "score": 69.39,
       "grade": "C",
       "setup": "breakout",
       "setupNote": "Closed 0.3% above the 20-day high on 1.3× volume",
@@ -640,7 +640,7 @@
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 4.24,
+          "points": 4.23,
           "max": 10,
           "note": "Financial Services -3.2% vs Nifty, 52% above 50-DMA; weak: sector lagging Nifty"
         },
@@ -828,8 +828,8 @@
       "sector": "Industrials",
       "marketCapCr": 17842,
       "close": 939.4,
-      "rawScore": 73.13,
-      "score": 68.13,
+      "rawScore": 73.14,
+      "score": 68.14,
       "grade": "C",
       "setup": "pullback",
       "setupNote": "Within 2.8% of the rising 20 EMA, RSI 55, turned up today",
@@ -854,12 +854,12 @@
           "label": "Relative strength",
           "points": 15,
           "max": 15,
-          "note": "+19.8% vs Nifty, +27.7% vs Industrials"
+          "note": "+19.8% vs Nifty, +27.8% vs Industrials"
         },
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 0.4,
+          "points": 0.41,
           "max": 10,
           "note": "Industrials -6.6% vs Nifty, 34% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth, sector index below 50-DMA"
         },
@@ -974,8 +974,8 @@
       "sector": "Financial Services",
       "marketCapCr": 2124,
       "close": 849.3,
-      "rawScore": 72.86,
-      "score": 67.86,
+      "rawScore": 72.85,
+      "score": 67.85,
       "grade": "C",
       "setup": "breakout",
       "setupNote": "Closed 0.0% above the 20-day high on 0.6× volume",
@@ -1005,7 +1005,7 @@
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 4.24,
+          "points": 4.23,
           "max": 10,
           "note": "Financial Services -3.2% vs Nifty, 52% above 50-DMA; weak: sector lagging Nifty"
         },
@@ -1047,8 +1047,8 @@
       "sector": "Industrials",
       "marketCapCr": 1364,
       "close": 166.8,
-      "rawScore": 72.8,
-      "score": 67.8,
+      "rawScore": 72.81,
+      "score": 67.81,
       "grade": "C",
       "setup": "breakout",
       "setupNote": "Closed 0.3% above the 20-day high on 0.6× volume",
@@ -1078,7 +1078,7 @@
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 0.4,
+          "points": 0.41,
           "max": 10,
           "note": "Industrials -6.6% vs Nifty, 34% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth, sector index below 50-DMA"
         },
@@ -1120,8 +1120,8 @@
       "sector": "Consumer Cyclical",
       "marketCapCr": 1185,
       "close": 282.51,
-      "rawScore": 72.78,
-      "score": 67.78,
+      "rawScore": 72.79,
+      "score": 67.79,
       "grade": "C",
       "setup": "breakout",
       "setupNote": "Closed 2.1% above the 20-day high on 2.5× volume",
@@ -1151,7 +1151,7 @@
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 3.65,
+          "points": 3.66,
           "max": 10,
           "note": "Consumer Cyclical -5.1% vs Nifty, 47% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth"
         },
@@ -1193,8 +1193,8 @@
       "sector": "Financial Services",
       "marketCapCr": 2774,
       "close": 252.17,
-      "rawScore": 72.76,
-      "score": 67.76,
+      "rawScore": 72.75,
+      "score": 67.75,
       "grade": "C",
       "setup": "pullback",
       "setupNote": "Within 0.5% of the rising 20 EMA, RSI 63",
@@ -1224,7 +1224,7 @@
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 4.24,
+          "points": 4.23,
           "max": 10,
           "note": "Financial Services -3.2% vs Nifty, 52% above 50-DMA; weak: sector lagging Nifty"
         },
@@ -1266,8 +1266,8 @@
       "sector": "Industrials",
       "marketCapCr": 26535,
       "close": 1438.8,
-      "rawScore": 71.59,
-      "score": 66.59,
+      "rawScore": 71.6,
+      "score": 66.6,
       "grade": "C",
       "setup": "breakout",
       "setupNote": "Closed 1.1% above the 20-day high on 1.0× volume",
@@ -1297,7 +1297,7 @@
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 0.4,
+          "points": 0.41,
           "max": 10,
           "note": "Industrials -6.6% vs Nifty, 34% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth, sector index below 50-DMA"
         },
@@ -1339,8 +1339,8 @@
       "sector": "Consumer Cyclical",
       "marketCapCr": 55428,
       "close": 886,
-      "rawScore": 71.45,
-      "score": 66.45,
+      "rawScore": 71.46,
+      "score": 66.46,
       "grade": "C",
       "setup": "pullback",
       "setupNote": "Within 0.2% of the rising 20 EMA, RSI 43",
@@ -1365,12 +1365,12 @@
           "label": "Relative strength",
           "points": 9.54,
           "max": 15,
-          "note": "+5.4% vs Nifty, +10.7% vs Consumer Cyclical"
+          "note": "+5.4% vs Nifty, +10.8% vs Consumer Cyclical"
         },
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 3.65,
+          "points": 3.66,
           "max": 10,
           "note": "Consumer Cyclical -5.1% vs Nifty, 47% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth"
         },
@@ -1480,13 +1480,86 @@
       "daysListed": 1
     },
     {
+      "symbol": "PERSISTENT",
+      "name": "Persistent Systems Limited",
+      "sector": "Technology",
+      "marketCapCr": 103405,
+      "close": 6282.5,
+      "rawScore": 71.34,
+      "score": 66.34,
+      "grade": "C",
+      "setup": "breakout",
+      "setupNote": "Closed 0.7% above the 20-day high on 2.1× volume",
+      "trigger": 6352.18,
+      "stop": 6115.61,
+      "target": 6664.99,
+      "riskPct": 3.72,
+      "rr": 1.32,
+      "triggerGapPct": 1.11,
+      "deliveryPct": 47.84,
+      "fundamentalsCoverage": 1,
+      "components": [
+        {
+          "key": "trend",
+          "label": "Trend strength",
+          "points": 19.32,
+          "max": 20,
+          "note": "69% of 26 weeks above 10w; all checks pass"
+        },
+        {
+          "key": "rs",
+          "label": "Relative strength",
+          "points": 6.85,
+          "max": 15,
+          "note": "+2.2% vs Nifty, +13.4% vs Technology"
+        },
+        {
+          "key": "sector",
+          "label": "Sector strength",
+          "points": 0.68,
+          "max": 10,
+          "note": "Technology -11.0% vs Nifty, 37% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth, sector index below 50-DMA"
+        },
+        {
+          "key": "setup",
+          "label": "Setup quality",
+          "points": 22.05,
+          "max": 25,
+          "note": "breakout: Closed 0.7% above the 20-day high on 2.1× volume"
+        },
+        {
+          "key": "volume",
+          "label": "Volume confirmation",
+          "points": 13.08,
+          "max": 15,
+          "note": "up-day volume 2.5×, up/down 1.88, delivery 48% vs 43% avg; all checks pass"
+        },
+        {
+          "key": "fundamentals",
+          "label": "Fundamental health",
+          "points": 3.74,
+          "max": 5,
+          "note": "sales growth +30%, earnings growth -26%, ROE 23%, op. margin 15%, D/E 0.07"
+        },
+        {
+          "key": "riskReward",
+          "label": "Risk/reward",
+          "points": 5.62,
+          "max": 10,
+          "note": "3.7% risk, 1.3R to 52-week high + 1%; weak: 1.3R to target"
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "daysListed": 1
+    },
+    {
       "symbol": "ORIENTHOT",
       "name": "Oriental Hotels Limited",
       "sector": "Consumer Cyclical",
       "marketCapCr": 3215,
       "close": 180.04,
-      "rawScore": 71.31,
-      "score": 66.31,
+      "rawScore": 71.32,
+      "score": 66.32,
       "grade": "C",
       "setup": "consolidation",
       "setupNote": "10-day range 8.0% wide, 1.0% below the 20-day high",
@@ -1511,12 +1584,12 @@
           "label": "Relative strength",
           "points": 15,
           "max": 15,
-          "note": "+14.7% vs Nifty, +20.0% vs Consumer Cyclical"
+          "note": "+14.7% vs Nifty, +20.1% vs Consumer Cyclical"
         },
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 3.65,
+          "points": 3.66,
           "max": 10,
           "note": "Consumer Cyclical -5.1% vs Nifty, 47% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth"
         },
@@ -1553,86 +1626,13 @@
       "daysListed": 5
     },
     {
-      "symbol": "PERSISTENT",
-      "name": "Persistent Systems Limited",
-      "sector": "Technology",
-      "marketCapCr": 103405,
-      "close": 6282.5,
-      "rawScore": 71.29,
-      "score": 66.29,
-      "grade": "C",
-      "setup": "breakout",
-      "setupNote": "Closed 0.7% above the 20-day high on 2.1× volume",
-      "trigger": 6352.18,
-      "stop": 6115.61,
-      "target": 6664.99,
-      "riskPct": 3.72,
-      "rr": 1.32,
-      "triggerGapPct": 1.11,
-      "deliveryPct": 47.84,
-      "fundamentalsCoverage": 1,
-      "components": [
-        {
-          "key": "trend",
-          "label": "Trend strength",
-          "points": 19.32,
-          "max": 20,
-          "note": "69% of 26 weeks above 10w; all checks pass"
-        },
-        {
-          "key": "rs",
-          "label": "Relative strength",
-          "points": 6.85,
-          "max": 15,
-          "note": "+2.2% vs Nifty, +13.4% vs Technology"
-        },
-        {
-          "key": "sector",
-          "label": "Sector strength",
-          "points": 0.63,
-          "max": 10,
-          "note": "Technology -11.0% vs Nifty, 36% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth, sector index below 50-DMA"
-        },
-        {
-          "key": "setup",
-          "label": "Setup quality",
-          "points": 22.05,
-          "max": 25,
-          "note": "breakout: Closed 0.7% above the 20-day high on 2.1× volume"
-        },
-        {
-          "key": "volume",
-          "label": "Volume confirmation",
-          "points": 13.08,
-          "max": 15,
-          "note": "up-day volume 2.5×, up/down 1.88, delivery 48% vs 43% avg; all checks pass"
-        },
-        {
-          "key": "fundamentals",
-          "label": "Fundamental health",
-          "points": 3.74,
-          "max": 5,
-          "note": "sales growth +30%, earnings growth -26%, ROE 23%, op. margin 15%, D/E 0.07"
-        },
-        {
-          "key": "riskReward",
-          "label": "Risk/reward",
-          "points": 5.62,
-          "max": 10,
-          "note": "3.7% risk, 1.3R to 52-week high + 1%; weak: 1.3R to target"
-        }
-      ],
-      "firstSeen": "2026-11-23",
-      "daysListed": 1
-    },
-    {
       "symbol": "ITCHOTELS",
       "name": "ITC Hotels Limited",
       "sector": "Consumer Cyclical",
       "marketCapCr": 38358,
       "close": 184.12,
-      "rawScore": 71.21,
-      "score": 66.21,
+      "rawScore": 71.22,
+      "score": 66.22,
       "grade": "C",
       "setup": "consolidation",
       "setupNote": "10-day range 8.4% wide, 0.7% below the 20-day high",
@@ -1657,12 +1657,12 @@
           "label": "Relative strength",
           "points": 10.11,
           "max": 15,
-          "note": "+6.1% vs Nifty, +11.4% vs Consumer Cyclical"
+          "note": "+6.1% vs Nifty, +11.5% vs Consumer Cyclical"
         },
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 3.65,
+          "points": 3.66,
           "max": 10,
           "note": "Consumer Cyclical -5.1% vs Nifty, 47% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth"
         },
@@ -1704,8 +1704,8 @@
       "sector": "Consumer Cyclical",
       "marketCapCr": 22921,
       "close": 686.35,
-      "rawScore": 71.08,
-      "score": 66.08,
+      "rawScore": 71.09,
+      "score": 66.09,
       "grade": "C",
       "setup": "consolidation",
       "setupNote": "10-day range 9.0% wide, 3.0% below the 20-day high",
@@ -1730,12 +1730,12 @@
           "label": "Relative strength",
           "points": 15,
           "max": 15,
-          "note": "+13.1% vs Nifty, +18.3% vs Consumer Cyclical"
+          "note": "+13.1% vs Nifty, +18.4% vs Consumer Cyclical"
         },
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 3.65,
+          "points": 3.66,
           "max": 10,
           "note": "Consumer Cyclical -5.1% vs Nifty, 47% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth"
         },
@@ -1777,8 +1777,8 @@
       "sector": "Industrials",
       "marketCapCr": 16771,
       "close": 298.4,
-      "rawScore": 70.97,
-      "score": 65.97,
+      "rawScore": 70.98,
+      "score": 65.98,
       "grade": "C",
       "setup": "pullback",
       "setupNote": "Within 0.9% of the rising 20 EMA, RSI 56",
@@ -1808,7 +1808,7 @@
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 0.4,
+          "points": 0.41,
           "max": 10,
           "note": "Industrials -6.6% vs Nifty, 34% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth, sector index below 50-DMA"
         },
@@ -1850,8 +1850,8 @@
       "sector": "Consumer Cyclical",
       "marketCapCr": 3044,
       "close": 239.18,
-      "rawScore": 70.75,
-      "score": 65.75,
+      "rawScore": 70.76,
+      "score": 65.76,
       "grade": "C",
       "setup": "breakout",
       "setupNote": "Closed 3.4% above the 20-day high on 2.6× volume",
@@ -1876,12 +1876,12 @@
           "label": "Relative strength",
           "points": 7.77,
           "max": 15,
-          "note": "+3.3% vs Nifty, +8.6% vs Consumer Cyclical"
+          "note": "+3.3% vs Nifty, +8.7% vs Consumer Cyclical"
         },
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 3.65,
+          "points": 3.66,
           "max": 10,
           "note": "Consumer Cyclical -5.1% vs Nifty, 47% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth"
         },
@@ -1996,8 +1996,8 @@
       "sector": "Financial Services",
       "marketCapCr": 500253,
       "close": 502.85,
-      "rawScore": 69.95,
-      "score": 64.95,
+      "rawScore": 69.94,
+      "score": 64.94,
       "grade": "C",
       "setup": "consolidation",
       "setupNote": "10-day range 9.9% wide, 2.7% below the 20-day high",
@@ -2022,12 +2022,12 @@
           "label": "Relative strength",
           "points": 15,
           "max": 15,
-          "note": "+12.8% vs Nifty, +17.9% vs Financial Services"
+          "note": "+12.8% vs Nifty, +17.8% vs Financial Services"
         },
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 4.24,
+          "points": 4.23,
           "max": 10,
           "note": "Financial Services -3.2% vs Nifty, 52% above 50-DMA; weak: sector lagging Nifty"
         },
@@ -2069,8 +2069,8 @@
       "sector": "Industrials",
       "marketCapCr": 82240,
       "close": 353.55,
-      "rawScore": 69.71,
-      "score": 64.71,
+      "rawScore": 69.75,
+      "score": 64.75,
       "grade": "C",
       "setup": "breakout",
       "setupNote": "Closed 0.4% above the 20-day high on 2.6× volume",
@@ -2093,14 +2093,14 @@
         {
           "key": "rs",
           "label": "Relative strength",
-          "points": 4.45,
+          "points": 4.48,
           "max": 15,
-          "note": "-0.8% vs Nifty, +7.1% vs Industrials"
+          "note": "-0.8% vs Nifty, +7.2% vs Industrials"
         },
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 0.4,
+          "points": 0.41,
           "max": 10,
           "note": "Industrials -6.6% vs Nifty, 34% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth, sector index below 50-DMA"
         },
@@ -2215,8 +2215,8 @@
       "sector": "Industrials",
       "marketCapCr": 1845,
       "close": 155.54,
-      "rawScore": 69.39,
-      "score": 64.39,
+      "rawScore": 69.4,
+      "score": 64.4,
       "grade": "C",
       "setup": "pullback",
       "setupNote": "Within 0.7% of the rising 20 EMA, RSI 56",
@@ -2246,7 +2246,7 @@
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 0.4,
+          "points": 0.41,
           "max": 10,
           "note": "Industrials -6.6% vs Nifty, 34% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth, sector index below 50-DMA"
         },
@@ -2507,8 +2507,8 @@
       "sector": "Industrials",
       "marketCapCr": 14826,
       "close": 910,
-      "rawScore": 68.57,
-      "score": 63.57,
+      "rawScore": 68.58,
+      "score": 63.58,
       "grade": "C",
       "setup": "consolidation",
       "setupNote": "10-day range 7.2% wide, 1.6% below the 20-day high",
@@ -2538,7 +2538,7 @@
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 0.4,
+          "points": 0.41,
           "max": 10,
           "note": "Industrials -6.6% vs Nifty, 34% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth, sector index below 50-DMA"
         },
@@ -2580,8 +2580,8 @@
       "sector": "Utilities",
       "marketCapCr": 29058,
       "close": 411.6,
-      "rawScore": 68.33,
-      "score": 63.33,
+      "rawScore": 68.49,
+      "score": 63.49,
       "grade": "C",
       "setup": "pullback",
       "setupNote": "Within 0.4% of the rising 20 EMA, RSI 46, turned up today",
@@ -2604,16 +2604,16 @@
         {
           "key": "rs",
           "label": "Relative strength",
-          "points": 4.82,
+          "points": 4.92,
           "max": 15,
-          "note": "-1.3% vs Nifty, +7.7% vs Utilities"
+          "note": "-1.3% vs Nifty, +7.9% vs Utilities"
         },
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 0.94,
+          "points": 1,
           "max": 10,
-          "note": "Utilities -5.0% vs Nifty, 39% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth, sector index below 50-DMA"
+          "note": "Utilities -4.9% vs Nifty, 40% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth, sector index below 50-DMA"
         },
         {
           "key": "setup",
@@ -2653,8 +2653,8 @@
       "sector": "Consumer Cyclical",
       "marketCapCr": 28833,
       "close": 4619.3,
-      "rawScore": 67.84,
-      "score": 62.84,
+      "rawScore": 67.85,
+      "score": 62.85,
       "grade": "C",
       "setup": "pullback",
       "setupNote": "Within 2.4% of the rising 20 EMA, RSI 65",
@@ -2679,12 +2679,12 @@
           "label": "Relative strength",
           "points": 14.02,
           "max": 15,
-          "note": "+10.8% vs Nifty, +16.1% vs Consumer Cyclical"
+          "note": "+10.8% vs Nifty, +16.2% vs Consumer Cyclical"
         },
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 3.65,
+          "points": 3.66,
           "max": 10,
           "note": "Consumer Cyclical -5.1% vs Nifty, 47% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth"
         },
@@ -2799,8 +2799,8 @@
       "sector": "Industrials",
       "marketCapCr": 38722,
       "close": 24425,
-      "rawScore": 67.57,
-      "score": 62.57,
+      "rawScore": 67.58,
+      "score": 62.58,
       "grade": "C",
       "setup": "pullback",
       "setupNote": "Within 1.3% of the rising 20 EMA, RSI 51, turned up today",
@@ -2830,7 +2830,7 @@
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 0.4,
+          "points": 0.41,
           "max": 10,
           "note": "Industrials -6.6% vs Nifty, 34% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth, sector index below 50-DMA"
         },
@@ -2945,8 +2945,8 @@
       "sector": "Financial Services",
       "marketCapCr": 87074,
       "close": 1742.6,
-      "rawScore": 67.4,
-      "score": 62.4,
+      "rawScore": 67.38,
+      "score": 62.38,
       "grade": "C",
       "setup": "breakout",
       "setupNote": "Closed 0.1% above the 20-day high on 1.8× volume",
@@ -2969,14 +2969,14 @@
         {
           "key": "rs",
           "label": "Relative strength",
-          "points": 3.84,
+          "points": 3.83,
           "max": 15,
           "note": "+0.5% vs Nifty, +5.5% vs Financial Services"
         },
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 4.24,
+          "points": 4.23,
           "max": 10,
           "note": "Financial Services -3.2% vs Nifty, 52% above 50-DMA; weak: sector lagging Nifty"
         },
@@ -3091,8 +3091,8 @@
       "sector": "Consumer Cyclical",
       "marketCapCr": 3241,
       "close": 68.07,
-      "rawScore": 66.81,
-      "score": 61.81,
+      "rawScore": 66.82,
+      "score": 61.82,
       "grade": "C",
       "setup": "pullback",
       "setupNote": "Within 1.4% of the rising 20 EMA, RSI 64",
@@ -3117,12 +3117,12 @@
           "label": "Relative strength",
           "points": 15,
           "max": 15,
-          "note": "+32.9% vs Nifty, +38.1% vs Consumer Cyclical"
+          "note": "+32.9% vs Nifty, +38.2% vs Consumer Cyclical"
         },
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 3.65,
+          "points": 3.66,
           "max": 10,
           "note": "Consumer Cyclical -5.1% vs Nifty, 47% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth"
         },
@@ -3164,8 +3164,8 @@
       "sector": "Consumer Cyclical",
       "marketCapCr": 10131,
       "close": 652.7,
-      "rawScore": 66.32,
-      "score": 61.32,
+      "rawScore": 66.33,
+      "score": 61.33,
       "grade": "C",
       "setup": "pullback",
       "setupNote": "Within 1.7% of the rising 20 EMA, RSI 63",
@@ -3195,7 +3195,7 @@
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 3.65,
+          "points": 3.66,
           "max": 10,
           "note": "Consumer Cyclical -5.1% vs Nifty, 47% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth"
         },
@@ -3237,8 +3237,8 @@
       "sector": "Consumer Cyclical",
       "marketCapCr": 171061,
       "close": 3208,
-      "rawScore": 66.25,
-      "score": 61.25,
+      "rawScore": 66.26,
+      "score": 61.26,
       "grade": "C",
       "setup": "consolidation",
       "setupNote": "10-day range 8.4% wide, 2.2% below the 20-day high",
@@ -3268,7 +3268,7 @@
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 3.65,
+          "points": 3.66,
           "max": 10,
           "note": "Consumer Cyclical -5.1% vs Nifty, 47% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth"
         },
@@ -3310,8 +3310,8 @@
       "sector": "Industrials",
       "marketCapCr": 49979,
       "close": 4074.1,
-      "rawScore": 65.71,
-      "score": 60.71,
+      "rawScore": 65.72,
+      "score": 60.72,
       "grade": "C",
       "setup": "pullback",
       "setupNote": "Within 1.1% of the rising 20 EMA, RSI 62, turned up today",
@@ -3341,7 +3341,7 @@
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 0.4,
+          "points": 0.41,
           "max": 10,
           "note": "Industrials -6.6% vs Nifty, 34% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth, sector index below 50-DMA"
         },
@@ -3372,6 +3372,79 @@
           "points": 7.55,
           "max": 10,
           "note": "5.4% risk, 2.5R to 52-week high + 1%; weak: 5.4% risk"
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "daysListed": 1
+    },
+    {
+      "symbol": "TVSMOTOR",
+      "name": "TVS Motor Company Limited",
+      "sector": "Consumer Cyclical",
+      "marketCapCr": 215192,
+      "close": 4528.2,
+      "rawScore": 65.7,
+      "score": 60.7,
+      "grade": "C",
+      "setup": "consolidation",
+      "setupNote": "10-day range 6.3% wide, 2.4% below the 20-day high",
+      "trigger": 4645.37,
+      "stop": 4464.28,
+      "target": 5188.65,
+      "riskPct": 3.9,
+      "rr": 3,
+      "triggerGapPct": 2.59,
+      "deliveryPct": 61.23,
+      "fundamentalsCoverage": 1,
+      "components": [
+        {
+          "key": "trend",
+          "label": "Trend strength",
+          "points": 19.16,
+          "max": 20,
+          "note": "65% of 26 weeks above 10w; weak: consistent weekly trend"
+        },
+        {
+          "key": "rs",
+          "label": "Relative strength",
+          "points": 3.29,
+          "max": 15,
+          "note": "-0.1% vs Nifty, +5.3% vs Consumer Cyclical"
+        },
+        {
+          "key": "sector",
+          "label": "Sector strength",
+          "points": 3.66,
+          "max": 10,
+          "note": "Consumer Cyclical -5.1% vs Nifty, 47% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth"
+        },
+        {
+          "key": "setup",
+          "label": "Setup quality",
+          "points": 14.39,
+          "max": 25,
+          "note": "consolidation: 10-day range 6.3% wide, 2.4% below the 20-day high"
+        },
+        {
+          "key": "volume",
+          "label": "Volume confirmation",
+          "points": 13.77,
+          "max": 15,
+          "note": "up-day volume 2.1×, up/down 2.04, delivery 61% vs 55% avg; all checks pass"
+        },
+        {
+          "key": "fundamentals",
+          "label": "Fundamental health",
+          "points": 3.64,
+          "max": 5,
+          "note": "sales growth +39%, earnings growth +50%, ROE 37%, op. margin 13%, D/E 3.21"
+        },
+        {
+          "key": "riskReward",
+          "label": "Risk/reward",
+          "points": 7.79,
+          "max": 10,
+          "note": "3.9% risk, 3.0R to blue-sky 3R target; weak: 2.6% to trigger"
         }
       ],
       "firstSeen": "2026-11-23",
@@ -3529,8 +3602,8 @@
       "sector": "Financial Services",
       "marketCapCr": 39118,
       "close": 2355.9,
-      "rawScore": 65.25,
-      "score": 60.25,
+      "rawScore": 65.23,
+      "score": 60.23,
       "grade": "C",
       "setup": "consolidation",
       "setupNote": "10-day range 2.8% wide, 2.3% below the 20-day high",
@@ -3553,14 +3626,14 @@
         {
           "key": "rs",
           "label": "Relative strength",
-          "points": 2.49,
+          "points": 2.48,
           "max": 15,
           "note": "-1.0% vs Nifty, +4.0% vs Financial Services"
         },
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 4.24,
+          "points": 4.23,
           "max": 10,
           "note": "Financial Services -3.2% vs Nifty, 52% above 50-DMA; weak: sector lagging Nifty"
         },
@@ -3675,8 +3748,8 @@
       "sector": "Industrials",
       "marketCapCr": 6866,
       "close": 1012.85,
-      "rawScore": 64.65,
-      "score": 59.65,
+      "rawScore": 64.66,
+      "score": 59.66,
       "grade": null,
       "setup": "pullback",
       "setupNote": "Within 0.3% of the rising 20 EMA, RSI 59",
@@ -3706,7 +3779,7 @@
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 0.4,
+          "points": 0.41,
           "max": 10,
           "note": "Industrials -6.6% vs Nifty, 34% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth, sector index below 50-DMA"
         },
@@ -3737,6 +3810,225 @@
           "points": 8.54,
           "max": 10,
           "note": "3.9% risk, 3.0R to 3R target; all checks pass"
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "daysListed": 0
+    },
+    {
+      "symbol": "MCX",
+      "name": "Multi Commodity Exchange of India Limited",
+      "sector": "Financial Services",
+      "marketCapCr": 91157,
+      "close": 3581.6,
+      "rawScore": 63.87,
+      "score": 58.87,
+      "grade": null,
+      "setup": "pullback",
+      "setupNote": "Within 2.4% of the rising 20 EMA, RSI 65",
+      "trigger": 3601.59,
+      "stop": 3455,
+      "target": 3811.74,
+      "riskPct": 4.07,
+      "rr": 1.43,
+      "triggerGapPct": 0.56,
+      "deliveryPct": 39.78,
+      "fundamentalsCoverage": 1,
+      "components": [
+        {
+          "key": "trend",
+          "label": "Trend strength",
+          "points": 18.5,
+          "max": 20,
+          "note": "50% of 26 weeks above 10w; weak: consistent weekly trend"
+        },
+        {
+          "key": "rs",
+          "label": "Relative strength",
+          "points": 9.77,
+          "max": 15,
+          "note": "+5.7% vs Nifty, +10.7% vs Financial Services"
+        },
+        {
+          "key": "sector",
+          "label": "Sector strength",
+          "points": 4.23,
+          "max": 10,
+          "note": "Financial Services -3.2% vs Nifty, 52% above 50-DMA; weak: sector lagging Nifty"
+        },
+        {
+          "key": "setup",
+          "label": "Setup quality",
+          "points": 14.16,
+          "max": 25,
+          "note": "pullback: Within 2.4% of the rising 20 EMA, RSI 65"
+        },
+        {
+          "key": "volume",
+          "label": "Volume confirmation",
+          "points": 6.23,
+          "max": 15,
+          "note": "up-day volume 0.9×, up/down 1.97, delivery 40% vs 40% avg; weak: up-day volume 0.9×, delivery 40%"
+        },
+        {
+          "key": "fundamentals",
+          "label": "Fundamental health",
+          "points": 5,
+          "max": 5,
+          "note": "sales growth +112%, earnings growth +130%, ROE 44%, op. margin 73%"
+        },
+        {
+          "key": "riskReward",
+          "label": "Risk/reward",
+          "points": 5.98,
+          "max": 10,
+          "note": "4.1% risk, 1.4R to 52-week high + 1%; weak: 1.4R to target"
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "daysListed": 0
+    },
+    {
+      "symbol": "BOSCHLTD",
+      "name": "Bosch Limited",
+      "sector": "Consumer Cyclical",
+      "marketCapCr": 143941,
+      "close": 48800,
+      "rawScore": 63.58,
+      "score": 58.58,
+      "grade": null,
+      "setup": "pullback",
+      "setupNote": "Within 0.1% of the rising 20 EMA, RSI 53",
+      "trigger": 49719.24,
+      "stop": 48635,
+      "target": 52971.96,
+      "riskPct": 2.18,
+      "rr": 3,
+      "triggerGapPct": 1.88,
+      "deliveryPct": 44.68,
+      "fundamentalsCoverage": 1,
+      "components": [
+        {
+          "key": "trend",
+          "label": "Trend strength",
+          "points": 19.98,
+          "max": 20,
+          "note": "85% of 26 weeks above 10w; all checks pass"
+        },
+        {
+          "key": "rs",
+          "label": "Relative strength",
+          "points": 1.64,
+          "max": 15,
+          "note": "-2.7% vs Nifty, +2.6% vs Consumer Cyclical"
+        },
+        {
+          "key": "sector",
+          "label": "Sector strength",
+          "points": 3.66,
+          "max": 10,
+          "note": "Consumer Cyclical -5.1% vs Nifty, 47% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth"
+        },
+        {
+          "key": "setup",
+          "label": "Setup quality",
+          "points": 19.8,
+          "max": 25,
+          "note": "pullback: Within 0.1% of the rising 20 EMA, RSI 53"
+        },
+        {
+          "key": "volume",
+          "label": "Volume confirmation",
+          "points": 4.71,
+          "max": 15,
+          "note": "up-day volume 0.9×, up/down 1.26, delivery 45% vs 45% avg; weak: up-day volume 0.9×, delivery 45%"
+        },
+        {
+          "key": "fundamentals",
+          "label": "Fundamental health",
+          "points": 4.58,
+          "max": 5,
+          "note": "sales growth +60%, earnings growth +52%, ROE 23%, op. margin 12%, D/E 0.03"
+        },
+        {
+          "key": "riskReward",
+          "label": "Risk/reward",
+          "points": 9.21,
+          "max": 10,
+          "note": "2.2% risk, 3.0R to 3R target; all checks pass"
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "daysListed": 0
+    },
+    {
+      "symbol": "ASKAUTOLTD",
+      "name": "ASK Automotive Limited",
+      "sector": "Consumer Cyclical",
+      "marketCapCr": 12292,
+      "close": 623.5,
+      "rawScore": 63.57,
+      "score": 58.57,
+      "grade": null,
+      "setup": "pullback",
+      "setupNote": "Within 0.8% of the rising 20 EMA, RSI 59",
+      "trigger": 635.72,
+      "stop": 616.75,
+      "target": 692.63,
+      "riskPct": 2.98,
+      "rr": 3,
+      "triggerGapPct": 1.96,
+      "deliveryPct": 44.94,
+      "fundamentalsCoverage": 1,
+      "components": [
+        {
+          "key": "trend",
+          "label": "Trend strength",
+          "points": 19.49,
+          "max": 20,
+          "note": "73% of 26 weeks above 10w; all checks pass"
+        },
+        {
+          "key": "rs",
+          "label": "Relative strength",
+          "points": 3.3,
+          "max": 15,
+          "note": "-0.1% vs Nifty, +5.3% vs Consumer Cyclical"
+        },
+        {
+          "key": "sector",
+          "label": "Sector strength",
+          "points": 3.66,
+          "max": 10,
+          "note": "Consumer Cyclical -5.1% vs Nifty, 47% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth"
+        },
+        {
+          "key": "setup",
+          "label": "Setup quality",
+          "points": 17.83,
+          "max": 25,
+          "note": "pullback: Within 0.8% of the rising 20 EMA, RSI 59"
+        },
+        {
+          "key": "volume",
+          "label": "Volume confirmation",
+          "points": 6.18,
+          "max": 15,
+          "note": "up-day volume 0.6×, up/down 1.64, delivery 45% vs 44% avg; weak: up-day volume 0.6×, delivery 45%"
+        },
+        {
+          "key": "fundamentals",
+          "label": "Fundamental health",
+          "points": 4.3,
+          "max": 5,
+          "note": "sales growth +48%, earnings growth +27%, ROE 26%, op. margin 9%, D/E 0.51"
+        },
+        {
+          "key": "riskReward",
+          "label": "Risk/reward",
+          "points": 8.81,
+          "max": 10,
+          "note": "3.0% risk, 3.0R to 3R target; all checks pass"
         }
       ],
       "firstSeen": "2026-11-23",
@@ -3810,79 +4102,6 @@
           "points": 6.68,
           "max": 10,
           "note": "5.5% risk, 3.0R to 3R target; weak: 5.5% risk, 2.6% to trigger"
-        }
-      ],
-      "firstSeen": "2026-11-23",
-      "daysListed": 0
-    },
-    {
-      "symbol": "ASKAUTOLTD",
-      "name": "ASK Automotive Limited",
-      "sector": "Consumer Cyclical",
-      "marketCapCr": 12292,
-      "close": 623.5,
-      "rawScore": 63.52,
-      "score": 58.52,
-      "grade": null,
-      "setup": "pullback",
-      "setupNote": "Within 0.8% of the rising 20 EMA, RSI 59",
-      "trigger": 635.72,
-      "stop": 616.75,
-      "target": 692.63,
-      "riskPct": 2.98,
-      "rr": 3,
-      "triggerGapPct": 1.96,
-      "deliveryPct": 44.94,
-      "fundamentalsCoverage": 1,
-      "components": [
-        {
-          "key": "trend",
-          "label": "Trend strength",
-          "points": 19.49,
-          "max": 20,
-          "note": "73% of 26 weeks above 10w; all checks pass"
-        },
-        {
-          "key": "rs",
-          "label": "Relative strength",
-          "points": 3.26,
-          "max": 15,
-          "note": "-0.1% vs Nifty, +5.2% vs Consumer Cyclical"
-        },
-        {
-          "key": "sector",
-          "label": "Sector strength",
-          "points": 3.65,
-          "max": 10,
-          "note": "Consumer Cyclical -5.1% vs Nifty, 47% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth"
-        },
-        {
-          "key": "setup",
-          "label": "Setup quality",
-          "points": 17.83,
-          "max": 25,
-          "note": "pullback: Within 0.8% of the rising 20 EMA, RSI 59"
-        },
-        {
-          "key": "volume",
-          "label": "Volume confirmation",
-          "points": 6.18,
-          "max": 15,
-          "note": "up-day volume 0.6×, up/down 1.64, delivery 45% vs 44% avg; weak: up-day volume 0.6×, delivery 45%"
-        },
-        {
-          "key": "fundamentals",
-          "label": "Fundamental health",
-          "points": 4.3,
-          "max": 5,
-          "note": "sales growth +48%, earnings growth +27%, ROE 26%, op. margin 9%, D/E 0.51"
-        },
-        {
-          "key": "riskReward",
-          "label": "Risk/reward",
-          "points": 8.81,
-          "max": 10,
-          "note": "3.0% risk, 3.0R to 3R target; all checks pass"
         }
       ],
       "firstSeen": "2026-11-23",
@@ -4186,8 +4405,8 @@
       "sector": "Consumer Cyclical",
       "marketCapCr": 26482,
       "close": 20098,
-      "rawScore": 63.08,
-      "score": 58.08,
+      "rawScore": 63.09,
+      "score": 58.09,
       "grade": null,
       "setup": "consolidation",
       "setupNote": "10-day range 9.5% wide, 2.2% below the 20-day high",
@@ -4212,12 +4431,12 @@
           "label": "Relative strength",
           "points": 13.96,
           "max": 15,
-          "note": "+10.8% vs Nifty, +16.0% vs Consumer Cyclical"
+          "note": "+10.8% vs Nifty, +16.1% vs Consumer Cyclical"
         },
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 3.65,
+          "points": 3.66,
           "max": 10,
           "note": "Consumer Cyclical -5.1% vs Nifty, 47% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth"
         },
@@ -4259,8 +4478,8 @@
       "sector": "Industrials",
       "marketCapCr": 13908,
       "close": 749.35,
-      "rawScore": 63.04,
-      "score": 58.04,
+      "rawScore": 63.05,
+      "score": 58.05,
       "grade": null,
       "setup": "pullback",
       "setupNote": "Within 2.3% of the rising 20 EMA, RSI 61",
@@ -4285,12 +4504,12 @@
           "label": "Relative strength",
           "points": 10.98,
           "max": 15,
-          "note": "+7.2% vs Nifty, +15.1% vs Industrials"
+          "note": "+7.2% vs Nifty, +15.2% vs Industrials"
         },
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 0.4,
+          "points": 0.41,
           "max": 10,
           "note": "Industrials -6.6% vs Nifty, 34% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth, sector index below 50-DMA"
         },
@@ -4332,8 +4551,8 @@
       "sector": "Consumer Cyclical",
       "marketCapCr": 28897,
       "close": 1507.9,
-      "rawScore": 62.87,
-      "score": 57.87,
+      "rawScore": 62.88,
+      "score": 57.88,
       "grade": null,
       "setup": "pullback",
       "setupNote": "Within 2.0% of the rising 20 EMA, RSI 54",
@@ -4358,12 +4577,12 @@
           "label": "Relative strength",
           "points": 7.37,
           "max": 15,
-          "note": "+2.8% vs Nifty, +8.1% vs Consumer Cyclical"
+          "note": "+2.8% vs Nifty, +8.2% vs Consumer Cyclical"
         },
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 3.65,
+          "points": 3.66,
           "max": 10,
           "note": "Consumer Cyclical -5.1% vs Nifty, 47% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth"
         },
@@ -4394,6 +4613,79 @@
           "points": 1.85,
           "max": 10,
           "note": "6.5% risk, 1.3R to 52-week high + 1%; weak: 6.5% risk, 4.3% to trigger, 1.3R to target"
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "daysListed": 0
+    },
+    {
+      "symbol": "NYKAA",
+      "name": "FSN E-Commerce Ventures Limited",
+      "sector": "Consumer Cyclical",
+      "marketCapCr": 102293,
+      "close": 357,
+      "rawScore": 62.81,
+      "score": 57.81,
+      "grade": null,
+      "setup": "pullback",
+      "setupNote": "Within 1.0% of the rising 20 EMA, RSI 53",
+      "trigger": 367.73,
+      "stop": 352.44,
+      "target": 413.61,
+      "riskPct": 4.16,
+      "rr": 3,
+      "triggerGapPct": 3.01,
+      "deliveryPct": 54.82,
+      "fundamentalsCoverage": 1,
+      "components": [
+        {
+          "key": "trend",
+          "label": "Trend strength",
+          "points": 19.98,
+          "max": 20,
+          "note": "85% of 26 weeks above 10w; all checks pass"
+        },
+        {
+          "key": "rs",
+          "label": "Relative strength",
+          "points": 5.05,
+          "max": 15,
+          "note": "+1.2% vs Nifty, +6.5% vs Consumer Cyclical"
+        },
+        {
+          "key": "sector",
+          "label": "Sector strength",
+          "points": 3.66,
+          "max": 10,
+          "note": "Consumer Cyclical -5.1% vs Nifty, 47% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth"
+        },
+        {
+          "key": "setup",
+          "label": "Setup quality",
+          "points": 18.27,
+          "max": 25,
+          "note": "pullback: Within 1.0% of the rising 20 EMA, RSI 53"
+        },
+        {
+          "key": "volume",
+          "label": "Volume confirmation",
+          "points": 4.72,
+          "max": 15,
+          "note": "up-day volume 0.7×, up/down 1.24, delivery 55% vs 54% avg; weak: up-day volume 0.7×, delivery 55%"
+        },
+        {
+          "key": "fundamentals",
+          "label": "Fundamental health",
+          "points": 3.77,
+          "max": 5,
+          "note": "sales growth +28%, earnings growth +192%, ROE 21%, op. margin 5%, D/E 0.89"
+        },
+        {
+          "key": "riskReward",
+          "label": "Risk/reward",
+          "points": 7.36,
+          "max": 10,
+          "note": "4.2% risk, 3.0R to blue-sky 3R target; weak: 3.0% to trigger"
         }
       ],
       "firstSeen": "2026-11-23",
@@ -4473,159 +4765,13 @@
       "daysListed": 0
     },
     {
-      "symbol": "NYKAA",
-      "name": "FSN E-Commerce Ventures Limited",
-      "sector": "Consumer Cyclical",
-      "marketCapCr": 102293,
-      "close": 357,
-      "rawScore": 62.76,
-      "score": 57.76,
-      "grade": null,
-      "setup": "pullback",
-      "setupNote": "Within 1.0% of the rising 20 EMA, RSI 53",
-      "trigger": 367.73,
-      "stop": 352.44,
-      "target": 413.61,
-      "riskPct": 4.16,
-      "rr": 3,
-      "triggerGapPct": 3.01,
-      "deliveryPct": 54.82,
-      "fundamentalsCoverage": 1,
-      "components": [
-        {
-          "key": "trend",
-          "label": "Trend strength",
-          "points": 19.98,
-          "max": 20,
-          "note": "85% of 26 weeks above 10w; all checks pass"
-        },
-        {
-          "key": "rs",
-          "label": "Relative strength",
-          "points": 5.01,
-          "max": 15,
-          "note": "+1.2% vs Nifty, +6.4% vs Consumer Cyclical"
-        },
-        {
-          "key": "sector",
-          "label": "Sector strength",
-          "points": 3.65,
-          "max": 10,
-          "note": "Consumer Cyclical -5.1% vs Nifty, 47% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth"
-        },
-        {
-          "key": "setup",
-          "label": "Setup quality",
-          "points": 18.27,
-          "max": 25,
-          "note": "pullback: Within 1.0% of the rising 20 EMA, RSI 53"
-        },
-        {
-          "key": "volume",
-          "label": "Volume confirmation",
-          "points": 4.72,
-          "max": 15,
-          "note": "up-day volume 0.7×, up/down 1.24, delivery 55% vs 54% avg; weak: up-day volume 0.7×, delivery 55%"
-        },
-        {
-          "key": "fundamentals",
-          "label": "Fundamental health",
-          "points": 3.77,
-          "max": 5,
-          "note": "sales growth +28%, earnings growth +192%, ROE 21%, op. margin 5%, D/E 0.89"
-        },
-        {
-          "key": "riskReward",
-          "label": "Risk/reward",
-          "points": 7.36,
-          "max": 10,
-          "note": "4.2% risk, 3.0R to blue-sky 3R target; weak: 3.0% to trigger"
-        }
-      ],
-      "firstSeen": "2026-11-23",
-      "daysListed": 0
-    },
-    {
-      "symbol": "ABCAPITAL",
-      "name": "Aditya Birla Capital Limited",
-      "sector": "Financial Services",
-      "marketCapCr": 113890,
-      "close": 415.8,
-      "rawScore": 62.61,
-      "score": 57.61,
-      "grade": null,
-      "setup": "consolidation",
-      "setupNote": "10-day range 8.3% wide, 1.7% below the 20-day high",
-      "trigger": 427.95,
-      "stop": 410.28,
-      "target": 480.97,
-      "riskPct": 4.13,
-      "rr": 3,
-      "triggerGapPct": 2.92,
-      "deliveryPct": 47.9,
-      "fundamentalsCoverage": 1,
-      "components": [
-        {
-          "key": "trend",
-          "label": "Trend strength",
-          "points": 19.49,
-          "max": 20,
-          "note": "73% of 26 weeks above 10w; all checks pass"
-        },
-        {
-          "key": "rs",
-          "label": "Relative strength",
-          "points": 6.5,
-          "max": 15,
-          "note": "+2.3% vs Nifty, +7.3% vs Financial Services"
-        },
-        {
-          "key": "sector",
-          "label": "Sector strength",
-          "points": 4.24,
-          "max": 10,
-          "note": "Financial Services -3.2% vs Nifty, 52% above 50-DMA; weak: sector lagging Nifty"
-        },
-        {
-          "key": "setup",
-          "label": "Setup quality",
-          "points": 15.05,
-          "max": 25,
-          "note": "consolidation: 10-day range 8.3% wide, 1.7% below the 20-day high"
-        },
-        {
-          "key": "volume",
-          "label": "Volume confirmation",
-          "points": 5.87,
-          "max": 15,
-          "note": "up-day volume 0.8×, up/down 5.29, delivery 48% vs 51% avg; weak: up-day volume 0.8×, delivery 48%"
-        },
-        {
-          "key": "fundamentals",
-          "label": "Fundamental health",
-          "points": 4.03,
-          "max": 5,
-          "note": "sales growth +37%, earnings growth +44%, ROE 11%, op. margin 16%"
-        },
-        {
-          "key": "riskReward",
-          "label": "Risk/reward",
-          "points": 7.43,
-          "max": 10,
-          "note": "4.1% risk, 3.0R to blue-sky 3R target; weak: 2.9% to trigger"
-        }
-      ],
-      "firstSeen": "2026-11-23",
-      "daysListed": 0
-    },
-    {
       "symbol": "PDSL",
       "name": "PDS Limited",
       "sector": "Industrials",
       "marketCapCr": 5836,
       "close": 413.25,
-      "rawScore": 62.61,
-      "score": 57.61,
+      "rawScore": 62.62,
+      "score": 57.62,
       "grade": null,
       "setup": "consolidation",
       "setupNote": "10-day range 6.4% wide, 2.8% below the 20-day high",
@@ -4650,12 +4796,12 @@
           "label": "Relative strength",
           "points": 12.29,
           "max": 15,
-          "note": "+8.8% vs Nifty, +16.7% vs Industrials"
+          "note": "+8.8% vs Nifty, +16.8% vs Industrials"
         },
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 0.4,
+          "points": 0.41,
           "max": 10,
           "note": "Industrials -6.6% vs Nifty, 34% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth, sector index below 50-DMA"
         },
@@ -4686,6 +4832,79 @@
           "points": 5.84,
           "max": 10,
           "note": "6.2% risk, 3.0R to blue-sky 3R target; weak: 6.2% risk, 3.0% to trigger"
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "daysListed": 0
+    },
+    {
+      "symbol": "ABCAPITAL",
+      "name": "Aditya Birla Capital Limited",
+      "sector": "Financial Services",
+      "marketCapCr": 113890,
+      "close": 415.8,
+      "rawScore": 62.59,
+      "score": 57.59,
+      "grade": null,
+      "setup": "consolidation",
+      "setupNote": "10-day range 8.3% wide, 1.7% below the 20-day high",
+      "trigger": 427.95,
+      "stop": 410.28,
+      "target": 480.97,
+      "riskPct": 4.13,
+      "rr": 3,
+      "triggerGapPct": 2.92,
+      "deliveryPct": 47.9,
+      "fundamentalsCoverage": 1,
+      "components": [
+        {
+          "key": "trend",
+          "label": "Trend strength",
+          "points": 19.49,
+          "max": 20,
+          "note": "73% of 26 weeks above 10w; all checks pass"
+        },
+        {
+          "key": "rs",
+          "label": "Relative strength",
+          "points": 6.49,
+          "max": 15,
+          "note": "+2.3% vs Nifty, +7.3% vs Financial Services"
+        },
+        {
+          "key": "sector",
+          "label": "Sector strength",
+          "points": 4.23,
+          "max": 10,
+          "note": "Financial Services -3.2% vs Nifty, 52% above 50-DMA; weak: sector lagging Nifty"
+        },
+        {
+          "key": "setup",
+          "label": "Setup quality",
+          "points": 15.05,
+          "max": 25,
+          "note": "consolidation: 10-day range 8.3% wide, 1.7% below the 20-day high"
+        },
+        {
+          "key": "volume",
+          "label": "Volume confirmation",
+          "points": 5.87,
+          "max": 15,
+          "note": "up-day volume 0.8×, up/down 5.29, delivery 48% vs 51% avg; weak: up-day volume 0.8×, delivery 48%"
+        },
+        {
+          "key": "fundamentals",
+          "label": "Fundamental health",
+          "points": 4.03,
+          "max": 5,
+          "note": "sales growth +37%, earnings growth +44%, ROE 11%, op. margin 16%"
+        },
+        {
+          "key": "riskReward",
+          "label": "Risk/reward",
+          "points": 7.43,
+          "max": 10,
+          "note": "4.1% risk, 3.0R to blue-sky 3R target; weak: 2.9% to trigger"
         }
       ],
       "firstSeen": "2026-11-23",
@@ -4843,8 +5062,8 @@
       "sector": "Industrials",
       "marketCapCr": 21773,
       "close": 364.05,
-      "rawScore": 62.43,
-      "score": 57.43,
+      "rawScore": 62.44,
+      "score": 57.44,
       "grade": null,
       "setup": "pullback",
       "setupNote": "Within 0.0% of the rising 20 EMA, RSI 58",
@@ -4869,12 +5088,12 @@
           "label": "Relative strength",
           "points": 7.71,
           "max": 15,
-          "note": "+3.3% vs Nifty, +11.2% vs Industrials"
+          "note": "+3.3% vs Nifty, +11.3% vs Industrials"
         },
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 0.4,
+          "points": 0.41,
           "max": 10,
           "note": "Industrials -6.6% vs Nifty, 34% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth, sector index below 50-DMA"
         },
@@ -4916,8 +5135,8 @@
       "sector": "Industrials",
       "marketCapCr": 442130,
       "close": 1919,
-      "rawScore": 62.39,
-      "score": 57.39,
+      "rawScore": 62.4,
+      "score": 57.4,
       "grade": null,
       "setup": "pullback",
       "setupNote": "Within 2.1% of the rising 20 EMA, RSI 61",
@@ -4947,7 +5166,7 @@
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 0.4,
+          "points": 0.41,
           "max": 10,
           "note": "Industrials -6.6% vs Nifty, 34% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth, sector index below 50-DMA"
         },
@@ -5062,8 +5281,8 @@
       "sector": "Financial Services",
       "marketCapCr": 134443,
       "close": 216.46,
-      "rawScore": 61.75,
-      "score": 56.75,
+      "rawScore": 61.74,
+      "score": 56.74,
       "grade": null,
       "setup": "pullback",
       "setupNote": "Within 1.3% of the rising 20 EMA, RSI 65",
@@ -5093,7 +5312,7 @@
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 4.24,
+          "points": 4.23,
           "max": 10,
           "note": "Financial Services -3.2% vs Nifty, 52% above 50-DMA; weak: sector lagging Nifty"
         },
@@ -5135,8 +5354,8 @@
       "sector": "Consumer Cyclical",
       "marketCapCr": 333595,
       "close": 362.1,
-      "rawScore": 61.7,
-      "score": 56.7,
+      "rawScore": 61.71,
+      "score": 56.71,
       "grade": null,
       "setup": "pullback",
       "setupNote": "Within 2.0% of the rising 20 EMA, RSI 65",
@@ -5161,12 +5380,12 @@
           "label": "Relative strength",
           "points": 7.98,
           "max": 15,
-          "note": "+3.6% vs Nifty, +8.8% vs Consumer Cyclical"
+          "note": "+3.6% vs Nifty, +8.9% vs Consumer Cyclical"
         },
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 3.65,
+          "points": 3.66,
           "max": 10,
           "note": "Consumer Cyclical -5.1% vs Nifty, 47% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth"
         },
@@ -5208,8 +5427,8 @@
       "sector": "Consumer Cyclical",
       "marketCapCr": 224374,
       "close": 8172.5,
-      "rawScore": 61.58,
-      "score": 56.58,
+      "rawScore": 61.63,
+      "score": 56.63,
       "grade": null,
       "setup": "breakout",
       "setupNote": "Closed 0.3% above the 20-day high on 1.3× volume",
@@ -5232,14 +5451,14 @@
         {
           "key": "rs",
           "label": "Relative strength",
-          "points": 3.86,
+          "points": 3.9,
           "max": 15,
           "note": "+0.4% vs Nifty, +5.7% vs Consumer Cyclical"
         },
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 3.65,
+          "points": 3.66,
           "max": 10,
           "note": "Consumer Cyclical -5.1% vs Nifty, 47% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth"
         },
@@ -5354,8 +5573,8 @@
       "sector": "Industrials",
       "marketCapCr": 15433,
       "close": 789.9,
-      "rawScore": 61.37,
-      "score": 56.37,
+      "rawScore": 61.38,
+      "score": 56.38,
       "grade": null,
       "setup": "pullback",
       "setupNote": "Within 2.3% of the rising 20 EMA, RSI 60, turned up today",
@@ -5385,7 +5604,7 @@
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 0.4,
+          "points": 0.41,
           "max": 10,
           "note": "Industrials -6.6% vs Nifty, 34% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth, sector index below 50-DMA"
         },
@@ -5427,8 +5646,8 @@
       "sector": "Industrials",
       "marketCapCr": 1386,
       "close": 11.61,
-      "rawScore": 61.36,
-      "score": 56.36,
+      "rawScore": 61.37,
+      "score": 56.37,
       "grade": null,
       "setup": "pullback",
       "setupNote": "Within 2.3% of the rising 20 EMA, RSI 63",
@@ -5453,12 +5672,12 @@
           "label": "Relative strength",
           "points": 15,
           "max": 15,
-          "note": "+18.3% vs Nifty, +26.2% vs Industrials"
+          "note": "+18.3% vs Nifty, +26.3% vs Industrials"
         },
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 0.4,
+          "points": 0.41,
           "max": 10,
           "note": "Industrials -6.6% vs Nifty, 34% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth, sector index below 50-DMA"
         },
@@ -5500,8 +5719,8 @@
       "sector": "Consumer Cyclical",
       "marketCapCr": 117234,
       "close": 253.11,
-      "rawScore": 61.24,
-      "score": 56.24,
+      "rawScore": 61.25,
+      "score": 56.25,
       "grade": null,
       "setup": null,
       "setupNote": "",
@@ -5526,12 +5745,12 @@
           "label": "Relative strength",
           "points": 15,
           "max": 15,
-          "note": "+12.1% vs Nifty, +17.3% vs Consumer Cyclical"
+          "note": "+12.1% vs Nifty, +17.4% vs Consumer Cyclical"
         },
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 3.65,
+          "points": 3.66,
           "max": 10,
           "note": "Consumer Cyclical -5.1% vs Nifty, 47% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth"
         },
@@ -5573,8 +5792,8 @@
       "sector": "Industrials",
       "marketCapCr": 19837,
       "close": 1538.3,
-      "rawScore": 61.23,
-      "score": 56.23,
+      "rawScore": 61.24,
+      "score": 56.24,
       "grade": null,
       "setup": "pullback",
       "setupNote": "Within 1.2% of the rising 20 EMA, RSI 43",
@@ -5604,7 +5823,7 @@
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 0.4,
+          "points": 0.41,
           "max": 10,
           "note": "Industrials -6.6% vs Nifty, 34% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth, sector index below 50-DMA"
         },
@@ -5646,8 +5865,8 @@
       "sector": "Technology",
       "marketCapCr": 47152,
       "close": 2468.4,
-      "rawScore": 60.83,
-      "score": 55.83,
+      "rawScore": 60.85,
+      "score": 55.85,
       "grade": null,
       "setup": "pullback",
       "setupNote": "Within 0.9% of the rising 20 EMA, RSI 42, turned up today",
@@ -5670,16 +5889,16 @@
         {
           "key": "rs",
           "label": "Relative strength",
-          "points": 2.21,
+          "points": 2.18,
           "max": 15,
           "note": "-7.7% vs Nifty, +3.5% vs Technology"
         },
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 0.63,
+          "points": 0.68,
           "max": 10,
-          "note": "Technology -11.0% vs Nifty, 36% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth, sector index below 50-DMA"
+          "note": "Technology -11.0% vs Nifty, 37% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth, sector index below 50-DMA"
         },
         {
           "key": "setup",
@@ -5714,13 +5933,86 @@
       "daysListed": 0
     },
     {
+      "symbol": "OPTIEMUS",
+      "name": "Optiemus Infracom Limited",
+      "sector": "Technology",
+      "marketCapCr": 7020,
+      "close": 778.55,
+      "rawScore": 60.61,
+      "score": 55.61,
+      "grade": null,
+      "setup": "pullback",
+      "setupNote": "Within 1.0% of the rising 20 EMA, RSI 50",
+      "trigger": 806.61,
+      "stop": 766.15,
+      "target": 927.99,
+      "riskPct": 5.02,
+      "rr": 3,
+      "triggerGapPct": 3.6,
+      "deliveryPct": 30.91,
+      "fundamentalsCoverage": 1,
+      "components": [
+        {
+          "key": "trend",
+          "label": "Trend strength",
+          "points": 16.5,
+          "max": 20,
+          "note": "88% of 26 weeks above 10w; weak: close > 20 EMA"
+        },
+        {
+          "key": "rs",
+          "label": "Relative strength",
+          "points": 15,
+          "max": 15,
+          "note": "+14.9% vs Nifty, +26.1% vs Technology"
+        },
+        {
+          "key": "sector",
+          "label": "Sector strength",
+          "points": 0.68,
+          "max": 10,
+          "note": "Technology -11.0% vs Nifty, 37% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth, sector index below 50-DMA"
+        },
+        {
+          "key": "setup",
+          "label": "Setup quality",
+          "points": 15.68,
+          "max": 25,
+          "note": "pullback: Within 1.0% of the rising 20 EMA, RSI 50"
+        },
+        {
+          "key": "volume",
+          "label": "Volume confirmation",
+          "points": 3.05,
+          "max": 15,
+          "note": "up-day volume 0.8×, up/down 1.33, delivery 31% vs 39% avg; weak: up-day volume 0.8×, delivery 31%"
+        },
+        {
+          "key": "fundamentals",
+          "label": "Fundamental health",
+          "points": 3.3,
+          "max": 5,
+          "note": "sales growth +135%, earnings growth +28%, ROE 9%, op. margin 3%, D/E 0.44"
+        },
+        {
+          "key": "riskReward",
+          "label": "Risk/reward",
+          "points": 6.4,
+          "max": 10,
+          "note": "5.0% risk, 3.0R to 3R target; weak: 3.6% to trigger"
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "daysListed": 0
+    },
+    {
       "symbol": "NILKAMAL",
       "name": "Nilkamal Limited",
       "sector": "Consumer Cyclical",
       "marketCapCr": 3025,
       "close": 2020.3,
-      "rawScore": 60.58,
-      "score": 55.58,
+      "rawScore": 60.59,
+      "score": 55.59,
       "grade": null,
       "setup": "pullback",
       "setupNote": "Within 1.6% of the rising 20 EMA, RSI 58",
@@ -5750,7 +6042,7 @@
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 3.65,
+          "points": 3.66,
           "max": 10,
           "note": "Consumer Cyclical -5.1% vs Nifty, 47% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth"
         },
@@ -5787,86 +6079,13 @@
       "daysListed": 0
     },
     {
-      "symbol": "OPTIEMUS",
-      "name": "Optiemus Infracom Limited",
-      "sector": "Technology",
-      "marketCapCr": 7020,
-      "close": 778.55,
-      "rawScore": 60.56,
-      "score": 55.56,
-      "grade": null,
-      "setup": "pullback",
-      "setupNote": "Within 1.0% of the rising 20 EMA, RSI 50",
-      "trigger": 806.61,
-      "stop": 766.15,
-      "target": 927.99,
-      "riskPct": 5.02,
-      "rr": 3,
-      "triggerGapPct": 3.6,
-      "deliveryPct": 30.91,
-      "fundamentalsCoverage": 1,
-      "components": [
-        {
-          "key": "trend",
-          "label": "Trend strength",
-          "points": 16.5,
-          "max": 20,
-          "note": "88% of 26 weeks above 10w; weak: close > 20 EMA"
-        },
-        {
-          "key": "rs",
-          "label": "Relative strength",
-          "points": 15,
-          "max": 15,
-          "note": "+14.9% vs Nifty, +26.1% vs Technology"
-        },
-        {
-          "key": "sector",
-          "label": "Sector strength",
-          "points": 0.63,
-          "max": 10,
-          "note": "Technology -11.0% vs Nifty, 36% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth, sector index below 50-DMA"
-        },
-        {
-          "key": "setup",
-          "label": "Setup quality",
-          "points": 15.68,
-          "max": 25,
-          "note": "pullback: Within 1.0% of the rising 20 EMA, RSI 50"
-        },
-        {
-          "key": "volume",
-          "label": "Volume confirmation",
-          "points": 3.05,
-          "max": 15,
-          "note": "up-day volume 0.8×, up/down 1.33, delivery 31% vs 39% avg; weak: up-day volume 0.8×, delivery 31%"
-        },
-        {
-          "key": "fundamentals",
-          "label": "Fundamental health",
-          "points": 3.3,
-          "max": 5,
-          "note": "sales growth +135%, earnings growth +28%, ROE 9%, op. margin 3%, D/E 0.44"
-        },
-        {
-          "key": "riskReward",
-          "label": "Risk/reward",
-          "points": 6.4,
-          "max": 10,
-          "note": "5.0% risk, 3.0R to 3R target; weak: 3.6% to trigger"
-        }
-      ],
-      "firstSeen": "2026-11-23",
-      "daysListed": 0
-    },
-    {
       "symbol": "BAJAJFINSV",
       "name": "Bajaj Finserv Ltd.",
       "sector": "Financial Services",
       "marketCapCr": 300862,
       "close": 1880.1,
-      "rawScore": 60.41,
-      "score": 55.41,
+      "rawScore": 60.38,
+      "score": 55.38,
       "grade": null,
       "setup": "consolidation",
       "setupNote": "10-day range 5.2% wide, 1.8% below the 20-day high",
@@ -5889,14 +6108,14 @@
         {
           "key": "rs",
           "label": "Relative strength",
-          "points": 0.36,
+          "points": 0.34,
           "max": 15,
-          "note": "-4.5% vs Nifty, +0.6% vs Financial Services"
+          "note": "-4.5% vs Nifty, +0.5% vs Financial Services"
         },
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 4.24,
+          "points": 4.23,
           "max": 10,
           "note": "Financial Services -3.2% vs Nifty, 52% above 50-DMA; weak: sector lagging Nifty"
         },
@@ -5938,8 +6157,8 @@
       "sector": "Financial Services",
       "marketCapCr": 26261,
       "close": 615,
-      "rawScore": 60.4,
-      "score": 55.4,
+      "rawScore": 60.38,
+      "score": 55.38,
       "grade": null,
       "setup": "pullback",
       "setupNote": "Within 0.2% of the rising 20 EMA, RSI 62",
@@ -5962,14 +6181,14 @@
         {
           "key": "rs",
           "label": "Relative strength",
-          "points": 0.53,
+          "points": 0.52,
           "max": 15,
-          "note": "-4.2% vs Nifty, +0.9% vs Financial Services"
+          "note": "-4.2% vs Nifty, +0.8% vs Financial Services"
         },
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 4.24,
+          "points": 4.23,
           "max": 10,
           "note": "Financial Services -3.2% vs Nifty, 52% above 50-DMA; weak: sector lagging Nifty"
         },
@@ -6011,8 +6230,8 @@
       "sector": "Industrials",
       "marketCapCr": 8909,
       "close": 1750.2,
-      "rawScore": 60.23,
-      "score": 55.23,
+      "rawScore": 60.24,
+      "score": 55.24,
       "grade": null,
       "setup": "pullback",
       "setupNote": "Within 2.0% of the rising 20 EMA, RSI 59",
@@ -6042,7 +6261,7 @@
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 0.4,
+          "points": 0.41,
           "max": 10,
           "note": "Industrials -6.6% vs Nifty, 34% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth, sector index below 50-DMA"
         },
@@ -6230,8 +6449,8 @@
       "sector": "Financial Services",
       "marketCapCr": 75039,
       "close": 97.56,
-      "rawScore": 59.94,
-      "score": 54.94,
+      "rawScore": 59.93,
+      "score": 54.93,
       "grade": null,
       "setup": null,
       "setupNote": "",
@@ -6261,7 +6480,7 @@
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 4.24,
+          "points": 4.23,
           "max": 10,
           "note": "Financial Services -3.2% vs Nifty, 52% above 50-DMA; weak: sector lagging Nifty"
         },
@@ -6303,8 +6522,8 @@
       "sector": "Utilities",
       "marketCapCr": 229122,
       "close": 1391,
-      "rawScore": 59.81,
-      "score": 54.81,
+      "rawScore": 59.87,
+      "score": 54.87,
       "grade": null,
       "setup": "pullback",
       "setupNote": "Within 0.7% of the rising 20 EMA, RSI 58",
@@ -6329,14 +6548,14 @@
           "label": "Relative strength",
           "points": 7.34,
           "max": 15,
-          "note": "+2.8% vs Nifty, +11.8% vs Utilities"
+          "note": "+2.8% vs Nifty, +12.0% vs Utilities"
         },
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 0.94,
+          "points": 1,
           "max": 10,
-          "note": "Utilities -5.0% vs Nifty, 39% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth, sector index below 50-DMA"
+          "note": "Utilities -4.9% vs Nifty, 40% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth, sector index below 50-DMA"
         },
         {
           "key": "setup",
@@ -6376,8 +6595,8 @@
       "sector": "Consumer Cyclical",
       "marketCapCr": 110790,
       "close": 5535,
-      "rawScore": 59.8,
-      "score": 54.8,
+      "rawScore": 59.85,
+      "score": 54.85,
       "grade": null,
       "setup": "consolidation",
       "setupNote": "10-day range 6.9% wide, 1.1% below the 20-day high",
@@ -6400,14 +6619,14 @@
         {
           "key": "rs",
           "label": "Relative strength",
-          "points": 0.71,
+          "points": 0.75,
           "max": 15,
-          "note": "-4.1% vs Nifty, +1.1% vs Consumer Cyclical"
+          "note": "-4.1% vs Nifty, +1.2% vs Consumer Cyclical"
         },
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 3.65,
+          "points": 3.66,
           "max": 10,
           "note": "Consumer Cyclical -5.1% vs Nifty, 47% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth"
         },
@@ -6522,8 +6741,8 @@
       "sector": "Financial Services",
       "marketCapCr": 45564,
       "close": 517.4,
-      "rawScore": 59.67,
-      "score": 54.67,
+      "rawScore": 59.66,
+      "score": 54.66,
       "grade": null,
       "setup": null,
       "setupNote": "",
@@ -6548,12 +6767,12 @@
           "label": "Relative strength",
           "points": 12.35,
           "max": 15,
-          "note": "+8.8% vs Nifty, +13.9% vs Financial Services"
+          "note": "+8.8% vs Nifty, +13.8% vs Financial Services"
         },
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 4.24,
+          "points": 4.23,
           "max": 10,
           "note": "Financial Services -3.2% vs Nifty, 52% above 50-DMA; weak: sector lagging Nifty"
         },
@@ -6590,73 +6809,146 @@
       "daysListed": 0
     },
     {
-      "symbol": "BAJFINANCE",
-      "name": "Bajaj Finance Limited",
-      "sector": "Financial Services",
-      "marketCapCr": 694333,
-      "close": 1095.5,
-      "rawScore": 59.66,
-      "score": 54.66,
+      "symbol": "TCS",
+      "name": "Tata Consultancy Services Limited",
+      "sector": "Technology",
+      "marketCapCr": 890050,
+      "close": 2460,
+      "rawScore": 59.65,
+      "score": 54.65,
       "grade": null,
-      "setup": "consolidation",
-      "setupNote": "10-day range 6.5% wide, 2.9% below the 20-day high",
-      "trigger": 1132.76,
-      "stop": 1081.81,
-      "target": 1188.16,
-      "riskPct": 4.5,
-      "rr": 1.09,
-      "triggerGapPct": 3.4,
-      "deliveryPct": 62.76,
+      "setup": "pullback",
+      "setupNote": "Within 1.9% of the rising 20 EMA, RSI 45, turned up today",
+      "trigger": 2506.9,
+      "stop": 2405.95,
+      "target": 2809.75,
+      "riskPct": 4.03,
+      "rr": 3,
+      "triggerGapPct": 1.91,
+      "deliveryPct": 39.86,
       "fundamentalsCoverage": 1,
       "components": [
         {
           "key": "trend",
           "label": "Trend strength",
-          "points": 18.83,
+          "points": 17.16,
           "max": 20,
-          "note": "58% of 26 weeks above 10w; weak: consistent weekly trend"
+          "note": "54% of 26 weeks above 10w; weak: 30w rising, consistent weekly trend"
         },
         {
           "key": "rs",
           "label": "Relative strength",
-          "points": 4.85,
+          "points": 3.22,
           "max": 15,
-          "note": "+1.2% vs Nifty, +6.2% vs Financial Services"
+          "note": "-6.0% vs Nifty, +5.2% vs Technology"
         },
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 4.24,
+          "points": 0.68,
           "max": 10,
-          "note": "Financial Services -3.2% vs Nifty, 52% above 50-DMA; weak: sector lagging Nifty"
+          "note": "Technology -11.0% vs Nifty, 37% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth, sector index below 50-DMA"
         },
         {
           "key": "setup",
           "label": "Setup quality",
-          "points": 16.14,
+          "points": 20.94,
           "max": 25,
-          "note": "consolidation: 10-day range 6.5% wide, 2.9% below the 20-day high"
+          "note": "pullback: Within 1.9% of the rising 20 EMA, RSI 45, turned up today"
         },
         {
           "key": "volume",
           "label": "Volume confirmation",
-          "points": 7.56,
+          "points": 5.4,
           "max": 15,
-          "note": "up-day volume 0.9×, up/down 2.76, delivery 63% vs 62% avg; weak: up-day volume 0.9×"
+          "note": "up-day volume 1.6×, up/down 0.92, delivery 40% vs 49% avg; weak: up/down volume 0.92, delivery 40%"
         },
         {
           "key": "fundamentals",
           "label": "Fundamental health",
-          "points": 4.92,
+          "points": 4.16,
           "max": 5,
-          "note": "sales growth +27%, earnings growth +28%, ROE 19%, op. margin 60%"
+          "note": "sales growth +11%, earnings growth +15%, ROE 46%, op. margin 25%, D/E 0.10"
         },
         {
           "key": "riskReward",
           "label": "Risk/reward",
-          "points": 3.12,
+          "points": 8.09,
           "max": 10,
-          "note": "4.5% risk, 1.1R to 52-week high + 1%; weak: 3.4% to trigger, 1.1R to target"
+          "note": "4.0% risk, 3.0R to 3R target; all checks pass"
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "daysListed": 0
+    },
+    {
+      "symbol": "ADANIPOWER",
+      "name": "Adani Power Limited",
+      "sector": "Utilities",
+      "marketCapCr": 400929,
+      "close": 207.9,
+      "rawScore": 59.65,
+      "score": 54.65,
+      "grade": null,
+      "setup": "consolidation",
+      "setupNote": "10-day range 6.7% wide, 2.7% below the 20-day high",
+      "trigger": 216.59,
+      "stop": 209.21,
+      "target": 238.73,
+      "riskPct": 3.41,
+      "rr": 3,
+      "triggerGapPct": 4.18,
+      "deliveryPct": 41.71,
+      "fundamentalsCoverage": 1,
+      "components": [
+        {
+          "key": "trend",
+          "label": "Trend strength",
+          "points": 17,
+          "max": 20,
+          "note": "31% of 26 weeks above 10w; weak: 10w > 30w, consistent weekly trend"
+        },
+        {
+          "key": "rs",
+          "label": "Relative strength",
+          "points": 5,
+          "max": 15,
+          "note": "-0.7% vs Nifty, +8.5% vs Utilities"
+        },
+        {
+          "key": "sector",
+          "label": "Sector strength",
+          "points": 1,
+          "max": 10,
+          "note": "Utilities -4.9% vs Nifty, 40% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth, sector index below 50-DMA"
+        },
+        {
+          "key": "setup",
+          "label": "Setup quality",
+          "points": 13.73,
+          "max": 25,
+          "note": "consolidation: 10-day range 6.7% wide, 2.7% below the 20-day high"
+        },
+        {
+          "key": "volume",
+          "label": "Volume confirmation",
+          "points": 11,
+          "max": 15,
+          "note": "up-day volume 1.8×, up/down 1.90, delivery 42% vs 40% avg; weak: delivery 42%"
+        },
+        {
+          "key": "fundamentals",
+          "label": "Fundamental health",
+          "points": 4.58,
+          "max": 5,
+          "note": "sales growth +45%, earnings growth +135%, ROE 27%, op. margin 32%, D/E 0.80"
+        },
+        {
+          "key": "riskReward",
+          "label": "Risk/reward",
+          "points": 7.34,
+          "max": 10,
+          "note": "3.4% risk, 3.0R to 3R target; weak: 4.2% to trigger"
         }
       ],
       "firstSeen": "2026-11-23",
@@ -6736,13 +7028,86 @@
       "daysListed": 0
     },
     {
+      "symbol": "BAJFINANCE",
+      "name": "Bajaj Finance Limited",
+      "sector": "Financial Services",
+      "marketCapCr": 694333,
+      "close": 1095.5,
+      "rawScore": 59.63,
+      "score": 54.63,
+      "grade": null,
+      "setup": "consolidation",
+      "setupNote": "10-day range 6.5% wide, 2.9% below the 20-day high",
+      "trigger": 1132.76,
+      "stop": 1081.81,
+      "target": 1188.16,
+      "riskPct": 4.5,
+      "rr": 1.09,
+      "triggerGapPct": 3.4,
+      "deliveryPct": 62.76,
+      "fundamentalsCoverage": 1,
+      "components": [
+        {
+          "key": "trend",
+          "label": "Trend strength",
+          "points": 18.83,
+          "max": 20,
+          "note": "58% of 26 weeks above 10w; weak: consistent weekly trend"
+        },
+        {
+          "key": "rs",
+          "label": "Relative strength",
+          "points": 4.83,
+          "max": 15,
+          "note": "+1.2% vs Nifty, +6.2% vs Financial Services"
+        },
+        {
+          "key": "sector",
+          "label": "Sector strength",
+          "points": 4.23,
+          "max": 10,
+          "note": "Financial Services -3.2% vs Nifty, 52% above 50-DMA; weak: sector lagging Nifty"
+        },
+        {
+          "key": "setup",
+          "label": "Setup quality",
+          "points": 16.14,
+          "max": 25,
+          "note": "consolidation: 10-day range 6.5% wide, 2.9% below the 20-day high"
+        },
+        {
+          "key": "volume",
+          "label": "Volume confirmation",
+          "points": 7.56,
+          "max": 15,
+          "note": "up-day volume 0.9×, up/down 2.76, delivery 63% vs 62% avg; weak: up-day volume 0.9×"
+        },
+        {
+          "key": "fundamentals",
+          "label": "Fundamental health",
+          "points": 4.92,
+          "max": 5,
+          "note": "sales growth +27%, earnings growth +28%, ROE 19%, op. margin 60%"
+        },
+        {
+          "key": "riskReward",
+          "label": "Risk/reward",
+          "points": 3.12,
+          "max": 10,
+          "note": "4.5% risk, 1.1R to 52-week high + 1%; weak: 3.4% to trigger, 1.1R to target"
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "daysListed": 0
+    },
+    {
       "symbol": "LICHSGFIN",
       "name": "LIC Housing Finance Limited",
       "sector": "Financial Services",
       "marketCapCr": 33334,
       "close": 606,
-      "rawScore": 59.63,
-      "score": 54.63,
+      "rawScore": 59.62,
+      "score": 54.62,
       "grade": null,
       "setup": null,
       "setupNote": "",
@@ -6772,7 +7137,7 @@
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 4.24,
+          "points": 4.23,
           "max": 10,
           "note": "Financial Services -3.2% vs Nifty, 52% above 50-DMA; weak: sector lagging Nifty"
         },
@@ -6809,86 +7174,13 @@
       "daysListed": 0
     },
     {
-      "symbol": "ADANIPOWER",
-      "name": "Adani Power Limited",
-      "sector": "Utilities",
-      "marketCapCr": 400929,
-      "close": 207.9,
-      "rawScore": 59.59,
-      "score": 54.59,
-      "grade": null,
-      "setup": "consolidation",
-      "setupNote": "10-day range 6.7% wide, 2.7% below the 20-day high",
-      "trigger": 216.59,
-      "stop": 209.21,
-      "target": 238.73,
-      "riskPct": 3.41,
-      "rr": 3,
-      "triggerGapPct": 4.18,
-      "deliveryPct": 41.71,
-      "fundamentalsCoverage": 1,
-      "components": [
-        {
-          "key": "trend",
-          "label": "Trend strength",
-          "points": 17,
-          "max": 20,
-          "note": "31% of 26 weeks above 10w; weak: 10w > 30w, consistent weekly trend"
-        },
-        {
-          "key": "rs",
-          "label": "Relative strength",
-          "points": 5,
-          "max": 15,
-          "note": "-0.7% vs Nifty, +8.3% vs Utilities"
-        },
-        {
-          "key": "sector",
-          "label": "Sector strength",
-          "points": 0.94,
-          "max": 10,
-          "note": "Utilities -5.0% vs Nifty, 39% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth, sector index below 50-DMA"
-        },
-        {
-          "key": "setup",
-          "label": "Setup quality",
-          "points": 13.73,
-          "max": 25,
-          "note": "consolidation: 10-day range 6.7% wide, 2.7% below the 20-day high"
-        },
-        {
-          "key": "volume",
-          "label": "Volume confirmation",
-          "points": 11,
-          "max": 15,
-          "note": "up-day volume 1.8×, up/down 1.90, delivery 42% vs 40% avg; weak: delivery 42%"
-        },
-        {
-          "key": "fundamentals",
-          "label": "Fundamental health",
-          "points": 4.58,
-          "max": 5,
-          "note": "sales growth +45%, earnings growth +135%, ROE 27%, op. margin 32%, D/E 0.80"
-        },
-        {
-          "key": "riskReward",
-          "label": "Risk/reward",
-          "points": 7.34,
-          "max": 10,
-          "note": "3.4% risk, 3.0R to 3R target; weak: 4.2% to trigger"
-        }
-      ],
-      "firstSeen": "2026-11-23",
-      "daysListed": 0
-    },
-    {
       "symbol": "ZENSARTECH",
       "name": "Zensar Technologies Limited",
       "sector": "Technology",
       "marketCapCr": 12029,
       "close": 529.6,
-      "rawScore": 59.34,
-      "score": 54.34,
+      "rawScore": 59.39,
+      "score": 54.39,
       "grade": null,
       "setup": "pullback",
       "setupNote": "Within 0.2% of the rising 20 EMA, RSI 44",
@@ -6918,9 +7210,9 @@
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 0.63,
+          "points": 0.68,
           "max": 10,
-          "note": "Technology -11.0% vs Nifty, 36% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth, sector index below 50-DMA"
+          "note": "Technology -11.0% vs Nifty, 37% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth, sector index below 50-DMA"
         },
         {
           "key": "setup",
@@ -6960,8 +7252,8 @@
       "sector": "Financial Services",
       "marketCapCr": 157056,
       "close": 1831,
-      "rawScore": 59.22,
-      "score": 54.22,
+      "rawScore": 59.21,
+      "score": 54.21,
       "grade": null,
       "setup": "consolidation",
       "setupNote": "10-day range 7.9% wide, 2.9% below the 20-day high",
@@ -6991,7 +7283,7 @@
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 4.24,
+          "points": 4.23,
           "max": 10,
           "note": "Financial Services -3.2% vs Nifty, 52% above 50-DMA; weak: sector lagging Nifty"
         },
@@ -7022,225 +7314,6 @@
           "points": 2.82,
           "max": 10,
           "note": "4.1% risk, 0.9R to 52-week high + 1%; weak: 4.1% to trigger, 0.9R to target"
-        }
-      ],
-      "firstSeen": "2026-11-23",
-      "daysListed": 0
-    },
-    {
-      "symbol": "360ONE",
-      "name": "360 One Wam Limited",
-      "sector": "Financial Services",
-      "marketCapCr": 51515,
-      "close": 1201.15,
-      "rawScore": 59.14,
-      "score": 54.14,
-      "grade": null,
-      "setup": "consolidation",
-      "setupNote": "10-day range 8.7% wide, 2.0% below the 20-day high",
-      "trigger": 1230.01,
-      "stop": 1173.32,
-      "target": 1400.08,
-      "riskPct": 4.61,
-      "rr": 3,
-      "triggerGapPct": 2.4,
-      "deliveryPct": 53.04,
-      "fundamentalsCoverage": 1,
-      "components": [
-        {
-          "key": "trend",
-          "label": "Trend strength",
-          "points": 17.33,
-          "max": 20,
-          "note": "58% of 26 weeks above 10w; weak: 10w > 30w, consistent weekly trend"
-        },
-        {
-          "key": "rs",
-          "label": "Relative strength",
-          "points": 5.62,
-          "max": 15,
-          "note": "+1.7% vs Nifty, +6.7% vs Financial Services"
-        },
-        {
-          "key": "sector",
-          "label": "Sector strength",
-          "points": 4.24,
-          "max": 10,
-          "note": "Financial Services -3.2% vs Nifty, 52% above 50-DMA; weak: sector lagging Nifty"
-        },
-        {
-          "key": "setup",
-          "label": "Setup quality",
-          "points": 12.23,
-          "max": 25,
-          "note": "consolidation: 10-day range 8.7% wide, 2.0% below the 20-day high"
-        },
-        {
-          "key": "volume",
-          "label": "Volume confirmation",
-          "points": 9.58,
-          "max": 15,
-          "note": "up-day volume 1.4×, up/down 4.27, delivery 53% vs 54% avg; weak: delivery 53%"
-        },
-        {
-          "key": "fundamentals",
-          "label": "Fundamental health",
-          "points": 2.76,
-          "max": 5,
-          "note": "sales growth +14%, earnings growth -6%, ROE 13%, op. margin 59%"
-        },
-        {
-          "key": "riskReward",
-          "label": "Risk/reward",
-          "points": 7.38,
-          "max": 10,
-          "note": "4.6% risk, 3.0R to blue-sky 3R target; weak: 2.4% to trigger"
-        }
-      ],
-      "firstSeen": "2026-11-23",
-      "daysListed": 0
-    },
-    {
-      "symbol": "MBAPL",
-      "name": "Madhya Bharat Agro Products Limited",
-      "sector": "Basic Materials",
-      "marketCapCr": 8421,
-      "close": 192.2,
-      "rawScore": 58.84,
-      "score": 53.84,
-      "grade": null,
-      "setup": "pullback",
-      "setupNote": "Within 2.7% of the rising 20 EMA, RSI 59",
-      "trigger": 199.1,
-      "stop": 187.31,
-      "target": 211.09,
-      "riskPct": 5.92,
-      "rr": 1.02,
-      "triggerGapPct": 3.59,
-      "deliveryPct": 48.09,
-      "fundamentalsCoverage": 1,
-      "components": [
-        {
-          "key": "trend",
-          "label": "Trend strength",
-          "points": 20,
-          "max": 20,
-          "note": "96% of 26 weeks above 10w; all checks pass"
-        },
-        {
-          "key": "rs",
-          "label": "Relative strength",
-          "points": 12.5,
-          "max": 15,
-          "note": "+9.0% vs Nifty, +19.1% vs Basic Materials"
-        },
-        {
-          "key": "sector",
-          "label": "Sector strength",
-          "points": 0,
-          "max": 10,
-          "note": "Basic Materials -9.1% vs Nifty, 28% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth, sector index below 50-DMA"
-        },
-        {
-          "key": "setup",
-          "label": "Setup quality",
-          "points": 14.43,
-          "max": 25,
-          "note": "pullback: Within 2.7% of the rising 20 EMA, RSI 59"
-        },
-        {
-          "key": "volume",
-          "label": "Volume confirmation",
-          "points": 6.34,
-          "max": 15,
-          "note": "up-day volume 0.9×, up/down 1.72, delivery 48% vs 51% avg; weak: up-day volume 0.9×, delivery 48%"
-        },
-        {
-          "key": "fundamentals",
-          "label": "Fundamental health",
-          "points": 3.78,
-          "max": 5,
-          "note": "sales growth +59%, earnings growth +153%, ROE 29%, op. margin 13%, D/E 1.33"
-        },
-        {
-          "key": "riskReward",
-          "label": "Risk/reward",
-          "points": 1.79,
-          "max": 10,
-          "note": "5.9% risk, 1.0R to 52-week high + 1%; weak: 5.9% risk, 3.6% to trigger, 1.0R to target"
-        }
-      ],
-      "firstSeen": "2026-11-23",
-      "daysListed": 0
-    },
-    {
-      "symbol": "ALGOQUANT",
-      "name": "Algoquant Fintech Limited",
-      "sector": "Financial Services",
-      "marketCapCr": 2343,
-      "close": 83.36,
-      "rawScore": 58.79,
-      "score": 53.79,
-      "grade": null,
-      "setup": "pullback",
-      "setupNote": "Within 2.6% of the rising 20 EMA, RSI 64",
-      "trigger": 85.11,
-      "stop": 81.4,
-      "target": 88.26,
-      "riskPct": 4.36,
-      "rr": 0.85,
-      "triggerGapPct": 2.1,
-      "deliveryPct": 18.76,
-      "fundamentalsCoverage": 1,
-      "components": [
-        {
-          "key": "trend",
-          "label": "Trend strength",
-          "points": 19.82,
-          "max": 20,
-          "note": "81% of 26 weeks above 10w; all checks pass"
-        },
-        {
-          "key": "rs",
-          "label": "Relative strength",
-          "points": 13.08,
-          "max": 15,
-          "note": "+9.7% vs Nifty, +14.7% vs Financial Services"
-        },
-        {
-          "key": "sector",
-          "label": "Sector strength",
-          "points": 4.24,
-          "max": 10,
-          "note": "Financial Services -3.2% vs Nifty, 52% above 50-DMA; weak: sector lagging Nifty"
-        },
-        {
-          "key": "setup",
-          "label": "Setup quality",
-          "points": 13.79,
-          "max": 25,
-          "note": "pullback: Within 2.6% of the rising 20 EMA, RSI 64"
-        },
-        {
-          "key": "volume",
-          "label": "Volume confirmation",
-          "points": 2.88,
-          "max": 15,
-          "note": "up-day volume 0.9×, up/down 1.20, delivery 19% vs 24% avg; weak: up-day volume 0.9×, up/down volume 1.20, delivery 19%"
-        },
-        {
-          "key": "fundamentals",
-          "label": "Fundamental health",
-          "points": 1.25,
-          "max": 5,
-          "note": "sales growth -23%, earnings growth -5%, ROE 34%, op. margin -41%"
-        },
-        {
-          "key": "riskReward",
-          "label": "Risk/reward",
-          "points": 3.73,
-          "max": 10,
-          "note": "4.4% risk, 0.9R to 52-week high + 1%; weak: 0.9R to target"
         }
       ],
       "firstSeen": "2026-11-23",
