@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T16:53:59.975Z",
+  "generatedAt": "2026-11-24T16:38:44.482Z",
   "asOf": "2026-11-23",
   "universeSize": 1712,
   "stocks": [
@@ -175,13 +175,13 @@
       "rsi": 73.61,
       "ema20": 586.2,
       "ema50": 574.28,
-      "volumeRatio": 2.96,
+      "volumeRatio": 2.97,
       "high20": 699.9,
       "atr": 43.05,
       "entry": 640.85,
       "stop": 576.28,
       "target": 706.9,
-      "score": 39.67
+      "score": 39.69
     },
     {
       "symbol": "RUSHIL",
@@ -235,13 +235,13 @@
       "rsi": 67.05,
       "ema20": 4.82,
       "ema50": 4.77,
-      "volumeRatio": 0.46,
+      "volumeRatio": 0.47,
       "high20": 6.45,
       "atr": 0.38,
       "entry": 5.22,
       "stop": 4.65,
       "target": 6.92,
-      "score": 35.46
+      "score": 35.48
     },
     {
       "symbol": "SAREGAMA",
@@ -615,13 +615,13 @@
       "rsi": 56.35,
       "ema20": 154.41,
       "ema50": 142.25,
-      "volumeRatio": 0.34,
+      "volumeRatio": 0.4,
       "high20": 184.81,
       "atr": 9.67,
       "entry": 155.54,
       "stop": 141.03,
       "target": 186.66,
-      "score": 29.57
+      "score": 29.69
     },
     {
       "symbol": "AARTIDRUGS",
@@ -855,13 +855,13 @@
       "rsi": 63.39,
       "ema20": 365.09,
       "ema50": 337.91,
-      "volumeRatio": 2.93,
+      "volumeRatio": 2.94,
       "high20": 406.8,
       "atr": 15.7,
       "entry": 403.3,
       "stop": 379.76,
       "target": 473.93,
-      "score": 27.81
+      "score": 27.83
     },
     {
       "symbol": "RKFORGE",
@@ -895,13 +895,13 @@
       "rsi": 73.44,
       "ema20": 1317.04,
       "ema50": 1274.46,
-      "volumeRatio": 1.07,
+      "volumeRatio": 1.08,
       "high20": 1452.4,
       "atr": 60.95,
       "entry": 1438.8,
       "stop": 1347.38,
       "target": 1665.69,
-      "score": 27.26
+      "score": 27.28
     },
     {
       "symbol": "SAMBHV",
@@ -1475,13 +1475,13 @@
       "rsi": 76.63,
       "ema20": 93.03,
       "ema50": 91.91,
-      "volumeRatio": 1.39,
+      "volumeRatio": 1.4,
       "high20": 101,
       "atr": 4.84,
       "entry": 97.77,
       "stop": 90.51,
       "target": 119.54,
-      "score": 22.73
+      "score": 22.75
     },
     {
       "symbol": "AFFLE",
@@ -1915,13 +1915,13 @@
       "rsi": 72.57,
       "ema20": 2032.25,
       "ema50": 2007.37,
-      "volumeRatio": 0.69,
+      "volumeRatio": 0.7,
       "high20": 2214.5,
       "atr": 86.44,
       "entry": 2152.3,
       "stop": 2022.65,
       "target": 2446.52,
-      "score": 20.84
+      "score": 20.86
     },
     {
       "symbol": "KIMS",
@@ -2564,6 +2564,26 @@
       "score": 18.48
     },
     {
+      "symbol": "SHREEJISPG",
+      "name": "Shreeji Shipping Global Limited",
+      "sector": "Industrials",
+      "marketCapCr": 14826,
+      "suggestionDate": "2026-11-23",
+      "close": 910,
+      "change5Pct": -0.54,
+      "change20Pct": 17.18,
+      "rsi": 63.15,
+      "ema20": 876.89,
+      "ema50": 812.9,
+      "volumeRatio": 0.63,
+      "high20": 937.95,
+      "atr": 24.36,
+      "entry": 910,
+      "stop": 873.45,
+      "target": 947.33,
+      "score": 18.44
+    },
+    {
       "symbol": "SUNTV",
       "name": "Sun TV Network Limited",
       "sector": "Communication Services",
@@ -2641,26 +2661,6 @@
       "entry": 1289.4,
       "stop": 1227.93,
       "target": 1473.8,
-      "score": 18.34
-    },
-    {
-      "symbol": "SHREEJISPG",
-      "name": "Shreeji Shipping Global Limited",
-      "sector": "Industrials",
-      "marketCapCr": 14826,
-      "suggestionDate": "2026-11-23",
-      "close": 910,
-      "change5Pct": -0.54,
-      "change20Pct": 17.18,
-      "rsi": 63.15,
-      "ema20": 876.89,
-      "ema50": 812.9,
-      "volumeRatio": 0.58,
-      "high20": 937.95,
-      "atr": 24.36,
-      "entry": 910,
-      "stop": 873.45,
-      "target": 947.33,
       "score": 18.34
     },
     {
@@ -3435,19 +3435,19 @@
       "rsi": 71.64,
       "ema20": 1901.76,
       "ema50": 1878.59,
-      "volumeRatio": 0.78,
+      "volumeRatio": 0.79,
       "high20": 2054,
       "atr": 68.61,
       "entry": 1971.7,
       "stop": 1868.78,
       "target": 2280.46,
-      "score": 16.33
+      "score": 16.35
     },
     {
       "symbol": "ICICIBANK",
       "name": "ICICI Bank Limited",
       "sector": "Financial Services",
-      "marketCapCr": 1139116,
+      "marketCapCr": 1139122,
       "suggestionDate": "2026-11-23",
       "close": 1585.5,
       "change5Pct": 0.03,
@@ -4264,6 +4264,26 @@
       "score": 13.77
     },
     {
+      "symbol": "GRWRHITECH",
+      "name": "Garware Hi-Tech Films Limited",
+      "sector": "Basic Materials",
+      "marketCapCr": 18342,
+      "suggestionDate": "2026-11-23",
+      "close": 7895,
+      "change5Pct": 3.24,
+      "change20Pct": 12.24,
+      "rsi": 73.54,
+      "ema20": 7560.21,
+      "ema50": 7259.38,
+      "volumeRatio": 0.75,
+      "high20": 8079.5,
+      "atr": 312.07,
+      "entry": 7895,
+      "stop": 7426.89,
+      "target": 8160.3,
+      "score": 13.74
+    },
+    {
       "symbol": "INDIANB",
       "name": "Indian Bank",
       "sector": "Financial Services",
@@ -4282,26 +4302,6 @@
       "stop": 895.79,
       "target": 1010.91,
       "score": 13.73
-    },
-    {
-      "symbol": "GRWRHITECH",
-      "name": "Garware Hi-Tech Films Limited",
-      "sector": "Basic Materials",
-      "marketCapCr": 18342,
-      "suggestionDate": "2026-11-23",
-      "close": 7895,
-      "change5Pct": 3.24,
-      "change20Pct": 12.24,
-      "rsi": 73.54,
-      "ema20": 7560.21,
-      "ema50": 7259.38,
-      "volumeRatio": 0.74,
-      "high20": 8079.5,
-      "atr": 312.07,
-      "entry": 7895,
-      "stop": 7426.89,
-      "target": 8160.3,
-      "score": 13.72
     },
     {
       "symbol": "ZIMLAB",
@@ -4484,6 +4484,26 @@
       "score": 13.36
     },
     {
+      "symbol": "SBC",
+      "name": "SBC Exports Limited",
+      "sector": "Consumer Cyclical",
+      "marketCapCr": 3241,
+      "suggestionDate": "2026-11-23",
+      "close": 68.07,
+      "change5Pct": -3.27,
+      "change20Pct": 11.5,
+      "rsi": 64.2,
+      "ema20": 67.1,
+      "ema50": 61.33,
+      "volumeRatio": 0.89,
+      "high20": 71.29,
+      "atr": 1.82,
+      "entry": 68.07,
+      "stop": 65.34,
+      "target": 72,
+      "score": 13.28
+    },
+    {
       "symbol": "FINEORG",
       "name": "Fine Organic Industries Limited",
       "sector": "Basic Materials",
@@ -4542,26 +4562,6 @@
       "stop": 646.29,
       "target": 781.13,
       "score": 13.21
-    },
-    {
-      "symbol": "SBC",
-      "name": "SBC Exports Limited",
-      "sector": "Consumer Cyclical",
-      "marketCapCr": 3241,
-      "suggestionDate": "2026-11-23",
-      "close": 68.07,
-      "change5Pct": -3.27,
-      "change20Pct": 11.5,
-      "rsi": 64.2,
-      "ema20": 67.1,
-      "ema50": 61.33,
-      "volumeRatio": 0.85,
-      "high20": 71.29,
-      "atr": 1.82,
-      "entry": 68.07,
-      "stop": 65.34,
-      "target": 72,
-      "score": 13.2
     },
     {
       "symbol": "CRAFTSMAN",
@@ -5115,13 +5115,13 @@
       "rsi": 71.1,
       "ema20": 546.78,
       "ema50": 545.76,
-      "volumeRatio": 0.71,
+      "volumeRatio": 0.72,
       "high20": 577.4,
       "atr": 18.36,
       "entry": 557.7,
       "stop": 530.16,
       "target": 640.32,
-      "score": 11.06
+      "score": 11.08
     },
     {
       "symbol": "CLSEL",
@@ -5181,6 +5181,26 @@
       "entry": 201.66,
       "stop": 191.72,
       "target": 217.15,
+      "score": 10.71
+    },
+    {
+      "symbol": "SAYAJIHOTL",
+      "name": "Sayaji Hotels Limited",
+      "sector": "Consumer Cyclical",
+      "marketCapCr": 526,
+      "suggestionDate": "2026-11-23",
+      "close": 314.8,
+      "change5Pct": 4.24,
+      "change20Pct": 10.71,
+      "rsi": 58.87,
+      "ema20": 307.04,
+      "ema50": 306.58,
+      "volumeRatio": 0,
+      "high20": 326.7,
+      "atr": 11.05,
+      "entry": 314.8,
+      "stop": 298.22,
+      "target": 364.54,
       "score": 10.71
     },
     {
@@ -5635,13 +5655,13 @@
       "rsi": 61.83,
       "ema20": 264.28,
       "ema50": 255.36,
-      "volumeRatio": 0.43,
+      "volumeRatio": 0.44,
       "high20": 294,
       "atr": 15.2,
       "entry": 265.35,
       "stop": 242.55,
       "target": 298.79,
-      "score": 8.59
+      "score": 8.61
     },
     {
       "symbol": "MMP",

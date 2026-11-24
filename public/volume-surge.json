@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T16:53:59.980Z",
+  "generatedAt": "2026-11-24T16:38:44.485Z",
   "asOf": "2026-11-23",
   "universeSize": 1712,
   "stocks": [
@@ -215,13 +215,13 @@
       "rsi": 63.39,
       "ema20": 365.09,
       "ema50": 337.91,
-      "volumeRatio": 2.93,
+      "volumeRatio": 2.94,
       "high20": 406.8,
       "atr": 15.7,
       "entry": 403.3,
       "stop": 379.76,
       "target": 473.93,
-      "score": 14.25
+      "score": 14.26
     },
     {
       "symbol": "GFLLIMITED",
@@ -295,13 +295,13 @@
       "rsi": 66.47,
       "ema20": 552.18,
       "ema50": 590.54,
-      "volumeRatio": 3.24,
+      "volumeRatio": 3.25,
       "high20": 608.1,
       "atr": 23.93,
       "entry": 578.45,
       "stop": 542.55,
       "target": 686.14,
-      "score": 11.05
+      "score": 11.06
     },
     {
       "symbol": "INSECTICID",
@@ -315,13 +315,13 @@
       "rsi": 67.69,
       "ema20": 547.18,
       "ema50": 565,
-      "volumeRatio": 4.45,
+      "volumeRatio": 4.46,
       "high20": 574.5,
       "atr": 18.95,
       "entry": 569.45,
       "stop": 541.03,
       "target": 654.73,
-      "score": 9.79
+      "score": 9.8
     },
     {
       "symbol": "COMSYN",

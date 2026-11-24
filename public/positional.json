@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T16:54:15.168Z",
+  "generatedAt": "2026-11-24T16:38:58.696Z",
   "asOf": "2026-11-23",
   "mode": "positional",
   "scoredCount": 880,
@@ -84,9 +84,9 @@
       "members": 245,
       "ret20Pct": 7.05,
       "ret60Pct": -1.25,
-      "ret65Pct": -1.45,
+      "ret65Pct": -1.44,
       "ret130Pct": 15.9,
-      "rel20Pct": -5.12,
+      "rel20Pct": -5.11,
       "rel65Pct": -6.39,
       "breadthPct": 46.53,
       "above50": true
@@ -1775,7 +1775,7 @@
       "symbol": "ICICIBANK",
       "name": "ICICI Bank Limited",
       "sector": "Financial Services",
-      "marketCapCr": 1139116,
+      "marketCapCr": 1139122,
       "close": 1585.5,
       "rawScore": 65.95,
       "score": 60.95,
@@ -1923,8 +1923,8 @@
       "sector": "Consumer Cyclical",
       "marketCapCr": 10106,
       "close": 127.63,
-      "rawScore": 65.64,
-      "score": 60.64,
+      "rawScore": 65.63,
+      "score": 60.63,
       "grade": "C",
       "setup": "breakout",
       "setupNote": "Closed 2.69% above the 124.2 range high on 1.64× volume",
@@ -1947,7 +1947,7 @@
         {
           "key": "rs",
           "label": "Relative strength",
-          "points": 5.15,
+          "points": 5.14,
           "max": 15,
           "note": "+8.9% vs Nifty, +4.7% vs Consumer Cyclical"
         },
@@ -2919,7 +2919,7 @@
           "label": "Volume confirmation",
           "points": 7.63,
           "max": 10,
-          "note": "up-week volume 13.3×, up/down 6.87, delivery 46% vs 51% avg; weak: delivery 46%"
+          "note": "up-week volume 13.3×, up/down 6.86, delivery 46% vs 51% avg; weak: delivery 46%"
         },
         {
           "key": "fundamentals",
@@ -4942,7 +4942,7 @@
           "label": "Relative strength",
           "points": 12.26,
           "max": 15,
-          "note": "+18.6% vs Nifty, +14.5% vs Consumer Cyclical"
+          "note": "+18.6% vs Nifty, +14.4% vs Consumer Cyclical"
         },
         {
           "key": "sector",

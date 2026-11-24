@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T16:54:15.070Z",
+  "generatedAt": "2026-11-24T16:38:58.629Z",
   "asOf": "2026-11-23",
   "mode": "swing",
   "scoredCount": 880,
@@ -84,9 +84,9 @@
       "members": 245,
       "ret20Pct": 7.05,
       "ret60Pct": -1.25,
-      "ret65Pct": -1.45,
+      "ret65Pct": -1.44,
       "ret130Pct": 15.9,
-      "rel20Pct": -5.12,
+      "rel20Pct": -5.11,
       "rel65Pct": -6.39,
       "breadthPct": 46.53,
       "above50": true
@@ -536,11 +536,11 @@
       "sector": "Real Estate",
       "marketCapCr": 196564,
       "close": 794.1,
-      "rawScore": 76.78,
-      "score": 71.78,
+      "rawScore": 76.79,
+      "score": 71.79,
       "grade": "B",
       "setup": "breakout",
-      "setupNote": "Closed 0.3% above the 20-day high on 1.0× volume",
+      "setupNote": "Closed 0.3% above the 20-day high on 1.1× volume",
       "trigger": 797.54,
       "stop": 768.59,
       "target": 884.39,
@@ -574,9 +574,9 @@
         {
           "key": "setup",
           "label": "Setup quality",
-          "points": 18.26,
+          "points": 18.27,
           "max": 25,
-          "note": "breakout: Closed 0.3% above the 20-day high on 1.0× volume"
+          "note": "breakout: Closed 0.3% above the 20-day high on 1.1× volume"
         },
         {
           "key": "volume",
@@ -2262,7 +2262,7 @@
           "label": "Volume confirmation",
           "points": 7.12,
           "max": 15,
-          "note": "up-day volume 0.0×, up/down 1.62, delivery 56% vs 52% avg; weak: up-day volume 0.0×"
+          "note": "up-day volume 0.0×, up/down 1.60, delivery 56% vs 52% avg; weak: up-day volume 0.0×"
         },
         {
           "key": "fundamentals",
@@ -2554,7 +2554,7 @@
           "label": "Volume confirmation",
           "points": 5.53,
           "max": 15,
-          "note": "up-day volume 0.8×, up/down 1.98, delivery 39% vs 41% avg; weak: up-day volume 0.8×, delivery 39%"
+          "note": "up-day volume 0.8×, up/down 1.97, delivery 39% vs 41% avg; weak: up-day volume 0.8×, delivery 39%"
         },
         {
           "key": "fundamentals",
@@ -3091,8 +3091,8 @@
       "sector": "Consumer Cyclical",
       "marketCapCr": 3241,
       "close": 68.07,
-      "rawScore": 66.85,
-      "score": 61.85,
+      "rawScore": 66.81,
+      "score": 61.81,
       "grade": "C",
       "setup": "pullback",
       "setupNote": "Within 1.4% of the rising 20 EMA, RSI 64",
@@ -3136,9 +3136,9 @@
         {
           "key": "volume",
           "label": "Volume confirmation",
-          "points": 5.38,
+          "points": 5.34,
           "max": 15,
-          "note": "up-day volume 1.0×, up/down 1.41, delivery 35% vs 36% avg; weak: up-day volume 1.0×, delivery 35%"
+          "note": "up-day volume 1.0×, up/down 1.40, delivery 35% vs 36% avg; weak: up-day volume 1.0×, delivery 35%"
         },
         {
           "key": "fundamentals",

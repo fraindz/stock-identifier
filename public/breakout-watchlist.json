@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T16:53:59.979Z",
+  "generatedAt": "2026-11-24T16:38:44.485Z",
   "asOf": "2026-11-23",
   "universeSize": 1712,
   "stocks": [
@@ -175,13 +175,13 @@
       "rsi": 67.69,
       "ema20": 547.18,
       "ema50": 565,
-      "volumeRatio": 4.45,
+      "volumeRatio": 4.46,
       "high20": 574.5,
       "atr": 18.95,
       "entry": 569.45,
       "stop": 541.03,
       "target": 654.73,
-      "score": 103.57
+      "score": 103.58
     },
     {
       "symbol": "CANFINHOME",
@@ -295,13 +295,13 @@
       "rsi": 63.39,
       "ema20": 365.09,
       "ema50": 337.91,
-      "volumeRatio": 2.93,
+      "volumeRatio": 2.94,
       "high20": 406.8,
       "atr": 15.7,
       "entry": 403.3,
       "stop": 379.76,
       "target": 473.93,
-      "score": 102.07
+      "score": 102.08
     },
     {
       "symbol": "JSWINFRA",
@@ -915,13 +915,13 @@
       "rsi": 73.44,
       "ema20": 1317.04,
       "ema50": 1274.46,
-      "volumeRatio": 1.07,
+      "volumeRatio": 1.08,
       "high20": 1452.4,
       "atr": 60.95,
       "entry": 1438.8,
       "stop": 1347.38,
       "target": 1665.69,
-      "score": 100.13
+      "score": 100.14
     },
     {
       "symbol": "DCBBANK",
@@ -1935,13 +1935,13 @@
       "rsi": 76.63,
       "ema20": 93.03,
       "ema50": 91.91,
-      "volumeRatio": 1.39,
+      "volumeRatio": 1.4,
       "high20": 101,
       "atr": 4.84,
       "entry": 97.77,
       "stop": 90.51,
       "target": 119.54,
-      "score": 98.19
+      "score": 98.2
     },
     {
       "symbol": "KNACK",
@@ -2327,7 +2327,7 @@
       "symbol": "ICICIBANK",
       "name": "ICICI Bank Limited",
       "sector": "Financial Services",
-      "marketCapCr": 1139116,
+      "marketCapCr": 1139122,
       "suggestionDate": "2026-11-23",
       "close": 1585.5,
       "change5Pct": 0.03,

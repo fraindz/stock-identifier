@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T16:53:59.847Z",
+  "generatedAt": "2026-11-24T16:38:44.388Z",
   "weeks": {
     "currentWeek": {
       "start": "2026-11-23",
@@ -26,7 +26,7 @@
         {
           "symbol": "ICICIBANK",
           "name": "ICICI Bank Limited",
-          "marketCapCr": 1139116
+          "marketCapCr": 1139122
         },
         {
           "symbol": "SBIN",
@@ -637,7 +637,7 @@
         {
           "symbol": "NEPHROPLUS",
           "name": "Nephrocare Health Services Limited",
-          "marketCapCr": 6670
+          "marketCapCr": 6692
         },
         {
           "symbol": "ORCHPHARMA",
