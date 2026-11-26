@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-11-25T16:52:10.792Z",
+  "generatedAt": "2026-11-26T16:37:55.404Z",
   "minMarketCapCr": 1000,
   "peakWithinWeeks": 12,
   "rallyWeeks": 12,
   "minRallyPct": 20,
   "minRetracePct": 25,
   "maxRetracePct": 62,
-  "universeSize": 1472,
+  "universeSize": 1460,
   "failed": [],
   "weeks": {
     "currentWeek": {
       "start": "2026-11-23",
-      "end": "2026-11-25"
+      "end": "2026-11-26"
     },
     "lastWeek": {
       "start": "2026-11-16",
@@ -22,17 +22,9 @@
     {
       "symbol": "LENSKART",
       "name": "Lenskart Solutions Limited",
-      "marketCapCr": 124834,
+      "marketCapCr": 124185,
       "sector": "Healthcare",
       "days": [
-        {
-          "date": "2025-11-10",
-          "open": 395,
-          "high": 413.75,
-          "low": 356.1000061035156,
-          "close": 403.1000061035156,
-          "volume": 131582855
-        },
         {
           "date": "2025-11-11",
           "open": 401,
@@ -2087,7 +2079,15 @@
           "high": 738.7000122070312,
           "low": 718.6500244140625,
           "close": 720.5499877929688,
-          "volume": 4974296
+          "volume": 4974573
+        },
+        {
+          "date": "2026-11-26",
+          "open": 727.7000122070312,
+          "high": 736.7999877929688,
+          "low": 715.5,
+          "close": 716.7999877929688,
+          "volume": 3373292
         }
       ],
       "rally": {
@@ -2115,27 +2115,19 @@
       },
       "currentWeek": {
         "start": "2026-11-23",
-        "end": "2026-11-25",
+        "end": "2026-11-26",
         "high": 752,
         "low": 711.35,
-        "close": 720.55,
-        "volume": 10544568
+        "close": 716.8,
+        "volume": 13918137
       }
     },
     {
       "symbol": "PERSISTENT",
       "name": "Persistent Systems Limited",
-      "marketCapCr": 100731,
+      "marketCapCr": 102048,
       "sector": "Technology",
       "days": [
-        {
-          "date": "2025-11-10",
-          "open": 5789,
-          "high": 5889,
-          "low": 5766.5,
-          "close": 5864.5,
-          "volume": 304472
-        },
         {
           "date": "2025-11-11",
           "open": 5899.5,
@@ -4190,7 +4182,15 @@
           "high": 6420.5,
           "low": 6120,
           "close": 6120,
-          "volume": 476839
+          "volume": 476846
+        },
+        {
+          "date": "2026-11-26",
+          "open": 6202,
+          "high": 6299.5,
+          "low": 6117,
+          "close": 6200,
+          "volume": 484470
         }
       ],
       "rally": {
@@ -4218,17 +4218,17 @@
       },
       "currentWeek": {
         "start": "2026-11-23",
-        "end": "2026-11-25",
+        "end": "2026-11-26",
         "high": 6420.5,
-        "low": 6120,
-        "close": 6120,
-        "volume": 1748233
+        "low": 6117,
+        "close": 6200,
+        "volume": 2232710
       }
     },
     {
       "symbol": "MILKYMIST",
       "name": "Milky Mist Dairy Food Limited",
-      "marketCapCr": 26590,
+      "marketCapCr": 27510,
       "sector": "Consumer Defensive",
       "days": [
         {
@@ -4765,7 +4765,15 @@
           "high": 356.3999938964844,
           "low": 336.20001220703125,
           "close": 345.3999938964844,
-          "volume": 3262930
+          "volume": 3263034
+        },
+        {
+          "date": "2026-11-26",
+          "open": 349.5,
+          "high": 360,
+          "low": 349.45001220703125,
+          "close": 357.3500061035156,
+          "volume": 1272879
         }
       ],
       "rally": {
@@ -4793,27 +4801,19 @@
       },
       "currentWeek": {
         "start": "2026-11-23",
-        "end": "2026-11-25",
-        "high": 356.4,
+        "end": "2026-11-26",
+        "high": 360,
         "low": 316.05,
-        "close": 345.4,
-        "volume": 5344428
+        "close": 357.35,
+        "volume": 6617411
       }
     },
     {
       "symbol": "THELEELA",
       "name": "Leela Palaces Hotels & Resorts Limited",
-      "marketCapCr": 22728,
+      "marketCapCr": 22905,
       "sector": "Consumer Cyclical",
       "days": [
-        {
-          "date": "2025-11-10",
-          "open": 436.25,
-          "high": 442,
-          "low": 425.1499938964844,
-          "close": 438.70001220703125,
-          "volume": 265694
-        },
         {
           "date": "2025-11-11",
           "open": 431.04998779296875,
@@ -6868,7 +6868,15 @@
           "high": 698.0499877929688,
           "low": 668.5999755859375,
           "close": 680.5499877929688,
-          "volume": 707789
+          "volume": 707792
+        },
+        {
+          "date": "2026-11-26",
+          "open": 675.7999877929688,
+          "high": 688.9000244140625,
+          "low": 675,
+          "close": 685.8499755859375,
+          "volume": 333966
         }
       ],
       "rally": {
@@ -6896,17 +6904,17 @@
       },
       "currentWeek": {
         "start": "2026-11-23",
-        "end": "2026-11-25",
+        "end": "2026-11-26",
         "high": 698.05,
         "low": 668.6,
-        "close": 680.55,
-        "volume": 1229578
+        "close": 685.85,
+        "volume": 1563547
       }
     },
     {
       "symbol": "AMAGI",
       "name": "Amagi Media Labs Limited",
-      "marketCapCr": 12354,
+      "marketCapCr": 12608,
       "sector": "Technology",
       "days": [
         {
@@ -8564,6 +8572,14 @@
           "low": 562.2999877929688,
           "close": 571.0499877929688,
           "volume": 122682
+        },
+        {
+          "date": "2026-11-26",
+          "open": 579.2000122070312,
+          "high": 585.9000244140625,
+          "low": 568,
+          "close": 582.7999877929688,
+          "volume": 203299
         }
       ],
       "rally": {
@@ -8591,27 +8607,19 @@
       },
       "currentWeek": {
         "start": "2026-11-23",
-        "end": "2026-11-25",
+        "end": "2026-11-26",
         "high": 588.8,
         "low": 559.75,
-        "close": 571.05,
-        "volume": 339458
+        "close": 582.8,
+        "volume": 542757
       }
     },
     {
       "symbol": "CYIENT",
       "name": "Cyient Limited",
-      "marketCapCr": 12002,
+      "marketCapCr": 11980,
       "sector": "Industrials",
       "days": [
-        {
-          "date": "2025-11-10",
-          "open": 1112.699951171875,
-          "high": 1150,
-          "low": 1112.699951171875,
-          "close": 1143.199951171875,
-          "volume": 269774
-        },
         {
           "date": "2025-11-11",
           "open": 1143.199951171875,
@@ -10667,6 +10675,14 @@
           "low": 1145,
           "close": 1151.199951171875,
           "volume": 286790
+        },
+        {
+          "date": "2026-11-26",
+          "open": 1153.5999755859375,
+          "high": 1183,
+          "low": 1145,
+          "close": 1149.0999755859375,
+          "volume": 318326
         }
       ],
       "rally": {
@@ -10694,27 +10710,19 @@
       },
       "currentWeek": {
         "start": "2026-11-23",
-        "end": "2026-11-25",
+        "end": "2026-11-26",
         "high": 1186.8,
         "low": 1141.9,
-        "close": 1151.2,
-        "volume": 678342
+        "close": 1149.1,
+        "volume": 996668
       }
     },
     {
       "symbol": "LOTUSDEV",
       "name": "Sri Lotus Developers and Realty Limited",
-      "marketCapCr": 11069,
+      "marketCapCr": 10751,
       "sector": "Industrials",
       "days": [
-        {
-          "date": "2025-11-10",
-          "open": 176,
-          "high": 177,
-          "low": 171.9600067138672,
-          "close": 175.66000366210938,
-          "volume": 939568
-        },
         {
           "date": "2025-11-11",
           "open": 175.66000366210938,
@@ -12769,7 +12777,15 @@
           "high": 233.5399932861328,
           "low": 224.0500030517578,
           "close": 226.47999572753906,
-          "volume": 386594
+          "volume": 387097
+        },
+        {
+          "date": "2026-11-26",
+          "open": 227,
+          "high": 230.39999389648438,
+          "low": 218.25,
+          "close": 219.97999572753906,
+          "volume": 724141
         }
       ],
       "rally": {
@@ -12797,27 +12813,19 @@
       },
       "currentWeek": {
         "start": "2026-11-23",
-        "end": "2026-11-25",
+        "end": "2026-11-26",
         "high": 235.37,
-        "low": 224.05,
-        "close": 226.48,
-        "volume": 792441
+        "low": 218.25,
+        "close": 219.98,
+        "volume": 1517085
       }
     },
     {
       "symbol": "RAYMOND",
       "name": "Raymond Limited",
-      "marketCapCr": 7938,
+      "marketCapCr": 7893,
       "sector": "Industrials",
       "days": [
-        {
-          "date": "2025-11-10",
-          "open": 558.7000122070312,
-          "high": 564.25,
-          "low": 550,
-          "close": 551.25,
-          "volume": 148266
-        },
         {
           "date": "2025-11-11",
           "open": 550.9500122070312,
@@ -14872,7 +14880,15 @@
           "high": 1220,
           "low": 1163.5,
           "close": 1189.9000244140625,
-          "volume": 353259
+          "volume": 353273
+        },
+        {
+          "date": "2026-11-26",
+          "open": 1180,
+          "high": 1202,
+          "low": 1169.5,
+          "close": 1183.199951171875,
+          "volume": 288785
         }
       ],
       "rally": {
@@ -14900,27 +14916,19 @@
       },
       "currentWeek": {
         "start": "2026-11-23",
-        "end": "2026-11-25",
+        "end": "2026-11-26",
         "high": 1221.9,
         "low": 1163.5,
-        "close": 1189.9,
-        "volume": 792976
+        "close": 1183.2,
+        "volume": 1081775
       }
     },
     {
       "symbol": "GULFOILLUB",
       "name": "Gulf Oil Lubricants India Limited",
-      "marketCapCr": 5700,
+      "marketCapCr": 5698,
       "sector": "Basic Materials",
       "days": [
-        {
-          "date": "2025-11-10",
-          "open": 1232,
-          "high": 1232,
-          "low": 1200,
-          "close": 1219.199951171875,
-          "volume": 47754
-        },
         {
           "date": "2025-11-11",
           "open": 1213.199951171875,
@@ -16975,7 +16983,15 @@
           "high": 1195,
           "low": 1141.0999755859375,
           "close": 1150.300048828125,
-          "volume": 129794
+          "volume": 129804
+        },
+        {
+          "date": "2026-11-26",
+          "open": 1150.300048828125,
+          "high": 1163.300048828125,
+          "low": 1141.699951171875,
+          "close": 1149.800048828125,
+          "volume": 33408
         }
       ],
       "rally": {
@@ -17003,27 +17019,19 @@
       },
       "currentWeek": {
         "start": "2026-11-23",
-        "end": "2026-11-25",
+        "end": "2026-11-26",
         "high": 1195,
         "low": 1141.1,
-        "close": 1150.3,
-        "volume": 173331
+        "close": 1149.8,
+        "volume": 206749
       }
     },
     {
       "symbol": "SYNCOMF",
       "name": "Syncom Formulations (India) Limited",
-      "marketCapCr": 2217,
+      "marketCapCr": 2204,
       "sector": "Healthcare",
       "days": [
-        {
-          "date": "2025-11-10",
-          "open": 16.049999237060547,
-          "high": 16.200000762939453,
-          "low": 15.899999618530273,
-          "close": 16.09000015258789,
-          "volume": 895854
-        },
         {
           "date": "2025-11-11",
           "open": 15.899999618530273,
@@ -19078,7 +19086,15 @@
           "high": 24.469999313354492,
           "low": 23.030000686645508,
           "close": 23.59000015258789,
-          "volume": 32236545
+          "volume": 32248899
+        },
+        {
+          "date": "2026-11-26",
+          "open": 23.700000762939453,
+          "high": 23.940000534057617,
+          "low": 23.049999237060547,
+          "close": 23.450000762939453,
+          "volume": 11960860
         }
       ],
       "rally": {
@@ -19106,11 +19122,11 @@
       },
       "currentWeek": {
         "start": "2026-11-23",
-        "end": "2026-11-25",
+        "end": "2026-11-26",
         "high": 24.47,
         "low": 21.5,
-        "close": 23.59,
-        "volume": 70895443
+        "close": 23.45,
+        "volume": 82868657
       }
     }
   ]

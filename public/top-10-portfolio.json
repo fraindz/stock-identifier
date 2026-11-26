@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-25T16:52:29.549Z",
-  "asOf": "2026-11-25",
+  "updatedAt": "2026-11-26T16:38:12.161Z",
+  "asOf": "2026-11-26",
   "lastReviewWeek": "2026-11-16",
   "rules": {
     "minMarketCapCr": 1000,
@@ -59,8 +59,8 @@
       "stop": 597.2,
       "riskPct": 11.78,
       "confidence": 62.6,
-      "lastDate": "2026-11-25",
-      "lastClose": 645.1,
+      "lastDate": "2026-11-26",
+      "lastClose": 648.7,
       "events": [
         {
           "date": "2026-11-13",
@@ -97,8 +97,8 @@
       "stop": 1795.8,
       "riskPct": 10.11,
       "confidence": 55.08,
-      "lastDate": "2026-11-25",
-      "lastClose": 1906.2,
+      "lastDate": "2026-11-26",
+      "lastClose": 1903.8,
       "events": [
         {
           "date": "2026-11-13",
@@ -135,8 +135,8 @@
       "stop": 9980,
       "riskPct": 11.16,
       "confidence": 45.99,
-      "lastDate": "2026-11-25",
-      "lastClose": 11769,
+      "lastDate": "2026-11-26",
+      "lastClose": 11860,
       "events": [
         {
           "date": "2026-11-13",
@@ -173,8 +173,8 @@
       "stop": 313.2,
       "riskPct": 7.33,
       "confidence": 51.06,
-      "lastDate": "2026-11-25",
-      "lastClose": 327,
+      "lastDate": "2026-11-26",
+      "lastClose": 326.45,
       "events": [
         {
           "date": "2026-11-13",
@@ -201,8 +201,8 @@
       "stop": 10183.32,
       "riskPct": 11.31,
       "confidence": 34.19,
-      "lastDate": "2026-11-25",
-      "lastClose": 11426,
+      "lastDate": "2026-11-26",
+      "lastClose": 11933,
       "events": [
         {
           "date": "2026-11-13",
@@ -220,7 +220,7 @@
       "entryDate": "2026-11-20",
       "r": 1298.8,
       "partialBooked": false,
-      "maxHigh": 11851
+      "maxHigh": 12012
     },
     {
       "id": "2026-11-16_THELEELA",
@@ -240,8 +240,8 @@
       "riskPct": 8.74,
       "target": 894.5,
       "confidence": 66.37,
-      "lastDate": "2026-11-25",
-      "lastClose": 680.55,
+      "lastDate": "2026-11-26",
+      "lastClose": 685.85,
       "events": [
         {
           "date": "2026-11-20",
@@ -268,8 +268,8 @@
       "riskPct": 8.73,
       "target": 254.92,
       "confidence": 61.48,
-      "lastDate": "2026-11-25",
-      "lastClose": 226.48,
+      "lastDate": "2026-11-26",
+      "lastClose": 219.98,
       "events": [
         {
           "date": "2026-11-20",
@@ -296,8 +296,8 @@
       "riskPct": 7.65,
       "target": 6664.99,
       "confidence": 52.44,
-      "lastDate": "2026-11-25",
-      "lastClose": 6120,
+      "lastDate": "2026-11-26",
+      "lastClose": 6200,
       "events": [
         {
           "date": "2026-11-20",

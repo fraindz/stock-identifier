@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-11-25T16:52:29.541Z",
-  "asOf": "2026-11-25",
+  "generatedAt": "2026-11-26T16:38:12.150Z",
+  "asOf": "2026-11-26",
   "regime": {
     "regime": "caution",
-    "asOf": "2026-11-25",
-    "niftyClose": 25819.25,
-    "niftyVs50Pct": 9.55,
-    "niftyVs200Pct": 7.58,
+    "asOf": "2026-11-26",
+    "niftyClose": 25884.5,
+    "niftyVs50Pct": 9.61,
+    "niftyVs200Pct": 7.83,
     "sma50Rising": true,
-    "breadthPct": 40.29,
+    "breadthPct": 41.4,
     "note": "Mixed market: 5 points deducted from every score"
   },
   "rules": {
@@ -22,21 +22,21 @@
       "symbol": "DIVISLAB",
       "name": "Divi's Laboratories Limited",
       "sector": "Healthcare",
-      "marketCapCr": 311036,
+      "marketCapCr": 308766,
       "grade": "B",
-      "close": 11716.5,
-      "avgScore": 69.79,
+      "close": 11631,
+      "avgScore": 69.85,
       "swing": {
-        "score": 73.46,
+        "score": 73.24,
         "grade": "B",
         "setup": "consolidation",
-        "setupNote": "10-day range 7.7% wide, 0.9% below the 20-day high",
-        "trigger": 11824.1,
-        "stop": 11164.14,
-        "riskPct": 5.58
+        "setupNote": "10-day range 7.6% wide, 1.7% below the 20-day high",
+        "trigger": 11807.07,
+        "stop": 11223.52,
+        "riskPct": 4.94
       },
       "positional": {
-        "score": 66.11,
+        "score": 66.45,
         "grade": "C",
         "setup": null,
         "setupNote": "",
@@ -44,10 +44,10 @@
         "stop": 10255.62,
         "riskPct": 11.61
       },
-      "trigger": 11824.1,
-      "stop": 11164.14,
-      "riskPct": 5.58,
-      "target": 13803.97,
+      "trigger": 11807.07,
+      "stop": 11223.52,
+      "riskPct": 4.94,
+      "target": 13557.73,
       "rr": 3,
       "swingComponents": [
         {
@@ -62,28 +62,28 @@
           "label": "Relative strength",
           "points": 15,
           "max": 15,
-          "note": "+19.6% vs Nifty, +25.3% vs Healthcare"
+          "note": "+14.8% vs Nifty, +22.2% vs Healthcare"
         },
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 4.48,
+          "points": 4.63,
           "max": 10,
-          "note": "Healthcare -5.7% vs Nifty, 55% above 50-DMA; weak: sector lagging Nifty"
+          "note": "Healthcare -8.6% vs Nifty, 56% above 50-DMA; weak: sector lagging Nifty"
         },
         {
           "key": "setup",
           "label": "Setup quality",
-          "points": 16.25,
+          "points": 15.86,
           "max": 25,
-          "note": "consolidation: 10-day range 7.7% wide, 0.9% below the 20-day high"
+          "note": "consolidation: 10-day range 7.6% wide, 1.7% below the 20-day high"
         },
         {
           "key": "volume",
           "label": "Volume confirmation",
-          "points": 10.21,
+          "points": 10.11,
           "max": 15,
-          "note": "up-day volume 1.4×, up/down 3.09, delivery 61% vs 61% avg; all checks pass"
+          "note": "up-day volume 1.4×, up/down 2.57, delivery 60% vs 61% avg; all checks pass"
         },
         {
           "key": "fundamentals",
@@ -95,45 +95,45 @@
         {
           "key": "riskReward",
           "label": "Risk/reward",
-          "points": 7.52,
+          "points": 7.64,
           "max": 10,
-          "note": "5.6% risk, 3.0R to blue-sky 3R target; weak: 5.6% risk"
+          "note": "4.9% risk, 3.0R to blue-sky 3R target; all checks pass"
         }
       ],
       "firstSeen": "2026-11-25",
-      "daysListed": 1
+      "daysListed": 2
     },
     {
       "rank": 2,
-      "symbol": "THELEELA",
-      "name": "Leela Palaces Hotels & Resorts Limited",
-      "sector": "Consumer Cyclical",
-      "marketCapCr": 22728,
+      "symbol": "TFCILTD",
+      "name": "Tourism Finance Corporation of India Limited",
+      "sector": "Financial Services",
+      "marketCapCr": 8099,
       "grade": "B",
-      "close": 680.55,
-      "avgScore": 69.34,
+      "close": 174.94,
+      "avgScore": 66.44,
       "swing": {
-        "score": 67.5,
-        "grade": "C",
-        "setup": "pullback",
-        "setupNote": "Within 2.7% of the rising 20 EMA, RSI 60",
-        "trigger": 699.45,
-        "stop": 668.6,
-        "riskPct": 4.41
+        "score": 70.26,
+        "grade": "B",
+        "setup": "breakout",
+        "setupNote": "Closed 0.5% above the 20-day high on 0.8× volume",
+        "trigger": 175.35,
+        "stop": 172.06,
+        "riskPct": 1.88
       },
       "positional": {
-        "score": 71.17,
-        "grade": "B",
-        "setup": "pullback",
-        "setupNote": "28.21% pullback of a 42.94% rally, turned up last week",
-        "trigger": 708.73,
-        "stop": 646.8,
-        "riskPct": 8.74
+        "score": 62.61,
+        "grade": "C",
+        "setup": null,
+        "setupNote": "",
+        "trigger": 172.81,
+        "stop": 146.56,
+        "riskPct": 15.19
       },
-      "trigger": 699.45,
-      "stop": 668.6,
-      "riskPct": 4.41,
-      "target": 792,
+      "trigger": 175.35,
+      "stop": 172.06,
+      "riskPct": 1.88,
+      "target": 185.22,
       "rr": 3,
       "swingComponents": [
         {
@@ -146,48 +146,48 @@
         {
           "key": "rs",
           "label": "Relative strength",
-          "points": 13.22,
+          "points": 11.23,
           "max": 15,
-          "note": "+9.9% vs Nifty, +17.7% vs Consumer Cyclical"
+          "note": "+7.5% vs Nifty, +15.2% vs Financial Services"
         },
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 3.76,
+          "points": 4.41,
           "max": 10,
-          "note": "Consumer Cyclical -7.0% vs Nifty, 48% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth"
+          "note": "Financial Services -5.4% vs Nifty, 54% above 50-DMA; weak: sector lagging Nifty"
         },
         {
           "key": "setup",
           "label": "Setup quality",
-          "points": 14.24,
+          "points": 18.31,
           "max": 25,
-          "note": "pullback: Within 2.7% of the rising 20 EMA, RSI 60"
+          "note": "breakout: Closed 0.5% above the 20-day high on 0.8× volume"
         },
         {
           "key": "volume",
           "label": "Volume confirmation",
-          "points": 10,
+          "points": 6.94,
           "max": 15,
-          "note": "up-day volume 1.1×, up/down 2.67, delivery 64% vs 53% avg; weak: up-day volume 1.1×"
+          "note": "up-day volume 0.9×, up/down 1.81, delivery 44% vs 41% avg; weak: up-day volume 0.9×, delivery 44%"
         },
         {
           "key": "fundamentals",
           "label": "Fundamental health",
-          "points": 3.97,
+          "points": 4.37,
           "max": 5,
-          "note": "sales growth +33%, earnings growth +20%, ROE 7%, op. margin 42%, D/E 0.28"
+          "note": "sales growth +29%, earnings growth +32%, ROE 12%, op. margin 87%"
         },
         {
           "key": "riskReward",
           "label": "Risk/reward",
-          "points": 7.31,
+          "points": 10,
           "max": 10,
-          "note": "4.4% risk, 3.0R to blue-sky 3R target; weak: 2.8% to trigger"
+          "note": "1.9% risk, 3.0R to blue-sky 3R target; all checks pass"
         }
       ],
-      "firstSeen": "2026-11-20",
-      "daysListed": 3
+      "firstSeen": "2026-11-26",
+      "daysListed": 1
     }
   ]
 }

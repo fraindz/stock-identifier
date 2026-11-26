@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-25T16:52:29.545Z",
-  "asOf": "2026-11-25",
+  "updatedAt": "2026-11-26T16:38:12.157Z",
+  "asOf": "2026-11-26",
   "startedOn": "2026-11-13",
   "rules": {
     "grades": [
@@ -52,15 +52,15 @@
       "target": 904.77,
       "status": "active",
       "barsWaiting": 0,
-      "lastDate": "2026-11-25",
-      "lastClose": 852.45,
+      "lastDate": "2026-11-26",
+      "lastClose": 850.55,
       "entry": 825.65,
       "entryGapPct": 0,
       "entryDate": "2026-11-16",
       "r": 26.37,
       "partialBooked": false,
-      "maxHigh": 860.9500122070312,
-      "barsHeld": 7
+      "maxHigh": 865.5,
+      "barsHeld": 8
     },
     {
       "id": "swing_2026-11-13_RPEL",
@@ -335,15 +335,15 @@
       "target": 554.22,
       "status": "active",
       "barsWaiting": 0,
-      "lastDate": "2026-11-25",
-      "lastClose": 509,
+      "lastDate": "2026-11-26",
+      "lastClose": 509.95,
       "entry": 495.04,
       "entryGapPct": 0,
       "entryDate": "2026-11-16",
       "r": 19.73,
       "partialBooked": false,
       "maxHigh": 521.5,
-      "barsHeld": 7
+      "barsHeld": 8
     },
     {
       "id": "swing_2026-11-13_IIFLCAPS",
@@ -473,9 +473,9 @@
       "stop": 1699,
       "target": 2761.28,
       "status": "watch",
-      "barsWaiting": 7,
-      "lastDate": "2026-11-25",
-      "lastClose": 1799.3
+      "barsWaiting": 8,
+      "lastDate": "2026-11-26",
+      "lastClose": 1812.6
     },
     {
       "id": "positional_2026-11-13_DIVISLAB",
@@ -502,9 +502,9 @@
       "stop": 11071,
       "target": 14319.48,
       "status": "watch",
-      "barsWaiting": 7,
-      "lastDate": "2026-11-25",
-      "lastClose": 11716.5
+      "barsWaiting": 8,
+      "lastDate": "2026-11-26",
+      "lastClose": 11631
     },
     {
       "id": "positional_2026-11-13_EMCURE",
@@ -531,9 +531,9 @@
       "stop": 2196.6,
       "target": 3038.12,
       "status": "watch",
-      "barsWaiting": 7,
-      "lastDate": "2026-11-25",
-      "lastClose": 2313.5
+      "barsWaiting": 8,
+      "lastDate": "2026-11-26",
+      "lastClose": 2329.1
     },
     {
       "id": "positional_2026-11-13_RADICO",
@@ -561,15 +561,15 @@
       "target": 6526.02,
       "status": "active",
       "barsWaiting": 0,
-      "lastDate": "2026-11-25",
-      "lastClose": 4699,
+      "lastDate": "2026-11-26",
+      "lastClose": 4671,
       "entry": 4687.32,
       "entryGapPct": 0,
       "entryDate": "2026-11-16",
       "r": 612.9,
       "partialBooked": false,
       "maxHigh": 4747,
-      "barsHeld": 7
+      "barsHeld": 8
     },
     {
       "id": "positional_2026-11-13_ALICON",
@@ -597,15 +597,15 @@
       "target": 1518.88,
       "status": "active",
       "barsWaiting": 1,
-      "lastDate": "2026-11-25",
-      "lastClose": 1009.6,
+      "lastDate": "2026-11-26",
+      "lastClose": 983.9,
       "entry": 999.97,
       "entryGapPct": 0,
       "entryDate": "2026-11-17",
       "r": 172.97,
       "partialBooked": false,
       "maxHigh": 1112,
-      "barsHeld": 6
+      "barsHeld": 7
     },
     {
       "id": "positional_2026-11-13_PNB",
@@ -633,15 +633,15 @@
       "target": 190.31,
       "status": "active",
       "barsWaiting": 0,
-      "lastDate": "2026-11-25",
-      "lastClose": 148.61,
+      "lastDate": "2026-11-26",
+      "lastClose": 147.5,
       "entry": 145.87,
       "entryGapPct": 0,
       "entryDate": "2026-11-16",
       "r": 14.81,
       "partialBooked": false,
       "maxHigh": 156.49000549316406,
-      "barsHeld": 7
+      "barsHeld": 8
     },
     {
       "id": "positional_2026-11-13_AARTIDRUGS",
@@ -731,15 +731,15 @@
       "target": 1595.31,
       "status": "active",
       "barsWaiting": 1,
-      "lastDate": "2026-11-25",
-      "lastClose": 1230.1,
+      "lastDate": "2026-11-26",
+      "lastClose": 1215.25,
       "entry": 1244.19,
       "entryGapPct": 0,
       "entryDate": "2026-11-17",
       "r": 117.04,
       "partialBooked": false,
       "maxHigh": 1277.800048828125,
-      "barsHeld": 6
+      "barsHeld": 7
     },
     {
       "id": "positional_2026-11-13_DHANBANK",
@@ -767,15 +767,15 @@
       "target": 68.34,
       "status": "active",
       "barsWaiting": 0,
-      "lastDate": "2026-11-25",
-      "lastClose": 37.22,
+      "lastDate": "2026-11-26",
+      "lastClose": 36.76,
       "entry": 42.2,
       "entryGapPct": 0,
       "entryDate": "2026-11-16",
       "r": 8.71,
       "partialBooked": false,
       "maxHigh": 44.7400016784668,
-      "barsHeld": 7
+      "barsHeld": 8
     },
     {
       "id": "positional_2026-11-13_KMEW",
@@ -803,15 +803,15 @@
       "target": 1042.22,
       "status": "active",
       "barsWaiting": 0,
-      "lastDate": "2026-11-25",
-      "lastClose": 683.8,
+      "lastDate": "2026-11-26",
+      "lastClose": 693.8,
       "entry": 730.43,
       "entryGapPct": 0,
       "entryDate": "2026-11-16",
       "r": 103.93,
       "partialBooked": false,
       "maxHigh": 773.4000244140625,
-      "barsHeld": 7
+      "barsHeld": 8
     },
     {
       "id": "positional_2026-11-13_BLISSGVS",
@@ -839,15 +839,15 @@
       "target": 747.3,
       "status": "active",
       "barsWaiting": 0,
-      "lastDate": "2026-11-25",
-      "lastClose": 645.1,
+      "lastDate": "2026-11-26",
+      "lastClose": 648.7,
       "entry": 680.9,
       "entryGapPct": 0.58,
       "entryDate": "2026-11-16",
       "r": 83.7,
       "partialBooked": false,
       "maxHigh": 698,
-      "barsHeld": 7
+      "barsHeld": 8
     },
     {
       "id": "hotlist_2026-11-13_EMCURE",
@@ -937,15 +937,15 @@
       "target": 904.77,
       "status": "active",
       "barsWaiting": 0,
-      "lastDate": "2026-11-25",
-      "lastClose": 852.45,
+      "lastDate": "2026-11-26",
+      "lastClose": 850.55,
       "entry": 825.65,
       "entryGapPct": 0,
       "entryDate": "2026-11-16",
       "r": 26.37,
       "partialBooked": false,
-      "maxHigh": 860.9500122070312,
-      "barsHeld": 7
+      "maxHigh": 865.5,
+      "barsHeld": 8
     },
     {
       "id": "hotlist_2026-11-13_STYLEBAAZA",
@@ -1014,15 +1014,15 @@
       "target": 554.22,
       "status": "active",
       "barsWaiting": 0,
-      "lastDate": "2026-11-25",
-      "lastClose": 509,
+      "lastDate": "2026-11-26",
+      "lastClose": 509.95,
       "entry": 495.04,
       "entryGapPct": 0,
       "entryDate": "2026-11-16",
       "r": 19.73,
       "partialBooked": false,
       "maxHigh": 521.5,
-      "barsHeld": 7
+      "barsHeld": 8
     },
     {
       "id": "hotlist_2026-11-13_MCX",
@@ -1215,15 +1215,15 @@
       "target": 691.2,
       "status": "active",
       "barsWaiting": 0,
-      "lastDate": "2026-11-25",
-      "lastClose": 598,
+      "lastDate": "2026-11-26",
+      "lastClose": 596.25,
       "entry": 609.77,
       "entryGapPct": 0,
       "entryDate": "2026-11-17",
       "r": 27.14,
       "partialBooked": false,
       "maxHigh": 625.7999877929688,
-      "barsHeld": 6
+      "barsHeld": 7
     },
     {
       "id": "swing_2026-11-16_DHANBANK",
@@ -1292,15 +1292,15 @@
       "target": 227.28,
       "status": "active",
       "barsWaiting": 0,
-      "lastDate": "2026-11-25",
-      "lastClose": 213.5,
+      "lastDate": "2026-11-26",
+      "lastClose": 210.2,
       "entry": 206.9,
       "entryGapPct": 0,
       "entryDate": "2026-11-17",
       "r": 6.79,
       "partialBooked": false,
       "maxHigh": 219.72000122070312,
-      "barsHeld": 6
+      "barsHeld": 7
     },
     {
       "id": "swing_2026-11-16_ABDL",
@@ -1441,15 +1441,15 @@
       "target": 5352.04,
       "status": "active",
       "barsWaiting": 0,
-      "lastDate": "2026-11-25",
-      "lastClose": 4699,
+      "lastDate": "2026-11-26",
+      "lastClose": 4671,
       "entry": 4699.38,
       "entryGapPct": 0,
       "entryDate": "2026-11-17",
       "r": 217.55,
       "partialBooked": false,
       "maxHigh": 4747,
-      "barsHeld": 6
+      "barsHeld": 7
     },
     {
       "id": "hotlist_2026-11-16_GLAND",
@@ -1506,17 +1506,22 @@
       "initialStop": 92.37,
       "stop": 96.29,
       "target": 108.06,
-      "status": "active",
+      "status": "closed",
       "barsWaiting": 0,
-      "lastDate": "2026-11-25",
-      "lastClose": 98.71,
+      "lastDate": "2026-11-26",
+      "lastClose": 94.2,
       "entry": 96.29,
       "entryGapPct": 0,
       "entryDate": "2026-11-18",
       "r": 3.92,
       "partialBooked": false,
       "maxHigh": 100.69999694824219,
-      "barsHeld": 5
+      "barsHeld": 6,
+      "exitDate": "2026-11-26",
+      "exitPrice": 96.29,
+      "exitReason": "trail",
+      "rMultiple": 0,
+      "mfeR": 1.12
     },
     {
       "id": "swing_2026-11-17_PNB",
@@ -1544,15 +1549,15 @@
       "target": 170.96,
       "status": "active",
       "barsWaiting": 0,
-      "lastDate": "2026-11-25",
-      "lastClose": 148.61,
+      "lastDate": "2026-11-26",
+      "lastClose": 147.5,
       "entry": 151.97,
       "entryGapPct": 0,
       "entryDate": "2026-11-18",
       "r": 6.33,
       "partialBooked": false,
       "maxHigh": 156.49000549316406,
-      "barsHeld": 5
+      "barsHeld": 6
     },
     {
       "id": "swing_2026-11-17_MOTILALOFS",
@@ -1652,15 +1657,15 @@
       "target": 180.14,
       "status": "active",
       "barsWaiting": 1,
-      "lastDate": "2026-11-25",
-      "lastClose": 159.89,
+      "lastDate": "2026-11-26",
+      "lastClose": 160.29,
       "entry": 160.28,
       "entryGapPct": 0,
       "entryDate": "2026-11-19",
       "r": 6.86,
       "partialBooked": false,
       "maxHigh": 166.85000610351562,
-      "barsHeld": 4
+      "barsHeld": 5
     },
     {
       "id": "swing_2026-11-17_SGFIN",
@@ -1758,17 +1763,22 @@
       "initialStop": 497.69,
       "stop": 525.05,
       "target": 607.14,
-      "status": "active",
+      "status": "closed",
       "barsWaiting": 0,
-      "lastDate": "2026-11-25",
-      "lastClose": 536.45,
+      "lastDate": "2026-11-26",
+      "lastClose": 533.25,
       "entry": 525.05,
       "entryGapPct": 0,
       "entryDate": "2026-11-18",
       "r": 27.36,
       "partialBooked": false,
       "maxHigh": 554.9500122070312,
-      "barsHeld": 5
+      "barsHeld": 6,
+      "exitDate": "2026-11-26",
+      "exitPrice": 525.05,
+      "exitReason": "trail",
+      "rMultiple": 0,
+      "mfeR": 1.09
     },
     {
       "id": "swing_2026-11-17_FILATEX",
@@ -1827,15 +1837,15 @@
       "target": 1912.92,
       "status": "active",
       "barsWaiting": 0,
-      "lastDate": "2026-11-25",
-      "lastClose": 1709.3,
+      "lastDate": "2026-11-26",
+      "lastClose": 1638.2,
       "entry": 1693.38,
       "entryGapPct": 0,
       "entryDate": "2026-11-18",
       "r": 73.18,
       "partialBooked": false,
       "maxHigh": 1747,
-      "barsHeld": 5
+      "barsHeld": 6
     },
     {
       "id": "swing_2026-11-17_HINDOILEXP",
@@ -1863,15 +1873,15 @@
       "target": 274.7,
       "status": "active",
       "barsWaiting": 0,
-      "lastDate": "2026-11-25",
-      "lastClose": 220.48,
+      "lastDate": "2026-11-26",
+      "lastClose": 213.01,
       "entry": 225.45,
       "entryGapPct": 0,
       "entryDate": "2026-11-18",
       "r": 16.42,
       "partialBooked": false,
       "maxHigh": 238.88999938964844,
-      "barsHeld": 5
+      "barsHeld": 6
     },
     {
       "id": "swing_2026-11-17_BANCOINDIA",
@@ -1897,17 +1907,22 @@
       "initialStop": 683.14,
       "stop": 683.14,
       "target": 851.59,
-      "status": "active",
+      "status": "closed",
       "barsWaiting": 1,
-      "lastDate": "2026-11-25",
-      "lastClose": 690.7,
+      "lastDate": "2026-11-26",
+      "lastClose": 678.5,
       "entry": 725.25,
       "entryGapPct": 0,
       "entryDate": "2026-11-19",
       "r": 42.11,
       "partialBooked": false,
       "maxHigh": 731.5499877929688,
-      "barsHeld": 4
+      "barsHeld": 5,
+      "exitDate": "2026-11-26",
+      "exitPrice": 683.14,
+      "exitReason": "stop",
+      "rMultiple": -1,
+      "mfeR": 0.15
     },
     {
       "id": "swing_2026-11-17_KMEW",
@@ -1997,15 +2012,15 @@
       "target": 170.96,
       "status": "active",
       "barsWaiting": 0,
-      "lastDate": "2026-11-25",
-      "lastClose": 148.61,
+      "lastDate": "2026-11-26",
+      "lastClose": 147.5,
       "entry": 151.97,
       "entryGapPct": 0,
       "entryDate": "2026-11-18",
       "r": 6.33,
       "partialBooked": false,
       "maxHigh": 156.49000549316406,
-      "barsHeld": 5
+      "barsHeld": 6
     },
     {
       "id": "hotlist_2026-11-17_ALICON",
@@ -2105,15 +2120,15 @@
       "target": 1912.92,
       "status": "active",
       "barsWaiting": 0,
-      "lastDate": "2026-11-25",
-      "lastClose": 1709.3,
+      "lastDate": "2026-11-26",
+      "lastClose": 1638.2,
       "entry": 1693.38,
       "entryGapPct": 0,
       "entryDate": "2026-11-18",
       "r": 73.18,
       "partialBooked": false,
       "maxHigh": 1747,
-      "barsHeld": 5
+      "barsHeld": 6
     },
     {
       "id": "swing_2026-11-19_GHCLTEXTIL",
@@ -2285,15 +2300,15 @@
       "target": 2446.52,
       "status": "active",
       "barsWaiting": 0,
-      "lastDate": "2026-11-25",
-      "lastClose": 2078,
+      "lastDate": "2026-11-26",
+      "lastClose": 2233.7,
       "entry": 2174.34,
       "entryGapPct": 0,
       "entryDate": "2026-11-20",
       "r": 125.45,
       "partialBooked": false,
-      "maxHigh": 2214.5,
-      "barsHeld": 3
+      "maxHigh": 2246.10009765625,
+      "barsHeld": 4
     },
     {
       "id": "swing_2026-11-19_ITCHOTELS",
@@ -2321,15 +2336,15 @@
       "target": 207.11,
       "status": "active",
       "barsWaiting": 0,
-      "lastDate": "2026-11-25",
-      "lastClose": 186.5,
+      "lastDate": "2026-11-26",
+      "lastClose": 186.1,
       "entry": 185.17,
       "entryGapPct": 0,
       "entryDate": "2026-11-20",
       "r": 7.31,
       "partialBooked": false,
       "maxHigh": 190.19000244140625,
-      "barsHeld": 3
+      "barsHeld": 4
     },
     {
       "id": "swing_2026-11-19_TFCILTD",
@@ -2357,15 +2372,15 @@
       "target": 202.2,
       "status": "active",
       "barsWaiting": 1,
-      "lastDate": "2026-11-25",
-      "lastClose": 173.66,
+      "lastDate": "2026-11-26",
+      "lastClose": 174.94,
       "entry": 172.6,
       "entryGapPct": 0.15,
       "entryDate": "2026-11-23",
       "r": 10.21,
       "partialBooked": false,
-      "maxHigh": 173.99000549316406,
-      "barsHeld": 2
+      "maxHigh": 175,
+      "barsHeld": 3
     },
     {
       "id": "swing_2026-11-19_SBIN",
@@ -2393,15 +2408,15 @@
       "target": 1247.05,
       "status": "active",
       "barsWaiting": 0,
-      "lastDate": "2026-11-25",
-      "lastClose": 1138.15,
+      "lastDate": "2026-11-26",
+      "lastClose": 1136.65,
       "entry": 1159.31,
       "entryGapPct": 0,
       "entryDate": "2026-11-20",
       "r": 40.54,
       "partialBooked": false,
       "maxHigh": 1181.5999755859375,
-      "barsHeld": 3
+      "barsHeld": 4
     },
     {
       "id": "swing_2026-11-19_SHADOWFAX",
@@ -2429,15 +2444,15 @@
       "target": 377.48,
       "status": "active",
       "barsWaiting": 0,
-      "lastDate": "2026-11-25",
-      "lastClose": 309.65,
+      "lastDate": "2026-11-26",
+      "lastClose": 306.75,
       "entry": 313.98,
       "entryGapPct": 0,
       "entryDate": "2026-11-20",
       "r": 21.17,
       "partialBooked": false,
       "maxHigh": 315.25,
-      "barsHeld": 3
+      "barsHeld": 4
     },
     {
       "id": "hotlist_2026-11-19_KOPRAN",
@@ -2496,15 +2511,15 @@
       "target": 202.2,
       "status": "active",
       "barsWaiting": 1,
-      "lastDate": "2026-11-25",
-      "lastClose": 173.66,
+      "lastDate": "2026-11-26",
+      "lastClose": 174.94,
       "entry": 172.6,
       "entryGapPct": 0.15,
       "entryDate": "2026-11-23",
       "r": 10.21,
       "partialBooked": false,
-      "maxHigh": 173.99000549316406,
-      "barsHeld": 2
+      "maxHigh": 175,
+      "barsHeld": 3
     },
     {
       "id": "swing_2026-11-20_AXISBANK",
@@ -2573,15 +2588,15 @@
       "target": 187.67,
       "status": "active",
       "barsWaiting": 0,
-      "lastDate": "2026-11-25",
-      "lastClose": 160.92,
+      "lastDate": "2026-11-26",
+      "lastClose": 163.2,
       "entry": 152.75,
       "entryGapPct": 0,
       "entryDate": "2026-11-23",
       "r": 11.64,
       "partialBooked": false,
       "maxHigh": 169.77000427246094,
-      "barsHeld": 2
+      "barsHeld": 3
     },
     {
       "id": "swing_2026-11-20_WELSPUNLIV",
@@ -2609,15 +2624,15 @@
       "target": 343,
       "status": "active",
       "barsWaiting": 0,
-      "lastDate": "2026-11-25",
-      "lastClose": 276.57,
+      "lastDate": "2026-11-26",
+      "lastClose": 280.35,
       "entry": 274.55,
       "entryGapPct": 0,
       "entryDate": "2026-11-23",
       "r": 22.82,
       "partialBooked": false,
-      "maxHigh": 278.989990234375,
-      "barsHeld": 2
+      "maxHigh": 284.5,
+      "barsHeld": 3
     },
     {
       "id": "swing_2026-11-20_CUB",
@@ -2643,17 +2658,22 @@
       "initialStop": 238.9,
       "stop": 238.9,
       "target": 289.3,
-      "status": "active",
+      "status": "closed",
       "barsWaiting": 0,
-      "lastDate": "2026-11-25",
-      "lastClose": 247,
+      "lastDate": "2026-11-26",
+      "lastClose": 239,
       "entry": 251.5,
       "entryGapPct": 0,
       "entryDate": "2026-11-23",
       "r": 12.6,
       "partialBooked": false,
       "maxHigh": 253.99000549316406,
-      "barsHeld": 2
+      "barsHeld": 3,
+      "exitDate": "2026-11-26",
+      "exitPrice": 238.9,
+      "exitReason": "stop",
+      "rMultiple": -1,
+      "mfeR": 0.2
     },
     {
       "id": "swing_2026-11-20_POONAWALLA",
@@ -2681,15 +2701,15 @@
       "target": 605.71,
       "status": "active",
       "barsWaiting": 0,
-      "lastDate": "2026-11-25",
-      "lastClose": 513.45,
+      "lastDate": "2026-11-26",
+      "lastClose": 508.6,
       "entry": 523.04,
       "entryGapPct": 0,
       "entryDate": "2026-11-23",
       "r": 27.56,
       "partialBooked": false,
       "maxHigh": 532.2999877929688,
-      "barsHeld": 2
+      "barsHeld": 3
     },
     {
       "id": "swing_2026-11-20_NITINSPIN",
@@ -2789,15 +2809,15 @@
       "target": 1197.25,
       "status": "active",
       "barsWaiting": 0,
-      "lastDate": "2026-11-25",
-      "lastClose": 1076.3,
+      "lastDate": "2026-11-26",
+      "lastClose": 1081.25,
       "entry": 1092.18,
       "entryGapPct": 0,
       "entryDate": "2026-11-23",
       "r": 47.07,
       "partialBooked": false,
       "maxHigh": 1102.0999755859375,
-      "barsHeld": 2
+      "barsHeld": 3
     },
     {
       "id": "swing_2026-11-20_APOLLOHOSP",
@@ -2825,15 +2845,15 @@
       "target": 10236.91,
       "status": "active",
       "barsWaiting": 0,
-      "lastDate": "2026-11-25",
-      "lastClose": 9300,
+      "lastDate": "2026-11-26",
+      "lastClose": 9222.5,
       "entry": 9301.07,
       "entryGapPct": 0,
       "entryDate": "2026-11-23",
       "r": 311.95,
       "partialBooked": false,
       "maxHigh": 9410,
-      "barsHeld": 2
+      "barsHeld": 3
     },
     {
       "id": "swing_2026-11-20_INDHOTEL",
@@ -2861,15 +2881,15 @@
       "target": 1020.19,
       "status": "active",
       "barsWaiting": 0,
-      "lastDate": "2026-11-25",
-      "lastClose": 903.85,
+      "lastDate": "2026-11-26",
+      "lastClose": 886.7,
       "entry": 914.83,
       "entryGapPct": 0,
       "entryDate": "2026-11-23",
       "r": 35.12,
       "partialBooked": false,
       "maxHigh": 925.75,
-      "barsHeld": 2
+      "barsHeld": 3
     },
     {
       "id": "swing_2026-11-20_ARIS",
@@ -2897,15 +2917,15 @@
       "target": 200.53,
       "status": "active",
       "barsWaiting": 0,
-      "lastDate": "2026-11-25",
-      "lastClose": 190.3,
+      "lastDate": "2026-11-26",
+      "lastClose": 185.94,
       "entry": 166.6,
       "entryGapPct": 0.02,
       "entryDate": "2026-11-23",
       "r": 11.36,
       "partialBooked": true,
-      "maxHigh": 194.49000549316406,
-      "barsHeld": 2
+      "maxHigh": 202,
+      "barsHeld": 3
     },
     {
       "id": "swing_2026-11-20_SGMART",
@@ -2974,15 +2994,15 @@
       "target": 1020.19,
       "status": "active",
       "barsWaiting": 0,
-      "lastDate": "2026-11-25",
-      "lastClose": 903.85,
+      "lastDate": "2026-11-26",
+      "lastClose": 886.7,
       "entry": 914.83,
       "entryGapPct": 0,
       "entryDate": "2026-11-23",
       "r": 35.12,
       "partialBooked": false,
       "maxHigh": 925.75,
-      "barsHeld": 2
+      "barsHeld": 3
     },
     {
       "id": "swing_2026-11-23_PGIL",
@@ -3041,15 +3061,15 @@
       "target": 478.24,
       "status": "active",
       "barsWaiting": 0,
-      "lastDate": "2026-11-25",
-      "lastClose": 404.55,
+      "lastDate": "2026-11-26",
+      "lastClose": 405,
       "entry": 407.61,
       "entryGapPct": 0,
       "entryDate": "2026-11-25",
       "r": 23.54,
       "partialBooked": false,
-      "maxHigh": 407.70001220703125,
-      "barsHeld": 1
+      "maxHigh": 411.6499938964844,
+      "barsHeld": 2
     },
     {
       "id": "swing_2026-11-23_DLF",
@@ -3077,15 +3097,15 @@
       "target": 884.39,
       "status": "active",
       "barsWaiting": 0,
-      "lastDate": "2026-11-25",
-      "lastClose": 795,
+      "lastDate": "2026-11-26",
+      "lastClose": 807.8,
       "entry": 797.54,
       "entryGapPct": 0,
       "entryDate": "2026-11-25",
       "r": 28.95,
       "partialBooked": false,
-      "maxHigh": 798,
-      "barsHeld": 1
+      "maxHigh": 812.3499755859375,
+      "barsHeld": 2
     },
     {
       "id": "positional_2026-11-23_KDDL",
@@ -3112,9 +3132,9 @@
       "stop": 4382.07,
       "target": 7749.75,
       "status": "watch",
-      "barsWaiting": 1,
-      "lastDate": "2026-11-25",
-      "lastClose": 4531.2
+      "barsWaiting": 2,
+      "lastDate": "2026-11-26",
+      "lastClose": 4511.1
     },
     {
       "id": "positional_2026-11-23_AJMERA",
@@ -3142,15 +3162,15 @@
       "target": 210.48,
       "status": "active",
       "barsWaiting": 0,
-      "lastDate": "2026-11-25",
-      "lastClose": 160.92,
+      "lastDate": "2026-11-26",
+      "lastClose": 163.2,
       "entry": 160.05,
       "entryGapPct": 4.46,
       "entryDate": "2026-11-25",
       "r": 29.94,
       "partialBooked": false,
-      "maxHigh": 164.1699981689453,
-      "barsHeld": 1
+      "maxHigh": 165.8000030517578,
+      "barsHeld": 2
     },
     {
       "id": "positional_2026-11-23_THELEELA",
@@ -3177,9 +3197,9 @@
       "stop": 646.8,
       "target": 894.52,
       "status": "watch",
-      "barsWaiting": 1,
-      "lastDate": "2026-11-25",
-      "lastClose": 680.55
+      "barsWaiting": 2,
+      "lastDate": "2026-11-26",
+      "lastClose": 685.85
     },
     {
       "id": "positional_2026-11-23_ASAHIINDIA",
@@ -3205,10 +3225,17 @@
       "initialStop": 1107.1,
       "stop": 1107.1,
       "target": 1498.66,
-      "status": "watch",
+      "status": "active",
       "barsWaiting": 1,
-      "lastDate": "2026-11-25",
-      "lastClose": 1195.3
+      "lastDate": "2026-11-26",
+      "lastClose": 1189.85,
+      "entry": 1204.99,
+      "entryGapPct": 0,
+      "entryDate": "2026-11-26",
+      "r": 97.89,
+      "partialBooked": false,
+      "maxHigh": 1206,
+      "barsHeld": 1
     },
     {
       "id": "positional_2026-11-23_LENSKART",
@@ -3235,9 +3262,9 @@
       "stop": 701.5,
       "target": 921.54,
       "status": "watch",
-      "barsWaiting": 1,
-      "lastDate": "2026-11-25",
-      "lastClose": 720.55
+      "barsWaiting": 2,
+      "lastDate": "2026-11-26",
+      "lastClose": 716.8
     },
     {
       "id": "hotlist_2026-11-23_HONASA",
@@ -3265,15 +3292,15 @@
       "target": 625.51,
       "status": "active",
       "barsWaiting": 0,
-      "lastDate": "2026-11-25",
-      "lastClose": 536.45,
+      "lastDate": "2026-11-26",
+      "lastClose": 533.25,
       "entry": 550,
       "entryGapPct": 1.09,
       "entryDate": "2026-11-25",
       "r": 33.05,
       "partialBooked": false,
       "maxHigh": 554.9500122070312,
-      "barsHeld": 1
+      "barsHeld": 2
     },
     {
       "id": "hotlist_2026-11-23_THELEELA",
@@ -3299,10 +3326,12 @@
       "initialStop": 660.22,
       "stop": 660.22,
       "target": 845.78,
-      "status": "watch",
-      "barsWaiting": 1,
-      "lastDate": "2026-11-25",
-      "lastClose": 680.55
+      "status": "cancelled",
+      "barsWaiting": 2,
+      "lastDate": "2026-11-26",
+      "lastClose": 685.85,
+      "endedDate": "2026-11-26",
+      "cancelReason": "dropped off the hotlist"
     },
     {
       "id": "hotlist_2026-11-23_PGIL",
@@ -3359,10 +3388,17 @@
       "initialStop": 549.83,
       "stop": 549.83,
       "target": 675.34,
-      "status": "watch",
+      "status": "active",
       "barsWaiting": 0,
-      "lastDate": "2026-11-25",
-      "lastClose": 576.2
+      "lastDate": "2026-11-26",
+      "lastClose": 572.6,
+      "entry": 581.21,
+      "entryGapPct": 0,
+      "entryDate": "2026-11-26",
+      "r": 31.38,
+      "partialBooked": false,
+      "maxHigh": 590.9500122070312,
+      "barsHeld": 1
     },
     {
       "id": "swing_2026-11-25_TATACONSUM",
@@ -3388,10 +3424,12 @@
       "initialStop": 1150.47,
       "stop": 1150.47,
       "target": 1295.53,
-      "status": "watch",
-      "barsWaiting": 0,
-      "lastDate": "2026-11-25",
-      "lastClose": 1185.8
+      "status": "cancelled",
+      "barsWaiting": 1,
+      "lastDate": "2026-11-26",
+      "lastClose": 1164,
+      "endedDate": "2026-11-26",
+      "cancelReason": "score fell to 45.23 (below C)"
     },
     {
       "id": "swing_2026-11-25_DIVISLAB",
@@ -3418,9 +3456,9 @@
       "stop": 11164.14,
       "target": 13803.97,
       "status": "watch",
-      "barsWaiting": 0,
-      "lastDate": "2026-11-25",
-      "lastClose": 11716.5
+      "barsWaiting": 1,
+      "lastDate": "2026-11-26",
+      "lastClose": 11631
     },
     {
       "id": "swing_2026-11-25_DCBBANK",
@@ -3446,10 +3484,12 @@
       "initialStop": 231.07,
       "stop": 231.07,
       "target": 280.71,
-      "status": "watch",
-      "barsWaiting": 0,
-      "lastDate": "2026-11-25",
-      "lastClose": 241.64
+      "status": "cancelled",
+      "barsWaiting": 1,
+      "lastDate": "2026-11-26",
+      "lastClose": 227.17,
+      "endedDate": "2026-11-26",
+      "cancelReason": "score fell to 40.88 (below C)"
     },
     {
       "id": "swing_2026-11-25_TRENT",
@@ -3476,9 +3516,9 @@
       "stop": 3228.87,
       "target": 3739.78,
       "status": "watch",
-      "barsWaiting": 0,
-      "lastDate": "2026-11-25",
-      "lastClose": 3319.6
+      "barsWaiting": 1,
+      "lastDate": "2026-11-26",
+      "lastClose": 3262.6
     },
     {
       "id": "swing_2026-11-25_AUROPHARMA",
@@ -3505,9 +3545,9 @@
       "stop": 1784.28,
       "target": 2101.64,
       "status": "watch",
-      "barsWaiting": 0,
-      "lastDate": "2026-11-25",
-      "lastClose": 1843
+      "barsWaiting": 1,
+      "lastDate": "2026-11-26",
+      "lastClose": 1811
     },
     {
       "id": "swing_2026-11-25_HINDUNILVR",
@@ -3533,10 +3573,17 @@
       "initialStop": 2074.89,
       "stop": 2074.89,
       "target": 2359.64,
-      "status": "watch",
+      "status": "active",
       "barsWaiting": 0,
-      "lastDate": "2026-11-25",
-      "lastClose": 2141.8
+      "lastDate": "2026-11-26",
+      "lastClose": 2130.8,
+      "entry": 2150,
+      "entryGapPct": 0.18,
+      "entryDate": "2026-11-26",
+      "r": 75.11,
+      "partialBooked": false,
+      "maxHigh": 2170.699951171875,
+      "barsHeld": 1
     },
     {
       "id": "hotlist_2026-11-25_DIVISLAB",
@@ -3563,9 +3610,154 @@
       "stop": 11164.14,
       "target": 13803.97,
       "status": "watch",
+      "barsWaiting": 1,
+      "lastDate": "2026-11-26",
+      "lastClose": 11631
+    },
+    {
+      "id": "swing_2026-11-26_HDFCBANK",
+      "mode": "swing",
+      "symbol": "HDFCBANK",
+      "name": "HDFC Bank Limited",
+      "sector": "Financial Services",
+      "grade": "B",
+      "score": 75.02,
+      "components": {
+        "trend": 15.5,
+        "rs": 15,
+        "sector": 4.41,
+        "setup": 20.3,
+        "volume": 12.27,
+        "fundamentals": 4.07,
+        "riskReward": 8.47
+      },
+      "setup": "breakout",
+      "regime": "caution",
+      "addedDate": "2026-11-26",
+      "trigger": 873.34,
+      "initialStop": 838.77,
+      "stop": 838.77,
+      "target": 977.05,
+      "status": "watch",
       "barsWaiting": 0,
-      "lastDate": "2026-11-25",
-      "lastClose": 11716.5
+      "lastDate": "2026-11-26",
+      "lastClose": 862
+    },
+    {
+      "id": "swing_2026-11-26_ACE",
+      "mode": "swing",
+      "symbol": "ACE",
+      "name": "Action Construction Equipment Limited",
+      "sector": "Industrials",
+      "grade": "B",
+      "score": 74.33,
+      "components": {
+        "trend": 20,
+        "rs": 12.38,
+        "sector": 0.29,
+        "setup": 23.06,
+        "volume": 10.86,
+        "fundamentals": 4.69,
+        "riskReward": 8.05
+      },
+      "setup": "breakout",
+      "regime": "caution",
+      "addedDate": "2026-11-26",
+      "trigger": 1301.6,
+      "initialStop": 1234.19,
+      "stop": 1234.19,
+      "target": 1503.83,
+      "status": "watch",
+      "barsWaiting": 0,
+      "lastDate": "2026-11-26",
+      "lastClose": 1295
+    },
+    {
+      "id": "swing_2026-11-26_HMAAGRO",
+      "mode": "swing",
+      "symbol": "HMAAGRO",
+      "name": "HMA Agro Industries Limited",
+      "sector": "Consumer Defensive",
+      "grade": "B",
+      "score": 73.09,
+      "components": {
+        "trend": 18.5,
+        "rs": 15,
+        "sector": 4.56,
+        "setup": 21.24,
+        "volume": 10.5,
+        "fundamentals": 3.19,
+        "riskReward": 5.1
+      },
+      "setup": "breakout",
+      "regime": "caution",
+      "addedDate": "2026-11-26",
+      "trigger": 47.09,
+      "initialStop": 43.06,
+      "stop": 43.06,
+      "target": 59.17,
+      "status": "watch",
+      "barsWaiting": 0,
+      "lastDate": "2026-11-26",
+      "lastClose": 46.13
+    },
+    {
+      "id": "swing_2026-11-26_J&KBANK",
+      "mode": "swing",
+      "symbol": "J&KBANK",
+      "name": "Jammu and Kashmir Bank Limited",
+      "sector": "Financial Services",
+      "grade": "B",
+      "score": 72.22,
+      "components": {
+        "trend": 17,
+        "rs": 12.16,
+        "sector": 4.41,
+        "setup": 21.98,
+        "volume": 11.08,
+        "fundamentals": 3.2,
+        "riskReward": 7.39
+      },
+      "setup": "breakout",
+      "regime": "caution",
+      "addedDate": "2026-11-26",
+      "trigger": 165.33,
+      "initialStop": 156.61,
+      "stop": 156.61,
+      "target": 191.48,
+      "status": "watch",
+      "barsWaiting": 0,
+      "lastDate": "2026-11-26",
+      "lastClose": 162.82
+    },
+    {
+      "id": "swing_2026-11-26_LAURUSLABS",
+      "mode": "swing",
+      "symbol": "LAURUSLABS",
+      "name": "Laurus Labs Limited",
+      "sector": "Healthcare",
+      "grade": "B",
+      "score": 71.35,
+      "components": {
+        "trend": 20,
+        "rs": 15,
+        "sector": 4.63,
+        "setup": 17.86,
+        "volume": 5.91,
+        "fundamentals": 4.9,
+        "riskReward": 8.05
+      },
+      "setup": "breakout",
+      "regime": "caution",
+      "addedDate": "2026-11-26",
+      "trigger": 2522.03,
+      "initialStop": 2394.8,
+      "stop": 2394.8,
+      "target": 2903.73,
+      "status": "watch",
+      "barsWaiting": 0,
+      "lastDate": "2026-11-26",
+      "lastClose": 2505
     }
   ],
   "summary": [
@@ -3587,47 +3779,47 @@
       "avgLossR": null,
       "avgBarsHeld": null,
       "avgMfeR": null,
-      "openR": 1.02
+      "openR": 0.94
     },
     {
       "mode": "swing",
       "grade": "B",
-      "signals": 62,
-      "watching": 7,
+      "signals": 67,
+      "watching": 8,
       "expired": 0,
-      "cancelled": 17,
-      "triggered": 38,
-      "triggerRatePct": 69.09,
-      "active": 25,
-      "closed": 13,
-      "winRatePct": 7.69,
-      "avgR": -0.59,
-      "totalR": -7.66,
+      "cancelled": 19,
+      "triggered": 40,
+      "triggerRatePct": 67.8,
+      "active": 23,
+      "closed": 17,
+      "winRatePct": 5.88,
+      "avgR": -0.57,
+      "totalR": -9.66,
       "avgWinR": 1.38,
-      "avgLossR": -0.75,
-      "avgBarsHeld": 3.08,
+      "avgLossR": -0.69,
+      "avgBarsHeld": 3.53,
       "avgMfeR": 0.66,
-      "openR": 0.03
+      "openR": -0.03
     },
     {
       "mode": "swing",
       "grade": "all",
-      "signals": 63,
-      "watching": 7,
+      "signals": 68,
+      "watching": 8,
       "expired": 0,
-      "cancelled": 17,
-      "triggered": 39,
-      "triggerRatePct": 69.64,
-      "active": 26,
-      "closed": 13,
-      "winRatePct": 7.69,
-      "avgR": -0.59,
-      "totalR": -7.66,
+      "cancelled": 19,
+      "triggered": 41,
+      "triggerRatePct": 68.33,
+      "active": 24,
+      "closed": 17,
+      "winRatePct": 5.88,
+      "avgR": -0.57,
+      "totalR": -9.66,
       "avgWinR": 1.38,
-      "avgLossR": -0.75,
-      "avgBarsHeld": 3.08,
+      "avgLossR": -0.69,
+      "avgBarsHeld": 3.53,
       "avgMfeR": 0.66,
-      "openR": 0.07
+      "openR": 0.01
     },
     {
       "mode": "positional",
@@ -3653,12 +3845,12 @@
       "mode": "positional",
       "grade": "B",
       "signals": 17,
-      "watching": 7,
+      "watching": 6,
       "expired": 0,
       "cancelled": 2,
-      "triggered": 8,
-      "triggerRatePct": 80,
-      "active": 8,
+      "triggered": 9,
+      "triggerRatePct": 81.82,
+      "active": 9,
       "closed": 0,
       "winRatePct": null,
       "avgR": null,
@@ -3667,18 +3859,18 @@
       "avgLossR": null,
       "avgBarsHeld": null,
       "avgMfeR": null,
-      "openR": -0.16
+      "openR": -0.19
     },
     {
       "mode": "positional",
       "grade": "all",
       "signals": 17,
-      "watching": 7,
+      "watching": 6,
       "expired": 0,
       "cancelled": 2,
-      "triggered": 8,
-      "triggerRatePct": 80,
-      "active": 8,
+      "triggered": 9,
+      "triggerRatePct": 81.82,
+      "active": 9,
       "closed": 0,
       "winRatePct": null,
       "avgR": null,
@@ -3687,7 +3879,7 @@
       "avgLossR": null,
       "avgBarsHeld": null,
       "avgMfeR": null,
-      "openR": -0.16
+      "openR": -0.19
     },
     {
       "mode": "hotlist",
@@ -3707,17 +3899,17 @@
       "avgLossR": null,
       "avgBarsHeld": null,
       "avgMfeR": null,
-      "openR": 1.02
+      "openR": 0.94
     },
     {
       "mode": "hotlist",
       "grade": "B",
       "signals": 22,
-      "watching": 2,
+      "watching": 1,
       "expired": 0,
-      "cancelled": 9,
+      "cancelled": 10,
       "triggered": 11,
-      "triggerRatePct": 55,
+      "triggerRatePct": 52.38,
       "active": 7,
       "closed": 4,
       "winRatePct": 25,
@@ -3727,17 +3919,17 @@
       "avgLossR": -0.67,
       "avgBarsHeld": 4.5,
       "avgMfeR": 0.92,
-      "openR": -0.03
+      "openR": -0.27
     },
     {
       "mode": "hotlist",
       "grade": "all",
       "signals": 23,
-      "watching": 2,
+      "watching": 1,
       "expired": 0,
-      "cancelled": 9,
+      "cancelled": 10,
       "triggered": 12,
-      "triggerRatePct": 57.14,
+      "triggerRatePct": 54.55,
       "active": 8,
       "closed": 4,
       "winRatePct": 25,
@@ -3747,7 +3939,7 @@
       "avgLossR": -0.67,
       "avgBarsHeld": 4.5,
       "avgMfeR": 0.92,
-      "openR": 0.1
+      "openR": -0.12
     }
   ]
 }
