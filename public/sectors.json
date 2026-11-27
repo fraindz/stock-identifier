@@ -1,367 +1,367 @@
 {
-  "generatedAt": "2026-11-26T16:54:29.009Z",
+  "generatedAt": "2026-11-27T16:39:05.378Z",
   "weeks": {
     "currentWeek": {
       "start": "2026-11-23",
-      "end": "2026-11-26"
+      "end": "2026-11-27"
     },
     "lastWeek": {
       "start": "2026-11-16",
       "end": "2026-11-20"
     }
   },
-  "universeSize": 1752,
+  "universeSize": 1773,
   "sectors": [
     {
       "name": "Financial Services",
-      "universeCount": 194,
-      "oneWeekBreadthPct": 83.51,
-      "lastWeekBreadthPct": 42.78,
+      "universeCount": 196,
+      "oneWeekBreadthPct": 83.67,
+      "lastWeekBreadthPct": 42.35,
       "stocks": [
         {
           "symbol": "HDFCBANK",
           "name": "HDFC Bank Limited",
-          "marketCapCr": 1330385
+          "marketCapCr": 1323054
         },
         {
           "symbol": "ICICIBANK",
           "name": "ICICI Bank Limited",
-          "marketCapCr": 1157443
+          "marketCapCr": 1144798
         },
         {
           "symbol": "SBIN",
           "name": "State Bank of India",
-          "marketCapCr": 1049198
+          "marketCapCr": 1037429
         },
         {
           "symbol": "BAJFINANCE",
           "name": "Bajaj Finance Limited",
-          "marketCapCr": 695823
-        },
-        {
-          "symbol": "LICI",
-          "name": "Life Insurance Corporation of India",
-          "marketCapCr": 518650
+          "marketCapCr": 684509
         },
         {
           "symbol": "KOTAKBANK",
           "name": "Kotak Mahindra Bank Limited",
-          "marketCapCr": 507344
+          "marketCapCr": 497445
         },
         {
           "symbol": "AXISBANK",
           "name": "Axis Bank Limited",
-          "marketCapCr": 438606
+          "marketCapCr": 429915
         },
         {
           "symbol": "BAJAJFINSV",
           "name": "Bajaj Finserv Ltd.",
-          "marketCapCr": 301790
+          "marketCapCr": 295885
+        },
+        {
+          "symbol": "LICI",
+          "name": "Life Insurance Corporation of India",
+          "marketCapCr": 256415
         },
         {
           "symbol": "SHRIRAMFIN",
           "name": "Shriram Finance Limited",
-          "marketCapCr": 226337
+          "marketCapCr": 217313
         },
         {
           "symbol": "SBILIFE",
           "name": "SBI Life Insurance Company Limited",
-          "marketCapCr": 184866
+          "marketCapCr": 186241
         },
         {
           "symbol": "PNB",
           "name": "Punjab National Bank",
-          "marketCapCr": 169521
+          "marketCapCr": 168372
         },
         {
           "symbol": "UNIONBANK",
           "name": "Union Bank of India",
-          "marketCapCr": 160458
+          "marketCapCr": 161145
         },
         {
           "symbol": "CHOLAFIN",
           "name": "Cholamandalam Investment and Finance Company Limited",
-          "marketCapCr": 158077
+          "marketCapCr": 154569
         },
         {
           "symbol": "BANKBARODA",
           "name": "Bank of Baroda Limited",
-          "marketCapCr": 142011
+          "marketCapCr": 142161
         },
         {
           "symbol": "BAJAJHLDNG",
           "name": "Bajaj Holdings & Investment Limited",
-          "marketCapCr": 132807
+          "marketCapCr": 130247
         },
         {
           "symbol": "INDIANB",
           "name": "Indian Bank",
-          "marketCapCr": 125672
+          "marketCapCr": 125247
         },
         {
           "symbol": "CANBK",
           "name": "Canara Bank",
-          "marketCapCr": 120095
+          "marketCapCr": 118925
         },
         {
           "symbol": "HDFCAMC",
           "name": "HDFC Asset Management Company Limited",
-          "marketCapCr": 116976
+          "marketCapCr": 116157
         },
         {
           "symbol": "ABCAPITAL",
           "name": "Aditya Birla Capital Limited",
-          "marketCapCr": 113260
-        },
-        {
-          "symbol": "SBIFUNDS",
-          "name": "SBI Funds Management Limited",
-          "marketCapCr": 108746
+          "marketCapCr": 112384
         },
         {
           "symbol": "IRFC",
           "name": "Indian Railway Finance Corporation Limited",
-          "marketCapCr": 107554
+          "marketCapCr": 107488
+        },
+        {
+          "symbol": "SBIFUNDS",
+          "name": "SBI Funds Management Limited",
+          "marketCapCr": 106964
         },
         {
           "symbol": "FEDERALBNK",
           "name": "The Federal Bank Limited",
-          "marketCapCr": 88174
+          "marketCapCr": 88952
         },
         {
           "symbol": "ICICIGI",
           "name": "ICICI Lombard General Insurance Company Limited",
-          "marketCapCr": 86944
-        },
-        {
-          "symbol": "INDUSINDBK",
-          "name": "IndusInd Bank Limited",
-          "marketCapCr": 75273
+          "marketCapCr": 86869
         },
         {
           "symbol": "IDFCFIRSTB",
           "name": "IDFC First Bank Limited",
-          "marketCapCr": 74819
+          "marketCapCr": 74897
         },
         {
-          "symbol": "AUBANK",
-          "name": "AU Small Finance Bank Limited",
-          "marketCapCr": 73593
+          "symbol": "INDUSINDBK",
+          "name": "IndusInd Bank Limited",
+          "marketCapCr": 74673
         },
         {
           "symbol": "BANKINDIA",
           "name": "Bank of India",
-          "marketCapCr": 72975
+          "marketCapCr": 73981
+        },
+        {
+          "symbol": "AUBANK",
+          "name": "AU Small Finance Bank Limited",
+          "marketCapCr": 73806
         },
         {
           "symbol": "MAHABANK",
           "name": "Bank of Maharashtra",
-          "marketCapCr": 72454
+          "marketCapCr": 73631
         },
         {
           "symbol": "ICICILIFE",
           "name": "ICICI Life Insurance Limited",
-          "marketCapCr": 67990
+          "marketCapCr": 67918
         },
         {
           "symbol": "BAJAJHFL",
           "name": "Bajaj Housing Finance Limited",
-          "marketCapCr": 66790
+          "marketCapCr": 66674
         },
         {
           "symbol": "RBLBANK",
           "name": "RBL Bank Limited",
-          "marketCapCr": 60460
+          "marketCapCr": 60577
         },
         {
           "symbol": "IOB",
           "name": "Indian Overseas Bank",
-          "marketCapCr": 59464
+          "marketCapCr": 59291
         },
         {
           "symbol": "YESBANK",
           "name": "Yes Bank Limited",
-          "marketCapCr": 55500
+          "marketCapCr": 55877
         },
         {
           "symbol": "360ONE",
           "name": "360 One Wam Limited",
-          "marketCapCr": 52298
+          "marketCapCr": 53162
         },
         {
           "symbol": "MFSL",
           "name": "Max Financial Services Limited",
-          "marketCapCr": 50169
+          "marketCapCr": 49179
         },
         {
           "symbol": "HDBFS",
           "name": "HDB Financial Services Limited",
-          "marketCapCr": 45729
+          "marketCapCr": 45629
         },
         {
           "symbol": "POONAWALLA",
           "name": "Poonawalla Fincorp Limited",
-          "marketCapCr": 44552
+          "marketCapCr": 43352
         },
         {
           "symbol": "M&MFIN",
           "name": "Mahindra & Mahindra Financial Services Limited",
-          "marketCapCr": 39653
+          "marketCapCr": 39438
         },
         {
           "symbol": "IREDA",
           "name": "Indian Renewable Energy Development Agency Limited",
-          "marketCapCr": 35677
+          "marketCapCr": 35281
         },
         {
           "symbol": "LICHSGFIN",
           "name": "LIC Housing Finance Limited",
-          "marketCapCr": 32798
+          "marketCapCr": 32709
         },
         {
           "symbol": "UCOBANK",
           "name": "UCO Bank",
-          "marketCapCr": 30571
+          "marketCapCr": 30421
         },
         {
           "symbol": "PNBHOUSING",
           "name": "PNB Housing Finance Limited",
-          "marketCapCr": 30560
+          "marketCapCr": 30325
         },
         {
           "symbol": "CENTRALBK",
           "name": "Central Bank of India",
-          "marketCapCr": 29888
+          "marketCapCr": 29861
         },
         {
           "symbol": "ABSLAMC",
           "name": "Aditya Birla Sun Life AMC Limited",
-          "marketCapCr": 28726
+          "marketCapCr": 28452
         },
         {
           "symbol": "BANDHANBNK",
           "name": "Bandhan Bank Limited",
-          "marketCapCr": 27307
+          "marketCapCr": 26852
         },
         {
           "symbol": "CUB",
           "name": "City Union Bank Limited",
-          "marketCapCr": 23680
+          "marketCapCr": 23095
         },
         {
           "symbol": "J&KBANK",
           "name": "Jammu and Kashmir Bank Limited",
-          "marketCapCr": 17929
+          "marketCapCr": 18323
         },
         {
           "symbol": "PSB",
           "name": "Punjab & Sind Bank",
-          "marketCapCr": 14972
+          "marketCapCr": 14993
         },
         {
           "symbol": "TSFINV",
           "name": "TSF Investments Limited",
-          "marketCapCr": 9467
+          "marketCapCr": 9916
         },
         {
           "symbol": "APTUS",
           "name": "Aptus Value Housing Finance India Limited",
-          "marketCapCr": 9361
+          "marketCapCr": 9404
         },
         {
           "symbol": "TFCILTD",
           "name": "Tourism Finance Corporation of India Limited",
-          "marketCapCr": 8099
+          "marketCapCr": 8054
         },
         {
           "symbol": "DCBBANK",
           "name": "DCB Bank Limited",
-          "marketCapCr": 7321
+          "marketCapCr": 7208
         },
         {
           "symbol": "INDIASHLTR",
           "name": "India Shelter Finance Corporation Limited",
-          "marketCapCr": 6791
+          "marketCapCr": 6930
         },
         {
           "symbol": "EQUITASBNK",
           "name": "Equitas Small Finance Bank Limited",
-          "marketCapCr": 6250
+          "marketCapCr": 6179
         },
         {
           "symbol": "CSBBANK",
           "name": "CSB Bank Limited",
-          "marketCapCr": 5063
+          "marketCapCr": 5042
         },
         {
           "symbol": "JSFB",
           "name": "Jana Small Finance Bank Limited",
-          "marketCapCr": 4428
+          "marketCapCr": 4467
         },
         {
           "symbol": "SGFIN",
           "name": "SG Finserve Limited",
-          "marketCapCr": 4099
+          "marketCapCr": 4173
         },
         {
           "symbol": "GCSL",
           "name": "Gretex Corporate Services Limited",
-          "marketCapCr": 2127
+          "marketCapCr": 2129
         },
         {
           "symbol": "BFINVEST",
           "name": "BF Investment Limited",
-          "marketCapCr": 1547
+          "marketCapCr": 1549
         },
         {
           "symbol": "AKCAPIT",
           "name": "A. K. Capital Services Limited",
-          "marketCapCr": 1429
+          "marketCapCr": 1380
         },
         {
           "symbol": "CAPITALSFB",
           "name": "Capital Small Finance Bank Limited",
-          "marketCapCr": 1308
+          "marketCapCr": 1284
         },
         {
           "symbol": "MASTERTR",
           "name": "Master Trust Limited",
-          "marketCapCr": 1112
+          "marketCapCr": 1130
         },
         {
           "symbol": "DAMCAPITAL",
           "name": "DAM Capital Advisors Limited",
-          "marketCapCr": 1056
+          "marketCapCr": 1061
         },
         {
           "symbol": "ZSARACOM",
           "name": "Saraswati Commercial (India) Limited",
-          "marketCapCr": 1042
+          "marketCapCr": 1046
         },
         {
           "symbol": "ARYAMAN",
           "name": "Aryaman Financial Services Limited",
-          "marketCapCr": 1026
+          "marketCapCr": 1022
         },
         {
           "symbol": "CENTRUM",
           "name": "Centrum Capital Limited",
-          "marketCapCr": 917
+          "marketCapCr": 962
         },
         {
           "symbol": "WELINV",
           "name": "Welspun Investments and Commercials Limited",
-          "marketCapCr": 832
+          "marketCapCr": 797
         },
         {
           "symbol": "CIFL",
           "name": "Capital India Finance Limited",
-          "marketCapCr": 737
+          "marketCapCr": 759
         },
         {
           "symbol": "GFLLIMITED",
           "name": "GFL Limited",
-          "marketCapCr": 676
+          "marketCapCr": 673
         },
         {
           "symbol": "CSLFINANCE",
@@ -371,676 +371,686 @@
       ]
     },
     {
-      "name": "Real Estate",
-      "universeCount": 56,
-      "oneWeekBreadthPct": 76.79,
-      "lastWeekBreadthPct": 42.86,
-      "stocks": [
-        {
-          "symbol": "DLF",
-          "name": "DLF Limited",
-          "marketCapCr": 199956
-        },
-        {
-          "symbol": "PHOENIXLTD",
-          "name": "The Phoenix Mills Limited",
-          "marketCapCr": 81950
-        },
-        {
-          "symbol": "PRESTIGE",
-          "name": "Prestige Estates Projects Limited",
-          "marketCapCr": 78914
-        },
-        {
-          "symbol": "OBEROIRLTY",
-          "name": "Oberoi Realty Limited",
-          "marketCapCr": 69273
-        },
-        {
-          "symbol": "GODREJPROP",
-          "name": "Godrej Properties Limited",
-          "marketCapCr": 60375
-        },
-        {
-          "symbol": "HORIZONIND",
-          "name": "Horizon Industrial Parks Limited",
-          "marketCapCr": 14334
-        },
-        {
-          "symbol": "ABREL",
-          "name": "Aditya Birla Real Estate Limited",
-          "marketCapCr": 14292
-        },
-        {
-          "symbol": "SIGNATURE",
-          "name": "Signatureglobal (India) Limited",
-          "marketCapCr": 12047
-        },
-        {
-          "symbol": "MAXESTATES",
-          "name": "Max Estates Limited",
-          "marketCapCr": 10071
-        },
-        {
-          "symbol": "RUSTOMJEE",
-          "name": "Keystone Realtors Limited",
-          "marketCapCr": 4896
-        },
-        {
-          "symbol": "SUNTECK",
-          "name": "Sunteck Realty Limited",
-          "marketCapCr": 4828
-        },
-        {
-          "symbol": "RAYMONDREL",
-          "name": "Raymond Realty Limited",
-          "marketCapCr": 4126
-        },
-        {
-          "symbol": "RUNWALENTR",
-          "name": "Runwal Enterprises Limited",
-          "marketCapCr": 3775
-        },
-        {
-          "symbol": "ASHIANA",
-          "name": "Ashiana Housing Limited",
-          "marketCapCr": 3620
-        },
-        {
-          "symbol": "AJMERA",
-          "name": "Ajmera Realty & Infra India Limited",
-          "marketCapCr": 3212
-        },
-        {
-          "symbol": "MARATHON",
-          "name": "Marathon Nextgen Realty Limited",
-          "marketCapCr": 2953
-        },
-        {
-          "symbol": "ARVSMART",
-          "name": "Arvind SmartSpaces Limited",
-          "marketCapCr": 2900
-        },
-        {
-          "symbol": "ARKADE",
-          "name": "Arkade Developers Limited",
-          "marketCapCr": 2045
-        },
-        {
-          "symbol": "MODIS",
-          "name": "Modi's Navnirman Limited",
-          "marketCapCr": 871
-        },
-        {
-          "symbol": "TREL",
-          "name": "Transindia Real Estate Limited",
-          "marketCapCr": 673
-        },
-        {
-          "symbol": "PTL",
-          "name": "PTL Enterprises Limited",
-          "marketCapCr": 523
-        }
-      ]
-    },
-    {
       "name": "Healthcare",
-      "universeCount": 151,
-      "oneWeekBreadthPct": 77.48,
-      "lastWeekBreadthPct": 41.72,
+      "universeCount": 152,
+      "oneWeekBreadthPct": 77.63,
+      "lastWeekBreadthPct": 42.11,
       "stocks": [
         {
           "symbol": "SUNPHARMA",
           "name": "Sun Pharmaceutical Industries Limited",
-          "marketCapCr": 459641
+          "marketCapCr": 455850
         },
         {
           "symbol": "APOLLOHOSP",
           "name": "Apollo Hospitals Enterprise Limited",
-          "marketCapCr": 132605
+          "marketCapCr": 131247
         },
         {
           "symbol": "LENSKART",
           "name": "Lenskart Solutions Limited",
-          "marketCapCr": 124185
+          "marketCapCr": 124453
         },
         {
           "symbol": "DRREDDY",
           "name": "Dr. Reddy's Laboratories Limited",
-          "marketCapCr": 116047
+          "marketCapCr": 115188
         },
         {
           "symbol": "MANKIND",
           "name": "Mankind Pharma Limited",
-          "marketCapCr": 110913
+          "marketCapCr": 111095
         },
         {
           "symbol": "MAXHEALTH",
           "name": "Max Healthcare Institute Limited",
-          "marketCapCr": 105241
+          "marketCapCr": 104314
         },
         {
           "symbol": "MANIPALHOS",
           "name": "Manipal Health Enterprises Limited",
-          "marketCapCr": 93260
+          "marketCapCr": 92570
         },
         {
           "symbol": "GLENMARK",
           "name": "Glenmark Pharmaceuticals Limited",
-          "marketCapCr": 77335
+          "marketCapCr": 80008
         },
         {
           "symbol": "ASTERDM",
           "name": "Aster DM Quality Care Limited",
-          "marketCapCr": 66894
+          "marketCapCr": 65897
         },
         {
           "symbol": "ABBOTINDIA",
           "name": "Abbott India Limited",
-          "marketCapCr": 58011
+          "marketCapCr": 57681
         },
         {
           "symbol": "ANTHEM",
           "name": "Anthem Biosciences Limited",
-          "marketCapCr": 54972
+          "marketCapCr": 55460
         },
         {
           "symbol": "GLAXO",
           "name": "GlaxoSmithKline Pharmaceuticals Limited",
-          "marketCapCr": 47091
+          "marketCapCr": 46932
         },
         {
           "symbol": "MEDANTA",
           "name": "Global Health Limited",
-          "marketCapCr": 40641
+          "marketCapCr": 39624
         },
         {
           "symbol": "WOCKPHARMA",
           "name": "Wockhardt Limited",
-          "marketCapCr": 36300
+          "marketCapCr": 36474
         },
         {
           "symbol": "LALPATHLAB",
           "name": "Dr. Lal PathLabs Limited",
-          "marketCapCr": 34076
+          "marketCapCr": 33163
         },
         {
           "symbol": "KIMS",
           "name": "Krishna Institute of Medical Sciences Limited",
-          "marketCapCr": 32842
+          "marketCapCr": 32992
         },
         {
           "symbol": "RUBICON",
           "name": "Rubicon Research Limited",
-          "marketCapCr": 30653
+          "marketCapCr": 30944
         },
         {
           "symbol": "GRANULES",
           "name": "Granules India Limited",
-          "marketCapCr": 22727
+          "marketCapCr": 22519
         },
         {
           "symbol": "SAGILITY",
           "name": "Sagility Limited",
-          "marketCapCr": 21815
+          "marketCapCr": 21820
         },
         {
           "symbol": "APLLTD",
           "name": "Alembic Pharmaceuticals Limited",
-          "marketCapCr": 20026
-        },
-        {
-          "symbol": "COHANCE",
-          "name": "Cohance Lifesciences Limited",
-          "marketCapCr": 19231
+          "marketCapCr": 19920
         },
         {
           "symbol": "AGARWALEYE",
           "name": "Dr. Agarwal's Health Care Limited",
-          "marketCapCr": 19027
+          "marketCapCr": 19318
+        },
+        {
+          "symbol": "COHANCE",
+          "name": "Cohance Lifesciences Limited",
+          "marketCapCr": 19037
         },
         {
           "symbol": "ERIS",
           "name": "Eris Lifesciences Limited",
-          "marketCapCr": 18075
+          "marketCapCr": 18049
         },
         {
           "symbol": "SYNGENE",
           "name": "Syngene International Limited",
-          "marketCapCr": 17845
+          "marketCapCr": 18000
         },
         {
           "symbol": "MOLBIO",
           "name": "Molbio Diagnostics Limited",
-          "marketCapCr": 17561
+          "marketCapCr": 17006
         },
         {
           "symbol": "NATCOPHARM",
           "name": "NATCO Pharma Limited",
-          "marketCapCr": 15681
+          "marketCapCr": 15689
         },
         {
           "symbol": "YATHARTH",
           "name": "Yatharth Hospital & Trauma Care Services Limited",
-          "marketCapCr": 10401
+          "marketCapCr": 10376
         },
         {
           "symbol": "THYROCARE",
           "name": "Thyrocare Technologies Limited",
-          "marketCapCr": 8299
+          "marketCapCr": 8296
         },
         {
           "symbol": "KOVAI",
           "name": "Kovai Medical Center and Hospital Limited",
-          "marketCapCr": 7264
+          "marketCapCr": 7185
         },
         {
           "symbol": "NEPHROPLUS",
           "name": "Nephrocare Health Services Limited",
-          "marketCapCr": 6653
+          "marketCapCr": 6747
         },
         {
           "symbol": "ORCHPHARMA",
           "name": "Orchid Pharma Limited",
-          "marketCapCr": 4976
+          "marketCapCr": 5033
         },
         {
           "symbol": "KPL",
           "name": "Kwality Pharmaceuticals Limited",
-          "marketCapCr": 4244
+          "marketCapCr": 4249
         },
         {
           "symbol": "KMCSHIL",
           "name": "KMC Speciality Hospitals (India) Limited",
-          "marketCapCr": 3062
+          "marketCapCr": 3033
         },
         {
           "symbol": "FREDUN",
           "name": "Fredun Pharmaceuticals Limited",
-          "marketCapCr": 2974
+          "marketCapCr": 2895
         },
         {
           "symbol": "SYNCOMF",
           "name": "Syncom Formulations (India) Limited",
-          "marketCapCr": 2204
+          "marketCapCr": 2256
         },
         {
           "symbol": "INDOCO",
           "name": "Indoco Remedies Limited",
-          "marketCapCr": 2175
+          "marketCapCr": 2152
         },
         {
           "symbol": "BPLPHARMA",
           "name": "Bharat Parenterals Limited",
-          "marketCapCr": 1543
+          "marketCapCr": 1604
         },
         {
           "symbol": "TTKHLTCARE",
           "name": "TTK Healthcare Limited",
-          "marketCapCr": 1455
+          "marketCapCr": 1488
         },
         {
           "symbol": "SIGACHI",
           "name": "Sigachi Industries Limited",
-          "marketCapCr": 1154
+          "marketCapCr": 1167
         },
         {
           "symbol": "HEALTHX",
           "name": "Health X Platform Limited",
-          "marketCapCr": 868
-        },
-        {
-          "symbol": "ZIMLAB",
-          "name": "ZIM Laboratories Limited",
-          "marketCapCr": 758
+          "marketCapCr": 867
         },
         {
           "symbol": "KILITCH",
           "name": "Kilitch Drugs (India) Limited",
-          "marketCapCr": 750
+          "marketCapCr": 775
+        },
+        {
+          "symbol": "ZIMLAB",
+          "name": "ZIM Laboratories Limited",
+          "marketCapCr": 764
         },
         {
           "symbol": "FABTECH",
           "name": "Fabtech Technologies Limited",
-          "marketCapCr": 607
+          "marketCapCr": 618
+        },
+        {
+          "symbol": "HALEOSLABS",
+          "name": "Haleos Labs Limited",
+          "marketCapCr": 501
+        }
+      ]
+    },
+    {
+      "name": "Real Estate",
+      "universeCount": 57,
+      "oneWeekBreadthPct": 75.44,
+      "lastWeekBreadthPct": 42.11,
+      "stocks": [
+        {
+          "symbol": "DLF",
+          "name": "DLF Limited",
+          "marketCapCr": 199374
+        },
+        {
+          "symbol": "PHOENIXLTD",
+          "name": "The Phoenix Mills Limited",
+          "marketCapCr": 79757
+        },
+        {
+          "symbol": "PRESTIGE",
+          "name": "Prestige Estates Projects Limited",
+          "marketCapCr": 77389
+        },
+        {
+          "symbol": "OBEROIRLTY",
+          "name": "Oberoi Realty Limited",
+          "marketCapCr": 68692
+        },
+        {
+          "symbol": "GODREJPROP",
+          "name": "Godrej Properties Limited",
+          "marketCapCr": 58528
+        },
+        {
+          "symbol": "ABREL",
+          "name": "Aditya Birla Real Estate Limited",
+          "marketCapCr": 14108
+        },
+        {
+          "symbol": "HORIZONIND",
+          "name": "Horizon Industrial Parks Limited",
+          "marketCapCr": 13922
+        },
+        {
+          "symbol": "SIGNATURE",
+          "name": "Signatureglobal (India) Limited",
+          "marketCapCr": 11906
+        },
+        {
+          "symbol": "MAXESTATES",
+          "name": "Max Estates Limited",
+          "marketCapCr": 9946
+        },
+        {
+          "symbol": "SUNTECK",
+          "name": "Sunteck Realty Limited",
+          "marketCapCr": 4881
+        },
+        {
+          "symbol": "RUSTOMJEE",
+          "name": "Keystone Realtors Limited",
+          "marketCapCr": 4880
+        },
+        {
+          "symbol": "RAYMONDREL",
+          "name": "Raymond Realty Limited",
+          "marketCapCr": 4343
+        },
+        {
+          "symbol": "RUNWALENTR",
+          "name": "Runwal Enterprises Limited",
+          "marketCapCr": 3693
+        },
+        {
+          "symbol": "ASHIANA",
+          "name": "Ashiana Housing Limited",
+          "marketCapCr": 3632
+        },
+        {
+          "symbol": "AJMERA",
+          "name": "Ajmera Realty & Infra India Limited",
+          "marketCapCr": 3158
+        },
+        {
+          "symbol": "MARATHON",
+          "name": "Marathon Nextgen Realty Limited",
+          "marketCapCr": 2979
+        },
+        {
+          "symbol": "ARVSMART",
+          "name": "Arvind SmartSpaces Limited",
+          "marketCapCr": 2904
+        },
+        {
+          "symbol": "ARKADE",
+          "name": "Arkade Developers Limited",
+          "marketCapCr": 2181
+        },
+        {
+          "symbol": "MODIS",
+          "name": "Modi's Navnirman Limited",
+          "marketCapCr": 892
+        },
+        {
+          "symbol": "TREL",
+          "name": "Transindia Real Estate Limited",
+          "marketCapCr": 652
+        },
+        {
+          "symbol": "PTL",
+          "name": "PTL Enterprises Limited",
+          "marketCapCr": 524
         }
       ]
     },
     {
       "name": "Consumer Cyclical",
-      "universeCount": 314,
-      "oneWeekBreadthPct": 73.25,
-      "lastWeekBreadthPct": 36.31,
+      "universeCount": 313,
+      "oneWeekBreadthPct": 72.52,
+      "lastWeekBreadthPct": 36.74,
       "stocks": [
         {
           "symbol": "MARUTI",
           "name": "Maruti Suzuki India Limited",
-          "marketCapCr": 440635
+          "marketCapCr": 432775
         },
         {
           "symbol": "M&M",
           "name": "Mahindra & Mahindra Limited",
-          "marketCapCr": 418766
+          "marketCapCr": 414263
         },
         {
           "symbol": "ETERNAL",
           "name": "Eternal Limited",
-          "marketCapCr": 338754
+          "marketCapCr": 334424
         },
         {
-          "symbol": "MOTHERSON",
-          "name": "Samvardhana Motherson International Limited",
-          "marketCapCr": 174991
+          "symbol": "TVSMOTOR",
+          "name": "TVS Motor Company Limited",
+          "marketCapCr": 215111
         },
         {
           "symbol": "TRENT",
           "name": "Trent Limited",
-          "marketCapCr": 173972
+          "marketCapCr": 174527
+        },
+        {
+          "symbol": "MOTHERSON",
+          "name": "Samvardhana Motherson International Limited",
+          "marketCapCr": 171685
         },
         {
           "symbol": "TMCV",
           "name": "Tata Motors Limited",
-          "marketCapCr": 158730
+          "marketCapCr": 156502
         },
         {
           "symbol": "INDHOTEL",
           "name": "The Indian Hotels Company Limited",
-          "marketCapCr": 126216
+          "marketCapCr": 125945
         },
         {
           "symbol": "MEESHO",
           "name": "Meesho Limited",
-          "marketCapCr": 116395
+          "marketCapCr": 119702
         },
         {
           "symbol": "SCHAEFFLER",
           "name": "Schaeffler India Limited",
-          "marketCapCr": 57859
+          "marketCapCr": 57190
         },
         {
           "symbol": "MRF",
           "name": "MRF Limited",
-          "marketCapCr": 54484
+          "marketCapCr": 54287
         },
         {
           "symbol": "VOLTAS",
           "name": "Voltas Limited",
-          "marketCapCr": 40219
+          "marketCapCr": 39269
         },
         {
           "symbol": "ENDURANCE",
           "name": "Endurance Technologies Limited",
-          "marketCapCr": 37934
+          "marketCapCr": 36395
         },
         {
           "symbol": "EXIDEIND",
           "name": "Exide Industries Limited",
-          "marketCapCr": 32899
+          "marketCapCr": 33924
         },
         {
           "symbol": "CRAFTSMAN",
           "name": "Craftsman Automation Limited",
-          "marketCapCr": 31019
-        },
-        {
-          "symbol": "ASAHIINDIA",
-          "name": "Asahi India Glass Limited",
-          "marketCapCr": 30333
+          "marketCapCr": 31398
         },
         {
           "symbol": "GABRIEL",
           "name": "Gabriel India Limited",
-          "marketCapCr": 29460
+          "marketCapCr": 29642
         },
         {
           "symbol": "SANSERA",
           "name": "Sansera Engineering Limited",
-          "marketCapCr": 29248
+          "marketCapCr": 29600
         },
         {
-          "symbol": "FORCEMOT",
-          "name": "Force Motors Limited",
-          "marketCapCr": 26830
+          "symbol": "ASAHIINDIA",
+          "name": "Asahi India Glass Limited",
+          "marketCapCr": 29526
         },
         {
           "symbol": "WELSPUNLIV",
           "name": "Welspun Living Limited",
-          "marketCapCr": 26393
+          "marketCapCr": 26880
+        },
+        {
+          "symbol": "FORCEMOT",
+          "name": "Force Motors Limited",
+          "marketCapCr": 26588
         },
         {
           "symbol": "BELRISE",
           "name": "Belrise Industries Limited",
-          "marketCapCr": 23315
+          "marketCapCr": 23312
         },
         {
           "symbol": "EIHOTEL",
           "name": "EIH Limited",
-          "marketCapCr": 20806
+          "marketCapCr": 21122
         },
         {
           "symbol": "TENNIND",
           "name": "Tenneco Clean Air India Limited",
-          "marketCapCr": 17958
+          "marketCapCr": 18150
         },
         {
           "symbol": "MINDACORP",
           "name": "Minda Corporation Limited",
-          "marketCapCr": 16685
+          "marketCapCr": 17291
         },
         {
           "symbol": "CIEINDIA",
           "name": "CIE Automotive India Limited",
-          "marketCapCr": 14048
+          "marketCapCr": 14160
         },
         {
           "symbol": "ARVIND",
           "name": "Arvind Limited",
-          "marketCapCr": 13381
+          "marketCapCr": 14010
         },
         {
           "symbol": "ICIL",
           "name": "Indo Count Industries Limited",
-          "marketCapCr": 11686
+          "marketCapCr": 11717
         },
         {
           "symbol": "JKTYRE",
           "name": "JK Tyre & Industries Limited",
-          "marketCapCr": 10381
+          "marketCapCr": 10531
         },
         {
           "symbol": "TIMETECHNO",
           "name": "Time Technoplast Limited",
-          "marketCapCr": 9846
-        },
-        {
-          "symbol": "LEMONTREE",
-          "name": "Lemon Tree Hotels Limited",
-          "marketCapCr": 9767
+          "marketCapCr": 9881
         },
         {
           "symbol": "BANCOINDIA",
           "name": "Banco Products (India) Limited",
-          "marketCapCr": 9705
+          "marketCapCr": 9835
+        },
+        {
+          "symbol": "LEMONTREE",
+          "name": "Lemon Tree Hotels Limited",
+          "marketCapCr": 9784
         },
         {
           "symbol": "DYNAMATECH",
           "name": "Dynamatic Technologies Limited",
-          "marketCapCr": 8981
+          "marketCapCr": 9424
         },
         {
           "symbol": "CELLO",
           "name": "Cello World Limited",
-          "marketCapCr": 8530
+          "marketCapCr": 8563
         },
         {
           "symbol": "FIRSTCRY",
           "name": "Brainbees Solutions Limited",
-          "marketCapCr": 7824
+          "marketCapCr": 7781
         },
         {
           "symbol": "SAFARI",
           "name": "Safari Industries (India) Limited",
-          "marketCapCr": 7662
+          "marketCapCr": 7627
         },
         {
           "symbol": "EUREKAFORB",
           "name": "Eureka Forbes Limited",
-          "marketCapCr": 7253
+          "marketCapCr": 7280
         },
         {
           "symbol": "GARFIBRES",
           "name": "Garware Technical Fibres Limited",
-          "marketCapCr": 7011
+          "marketCapCr": 7177
         },
         {
           "symbol": "SJS",
           "name": "S.J.S. Enterprises Limited",
-          "marketCapCr": 6740
+          "marketCapCr": 6694
         },
         {
           "symbol": "SFL",
           "name": "Sheela Foam Limited",
-          "marketCapCr": 6356
+          "marketCapCr": 6305
         },
         {
           "symbol": "THOMASCOOK",
           "name": "Thomas Cook (India) Limited",
-          "marketCapCr": 6333
+          "marketCapCr": 5942
         },
         {
           "symbol": "SHARDAMOTR",
           "name": "Sharda Motor Industries Limited",
-          "marketCapCr": 5594
-        },
-        {
-          "symbol": "STYLAMIND",
-          "name": "Stylam Industries Limited",
-          "marketCapCr": 5594
+          "marketCapCr": 5746
         },
         {
           "symbol": "KDDL",
           "name": "KDDL Limited",
-          "marketCapCr": 5548
+          "marketCapCr": 5560
+        },
+        {
+          "symbol": "STYLAMIND",
+          "name": "Stylam Industries Limited",
+          "marketCapCr": 5510
         },
         {
           "symbol": "FIEMIND",
           "name": "Fiem Industries Limited",
-          "marketCapCr": 5298
+          "marketCapCr": 5429
         },
         {
           "symbol": "FILATEX",
           "name": "Filatex India Limited",
-          "marketCapCr": 4887
+          "marketCapCr": 4999
         },
         {
           "symbol": "BOSCH-HCIL",
           "name": "Bosch Home Comfort India Limited",
-          "marketCapCr": 4706
+          "marketCapCr": 4688
         },
         {
           "symbol": "HAWKINCOOK",
           "name": "Hawkins Cookers Limited",
-          "marketCapCr": 4396
+          "marketCapCr": 4388
         },
         {
           "symbol": "SUBROS",
           "name": "Subros Limited",
-          "marketCapCr": 4187
+          "marketCapCr": 4202
         },
         {
           "symbol": "STYLEBAAZA",
           "name": "Baazar Style Retail Limited",
-          "marketCapCr": 4073
+          "marketCapCr": 4048
         },
         {
           "symbol": "NITINSPIN",
           "name": "Nitin Spinners Limited",
-          "marketCapCr": 3803
+          "marketCapCr": 3900
         },
         {
           "symbol": "TVSSRICHAK",
           "name": "TVS Srichakra Limited",
-          "marketCapCr": 3490
-        },
-        {
-          "symbol": "SANGAMIND",
-          "name": "Sangam (India) Limited",
-          "marketCapCr": 3334
-        },
-        {
-          "symbol": "JTEKTINDIA",
-          "name": "JTEKT India Limited",
-          "marketCapCr": 3322
+          "marketCapCr": 3449
         },
         {
           "symbol": "RAYMONDLSL",
           "name": "Raymond Lifestyle Limited",
-          "marketCapCr": 3299
+          "marketCapCr": 3400
         },
         {
-          "symbol": "ORIENTHOT",
-          "name": "Oriental Hotels Limited",
-          "marketCapCr": 3176
+          "symbol": "SANGAMIND",
+          "name": "Sangam (India) Limited",
+          "marketCapCr": 3388
+        },
+        {
+          "symbol": "JTEKTINDIA",
+          "name": "JTEKT India Limited",
+          "marketCapCr": 3298
         },
         {
           "symbol": "SPORTKING",
           "name": "Sportking India Limited",
-          "marketCapCr": 2937
+          "marketCapCr": 3169
+        },
+        {
+          "symbol": "ORIENTHOT",
+          "name": "Oriental Hotels Limited",
+          "marketCapCr": 3123
         },
         {
           "symbol": "SANDHAR",
           "name": "Sandhar Technologies Limited",
-          "marketCapCr": 2927
+          "marketCapCr": 2995
         },
         {
           "symbol": "SIYSIL",
           "name": "Siyaram Silk Mills Limited",
-          "marketCapCr": 2351
+          "marketCapCr": 2416
         },
         {
           "symbol": "SPAL",
           "name": "S.P. Apparels Limited",
-          "marketCapCr": 2289
+          "marketCapCr": 2317
         },
         {
           "symbol": "BRIGHOTEL",
           "name": "Brigade Hotel Ventures Limited",
-          "marketCapCr": 2186
+          "marketCapCr": 2164
         },
         {
           "symbol": "LAOPALA",
           "name": "La Opala RG Limited",
-          "marketCapCr": 1769
+          "marketCapCr": 1762
         },
         {
           "symbol": "EIHAHOTELS",
           "name": "EIH Associated Hotels Limited",
-          "marketCapCr": 1746
+          "marketCapCr": 1750
         },
         {
           "symbol": "AYMSYNTEX",
           "name": "AYM Syntex Limited",
-          "marketCapCr": 1553
-        },
-        {
-          "symbol": "EPACK",
-          "name": "EPACK Durable Limited",
-          "marketCapCr": 1427
-        },
-        {
-          "symbol": "LGHL",
-          "name": "Laxmi Goldorna House Limited",
-          "marketCapCr": 1413
+          "marketCapCr": 1546
         },
         {
           "symbol": "GHCLTEXTIL",
           "name": "GHCL Textiles Limited",
-          "marketCapCr": 1396
+          "marketCapCr": 1442
+        },
+        {
+          "symbol": "EPACK",
+          "name": "EPACK Durable Limited",
+          "marketCapCr": 1399
+        },
+        {
+          "symbol": "LGHL",
+          "name": "Laxmi Goldorna House Limited",
+          "marketCapCr": 1394
         },
         {
           "symbol": "JAYBARMARU",
           "name": "Jay Bharat Maruti Limited",
-          "marketCapCr": 1381
+          "marketCapCr": 1389
         },
         {
           "symbol": "YATRA",
@@ -1050,32 +1060,32 @@
         {
           "symbol": "FAZE3Q",
           "name": "Faze Three Limited",
-          "marketCapCr": 1337
+          "marketCapCr": 1373
         },
         {
           "symbol": "DVL",
           "name": "Dhunseri Ventures Limited",
-          "marketCapCr": 1039
+          "marketCapCr": 1038
         },
         {
           "symbol": "RSWM",
           "name": "RSWM Limited",
-          "marketCapCr": 900
+          "marketCapCr": 929
         },
         {
           "symbol": "PRECOT",
           "name": "Precot Limited",
-          "marketCapCr": 835
+          "marketCapCr": 843
         },
         {
           "symbol": "HALDYNGL",
           "name": "Haldyn Glass Limited",
-          "marketCapCr": 824
+          "marketCapCr": 812
         },
         {
           "symbol": "ENKEIWHEL",
           "name": "Enkei Wheels (India) Limited",
-          "marketCapCr": 718
+          "marketCapCr": 712
         },
         {
           "symbol": "HITECHCORP",
@@ -1085,22 +1095,22 @@
         {
           "symbol": "SONA",
           "name": "Sonaselection India Limited",
-          "marketCapCr": 700
+          "marketCapCr": 702
         },
         {
           "symbol": "SHREERAMA",
           "name": "Shree Rama Multi-Tech Limited",
-          "marketCapCr": 695
+          "marketCapCr": 700
         },
         {
           "symbol": "BORANA",
           "name": "Borana Weaves Limited",
-          "marketCapCr": 662
+          "marketCapCr": 656
         },
         {
           "symbol": "TPLPLASTEH",
           "name": "TPL Plastech Limited",
-          "marketCapCr": 576
+          "marketCapCr": 574
         },
         {
           "symbol": "MANOMAY",
@@ -1111,134 +1121,134 @@
     },
     {
       "name": "Consumer Defensive",
-      "universeCount": 106,
-      "oneWeekBreadthPct": 68.87,
-      "lastWeekBreadthPct": 35.85,
+      "universeCount": 107,
+      "oneWeekBreadthPct": 69.16,
+      "lastWeekBreadthPct": 35.51,
       "stocks": [
         {
           "symbol": "ITC",
           "name": "ITC Limited",
-          "marketCapCr": 384754
+          "marketCapCr": 381871
         },
         {
           "symbol": "DMART",
           "name": "Avenue Supermarts Limited",
-          "marketCapCr": 230461
+          "marketCapCr": 231003
         },
         {
           "symbol": "MARICO",
           "name": "Marico Limited",
-          "marketCapCr": 121899
+          "marketCapCr": 119718
         },
         {
           "symbol": "GODREJCP",
           "name": "Godrej Consumer Products Limited",
-          "marketCapCr": 96973
+          "marketCapCr": 94046
         },
         {
           "symbol": "DABUR",
           "name": "Dabur India Limited",
-          "marketCapCr": 74245
+          "marketCapCr": 73225
         },
         {
           "symbol": "RADICO",
           "name": "Radico Khaitan Limited",
-          "marketCapCr": 62586
+          "marketCapCr": 62259
         },
         {
           "symbol": "COLPAL",
           "name": "Colgate-Palmolive (India) Limited",
-          "marketCapCr": 48957
+          "marketCapCr": 48141
         },
         {
           "symbol": "PWL",
           "name": "Physicswallah Limited",
-          "marketCapCr": 39689
+          "marketCapCr": 38248
         },
         {
           "symbol": "UBL",
           "name": "United Breweries Limited",
-          "marketCapCr": 33656
+          "marketCapCr": 33728
         },
         {
           "symbol": "MILKYMIST",
           "name": "Milky Mist Dairy Food Limited",
-          "marketCapCr": 27510
+          "marketCapCr": 27695
         },
         {
           "symbol": "ABDL",
           "name": "Allied Blenders and Distillers Limited",
-          "marketCapCr": 22945
+          "marketCapCr": 23440
         },
         {
           "symbol": "EMAMILTD",
           "name": "Emami Limited",
-          "marketCapCr": 18099
+          "marketCapCr": 17784
         },
         {
           "symbol": "HONASA",
           "name": "Honasa Consumer Limited",
-          "marketCapCr": 17399
+          "marketCapCr": 16723
         },
         {
           "symbol": "LTFOODS",
           "name": "LT Foods Limited",
-          "marketCapCr": 14710
+          "marketCapCr": 14625
         },
         {
           "symbol": "TI",
           "name": "Tilaknagar Industries Ltd.",
-          "marketCapCr": 13639
+          "marketCapCr": 13308
         },
         {
           "symbol": "BIKAJI",
           "name": "Bikaji Foods International Limited",
-          "marketCapCr": 13134
+          "marketCapCr": 13224
         },
         {
           "symbol": "KWIL",
           "name": "Kwality Walls (India) Limited",
-          "marketCapCr": 9673
+          "marketCapCr": 9748
         },
         {
           "symbol": "BBTC",
           "name": "The Bombay Burmah Trading Corporation Limited",
-          "marketCapCr": 9142
+          "marketCapCr": 9071
         },
         {
           "symbol": "BECTORFOOD",
           "name": "Mrs. Bectors Food Specialities Limited",
-          "marketCapCr": 6969
+          "marketCapCr": 7023
         },
         {
           "symbol": "PARAGMILK",
           "name": "Parag Milk Foods Limited",
-          "marketCapCr": 3943
+          "marketCapCr": 4310
         },
         {
           "symbol": "GOPAL",
           "name": "Gopal Snacks Limited",
-          "marketCapCr": 3360
+          "marketCapCr": 3386
         },
         {
           "symbol": "SEIL",
           "name": "Shanti Educational Initiatives Limited",
-          "marketCapCr": 3080
+          "marketCapCr": 3006
         },
         {
           "symbol": "GLOBUSSPR",
           "name": "Globus Spirits Limited",
-          "marketCapCr": 2331
+          "marketCapCr": 2327
         },
         {
           "symbol": "HMAAGRO",
           "name": "HMA Agro Industries Limited",
-          "marketCapCr": 2310
+          "marketCapCr": 2079
         },
         {
           "symbol": "REGAAL",
           "name": "Regaal Resources Limited",
-          "marketCapCr": 1015
+          "marketCapCr": 981
         }
       ]
     }
