@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-27T16:39:05.408Z",
+  "generatedAt": "2026-11-27T16:53:08.893Z",
   "minMarketCapCr": 1000,
   "peakWithinWeeks": 12,
   "rallyWeeks": 12,
   "minRallyPct": 20,
   "minRetracePct": 25,
   "maxRetracePct": 62,
-  "universeSize": 1477,
+  "universeSize": 1463,
   "failed": [],
   "weeks": {
     "currentWeek": {

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T16:39:05.378Z",
+  "generatedAt": "2026-11-27T16:53:08.861Z",
   "weeks": {
     "currentWeek": {
       "start": "2026-11-23",
@@ -10,13 +10,13 @@
       "end": "2026-11-20"
     }
   },
-  "universeSize": 1773,
+  "universeSize": 1759,
   "sectors": [
     {
       "name": "Financial Services",
-      "universeCount": 196,
-      "oneWeekBreadthPct": 83.67,
-      "lastWeekBreadthPct": 42.35,
+      "universeCount": 194,
+      "oneWeekBreadthPct": 83.51,
+      "lastWeekBreadthPct": 42.78,
       "stocks": [
         {
           "symbol": "HDFCBANK",
@@ -39,6 +39,11 @@
           "marketCapCr": 684509
         },
         {
+          "symbol": "LICI",
+          "name": "Life Insurance Corporation of India",
+          "marketCapCr": 512831
+        },
+        {
           "symbol": "KOTAKBANK",
           "name": "Kotak Mahindra Bank Limited",
           "marketCapCr": 497445
@@ -52,11 +57,6 @@
           "symbol": "BAJAJFINSV",
           "name": "Bajaj Finserv Ltd.",
           "marketCapCr": 295885
-        },
-        {
-          "symbol": "LICI",
-          "name": "Life Insurance Corporation of India",
-          "marketCapCr": 256415
         },
         {
           "symbol": "SHRIRAMFIN",
@@ -266,7 +266,7 @@
         {
           "symbol": "APTUS",
           "name": "Aptus Value Housing Finance India Limited",
-          "marketCapCr": 9404
+          "marketCapCr": 9405
         },
         {
           "symbol": "TFCILTD",
@@ -584,7 +584,7 @@
         {
           "symbol": "ZIMLAB",
           "name": "ZIM Laboratories Limited",
-          "marketCapCr": 764
+          "marketCapCr": 762
         },
         {
           "symbol": "FABTECH",
@@ -600,9 +600,9 @@
     },
     {
       "name": "Real Estate",
-      "universeCount": 57,
-      "oneWeekBreadthPct": 75.44,
-      "lastWeekBreadthPct": 42.11,
+      "universeCount": 56,
+      "oneWeekBreadthPct": 76.79,
+      "lastWeekBreadthPct": 42.86,
       "stocks": [
         {
           "symbol": "DLF",
@@ -713,9 +713,9 @@
     },
     {
       "name": "Consumer Cyclical",
-      "universeCount": 313,
-      "oneWeekBreadthPct": 72.52,
-      "lastWeekBreadthPct": 36.74,
+      "universeCount": 314,
+      "oneWeekBreadthPct": 73.25,
+      "lastWeekBreadthPct": 36.31,
       "stocks": [
         {
           "symbol": "MARUTI",
@@ -731,11 +731,6 @@
           "symbol": "ETERNAL",
           "name": "Eternal Limited",
           "marketCapCr": 334424
-        },
-        {
-          "symbol": "TVSMOTOR",
-          "name": "TVS Motor Company Limited",
-          "marketCapCr": 215111
         },
         {
           "symbol": "TRENT",
@@ -845,7 +840,7 @@
         {
           "symbol": "ARVIND",
           "name": "Arvind Limited",
-          "marketCapCr": 14010
+          "marketCapCr": 13500
         },
         {
           "symbol": "ICIL",
@@ -915,7 +910,7 @@
         {
           "symbol": "THOMASCOOK",
           "name": "Thomas Cook (India) Limited",
-          "marketCapCr": 5942
+          "marketCapCr": 5998
         },
         {
           "symbol": "SHARDAMOTR",
@@ -1060,7 +1055,7 @@
         {
           "symbol": "FAZE3Q",
           "name": "Faze Three Limited",
-          "marketCapCr": 1373
+          "marketCapCr": 1357
         },
         {
           "symbol": "DVL",

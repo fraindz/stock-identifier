@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T16:39:22.463Z",
+  "generatedAt": "2026-11-27T16:53:27.151Z",
   "asOf": "2026-11-27",
   "regime": {
     "regime": "caution",
@@ -8,7 +8,7 @@
     "niftyVs50Pct": 8.23,
     "niftyVs200Pct": 6.68,
     "sma50Rising": true,
-    "breadthPct": 44.05,
+    "breadthPct": 43.92,
     "note": "Mixed market: 5 points deducted from every score"
   },
   "rules": {
@@ -320,7 +320,7 @@
           "label": "Relative strength",
           "points": 13.2,
           "max": 15,
-          "note": "+9.8% vs Nifty, +17.4% vs Consumer Cyclical"
+          "note": "+9.8% vs Nifty, +17.3% vs Consumer Cyclical"
         },
         {
           "key": "sector",
@@ -369,9 +369,9 @@
       "marketCapCr": 8529,
       "grade": "B",
       "close": 1278.6,
-      "avgScore": 65.98,
+      "avgScore": 66.01,
       "swing": {
-        "score": 71.94,
+        "score": 71.97,
         "grade": "B",
         "setup": "breakout",
         "setupNote": "Closed 2.3% above the 20-day high on 2.3× volume",
@@ -380,7 +380,7 @@
         "riskPct": 6.82
       },
       "positional": {
-        "score": 60.02,
+        "score": 60.05,
         "grade": "C",
         "setup": "pullback",
         "setupNote": "42.21% pullback of a 134.32% rally, turned up last week",
@@ -406,12 +406,12 @@
           "label": "Relative strength",
           "points": 15,
           "max": 15,
-          "note": "+52.9% vs Nifty, +63.4% vs Industrials"
+          "note": "+52.9% vs Nifty, +63.3% vs Industrials"
         },
         {
           "key": "sector",
           "label": "Sector strength",
-          "points": 0.86,
+          "points": 0.89,
           "max": 10,
           "note": "Industrials -9.3% vs Nifty, 39% above 50-DMA; weak: sector lagging Nifty, narrow sector breadth, sector index below 50-DMA"
         },

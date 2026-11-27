@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-27T16:39:05.491Z",
+  "generatedAt": "2026-11-27T16:53:08.987Z",
   "asOf": "2026-11-27",
-  "universeSize": 1731,
+  "universeSize": 1717,
   "stocks": [
     {
       "symbol": "SOLARWORLD",
@@ -42,26 +42,6 @@
       "stop": 784.49,
       "target": 949.34,
       "score": 35.64
-    },
-    {
-      "symbol": "UNITECH",
-      "name": "Unitech Limited",
-      "sector": "Real Estate",
-      "marketCapCr": 1256,
-      "suggestionDate": "2026-11-27",
-      "close": 4.8,
-      "change5Pct": 25.65,
-      "change20Pct": 31.51,
-      "rsi": 75.43,
-      "ema20": 3.94,
-      "ema50": 3.96,
-      "volumeRatio": 9.06,
-      "high20": 4.84,
-      "atr": 0.21,
-      "entry": 4.8,
-      "stop": 4.48,
-      "target": 5.76,
-      "score": 34.71
     },
     {
       "symbol": "GEOJITFSL",
@@ -407,7 +387,7 @@
       "symbol": "GOKEX",
       "name": "Gokaldas Exports Limited",
       "sector": "Consumer Cyclical",
-      "marketCapCr": 5815,
+      "marketCapCr": 5816,
       "suggestionDate": "2026-11-27",
       "close": 793.65,
       "change5Pct": 7.45,
