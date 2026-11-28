@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T16:53:08.987Z",
+  "generatedAt": "2026-11-28T08:49:48.376Z",
   "asOf": "2026-11-27",
   "universeSize": 1717,
   "stocks": [
@@ -135,13 +135,13 @@
       "rsi": 56.37,
       "ema20": 24.72,
       "ema50": 27.73,
-      "volumeRatio": 4.41,
+      "volumeRatio": 4.42,
       "high20": 27.49,
       "atr": 1.81,
       "entry": 26.55,
       "stop": 23.83,
       "target": 34.7,
-      "score": 20.55
+      "score": 20.56
     },
     {
       "symbol": "PRAJIND",
@@ -175,13 +175,13 @@
       "rsi": 70.58,
       "ema20": 706.18,
       "ema50": 716.17,
-      "volumeRatio": 3.01,
+      "volumeRatio": 3.02,
       "high20": 795.55,
       "atr": 32.25,
       "entry": 789.2,
       "stop": 740.83,
       "target": 934.31,
-      "score": 18.79
+      "score": 18.8
     },
     {
       "symbol": "MAFATIND",
@@ -195,13 +195,13 @@
       "rsi": 61.94,
       "ema20": 109,
       "ema50": 112.58,
-      "volumeRatio": 9.3,
+      "volumeRatio": 9.31,
       "high20": 121.8,
       "atr": 4.92,
       "entry": 118.83,
       "stop": 111.45,
       "target": 140.97,
-      "score": 18.41
+      "score": 18.42
     },
     {
       "symbol": "SAATVIKGL",
@@ -315,13 +315,13 @@
       "rsi": 71.31,
       "ema20": 90.3,
       "ema50": 85.43,
-      "volumeRatio": 2.21,
+      "volumeRatio": 2.22,
       "high20": 103.87,
       "atr": 6.54,
       "entry": 102.97,
       "stop": 93.16,
       "target": 109.24,
-      "score": 15.31
+      "score": 15.32
     },
     {
       "symbol": "DWARKESH",
@@ -355,13 +355,13 @@
       "rsi": 74.71,
       "ema20": 336.3,
       "ema50": 318.65,
-      "volumeRatio": 2.74,
+      "volumeRatio": 2.75,
       "high20": 382.9,
       "atr": 16.6,
       "entry": 376,
       "stop": 351.1,
       "target": 450.7,
-      "score": 14.5
+      "score": 14.51
     },
     {
       "symbol": "SPORTKING",
@@ -535,13 +535,13 @@
       "rsi": 53.25,
       "ema20": 18.46,
       "ema50": 19.86,
-      "volumeRatio": 2.29,
+      "volumeRatio": 2.3,
       "high20": 19.25,
       "atr": 0.69,
       "entry": 18.99,
       "stop": 17.95,
       "target": 22.12,
-      "score": 8.86
+      "score": 8.87
     },
     {
       "symbol": "SUPRIYA",
@@ -635,13 +635,13 @@
       "rsi": 65.98,
       "ema20": 112.02,
       "ema50": 114.98,
-      "volumeRatio": 4.37,
+      "volumeRatio": 4.38,
       "high20": 119,
       "atr": 3.98,
       "entry": 117.47,
       "stop": 111.49,
       "target": 135.4,
-      "score": 7.38
+      "score": 7.39
     },
     {
       "symbol": "BDL",
@@ -695,13 +695,13 @@
       "rsi": 45.33,
       "ema20": 89.04,
       "ema50": 97.59,
-      "volumeRatio": 2.85,
+      "volumeRatio": 2.86,
       "high20": 98.3,
       "atr": 3.92,
       "entry": 89.62,
       "stop": 83.74,
       "target": 107.26,
-      "score": 6.15
+      "score": 6.16
     },
     {
       "symbol": "WAKEFIT",
@@ -754,7 +754,7 @@
       "change20Pct": 1.09,
       "rsi": 61.08,
       "ema20": 18878.38,
-      "ema50": 19167.36,
+      "ema50": 19167.34,
       "volumeRatio": 2.46,
       "high20": 20880,
       "atr": 520.36,

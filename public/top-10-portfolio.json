@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-27T16:53:27.387Z",
+  "updatedAt": "2026-11-28T08:50:05.360Z",
   "asOf": "2026-11-27",
-  "lastReviewWeek": "2026-11-16",
+  "lastReviewWeek": "2026-11-23",
   "rules": {
     "minMarketCapCr": 1000,
     "minTradedValueCr": 10,
@@ -52,7 +52,7 @@
       "addedWeek": "2026-11-09",
       "reviewsWaiting": 0,
       "rankAtAdd": 3,
-      "lastRank": 3,
+      "lastRank": 5,
       "status": "active",
       "trigger": 676.97,
       "initialStop": 597.2,
@@ -128,7 +128,7 @@
       "addedWeek": "2026-11-09",
       "reviewsWaiting": 0,
       "rankAtAdd": 13,
-      "lastRank": 6,
+      "lastRank": 7,
       "status": "active",
       "trigger": 11233.89,
       "initialStop": 9980,
@@ -164,10 +164,10 @@
       "setup": "breakout",
       "setupNote": "Closed 1.28% above the 319.95 range high on 2.15× volume",
       "addedWeek": "2026-11-09",
-      "reviewsWaiting": 1,
+      "reviewsWaiting": 2,
       "rankAtAdd": 14,
-      "lastRank": 10,
-      "status": "watch",
+      "lastRank": 11,
+      "status": "closed",
       "trigger": 337.98,
       "initialStop": 313.2,
       "stop": 313.2,
@@ -180,9 +180,16 @@
           "date": "2026-11-13",
           "type": "added",
           "note": "Added to watch at #14, confidence 44.69: buy above 337.98, stop 313.2 (7.33% risk)"
+        },
+        {
+          "date": "2026-11-27",
+          "type": "dropped",
+          "note": "Removed from watch: did not trigger in 2 weeks"
         }
       ],
-      "target": 412.32
+      "target": 412.32,
+      "exitReason": "dropped",
+      "closedDate": "2026-11-27"
     },
     {
       "id": "2026-11-09_BAJAJHLDNG",
@@ -194,7 +201,7 @@
       "addedWeek": "2026-11-09",
       "reviewsWaiting": 0,
       "rankAtAdd": 15,
-      "lastRank": 8,
+      "lastRank": 11,
       "status": "active",
       "trigger": 11482.12,
       "initialStop": 10183.32,
@@ -230,7 +237,7 @@
       "setup": "pullback",
       "setupNote": "28.21% pullback of a 42.94% rally, turned up last week",
       "addedWeek": "2026-11-16",
-      "reviewsWaiting": 0,
+      "reviewsWaiting": 1,
       "rankAtAdd": 3,
       "lastRank": 3,
       "status": "watch",
@@ -239,7 +246,7 @@
       "stop": 646.8,
       "riskPct": 8.74,
       "target": 894.5,
-      "confidence": 66.37,
+      "confidence": 63.96,
       "lastDate": "2026-11-27",
       "lastClose": 690,
       "events": [
@@ -258,16 +265,16 @@
       "setup": "pullback",
       "setupNote": "33.34% pullback of a 58% rally, turned up last week",
       "addedWeek": "2026-11-16",
-      "reviewsWaiting": 0,
+      "reviewsWaiting": 1,
       "rankAtAdd": 4,
-      "lastRank": 4,
+      "lastRank": 6,
       "status": "watch",
       "trigger": 242.71,
       "initialStop": 221.51,
       "stop": 221.51,
       "riskPct": 8.73,
       "target": 254.92,
-      "confidence": 61.48,
+      "confidence": 42.78,
       "lastDate": "2026-11-27",
       "lastClose": 220.11,
       "events": [
@@ -288,7 +295,7 @@
       "addedWeek": "2026-11-16",
       "reviewsWaiting": 0,
       "rankAtAdd": 9,
-      "lastRank": 9,
+      "lastRank": 15,
       "status": "active",
       "trigger": 6246.07,
       "initialStop": 5768,
@@ -315,6 +322,90 @@
       "r": 478.07,
       "partialBooked": false,
       "maxHigh": 6420.5
+    },
+    {
+      "id": "2026-11-23_CUPID",
+      "symbol": "CUPID",
+      "name": "Cupid Limited",
+      "sector": "Consumer Defensive",
+      "setup": "pullback",
+      "setupNote": "26.06% pullback of a 67.16% rally, turned up last week",
+      "addedWeek": "2026-11-23",
+      "reviewsWaiting": 0,
+      "rankAtAdd": 2,
+      "lastRank": 2,
+      "status": "watch",
+      "trigger": 393.86,
+      "initialStop": 351.85,
+      "stop": 351.85,
+      "riskPct": 10.67,
+      "target": 519.89,
+      "confidence": 64.69,
+      "lastDate": "2026-11-27",
+      "lastClose": 389.5,
+      "events": [
+        {
+          "date": "2026-11-27",
+          "type": "added",
+          "note": "Added to watch at #2, confidence 64.69, quality 70.23: buy above 393.86, stop 351.85 (10.67% risk), target 519.89"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-23_PTCIL",
+      "symbol": "PTCIL",
+      "name": "PTC Industries Limited",
+      "sector": "Industrials",
+      "setup": "pullback",
+      "setupNote": "34.97% pullback of a 48.75% rally, turned up last week",
+      "addedWeek": "2026-11-23",
+      "reviewsWaiting": 0,
+      "rankAtAdd": 4,
+      "lastRank": 4,
+      "status": "watch",
+      "trigger": 25728,
+      "initialStop": 23095,
+      "stop": 23095,
+      "riskPct": 10.23,
+      "target": 33627,
+      "confidence": 62.35,
+      "lastDate": "2026-11-27",
+      "lastClose": 25460,
+      "events": [
+        {
+          "date": "2026-11-27",
+          "type": "added",
+          "note": "Added to watch at #4, confidence 62.35, quality 70.52: buy above 25728, stop 23095 (10.23% risk), target 33627"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-23_ANANDRATHI",
+      "symbol": "ANANDRATHI",
+      "name": "Anand Rathi Wealth Limited",
+      "sector": "Financial Services",
+      "setup": "base",
+      "setupNote": "6-week base, 14.07% deep, closing near its high",
+      "addedWeek": "2026-11-23",
+      "reviewsWaiting": 0,
+      "rankAtAdd": 8,
+      "lastRank": 8,
+      "status": "watch",
+      "trigger": 2457.23,
+      "initialStop": 2233.39,
+      "stop": 2233.39,
+      "riskPct": 9.11,
+      "target": 3128.74,
+      "confidence": 54.79,
+      "lastDate": "2026-11-27",
+      "lastClose": 2412.2,
+      "events": [
+        {
+          "date": "2026-11-27",
+          "type": "added",
+          "note": "Added to watch at #8, confidence 54.79, quality 64.34: buy above 2457.23, stop 2233.39 (9.11% risk), target 3128.74"
+        }
+      ]
     }
   ]
 }
